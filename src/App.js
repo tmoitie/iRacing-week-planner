@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 import {cloneDeep, uniq} from 'lodash';
 import TimeSlider from './components/TimeSlider';
 import moment from 'moment';
@@ -13,6 +12,8 @@ import allCars from './data/cars.json';
 import allTracks from './data/tracks.json';
 
 import { seasonStart, seasonEnd } from './config';
+
+import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
 const cars = uniq(allCars, false, (car) => car.sku);
 const tracks = uniq(allTracks, false, (track) => track.pkgid);
@@ -97,9 +98,15 @@ export default class App extends Component {
               <a className="navbar-brand" href="">iRacing Week Planner</a>
             </div>
             <ul className="nav navbar-nav navbar-right">
-              <li><a href="" onClick={this.openModalClick.bind(this, 'modalOwnedTracks')}>Set owned tracks</a></li>
-              <li><a href="" onClick={this.openModalClick.bind(this, 'modalOwnedCars')}>Set owned cars</a></li>
-              <li><a href="" onClick={this.openModalClick.bind(this, 'modalFavouriteSeries')}>Set favorite series</a></li>
+              <li><a href="" onClick={this.openModalClick.bind(this, 'modalOwnedTracks')}>
+                Set owned tracks
+              </a></li>
+              <li><a href="" onClick={this.openModalClick.bind(this, 'modalOwnedCars')}>
+                Set owned cars
+              </a></li>
+              <li><a href="" onClick={this.openModalClick.bind(this, 'modalFavouriteSeries')}>
+                Set favorite series
+              </a></li>
             </ul>
           </div>
         </nav>
