@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 import {cloneDeep, uniq} from 'lodash';
+import TimeSlider from './components/TimeSlider';
+import moment from 'moment';
 
 import RaceListing from './components/RaceListing';
 import Filters from './components/Filters';
@@ -9,6 +11,8 @@ import OwnedContentModal from './components/OwnedContentModal';
 
 import allCars from './data/cars.json';
 import allTracks from './data/tracks.json';
+
+import { seasonStart, seasonEnd } from './config';
 
 const cars = uniq(allCars, false, (car) => car.sku);
 const tracks = uniq(allTracks, false, (track) => track.pkgid);
@@ -37,6 +41,7 @@ export default class App extends Component {
     this.state.modalOwnedTracks = false;
     this.state.modalOwnedCars = false;
     this.state.modalFavouriteSeries = false;
+    this.state.time = parseInt(moment().format('X'), 10);
   }
 
   componentDidMount() {
@@ -47,8 +52,8 @@ export default class App extends Component {
   }
 
   componentDidUpdate() {
-    const {filters, ownedCars, ownedTracks} = this.state;
-    window.localStorage.setItem('iracing-state', JSON.stringify({filters, ownedCars, ownedTracks}));
+    const {filters, ownedCars, ownedTracks, favouriteSeries} = this.state;
+    window.localStorage.setItem('iracing-state', JSON.stringify({filters, ownedCars, ownedTracks, favouriteSeries}));
   }
 
   updateFilters(newFilters) {
@@ -77,9 +82,13 @@ export default class App extends Component {
     this.setState({[key]: value});
   }
 
+  updateTime(time) {
+    this.setState({ time: time });
+  }
+
   render() {
     const {filters, modalOwnedTracks, modalOwnedCars, modalFavouriteSeries,
-      favouriteSeries, ownedCars, ownedTracks} = this.state;
+      favouriteSeries, ownedCars, ownedTracks, time} = this.state;
     return (
       <div>
         <nav className="navbar navbar-inverse">
@@ -103,8 +112,11 @@ export default class App extends Component {
                 resetSettings={this.resetSettings.bind(this)} resetFilters={this.resetFilters.bind(this)} />
             </div>
             <div className="col-md-10">
+              <h3>Races for date: {moment(time, 'X').format('YYYY-MM-DD')}</h3>
+              <TimeSlider minFrom={seasonStart} maxTo={seasonEnd} onChange={this.updateTime.bind(this)}
+                initial={time} step={moment.duration(1, 'days').asSeconds()} />
               <RaceListing filters={filters} ownedCars={ownedCars} ownedTracks={ownedTracks}
-                favouriteSeries={favouriteSeries} />
+                favouriteSeries={favouriteSeries} time={time} />
             </div>
           </div>
         </div>

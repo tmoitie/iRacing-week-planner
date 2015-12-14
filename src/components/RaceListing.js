@@ -36,7 +36,7 @@ export default class RaceListing extends Component {
   }
 
   static defaultProps = {
-    time: Math.round(moment().format('x')),
+    time: Math.round(moment().format('X')),
     sort: [{key: 'licenceLevel', order: 'asc'}, {key: 'series', order: 'asc'}],
     filters: [],
     favouriteSeries: [],
@@ -47,7 +47,7 @@ export default class RaceListing extends Component {
   render() {
     const { time, sort, filters, favouriteSeries, ownedTracks, ownedCars } = this.props;
     let races = allRaces.filter((race) => {
-      return race.startTime < time && time < (race.startTime + race.weekLength);
+      return race.startTime < (time * 1000) && (time * 1000) < (race.startTime + race.weekLength);
     });
 
     races = sortRaces(sort, races);
