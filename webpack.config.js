@@ -3,7 +3,9 @@ var webpack = require('webpack');
 
 module.exports = {
   devtool: process.env.ENV === 'production' ? null : 'eval',
-  entry: [
+  entry: process.env.ENV === 'production' ? [
+    './src/index'
+  ] : [
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
     './src/index'
@@ -11,16 +13,13 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'public/dist'),
     filename: 'bundle.js',
-    publicPath: '/dist',
+    publicPath: '/dist/',
     contentBase: path.join(__dirname, 'public')
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ],
   module: {
     loaders: [{
       test: /\.js$/,
-      loaders: ['react-hot', 'babel'],
+      loaders: process.env.ENV === 'production' ? ['babel'] : ['react-hot', 'babel'],
       include: [path.join(__dirname, 'src')]
     }, {
       test: /\.scss$/,
