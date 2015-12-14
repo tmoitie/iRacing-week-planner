@@ -88,7 +88,7 @@ export default class RaceListing extends Component {
 
     return (
       <div className="table-responsive">
-        <table className="table">
+        <table className="table" style={{fontSize: '0.8em'}}>
           <thead>
             <tr>
               <th>Licence</th>

@@ -104,10 +104,9 @@ export default class App extends Component {
           </div>
         </nav>
         <div className="container-fluid">
-          <h1>iRacing Week Planner</h1>
           <div className="row">
             <div className="col-md-2">
-              <h2>Filters</h2>
+              <h3>Filters</h3>
               <Filters currentFilters={filters} updateFilters={this.updateFilters.bind(this)}
                 resetSettings={this.resetSettings.bind(this)} resetFilters={this.resetFilters.bind(this)} />
             </div>

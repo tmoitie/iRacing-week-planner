@@ -46,8 +46,8 @@ export default class Filters extends Component {
   render() {
     const {currentFilters, resetSettings, resetFilters} = this.props;
     return (
-      <div className='filters-component'>
-        <h3>Type</h3>
+      <div className='filters-component' style={{fontSize: '0.8em'}}>
+        <h4>Type</h4>
         <Checkbox checked={currentFilters.type.indexOf('Oval') !== -1}
           onChange={this.setCheckboxFilter.bind(this, 'type', 'Oval')}>
           Oval
@@ -57,7 +57,7 @@ export default class Filters extends Component {
           Road
         </Checkbox>
 
-        <h3>Licence</h3>
+        <h4>Licence</h4>
         <Checkbox checked={currentFilters.licence.indexOf('R') !== -1}
           onChange={this.setCheckboxFilter.bind(this, 'licence', 'R')}>
           R
@@ -83,7 +83,7 @@ export default class Filters extends Component {
           P
         </Checkbox>
 
-        <h3>Official/Fixed</h3>
+        <h4>Official/Fixed</h4>
         <Checkbox checked={currentFilters.official.indexOf(false) !== -1}
           onChange={this.setCheckboxFilter.bind(this, 'official', false)}>
           Unofficial
@@ -101,7 +101,7 @@ export default class Filters extends Component {
           Fixed setup
         </Checkbox>
 
-        <h3>Content</h3>
+        <h4>Content</h4>
         <Checkbox checked={currentFilters.ownedCars === true}
           onChange={this.setBooleanFilter.bind(this, 'ownedCars')}>
           Owned cars only
