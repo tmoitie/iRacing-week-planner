@@ -44,7 +44,7 @@ export default class FavouriteSeriesModal extends Component {
   renderCheckbox(series, index) {
     const { favouriteSeries } = this.props;
     return (
-      <div className="col-xs-6" key={index}>
+      <div className="col-md-6" key={index}>
         <Checkbox checked={favouriteSeries.indexOf(series.seriesid) !== -1}
           onChange={this.setCheckboxFavourite.bind(this, series.seriesid)}>{fixText(series.seriesname)}</Checkbox>
       </div>
