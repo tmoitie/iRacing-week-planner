@@ -2,10 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  devtool: 'inline-source-map',
   entry: [
-    'webpack-dev-server/client?http://localhost:3000',
-    'webpack/hot/only-dev-server',
     './src/index'
   ],
   output: {
@@ -13,13 +10,10 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/dist/'
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ],
   module: {
     loaders: [{
       test: /\.js$/,
-      loaders: ['react-hot', 'babel'],
+      loaders: ['babel'],
       include: path.join(__dirname, 'src'),
       exclude: /node_modules\//
     }, {
@@ -32,7 +26,7 @@ module.exports = {
     { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=image/svg+xml' },
     { test: /\.json$/, loader: 'json' }]
   },
-  sassLoader: {
-    // includePaths: [path.resolve(__dirname, './some-folder')]
-  }
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({minimize: true})
+  ]
 };
