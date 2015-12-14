@@ -15,15 +15,15 @@ export default class BaseModal extends Component {
   }
 
   componentDidMount() {
-    this.node = document.createElement('div');
-    document.body.className = 'modal-open';
-    document.body.appendChild(this.node);
-    this.renderChild();
+    // this.node = document.createElement('div');
+    document.body.className += ' modal-open';
+    // document.body.appendChild(this.node);
+    // this.renderChild();
   }
 
   componentWillUnmount() {
-    ReactDOM.unmountComponentAtNode(this.node);
-    this.node.remove();
+    // ReactDOM.unmountComponentAtNode(this.node);
+    // this.node.remove();
     document.body.className = document.body.className.replace(/modal\-open/, '');
   }
 
@@ -36,6 +36,9 @@ export default class BaseModal extends Component {
   }
 
   render() {
-    return null;
+    const { className, style, children } = this.props;
+    return <div className={className} style={style}>
+      {children}
+    </div>;
   }
 }

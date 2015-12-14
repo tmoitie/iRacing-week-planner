@@ -18,7 +18,7 @@ export default class Modal extends Component {
   static defaultProps = {
     onClose: () => {},
     doneAction: () => {},
-    doneButtonText: 'Save'
+    doneButtonText: 'Close'
   };
 
   constructor(props) {

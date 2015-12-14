@@ -111,21 +111,21 @@ export default class App extends Component {
         {modalFavouriteSeries ? (
           <FavouriteSeriesModal onClose={this.closeModal.bind(this, 'modalFavouriteSeries')}
             favouriteSeries={favouriteSeries}
-            save={this.saveOptions.bind(this, 'favouriteSeries')} key={favouriteSeries} />
+            save={this.saveOptions.bind(this, 'favouriteSeries')} />
         ) : null}
         {modalOwnedCars ? (
           <OwnedContentModal onClose={this.closeModal.bind(this, 'modalOwnedCars')}
             ownedContent={ownedCars}
             content={cars}
             idField='sku'
-            save={this.saveOptions.bind(this, 'ownedCars')} key={ownedCars} />
+            save={this.saveOptions.bind(this, 'ownedCars')} />
         ) : null}
         {modalOwnedTracks ? (
           <OwnedContentModal onClose={this.closeModal.bind(this, 'modalOwnedTracks')}
             ownedContent={ownedTracks}
             content={tracks}
             idField='pkgid'
-            save={this.saveOptions.bind(this, 'ownedTracks')} key={ownedTracks} />
+            save={this.saveOptions.bind(this, 'ownedTracks')} />
         ) : null}
       </div>
     );
