@@ -14,11 +14,16 @@ module.exports = {
     loaders: [{
       test: /\.js$/,
       loaders: ['babel'],
-      include: path.join(__dirname, 'src'),
-      exclude: /node_modules\//
+      include: [path.join(__dirname, 'src')]
     }, {
       test: /\.scss$/,
       loaders: ['style', 'css', 'autoprefixer', 'sass']
+    }, {
+      test: /\.css$/,
+      loaders: ['style', 'css', 'autoprefixer']
+    }, {
+      test: /\.(png|gif)$/,
+      loader: 'file'
     },
     { test: /\.woff2?(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/font-woff' },
     { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/octet-stream' },
