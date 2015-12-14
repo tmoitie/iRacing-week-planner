@@ -1,0 +1,3 @@
+--reporter spec
+--compilers js:babel-register,css:./test/support/css-null
+./test/**/*Spec.js

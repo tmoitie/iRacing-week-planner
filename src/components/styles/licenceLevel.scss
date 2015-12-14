@@ -1,0 +1,45 @@
+$color-r: #af0800;
+$color-d: #fc8a27;
+$color-c: #feec04;
+$color-b: #00c602;
+$color-a: #0153db;
+$color-p: #000;
+$white: #fff;
+$black: #000;
+
+.licence-level-component {
+  display: inline-block;
+  font-size: .85em;
+  font-weight: 600;
+  padding: 2px 4px;
+
+  &.licence-r {
+    background: $color-r;
+    color: $white;
+  }
+
+  &.licence-d {
+    background: $color-d;
+    color: $black;
+  }
+
+  &.licence-c {
+    background: $color-c;
+    color: $black;
+  }
+
+  &.licence-b {
+    background: $color-b;
+    color: $white;
+  }
+
+  &.licence-a {
+    background: $color-a;
+    color: $white;
+  }
+
+  &.licence-p {
+    background: $color-p;
+    color: $white;
+  }
+}

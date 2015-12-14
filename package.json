@@ -1,0 +1,64 @@
+{
+  "name": "react-hot-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for ReactJS project with hot code reloading",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gaearon/react-hot-boilerplate.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "boilerplate",
+    "hot",
+    "reload",
+    "hmr",
+    "live",
+    "edit",
+    "webpack"
+  ],
+  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gaearon/react-hot-boilerplate/issues"
+  },
+  "homepage": "https://github.com/gaearon/react-hot-boilerplate",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.1.0",
+    "babel-core": "^6.0.20",
+    "babel-eslint": "^4.1.3",
+    "babel-loader": "^6.0.1",
+    "babel-plugin-syntax-class-properties": "^6.3.13",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-react": "^6.0.15",
+    "babel-preset-stage-0": "^6.0.15",
+    "babel-register": "^6.3.13",
+    "chai": "^3.4.1",
+    "classnames": "^2.2.1",
+    "css-loader": "^0.23.0",
+    "eslint-plugin-react": "^3.6.2",
+    "file-loader": "^0.8.5",
+    "json-loader": "^0.5.4",
+    "mocha": "^2.3.4",
+    "node-sass": "^3.4.2",
+    "react-addons-test-utils": "^0.14.3",
+    "react-hot-loader": "^1.3.0",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "lodash": "^3.10.1",
+    "moment": "^2.10.6",
+    "react": "^0.14.0",
+    "react-addons-update": "^0.14.3",
+    "react-dom": "^0.14.0"
+  }
+}
