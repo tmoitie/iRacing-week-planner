@@ -45,9 +45,11 @@ export default class OwnedContentModal extends Component {
           <div className="row">
             {content.map((item, index) => {
               return (
-                <div className="col-xs-6" key={index}>
+                <div className="col-md-6" key={index}>
                   <Checkbox checked={ownedContent.indexOf(item[idField]) !== -1}
-                    onChange={this.setCheckboxContent.bind(this, item[idField])}>{fixText(item.skuname)}</Checkbox>
+                    onChange={this.setCheckboxContent.bind(this, item[idField])}>
+                    {item.skuname ? fixText(item.skuname) : fixText(item.name)}
+                    </Checkbox>
                 </div>
               );
             })}
