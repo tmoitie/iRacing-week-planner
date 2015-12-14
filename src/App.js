@@ -118,7 +118,7 @@ export default class App extends Component {
                 resetSettings={this.resetSettings.bind(this)} resetFilters={this.resetFilters.bind(this)} />
             </div>
             <div className="col-md-10">
-              <h3>Races for date: {moment(time, 'X').format('YYYY-MM-DD')}</h3>
+              <h3>Races for date: {moment(time, 'X').format('YYYY MMM DD')}</h3>
               <TimeSlider minFrom={seasonStart} maxTo={seasonEnd} onChange={this.updateTime.bind(this)}
                 initial={time} step={moment.duration(1, 'days').asSeconds()} />
               <RaceListing filters={filters} ownedCars={ownedCars} ownedTracks={ownedTracks}
