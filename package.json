@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Boilerplate for ReactJS project with hot code reloading",
   "scripts": {
-    "build": "node_modules/.bin/webpack --config webpack.dist.js",
+    "build": "node_modules/.bin/webpack --config webpack.config.js",
     "start": "node server.js",
     "lint": "eslint src"
   },

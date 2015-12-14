@@ -2,16 +2,17 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  devtool: 'inline-source-map',
+  devtool: process.env.ENV === 'production' ? null : 'eval',
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
     './src/index'
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'public/dist'),
     filename: 'bundle.js',
-    publicPath: '/dist/'
+    publicPath: '/dist',
+    contentBase: path.join(__dirname, 'public')
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin()
@@ -39,5 +40,10 @@ module.exports = {
   },
   sassLoader: {
     // includePaths: [path.resolve(__dirname, './some-folder')]
-  }
+  },
+  plugins: process.env.ENV === 'production' ? [
+    new webpack.optimize.UglifyJsPlugin({minimize: true}),
+  ] : [
+    new webpack.HotModuleReplacementPlugin()
+  ]
 };
