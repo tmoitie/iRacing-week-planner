@@ -60,7 +60,7 @@ export default class Modal extends Component {
               </button>
               <h4 className='modal-title'>{title}</h4>
             </div>
-            <div className='modal-body' style={{maxHeight: '50%', overflowY: 'auto'}}>
+            <div className='modal-body' style={{maxHeight: '55vh', overflowY: 'auto'}}>
               {children}
             </div>
             <div className='modal-footer'>
