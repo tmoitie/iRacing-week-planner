@@ -5,6 +5,8 @@ import classnames from 'classnames';
 
 import allRaces from '../lib/races';
 
+const now = parseInt(moment().hour(11).format('X'), 10);
+
 const fixText = (text) => (decodeURIComponent(text).replace(/\+/g, ' '));
 
 export default class SeriesModal extends Component {
@@ -37,20 +39,23 @@ export default class SeriesModal extends Component {
                 </tr>
               </thead>
               <tbody>
-                {races.map((race, index) => (
-                  <tr key={index}>
-                    <td>
-                      {race.week + 1}
-                    </td>
-                    <td className={classnames({success: ownedTracks.indexOf(race.trackId) !== -1})}>
-                      {race.track}
-                    </td>
-                    <td>{moment(race.startTime, 'x').format('YYYY-MM-DD')}</td>
-                    <td>{
-                      moment(race.startTime + race.weekLength, 'x').subtract(1, 'days').format('YYYY-MM-DD')
-                    }</td>
-                  </tr>
-                ))}
+                {races.map((race, index) => {
+                  const current = race.startTime < (now * 1000) && (now * 1000) < (race.startTime + race.weekLength);
+                  return (
+                    <tr key={index} style={current ? { fontWeight: 700 } : {}}>
+                      <td>
+                        {race.week + 1}
+                      </td>
+                      <td className={classnames({success: ownedTracks.indexOf(race.trackId) !== -1})}>
+                        {race.track}
+                      </td>
+                      <td>{moment(race.startTime, 'x').format('YYYY-MM-DD')}</td>
+                      <td>{
+                        moment(race.startTime + race.weekLength, 'x').subtract(1, 'days').format('YYYY-MM-DD')
+                      }</td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>
