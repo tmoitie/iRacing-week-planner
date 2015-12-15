@@ -5,6 +5,9 @@ import { clone, intersection } from 'lodash';
 
 import allRaces from '../lib/races';
 import LicenceLevel from './LicenceLevel';
+import SeriesModal from './SeriesModal';
+
+import './styles/raceListing.scss';
 
 const sortRaces = (rules, unordered) => {
   const races = clone(unordered);
@@ -44,8 +47,22 @@ export default class RaceListing extends Component {
     ownedCars: [],
   }
 
+  constructor(props) {
+    super(props);
+    this.state = {seriesModalId: null}
+  }
+
+  showSeriesModal(seriesId) {
+    this.setState({ seriesModalId: seriesId });
+  }
+
+  closeModal() {
+    this.setState({ seriesModalId: null });
+  }
+
   render() {
     const { time, sort, filters, favouriteSeries, ownedTracks, ownedCars } = this.props;
+    const { seriesModalId } = this.state;
     let races = allRaces.filter((race) => {
       return race.startTime < (time * 1000) && (time * 1000) < (race.startTime + race.weekLength);
     });
@@ -87,7 +104,7 @@ export default class RaceListing extends Component {
     }
 
     return (
-      <div className="table-responsive">
+      <div className="table-responsive race-listing">
         <table className="table" style={{fontSize: '0.8em'}}>
           <thead>
             <tr>
@@ -109,7 +126,7 @@ export default class RaceListing extends Component {
                 <td><LicenceLevel effective licence={race.licenceLevel} /></td>
                 <td><LicenceLevel licence={race.licenceLevel} /></td>
                 <td>{race.type}</td>
-                <td>
+                <td className='series' onClick={this.showSeriesModal.bind(this, race.seriesId)}>
                   {favouriteSeries.indexOf(race.seriesId) !== -1 ? (
                     <span className="glyphicon glyphicon-star" />
                   ) : null}
@@ -131,6 +148,9 @@ export default class RaceListing extends Component {
             ))}
           </tbody>
         </table>
+        {seriesModalId ? (
+          <SeriesModal onClose={this.closeModal.bind(this)} ownedTracks={ownedTracks} seriesId={seriesModalId} />
+        ) : null}
       </div>
     );
   }

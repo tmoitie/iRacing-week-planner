@@ -1,0 +1,10 @@
+.race-listing {
+  .series {
+    cursor: pointer;
+    transition: background .3s;
+
+    &:hover {
+      background: rgba(0,0,0,0.1);
+    }
+  }
+}
