@@ -8,7 +8,7 @@ const levels = ['R', 'D', 'C', 'B', 'A', 'P'];
 export default class LicenceLevel extends Component {
   static propTypes = {
     licence: PropTypes.number.isRequired,
-    effective: PropTypes.boolean
+    effective: PropTypes.bool
   }
 
   render() {
