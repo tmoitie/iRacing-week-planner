@@ -7,16 +7,20 @@ const levels = ['R', 'D', 'C', 'B', 'A', 'P'];
 
 export default class LicenceLevel extends Component {
   static propTypes = {
-    licence: PropTypes.number.isRequired
+    licence: PropTypes.number.isRequired,
+    effective: PropTypes.boolean
   }
 
   render() {
-    const { licence } = this.props;
+    const { licence, effective } = this.props;
 
     return (
-      <div className={classnames('licence-level-component', `licence-${levelToClass(licence).toLowerCase()}`)}>
-        <span className='licence-letter'>{levelToClass(licence)}</span>
-        {(((licence - 1) % 4) + 1).toFixed(2)}
+      <div className={classnames(
+        'licence-level-component',
+        `licence-${levelToClass(licence, effective).toLowerCase()}`
+      )}>
+        <span className='licence-letter'>{levelToClass(licence, effective)}</span>
+        {effective ? null : (((licence - 1) % 4) + 1).toFixed(2)}
       </div>
     );
   }

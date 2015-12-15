@@ -91,6 +91,7 @@ export default class RaceListing extends Component {
         <table className="table" style={{fontSize: '0.8em'}}>
           <thead>
             <tr>
+              <th>Class</th>
               <th>Licence</th>
               <th>Type</th>
               <th>Series</th>
@@ -105,6 +106,7 @@ export default class RaceListing extends Component {
           <tbody>
             {races.map((race, index) => (
               <tr key={index}>
+                <td><LicenceLevel effective licence={race.licenceLevel} /></td>
                 <td><LicenceLevel licence={race.licenceLevel} /></td>
                 <td>{race.type}</td>
                 <td>
