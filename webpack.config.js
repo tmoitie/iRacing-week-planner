@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  devtool: process.env.ENV === 'production' ? null : 'eval',
+  devtool: process.env.ENV === 'production' ? null : 'eval-source-maps',
   entry: process.env.ENV === 'production' ? [
     './src/index'
   ] : [
