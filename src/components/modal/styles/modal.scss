@@ -9,4 +9,5 @@ body.modal-open {
   bottom: 0;
   background: rgba(0,0,0,.3);
   height: 100%;
+  z-index: 10;
 }
