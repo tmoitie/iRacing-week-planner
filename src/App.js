@@ -42,7 +42,7 @@ export default class App extends Component {
     this.state.modalOwnedTracks = false;
     this.state.modalOwnedCars = false;
     this.state.modalFavouriteSeries = false;
-    this.state.time = parseInt(moment().format('X'), 10);
+    this.state.time = parseInt(moment().hour(11).format('X'), 10);
   }
 
   componentDidMount() {
