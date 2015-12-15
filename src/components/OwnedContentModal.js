@@ -37,11 +37,28 @@ export default class OwnedContentModal extends Component {
     save(newOwned);
   }
 
+  setAllContent(e) {
+    const {save, content, idField} = this.props;
+    if (e.target.checked) {
+      save(content.map(item => item[idField]));
+      return;
+    }
+    save([]);
+  }
+
   render() {
     const {onClose, content, ownedContent, save, idField} = this.props;
     return (
       <Modal onClose={onClose} title='Choose owned content' doneAction={onClose}>
         <div className="container-fluid">
+
+          <Checkbox checked={ownedContent.length === content.length}
+            onChange={this.setAllContent.bind(this)}>
+            Select All
+          </Checkbox>
+
+          <hr />
+
           <div className="row">
             {content.map((item, index) => {
               return (
