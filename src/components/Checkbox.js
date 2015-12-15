@@ -4,7 +4,8 @@ export default class Checkbox extends Component {
   static propTypes = {
     checked: PropTypes.bool,
     children: PropTypes.node,
-    onChange: PropTypes.func
+    onChange: PropTypes.func,
+    disabled: PropTypes.bool
   }
 
   static defaultProps = {
@@ -13,12 +14,12 @@ export default class Checkbox extends Component {
   }
 
   render() {
-    const {onChange, checked, children} = this.props;
+    const {onChange, checked, disabled, children} = this.props;
 
     return (
       <div className="checkbox">
         <label>
-          <input type="checkbox" onChange={onChange} checked={checked} />
+          <input type="checkbox" onChange={onChange} checked={checked} disabled={disabled} />
           {children}
         </label>
       </div>

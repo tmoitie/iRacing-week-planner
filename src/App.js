@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {cloneDeep, uniq} from 'lodash';
+import {cloneDeep, uniq, sortBy} from 'lodash';
 import TimeSlider from './components/TimeSlider';
 import moment from 'moment';
 
@@ -16,7 +16,7 @@ import { seasonStart, seasonEnd } from './config';
 import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
 const cars = uniq(allCars, false, (car) => car.sku);
-const tracks = uniq(allTracks, false, (track) => track.pkgid);
+const tracks = sortBy(uniq(sortBy(allTracks, 'priority'), false, 'pkgid'), 'name');
 
 const defaultFilters = {
   type: ['Road', 'Oval'],
@@ -79,7 +79,6 @@ export default class App extends Component {
   }
 
   saveOptions(key, value) {
-    console.log(key, value);
     this.setState({[key]: value});
   }
 
@@ -136,6 +135,8 @@ export default class App extends Component {
             ownedContent={ownedCars}
             content={cars}
             idField='sku'
+            defaultContent={cloneDeep(defaultSettings.ownedCars)}
+            typeFilter={{key: 'discountGroupNames', oval: ['oval+car'], road: ['road+car']}}
             save={this.saveOptions.bind(this, 'ownedCars')} />
         ) : null}
         {modalOwnedTracks ? (
@@ -143,6 +144,8 @@ export default class App extends Component {
             ownedContent={ownedTracks}
             content={tracks}
             idField='pkgid'
+            defaultContent={cloneDeep(defaultSettings.ownedTracks)}
+            typeFilter={{key: 'catid', oval: 1, road: 2}}
             save={this.saveOptions.bind(this, 'ownedTracks')} />
         ) : null}
       </div>
