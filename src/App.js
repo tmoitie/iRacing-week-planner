@@ -6,7 +6,7 @@ import moment from 'moment';
 import RaceListing from './components/RaceListing';
 import Filters from './components/Filters';
 import FavouriteSeriesModal from './components/FavouriteSeriesModal';
-import OwnedContentModal from './components/OwnedContentModal';
+import ContentModal from './components/ContentModal';
 
 import allCars from './data/cars.json';
 import allTracks from './data/tracks.json';
@@ -32,15 +32,17 @@ const defaultSettings = {
   filters: defaultFilters,
   ownedCars: cars.filter(car => car.freeWithSubscription === true).map(car => car.sku),
   ownedTracks: tracks.filter(track => track.freeWithSubscription === true).map(track => track.pkgid),
-  favouriteSeries: []
+  favouriteSeries: [],
+  favouriteCars: [],
+  favouriteTracks: []
 };
 
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = cloneDeep(defaultSettings);
-    this.state.modalOwnedTracks = false;
-    this.state.modalOwnedCars = false;
+    this.state.modalTracks = false;
+    this.state.modalCars = false;
     this.state.modalFavouriteSeries = false;
     this.state.time = parseInt(moment().hour(11).format('X'), 10);
   }
@@ -87,8 +89,8 @@ export default class App extends Component {
   }
 
   render() {
-    const {filters, modalOwnedTracks, modalOwnedCars, modalFavouriteSeries,
-      favouriteSeries, ownedCars, ownedTracks, time} = this.state;
+    const {filters, modalTracks, modalCars, modalFavouriteSeries,
+      favouriteSeries, ownedCars, ownedTracks, time, favouriteCars, favouriteTracks} = this.state;
     return (
       <div>
         <nav className="navbar navbar-inverse">
@@ -97,11 +99,11 @@ export default class App extends Component {
               <a className="navbar-brand" href="">iRacing Week Planner</a>
             </div>
             <ul className="nav navbar-nav navbar-right">
-              <li><a href="" onClick={this.openModalClick.bind(this, 'modalOwnedTracks')}>
-                Set owned tracks
+              <li><a href="" onClick={this.openModalClick.bind(this, 'modalTracks')}>
+                Set my tracks
               </a></li>
-              <li><a href="" onClick={this.openModalClick.bind(this, 'modalOwnedCars')}>
-                Set owned cars
+              <li><a href="" onClick={this.openModalClick.bind(this, 'modalCars')}>
+                Set my cars
               </a></li>
               <li><a href="" onClick={this.openModalClick.bind(this, 'modalFavouriteSeries')}>
                 Set favorite series
@@ -130,23 +132,29 @@ export default class App extends Component {
             favouriteSeries={favouriteSeries}
             save={this.saveOptions.bind(this, 'favouriteSeries')} />
         ) : null}
-        {modalOwnedCars ? (
-          <OwnedContentModal onClose={this.closeModal.bind(this, 'modalOwnedCars')}
+        {modalCars ? (
+          <ContentModal onClose={this.closeModal.bind(this, 'modalCars')}
+            title='Set My Cars'
             ownedContent={ownedCars}
             content={cars}
             idField='sku'
             defaultContent={cloneDeep(defaultSettings.ownedCars)}
             typeFilter={{key: 'discountGroupNames', oval: ['oval+car'], road: ['road+car']}}
-            save={this.saveOptions.bind(this, 'ownedCars')} />
+            save={this.saveOptions.bind(this, 'ownedCars')}
+            favourites={favouriteCars}
+            saveFavourites={this.saveOptions.bind(this, 'favouriteCars')} />
         ) : null}
-        {modalOwnedTracks ? (
-          <OwnedContentModal onClose={this.closeModal.bind(this, 'modalOwnedTracks')}
+        {modalTracks ? (
+          <ContentModal onClose={this.closeModal.bind(this, 'modalTracks')}
+            title='Set My Tracks'
             ownedContent={ownedTracks}
             content={tracks}
             idField='pkgid'
             defaultContent={cloneDeep(defaultSettings.ownedTracks)}
             typeFilter={{key: 'catid', oval: 1, road: 2}}
-            save={this.saveOptions.bind(this, 'ownedTracks')} />
+            save={this.saveOptions.bind(this, 'ownedTracks')}
+            favourites={favouriteTracks}
+            saveFavourites={this.saveOptions.bind(this, 'favouriteTracks')} />
         ) : null}
       </div>
     );
