@@ -114,6 +114,14 @@ export default class Filters extends Component {
           onChange={this.setBooleanFilter.bind(this, 'favouriteSeries')}>
           Favorite series only
         </Checkbox>
+        <Checkbox checked={currentFilters.favouriteCarsOnly === true}
+          onChange={this.setBooleanFilter.bind(this, 'favouriteCarsOnly')}>
+          Favorite cars only
+        </Checkbox>
+        <Checkbox checked={currentFilters.favouriteTracksOnly === true}
+          onChange={this.setBooleanFilter.bind(this, 'favouriteTracksOnly')}>
+          Favorite tracks only
+        </Checkbox>
 
         <p>
           <button type="button" className="btn btn-primary" onClick={resetFilters}>Reset filters</button>

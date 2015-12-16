@@ -25,7 +25,9 @@ const defaultFilters = {
   fixed: [false, true],
   ownedCars: false,
   ownedTracks: false,
-  favouriteSeries: false
+  favouriteSeries: false,
+  favouriteTracksOnly: false,
+  favouriteCarsOnly: false
 };
 
 const defaultSettings = {
@@ -55,8 +57,15 @@ export default class App extends Component {
   }
 
   componentDidUpdate() {
-    const {filters, ownedCars, ownedTracks, favouriteSeries} = this.state;
-    window.localStorage.setItem('iracing-state', JSON.stringify({filters, ownedCars, ownedTracks, favouriteSeries}));
+    const {filters, ownedCars, ownedTracks, favouriteSeries, favouriteTracks, favouriteCars} = this.state;
+    window.localStorage.setItem('iracing-state', JSON.stringify({
+      filters,
+      ownedCars,
+      ownedTracks,
+      favouriteSeries,
+      favouriteTracks,
+      favouriteCars
+    }));
   }
 
   updateFilters(newFilters) {
@@ -120,10 +129,13 @@ export default class App extends Component {
             </div>
             <div className="col-md-10">
               <h3>Races for date: {moment(time, 'X').format('YYYY MMM DD')}</h3>
-              <TimeSlider minFrom={seasonStart} maxTo={seasonEnd} onChange={this.updateTime.bind(this)}
-                initial={time} step={moment.duration(1, 'days').asSeconds()} />
+              <p>
+                <TimeSlider minFrom={seasonStart} maxTo={seasonEnd} onChange={this.updateTime.bind(this)}
+                  initial={time} step={moment.duration(1, 'days').asSeconds()} />
+              </p>
               <RaceListing filters={filters} ownedCars={ownedCars} ownedTracks={ownedTracks}
-                favouriteSeries={favouriteSeries} time={time} />
+                favouriteSeries={favouriteSeries} time={time} favouriteTracks={favouriteTracks}
+                favouriteCars={favouriteCars} />
             </div>
           </div>
         </div>

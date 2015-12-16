@@ -35,7 +35,9 @@ export default class RaceListing extends Component {
     filters: PropTypes.object,
     favouriteSeries: PropTypes.array,
     ownedTracks: PropTypes.array,
-    ownedCars: PropTypes.array
+    ownedCars: PropTypes.array,
+    favouriteCars: PropTypes.array,
+    favouriteTracks: PropTypes.array
   }
 
   static defaultProps = {
@@ -45,6 +47,8 @@ export default class RaceListing extends Component {
     favouriteSeries: [],
     ownedTracks: [],
     ownedCars: [],
+    favouriteCars: [],
+    favouriteTracks: []
   }
 
   constructor(props) {
@@ -61,7 +65,8 @@ export default class RaceListing extends Component {
   }
 
   render() {
-    const { time, sort, filters, favouriteSeries, ownedTracks, ownedCars } = this.props;
+    const { time, sort, filters, favouriteSeries, ownedTracks, ownedCars,
+      favouriteCars, favouriteTracks } = this.props;
     const { seriesModalId } = this.state;
     let races = allRaces.filter((race) => {
       return race.startTime < (time * 1000) && (time * 1000) < (race.startTime + race.weekLength);
@@ -85,12 +90,6 @@ export default class RaceListing extends Component {
       return filters.official.indexOf(race.official) !== -1;
     });
 
-    if (filters.favouriteSeries) {
-      races = races.filter((race) => {
-        return favouriteSeries.indexOf(race.seriesId) !== -1;
-      });
-    }
-
     if (filters.ownedTracks) {
       races = races.filter((race) => {
         return ownedTracks.indexOf(race.trackId) !== -1;
@@ -101,6 +100,36 @@ export default class RaceListing extends Component {
       races = races.filter((race) => {
         return intersection(ownedCars, race.carIds).length !== 0;
       });
+    }
+
+    if (filters.favouriteSeries) {
+      races = races.filter((race) => {
+        return favouriteSeries.indexOf(race.seriesId) !== -1;
+      });
+    }
+
+    if (filters.favouriteSeries && races.length === 0) {
+      return <p>No races this week match your favourite series. Try turning the filter off or adding some.</p>;
+    }
+
+    if (filters.favouriteCarsOnly) {
+      races = races.filter((race) => {
+        return intersection(favouriteCars, race.carIds).length !== 0;
+      });
+    }
+
+    if (filters.favouriteCarsOnly && races.length === 0) {
+      return <p>No races this week match your favourite cars. Try turning the filter off or adding some.</p>;
+    }
+
+    if (filters.favouriteTracksOnly) {
+      races = races.filter((race) => {
+        return favouriteTracks.indexOf(race.trackId) !== -1;
+      });
+    }
+
+    if (filters.favouriteTracksOnly && races.length === 0) {
+      return <p>No races this week match your favourite tracks. Try turning the filter off or adding some.</p>;
     }
 
     return (
@@ -133,9 +162,15 @@ export default class RaceListing extends Component {
                   <span> </span>{race.series}
                 </td>
                 <td className={classnames({success: ownedTracks.indexOf(race.trackId) !== -1})}>
+                  {favouriteTracks.indexOf(race.trackId) !== -1 ? (
+                    <span className="glyphicon glyphicon-star" />
+                  ) : null}<span> </span>
                   {race.track}
                 </td>
                 <td className={classnames({success: intersection(ownedCars, race.carIds).length !== 0})}>
+                  {intersection(favouriteCars, race.carIds).length !== 0 ? (
+                    <span className="glyphicon glyphicon-star" />
+                  ) : null}<span> </span>
                   {race.carClasses.join(', ')}
                 </td>
                 <td>{moment(race.startTime, 'x').format('YYYY-MM-DD')}</td>
