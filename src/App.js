@@ -7,6 +7,7 @@ import RaceListing from './components/RaceListing';
 import Filters from './components/Filters';
 import FavouriteSeriesModal from './components/modal/FavouriteSeriesModal';
 import ContentModal from './components/modal/ContentModal';
+import Modal from './components/modal/Modal';
 
 import allCars from './data/cars.json';
 import allTracks from './data/tracks.json';
@@ -45,6 +46,7 @@ export default class App extends Component {
     this.state = cloneDeep(defaultSettings);
     this.state.modalTracks = false;
     this.state.modalCars = false;
+    this.state.modalChangelog = false;
     this.state.modalFavouriteSeries = false;
     this.state.time = parseInt(moment().hour(11).format('X'), 10);
   }
@@ -98,7 +100,7 @@ export default class App extends Component {
   }
 
   render() {
-    const {filters, modalTracks, modalCars, modalFavouriteSeries,
+    const {filters, modalTracks, modalCars, modalFavouriteSeries, modalChangelog,
       favouriteSeries, ownedCars, ownedTracks, time, favouriteCars, favouriteTracks} = this.state;
     return (
       <div>
@@ -116,6 +118,9 @@ export default class App extends Component {
               </a></li>
               <li><a href="" onClick={this.openModalClick.bind(this, 'modalFavouriteSeries')}>
                 Set favorite series
+              </a></li>
+              <li><a href="" onClick={this.openModalClick.bind(this, 'modalChangelog')}>
+                Changelog
               </a></li>
             </ul>
           </div>
@@ -167,6 +172,30 @@ export default class App extends Component {
             save={this.saveOptions.bind(this, 'ownedTracks')}
             favourites={favouriteTracks}
             saveFavourites={this.saveOptions.bind(this, 'favouriteTracks')} />
+        ) : null}
+        {modalChangelog ? (
+          <Modal onClose={this.closeModal.bind(this, 'modalChangelog')} title='Changelog'
+            doneAction={this.closeModal.bind(this, 'modalChangelog')}>
+            <div className="container-fluid">
+              <h3>2015-12-17</h3>
+              <ul>
+                <li>Remove P Class series as they have irregular schedules that aren't displaying right.</li>
+                <li>Added this changelog!</li>
+              </ul>
+              <h3>2015-12-16</h3>
+              <ul>
+                <li>Add ability to 'favorite' content with the star icon.</li>
+                <li>Fix bug with disabled default content.</li>
+              </ul>
+              <h3>2015-12-15</h3>
+              <ul>
+                <li>Add "Select All Oval/Road" to content choosers.</li>
+                <li>Made free content un-unselectable.</li>
+                <li>Made series clickable with popup showing all race weeks.</li>
+                <li>Add licence class column to table.</li>
+              </ul>
+            </div>
+          </Modal>
         ) : null}
       </div>
     );
