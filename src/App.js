@@ -129,10 +129,10 @@ export default class App extends Component {
             </div>
             <div className="col-md-10">
               <h3>Races for date: {moment(time, 'X').format('YYYY MMM DD')}</h3>
-              <p>
+              <div style={{marginBottom: 10}}>
                 <TimeSlider minFrom={seasonStart} maxTo={seasonEnd} onChange={this.updateTime.bind(this)}
                   initial={time} step={moment.duration(1, 'days').asSeconds()} />
-              </p>
+              </div>
               <RaceListing filters={filters} ownedCars={ownedCars} ownedTracks={ownedTracks}
                 favouriteSeries={favouriteSeries} time={time} favouriteTracks={favouriteTracks}
                 favouriteCars={favouriteCars} />
