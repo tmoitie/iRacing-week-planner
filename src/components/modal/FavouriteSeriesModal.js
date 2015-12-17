@@ -1,9 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import { cloneDeep } from 'lodash';
 import update from 'react-addons-update';
-import Modal from './modal/Modal';
-import Checkbox from './Checkbox';
-import series from '../data/season.json';
+import Modal from './Modal';
+import Checkbox from '../Checkbox';
+import series from '../../data/season.json';
 
 const fixText = (text) => (decodeURIComponent(text).replace(/\+/g, ' '));
 

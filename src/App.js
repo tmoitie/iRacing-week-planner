@@ -5,8 +5,8 @@ import moment from 'moment';
 
 import RaceListing from './components/RaceListing';
 import Filters from './components/Filters';
-import FavouriteSeriesModal from './components/FavouriteSeriesModal';
-import ContentModal from './components/ContentModal';
+import FavouriteSeriesModal from './components/modal/FavouriteSeriesModal';
+import ContentModal from './components/modal/ContentModal';
 
 import allCars from './data/cars.json';
 import allTracks from './data/tracks.json';

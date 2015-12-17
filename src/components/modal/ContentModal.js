@@ -1,9 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import { cloneDeep, difference, isEqual } from 'lodash';
 import update from 'react-addons-update';
-import Modal from './modal/Modal';
-import Checkbox from './Checkbox';
-import FavouriteStarButton from './FavouriteStarButton';
+import Modal from './Modal';
+import Checkbox from '../Checkbox';
+import FavouriteStarButton from '../FavouriteStarButton';
 
 const fixText = (text) => (decodeURIComponent(text).replace(/\+/g, ' '));
 

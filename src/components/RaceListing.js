@@ -5,7 +5,7 @@ import { clone, intersection } from 'lodash';
 
 import allRaces from '../lib/races';
 import LicenceLevel from './LicenceLevel';
-import SeriesModal from './SeriesModal';
+import SeriesModal from './modal/SeriesModal';
 
 import './styles/raceListing.scss';
 

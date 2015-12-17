@@ -1,9 +1,9 @@
 import React, { Component, PropTypes } from 'react';
-import Modal from './modal/Modal';
+import Modal from './Modal';
 import moment from 'moment';
 import classnames from 'classnames';
 
-import allRaces from '../lib/races';
+import allRaces from '../../lib/races';
 
 const now = parseInt(moment().hour(11).format('X'), 10);
 
