@@ -52,10 +52,6 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = cloneDeep(defaultSettings);
-    this.state.modalTracks = false;
-    this.state.modalCars = false;
-    this.state.modalChangelog = false;
-    this.state.modalFavouriteSeries = false;
     this.state.time = parseInt(moment().hour(11).format('X'), 10);
     this.state.currentModal = null;
   }
