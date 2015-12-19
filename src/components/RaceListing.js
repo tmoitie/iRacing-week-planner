@@ -1,33 +1,13 @@
 import React, { Component, PropTypes } from 'react';
-import classnames from 'classnames';
 import moment from 'moment';
-import { clone, intersection } from 'lodash';
 
 import allRaces from '../lib/races';
 import filterRaces from '../lib/filterRaces';
-import LicenceLevel from './LicenceLevel';
-import SeriesModal from './modal/SeriesModal';
+import sortRaces from '../lib/sortRaces';
+
+import columns from '../data/availableColumns';
 
 import './styles/raceListing.scss';
-
-const sortRaces = (rules, unordered) => {
-  const races = clone(unordered);
-  races.sort((a, b) => {
-    for (const rule of rules) {
-      if (a[rule.key] === b[rule.key]) {
-        continue;
-      }
-      if (rule.order === 'asc') {
-        return a[rule.key] < b[rule.key] ? -1 : 1;
-      }
-      if (rule.order === 'desc') {
-        return a[rule.key] > b[rule.key] ? -1 : 1;
-      }
-    }
-    return 0;
-  });
-  return races;
-};
 
 export default class RaceListing extends Component {
   static propTypes = {
@@ -41,11 +21,6 @@ export default class RaceListing extends Component {
     favouriteTracks: PropTypes.array
   }
 
-  static contextTypes = {
-    renderModal: PropTypes.func,
-    closeModal: PropTypes.func
-  }
-
   static defaultProps = {
     time: Math.round(moment().format('X')),
     sort: [{key: 'licenceLevel', order: 'asc'}, {key: 'series', order: 'asc'}],
@@ -57,23 +32,9 @@ export default class RaceListing extends Component {
     favouriteTracks: []
   }
 
-  constructor(props) {
-    super(props);
-    this.state = {seriesModalId: null};
-  }
-
-  showSeriesModal(seriesId) {
-    const { renderModal, closeModal } = this.context;
-    const { ownedTracks } = this.props;
-    renderModal(
-      <SeriesModal onClose={closeModal} ownedTracks={ownedTracks} seriesId={seriesId} />
-    );
-  }
-
   render() {
     const { time, sort, filters, favouriteSeries, ownedTracks, ownedCars,
       favouriteCars, favouriteTracks } = this.props;
-    const { seriesModalId } = this.state;
     let races = allRaces.filter((race) => {
       return race.startTime < (time * 1000) && (time * 1000) < (race.startTime + race.weekLength);
     });
@@ -101,48 +62,15 @@ export default class RaceListing extends Component {
         <table className='table' style={{fontSize: '0.8em'}}>
           <thead>
             <tr>
-              <th>Class</th>
-              <th>Licence</th>
-              <th>Type</th>
-              <th>Series</th>
-              <th>Track</th>
-              <th>Car</th>
-              <th>Start</th>
-              <th>End</th>
-              <th>Official</th>
-              <th>Fixed</th>
+              {columns.map((column, colNum) => <th key={colNum}>{column.header}</th>)}
             </tr>
           </thead>
           <tbody>
             {races.map((race, index) => (
               <tr key={index}>
-                <td><LicenceLevel effective licence={race.licenceLevel} /></td>
-                <td><LicenceLevel licence={race.licenceLevel} /></td>
-                <td>{race.type}</td>
-                <td className='series' onClick={this.showSeriesModal.bind(this, race.seriesId)}>
-                  {favouriteSeries.indexOf(race.seriesId) !== -1 ? (
-                    <span className='glyphicon glyphicon-star' />
-                  ) : null}
-                  <span> </span>{race.series}
-                </td>
-                <td className={classnames({success: ownedTracks.indexOf(race.trackId) !== -1})}>
-                  {favouriteTracks.indexOf(race.trackId) !== -1 ? (
-                    <span className='glyphicon glyphicon-star' />
-                  ) : null}<span> </span>
-                  {race.track}
-                </td>
-                <td className={classnames({success: intersection(ownedCars, race.carIds).length !== 0})}>
-                  {intersection(favouriteCars, race.carIds).length !== 0 ? (
-                    <span className='glyphicon glyphicon-star' />
-                  ) : null}<span> </span>
-                  {race.carClasses.join(', ')}
-                </td>
-                <td>{moment(race.startTime, 'x').format('YYYY-MM-DD')}</td>
-                <td>{
-                  moment(race.startTime + race.weekLength, 'x').subtract(1, 'days').format('YYYY-MM-DD')
-                }</td>
-                <td>{race.official && <span className='glyphicon glyphicon-ok' />}</td>
-                <td>{race.fixed && <span className='glyphicon glyphicon-ok' />}</td>
+                {columns.map((column, colNum) => (
+                  <column.component key={colNum} race={race} {...this.props} />
+                ))}
               </tr>
             ))}
           </tbody>
