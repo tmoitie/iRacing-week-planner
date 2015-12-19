@@ -5,7 +5,7 @@ import allRaces from '../lib/races';
 import filterRaces from '../lib/filterRaces';
 import sortRaces from '../lib/sortRaces';
 
-import columns from '../data/availableColumns';
+import availableColumns from '../data/availableColumns';
 
 import './styles/raceListing.scss';
 
@@ -18,7 +18,8 @@ export default class RaceListing extends Component {
     ownedTracks: PropTypes.array,
     ownedCars: PropTypes.array,
     favouriteCars: PropTypes.array,
-    favouriteTracks: PropTypes.array
+    favouriteTracks: PropTypes.array,
+    columnIds: PropTypes.array
   }
 
   static defaultProps = {
@@ -34,7 +35,7 @@ export default class RaceListing extends Component {
 
   render() {
     const { time, sort, filters, favouriteSeries, ownedTracks, ownedCars,
-      favouriteCars, favouriteTracks } = this.props;
+      favouriteCars, favouriteTracks, columnIds } = this.props;
     let races = allRaces.filter((race) => {
       return race.startTime < (time * 1000) && (time * 1000) < (race.startTime + race.weekLength);
     });
@@ -56,6 +57,13 @@ export default class RaceListing extends Component {
     if (filters.favouriteTracksOnly && races.length === 0) {
       return <p>No races this week match your favourite tracks. Try turning the filter off or adding some.</p>;
     }
+
+    const keyedColumns = availableColumns.reduce((carry, column) => {
+      carry[column.id] = column;
+      return carry;
+    }, {});
+
+    const columns = columnIds.map(columnId => keyedColumns[columnId]);
 
     return (
       <div className='table-responsive race-listing'>

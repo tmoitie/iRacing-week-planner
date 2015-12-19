@@ -11,6 +11,7 @@ import Modal from './components/modal/Modal';
 
 import allCars from './data/cars.json';
 import allTracks from './data/tracks.json';
+import availableColumns from './data/availableColumns';
 
 import { seasonStart, seasonEnd } from './config';
 
@@ -37,7 +38,8 @@ const defaultSettings = {
   ownedTracks: tracks.filter(track => track.freeWithSubscription === true).map(track => track.pkgid),
   favouriteSeries: [],
   favouriteCars: [],
-  favouriteTracks: []
+  favouriteTracks: [],
+  columns: availableColumns.filter(column => column.default === true).map(column => column.id)
 };
 
 export default class App extends Component {
@@ -74,14 +76,15 @@ export default class App extends Component {
   }
 
   componentDidUpdate() {
-    const {filters, ownedCars, ownedTracks, favouriteSeries, favouriteTracks, favouriteCars} = this.state;
+    const {filters, ownedCars, ownedTracks, favouriteSeries, favouriteTracks, favouriteCars, columns} = this.state;
     window.localStorage.setItem('iracing-state', JSON.stringify({
       filters,
       ownedCars,
       ownedTracks,
       favouriteSeries,
       favouriteTracks,
-      favouriteCars
+      favouriteCars,
+      columns
     }));
   }
 
@@ -187,7 +190,7 @@ export default class App extends Component {
 
   render() {
     const {filters, favouriteSeries, ownedCars, ownedTracks, time, favouriteCars, favouriteTracks,
-      currentModal} = this.state;
+      currentModal, columns} = this.state;
     return (
       <div>
         <nav className="navbar navbar-inverse">
@@ -226,7 +229,7 @@ export default class App extends Component {
               </div>
               <RaceListing filters={filters} ownedCars={ownedCars} ownedTracks={ownedTracks}
                 favouriteSeries={favouriteSeries} time={time} favouriteTracks={favouriteTracks}
-                favouriteCars={favouriteCars} />
+                favouriteCars={favouriteCars} columnIds={columns} />
             </div>
           </div>
         </div>
