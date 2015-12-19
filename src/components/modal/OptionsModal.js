@@ -33,7 +33,6 @@ export default class OptionsModal extends Component {
   toggleColumn(id, e) {
     const {columnIds, saveColumns} = this.props;
     const newColumns = toggleIdInCollection(columnIds, id, e.target.checked);
-    console.log(newColumns);
     saveColumns(newColumns);
   }
 
