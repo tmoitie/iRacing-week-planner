@@ -7,6 +7,7 @@ import RaceListing from './components/RaceListing';
 import Filters from './components/Filters';
 import FavouriteSeriesModal from './components/modal/FavouriteSeriesModal';
 import ContentModal from './components/modal/ContentModal';
+import OptionsModal from './components/modal/OptionsModal';
 import Modal from './components/modal/Modal';
 
 import allCars from './data/cars.json';
@@ -53,7 +54,7 @@ export default class App extends Component {
     super(props);
     this.state = cloneDeep(defaultSettings);
     this.state.time = parseInt(moment().hour(11).format('X'), 10);
-    this.state.currentModal = null;
+    this.state.renderCurrentModal = () => null;
   }
 
   getChildContext() {
@@ -84,12 +85,12 @@ export default class App extends Component {
     }));
   }
 
-  renderModal(modal) {
-    this.setState({currentModal: modal});
+  renderModal(renderModal) {
+    this.setState({renderCurrentModal: renderModal});
   }
 
   closeModal() {
-    this.setState({currentModal: null});
+    this.setState({renderCurrentModal: () => null});
   }
 
   updateFilters(newFilters) {
@@ -106,54 +107,76 @@ export default class App extends Component {
 
   openFavouriteSeriesModal(e) {
     e.preventDefault();
-    const { favouriteSeries } = this.state;
-    this.renderModal(
-      <FavouriteSeriesModal onClose={this.closeModal.bind(this)}
-        favouriteSeries={favouriteSeries}
-        save={this.saveOptions.bind(this, 'favouriteSeries')} />
-    );
+    this.renderModal(() => {
+      const { favouriteSeries } = this.state;
+      return (
+        <FavouriteSeriesModal onClose={this.closeModal.bind(this)}
+          favouriteSeries={favouriteSeries}
+          save={this.saveOptions.bind(this, 'favouriteSeries')} />
+      );
+    });
   }
 
   openMyTracksModal(e) {
     e.preventDefault();
-    const { ownedTracks, favouriteTracks } = this.state;
-    this.renderModal(
-      <ContentModal onClose={this.closeModal.bind(this)}
-        title='Set My Tracks'
-        ownedContent={ownedTracks}
-        content={tracks}
-        idField='pkgid'
-        defaultContent={cloneDeep(defaultSettings.ownedTracks)}
-        typeFilter={{key: 'catid', oval: 1, road: 2}}
-        save={this.saveOptions.bind(this, 'ownedTracks')}
-        favourites={favouriteTracks}
-        saveFavourites={this.saveOptions.bind(this, 'favouriteTracks')} />
-    );
+    this.renderModal(() => {
+      const { ownedTracks, favouriteTracks } = this.state;
+      return (
+        <ContentModal onClose={this.closeModal.bind(this)}
+          title='Set My Tracks'
+          ownedContent={ownedTracks}
+          content={tracks}
+          idField='pkgid'
+          defaultContent={cloneDeep(defaultSettings.ownedTracks)}
+          typeFilter={{key: 'catid', oval: 1, road: 2}}
+          save={this.saveOptions.bind(this, 'ownedTracks')}
+          favourites={favouriteTracks}
+          saveFavourites={this.saveOptions.bind(this, 'favouriteTracks')} />
+      );
+    });
   }
 
   openMyCarsModal(e) {
     e.preventDefault();
-    const { ownedCars, favouriteCars } = this.state;
-    this.renderModal(
-      <ContentModal onClose={this.closeModal.bind(this)}
-        title='Set My Cars'
-        ownedContent={ownedCars}
-        content={cars}
-        idField='sku'
-        defaultContent={cloneDeep(defaultSettings.ownedCars)}
-        typeFilter={{key: 'discountGroupNames', oval: ['oval+car'], road: ['road+car']}}
-        save={this.saveOptions.bind(this, 'ownedCars')}
-        favourites={favouriteCars}
-        saveFavourites={this.saveOptions.bind(this, 'favouriteCars')} />
-    );
+    this.renderModal(() => {
+      const { ownedCars, favouriteCars } = this.state;
+      return (
+        <ContentModal onClose={this.closeModal.bind(this)}
+          title='Set My Cars'
+          ownedContent={ownedCars}
+          content={cars}
+          idField='sku'
+          defaultContent={cloneDeep(defaultSettings.ownedCars)}
+          typeFilter={{key: 'discountGroupNames', oval: ['oval+car'], road: ['road+car']}}
+          save={this.saveOptions.bind(this, 'ownedCars')}
+          favourites={favouriteCars}
+          saveFavourites={this.saveOptions.bind(this, 'favouriteCars')} />
+      );
+    });
+  }
+
+  openOptionsModal(e) {
+    e.preventDefault();
+    this.renderModal(() => {
+      const { columns } = this.state;
+      return (
+        <OptionsModal onClose={this.closeModal.bind(this)}
+          columnIds={columns}
+          saveColumns={this.saveOptions.bind(this, 'columns')} />
+      );
+    });
   }
 
   openChangelogModal(e) {
     e.preventDefault();
-    this.renderModal(
+    this.renderModal(() => (
       <Modal onClose={this.closeModal.bind(this)} title='Changelog'
         doneAction={this.closeModal.bind(this)}>
         <div className='container-fluid'>
+          <h3>2015-12-19</h3>
+          <ul>
+            <li>Make columns selectable</li>
+          </ul>
           <h3>2015-12-17</h3>
           <ul>
             <li>Remove P Class series as they have irregular schedules that aren't displaying right.</li>
@@ -173,7 +196,7 @@ export default class App extends Component {
           </ul>
         </div>
       </Modal>
-    );
+    ));
   }
 
   saveOptions(key, value) {
@@ -186,7 +209,7 @@ export default class App extends Component {
 
   render() {
     const {filters, favouriteSeries, ownedCars, ownedTracks, time, favouriteCars, favouriteTracks,
-      currentModal, columns} = this.state;
+      renderCurrentModal, columns} = this.state;
     return (
       <div>
         <nav className="navbar navbar-inverse">
@@ -229,7 +252,7 @@ export default class App extends Component {
             </div>
           </div>
         </div>
-        {currentModal}
+        {renderCurrentModal()}
       </div>
     );
   }

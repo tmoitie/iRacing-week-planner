@@ -15,10 +15,12 @@ export default class Series extends Component {
 
   showSeriesModal(seriesId) {
     const { renderModal, closeModal } = this.context;
-    const { ownedTracks } = this.props;
-    renderModal(
-      <SeriesModal onClose={closeModal} ownedTracks={ownedTracks} seriesId={seriesId} />
-    );
+    renderModal(() => {
+      const { ownedTracks } = this.props;
+      return (
+        <SeriesModal onClose={closeModal} ownedTracks={ownedTracks} seriesId={seriesId} />
+      );
+    });
   }
 
   render() {
