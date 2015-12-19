@@ -66,6 +66,7 @@ export default class App extends Component {
   }
 
   componentDidMount() {
+    /* eslint react/no-did-mount-set-state: 0 */
     const stored = window.localStorage.getItem('iracing-state');
     if (stored) {
       this.setState(JSON.parse(stored));
