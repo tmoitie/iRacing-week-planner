@@ -227,6 +227,9 @@ export default class App extends Component {
               <li><a href='' onClick={this.openFavouriteSeriesModal.bind(this)}>
                 Set favorite series
               </a></li>
+              <li><a href='' onClick={this.openOptionsModal.bind(this)}>
+                Options
+              </a></li>
               <li><a href='' onClick={this.openChangelogModal.bind(this)}>
                 Changelog
               </a></li>
