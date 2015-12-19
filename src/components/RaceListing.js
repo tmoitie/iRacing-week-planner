@@ -58,12 +58,9 @@ export default class RaceListing extends Component {
       return <p>No races this week match your favourite tracks. Try turning the filter off or adding some.</p>;
     }
 
-    const keyedColumns = availableColumns.reduce((carry, column) => {
-      carry[column.id] = column;
-      return carry;
-    }, {});
-
-    const columns = columnIds.map(columnId => keyedColumns[columnId]);
+    const columns = availableColumns.filter((column) => {
+      return columnIds.indexOf(column.id) !== -1;
+    });
 
     return (
       <div className='table-responsive race-listing'>
