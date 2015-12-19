@@ -4,6 +4,7 @@ import moment from 'moment';
 import { clone, intersection } from 'lodash';
 
 import allRaces from '../lib/races';
+import filterRaces from '../lib/filterRaces';
 import LicenceLevel from './LicenceLevel';
 import SeriesModal from './modal/SeriesModal';
 
@@ -12,7 +13,7 @@ import './styles/raceListing.scss';
 const sortRaces = (rules, unordered) => {
   const races = clone(unordered);
   races.sort((a, b) => {
-    for (let rule of rules) {
+    for (const rule of rules) {
       if (a[rule.key] === b[rule.key]) {
         continue;
       }
@@ -26,7 +27,7 @@ const sortRaces = (rules, unordered) => {
     return 0;
   });
   return races;
-}
+};
 
 export default class RaceListing extends Component {
   static propTypes = {
@@ -38,6 +39,11 @@ export default class RaceListing extends Component {
     ownedCars: PropTypes.array,
     favouriteCars: PropTypes.array,
     favouriteTracks: PropTypes.array
+  }
+
+  static contextTypes = {
+    renderModal: PropTypes.func,
+    closeModal: PropTypes.func
   }
 
   static defaultProps = {
@@ -53,15 +59,15 @@ export default class RaceListing extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {seriesModalId: null}
+    this.state = {seriesModalId: null};
   }
 
   showSeriesModal(seriesId) {
-    this.setState({ seriesModalId: seriesId });
-  }
-
-  closeModal() {
-    this.setState({ seriesModalId: null });
+    const { renderModal, closeModal } = this.context;
+    const { ownedTracks } = this.props;
+    renderModal(
+      <SeriesModal onClose={closeModal} ownedTracks={ownedTracks} seriesId={seriesId} />
+    );
   }
 
   render() {
@@ -74,58 +80,16 @@ export default class RaceListing extends Component {
 
     races = sortRaces(sort, races);
 
-    races = races.filter((race) => {
-      return filters.type.indexOf(race.type) !== -1;
+    races = filterRaces({
+      races, filters, ownedTracks, ownedCars, favouriteSeries, favouriteCars, favouriteTracks
     });
-
-    races = races.filter((race) => {
-      return filters.licence.indexOf(race.licenceClass) !== -1;
-    });
-
-    races = races.filter((race) => {
-      return filters.fixed.indexOf(race.fixed) !== -1;
-    });
-
-    races = races.filter((race) => {
-      return filters.official.indexOf(race.official) !== -1;
-    });
-
-    if (filters.ownedTracks) {
-      races = races.filter((race) => {
-        return ownedTracks.indexOf(race.trackId) !== -1;
-      });
-    }
-
-    if (filters.ownedCars) {
-      races = races.filter((race) => {
-        return intersection(ownedCars, race.carIds).length !== 0;
-      });
-    }
-
-    if (filters.favouriteSeries) {
-      races = races.filter((race) => {
-        return favouriteSeries.indexOf(race.seriesId) !== -1;
-      });
-    }
 
     if (filters.favouriteSeries && races.length === 0) {
       return <p>No races this week match your favourite series. Try turning the filter off or adding some.</p>;
     }
 
-    if (filters.favouriteCarsOnly) {
-      races = races.filter((race) => {
-        return intersection(favouriteCars, race.carIds).length !== 0;
-      });
-    }
-
     if (filters.favouriteCarsOnly && races.length === 0) {
       return <p>No races this week match your favourite cars. Try turning the filter off or adding some.</p>;
-    }
-
-    if (filters.favouriteTracksOnly) {
-      races = races.filter((race) => {
-        return favouriteTracks.indexOf(race.trackId) !== -1;
-      });
     }
 
     if (filters.favouriteTracksOnly && races.length === 0) {
@@ -133,8 +97,8 @@ export default class RaceListing extends Component {
     }
 
     return (
-      <div className="table-responsive race-listing">
-        <table className="table" style={{fontSize: '0.8em'}}>
+      <div className='table-responsive race-listing'>
+        <table className='table' style={{fontSize: '0.8em'}}>
           <thead>
             <tr>
               <th>Class</th>
@@ -157,19 +121,19 @@ export default class RaceListing extends Component {
                 <td>{race.type}</td>
                 <td className='series' onClick={this.showSeriesModal.bind(this, race.seriesId)}>
                   {favouriteSeries.indexOf(race.seriesId) !== -1 ? (
-                    <span className="glyphicon glyphicon-star" />
+                    <span className='glyphicon glyphicon-star' />
                   ) : null}
                   <span> </span>{race.series}
                 </td>
                 <td className={classnames({success: ownedTracks.indexOf(race.trackId) !== -1})}>
                   {favouriteTracks.indexOf(race.trackId) !== -1 ? (
-                    <span className="glyphicon glyphicon-star" />
+                    <span className='glyphicon glyphicon-star' />
                   ) : null}<span> </span>
                   {race.track}
                 </td>
                 <td className={classnames({success: intersection(ownedCars, race.carIds).length !== 0})}>
                   {intersection(favouriteCars, race.carIds).length !== 0 ? (
-                    <span className="glyphicon glyphicon-star" />
+                    <span className='glyphicon glyphicon-star' />
                   ) : null}<span> </span>
                   {race.carClasses.join(', ')}
                 </td>
@@ -177,15 +141,12 @@ export default class RaceListing extends Component {
                 <td>{
                   moment(race.startTime + race.weekLength, 'x').subtract(1, 'days').format('YYYY-MM-DD')
                 }</td>
-                <td>{race.official && <span className="glyphicon glyphicon-ok" />}</td>
-                <td>{race.fixed && <span className="glyphicon glyphicon-ok" />}</td>
+                <td>{race.official && <span className='glyphicon glyphicon-ok' />}</td>
+                <td>{race.fixed && <span className='glyphicon glyphicon-ok' />}</td>
               </tr>
             ))}
           </tbody>
         </table>
-        {seriesModalId ? (
-          <SeriesModal onClose={this.closeModal.bind(this)} ownedTracks={ownedTracks} seriesId={seriesModalId} />
-        ) : null}
       </div>
     );
   }

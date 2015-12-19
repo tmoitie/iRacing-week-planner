@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import {cloneDeep, uniq, sortBy} from 'lodash';
 import TimeSlider from './components/TimeSlider';
 import moment from 'moment';
@@ -41,6 +41,12 @@ const defaultSettings = {
 };
 
 export default class App extends Component {
+
+  static childContextTypes = {
+    renderModal: PropTypes.func,
+    closeModal: PropTypes.func
+  };
+
   constructor(props) {
     super(props);
     this.state = cloneDeep(defaultSettings);
@@ -49,6 +55,14 @@ export default class App extends Component {
     this.state.modalChangelog = false;
     this.state.modalFavouriteSeries = false;
     this.state.time = parseInt(moment().hour(11).format('X'), 10);
+    this.state.currentModal = null;
+  }
+
+  getChildContext() {
+    return {
+      renderModal: this.renderModal.bind(this),
+      closeModal: this.closeModal.bind(this)
+    };
   }
 
   componentDidMount() {
@@ -70,6 +84,14 @@ export default class App extends Component {
     }));
   }
 
+  renderModal(modal) {
+    this.setState({currentModal: modal});
+  }
+
+  closeModal() {
+    this.setState({currentModal: null});
+  }
+
   updateFilters(newFilters) {
     this.setState({ filters: newFilters });
   }
@@ -82,13 +104,76 @@ export default class App extends Component {
     this.setState(cloneDeep(defaultSettings));
   }
 
-  openModalClick(key, e) {
+  openFavouriteSeriesModal(e) {
     e.preventDefault();
-    this.setState({[key]: true});
+    const { favouriteSeries } = this.state;
+    this.renderModal(
+      <FavouriteSeriesModal onClose={this.closeModal.bind(this)}
+        favouriteSeries={favouriteSeries}
+        save={this.saveOptions.bind(this, 'favouriteSeries')} />
+    );
   }
 
-  closeModal(key) {
-    this.setState({[key]: false});
+  openMyTracksModal(e) {
+    e.preventDefault();
+    const { ownedTracks, favouriteTracks } = this.state;
+    this.renderModal(
+      <ContentModal onClose={this.closeModal.bind(this)}
+        title='Set My Tracks'
+        ownedContent={ownedTracks}
+        content={tracks}
+        idField='pkgid'
+        defaultContent={cloneDeep(defaultSettings.ownedTracks)}
+        typeFilter={{key: 'catid', oval: 1, road: 2}}
+        save={this.saveOptions.bind(this, 'ownedTracks')}
+        favourites={favouriteTracks}
+        saveFavourites={this.saveOptions.bind(this, 'favouriteTracks')} />
+    );
+  }
+
+  openMyCarsModal(e) {
+    e.preventDefault();
+    const { ownedCars, favouriteCars } = this.state;
+    this.renderModal(
+      <ContentModal onClose={this.closeModal.bind(this)}
+        title='Set My Cars'
+        ownedContent={ownedCars}
+        content={cars}
+        idField='sku'
+        defaultContent={cloneDeep(defaultSettings.ownedCars)}
+        typeFilter={{key: 'discountGroupNames', oval: ['oval+car'], road: ['road+car']}}
+        save={this.saveOptions.bind(this, 'ownedCars')}
+        favourites={favouriteCars}
+        saveFavourites={this.saveOptions.bind(this, 'favouriteCars')} />
+    );
+  }
+
+  openChangelogModal(e) {
+    e.preventDefault();
+    this.renderModal(
+      <Modal onClose={this.closeModal.bind(this)} title='Changelog'
+        doneAction={this.closeModal.bind(this)}>
+        <div className='container-fluid'>
+          <h3>2015-12-17</h3>
+          <ul>
+            <li>Remove P Class series as they have irregular schedules that aren't displaying right.</li>
+            <li>Added this changelog!</li>
+          </ul>
+          <h3>2015-12-16</h3>
+          <ul>
+            <li>Add ability to 'favorite' content with the star icon.</li>
+            <li>Fix bug with disabled default content.</li>
+          </ul>
+          <h3>2015-12-15</h3>
+          <ul>
+            <li>Add "Select All Oval/Road" to content choosers.</li>
+            <li>Made free content un-unselectable.</li>
+            <li>Made series clickable with popup showing all race weeks.</li>
+            <li>Add licence class column to table.</li>
+          </ul>
+        </div>
+      </Modal>
+    );
   }
 
   saveOptions(key, value) {
@@ -100,8 +185,8 @@ export default class App extends Component {
   }
 
   render() {
-    const {filters, modalTracks, modalCars, modalFavouriteSeries, modalChangelog,
-      favouriteSeries, ownedCars, ownedTracks, time, favouriteCars, favouriteTracks} = this.state;
+    const {filters, favouriteSeries, ownedCars, ownedTracks, time, favouriteCars, favouriteTracks,
+      currentModal} = this.state;
     return (
       <div>
         <nav className="navbar navbar-inverse">
@@ -110,16 +195,16 @@ export default class App extends Component {
               <a className="navbar-brand" href="">iRacing Week Planner</a>
             </div>
             <ul className="nav navbar-nav navbar-right">
-              <li><a href="" onClick={this.openModalClick.bind(this, 'modalTracks')}>
+              <li><a href='' onClick={this.openMyTracksModal.bind(this)}>
                 Set my tracks
               </a></li>
-              <li><a href="" onClick={this.openModalClick.bind(this, 'modalCars')}>
+              <li><a href='' onClick={this.openMyCarsModal.bind(this)}>
                 Set my cars
               </a></li>
-              <li><a href="" onClick={this.openModalClick.bind(this, 'modalFavouriteSeries')}>
+              <li><a href='' onClick={this.openFavouriteSeriesModal.bind(this)}>
                 Set favorite series
               </a></li>
-              <li><a href="" onClick={this.openModalClick.bind(this, 'modalChangelog')}>
+              <li><a href='' onClick={this.openChangelogModal.bind(this)}>
                 Changelog
               </a></li>
             </ul>
@@ -144,59 +229,7 @@ export default class App extends Component {
             </div>
           </div>
         </div>
-        {modalFavouriteSeries ? (
-          <FavouriteSeriesModal onClose={this.closeModal.bind(this, 'modalFavouriteSeries')}
-            favouriteSeries={favouriteSeries}
-            save={this.saveOptions.bind(this, 'favouriteSeries')} />
-        ) : null}
-        {modalCars ? (
-          <ContentModal onClose={this.closeModal.bind(this, 'modalCars')}
-            title='Set My Cars'
-            ownedContent={ownedCars}
-            content={cars}
-            idField='sku'
-            defaultContent={cloneDeep(defaultSettings.ownedCars)}
-            typeFilter={{key: 'discountGroupNames', oval: ['oval+car'], road: ['road+car']}}
-            save={this.saveOptions.bind(this, 'ownedCars')}
-            favourites={favouriteCars}
-            saveFavourites={this.saveOptions.bind(this, 'favouriteCars')} />
-        ) : null}
-        {modalTracks ? (
-          <ContentModal onClose={this.closeModal.bind(this, 'modalTracks')}
-            title='Set My Tracks'
-            ownedContent={ownedTracks}
-            content={tracks}
-            idField='pkgid'
-            defaultContent={cloneDeep(defaultSettings.ownedTracks)}
-            typeFilter={{key: 'catid', oval: 1, road: 2}}
-            save={this.saveOptions.bind(this, 'ownedTracks')}
-            favourites={favouriteTracks}
-            saveFavourites={this.saveOptions.bind(this, 'favouriteTracks')} />
-        ) : null}
-        {modalChangelog ? (
-          <Modal onClose={this.closeModal.bind(this, 'modalChangelog')} title='Changelog'
-            doneAction={this.closeModal.bind(this, 'modalChangelog')}>
-            <div className="container-fluid">
-              <h3>2015-12-17</h3>
-              <ul>
-                <li>Remove P Class series as they have irregular schedules that aren't displaying right.</li>
-                <li>Added this changelog!</li>
-              </ul>
-              <h3>2015-12-16</h3>
-              <ul>
-                <li>Add ability to 'favorite' content with the star icon.</li>
-                <li>Fix bug with disabled default content.</li>
-              </ul>
-              <h3>2015-12-15</h3>
-              <ul>
-                <li>Add "Select All Oval/Road" to content choosers.</li>
-                <li>Made free content un-unselectable.</li>
-                <li>Made series clickable with popup showing all race weeks.</li>
-                <li>Add licence class column to table.</li>
-              </ul>
-            </div>
-          </Modal>
-        ) : null}
+        {currentModal}
       </div>
     );
   }
