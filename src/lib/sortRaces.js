@@ -1,7 +1,7 @@
-import { cloneDeep } from 'lodash';
+import { clone } from 'lodash';
 
 export default (rules, unordered) => {
-  const races = cloneDeep(unordered);
+  const races = clone(unordered);
   races.sort((a, b) => {
     for (const rule of rules) {
       if (a[rule.key] === b[rule.key]) {

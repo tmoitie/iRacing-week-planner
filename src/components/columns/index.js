@@ -3,6 +3,7 @@ export Class from './Class';
 export EndDate from './EndDate';
 export Fixed from './Fixed';
 export Licence from './Licence';
+export NextRace from './NextRace';
 export Official from './Official';
 export Series from './Series';
 export StartDate from './StartDate';

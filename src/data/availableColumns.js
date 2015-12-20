@@ -1,4 +1,6 @@
-import {Car, Class, EndDate, Fixed, Licence, Official, Series, StartDate, Track, Type} from '../components/columns/';
+import {
+  Car, Class, EndDate, Fixed, Licence, NextRace, Official, Series, StartDate, Track, Type
+} from '../components/columns/';
 
 /* eslint react/no-multi-comp: 0 */
 
@@ -69,4 +71,9 @@ export default [{
   header: 'Fixed',
   component: Fixed,
   sort: (a, b) => a.fixed === b.fixed ? 0 : (a.fixed === false ? -1 : 1)
+}, {
+  id: 'nextRace',
+  header: 'Next Race',
+  component: NextRace
+  // sort: (a, b) => a.fixed === b.fixed ? 0 : (a.fixed === false ? -1 : 1)
 }];
