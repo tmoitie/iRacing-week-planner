@@ -1,5 +1,5 @@
 import {
-  Car, Class, EndDate, Fixed, Licence, NextRace, Official, Series, StartDate, Track, Type
+  Car, Class, EndDate, Fixed, Licence, NextRace, Official, RaceTimes, Series, StartDate, Track, Type
 } from '../components/columns/';
 
 /* eslint react/no-multi-comp: 0 */
@@ -72,9 +72,13 @@ export default [{
   component: Fixed,
   sort: (a, b) => a.fixed === b.fixed ? 0 : (a.fixed === false ? -1 : 1)
 }, {
+  id: 'raceTimes',
+  header: 'Race Times',
+  component: RaceTimes
+}, {
   id: 'nextRace',
   header: 'Next Race',
   component: NextRace,
-  default: true
-  // sort: (a, b) => a.fixed === b.fixed ? 0 : (a.fixed === false ? -1 : 1)
+  default: true,
+  sort: (a, b) => a.nextTime.isSame(b.nextTime) ? 0 : (a.nextTime.isBefore(b.nextTime) ? -1 : 1)
 }];

@@ -5,6 +5,7 @@ export Fixed from './Fixed';
 export Licence from './Licence';
 export NextRace from './NextRace';
 export Official from './Official';
+export RaceTimes from './RaceTimes';
 export Series from './Series';
 export StartDate from './StartDate';
 export Track from './Track';

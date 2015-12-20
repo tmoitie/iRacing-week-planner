@@ -27,7 +27,7 @@ export default class Series extends Component {
     const { race, favouriteSeries } = this.props;
 
     return (
-      <td className='series' onClick={this.showSeriesModal.bind(this, race.seriesId)}>
+      <td className='clickable-cell' onClick={this.showSeriesModal.bind(this, race.seriesId)}>
         {favouriteSeries.indexOf(race.seriesId) !== -1 ? (
           <span className='glyphicon glyphicon-star' />
         ) : null}
