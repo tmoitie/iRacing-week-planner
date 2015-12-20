@@ -11,7 +11,7 @@ import './styles/raceListing.scss';
 
 export default class RaceListing extends Component {
   static propTypes = {
-    time: PropTypes.number,
+    date: PropTypes.object,
     sort: PropTypes.array,
     filters: PropTypes.object,
     favouriteSeries: PropTypes.array,
@@ -23,7 +23,7 @@ export default class RaceListing extends Component {
   }
 
   static defaultProps = {
-    time: Math.round(moment().format('X')),
+    date: moment().utc().startOf('day'),
     sort: [{key: 'licenceLevel', order: 'asc'}, {key: 'series', order: 'asc'}],
     filters: [],
     favouriteSeries: [],
@@ -34,10 +34,13 @@ export default class RaceListing extends Component {
   }
 
   render() {
-    const { time, sort, filters, favouriteSeries, ownedTracks, ownedCars,
+    const { date, sort, filters, favouriteSeries, ownedTracks, ownedCars,
       favouriteCars, favouriteTracks, columnIds } = this.props;
     let races = allRaces.filter((race) => {
-      return race.startTime < (time * 1000) && (time * 1000) < (race.startTime + race.weekLength);
+      return moment(date).add(1, 'ms').isBetween(
+        race.startTime,
+        moment(race.startTime).add(race.weekLength)
+      );
     });
 
     races = sortRaces(sort, races);

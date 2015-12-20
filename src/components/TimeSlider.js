@@ -2,7 +2,6 @@ import React, {Component, PropTypes} from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import 'jquery-ui/slider';
-import moment from 'moment';
 
 import 'jquery-ui/themes/base/jquery.ui.core.css';
 import 'jquery-ui/themes/base/jquery.ui.slider.css';

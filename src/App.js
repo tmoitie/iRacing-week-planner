@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import {cloneDeep, uniq, sortBy} from 'lodash';
 import TimeSlider from './components/TimeSlider';
-import moment from 'moment';
+import moment, {duration} from 'moment';
 
 import RaceListing from './components/RaceListing';
 import Filters from './components/Filters';
@@ -53,7 +53,7 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = cloneDeep(defaultSettings);
-    this.state.time = parseInt(moment().hour(11).format('X'), 10);
+    this.state.date = moment().utc().startOf('day');
     this.state.renderCurrentModal = () => null;
   }
 
@@ -207,12 +207,12 @@ export default class App extends Component {
     this.setState({[key]: value});
   }
 
-  updateTime(time) {
-    this.setState({ time: time });
+  updateDate(date) {
+    this.setState({ date: moment(date, 'X') });
   }
 
   render() {
-    const {filters, favouriteSeries, ownedCars, ownedTracks, time, favouriteCars, favouriteTracks,
+    const {filters, favouriteSeries, ownedCars, ownedTracks, date, favouriteCars, favouriteTracks,
       renderCurrentModal, columns} = this.state;
     return (
       <div>
@@ -248,13 +248,14 @@ export default class App extends Component {
                 resetSettings={this.resetSettings.bind(this)} resetFilters={this.resetFilters.bind(this)} />
             </div>
             <div className="col-md-10">
-              <h3>Races for date: {moment(time, 'X').format('YYYY MMM DD')}</h3>
+              <h3>Races for date: {moment(date).local().format('YYYY MMM DD')}</h3>
               <div style={{marginBottom: 10}}>
-                <TimeSlider minFrom={seasonStart} maxTo={seasonEnd} onChange={this.updateTime.bind(this)}
-                  initial={time} step={moment.duration(1, 'days').asSeconds()} />
+                <TimeSlider minFrom={parseInt(seasonStart.format('X'), 10)} maxTo={parseInt(seasonEnd.format('X'), 10)}
+                  onChange={this.updateDate.bind(this)} initial={parseInt(date.format('X'), 10)}
+                  step={duration(1, 'days').asSeconds()} />
               </div>
               <RaceListing filters={filters} ownedCars={ownedCars} ownedTracks={ownedTracks}
-                favouriteSeries={favouriteSeries} time={time} favouriteTracks={favouriteTracks}
+                favouriteSeries={favouriteSeries} date={date} favouriteTracks={favouriteTracks}
                 favouriteCars={favouriteCars} columnIds={columns} />
             </div>
           </div>

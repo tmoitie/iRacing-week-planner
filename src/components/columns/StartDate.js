@@ -10,7 +10,7 @@ export default class StartDate extends Component {
     const { race } = this.props;
 
     return (
-      <td>{moment(race.startTime, 'x').format('YYYY-MM-DD')}</td>
+      <td>{moment(race.startTime).local().format('YYYY-MM-DD')}</td>
     );
   }
 }

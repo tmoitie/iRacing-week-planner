@@ -11,7 +11,7 @@ export default class EndDate extends Component {
 
     return (
       <td>{
-        moment(race.startTime + race.weekLength, 'x').subtract(1, 'days').format('YYYY-MM-DD')
+        moment(race.startTime).local().add(race.weekLength).subtract(1, 'days').format('YYYY-MM-DD')
       }</td>
     );
   }

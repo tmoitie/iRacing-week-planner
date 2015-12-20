@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import moment from 'moment';
 
 export default class NextRace extends Component {
   static propTypes = {
@@ -12,6 +13,6 @@ export default class NextRace extends Component {
       return <td>No time data</td>;
     }
 
-    return <td>{race.nextTime.local().format('ddd h:mma')}</td>;
+    return <td>{moment(race.nextTime).local().format('ddd h:mma')}</td>;
   }
 }
