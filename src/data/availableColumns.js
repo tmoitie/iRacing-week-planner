@@ -74,6 +74,7 @@ export default [{
 }, {
   id: 'nextRace',
   header: 'Next Race',
-  component: NextRace
+  component: NextRace,
+  default: true
   // sort: (a, b) => a.fixed === b.fixed ? 0 : (a.fixed === false ? -1 : 1)
 }];

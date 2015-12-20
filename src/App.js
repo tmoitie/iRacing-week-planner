@@ -173,6 +173,10 @@ export default class App extends Component {
       <Modal onClose={this.closeModal.bind(this)} title='Changelog'
         doneAction={this.closeModal.bind(this)}>
         <div className='container-fluid'>
+          <h3>2015-12-20</h3>
+          <ul>
+            <li>Add next race time column</li>
+          </ul>
           <h3>2015-12-19</h3>
           <ul>
             <li>Make columns selectable</li>
