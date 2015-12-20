@@ -175,6 +175,7 @@ export default class App extends Component {
         <div className='container-fluid'>
           <h3>2015-12-20</h3>
           <ul>
+            <li>Add race times column</li>
             <li>Add next race time column</li>
           </ul>
           <h3>2015-12-19</h3>
