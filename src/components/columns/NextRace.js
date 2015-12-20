@@ -12,6 +12,6 @@ export default class NextRace extends Component {
       return <td>No time data</td>;
     }
 
-    return <td>{race.nextTime.format('ddd h:mma')}</td>;
+    return <td>{race.nextTime.local().format('ddd h:mma')}</td>;
   }
 }

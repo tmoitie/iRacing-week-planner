@@ -8,7 +8,7 @@ const raceTimesById = raceTimesArray.reduce((races, race) => {
   return races;
 }, {});
 
-const now = moment();
+const now = moment().utc();
 const startOfWeek = now.clone().subtract(1, 'days').startOf('isoWeek').add(1, 'days');
 
 function getNextRaceFromRecur(everyTime, offset) {
