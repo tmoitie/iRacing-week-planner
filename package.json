@@ -1,33 +1,21 @@
 {
-  "name": "react-hot-boilerplate",
+  "name": "iracing-week-planner",
   "version": "1.0.0",
-  "description": "Boilerplate for ReactJS project with hot code reloading",
+  "description": "Weekly planner for iRacing.com races",
   "scripts": {
     "build": "node_modules/.bin/webpack --config webpack.config.js",
-    "start": "node server.js",
-    "lint": "eslint src"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gaearon/react-hot-boilerplate.git"
+    "url": "https://github.com/tmoitie/iRacing-week-planner.git"
   },
-  "keywords": [
-    "react",
-    "reactjs",
-    "boilerplate",
-    "hot",
-    "reload",
-    "hmr",
-    "live",
-    "edit",
-    "webpack"
-  ],
-  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
+  "author": "Tom Moitié <tom@tmoitie.co.uk",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gaearon/react-hot-boilerplate/issues"
+    "url": "https://github.com/tmoitie/iRacing-week-planner/issues"
   },
-  "homepage": "https://github.com/gaearon/react-hot-boilerplate",
+  "homepage": "https://iracing-week-planner.tmo.lol",
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",
     "babel-core": "^6.0.20",
