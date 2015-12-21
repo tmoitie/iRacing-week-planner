@@ -40,6 +40,7 @@ const defaultSettings = {
   favouriteSeries: [],
   favouriteCars: [],
   favouriteTracks: [],
+  sort: {key: 'licence', order: 'asc'},
   columns: availableColumns.filter(column => column.default === true).map(column => column.id)
 };
 
@@ -73,15 +74,14 @@ export default class App extends Component {
   }
 
   componentDidUpdate() {
-    const {filters, ownedCars, ownedTracks, favouriteSeries, favouriteTracks, favouriteCars, columns} = this.state;
+    const {
+      filters, ownedCars, ownedTracks, favouriteSeries, favouriteTracks, favouriteCars,
+      columns, sort
+    } = this.state;
+
     window.localStorage.setItem('iracing-state', JSON.stringify({
-      filters,
-      ownedCars,
-      ownedTracks,
-      favouriteSeries,
-      favouriteTracks,
-      favouriteCars,
-      columns
+      filters, ownedCars, ownedTracks, favouriteSeries, favouriteTracks, favouriteCars,
+      columns, sort
     }));
   }
 
@@ -175,6 +175,7 @@ export default class App extends Component {
         <div className='container-fluid'>
           <h3>2015-12-20</h3>
           <ul>
+            <li>Add sortable columns</li>
             <li>Add race times column</li>
             <li>Add next race time column</li>
           </ul>
@@ -214,7 +215,7 @@ export default class App extends Component {
 
   render() {
     const {filters, favouriteSeries, ownedCars, ownedTracks, date, favouriteCars, favouriteTracks,
-      renderCurrentModal, columns} = this.state;
+      renderCurrentModal, columns, sort} = this.state;
     return (
       <div>
         <nav className="navbar navbar-inverse">
@@ -257,7 +258,8 @@ export default class App extends Component {
               </div>
               <RaceListing filters={filters} ownedCars={ownedCars} ownedTracks={ownedTracks}
                 favouriteSeries={favouriteSeries} date={date} favouriteTracks={favouriteTracks}
-                favouriteCars={favouriteCars} columnIds={columns} />
+                favouriteCars={favouriteCars} columnIds={columns} sort={sort}
+                updateSort={this.saveOptions.bind(this, 'sort')} />
             </div>
           </div>
         </div>

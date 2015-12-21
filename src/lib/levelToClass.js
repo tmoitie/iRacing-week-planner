@@ -15,3 +15,7 @@ function realLevelToClass(level) {
 
   return levels[index];
 }
+
+export function levelToClassNumber(level) {
+  return Math.floor((level) / 4);
+}

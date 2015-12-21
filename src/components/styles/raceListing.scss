@@ -1,4 +1,8 @@
 .race-listing {
+  th {
+    white-space: nowrap;
+  }
+
   .clickable-cell {
     cursor: pointer;
     transition: background .3s;

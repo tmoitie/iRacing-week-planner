@@ -1,5 +1,5 @@
 import season from '../data/season.json';
-import levelToClass from './levelToClass';
+import levelToClass, {levelToClassNumber} from './levelToClass';
 import raceTimesArray from '../data/raceTimes';
 import moment, {duration} from 'moment';
 
@@ -43,7 +43,7 @@ function getNextRaceSetTimes(setTimes) {
   return null;
 }
 
-const fixText = (text) => (decodeURIComponent(text).replace(/\+/g, ' '));
+const fixText = (text) => (decodeURIComponent(text).replace(/\+/g, ' ').trim());
 
 export default season.reduce((carry, series) => {
   const seriesName = fixText(series.seriesname);
@@ -75,6 +75,7 @@ export default season.reduce((carry, series) => {
       weekLength: duration(raceWeekLength),
       official: series.isOfficial,
       licenceLevel: series.minlicenselevel,
+      licenceClassNumber: levelToClassNumber(series.minlicenselevel),
       licenceClass: levelToClass(series.minlicenselevel, true),
       type: series.catid === 1 ? 'Oval' : 'Road',
       fixed: series.isFixedSetup,

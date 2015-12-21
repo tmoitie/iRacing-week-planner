@@ -1,20 +1,15 @@
 import { clone } from 'lodash';
+import columns from '../data/availableColumns';
 
-export default (rules, unordered) => {
+const columnsById = columns.reduce((columnObject, column) => {
+  columnObject[column.id] = column;
+  return columnObject;
+}, {});
+
+export default (rule, unordered) => {
   const races = clone(unordered);
-  races.sort((a, b) => {
-    for (const rule of rules) {
-      if (a[rule.key] === b[rule.key]) {
-        continue;
-      }
-      if (rule.order === 'asc') {
-        return a[rule.key] < b[rule.key] ? -1 : 1;
-      }
-      if (rule.order === 'desc') {
-        return a[rule.key] > b[rule.key] ? -1 : 1;
-      }
-    }
-    return 0;
-  });
+
+  races.sort(columnsById[rule.key].sort.bind(null, rule.order));
+
   return races;
 };

@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import moment from 'moment';
+import { clone } from 'lodash';
 
 import allRaces from '../lib/races';
 import filterRaces from '../lib/filterRaces';
@@ -12,25 +13,41 @@ import './styles/raceListing.scss';
 export default class RaceListing extends Component {
   static propTypes = {
     date: PropTypes.object,
-    sort: PropTypes.array,
+    sort: PropTypes.object,
     filters: PropTypes.object,
     favouriteSeries: PropTypes.array,
     ownedTracks: PropTypes.array,
     ownedCars: PropTypes.array,
     favouriteCars: PropTypes.array,
     favouriteTracks: PropTypes.array,
-    columnIds: PropTypes.array
+    columnIds: PropTypes.array,
+    updateSort: PropTypes.func
   }
 
   static defaultProps = {
     date: moment().utc().startOf('day'),
-    sort: [{key: 'licenceLevel', order: 'asc'}, {key: 'series', order: 'asc'}],
+    sort: {key: 'licence', order: 'asc'},
     filters: [],
     favouriteSeries: [],
     ownedTracks: [],
     ownedCars: [],
     favouriteCars: [],
-    favouriteTracks: []
+    favouriteTracks: [],
+    updateSort: () => {}
+  }
+
+  sortColumn(columnId) {
+    const {sort, updateSort} = this.props;
+    let newSort = clone(sort);
+
+    if (sort.key === columnId) {
+      newSort.order = sort.order === 'asc' ? 'desc' : 'asc';
+      updateSort(newSort);
+      return;
+    }
+
+    newSort = {key: columnId, order: 'asc'};
+    updateSort(newSort);
   }
 
   render() {
@@ -70,7 +87,22 @@ export default class RaceListing extends Component {
         <table className='table' style={{fontSize: '0.8em'}}>
           <thead>
             <tr>
-              {columns.map((column, colNum) => <th key={colNum}>{column.header}</th>)}
+              {columns.map((column, colNum) => (
+                <th
+                  key={colNum}
+                  onClick={column.sort ? this.sortColumn.bind(this, column.id, column.defaultOrder) : () => {}}
+                  className={column.sort ? 'clickable-cell' : null}>
+                  {column.header}
+                  <span> </span>
+                  {sort.key === column.id ? (
+                    sort.order === 'desc' ? (
+                      <span className='glyphicon glyphicon-triangle-bottom' />
+                    ) : (
+                      <span className='glyphicon glyphicon-triangle-top' />
+                    )
+                  ) : null}
+                </th>
+              ))}
             </tr>
           </thead>
           <tbody>
