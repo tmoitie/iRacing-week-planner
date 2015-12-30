@@ -11,7 +11,7 @@ import OptionsModal from './components/modal/OptionsModal';
 import Modal from './components/modal/Modal';
 
 import allCars from './data/cars.json';
-import allTracks from './data/tracks.json';
+import tracks from './lib/tracks';
 import availableColumns from './data/availableColumns';
 
 import { seasonStart, seasonEnd } from './config';
@@ -19,7 +19,6 @@ import { seasonStart, seasonEnd } from './config';
 import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
 const cars = uniq(allCars, false, (car) => car.sku);
-const tracks = sortBy(uniq(sortBy(allTracks, 'priority'), false, 'pkgid'), 'name');
 
 const defaultFilters = {
   type: ['Road', 'Oval'],
@@ -36,7 +35,7 @@ const defaultFilters = {
 const defaultSettings = {
   filters: defaultFilters,
   ownedCars: cars.filter(car => car.freeWithSubscription === true).map(car => car.sku),
-  ownedTracks: tracks.filter(track => track.freeWithSubscription === true).map(track => track.pkgid),
+  ownedTracks: tracks.filter(track => track.default).map(track => track.id),
   favouriteSeries: [],
   favouriteCars: [],
   favouriteTracks: [],
@@ -129,9 +128,9 @@ export default class App extends Component {
           title='Set My Tracks'
           ownedContent={ownedTracks}
           content={tracks}
-          idField='pkgid'
+          idField='id'
           defaultContent={cloneDeep(defaultSettings.ownedTracks)}
-          typeFilter={{key: 'catid', oval: 1, road: 2}}
+          typeFilter={{key: 'primaryType', oval: 'oval', road: 'road'}}
           save={this.saveOptions.bind(this, 'ownedTracks')}
           favourites={favouriteTracks}
           saveFavourites={this.saveOptions.bind(this, 'favouriteTracks')}
