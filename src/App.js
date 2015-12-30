@@ -41,7 +41,8 @@ const defaultSettings = {
   favouriteCars: [],
   favouriteTracks: [],
   sort: {key: 'licence', order: 'asc'},
-  columns: availableColumns.filter(column => column.default === true).map(column => column.id)
+  columns: availableColumns.filter(column => column.default === true).map(column => column.id),
+  mode: 'both'
 };
 
 export default class App extends Component {
@@ -76,12 +77,12 @@ export default class App extends Component {
   componentDidUpdate() {
     const {
       filters, ownedCars, ownedTracks, favouriteSeries, favouriteTracks, favouriteCars,
-      columns, sort
+      columns, sort, mode
     } = this.state;
 
     window.localStorage.setItem('iracing-state', JSON.stringify({
       filters, ownedCars, ownedTracks, favouriteSeries, favouriteTracks, favouriteCars,
-      columns, sort
+      columns, sort, mode
     }));
   }
 
@@ -108,11 +109,13 @@ export default class App extends Component {
   openFavouriteSeriesModal(e) {
     e.preventDefault();
     this.renderModal(() => {
-      const { favouriteSeries } = this.state;
+      const { favouriteSeries, mode } = this.state;
       return (
         <FavouriteSeriesModal onClose={this.closeModal.bind(this)}
           favouriteSeries={favouriteSeries}
-          save={this.saveOptions.bind(this, 'favouriteSeries')} />
+          save={this.saveOptions.bind(this, 'favouriteSeries')}
+          oval={mode !== 'road'}
+          road={mode !== 'oval'} />
       );
     });
   }
@@ -120,7 +123,7 @@ export default class App extends Component {
   openMyTracksModal(e) {
     e.preventDefault();
     this.renderModal(() => {
-      const { ownedTracks, favouriteTracks } = this.state;
+      const { ownedTracks, favouriteTracks, mode } = this.state;
       return (
         <ContentModal onClose={this.closeModal.bind(this)}
           title='Set My Tracks'
@@ -131,7 +134,9 @@ export default class App extends Component {
           typeFilter={{key: 'catid', oval: 1, road: 2}}
           save={this.saveOptions.bind(this, 'ownedTracks')}
           favourites={favouriteTracks}
-          saveFavourites={this.saveOptions.bind(this, 'favouriteTracks')} />
+          saveFavourites={this.saveOptions.bind(this, 'favouriteTracks')}
+          oval={mode !== 'road'}
+          road={mode !== 'oval'} />
       );
     });
   }
@@ -139,7 +144,7 @@ export default class App extends Component {
   openMyCarsModal(e) {
     e.preventDefault();
     this.renderModal(() => {
-      const { ownedCars, favouriteCars } = this.state;
+      const { ownedCars, favouriteCars, mode } = this.state;
       return (
         <ContentModal onClose={this.closeModal.bind(this)}
           title='Set My Cars'
@@ -150,7 +155,9 @@ export default class App extends Component {
           typeFilter={{key: 'discountGroupNames', oval: ['oval+car'], road: ['road+car']}}
           save={this.saveOptions.bind(this, 'ownedCars')}
           favourites={favouriteCars}
-          saveFavourites={this.saveOptions.bind(this, 'favouriteCars')} />
+          saveFavourites={this.saveOptions.bind(this, 'favouriteCars')}
+          oval={mode !== 'road'}
+          road={mode !== 'oval'} />
       );
     });
   }
@@ -158,11 +165,12 @@ export default class App extends Component {
   openOptionsModal(e) {
     e.preventDefault();
     this.renderModal(() => {
-      const { columns } = this.state;
+      const { columns, mode } = this.state;
       return (
         <OptionsModal onClose={this.closeModal.bind(this)}
           columnIds={columns}
-          saveColumns={this.saveOptions.bind(this, 'columns')} />
+          saveOptions={this.saveOptions.bind(this)}
+          mode={mode} />
       );
     });
   }
@@ -173,6 +181,10 @@ export default class App extends Component {
       <Modal onClose={this.closeModal.bind(this)} title='Changelog'
         doneAction={this.closeModal.bind(this)}>
         <div className='container-fluid'>
+          <h3>2015-12-30</h3>
+          <ul>
+            <li>Add mode so you can completely ignore one aspect of iRacing (oval/road)</li>
+          </ul>
           <h3>2015-12-20</h3>
           <ul>
             <li>Add sortable columns</li>
@@ -215,7 +227,7 @@ export default class App extends Component {
 
   render() {
     const {filters, favouriteSeries, ownedCars, ownedTracks, date, favouriteCars, favouriteTracks,
-      renderCurrentModal, columns, sort} = this.state;
+      renderCurrentModal, columns, sort, mode} = this.state;
     return (
       <div>
         <nav className="navbar navbar-inverse">
@@ -247,7 +259,8 @@ export default class App extends Component {
             <div className="col-md-2">
               <h3>Filters</h3>
               <Filters currentFilters={filters} updateFilters={this.updateFilters.bind(this)}
-                resetSettings={this.resetSettings.bind(this)} resetFilters={this.resetFilters.bind(this)} />
+                resetSettings={this.resetSettings.bind(this)} resetFilters={this.resetFilters.bind(this)}
+                oval={mode !== 'road'} road={mode !== 'oval'} />
             </div>
             <div className="col-md-10">
               <h3>Races for date: {moment(date).local().format('YYYY MMM DD')}</h3>
@@ -259,7 +272,8 @@ export default class App extends Component {
               <RaceListing filters={filters} ownedCars={ownedCars} ownedTracks={ownedTracks}
                 favouriteSeries={favouriteSeries} date={date} favouriteTracks={favouriteTracks}
                 favouriteCars={favouriteCars} columnIds={columns} sort={sort}
-                updateSort={this.saveOptions.bind(this, 'sort')} />
+                updateSort={this.saveOptions.bind(this, 'sort')}
+                oval={mode !== 'road'} road={mode !== 'oval'} />
             </div>
           </div>
         </div>
