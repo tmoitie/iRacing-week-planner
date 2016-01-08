@@ -3,16 +3,18 @@ var webpack = require('webpack');
 
 module.exports = {
   devtool: process.env.ENV === 'production' ? null : 'eval-source-maps',
-  entry: process.env.ENV === 'production' ? [
-    './src/index'
-  ] : [
-    'webpack-dev-server/client?http://localhost:3000',
-    'webpack/hot/only-dev-server',
-    './src/index'
-  ],
+  entry: {
+    main: process.env.ENV === 'production' ? ['./src/index'] : [
+      'webpack-dev-server/client?http://localhost:3000',
+      'webpack/hot/only-dev-server',
+      './src/index',
+      './src/ie8'
+    ],
+    ie8: ['./src/ie8']
+  },
   output: {
     path: path.join(__dirname, 'public/dist'),
-    filename: 'bundle.js',
+    filename: '[name].js',
     publicPath: '/dist/',
     contentBase: path.join(__dirname, 'public')
   },

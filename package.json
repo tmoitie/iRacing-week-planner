@@ -44,6 +44,9 @@
   },
   "dependencies": {
     "bootstrap-sass": "^3.3.6",
+    "console-polyfill": "^0.2.2",
+    "es5-shim": "^4.4.1",
+    "html5shiv": "^3.7.3",
     "jquery": "^2.1.4",
     "jquery-ui": "^1.10.5",
     "lodash": "^3.10.1",
