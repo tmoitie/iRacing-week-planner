@@ -1,6 +1,11 @@
 import {duration} from 'moment';
 
 export default [{
+  seriesId: 266,
+  setTimes: [
+    duration({days: 4, hours: 13}),  // Sat 1pm
+  ]
+}, {
   // Advanced Legends
   seriesId: 32,
   everyTime: duration(1, 'hours'),
