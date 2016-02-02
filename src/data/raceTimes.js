@@ -235,4 +235,9 @@ export default [{
   seriesId: 259,
   everyTime: duration(1, 'hours'),
   offset: duration(30, 'minutes'),
+}, {
+  // Nurbergring Fun
+  seriesId: 267,
+  everyTime: duration(1, 'hours'),
+  offset: duration(30, 'minutes'),
 }];

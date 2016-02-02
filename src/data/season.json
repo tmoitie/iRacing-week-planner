@@ -1,121 +1,5 @@
 [{
   "prefimg": "",
-  "seriesname": "24+Hours+of+Daytona",
-  "seasonshortname": "24+Hours+of+Daytona",
-  "whatshotimg": "member_images%2Fseries%2Fseriesid_266%2Fwhats_hot.jpg",
-  "cautionTypeRoad": 2,
-  "raceweek": 1,
-  "active": true,
-  "maxlicenselevel": 28,
-  "tracks": [{
-    "config": "Road+Course",
-    "priority": 0,
-    "raceweek": 0,
-    "pkgid": 120,
-    "night": 1,
-    "name": "Daytona+International+Speedway",
-    "id": 192,
-    "lowername": "daytona+international+speedway"
-  }],
-  "isClubAllowed": true,
-  "serieslicgroupid": 3,
-  "restrictedByMember": false,
-  "lowerseriesshortname": "24+hours+of+daytona",
-  "allowedMembers": [],
-  "carclasses": [{
-    "carsinclass": [{
-      "name": "McLaren+MP4-12C+GT3",
-      "id": 43
-    }, {
-      "name": "Ruf+RT+12R+Track",
-      "id": 50
-    }, {
-      "name": "BMW+Z4+GT3",
-      "id": 55
-    }, {
-      "name": "Ford+GT+GT3",
-      "id": 59
-    }],
-    "shortname": "GT3+Class",
-    "name": "GT3+Class",
-    "id": 59,
-    "lowername": "gt3+class"
-  }, {
-    "carsinclass": [{
-      "name": "Chevrolet+Corvette+C7+Daytona+Prototype",
-      "id": 70
-    }],
-    "shortname": "C7+DP",
-    "name": "Corvette+C7+Daytona+Prototype",
-    "id": 77,
-    "lowername": "corvette+c7+daytona+prototype"
-  }],
-  "currentTrack": 192,
-  "seriesid": 266,
-  "driverChangeRule": 1,
-  "licgroupid": 2,
-  "ignoreLicenseForPractice": true,
-  "isWorldCup": false,
-  "islite": false,
-  "rookieseason": "",
-  "end": 1453611600000,
-  "cars": [{
-    "pkgid": 133,
-    "name": "McLaren+MP4-12C+GT3",
-    "id": 43,
-    "lowername": "mclaren+mp4-12c+gt3",
-    "sku": 10335
-  }, {
-    "pkgid": 144,
-    "name": "Ruf+RT+12R+Track",
-    "id": 50,
-    "lowername": "ruf+rt+12r+track",
-    "sku": 10353
-  }, {
-    "pkgid": 156,
-    "name": "BMW+Z4+GT3",
-    "id": 55,
-    "lowername": "bmw+z4+gt3",
-    "sku": 10362
-  }, {
-    "pkgid": 113,
-    "name": "Ford+GT+GT3",
-    "id": 59,
-    "lowername": "ford+gt+gt3",
-    "sku": 10281
-  }, {
-    "pkgid": 193,
-    "name": "Chevrolet+Corvette+C7+Daytona+Prototype",
-    "id": 70,
-    "lowername": "chevrolet+corvette+c7+daytona+prototype",
-    "sku": 10400
-  }],
-  "carNumberMap": {
-    "carNumberMap": {}
-  },
-  "multiclass": true,
-  "isRegionCompetition": false,
-  "start": 1452574800000,
-  "lowerseasonshortname": "24+hours+of+daytona",
-  "maxTeamDrivers": 16,
-  "quarter": 1,
-  "seriesshortname": "24+Hours+of+Daytona",
-  "catid": 2,
-  "minsr": "4.0",
-  "isFixedSetup": false,
-  "isOfficial": true,
-  "minlicenselevel": 8,
-  "cautionTypeOval": 0,
-  "licenseEligible": true,
-  "complete": false,
-  "driverChanges": true,
-  "minTeamDrivers": 2,
-  "year": 2016,
-  "restrictedToCar": false,
-  "seasonid": 1514,
-  "category": 2
-}, {
-  "prefimg": "",
   "seriesname": "Advanced+Mazda+MX-5+Cup+Series",
   "seasonshortname": "2016+Season+1",
   "whatshotimg": "member_images%2Fseries%2Fadvancedmazdacup%2Fwhats_hot.jpg",
@@ -1972,6 +1856,110 @@
   "year": 2016,
   "restrictedToCar": false,
   "seasonid": 1496,
+  "category": 2
+}, {
+  "prefimg": "",
+  "seriesname": "Industriefahrten+Fun",
+  "seasonshortname": "2016+Season+1",
+  "whatshotimg": "member_images%2Fseries%2Fseriesid_267%2Fwhats_hot.jpg",
+  "cautionTypeRoad": 2,
+  "raceweek": 1,
+  "active": true,
+  "maxlicenselevel": 28,
+  "tracks": [{
+    "config": "Industriefahrten",
+    "priority": 1,
+    "raceweek": 0,
+    "pkgid": 184,
+    "night": 0,
+    "name": "N%C3%BCrburgring+Nordschleife",
+    "id": 249,
+    "lowername": "n%C3%BCrburgring+nordschleife"
+  }],
+  "isClubAllowed": true,
+  "serieslicgroupid": 1,
+  "restrictedByMember": false,
+  "lowerseriesshortname": "industriefahrten+fun",
+  "allowedMembers": [],
+  "carclasses": [{
+    "carsinclass": [{
+      "name": "Ford+Mustang+FR500S",
+      "id": 30
+    }],
+    "shortname": "FR500S",
+    "name": "Ford+Mustang+FR500S",
+    "id": 28,
+    "lowername": "ford+mustang+fr500s"
+  }, {
+    "carsinclass": [{
+      "name": "Mazda+MX-5+Cup+circa+2015",
+      "id": 34
+    }],
+    "shortname": "MX-5+Cup",
+    "name": "Mazda+MX-5+Cup",
+    "id": 32,
+    "lowername": "mazda+mx-5+cup"
+  }, {
+    "carsinclass": [{
+      "name": "Kia+Optima",
+      "id": 44
+    }],
+    "shortname": "Kia+Optima",
+    "name": "Kia+Optima",
+    "id": 48,
+    "lowername": "kia+optima"
+  }],
+  "currentTrack": 249,
+  "seriesid": 267,
+  "driverChangeRule": 0,
+  "licgroupid": 1,
+  "ignoreLicenseForPractice": false,
+  "isWorldCup": false,
+  "islite": false,
+  "rookieseason": "",
+  "end": 1458014400000,
+  "cars": [{
+    "pkgid": 95,
+    "name": "Ford+Mustang+FR500S",
+    "id": 30,
+    "lowername": "ford+mustang+fr500s",
+    "sku": 10210
+  }, {
+    "pkgid": 102,
+    "name": "Mazda+MX-5+Cup+circa+2015",
+    "id": 34,
+    "lowername": "mazda+mx-5+cup+circa+2015",
+    "sku": 10226
+  }, {
+    "pkgid": 136,
+    "name": "Kia+Optima",
+    "id": 44,
+    "lowername": "kia+optima",
+    "sku": 10341
+  }],
+  "carNumberMap": {
+    "carNumberMap": {}
+  },
+  "multiclass": true,
+  "isRegionCompetition": false,
+  "start": 1453179600000,
+  "lowerseasonshortname": "2016+season+1",
+  "maxTeamDrivers": 1,
+  "quarter": 1,
+  "seriesshortname": "Industriefahrten+Fun",
+  "catid": 2,
+  "minsr": "1.0",
+  "isFixedSetup": false,
+  "isOfficial": false,
+  "minlicenselevel": 1,
+  "cautionTypeOval": 0,
+  "licenseEligible": true,
+  "complete": false,
+  "driverChanges": false,
+  "minTeamDrivers": 1,
+  "year": 2016,
+  "restrictedToCar": false,
+  "seasonid": 1515,
   "category": 2
 }, {
   "prefimg": "",
@@ -6702,107 +6690,6 @@
   "restrictedToCar": false,
   "seasonid": 1473,
   "category": 1
-}, {
-  "prefimg": "",
-  "seriesname": "Nordschleife+Tourist+Hot+Lap+Competition+",
-  "seasonshortname": "2016+Season+1",
-  "whatshotimg": "member_images%2Fseries%2Fseriesid_263%2Fwhats_hot.jpg",
-  "cautionTypeRoad": 2,
-  "raceweek": 1,
-  "active": true,
-  "maxlicenselevel": 28,
-  "tracks": [{
-    "config": "Touristenfahrten",
-    "priority": 2,
-    "raceweek": 0,
-    "pkgid": 184,
-    "night": 0,
-    "name": "N%C3%BCrburgring+Nordschleife",
-    "id": 253,
-    "lowername": "n%C3%BCrburgring+nordschleife"
-  }],
-  "isClubAllowed": true,
-  "serieslicgroupid": 1,
-  "restrictedByMember": false,
-  "lowerseriesshortname": "nordschleife+tourist+hot+lap+competition+",
-  "allowedMembers": [],
-  "carclasses": [{
-    "carsinclass": [{
-      "name": "McLaren+MP4-12C+GT3",
-      "id": 43
-    }, {
-      "name": "Ruf+RT+12R+Track",
-      "id": 50
-    }, {
-      "name": "BMW+Z4+GT3",
-      "id": 55
-    }, {
-      "name": "Ford+GT+GT3",
-      "id": 59
-    }],
-    "shortname": "GT3+Class",
-    "name": "GT3+Class",
-    "id": 59,
-    "lowername": "gt3+class"
-  }],
-  "currentTrack": 253,
-  "seriesid": 263,
-  "driverChangeRule": 0,
-  "licgroupid": 1,
-  "ignoreLicenseForPractice": false,
-  "isWorldCup": false,
-  "islite": false,
-  "rookieseason": "",
-  "end": 1453266000000,
-  "cars": [{
-    "pkgid": 133,
-    "name": "McLaren+MP4-12C+GT3",
-    "id": 43,
-    "lowername": "mclaren+mp4-12c+gt3",
-    "sku": 10335
-  }, {
-    "pkgid": 144,
-    "name": "Ruf+RT+12R+Track",
-    "id": 50,
-    "lowername": "ruf+rt+12r+track",
-    "sku": 10353
-  }, {
-    "pkgid": 156,
-    "name": "BMW+Z4+GT3",
-    "id": 55,
-    "lowername": "bmw+z4+gt3",
-    "sku": 10362
-  }, {
-    "pkgid": 113,
-    "name": "Ford+GT+GT3",
-    "id": 59,
-    "lowername": "ford+gt+gt3",
-    "sku": 10281
-  }],
-  "carNumberMap": {
-    "carNumberMap": {}
-  },
-  "multiclass": false,
-  "isRegionCompetition": false,
-  "start": 1449550800000,
-  "lowerseasonshortname": "2016+season+1",
-  "maxTeamDrivers": 1,
-  "quarter": 2,
-  "seriesshortname": "Nordschleife+Tourist+Hot+Lap+Competition+",
-  "catid": 2,
-  "minsr": "1.0",
-  "isFixedSetup": false,
-  "isOfficial": true,
-  "minlicenselevel": 1,
-  "cautionTypeOval": 0,
-  "licenseEligible": true,
-  "complete": false,
-  "driverChanges": false,
-  "minTeamDrivers": 1,
-  "year": 2015,
-  "restrictedToCar": false,
-  "seasonid": 1511,
-  "category": 2
 }, {
   "prefimg": "",
   "seriesname": "PickUp+Cup",
