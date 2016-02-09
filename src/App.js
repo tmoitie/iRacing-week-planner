@@ -177,34 +177,50 @@ export default class App extends Component {
   openChangelogModal(e) {
     e.preventDefault();
     this.renderModal(() => (
-      <Modal onClose={this.closeModal.bind(this)} title='Changelog'
+      <Modal onClose={this.closeModal.bind(this)} title='About'
         doneAction={this.closeModal.bind(this)}>
         <div className='container-fluid'>
-          <h3>2015-12-30</h3>
+
+          <p>
+            <span>This tool was created by <a href='https://twitter.com/tmoitie' target='_blank'>@tmoitie</a> (</span>
+            <a href='http://members.iracing.com/membersite/member/CareerStats.do?custid=69636'
+              target='_blank'>Thomas Moitie</a>
+            <span> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or </span>
+            <span>questions. The code is hosted publicly on </span>
+            <a href='https://github.com/tmoitie/iRacing-week-planner' target='_blank'>Github</a>
+            <span>. Thanks!</span>
+          </p>
+
+          <h3>Changelog</h3>
+          <h4>2015-02-09</h4>
+          <ul>
+            <li>Change changelog to about and add contact info</li>
+          </ul>
+          <h4>2015-12-30</h4>
           <ul>
             <li>Add mode so you can completely ignore one aspect of iRacing (oval/road)</li>
           </ul>
-          <h3>2015-12-20</h3>
+          <h4>2015-12-20</h4>
           <ul>
             <li>Add sortable columns</li>
             <li>Add race times column</li>
             <li>Add next race time column</li>
           </ul>
-          <h3>2015-12-19</h3>
+          <h4>2015-12-19</h4>
           <ul>
             <li>Make columns selectable</li>
           </ul>
-          <h3>2015-12-17</h3>
+          <h4>2015-12-17</h4>
           <ul>
             <li>Remove P Class series as they have irregular schedules that aren't displaying right.</li>
             <li>Added this changelog!</li>
           </ul>
-          <h3>2015-12-16</h3>
+          <h4>2015-12-16</h4>
           <ul>
             <li>Add ability to 'favorite' content with the star icon.</li>
             <li>Fix bug with disabled default content.</li>
           </ul>
-          <h3>2015-12-15</h3>
+          <h4>2015-12-15</h4>
           <ul>
             <li>Add "Select All Oval/Road" to content choosers.</li>
             <li>Made free content un-unselectable.</li>
@@ -248,7 +264,7 @@ export default class App extends Component {
                 Options
               </a></li>
               <li><a href='' onClick={this.openChangelogModal.bind(this)}>
-                Changelog
+                About
               </a></li>
             </ul>
           </div>
