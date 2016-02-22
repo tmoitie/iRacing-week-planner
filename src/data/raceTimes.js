@@ -240,4 +240,41 @@ export default [{
   seriesId: 267,
   everyTime: duration(1, 'hours'),
   offset: duration(30, 'minutes'),
+}, {
+  // NIS Fixed
+  seriesId: 207,
+  setTimes: [
+    duration({days: 3, hours: 2}),  // Fri 2am
+    duration({days: 4, hours: 10}), // Sat 10am
+    duration({days: 4, hours: 17}), // Sat 5pm
+    duration({days: 6, hours: 2}),  // Mon 2am
+  ],
+  offWeeks: [
+    5.5, 12.5, 15.5, 22.5
+  ]
+}, {
+  // NIS Open
+  seriesId: 229,
+  setTimes: [
+    duration({days: 2, hours: 2}),  // Thu 2am
+    duration({days: 4, hours: 2}),  // Sat 2am
+    duration({days: 5, hours: 15}), // Sun 3pm
+  ],
+  offWeeks: [
+    5.5, 12.5, 15.5, 22.5
+  ]
+}, {
+  // Road WC
+  seriesId: 206,
+  setTimes: [
+    duration({days: 5, hours: 15}), // Sun 3pm
+  ],
+  offWeeks: []
+}, {
+  // Peak Antifreeze
+  seriesId: 205,
+  setTimes: [
+    duration({days: 5, hours: 15}), // Sun 3pm
+  ],
+  offWeeks: []
 }];
