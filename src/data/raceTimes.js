@@ -78,6 +78,7 @@ export default [{
   seriesId: 62,
   everyTime: duration(2, 'hours'),
   offset: duration(0, 'minutes'),
+  offWeeks: [5.3, 5.6, 9.5, 10.5, 14.5, 30.3, 30.6]
 }, {
   // Xfinity Fixed
   seriesId: 103,
@@ -269,7 +270,9 @@ export default [{
   setTimes: [
     duration({days: 5, hours: 15}), // Sun 3pm
   ],
-  offWeeks: []
+  weekStartOffset: duration({days: 9}),
+  weekEndOffset: duration({days: 2}),
+  offWeeks: [2.5, 3.5, 4.5, 5.5, 6.5, 7.3, 7.6, 8.5, 9.3, 9.6, 10.5, 11.5, 12.5, 13.5, 14.3, 14.6, 15.5]
 }, {
   // Peak Antifreeze
   seriesId: 205,

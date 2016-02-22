@@ -46,15 +46,26 @@ function getNextRaceSetTimes(setTimes) {
 const fixText = (text) => (decodeURIComponent(text).replace(/\+/g, ' ').trim());
 
 export default season.reduce((carry, series) => {
+  const raceTimes = raceTimesById[series.seriesid] || {};
+
   const seriesName = fixText(series.seriesname);
   const seriesStart = moment(series.start, 'x').utc().startOf('day');
+
+  if (raceTimes.weekStartOffset) {
+    seriesStart.add(raceTimes.weekStartOffset);
+  }
+
   const seriesEnd = moment(series.end, 'x').utc().startOf('day');
-  const raceWeekLength = Math.round(moment(seriesEnd).diff(seriesStart) / series.tracks.length);
+
+  if (raceTimes.weekEndOffset) {
+    seriesEnd.add(raceTimes.weekEndOffset);
+  }
+
+  const offWeeks = raceTimes.offWeeks || [];
+  const raceWeekLength = Math.round(moment(seriesEnd).diff(seriesStart) / (series.tracks.length + offWeeks.length));
 
   return carry.concat(series.tracks.map((track) => {
     const trackName = track.config ? `${track.name} - ${track.config}` : track.name;
-
-    const raceTimes = raceTimesById[series.seriesid] || null;
     let nextTime = null;
 
     if (raceTimes.everyTime) {
@@ -82,7 +93,11 @@ export default season.reduce((carry, series) => {
       carClasses: series.carclasses.map((carClass) => fixText(carClass.shortname)),
       carIds: series.cars.map((car) => car.sku),
       raceTimes: raceTimes,
-      nextTime: nextTime
+      nextTime: nextTime,
+      seasonData: {
+        seriesStart: seriesStart,
+        seriesEnd: seriesEnd,
+      }
     };
   }));
 }, []);
