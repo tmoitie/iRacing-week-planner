@@ -8,8 +8,7 @@ module.exports = {
     main: process.env.ENV === 'production' ? ['./src/index'] : [
       'webpack-dev-server/client?http://localhost:3000',
       'webpack/hot/only-dev-server',
-      './src/index',
-      './src/ie8'
+      './src/index'
     ],
     ie8: ['./src/ie8']
   },
