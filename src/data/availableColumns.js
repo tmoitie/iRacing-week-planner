@@ -1,5 +1,6 @@
 import {
-  Car, Class, EndDate, Fixed, Licence, NextRace, Official, RaceTimes, Series, StartDate, Track, Type
+  Car, Class, EndDate, Fixed, Licence, NextRace, Official,
+  RaceTimes, Series, SeasonEnd, StartDate, Track, Type
 } from '../components/columns/';
 import moment from 'moment';
 
@@ -172,5 +173,20 @@ export default [{
       return a.nextTime.isBefore(b.nextTime) ? -1 : 1;
     }
     return a.nextTime.isAfter(b.nextTime) ? -1 : 1;
+  }
+}, {
+  id: 'seriesEnd',
+  header: 'Season End',
+  component: SeasonEnd,
+  default: false,
+  sort: (order, a, b) => {
+    if (a.seriesEnd.isSame(b.seriesEnd)) {
+      return defaultSort(a, b);
+    }
+    if (order === 'asc') {
+      return a.seriesEnd.isBefore(b.seriesEnd) ? -1 : 1;
+    }
+
+    return a.seriesEnd.isAfter(b.seriesEnd) ? -1 : 1;
   }
 }];

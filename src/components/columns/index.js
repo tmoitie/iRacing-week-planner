@@ -7,6 +7,7 @@ export NextRace from './NextRace';
 export Official from './Official';
 export RaceTimes from './RaceTimes';
 export Series from './Series';
+export SeasonEnd from './SeasonEnd';
 export StartDate from './StartDate';
 export Track from './Track';
 export Type from './Type';
