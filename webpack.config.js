@@ -1,5 +1,6 @@
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   devtool: process.env.ENV === 'production' ? null : 'eval-source-maps',
@@ -25,10 +26,10 @@ module.exports = {
       include: [path.join(__dirname, 'src')]
     }, {
       test: /\.scss$/,
-      loaders: ['style', 'css', 'autoprefixer', 'sass']
+      loaders: ['style', 'css', 'postcss', 'sass']
     }, {
       test: /\.css$/,
-      loaders: ['style', 'css', 'autoprefixer']
+      loaders: ['style', 'css', 'postcss']
     }, {
       test: /\.(png|gif)$/,
       loader: 'file'
@@ -39,6 +40,7 @@ module.exports = {
     { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=image/svg+xml' },
     { test: /\.json$/, loader: 'json' }]
   },
+  postcss: () => [autoprefixer],
   sassLoader: {
     // includePaths: [path.resolve(__dirname, './some-folder')]
   },
