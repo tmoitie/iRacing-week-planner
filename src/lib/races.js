@@ -64,9 +64,16 @@ export default season.reduce((carry, series) => {
   const offWeeks = raceTimes.offWeeks || [];
   const raceWeekLength = Math.round(moment(seriesEnd).diff(seriesStart) / (series.tracks.length + offWeeks.length));
 
+  const allRaceWeeks = series.tracks.map(track => track.raceweek)
+    .concat(offWeeks.map(offWeek => offWeek - 1));
+
+  allRaceWeeks.sort((a, b) => a - b);
+
   return carry.concat(series.tracks.map((track) => {
     const trackName = track.config ? `${track.name} - ${track.config}` : track.name;
     let nextTime = null;
+
+    const realRaceWeek = allRaceWeeks.indexOf(track.raceweek);
 
     if (raceTimes.everyTime) {
       nextTime = getNextRaceFromRecur(raceTimes.everyTime, raceTimes.offset);
@@ -82,7 +89,7 @@ export default season.reduce((carry, series) => {
       track: fixText(trackName),
       trackId: track.pkgid,
       week: track.raceweek,
-      startTime: moment(seriesStart).add(raceWeekLength * track.raceweek, 'ms').startOf('day').utc(),
+      startTime: moment(seriesStart).add(raceWeekLength * realRaceWeek, 'ms').startOf('day').utc(),
       weekLength: duration(raceWeekLength),
       official: series.isOfficial,
       licenceLevel: series.minlicenselevel,
