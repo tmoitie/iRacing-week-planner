@@ -268,16 +268,20 @@ export default [{
   // Road WC
   seriesId: 206,
   setTimes: [
-    duration({days: 5, hours: 15}), // Sun 3pm
+    duration({days: 4, hours: 14}), // Sat 2pm
   ],
   weekStartOffset: duration({days: 9}),
   weekEndOffset: duration({days: 2}),
+  hideAfter: true,
   offWeeks: [2.5, 3.5, 4.5, 5.5, 6.5, 7.3, 7.6, 8.5, 9.3, 9.6, 10.5, 11.5, 12.5, 13.5, 14.3, 14.6, 15.5]
 }, {
   // Peak Antifreeze
   seriesId: 205,
   setTimes: [
-    duration({days: 5, hours: 15}), // Sun 3pm
+    duration({days: 1, hours: 1, minutes: 45}), // Sun 0:45am
   ],
-  offWeeks: []
+  weekStartOffset: duration({days: 14}),
+  weekEndOffset: duration({days: 5}),
+  hideAfter: true,
+  offWeeks: [2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.2, 8.4, 8.6, 8.8, 9.5, 10.5, 11.5, 12.5, 13.3, 13.6, 14.5, 15.5]
 }];
