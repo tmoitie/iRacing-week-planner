@@ -192,6 +192,10 @@ export default class App extends Component {
           </p>
 
           <h3>Changelog</h3>
+          <h4>2015-02-22</h4>
+          <ul>
+            <li>Add NIS, new Class-A/B series and the Pro series, and track 'off weeks' so the schedule works.</li>
+          </ul>
           <h4>2015-02-09</h4>
           <ul>
             <li>Change changelog to about and add contact info</li>
