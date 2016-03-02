@@ -184,7 +184,7 @@ export default class App extends Component {
           <p>
             <span>This tool was created by <a href='https://twitter.com/tmoitie' target='_blank'>@tmoitie</a> (</span>
             <a href='http://members.iracing.com/membersite/member/CareerStats.do?custid=69636'
-              target='_blank'>Thomas Moitie</a>
+              target='_blank'>Tom Moitié</a>
             <span> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or </span>
             <span>questions. The code is hosted publicly on </span>
             <a href='https://github.com/tmoitie/iRacing-week-planner' target='_blank'>Github</a>
