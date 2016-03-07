@@ -13,10 +13,12 @@ export default class Track extends Component {
 
     return (
       <td className={classnames({success: ownedTracks.indexOf(race.trackId) !== -1})}>
-        {favouriteTracks.indexOf(race.trackId) !== -1 ? (
-          <span className='glyphicon glyphicon-star' />
-        ) : null}<span> </span>
-        {race.track}
+        <div>
+          {favouriteTracks.indexOf(race.trackId) !== -1 ? (
+            <span className='glyphicon glyphicon-star' />
+          ) : null}<span> </span>
+          {race.track}
+        </div>
       </td>
     );
   }

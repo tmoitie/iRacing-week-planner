@@ -9,7 +9,11 @@ export default class Official extends Component {
     const { race } = this.props;
 
     return (
-      <td>{race.official && <span className='glyphicon glyphicon-ok' />}</td>
+      <td>
+        <div>
+          {race.official && <span className='glyphicon glyphicon-ok' />}
+        </div>
+      </td>
     );
   }
 }

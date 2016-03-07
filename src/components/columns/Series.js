@@ -28,13 +28,15 @@ export default class Series extends Component {
 
     return (
       <td className='clickable-cell' onClick={this.showSeriesModal.bind(this, race.seriesId)}>
-        {favouriteSeries.indexOf(race.seriesId) !== -1 ? (
-          <span className='glyphicon glyphicon-star' />
-        ) : null}
+        <div>
+          {favouriteSeries.indexOf(race.seriesId) !== -1 ? (
+            <span className='glyphicon glyphicon-star' />
+          ) : null}
 
-        <span> </span>
+          <span> </span>
 
-        {race.series}
+          {race.series}
+        </div>
       </td>
     );
   }

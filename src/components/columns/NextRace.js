@@ -13,6 +13,12 @@ export default class NextRace extends Component {
       return <td>No time data</td>;
     }
 
-    return <td>{moment(race.nextTime).local().format('ddd h:mma')}</td>;
+    return (
+      <td>
+        <div>
+          {moment(race.nextTime).local().format('ddd h:mma')}
+        </div>
+      </td>
+    );
   }
 }

@@ -10,9 +10,11 @@ export default class EndDate extends Component {
     const { race } = this.props;
 
     return (
-      <td>{
-        moment(race.startTime).local().add(race.weekLength).subtract(1, 'days').format('YYYY-MM-DD')
-      }</td>
+      <td>
+        <div>{
+          moment(race.startTime).local().add(race.weekLength).subtract(1, 'days').format('YYYY-MM-DD')
+        }</div>
+      </td>
     );
   }
 }

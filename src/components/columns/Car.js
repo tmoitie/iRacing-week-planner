@@ -14,10 +14,12 @@ export default class Car extends Component {
 
     return (
       <td className={classnames({success: intersection(ownedCars, race.carIds).length !== 0})}>
-        {intersection(favouriteCars, race.carIds).length !== 0 ? (
-          <span className='glyphicon glyphicon-star' />
-        ) : null}<span> </span>
-        {race.carClasses.join(', ')}
+        <div>
+          {intersection(favouriteCars, race.carIds).length !== 0 ? (
+            <span className='glyphicon glyphicon-star' />
+          ) : null}<span> </span>
+          {race.carClasses.join(', ')}
+        </div>
       </td>
     );
   }

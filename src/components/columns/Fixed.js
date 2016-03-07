@@ -9,7 +9,11 @@ export default class Fixed extends Component {
     const { race } = this.props;
 
     return (
-      <td>{race.fixed && <span className='glyphicon glyphicon-ok' />}</td>
+      <td>
+        <div>
+          {race.fixed && <span className='glyphicon glyphicon-ok' />}
+        </div>
+      </td>
     );
   }
 }

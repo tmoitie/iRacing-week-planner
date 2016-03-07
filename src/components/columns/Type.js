@@ -9,7 +9,7 @@ export default class Type extends Component {
     const { race } = this.props;
 
     return (
-      <td>{race.type}</td>
+      <td><div>{race.type}</div></td>
     );
   }
 }

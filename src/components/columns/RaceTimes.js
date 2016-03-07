@@ -45,8 +45,10 @@ export default class NextRace extends Component {
 
     return (
       <td>
-        Every {race.raceTimes.everyTime.humanize().replace(/an?\s/, '')} starting
-        at {moment().utc().startOf('day').add(race.raceTimes.offset).format('H:mm')}
+        <div>
+          Every {race.raceTimes.everyTime.humanize().replace(/an?\s/, '')} starting
+          at {moment().utc().startOf('day').add(race.raceTimes.offset).format('H:mm')}
+        </div>
       </td>
     );
   }
