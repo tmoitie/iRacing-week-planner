@@ -1,6 +1,12 @@
 import moment from 'moment';
 
 export default [{
+  date: moment('2016-03-08 00:00:00').utc(),
+  items: [
+    `Add Week 13 series and 12 hours of Sebring.`,
+    `Fix 'Set my content' repeated.`
+  ]
+}, {
   date: moment('2016-02-22 00:00:00').utc(),
   items: [
     `Add NIS, new Class-A/B series and the Pro series, and track 'off weeks' so the schedule works.`

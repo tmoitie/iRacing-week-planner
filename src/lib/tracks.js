@@ -1,9 +1,9 @@
 import allTracks from '../data/tracks.json';
-import {uniq, sortBy} from 'lodash';
+import {uniqBy, sortBy} from 'lodash';
 
 const fixText = (text) => (decodeURIComponent(text).replace(/\+/g, ' ').trim());
 
-const tracks = sortBy(uniq(sortBy(allTracks, 'priority'), false, 'pkgid'), 'name');
+const tracks = sortBy(uniqBy(sortBy(allTracks, 'priority'), track => track.pkgid), track => track.name);
 
 export default tracks.map((track) => {
   return {

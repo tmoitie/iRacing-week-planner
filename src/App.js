@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import {cloneDeep, uniq, sortBy} from 'lodash';
+import {cloneDeep, uniqBy, sortBy} from 'lodash';
 import TimeSlider from './components/TimeSlider';
 import moment, {duration} from 'moment';
 
@@ -20,7 +20,7 @@ import changelog from './data/changelog';
 
 import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
-const cars = uniq(allCars, false, (car) => car.sku);
+const cars = uniqBy(allCars, (car) => car.sku);
 
 const defaultFilters = {
   type: ['Road', 'Oval'],
