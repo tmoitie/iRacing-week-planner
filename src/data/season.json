@@ -12,7 +12,7 @@
     "priority": 1,
     "raceweek": 0,
     "pkgid": 40,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Sebring+International+Raceway",
     "id": 95,
     "lowername": "sebring+international+raceway"
@@ -128,7 +128,7 @@
     "priority": 4,
     "raceweek": 0,
     "pkgid": 6,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Irwindale+Speedway",
     "id": 217,
     "lowername": "irwindale+speedway"
@@ -202,7 +202,7 @@
     "priority": 1,
     "raceweek": 0,
     "pkgid": 9,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Lime+Rock+Park",
     "id": 1,
     "lowername": "lime+rock+park"
@@ -211,7 +211,7 @@
     "priority": 2,
     "raceweek": 1,
     "pkgid": 31,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Charlotte+Motor+Speedway",
     "id": 37,
     "lowername": "charlotte+motor+speedway"
@@ -220,7 +220,7 @@
     "priority": 0,
     "raceweek": 2,
     "pkgid": 109,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Okayama+International+Circuit",
     "id": 166,
     "lowername": "okayama+international+circuit"
@@ -229,7 +229,7 @@
     "priority": 1,
     "raceweek": 3,
     "pkgid": 13,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Summit+Point+Raceway",
     "id": 9,
     "lowername": "summit+point+raceway"
@@ -238,7 +238,7 @@
     "priority": 2,
     "raceweek": 4,
     "pkgid": 55,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Phoenix+International+Raceway+-+2008",
     "id": 105,
     "lowername": "phoenix+international+raceway+-+2008"
@@ -247,7 +247,7 @@
     "priority": 2,
     "raceweek": 5,
     "pkgid": 13,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Summit+Point+Raceway",
     "id": 8,
     "lowername": "summit+point+raceway"
@@ -256,7 +256,7 @@
     "priority": 1,
     "raceweek": 6,
     "pkgid": 34,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Mazda+Raceway+Laguna+Seca",
     "id": 47,
     "lowername": "mazda+raceway+laguna+seca"
@@ -330,7 +330,7 @@
     "priority": 0,
     "raceweek": 0,
     "pkgid": 97,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Thompson+Speedway+Motorsports+Park",
     "id": 161,
     "lowername": "thompson+speedway+motorsports+park"
@@ -339,7 +339,7 @@
     "priority": 0,
     "raceweek": 1,
     "pkgid": 19,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "South+Boston+Speedway",
     "id": 14,
     "lowername": "south+boston+speedway"
@@ -348,7 +348,7 @@
     "priority": 0,
     "raceweek": 2,
     "pkgid": 8,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Lanier+National+Speedway",
     "id": 17,
     "lowername": "lanier+national+speedway"
@@ -357,7 +357,7 @@
     "priority": 3,
     "raceweek": 3,
     "pkgid": 31,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Charlotte+Motor+Speedway",
     "id": 39,
     "lowername": "charlotte+motor+speedway"
@@ -366,7 +366,7 @@
     "priority": 1,
     "raceweek": 4,
     "pkgid": 31,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -375,7 +375,7 @@
     "priority": 0,
     "raceweek": 5,
     "pkgid": 10,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Oxford+Plains+Speedway",
     "id": 12,
     "lowername": "oxford+plains+speedway"
@@ -384,7 +384,7 @@
     "priority": 0,
     "raceweek": 6,
     "pkgid": 7,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "USA+International+Speedway",
     "id": 16,
     "lowername": "usa+international+speedway"
@@ -445,6 +445,134 @@
   "seasonid": 1566,
   "category": 1
 }, {
+  "prefimg": "",
+  "seriesname": "2016+Mazda+MX-5+Shakedown",
+  "seasonshortname": "2016+Season+1+-+13th+Week",
+  "whatshotimg": "member_images%2Fseries%2Fseriesid_273%2Fwhats_hot.jpg",
+  "cautionTypeRoad": 2,
+  "raceweek": 1,
+  "active": true,
+  "maxlicenselevel": 28,
+  "tracks": [{
+    "config": "Full+Course",
+    "priority": 0,
+    "raceweek": 0,
+    "pkgid": 109,
+    "timeOfDay": 0,
+    "name": "Okayama+International+Circuit",
+    "id": 166,
+    "lowername": "okayama+international+circuit"
+  }, {
+    "config": "Cup",
+    "priority": 1,
+    "raceweek": 1,
+    "pkgid": 56,
+    "timeOfDay": 0,
+    "name": "Watkins+Glen+International",
+    "id": 106,
+    "lowername": "watkins+glen+international"
+  }, {
+    "config": "Full+Course",
+    "priority": 1,
+    "raceweek": 2,
+    "pkgid": 9,
+    "timeOfDay": 0,
+    "name": "Lime+Rock+Park",
+    "id": 1,
+    "lowername": "lime+rock+park"
+  }, {
+    "config": "Full+Course",
+    "priority": 1,
+    "raceweek": 3,
+    "pkgid": 67,
+    "timeOfDay": 0,
+    "name": "Road+Atlanta",
+    "id": 127,
+    "lowername": "road+atlanta"
+  }, {
+    "config": "",
+    "priority": 0,
+    "raceweek": 4,
+    "pkgid": 145,
+    "timeOfDay": 0,
+    "name": "Circuit+Gilles+Villeneuve",
+    "id": 218,
+    "lowername": "circuit+gilles+villeneuve"
+  }, {
+    "config": "Grand+Prix+Pits",
+    "priority": 2,
+    "raceweek": 5,
+    "pkgid": 103,
+    "timeOfDay": 0,
+    "name": "Circuit+de+Spa-Francorchamps",
+    "id": 163,
+    "lowername": "circuit+de+spa-francorchamps"
+  }, {
+    "config": "Road+Course",
+    "priority": 2,
+    "raceweek": 6,
+    "pkgid": 31,
+    "timeOfDay": 0,
+    "name": "Charlotte+Motor+Speedway",
+    "id": 37,
+    "lowername": "charlotte+motor+speedway"
+  }],
+  "isClubAllowed": true,
+  "serieslicgroupid": 1,
+  "restrictedByMember": false,
+  "lowerseriesshortname": "2016+mazda+mx-5+shakedown",
+  "allowedMembers": [],
+  "carclasses": [{
+    "carsinclass": [{
+      "name": "Global+Mazda+MX-5+Cup",
+      "id": 67
+    }],
+    "shortname": "MX5+Cup+2016",
+    "name": "Mazda+MX-5+Cup+2016",
+    "id": 74,
+    "lowername": "mazda+mx-5+cup+2016"
+  }],
+  "currentTrack": 166,
+  "seriesid": 273,
+  "driverChangeRule": 0,
+  "licgroupid": 1,
+  "ignoreLicenseForPractice": false,
+  "isWorldCup": false,
+  "islite": false,
+  "rookieseason": "",
+  "end": 1458014400000,
+  "cars": [{
+    "pkgid": 182,
+    "name": "Global+Mazda+MX-5+Cup",
+    "id": 67,
+    "lowername": "global+mazda+mx-5+cup",
+    "sku": 10394
+  }],
+  "carNumberMap": {
+    "carNumberMap": {}
+  },
+  "multiclass": false,
+  "isRegionCompetition": false,
+  "start": 1457413200000,
+  "lowerseasonshortname": "2016+season+1+-+13th+week",
+  "maxTeamDrivers": 1,
+  "quarter": 1,
+  "seriesshortname": "2016+Mazda+MX-5+Shakedown",
+  "catid": 2,
+  "minsr": "1.0",
+  "isFixedSetup": false,
+  "isOfficial": false,
+  "minlicenselevel": 1,
+  "cautionTypeOval": 0,
+  "licenseEligible": true,
+  "complete": false,
+  "driverChanges": false,
+  "minTeamDrivers": 1,
+  "year": 2016,
+  "restrictedToCar": false,
+  "seasonid": 1571,
+  "category": 2
+}, {
   "prefimg": "member_images%2Fseries%2Fcarbcup%2Fsp_o_carbcup.gif",
   "seriesname": "Carburetor+Cup",
   "seasonshortname": "2016+Season+1",
@@ -458,7 +586,7 @@
     "priority": 0,
     "raceweek": 0,
     "pkgid": 60,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Talladega+Superspeedway",
     "id": 116,
     "lowername": "talladega+superspeedway"
@@ -467,7 +595,7 @@
     "priority": 1,
     "raceweek": 1,
     "pkgid": 31,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -476,7 +604,7 @@
     "priority": 0,
     "raceweek": 2,
     "pkgid": 120,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Daytona+International+Speedway",
     "id": 191,
     "lowername": "daytona+international+speedway"
@@ -485,7 +613,7 @@
     "priority": 9,
     "raceweek": 3,
     "pkgid": 172,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Autodromo+Nazionale+Monza",
     "id": 245,
     "lowername": "autodromo+nazionale+monza"
@@ -494,7 +622,7 @@
     "priority": 0,
     "raceweek": 4,
     "pkgid": 60,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Talladega+Superspeedway",
     "id": 116,
     "lowername": "talladega+superspeedway"
@@ -503,7 +631,7 @@
     "priority": 1,
     "raceweek": 5,
     "pkgid": 31,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -512,7 +640,7 @@
     "priority": 0,
     "raceweek": 6,
     "pkgid": 120,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Daytona+International+Speedway",
     "id": 191,
     "lowername": "daytona+international+speedway"
@@ -521,7 +649,7 @@
     "priority": 9,
     "raceweek": 7,
     "pkgid": 172,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Autodromo+Nazionale+Monza",
     "id": 245,
     "lowername": "autodromo+nazionale+monza"
@@ -530,7 +658,7 @@
     "priority": 0,
     "raceweek": 8,
     "pkgid": 60,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Talladega+Superspeedway",
     "id": 116,
     "lowername": "talladega+superspeedway"
@@ -539,7 +667,7 @@
     "priority": 1,
     "raceweek": 9,
     "pkgid": 31,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -548,7 +676,7 @@
     "priority": 0,
     "raceweek": 10,
     "pkgid": 120,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Daytona+International+Speedway",
     "id": 191,
     "lowername": "daytona+international+speedway"
@@ -557,7 +685,7 @@
     "priority": 9,
     "raceweek": 11,
     "pkgid": 172,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Autodromo+Nazionale+Monza",
     "id": 245,
     "lowername": "autodromo+nazionale+monza"
@@ -566,7 +694,7 @@
     "priority": 0,
     "raceweek": 12,
     "pkgid": 60,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Talladega+Superspeedway",
     "id": 116,
     "lowername": "talladega+superspeedway"
@@ -658,7 +786,7 @@
     "priority": 1,
     "raceweek": 0,
     "pkgid": 31,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -667,7 +795,7 @@
     "priority": 1,
     "raceweek": 1,
     "pkgid": 55,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Phoenix+International+Raceway+-+2008",
     "id": 104,
     "lowername": "phoenix+international+raceway+-+2008"
@@ -676,7 +804,7 @@
     "priority": 1,
     "raceweek": 2,
     "pkgid": 34,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Mazda+Raceway+Laguna+Seca",
     "id": 47,
     "lowername": "mazda+raceway+laguna+seca"
@@ -685,7 +813,7 @@
     "priority": 1,
     "raceweek": 3,
     "pkgid": 31,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -694,7 +822,7 @@
     "priority": 1,
     "raceweek": 4,
     "pkgid": 55,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Phoenix+International+Raceway+-+2008",
     "id": 104,
     "lowername": "phoenix+international+raceway+-+2008"
@@ -703,7 +831,7 @@
     "priority": 1,
     "raceweek": 5,
     "pkgid": 34,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Mazda+Raceway+Laguna+Seca",
     "id": 47,
     "lowername": "mazda+raceway+laguna+seca"
@@ -712,7 +840,7 @@
     "priority": 1,
     "raceweek": 6,
     "pkgid": 31,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -721,7 +849,7 @@
     "priority": 1,
     "raceweek": 7,
     "pkgid": 55,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Phoenix+International+Raceway+-+2008",
     "id": 104,
     "lowername": "phoenix+international+raceway+-+2008"
@@ -730,7 +858,7 @@
     "priority": 1,
     "raceweek": 8,
     "pkgid": 34,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Mazda+Raceway+Laguna+Seca",
     "id": 47,
     "lowername": "mazda+raceway+laguna+seca"
@@ -739,7 +867,7 @@
     "priority": 1,
     "raceweek": 9,
     "pkgid": 31,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -748,7 +876,7 @@
     "priority": 1,
     "raceweek": 10,
     "pkgid": 55,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Phoenix+International+Raceway+-+2008",
     "id": 104,
     "lowername": "phoenix+international+raceway+-+2008"
@@ -757,7 +885,7 @@
     "priority": 1,
     "raceweek": 11,
     "pkgid": 34,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Mazda+Raceway+Laguna+Seca",
     "id": 47,
     "lowername": "mazda+raceway+laguna+seca"
@@ -766,7 +894,7 @@
     "priority": 1,
     "raceweek": 12,
     "pkgid": 31,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -840,7 +968,7 @@
     "priority": 1,
     "raceweek": 0,
     "pkgid": 184,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "N%C3%BCrburgring+Nordschleife",
     "id": 249,
     "lowername": "n%C3%BCrburgring+nordschleife"
@@ -932,469 +1060,6 @@
   "category": 2
 }, {
   "prefimg": "",
-  "seriesname": "INDYCAR+Winter+Series",
-  "seasonshortname": "2015+Season+4",
-  "whatshotimg": "member_images%2Fseries%2Fseriesid_249%2Fwhats_hot.jpg",
-  "cautionTypeRoad": 2,
-  "raceweek": 25,
-  "active": true,
-  "maxlicenselevel": 28,
-  "tracks": [{
-    "config": "Boot",
-    "priority": 2,
-    "raceweek": 0,
-    "pkgid": 56,
-    "night": 0,
-    "name": "Watkins+Glen+International",
-    "id": 107,
-    "lowername": "watkins+glen+international"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 1,
-    "pkgid": 66,
-    "night": 0,
-    "name": "Michigan+International+Speedway",
-    "id": 124,
-    "lowername": "michigan+international+speedway"
-  }, {
-    "config": "International",
-    "priority": 1,
-    "raceweek": 2,
-    "pkgid": 40,
-    "night": 0,
-    "name": "Sebring+International+Raceway",
-    "id": 95,
-    "lowername": "sebring+international+raceway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 3,
-    "pkgid": 115,
-    "night": 1,
-    "name": "Iowa+Speedway",
-    "id": 169,
-    "lowername": "iowa+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 4,
-    "pkgid": 145,
-    "night": 0,
-    "name": "Circuit+Gilles+Villeneuve",
-    "id": 218,
-    "lowername": "circuit+gilles+villeneuve"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 5,
-    "pkgid": 74,
-    "night": 0,
-    "name": "Pocono+Raceway",
-    "id": 136,
-    "lowername": "pocono+raceway"
-  }, {
-    "config": "IRL",
-    "priority": 1,
-    "raceweek": 6,
-    "pkgid": 35,
-    "night": 0,
-    "name": "Sonoma+Raceway",
-    "id": 102,
-    "lowername": "sonoma+raceway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 7,
-    "pkgid": 118,
-    "night": 0,
-    "name": "Kentucky+Speedway",
-    "id": 188,
-    "lowername": "kentucky+speedway"
-  }, {
-    "config": "Full+Course",
-    "priority": 1,
-    "raceweek": 8,
-    "pkgid": 11,
-    "night": 0,
-    "name": "Road+America",
-    "id": 18,
-    "lowername": "road+america"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 9,
-    "pkgid": 54,
-    "night": 0,
-    "name": "Las+Vegas+Motor+Speedway",
-    "id": 103,
-    "lowername": "las+vegas+motor+speedway"
-  }, {
-    "config": "Grand+Prix",
-    "priority": 1,
-    "raceweek": 10,
-    "pkgid": 92,
-    "night": 0,
-    "name": "Circuit+Park+Zandvoort",
-    "id": 149,
-    "lowername": "circuit+park+zandvoort"
-  }, {
-    "config": "IndyCar+Oval",
-    "priority": 0,
-    "raceweek": 11,
-    "pkgid": 73,
-    "night": 0,
-    "name": "Indianapolis+Motor+Speedway",
-    "id": 178,
-    "lowername": "indianapolis+motor+speedway"
-  }, {
-    "config": "Classic+Pits",
-    "priority": 1,
-    "raceweek": 12,
-    "pkgid": 103,
-    "night": 0,
-    "name": "Circuit+de+Spa-Francorchamps",
-    "id": 164,
-    "lowername": "circuit+de+spa-francorchamps"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 13,
-    "pkgid": 55,
-    "night": 0,
-    "name": "Phoenix+International+Raceway+-+2008",
-    "id": 104,
-    "lowername": "phoenix+international+raceway+-+2008"
-  }, {
-    "config": "Full+Course",
-    "priority": 1,
-    "raceweek": 14,
-    "pkgid": 34,
-    "night": 0,
-    "name": "Mazda+Raceway+Laguna+Seca",
-    "id": 47,
-    "lowername": "mazda+raceway+laguna+seca"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 15,
-    "pkgid": 5,
-    "night": 0,
-    "name": "Homestead+Miami+Speedway",
-    "id": 20,
-    "lowername": "homestead+miami+speedway"
-  }, {
-    "config": "Grand+Prix",
-    "priority": 0,
-    "raceweek": 16,
-    "pkgid": 124,
-    "night": 0,
-    "name": "Circuit+Zolder",
-    "id": 199,
-    "lowername": "circuit+zolder"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 17,
-    "pkgid": 41,
-    "night": 0,
-    "name": "The+Milwaukee+Mile",
-    "id": 94,
-    "lowername": "the+milwaukee+mile"
-  }, {
-    "config": "Full+Course",
-    "priority": 1,
-    "raceweek": 18,
-    "pkgid": 96,
-    "night": 0,
-    "name": "Mid-Ohio+Sports+Car+Course",
-    "id": 153,
-    "lowername": "mid-ohio+sports+car+course"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 19,
-    "pkgid": 61,
-    "night": 0,
-    "name": "Texas+Motor+Speedway",
-    "id": 121,
-    "lowername": "texas+motor+speedway"
-  }, {
-    "config": "Grand+Prix",
-    "priority": 0,
-    "raceweek": 20,
-    "pkgid": 154,
-    "night": 0,
-    "name": "Circuit+of+the+Americas",
-    "id": 229,
-    "lowername": "circuit+of+the+americas"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 21,
-    "pkgid": 123,
-    "night": 0,
-    "name": "Twin+Ring+Motegi",
-    "id": 198,
-    "lowername": "twin+ring+motegi"
-  }, {
-    "config": "Road+Course",
-    "priority": 2,
-    "raceweek": 22,
-    "pkgid": 73,
-    "night": 0,
-    "name": "Indianapolis+Motor+Speedway",
-    "id": 134,
-    "lowername": "indianapolis+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 23,
-    "pkgid": 151,
-    "night": 1,
-    "name": "Auto+Club+Speedway",
-    "id": 225,
-    "lowername": "auto+club+speedway"
-  }, {
-    "config": "Full+Course",
-    "priority": 1,
-    "raceweek": 24,
-    "pkgid": 33,
-    "night": 0,
-    "name": "Barber+Motorsports+Park",
-    "id": 46,
-    "lowername": "barber+motorsports+park"
-  }],
-  "isClubAllowed": true,
-  "serieslicgroupid": 3,
-  "restrictedByMember": false,
-  "lowerseriesshortname": "indycar+winter+series",
-  "allowedMembers": [],
-  "carclasses": [{
-    "carsinclass": [{
-      "name": "Dallara+DW12",
-      "id": 57
-    }],
-    "shortname": "DW12",
-    "name": "Dallara+DW12",
-    "id": 63,
-    "lowername": "dallara+dw12"
-  }],
-  "currentTrack": -1,
-  "seriesid": 249,
-  "driverChangeRule": 0,
-  "licgroupid": 2,
-  "ignoreLicenseForPractice": true,
-  "isWorldCup": false,
-  "islite": false,
-  "rookieseason": "",
-  "end": 1457413200000,
-  "cars": [{
-    "pkgid": 161,
-    "name": "Dallara+DW12",
-    "id": 57,
-    "lowername": "dallara+dw12",
-    "sku": 10370
-  }],
-  "carNumberMap": {
-    "carNumberMap": {}
-  },
-  "multiclass": false,
-  "isRegionCompetition": true,
-  "start": 1442289600000,
-  "lowerseasonshortname": "2015+season+4",
-  "maxTeamDrivers": 1,
-  "quarter": 4,
-  "seriesshortname": "INDYCAR+Winter+Series",
-  "catid": 2,
-  "minsr": "4.0",
-  "isFixedSetup": false,
-  "isOfficial": true,
-  "minlicenselevel": 8,
-  "cautionTypeOval": 3,
-  "licenseEligible": true,
-  "complete": false,
-  "driverChanges": false,
-  "minTeamDrivers": 1,
-  "year": 2015,
-  "restrictedToCar": false,
-  "seasonid": 1444,
-  "category": 2
-}, {
-  "prefimg": "",
-  "seriesname": "iRacing+Street+Stock+Series+-+R",
-  "seasonshortname": "2016+Season+1+Fixed",
-  "whatshotimg": "member_images%2Fseries%2Fseries_182%2Fwhats_hot.jpg",
-  "cautionTypeRoad": 0,
-  "raceweek": 12,
-  "active": true,
-  "maxlicenselevel": 8,
-  "tracks": [{
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 0,
-    "pkgid": 31,
-    "night": 0,
-    "name": "Charlotte+Motor+Speedway",
-    "id": 40,
-    "lowername": "charlotte+motor+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 1,
-    "pkgid": 7,
-    "night": 0,
-    "name": "USA+International+Speedway",
-    "id": 16,
-    "lowername": "usa+international+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 2,
-    "pkgid": 31,
-    "night": 1,
-    "name": "Charlotte+Motor+Speedway",
-    "id": 40,
-    "lowername": "charlotte+motor+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 3,
-    "pkgid": 7,
-    "night": 1,
-    "name": "USA+International+Speedway",
-    "id": 16,
-    "lowername": "usa+international+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 4,
-    "pkgid": 31,
-    "night": 0,
-    "name": "Charlotte+Motor+Speedway",
-    "id": 40,
-    "lowername": "charlotte+motor+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 5,
-    "pkgid": 7,
-    "night": 0,
-    "name": "USA+International+Speedway",
-    "id": 16,
-    "lowername": "usa+international+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 6,
-    "pkgid": 31,
-    "night": 1,
-    "name": "Charlotte+Motor+Speedway",
-    "id": 40,
-    "lowername": "charlotte+motor+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 7,
-    "pkgid": 7,
-    "night": 1,
-    "name": "USA+International+Speedway",
-    "id": 16,
-    "lowername": "usa+international+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 8,
-    "pkgid": 31,
-    "night": 0,
-    "name": "Charlotte+Motor+Speedway",
-    "id": 40,
-    "lowername": "charlotte+motor+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 9,
-    "pkgid": 7,
-    "night": 0,
-    "name": "USA+International+Speedway",
-    "id": 16,
-    "lowername": "usa+international+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 10,
-    "pkgid": 31,
-    "night": 1,
-    "name": "Charlotte+Motor+Speedway",
-    "id": 40,
-    "lowername": "charlotte+motor+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 11,
-    "pkgid": 7,
-    "night": 1,
-    "name": "USA+International+Speedway",
-    "id": 16,
-    "lowername": "usa+international+speedway"
-  }],
-  "isClubAllowed": true,
-  "serieslicgroupid": 1,
-  "restrictedByMember": false,
-  "lowerseriesshortname": "iracing+street+stock+series+-+r",
-  "allowedMembers": [],
-  "carclasses": [{
-    "carsinclass": [{
-      "name": "Street+Stock",
-      "id": 36
-    }],
-    "shortname": "Street+Stock",
-    "name": "Street+Stock",
-    "id": 34,
-    "lowername": "street+stock"
-  }],
-  "currentTrack": -1,
-  "seriesid": 182,
-  "driverChangeRule": 0,
-  "licgroupid": 1,
-  "ignoreLicenseForPractice": false,
-  "isWorldCup": false,
-  "islite": false,
-  "rookieseason": "A",
-  "end": 1457413200000,
-  "cars": [{
-    "pkgid": 105,
-    "name": "Street+Stock",
-    "id": 36,
-    "lowername": "street+stock",
-    "sku": 10232
-  }],
-  "carNumberMap": {
-    "carNumberMap": {}
-  },
-  "multiclass": false,
-  "isRegionCompetition": false,
-  "start": 1450155600000,
-  "lowerseasonshortname": "2016+season+1+fixed",
-  "maxTeamDrivers": 1,
-  "quarter": 1,
-  "seriesshortname": "iRacing+Street+Stock+Series+-+R",
-  "catid": 1,
-  "minsr": "1.0",
-  "isFixedSetup": true,
-  "isOfficial": true,
-  "minlicenselevel": 1,
-  "cautionTypeOval": 0,
-  "licenseEligible": false,
-  "complete": false,
-  "driverChanges": false,
-  "minTeamDrivers": 1,
-  "year": 2016,
-  "restrictedToCar": false,
-  "seasonid": 1467,
-  "category": 1
-}, {
-  "prefimg": "",
   "seriesname": "iRacing.com+World+Championship+Grand+Prix+Series",
   "seasonshortname": "2016+Season",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_206%2Fwhats_hot.jpg",
@@ -1407,7 +1072,7 @@
     "priority": 1,
     "raceweek": 0,
     "pkgid": 134,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Aut%C3%B3dromo+Jos%C3%A9+Carlos+Pace",
     "id": 212,
     "lowername": "aut%C3%B3dromo+jos%C3%A9+carlos+pace"
@@ -1416,7 +1081,7 @@
     "priority": 0,
     "raceweek": 1,
     "pkgid": 93,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Phillip+Island+Circuit",
     "id": 152,
     "lowername": "phillip+island+circuit"
@@ -1425,7 +1090,7 @@
     "priority": 1,
     "raceweek": 2,
     "pkgid": 40,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Sebring+International+Raceway",
     "id": 95,
     "lowername": "sebring+international+raceway"
@@ -1434,7 +1099,7 @@
     "priority": 1,
     "raceweek": 3,
     "pkgid": 11,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Road+America",
     "id": 18,
     "lowername": "road+america"
@@ -1443,7 +1108,7 @@
     "priority": 1,
     "raceweek": 4,
     "pkgid": 172,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Autodromo+Nazionale+Monza",
     "id": 239,
     "lowername": "autodromo+nazionale+monza"
@@ -1452,7 +1117,7 @@
     "priority": 3,
     "raceweek": 5,
     "pkgid": 56,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Watkins+Glen+International",
     "id": 108,
     "lowername": "watkins+glen+international"
@@ -1461,7 +1126,7 @@
     "priority": 1,
     "raceweek": 6,
     "pkgid": 32,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Silverstone+Circuit",
     "id": 41,
     "lowername": "silverstone+circuit"
@@ -1470,7 +1135,7 @@
     "priority": 0,
     "raceweek": 7,
     "pkgid": 145,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Circuit+Gilles+Villeneuve",
     "id": 218,
     "lowername": "circuit+gilles+villeneuve"
@@ -1479,7 +1144,7 @@
     "priority": 1,
     "raceweek": 8,
     "pkgid": 32,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Silverstone+Circuit",
     "id": 41,
     "lowername": "silverstone+circuit"
@@ -1488,7 +1153,7 @@
     "priority": 0,
     "raceweek": 9,
     "pkgid": 123,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Twin+Ring+Motegi",
     "id": 195,
     "lowername": "twin+ring+motegi"
@@ -1497,7 +1162,7 @@
     "priority": 0,
     "raceweek": 10,
     "pkgid": 109,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Okayama+International+Circuit",
     "id": 166,
     "lowername": "okayama+international+circuit"
@@ -1506,7 +1171,7 @@
     "priority": 2,
     "raceweek": 11,
     "pkgid": 73,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Indianapolis+Motor+Speedway",
     "id": 134,
     "lowername": "indianapolis+motor+speedway"
@@ -1515,7 +1180,7 @@
     "priority": 2,
     "raceweek": 12,
     "pkgid": 103,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Circuit+de+Spa-Francorchamps",
     "id": 163,
     "lowername": "circuit+de+spa-francorchamps"
@@ -1524,7 +1189,7 @@
     "priority": 0,
     "raceweek": 13,
     "pkgid": 114,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Suzuka+International+Racing+Course",
     "id": 168,
     "lowername": "suzuka+international+racing+course"
@@ -1533,7 +1198,7 @@
     "priority": 3,
     "raceweek": 14,
     "pkgid": 185,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "N%C3%BCrburgring+Grand-Prix-Strecke",
     "id": 250,
     "lowername": "n%C3%BCrburgring+grand-prix-strecke"
@@ -1542,7 +1207,7 @@
     "priority": 0,
     "raceweek": 15,
     "pkgid": 154,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Circuit+of+the+Americas",
     "id": 229,
     "lowername": "circuit+of+the+americas"
@@ -1855,188 +1520,6 @@
   "category": 2
 }, {
   "prefimg": "",
-  "seriesname": "Mazda+Cup",
-  "seasonshortname": "2016+Season+1+Fixed",
-  "whatshotimg": "member_images%2Fseries%2Fseriesid_139%2Fwhats_hot.jpg",
-  "cautionTypeRoad": 2,
-  "raceweek": 12,
-  "active": true,
-  "maxlicenselevel": 28,
-  "tracks": [{
-    "config": "Summit+Point+Raceway",
-    "priority": 1,
-    "raceweek": 0,
-    "pkgid": 13,
-    "night": 0,
-    "name": "Summit+Point+Raceway",
-    "id": 9,
-    "lowername": "summit+point+raceway"
-  }, {
-    "config": "Full+Course",
-    "priority": 0,
-    "raceweek": 1,
-    "pkgid": 109,
-    "night": 0,
-    "name": "Okayama+International+Circuit",
-    "id": 166,
-    "lowername": "okayama+international+circuit"
-  }, {
-    "config": "Full+Course",
-    "priority": 1,
-    "raceweek": 2,
-    "pkgid": 9,
-    "night": 0,
-    "name": "Lime+Rock+Park",
-    "id": 1,
-    "lowername": "lime+rock+park"
-  }, {
-    "config": "Full+Course",
-    "priority": 1,
-    "raceweek": 3,
-    "pkgid": 34,
-    "night": 0,
-    "name": "Mazda+Raceway+Laguna+Seca",
-    "id": 47,
-    "lowername": "mazda+raceway+laguna+seca"
-  }, {
-    "config": "Jefferson+Circuit",
-    "priority": 2,
-    "raceweek": 4,
-    "pkgid": 13,
-    "night": 0,
-    "name": "Summit+Point+Raceway",
-    "id": 8,
-    "lowername": "summit+point+raceway"
-  }, {
-    "config": "Road+Course",
-    "priority": 2,
-    "raceweek": 5,
-    "pkgid": 31,
-    "night": 0,
-    "name": "Charlotte+Motor+Speedway",
-    "id": 37,
-    "lowername": "charlotte+motor+speedway"
-  }, {
-    "config": "Road+Course",
-    "priority": 2,
-    "raceweek": 6,
-    "pkgid": 55,
-    "night": 0,
-    "name": "Phoenix+International+Raceway+-+2008",
-    "id": 105,
-    "lowername": "phoenix+international+raceway+-+2008"
-  }, {
-    "config": "Short",
-    "priority": 0,
-    "raceweek": 7,
-    "pkgid": 109,
-    "night": 0,
-    "name": "Okayama+International+Circuit",
-    "id": 167,
-    "lowername": "okayama+international+circuit"
-  }, {
-    "config": "Chicane",
-    "priority": 2,
-    "raceweek": 8,
-    "pkgid": 9,
-    "night": 0,
-    "name": "Lime+Rock+Park",
-    "id": 34,
-    "lowername": "lime+rock+park"
-  }, {
-    "config": "Jefferson+Reverse",
-    "priority": 4,
-    "raceweek": 9,
-    "pkgid": 13,
-    "night": 0,
-    "name": "Summit+Point+Raceway",
-    "id": 142,
-    "lowername": "summit+point+raceway"
-  }, {
-    "config": "Full+Course",
-    "priority": 0,
-    "raceweek": 10,
-    "pkgid": 109,
-    "night": 0,
-    "name": "Okayama+International+Circuit",
-    "id": 166,
-    "lowername": "okayama+international+circuit"
-  }, {
-    "config": "Full+Course",
-    "priority": 1,
-    "raceweek": 11,
-    "pkgid": 34,
-    "night": 0,
-    "name": "Mazda+Raceway+Laguna+Seca",
-    "id": 47,
-    "lowername": "mazda+raceway+laguna+seca"
-  }],
-  "isClubAllowed": true,
-  "serieslicgroupid": 1,
-  "restrictedByMember": false,
-  "lowerseriesshortname": "mazda+cup",
-  "allowedMembers": [],
-  "carclasses": [{
-    "carsinclass": [{
-      "name": "Mazda+MX-5+Cup+circa+2015",
-      "id": 34
-    }, {
-      "name": "Mazda+MX-5+Roadster+circa+2015",
-      "id": 35
-    }],
-    "shortname": "MX-5",
-    "name": "Mazda+MX-5",
-    "id": 31,
-    "lowername": "mazda+mx-5"
-  }],
-  "currentTrack": -1,
-  "seriesid": 139,
-  "driverChangeRule": 0,
-  "licgroupid": 1,
-  "ignoreLicenseForPractice": false,
-  "isWorldCup": false,
-  "islite": false,
-  "rookieseason": "A",
-  "end": 1457413200000,
-  "cars": [{
-    "pkgid": 102,
-    "name": "Mazda+MX-5+Cup+circa+2015",
-    "id": 34,
-    "lowername": "mazda+mx-5+cup+circa+2015",
-    "sku": 10226
-  }, {
-    "pkgid": 102,
-    "name": "Mazda+MX-5+Roadster+circa+2015",
-    "id": 35,
-    "lowername": "mazda+mx-5+roadster+circa+2015",
-    "sku": 10226
-  }],
-  "carNumberMap": {
-    "carNumberMap": {}
-  },
-  "multiclass": false,
-  "isRegionCompetition": false,
-  "start": 1450155600000,
-  "lowerseasonshortname": "2016+season+1+fixed",
-  "maxTeamDrivers": 1,
-  "quarter": 1,
-  "seriesshortname": "Mazda+Cup",
-  "catid": 2,
-  "minsr": "1.0",
-  "isFixedSetup": true,
-  "isOfficial": true,
-  "minlicenselevel": 1,
-  "cautionTypeOval": 0,
-  "licenseEligible": true,
-  "complete": false,
-  "driverChanges": false,
-  "minTeamDrivers": 1,
-  "year": 2016,
-  "restrictedToCar": false,
-  "seasonid": 1468,
-  "category": 2
-}, {
-  "prefimg": "",
   "seriesname": "NASCAR+iRacing+Class+B",
   "seasonshortname": "2016+Season",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_62%2Fwhats_hot.jpg",
@@ -2049,7 +1532,7 @@
     "priority": 0,
     "raceweek": 0,
     "pkgid": 120,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Daytona+International+Speedway",
     "id": 191,
     "lowername": "daytona+international+speedway"
@@ -2058,7 +1541,7 @@
     "priority": 1,
     "raceweek": 1,
     "pkgid": 36,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Atlanta+Motor+Speedway",
     "id": 53,
     "lowername": "atlanta+motor+speedway"
@@ -2067,7 +1550,7 @@
     "priority": 1,
     "raceweek": 2,
     "pkgid": 54,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Las+Vegas+Motor+Speedway",
     "id": 103,
     "lowername": "las+vegas+motor+speedway"
@@ -2076,7 +1559,7 @@
     "priority": 1,
     "raceweek": 3,
     "pkgid": 163,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Phoenix+International+Raceway",
     "id": 236,
     "lowername": "phoenix+international+raceway"
@@ -2085,7 +1568,7 @@
     "priority": 0,
     "raceweek": 4,
     "pkgid": 151,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Auto+Club+Speedway",
     "id": 225,
     "lowername": "auto+club+speedway"
@@ -2094,7 +1577,7 @@
     "priority": 1,
     "raceweek": 5,
     "pkgid": 61,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Texas+Motor+Speedway",
     "id": 121,
     "lowername": "texas+motor+speedway"
@@ -2103,7 +1586,7 @@
     "priority": 0,
     "raceweek": 6,
     "pkgid": 43,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Bristol+Motor+Speedway",
     "id": 101,
     "lowername": "bristol+motor+speedway"
@@ -2112,7 +1595,7 @@
     "priority": 0,
     "raceweek": 7,
     "pkgid": 23,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Richmond+International+Raceway",
     "id": 31,
     "lowername": "richmond+international+raceway"
@@ -2121,7 +1604,7 @@
     "priority": 0,
     "raceweek": 8,
     "pkgid": 60,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Talladega+Superspeedway",
     "id": 116,
     "lowername": "talladega+superspeedway"
@@ -2130,7 +1613,7 @@
     "priority": 0,
     "raceweek": 9,
     "pkgid": 100,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Dover+International+Speedway",
     "id": 162,
     "lowername": "dover+international+speedway"
@@ -2139,7 +1622,7 @@
     "priority": 1,
     "raceweek": 10,
     "pkgid": 31,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -2148,7 +1631,7 @@
     "priority": 1,
     "raceweek": 11,
     "pkgid": 74,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Pocono+Raceway",
     "id": 136,
     "lowername": "pocono+raceway"
@@ -2157,7 +1640,7 @@
     "priority": 0,
     "raceweek": 12,
     "pkgid": 66,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Michigan+International+Speedway",
     "id": 124,
     "lowername": "michigan+international+speedway"
@@ -2166,7 +1649,7 @@
     "priority": 0,
     "raceweek": 13,
     "pkgid": 115,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Iowa+Speedway",
     "id": 169,
     "lowername": "iowa+speedway"
@@ -2175,7 +1658,7 @@
     "priority": 0,
     "raceweek": 14,
     "pkgid": 120,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Daytona+International+Speedway",
     "id": 191,
     "lowername": "daytona+international+speedway"
@@ -2184,7 +1667,7 @@
     "priority": 0,
     "raceweek": 15,
     "pkgid": 118,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Kentucky+Speedway",
     "id": 188,
     "lowername": "kentucky+speedway"
@@ -2193,7 +1676,7 @@
     "priority": 1,
     "raceweek": 16,
     "pkgid": 72,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "New+Hampshire+Motor+Speedway",
     "id": 131,
     "lowername": "new+hampshire+motor+speedway"
@@ -2202,7 +1685,7 @@
     "priority": 1,
     "raceweek": 17,
     "pkgid": 73,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Indianapolis+Motor+Speedway",
     "id": 133,
     "lowername": "indianapolis+motor+speedway"
@@ -2211,7 +1694,7 @@
     "priority": 0,
     "raceweek": 18,
     "pkgid": 115,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Iowa+Speedway",
     "id": 169,
     "lowername": "iowa+speedway"
@@ -2220,7 +1703,7 @@
     "priority": 1,
     "raceweek": 19,
     "pkgid": 56,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Watkins+Glen+International",
     "id": 106,
     "lowername": "watkins+glen+international"
@@ -2229,7 +1712,7 @@
     "priority": 1,
     "raceweek": 20,
     "pkgid": 96,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Mid-Ohio+Sports+Car+Course",
     "id": 153,
     "lowername": "mid-ohio+sports+car+course"
@@ -2238,7 +1721,7 @@
     "priority": 0,
     "raceweek": 21,
     "pkgid": 43,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Bristol+Motor+Speedway",
     "id": 101,
     "lowername": "bristol+motor+speedway"
@@ -2247,7 +1730,7 @@
     "priority": 1,
     "raceweek": 22,
     "pkgid": 11,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Road+America",
     "id": 18,
     "lowername": "road+america"
@@ -2256,7 +1739,7 @@
     "priority": 0,
     "raceweek": 23,
     "pkgid": 59,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Darlington+Raceway",
     "id": 115,
     "lowername": "darlington+raceway"
@@ -2265,7 +1748,7 @@
     "priority": 0,
     "raceweek": 24,
     "pkgid": 23,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Richmond+International+Raceway",
     "id": 31,
     "lowername": "richmond+international+raceway"
@@ -2274,7 +1757,7 @@
     "priority": 0,
     "raceweek": 25,
     "pkgid": 65,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Chicagoland+Speedway",
     "id": 123,
     "lowername": "chicagoland+speedway"
@@ -2283,7 +1766,7 @@
     "priority": 0,
     "raceweek": 26,
     "pkgid": 118,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Kentucky+Speedway",
     "id": 188,
     "lowername": "kentucky+speedway"
@@ -2292,7 +1775,7 @@
     "priority": 0,
     "raceweek": 27,
     "pkgid": 100,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Dover+International+Speedway",
     "id": 162,
     "lowername": "dover+international+speedway"
@@ -2301,7 +1784,7 @@
     "priority": 1,
     "raceweek": 28,
     "pkgid": 31,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -2310,7 +1793,7 @@
     "priority": 0,
     "raceweek": 29,
     "pkgid": 142,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Kansas+Speedway",
     "id": 214,
     "lowername": "kansas+speedway"
@@ -2319,7 +1802,7 @@
     "priority": 1,
     "raceweek": 30,
     "pkgid": 61,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Texas+Motor+Speedway",
     "id": 121,
     "lowername": "texas+motor+speedway"
@@ -2328,7 +1811,7 @@
     "priority": 1,
     "raceweek": 31,
     "pkgid": 163,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Phoenix+International+Raceway",
     "id": 236,
     "lowername": "phoenix+international+raceway"
@@ -2337,7 +1820,7 @@
     "priority": 1,
     "raceweek": 32,
     "pkgid": 5,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Homestead+Miami+Speedway",
     "id": 20,
     "lowername": "homestead+miami+speedway"
@@ -2429,7 +1912,7 @@
     "priority": 0,
     "raceweek": 0,
     "pkgid": 120,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Daytona+International+Speedway",
     "id": 191,
     "lowername": "daytona+international+speedway"
@@ -2438,7 +1921,7 @@
     "priority": 1,
     "raceweek": 1,
     "pkgid": 36,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Atlanta+Motor+Speedway",
     "id": 53,
     "lowername": "atlanta+motor+speedway"
@@ -2447,7 +1930,7 @@
     "priority": 1,
     "raceweek": 2,
     "pkgid": 54,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Las+Vegas+Motor+Speedway",
     "id": 103,
     "lowername": "las+vegas+motor+speedway"
@@ -2456,7 +1939,7 @@
     "priority": 1,
     "raceweek": 3,
     "pkgid": 163,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Phoenix+International+Raceway",
     "id": 236,
     "lowername": "phoenix+international+raceway"
@@ -2465,7 +1948,7 @@
     "priority": 0,
     "raceweek": 4,
     "pkgid": 151,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Auto+Club+Speedway",
     "id": 225,
     "lowername": "auto+club+speedway"
@@ -2474,7 +1957,7 @@
     "priority": 0,
     "raceweek": 5,
     "pkgid": 123,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Twin+Ring+Motegi",
     "id": 198,
     "lowername": "twin+ring+motegi"
@@ -2483,7 +1966,7 @@
     "priority": 0,
     "raceweek": 6,
     "pkgid": 26,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Martinsville+Speedway",
     "id": 33,
     "lowername": "martinsville+speedway"
@@ -2492,7 +1975,7 @@
     "priority": 1,
     "raceweek": 7,
     "pkgid": 61,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Texas+Motor+Speedway",
     "id": 121,
     "lowername": "texas+motor+speedway"
@@ -2501,7 +1984,7 @@
     "priority": 0,
     "raceweek": 8,
     "pkgid": 43,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Bristol+Motor+Speedway",
     "id": 101,
     "lowername": "bristol+motor+speedway"
@@ -2510,7 +1993,7 @@
     "priority": 0,
     "raceweek": 9,
     "pkgid": 23,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Richmond+International+Raceway",
     "id": 31,
     "lowername": "richmond+international+raceway"
@@ -2519,7 +2002,7 @@
     "priority": 0,
     "raceweek": 10,
     "pkgid": 60,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Talladega+Superspeedway",
     "id": 116,
     "lowername": "talladega+superspeedway"
@@ -2528,7 +2011,7 @@
     "priority": 0,
     "raceweek": 11,
     "pkgid": 142,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Kansas+Speedway",
     "id": 214,
     "lowername": "kansas+speedway"
@@ -2537,7 +2020,7 @@
     "priority": 0,
     "raceweek": 12,
     "pkgid": 100,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Dover+International+Speedway",
     "id": 162,
     "lowername": "dover+international+speedway"
@@ -2546,7 +2029,7 @@
     "priority": 1,
     "raceweek": 13,
     "pkgid": 31,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -2555,7 +2038,7 @@
     "priority": 9,
     "raceweek": 14,
     "pkgid": 172,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Autodromo+Nazionale+Monza",
     "id": 245,
     "lowername": "autodromo+nazionale+monza"
@@ -2564,7 +2047,7 @@
     "priority": 1,
     "raceweek": 15,
     "pkgid": 74,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Pocono+Raceway",
     "id": 136,
     "lowername": "pocono+raceway"
@@ -2573,7 +2056,7 @@
     "priority": 1,
     "raceweek": 16,
     "pkgid": 61,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Texas+Motor+Speedway",
     "id": 121,
     "lowername": "texas+motor+speedway"
@@ -2582,7 +2065,7 @@
     "priority": 0,
     "raceweek": 17,
     "pkgid": 115,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Iowa+Speedway",
     "id": 169,
     "lowername": "iowa+speedway"
@@ -2591,7 +2074,7 @@
     "priority": 0,
     "raceweek": 18,
     "pkgid": 169,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Gateway+Motorsports+Park",
     "id": 237,
     "lowername": "gateway+motorsports+park"
@@ -2600,7 +2083,7 @@
     "priority": 0,
     "raceweek": 19,
     "pkgid": 120,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Daytona+International+Speedway",
     "id": 191,
     "lowername": "daytona+international+speedway"
@@ -2609,7 +2092,7 @@
     "priority": 0,
     "raceweek": 20,
     "pkgid": 118,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Kentucky+Speedway",
     "id": 188,
     "lowername": "kentucky+speedway"
@@ -2618,7 +2101,7 @@
     "priority": 1,
     "raceweek": 21,
     "pkgid": 72,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "New+Hampshire+Motor+Speedway",
     "id": 131,
     "lowername": "new+hampshire+motor+speedway"
@@ -2627,7 +2110,7 @@
     "priority": 1,
     "raceweek": 22,
     "pkgid": 73,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Indianapolis+Motor+Speedway",
     "id": 133,
     "lowername": "indianapolis+motor+speedway"
@@ -2636,7 +2119,7 @@
     "priority": 1,
     "raceweek": 23,
     "pkgid": 74,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Pocono+Raceway",
     "id": 136,
     "lowername": "pocono+raceway"
@@ -2645,7 +2128,7 @@
     "priority": 1,
     "raceweek": 24,
     "pkgid": 56,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Watkins+Glen+International",
     "id": 106,
     "lowername": "watkins+glen+international"
@@ -2654,7 +2137,7 @@
     "priority": 1,
     "raceweek": 25,
     "pkgid": 55,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Phoenix+International+Raceway+-+2008",
     "id": 104,
     "lowername": "phoenix+international+raceway+-+2008"
@@ -2663,7 +2146,7 @@
     "priority": 0,
     "raceweek": 26,
     "pkgid": 43,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Bristol+Motor+Speedway",
     "id": 101,
     "lowername": "bristol+motor+speedway"
@@ -2672,7 +2155,7 @@
     "priority": 0,
     "raceweek": 27,
     "pkgid": 66,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Michigan+International+Speedway",
     "id": 124,
     "lowername": "michigan+international+speedway"
@@ -2681,7 +2164,7 @@
     "priority": 0,
     "raceweek": 28,
     "pkgid": 90,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Canadian+Tire+Motorsports+Park",
     "id": 144,
     "lowername": "canadian+tire+motorsports+park"
@@ -2690,7 +2173,7 @@
     "priority": 0,
     "raceweek": 29,
     "pkgid": 23,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Richmond+International+Raceway",
     "id": 31,
     "lowername": "richmond+international+raceway"
@@ -2699,7 +2182,7 @@
     "priority": 0,
     "raceweek": 30,
     "pkgid": 65,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Chicagoland+Speedway",
     "id": 123,
     "lowername": "chicagoland+speedway"
@@ -2708,7 +2191,7 @@
     "priority": 1,
     "raceweek": 31,
     "pkgid": 72,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "New+Hampshire+Motor+Speedway",
     "id": 131,
     "lowername": "new+hampshire+motor+speedway"
@@ -2717,7 +2200,7 @@
     "priority": 1,
     "raceweek": 32,
     "pkgid": 54,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Las+Vegas+Motor+Speedway",
     "id": 103,
     "lowername": "las+vegas+motor+speedway"
@@ -2726,7 +2209,7 @@
     "priority": 1,
     "raceweek": 33,
     "pkgid": 31,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -2735,7 +2218,7 @@
     "priority": 0,
     "raceweek": 34,
     "pkgid": 142,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Kansas+Speedway",
     "id": 214,
     "lowername": "kansas+speedway"
@@ -2744,7 +2227,7 @@
     "priority": 0,
     "raceweek": 35,
     "pkgid": 60,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Talladega+Superspeedway",
     "id": 116,
     "lowername": "talladega+superspeedway"
@@ -2753,7 +2236,7 @@
     "priority": 0,
     "raceweek": 36,
     "pkgid": 26,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Martinsville+Speedway",
     "id": 33,
     "lowername": "martinsville+speedway"
@@ -2762,7 +2245,7 @@
     "priority": 1,
     "raceweek": 37,
     "pkgid": 61,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Texas+Motor+Speedway",
     "id": 121,
     "lowername": "texas+motor+speedway"
@@ -2771,7 +2254,7 @@
     "priority": 1,
     "raceweek": 38,
     "pkgid": 163,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Phoenix+International+Raceway",
     "id": 236,
     "lowername": "phoenix+international+raceway"
@@ -2780,7 +2263,7 @@
     "priority": 1,
     "raceweek": 39,
     "pkgid": 5,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Homestead+Miami+Speedway",
     "id": 20,
     "lowername": "homestead+miami+speedway"
@@ -2863,7 +2346,7 @@
     "priority": 0,
     "raceweek": 0,
     "pkgid": 120,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Daytona+International+Speedway",
     "id": 191,
     "lowername": "daytona+international+speedway"
@@ -2872,7 +2355,7 @@
     "priority": 1,
     "raceweek": 1,
     "pkgid": 36,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Atlanta+Motor+Speedway",
     "id": 53,
     "lowername": "atlanta+motor+speedway"
@@ -2881,7 +2364,7 @@
     "priority": 1,
     "raceweek": 2,
     "pkgid": 54,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Las+Vegas+Motor+Speedway",
     "id": 103,
     "lowername": "las+vegas+motor+speedway"
@@ -2890,7 +2373,7 @@
     "priority": 1,
     "raceweek": 3,
     "pkgid": 163,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Phoenix+International+Raceway",
     "id": 236,
     "lowername": "phoenix+international+raceway"
@@ -2899,7 +2382,7 @@
     "priority": 0,
     "raceweek": 4,
     "pkgid": 151,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Auto+Club+Speedway",
     "id": 225,
     "lowername": "auto+club+speedway"
@@ -2908,7 +2391,7 @@
     "priority": 0,
     "raceweek": 5,
     "pkgid": 26,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Martinsville+Speedway",
     "id": 33,
     "lowername": "martinsville+speedway"
@@ -2917,7 +2400,7 @@
     "priority": 1,
     "raceweek": 6,
     "pkgid": 61,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Texas+Motor+Speedway",
     "id": 121,
     "lowername": "texas+motor+speedway"
@@ -2926,7 +2409,7 @@
     "priority": 0,
     "raceweek": 7,
     "pkgid": 43,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Bristol+Motor+Speedway",
     "id": 101,
     "lowername": "bristol+motor+speedway"
@@ -2935,7 +2418,7 @@
     "priority": 0,
     "raceweek": 8,
     "pkgid": 23,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Richmond+International+Raceway",
     "id": 31,
     "lowername": "richmond+international+raceway"
@@ -2944,7 +2427,7 @@
     "priority": 0,
     "raceweek": 9,
     "pkgid": 60,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Talladega+Superspeedway",
     "id": 116,
     "lowername": "talladega+superspeedway"
@@ -2953,7 +2436,7 @@
     "priority": 0,
     "raceweek": 10,
     "pkgid": 142,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Kansas+Speedway",
     "id": 214,
     "lowername": "kansas+speedway"
@@ -2962,7 +2445,7 @@
     "priority": 0,
     "raceweek": 11,
     "pkgid": 100,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Dover+International+Speedway",
     "id": 162,
     "lowername": "dover+international+speedway"
@@ -2971,7 +2454,7 @@
     "priority": 1,
     "raceweek": 12,
     "pkgid": 31,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -2980,7 +2463,7 @@
     "priority": 1,
     "raceweek": 13,
     "pkgid": 74,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Pocono+Raceway",
     "id": 136,
     "lowername": "pocono+raceway"
@@ -2989,7 +2472,7 @@
     "priority": 0,
     "raceweek": 14,
     "pkgid": 66,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Michigan+International+Speedway",
     "id": 124,
     "lowername": "michigan+international+speedway"
@@ -2998,7 +2481,7 @@
     "priority": 2,
     "raceweek": 15,
     "pkgid": 35,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Sonoma+Raceway",
     "id": 48,
     "lowername": "sonoma+raceway"
@@ -3007,7 +2490,7 @@
     "priority": 0,
     "raceweek": 16,
     "pkgid": 120,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Daytona+International+Speedway",
     "id": 191,
     "lowername": "daytona+international+speedway"
@@ -3016,7 +2499,7 @@
     "priority": 0,
     "raceweek": 17,
     "pkgid": 118,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Kentucky+Speedway",
     "id": 188,
     "lowername": "kentucky+speedway"
@@ -3025,7 +2508,7 @@
     "priority": 1,
     "raceweek": 18,
     "pkgid": 72,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "New+Hampshire+Motor+Speedway",
     "id": 131,
     "lowername": "new+hampshire+motor+speedway"
@@ -3034,7 +2517,7 @@
     "priority": 1,
     "raceweek": 19,
     "pkgid": 73,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Indianapolis+Motor+Speedway",
     "id": 133,
     "lowername": "indianapolis+motor+speedway"
@@ -3043,7 +2526,7 @@
     "priority": 1,
     "raceweek": 20,
     "pkgid": 74,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Pocono+Raceway",
     "id": 136,
     "lowername": "pocono+raceway"
@@ -3052,7 +2535,7 @@
     "priority": 1,
     "raceweek": 21,
     "pkgid": 56,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Watkins+Glen+International",
     "id": 106,
     "lowername": "watkins+glen+international"
@@ -3061,7 +2544,7 @@
     "priority": 0,
     "raceweek": 22,
     "pkgid": 43,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Bristol+Motor+Speedway",
     "id": 101,
     "lowername": "bristol+motor+speedway"
@@ -3070,7 +2553,7 @@
     "priority": 0,
     "raceweek": 23,
     "pkgid": 66,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Michigan+International+Speedway",
     "id": 124,
     "lowername": "michigan+international+speedway"
@@ -3079,7 +2562,7 @@
     "priority": 0,
     "raceweek": 24,
     "pkgid": 59,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Darlington+Raceway",
     "id": 115,
     "lowername": "darlington+raceway"
@@ -3088,7 +2571,7 @@
     "priority": 0,
     "raceweek": 25,
     "pkgid": 23,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Richmond+International+Raceway",
     "id": 31,
     "lowername": "richmond+international+raceway"
@@ -3097,7 +2580,7 @@
     "priority": 0,
     "raceweek": 26,
     "pkgid": 65,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Chicagoland+Speedway",
     "id": 123,
     "lowername": "chicagoland+speedway"
@@ -3106,7 +2589,7 @@
     "priority": 1,
     "raceweek": 27,
     "pkgid": 72,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "New+Hampshire+Motor+Speedway",
     "id": 131,
     "lowername": "new+hampshire+motor+speedway"
@@ -3115,7 +2598,7 @@
     "priority": 0,
     "raceweek": 28,
     "pkgid": 100,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Dover+International+Speedway",
     "id": 162,
     "lowername": "dover+international+speedway"
@@ -3124,7 +2607,7 @@
     "priority": 1,
     "raceweek": 29,
     "pkgid": 31,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -3133,7 +2616,7 @@
     "priority": 0,
     "raceweek": 30,
     "pkgid": 142,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Kansas+Speedway",
     "id": 214,
     "lowername": "kansas+speedway"
@@ -3142,7 +2625,7 @@
     "priority": 0,
     "raceweek": 31,
     "pkgid": 60,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Talladega+Superspeedway",
     "id": 116,
     "lowername": "talladega+superspeedway"
@@ -3151,7 +2634,7 @@
     "priority": 0,
     "raceweek": 32,
     "pkgid": 26,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Martinsville+Speedway",
     "id": 33,
     "lowername": "martinsville+speedway"
@@ -3160,7 +2643,7 @@
     "priority": 1,
     "raceweek": 33,
     "pkgid": 61,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Texas+Motor+Speedway",
     "id": 121,
     "lowername": "texas+motor+speedway"
@@ -3169,7 +2652,7 @@
     "priority": 1,
     "raceweek": 34,
     "pkgid": 163,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Phoenix+International+Raceway",
     "id": 236,
     "lowername": "phoenix+international+raceway"
@@ -3178,7 +2661,7 @@
     "priority": 1,
     "raceweek": 35,
     "pkgid": 5,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Homestead+Miami+Speedway",
     "id": 20,
     "lowername": "homestead+miami+speedway"
@@ -3270,7 +2753,7 @@
     "priority": 0,
     "raceweek": 0,
     "pkgid": 120,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Daytona+International+Speedway",
     "id": 191,
     "lowername": "daytona+international+speedway"
@@ -3279,7 +2762,7 @@
     "priority": 1,
     "raceweek": 1,
     "pkgid": 36,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Atlanta+Motor+Speedway",
     "id": 53,
     "lowername": "atlanta+motor+speedway"
@@ -3288,7 +2771,7 @@
     "priority": 1,
     "raceweek": 2,
     "pkgid": 54,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Las+Vegas+Motor+Speedway",
     "id": 103,
     "lowername": "las+vegas+motor+speedway"
@@ -3297,7 +2780,7 @@
     "priority": 1,
     "raceweek": 3,
     "pkgid": 163,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Phoenix+International+Raceway",
     "id": 236,
     "lowername": "phoenix+international+raceway"
@@ -3306,7 +2789,7 @@
     "priority": 0,
     "raceweek": 4,
     "pkgid": 151,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Auto+Club+Speedway",
     "id": 225,
     "lowername": "auto+club+speedway"
@@ -3315,7 +2798,7 @@
     "priority": 0,
     "raceweek": 5,
     "pkgid": 26,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Martinsville+Speedway",
     "id": 33,
     "lowername": "martinsville+speedway"
@@ -3324,7 +2807,7 @@
     "priority": 1,
     "raceweek": 6,
     "pkgid": 61,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Texas+Motor+Speedway",
     "id": 121,
     "lowername": "texas+motor+speedway"
@@ -3333,7 +2816,7 @@
     "priority": 0,
     "raceweek": 7,
     "pkgid": 43,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Bristol+Motor+Speedway",
     "id": 101,
     "lowername": "bristol+motor+speedway"
@@ -3342,7 +2825,7 @@
     "priority": 0,
     "raceweek": 8,
     "pkgid": 23,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Richmond+International+Raceway",
     "id": 31,
     "lowername": "richmond+international+raceway"
@@ -3351,7 +2834,7 @@
     "priority": 0,
     "raceweek": 9,
     "pkgid": 60,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Talladega+Superspeedway",
     "id": 116,
     "lowername": "talladega+superspeedway"
@@ -3360,7 +2843,7 @@
     "priority": 0,
     "raceweek": 10,
     "pkgid": 142,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Kansas+Speedway",
     "id": 214,
     "lowername": "kansas+speedway"
@@ -3369,7 +2852,7 @@
     "priority": 0,
     "raceweek": 11,
     "pkgid": 100,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Dover+International+Speedway",
     "id": 162,
     "lowername": "dover+international+speedway"
@@ -3378,7 +2861,7 @@
     "priority": 1,
     "raceweek": 12,
     "pkgid": 31,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -3387,7 +2870,7 @@
     "priority": 1,
     "raceweek": 13,
     "pkgid": 74,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Pocono+Raceway",
     "id": 136,
     "lowername": "pocono+raceway"
@@ -3396,7 +2879,7 @@
     "priority": 0,
     "raceweek": 14,
     "pkgid": 66,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Michigan+International+Speedway",
     "id": 124,
     "lowername": "michigan+international+speedway"
@@ -3405,7 +2888,7 @@
     "priority": 2,
     "raceweek": 15,
     "pkgid": 35,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Sonoma+Raceway",
     "id": 48,
     "lowername": "sonoma+raceway"
@@ -3414,7 +2897,7 @@
     "priority": 0,
     "raceweek": 16,
     "pkgid": 120,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Daytona+International+Speedway",
     "id": 191,
     "lowername": "daytona+international+speedway"
@@ -3423,7 +2906,7 @@
     "priority": 0,
     "raceweek": 17,
     "pkgid": 118,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Kentucky+Speedway",
     "id": 188,
     "lowername": "kentucky+speedway"
@@ -3432,7 +2915,7 @@
     "priority": 1,
     "raceweek": 18,
     "pkgid": 72,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "New+Hampshire+Motor+Speedway",
     "id": 131,
     "lowername": "new+hampshire+motor+speedway"
@@ -3441,7 +2924,7 @@
     "priority": 1,
     "raceweek": 19,
     "pkgid": 73,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Indianapolis+Motor+Speedway",
     "id": 133,
     "lowername": "indianapolis+motor+speedway"
@@ -3450,7 +2933,7 @@
     "priority": 1,
     "raceweek": 20,
     "pkgid": 74,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Pocono+Raceway",
     "id": 136,
     "lowername": "pocono+raceway"
@@ -3459,7 +2942,7 @@
     "priority": 1,
     "raceweek": 21,
     "pkgid": 56,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Watkins+Glen+International",
     "id": 106,
     "lowername": "watkins+glen+international"
@@ -3468,7 +2951,7 @@
     "priority": 0,
     "raceweek": 22,
     "pkgid": 43,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Bristol+Motor+Speedway",
     "id": 101,
     "lowername": "bristol+motor+speedway"
@@ -3477,7 +2960,7 @@
     "priority": 0,
     "raceweek": 23,
     "pkgid": 66,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Michigan+International+Speedway",
     "id": 124,
     "lowername": "michigan+international+speedway"
@@ -3486,7 +2969,7 @@
     "priority": 0,
     "raceweek": 24,
     "pkgid": 59,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Darlington+Raceway",
     "id": 115,
     "lowername": "darlington+raceway"
@@ -3495,7 +2978,7 @@
     "priority": 0,
     "raceweek": 25,
     "pkgid": 23,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Richmond+International+Raceway",
     "id": 31,
     "lowername": "richmond+international+raceway"
@@ -3504,7 +2987,7 @@
     "priority": 0,
     "raceweek": 26,
     "pkgid": 65,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Chicagoland+Speedway",
     "id": 123,
     "lowername": "chicagoland+speedway"
@@ -3513,7 +2996,7 @@
     "priority": 1,
     "raceweek": 27,
     "pkgid": 72,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "New+Hampshire+Motor+Speedway",
     "id": 131,
     "lowername": "new+hampshire+motor+speedway"
@@ -3522,7 +3005,7 @@
     "priority": 0,
     "raceweek": 28,
     "pkgid": 100,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Dover+International+Speedway",
     "id": 162,
     "lowername": "dover+international+speedway"
@@ -3531,7 +3014,7 @@
     "priority": 1,
     "raceweek": 29,
     "pkgid": 31,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -3540,7 +3023,7 @@
     "priority": 0,
     "raceweek": 30,
     "pkgid": 142,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Kansas+Speedway",
     "id": 214,
     "lowername": "kansas+speedway"
@@ -3549,7 +3032,7 @@
     "priority": 0,
     "raceweek": 31,
     "pkgid": 60,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Talladega+Superspeedway",
     "id": 116,
     "lowername": "talladega+superspeedway"
@@ -3558,7 +3041,7 @@
     "priority": 0,
     "raceweek": 32,
     "pkgid": 26,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Martinsville+Speedway",
     "id": 33,
     "lowername": "martinsville+speedway"
@@ -3567,7 +3050,7 @@
     "priority": 1,
     "raceweek": 33,
     "pkgid": 61,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Texas+Motor+Speedway",
     "id": 121,
     "lowername": "texas+motor+speedway"
@@ -3576,7 +3059,7 @@
     "priority": 1,
     "raceweek": 34,
     "pkgid": 163,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Phoenix+International+Raceway",
     "id": 236,
     "lowername": "phoenix+international+raceway"
@@ -3585,7 +3068,7 @@
     "priority": 1,
     "raceweek": 35,
     "pkgid": 5,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Homestead+Miami+Speedway",
     "id": 20,
     "lowername": "homestead+miami+speedway"
@@ -3677,7 +3160,7 @@
     "priority": 0,
     "raceweek": 0,
     "pkgid": 120,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Daytona+International+Speedway",
     "id": 191,
     "lowername": "daytona+international+speedway"
@@ -3686,7 +3169,7 @@
     "priority": 1,
     "raceweek": 1,
     "pkgid": 36,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Atlanta+Motor+Speedway",
     "id": 53,
     "lowername": "atlanta+motor+speedway"
@@ -3695,7 +3178,7 @@
     "priority": 1,
     "raceweek": 2,
     "pkgid": 163,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Phoenix+International+Raceway",
     "id": 236,
     "lowername": "phoenix+international+raceway"
@@ -3704,7 +3187,7 @@
     "priority": 0,
     "raceweek": 3,
     "pkgid": 151,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Auto+Club+Speedway",
     "id": 225,
     "lowername": "auto+club+speedway"
@@ -3713,7 +3196,7 @@
     "priority": 1,
     "raceweek": 4,
     "pkgid": 61,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Texas+Motor+Speedway",
     "id": 121,
     "lowername": "texas+motor+speedway"
@@ -3722,7 +3205,7 @@
     "priority": 0,
     "raceweek": 5,
     "pkgid": 23,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Richmond+International+Raceway",
     "id": 31,
     "lowername": "richmond+international+raceway"
@@ -3731,7 +3214,7 @@
     "priority": 1,
     "raceweek": 6,
     "pkgid": 54,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Las+Vegas+Motor+Speedway",
     "id": 103,
     "lowername": "las+vegas+motor+speedway"
@@ -3740,7 +3223,7 @@
     "priority": 1,
     "raceweek": 7,
     "pkgid": 31,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -3749,7 +3232,7 @@
     "priority": 0,
     "raceweek": 8,
     "pkgid": 65,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Chicagoland+Speedway",
     "id": 123,
     "lowername": "chicagoland+speedway"
@@ -3758,7 +3241,7 @@
     "priority": 0,
     "raceweek": 9,
     "pkgid": 118,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Kentucky+Speedway",
     "id": 188,
     "lowername": "kentucky+speedway"
@@ -3767,7 +3250,7 @@
     "priority": 1,
     "raceweek": 10,
     "pkgid": 73,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Indianapolis+Motor+Speedway",
     "id": 133,
     "lowername": "indianapolis+motor+speedway"
@@ -3776,7 +3259,7 @@
     "priority": 1,
     "raceweek": 11,
     "pkgid": 56,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Watkins+Glen+International",
     "id": 106,
     "lowername": "watkins+glen+international"
@@ -3785,7 +3268,7 @@
     "priority": 0,
     "raceweek": 12,
     "pkgid": 66,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Michigan+International+Speedway",
     "id": 124,
     "lowername": "michigan+international+speedway"
@@ -3794,7 +3277,7 @@
     "priority": 0,
     "raceweek": 13,
     "pkgid": 59,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Darlington+Raceway",
     "id": 115,
     "lowername": "darlington+raceway"
@@ -3803,7 +3286,7 @@
     "priority": 1,
     "raceweek": 14,
     "pkgid": 72,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "New+Hampshire+Motor+Speedway",
     "id": 131,
     "lowername": "new+hampshire+motor+speedway"
@@ -3812,7 +3295,7 @@
     "priority": 1,
     "raceweek": 15,
     "pkgid": 5,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Homestead+Miami+Speedway",
     "id": 20,
     "lowername": "homestead+miami+speedway"
@@ -4143,6 +3626,95 @@
   "category": 1
 }, {
   "prefimg": "",
+  "seriesname": "Nordschleife+Tourist+Hot+Lap+Competition+",
+  "seasonshortname": "2016+Season+1",
+  "whatshotimg": "member_images%2Fseries%2Fseriesid_263%2Fwhats_hot.jpg",
+  "cautionTypeRoad": 2,
+  "raceweek": 1,
+  "active": true,
+  "maxlicenselevel": 28,
+  "tracks": [{
+    "config": "Touristenfahrten",
+    "priority": 2,
+    "raceweek": 0,
+    "pkgid": 184,
+    "timeOfDay": 0,
+    "name": "N%C3%BCrburgring+Nordschleife",
+    "id": 253,
+    "lowername": "n%C3%BCrburgring+nordschleife"
+  }],
+  "isClubAllowed": true,
+  "serieslicgroupid": 1,
+  "restrictedByMember": false,
+  "lowerseriesshortname": "nordschleife+tourist+hot+lap+competition+",
+  "allowedMembers": [],
+  "carclasses": [{
+    "carsinclass": [{
+      "name": "Mercedes+AMG+GT3",
+      "id": 72
+    }],
+    "shortname": "AMG+GT3",
+    "name": "Mercedes+AMG+GT3",
+    "id": 79,
+    "lowername": "mercedes+amg+gt3"
+  }, {
+    "carsinclass": [{
+      "name": "Audi+R8+LMS",
+      "id": 73
+    }],
+    "shortname": "Audi+R8+GT3",
+    "name": "Audi+R8+GT3",
+    "id": 80,
+    "lowername": "audi+r8+gt3"
+  }],
+  "currentTrack": 253,
+  "seriesid": 263,
+  "driverChangeRule": 0,
+  "licgroupid": 1,
+  "ignoreLicenseForPractice": false,
+  "isWorldCup": false,
+  "islite": false,
+  "rookieseason": "",
+  "end": 1458014400000,
+  "cars": [{
+    "pkgid": 199,
+    "name": "Mercedes+AMG+GT3",
+    "id": 72,
+    "lowername": "mercedes+amg+gt3",
+    "sku": 10404
+  }, {
+    "pkgid": 201,
+    "name": "Audi+R8+LMS",
+    "id": 73,
+    "lowername": "audi+r8+lms",
+    "sku": 10405
+  }],
+  "carNumberMap": {
+    "carNumberMap": {}
+  },
+  "multiclass": true,
+  "isRegionCompetition": false,
+  "start": 1457413200000,
+  "lowerseasonshortname": "2016+season+1",
+  "maxTeamDrivers": 1,
+  "quarter": 1,
+  "seriesshortname": "Nordschleife+Tourist+Hot+Lap+Competition+",
+  "catid": 2,
+  "minsr": "1.0",
+  "isFixedSetup": false,
+  "isOfficial": true,
+  "minlicenselevel": 1,
+  "cautionTypeOval": 0,
+  "licenseEligible": true,
+  "complete": false,
+  "driverChanges": false,
+  "minTeamDrivers": 1,
+  "year": 2016,
+  "restrictedToCar": false,
+  "seasonid": 1567,
+  "category": 2
+}, {
+  "prefimg": "",
   "seriesname": "PickUp+Cup",
   "seasonshortname": "2016+Season+1",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_259%2Fwhats_hot.jpg",
@@ -4155,7 +3727,7 @@
     "priority": 1,
     "raceweek": 0,
     "pkgid": 4,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Daytona+circa+2007",
     "id": 27,
     "lowername": "daytona+circa+2007"
@@ -4164,7 +3736,7 @@
     "priority": 1,
     "raceweek": 1,
     "pkgid": 31,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -4173,7 +3745,7 @@
     "priority": 1,
     "raceweek": 2,
     "pkgid": 55,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Phoenix+International+Raceway+-+2008",
     "id": 104,
     "lowername": "phoenix+international+raceway+-+2008"
@@ -4182,7 +3754,7 @@
     "priority": 1,
     "raceweek": 3,
     "pkgid": 4,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Daytona+circa+2007",
     "id": 27,
     "lowername": "daytona+circa+2007"
@@ -4191,7 +3763,7 @@
     "priority": 1,
     "raceweek": 4,
     "pkgid": 31,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -4200,7 +3772,7 @@
     "priority": 1,
     "raceweek": 5,
     "pkgid": 55,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Phoenix+International+Raceway+-+2008",
     "id": 104,
     "lowername": "phoenix+international+raceway+-+2008"
@@ -4209,7 +3781,7 @@
     "priority": 1,
     "raceweek": 6,
     "pkgid": 4,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Daytona+circa+2007",
     "id": 27,
     "lowername": "daytona+circa+2007"
@@ -4218,7 +3790,7 @@
     "priority": 1,
     "raceweek": 7,
     "pkgid": 31,
-    "night": 1,
+    "timeOfDay": 3,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -4227,7 +3799,7 @@
     "priority": 1,
     "raceweek": 8,
     "pkgid": 55,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Phoenix+International+Raceway+-+2008",
     "id": 104,
     "lowername": "phoenix+international+raceway+-+2008"
@@ -4236,7 +3808,7 @@
     "priority": 1,
     "raceweek": 9,
     "pkgid": 4,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Daytona+circa+2007",
     "id": 27,
     "lowername": "daytona+circa+2007"
@@ -4245,7 +3817,7 @@
     "priority": 1,
     "raceweek": 10,
     "pkgid": 31,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Charlotte+Motor+Speedway",
     "id": 40,
     "lowername": "charlotte+motor+speedway"
@@ -4254,7 +3826,7 @@
     "priority": 1,
     "raceweek": 11,
     "pkgid": 55,
-    "night": 0,
+    "timeOfDay": 0,
     "name": "Phoenix+International+Raceway+-+2008",
     "id": 104,
     "lowername": "phoenix+international+raceway+-+2008"
@@ -4263,7 +3835,7 @@
     "priority": 1,
     "raceweek": 12,
     "pkgid": 4,
-    "night": 0,
+    "timeOfDay": 2,
     "name": "Daytona+circa+2007",
     "id": 27,
     "lowername": "daytona+circa+2007"
@@ -4323,4 +3895,132 @@
   "restrictedToCar": false,
   "seasonid": 1505,
   "category": 1
+}, {
+  "prefimg": "",
+  "seriesname": "World+Series+of+Renault",
+  "seasonshortname": "2016+Season+1+-+13th+Week",
+  "whatshotimg": "member_images%2Fseries%2Fseriesid_272%2Fwhats_hot.jpg",
+  "cautionTypeRoad": 2,
+  "raceweek": 1,
+  "active": true,
+  "maxlicenselevel": 28,
+  "tracks": [{
+    "config": "Grand+Prix",
+    "priority": 1,
+    "raceweek": 0,
+    "pkgid": 91,
+    "timeOfDay": 0,
+    "name": "Brands+Hatch+Circuit",
+    "id": 145,
+    "lowername": "brands+hatch+circuit"
+  }, {
+    "config": "Grand+Prix",
+    "priority": 1,
+    "raceweek": 1,
+    "pkgid": 162,
+    "timeOfDay": 0,
+    "name": "Donington+Park+Racing+Circuit",
+    "id": 233,
+    "lowername": "donington+park+racing+circuit"
+  }, {
+    "config": "International",
+    "priority": 0,
+    "raceweek": 2,
+    "pkgid": 117,
+    "timeOfDay": 0,
+    "name": "Oulton+Park+Circuit",
+    "id": 180,
+    "lowername": "oulton+park+circuit"
+  }, {
+    "config": "Grand+Prix",
+    "priority": 3,
+    "raceweek": 3,
+    "pkgid": 185,
+    "timeOfDay": 0,
+    "name": "N%C3%BCrburgring+Grand-Prix-Strecke",
+    "id": 250,
+    "lowername": "n%C3%BCrburgring+grand-prix-strecke"
+  }, {
+    "config": "Grand+Prix",
+    "priority": 1,
+    "raceweek": 4,
+    "pkgid": 134,
+    "timeOfDay": 0,
+    "name": "Aut%C3%B3dromo+Jos%C3%A9+Carlos+Pace",
+    "id": 212,
+    "lowername": "aut%C3%B3dromo+jos%C3%A9+carlos+pace"
+  }, {
+    "config": "Grand+Prix",
+    "priority": 0,
+    "raceweek": 5,
+    "pkgid": 124,
+    "timeOfDay": 0,
+    "name": "Circuit+Zolder",
+    "id": 199,
+    "lowername": "circuit+zolder"
+  }, {
+    "config": "Grand+Prix",
+    "priority": 1,
+    "raceweek": 6,
+    "pkgid": 172,
+    "timeOfDay": 0,
+    "name": "Autodromo+Nazionale+Monza",
+    "id": 239,
+    "lowername": "autodromo+nazionale+monza"
+  }],
+  "isClubAllowed": true,
+  "serieslicgroupid": 1,
+  "restrictedByMember": false,
+  "lowerseriesshortname": "world+series+of+renault",
+  "allowedMembers": [],
+  "carclasses": [{
+    "carsinclass": [{
+      "name": "Formula+Renault+2.0",
+      "id": 74
+    }],
+    "shortname": "Renault+2.0",
+    "name": "Formula+Renault+2.0",
+    "id": 81,
+    "lowername": "formula+renault+2.0"
+  }],
+  "currentTrack": 145,
+  "seriesid": 272,
+  "driverChangeRule": 0,
+  "licgroupid": 1,
+  "ignoreLicenseForPractice": false,
+  "isWorldCup": false,
+  "islite": false,
+  "rookieseason": "",
+  "end": 1458014400000,
+  "cars": [{
+    "pkgid": 203,
+    "name": "Formula+Renault+2.0",
+    "id": 74,
+    "lowername": "formula+renault+2.0",
+    "sku": 10406
+  }],
+  "carNumberMap": {
+    "carNumberMap": {}
+  },
+  "multiclass": false,
+  "isRegionCompetition": false,
+  "start": 1457413200000,
+  "lowerseasonshortname": "2016+season+1+-+13th+week",
+  "maxTeamDrivers": 1,
+  "quarter": 1,
+  "seriesshortname": "World+Series+of+Renault",
+  "catid": 2,
+  "minsr": "1.0",
+  "isFixedSetup": false,
+  "isOfficial": false,
+  "minlicenselevel": 1,
+  "cautionTypeOval": 0,
+  "licenseEligible": true,
+  "complete": false,
+  "driverChanges": false,
+  "minTeamDrivers": 1,
+  "year": 2016,
+  "restrictedToCar": false,
+  "seasonid": 1569,
+  "category": 2
 }]

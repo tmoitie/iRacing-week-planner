@@ -306,4 +306,14 @@ export default [{
   seriesId: 134,
   everyTime: duration(30, 'minutes'),
   offset: duration(0, 'minutes'),
+}, {
+  // MX-5 Shakedown
+  seriesId: 273,
+  everyTime: duration(30, 'minutes'),
+  offset: duration(15, 'minutes')
+}, {
+  // Formula Renault
+  seriesId: 272,
+  everyTime: duration(30, 'minutes'),
+  offset: duration(15, 'minutes')
 }];

@@ -4578,7 +4578,7 @@
   "config": "",
   "useHtmlTrackMap": true,
   "price": 11.95,
-  "hasNightLighting": false,
+  "hasNightLighting": true,
   "name": "Southern+National+Motorsports+Park",
   "nominalLapTime": 16.6280251,
   "lowername": "southern+national+motorsports+park",
