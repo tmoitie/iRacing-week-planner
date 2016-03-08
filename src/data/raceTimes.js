@@ -282,4 +282,28 @@ export default [{
   weekStartOffset: duration({days: 14}),
   weekEndOffset: duration({days: 5}),
   offWeeks: [2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.2, 8.4, 8.6, 8.8, 9.5, 10.5, 11.5, 12.5, 13.3, 13.6, 14.5, 15.5]
+}, {
+  // 12 hours of Sebring
+  seriesId: 271,
+  setTimes: [
+    duration({days: 4, hours: 2}),  // Sat 2am
+    duration({days: 4, hours: 13}),  // Sat 1pm
+    duration({days: 4, hours: 17}),  // Sat 5pm
+    duration({days: 5, hours: 14}), // Sun 2am
+  ]
+}, {
+  // Figure of Gr8
+  seriesId: 245,
+  everyTime: duration(30, 'minutes'),
+  offset: duration(15, 'minutes'),
+}, {
+  // W13 SRF
+  seriesId: 69,
+  everyTime: duration(30, 'minutes'),
+  offset: duration(0, 'minutes'),
+}, {
+  // W13 SS
+  seriesId: 134,
+  everyTime: duration(30, 'minutes'),
+  offset: duration(0, 'minutes'),
 }];
