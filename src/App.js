@@ -16,6 +16,8 @@ import availableColumns from './data/availableColumns';
 
 import { seasonStart, seasonEnd } from './config';
 
+import changelog from './data/changelog';
+
 import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
 const cars = uniq(allCars, false, (car) => car.sku);
@@ -192,45 +194,16 @@ export default class App extends Component {
           </p>
 
           <h3>Changelog</h3>
-          <h4>2015-02-22</h4>
-          <ul>
-            <li>Add NIS, new Class-A/B series and the Pro series, and track 'off weeks' so the schedule works.</li>
-          </ul>
-          <h4>2015-02-09</h4>
-          <ul>
-            <li>Change changelog to about and add contact info</li>
-          </ul>
-          <h4>2015-12-30</h4>
-          <ul>
-            <li>Add mode so you can completely ignore one aspect of iRacing (oval/road)</li>
-          </ul>
-          <h4>2015-12-20</h4>
-          <ul>
-            <li>Add sortable columns</li>
-            <li>Add race times column</li>
-            <li>Add next race time column</li>
-          </ul>
-          <h4>2015-12-19</h4>
-          <ul>
-            <li>Make columns selectable</li>
-          </ul>
-          <h4>2015-12-17</h4>
-          <ul>
-            <li>Remove P Class series as they have irregular schedules that aren't displaying right.</li>
-            <li>Added this changelog!</li>
-          </ul>
-          <h4>2015-12-16</h4>
-          <ul>
-            <li>Add ability to 'favorite' content with the star icon.</li>
-            <li>Fix bug with disabled default content.</li>
-          </ul>
-          <h4>2015-12-15</h4>
-          <ul>
-            <li>Add "Select All Oval/Road" to content choosers.</li>
-            <li>Made free content un-unselectable.</li>
-            <li>Made series clickable with popup showing all race weeks.</li>
-            <li>Add licence class column to table.</li>
-          </ul>
+          {changelog.map(dayItem => {
+            return (
+              <div key={dayItem.date}>
+                <h4>{dayItem.date.local().format('YYYY MMM DD')}</h4>
+                <ul>
+                  {dayItem.items.map((changeItem, index) => <li key={index}>{changeItem}</li>)}
+                </ul>
+              </div>
+            );
+          })}
         </div>
       </Modal>
     ));
