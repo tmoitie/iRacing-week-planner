@@ -47,7 +47,7 @@ export default [{
   // Super Late Model
   seriesId: 223,
   everyTime: duration(2, 'hours'),
-  offset: duration(15, 'minutes'),
+  offset: duration(75, 'minutes'),
 }, {
   // Class C Trucks Open
   seriesId: 47,
@@ -95,18 +95,10 @@ export default [{
   everyTime: duration(2, 'hours'),
   offset: duration(45, 'minutes'),
 }, {
-  // Pro Series
-  seriesId: 95 // 1am Wed
-}, {
   // Production Car Challenge
   seriesId: 112,
   everyTime: duration(1, 'hours'),
   offset: duration(30, 'minutes'),
-}, {
-  // Mazda Cup
-  seriesId: 139,
-  everyTime: duration(1, 'hours'),
-  offset: duration(0, 'minutes'),
 }, {
   // iRacing Nordschleife Hotlap
   seriesId: 263,
@@ -162,23 +154,6 @@ export default [{
   everyTime: duration(2, 'hours'),
   offset: duration(60, 'minutes'),
 }, {
-  // IndyCar Winter
-  seriesId: 249,
-  setTimes: [
-    duration(1, 'hours'),          // Tue 1am
-    duration({ days: 2, hours: 20}), // Thur 8pm
-    duration({ days: 3, hours: 3}),  // Fri 3am
-    duration({ days: 3, hours: 19}), // Fri 7pm
-    duration({ days: 3, hours: 22}), // Fri 10pm
-    duration({ days: 4, hours: 2}),  // Sat 2am
-    duration({ days: 4, hours: 10}), // Sat 10am
-    duration({ days: 4, hours: 15}), // Sat 3pm
-    duration({ days: 4, hours: 18}), // Sat 6pm
-    duration({ days: 4, hours: 22}), // Sat 10pm
-    duration({ days: 5, hours: 15}), // Sun 3pm
-    duration({ days: 5, hours: 18}), // Sun 6pm
-  ]
-}, {
   // Prototype
   seriesId: 256,
   everyTime: duration(2, 'hours'),
@@ -219,9 +194,6 @@ export default [{
   everyTime: duration(2, 'hours'),
   offset: duration(0, 'minutes'),
 }, {
-  // Grand Prix Pro
-  seriesId: 67 // 4pm Sat
-}, {
   // Carb Cup
   seriesId: 116,
   everyTime: duration(1, 'hours'),
@@ -245,10 +217,10 @@ export default [{
   // NIS Fixed
   seriesId: 207,
   setTimes: [
-    duration({days: 3, hours: 2}),  // Fri 2am
+    duration({days: 3, hours: 1}),  // Fri 1am
     duration({days: 4, hours: 10}), // Sat 10am
-    duration({days: 4, hours: 17}), // Sat 5pm
-    duration({days: 6, hours: 2}),  // Mon 2am
+    duration({days: 4, hours: 16}), // Sat 4pm
+    duration({days: 6, hours: 1}),  // Mon 1am
   ],
   offWeeks: [
     5.5, 12.5, 15.5, 22.5
@@ -257,9 +229,9 @@ export default [{
   // NIS Open
   seriesId: 229,
   setTimes: [
-    duration({days: 2, hours: 2}),  // Thu 2am
-    duration({days: 4, hours: 2}),  // Sat 2am
-    duration({days: 5, hours: 15}), // Sun 3pm
+    duration({days: 2, hours: 1}),  // Thu 1am
+    duration({days: 4, hours: 1}),  // Sat 1am
+    duration({days: 5, hours: 14}), // Sun 2pm
   ],
   offWeeks: [
     5.5, 12.5, 15.5, 22.5
@@ -277,7 +249,7 @@ export default [{
   // Peak Antifreeze
   seriesId: 205,
   setTimes: [
-    duration({days: 1, hours: 1, minutes: 45}), // Sun 0:45am
+    duration({days: 1, hours: 0, minutes: 45}), // Sun 0:45am
   ],
   weekStartOffset: duration({days: 14}),
   weekEndOffset: duration({days: 5}),
@@ -291,11 +263,6 @@ export default [{
     duration({days: 4, hours: 17}),  // Sat 5pm
     duration({days: 5, hours: 14}), // Sun 2am
   ]
-}, {
-  // Figure of Gr8
-  seriesId: 245,
-  everyTime: duration(30, 'minutes'),
-  offset: duration(15, 'minutes'),
 }, {
   // W13 SRF
   seriesId: 69,
@@ -316,4 +283,28 @@ export default [{
   seriesId: 272,
   everyTime: duration(30, 'minutes'),
   offset: duration(15, 'minutes')
+}, {
+  // European MX-5
+  seriesId: 270,
+  everyTime: duration(2, 'hours'),
+  offset: duration(30, 'minutes')
+}, {
+  // VRS Mazda (Fixed)
+  seriesId: 274,
+  everyTime: duration(1, 'hours'),
+  offset: duration(30, 'minutes')
+}, {
+  // Formula Renault 2.0
+  seriesId: 269,
+  everyTime: duration(2, 'hours'),
+  offset: duration(45, 'minutes')
+}, {
+  // IndyCar Road - no time data yet
+  seriesId: 133,
+  offWeeks: [1.5, 2.5, 3.5, 4.5, 5.5]
+  // everyTime: duration()
+}, {
+  // IndyCar Fixed Oval - no time data yet
+  seriesId: 132,
+  offWeeks: [1.5, 2.5, 3.5, 4.5, 5.5]
 }];
