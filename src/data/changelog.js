@@ -1,6 +1,11 @@
 import moment from 'moment';
 
 export default [{
+  date: moment('2016-03-14 00:00:00').utc(),
+  items: [
+    `Add 2015 Season 2 data. Happy racing!`
+  ]
+}, {
   date: moment('2016-03-08 00:00:00').utc(),
   items: [
     `Add Week 13 series and 12 hours of Sebring.`,
