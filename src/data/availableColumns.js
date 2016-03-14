@@ -13,6 +13,26 @@ const defaultSort = (a, b) => {
   return a.licenceClassNumber < b.licenceClassNumber ? -1 : 1;
 };
 
+const sortByDate = (key, order, a, b) => {
+  if (a[key] === b[key]) {
+    return defaultSort(a, b);
+  }
+  if (a[key] === null) {
+    return 1;
+  }
+  if (b[key] === null) {
+    return -1;
+  }
+  if (a[key].isSame(b[key])) {
+    return defaultSort(a, b);
+  }
+  if (order === 'asc') {
+    return a[key].isBefore(b[key]) ? -1 : 1;
+  }
+
+  return a[key].isAfter(b[key]) ? -1 : 1;
+};
+
 export default [{
   id: 'class',
   header: 'Class',
@@ -105,15 +125,7 @@ export default [{
   header: 'Start',
   component: StartDate,
   default: true,
-  sort: (order, a, b) => {
-    if (a.startTime === b.startTime) {
-      return defaultSort(a, b);
-    }
-    if (order === 'asc') {
-      return (a.startTime < b.startTime ? -1 : 1);
-    }
-    return (a.startTime > b.startTime ? -1 : 1);
-  }
+  sort: sortByDate.bind(null, 'startTime')
 }, {
   id: 'end',
   header: 'End',
@@ -165,28 +177,11 @@ export default [{
   header: 'Next Race',
   component: NextRace,
   default: true,
-  sort: (order, a, b) => {
-    if (a.nextTime.isSame(b.nextTime)) {
-      return defaultSort(a, b);
-    }
-    if (order === 'asc') {
-      return a.nextTime.isBefore(b.nextTime) ? -1 : 1;
-    }
-    return a.nextTime.isAfter(b.nextTime) ? -1 : 1;
-  }
+  sort: sortByDate.bind(null, 'nextTime')
 }, {
   id: 'seriesEnd',
   header: 'Season End',
   component: SeasonEnd,
   default: false,
-  sort: (order, a, b) => {
-    if (a.seriesEnd.isSame(b.seriesEnd)) {
-      return defaultSort(a, b);
-    }
-    if (order === 'asc') {
-      return a.seriesEnd.isBefore(b.seriesEnd) ? -1 : 1;
-    }
-
-    return a.seriesEnd.isAfter(b.seriesEnd) ? -1 : 1;
-  }
+  sort: sortByDate.bind(null, 'seriesEnd')
 }];
