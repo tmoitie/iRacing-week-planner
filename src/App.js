@@ -14,7 +14,7 @@ import allCars from './data/cars.json';
 import tracks from './lib/tracks';
 import availableColumns from './data/availableColumns';
 
-import { seasonStart, seasonEnd } from './config';
+import { seasonStart, seasonEnd, weekSeasonStart } from './config';
 
 import changelog from './data/changelog';
 
@@ -255,7 +255,14 @@ export default class App extends Component {
                 oval={mode !== 'road'} road={mode !== 'oval'} />
             </div>
             <div className="col-md-10">
-              <h3>Races for date: {moment(date).local().format('YYYY MMM DD')}</h3>
+              <div className="row">
+                <h3 className="col-xs-8">
+                  Races for date: {moment(date).local().format('YYYY MMM DD')}
+                </h3>
+                <h3 className="col-xs-4" style={{textAlign: 'right'}}>
+                  Week {Math.ceil(moment.duration(moment(date).diff(weekSeasonStart)).asWeeks())}
+                </h3>
+              </div>
               <div style={{marginBottom: 10}}>
                 <TimeSlider minFrom={parseInt(seasonStart.format('X'), 10)} maxTo={parseInt(seasonEnd.format('X'), 10)}
                   onChange={this.updateDate.bind(this)} initial={parseInt(date.format('X'), 10)}

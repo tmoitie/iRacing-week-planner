@@ -1,6 +1,11 @@
 import moment from 'moment';
 
 export default [{
+  date: moment('2016-05-02 00:00:00').utc(),
+  items: [
+    `Added week number to top of UI`
+  ]
+}, {
   date: moment('2016-03-14 00:00:00').utc(),
   items: [
     `Add 2015 Season 2 data. Happy racing!`
