@@ -307,4 +307,20 @@ export default [{
   // IndyCar Fixed Oval - no time data yet
   seriesId: 132,
   offWeeks: [1.5, 2.5, 3.5, 4.5, 5.5]
+}, {
+  // Indy 500
+  seriesId: 276,
+  setTimes: [
+    duration({days: 4, hours: 1, minutes: 0}),
+    duration({days: 4, hours: 20, minutes: 0}),
+    duration({days: 5, hours: 1, minutes: 0}),
+    duration({days: 5, hours: 12, minutes: 0})
+  ]
+}, {
+  // VLN Endurance
+  seriesId: 275,
+  offWeeks: [1.2, 1.4, 1.5, 1.6, 1.8, 2.2, 2.7, 3.2, 3.4, 3.6, 3.8, 4.5, 5.4, 5.7, 6.5, 7.5],
+  setTimes: [
+    duration({days: 5, hours: 14, minutes: 0}), // Sun 2pm
+  ]
 }];

@@ -55,7 +55,7 @@ export default season.reduce((carry, series) => {
     seriesStart.add(raceTimes.weekStartOffset);
   }
 
-  const seriesEnd = moment(series.end, 'x').utc().startOf('day');
+  const seriesEnd = moment(series.end, 'x').utc().startOf('isoWeek').add({days: 1});
 
   if (raceTimes.weekEndOffset) {
     seriesEnd.add(raceTimes.weekEndOffset);
