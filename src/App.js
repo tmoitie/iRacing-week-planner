@@ -260,7 +260,7 @@ export default class App extends Component {
                   Races for date: {moment(date).local().format('YYYY MMM DD')}
                 </h3>
                 <h3 className="col-xs-4" style={{textAlign: 'right'}}>
-                  Week {Math.ceil(moment.duration(moment(date).diff(weekSeasonStart)).asWeeks())}
+                  Week {Math.ceil(moment.duration(moment(date).add({second: 1}).diff(weekSeasonStart)).asWeeks())}
                 </h3>
               </div>
               <div style={{marginBottom: 10}}>
