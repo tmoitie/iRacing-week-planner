@@ -2,11 +2,13 @@ const path = require('path');
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 
+const port = process.env.PORT || 3000;
+
 module.exports = {
   devtool: process.env.ENV === 'production' ? null : 'eval-source-maps',
   entry: {
     main: process.env.ENV === 'production' ? ['./src/index'] : [
-      'webpack-dev-server/client?http://localhost:3000',
+      `webpack-dev-server/client?http://localhost:${port}`,
       'webpack/hot/only-dev-server',
       './src/index'
     ],
@@ -41,7 +43,6 @@ module.exports = {
   },
   postcss: () => [autoprefixer],
   sassLoader: {
-    // includePaths: [path.resolve(__dirname, './some-folder')]
   },
   plugins: process.env.ENV === 'production' ? [
     new webpack.optimize.UglifyJsPlugin({minimize: true}),
