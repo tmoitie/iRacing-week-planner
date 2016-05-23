@@ -102,6 +102,7 @@ export default season.reduce((carry, series) => {
       raceTimes: raceTimes,
       nextTime: nextTime,
       seriesEnd: seriesEnd,
+      seasonId: series.seasonid
     };
   }));
 }, []);

@@ -1,5 +1,5 @@
 import {
-  Car, Class, EndDate, Fixed, Licence, NextRace, Official,
+  Car, Class, EndDate, Fixed, Licence, Link, NextRace, Official,
   RaceTimes, Series, SeasonEnd, StartDate, Track, Type
 } from '../components/columns/';
 import moment from 'moment';
@@ -184,4 +184,9 @@ export default [{
   component: SeasonEnd,
   default: false,
   sort: sortByDate.bind(null, 'seriesEnd')
+}, {
+  id: 'seriesLink',
+  header: 'Link',
+  component: Link,
+  default: true
 }];
