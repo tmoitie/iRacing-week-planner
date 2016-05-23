@@ -1,6 +1,11 @@
 import moment from 'moment';
 
 export default [{
+  date: moment('2016-05-23 00:00:00').utc(),
+  items: [
+    'Added season link'
+  ]
+}, {
   date: moment('2016-05-17 00:00:00').utc(),
   items: [
     `Fixed week number accuracy`,
