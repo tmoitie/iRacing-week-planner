@@ -8,15 +8,13 @@ import Filters from './components/Filters';
 import FavouriteSeriesModal from './components/modal/FavouriteSeriesModal';
 import ContentModal from './components/modal/ContentModal';
 import OptionsModal from './components/modal/OptionsModal';
-import Modal from './components/modal/Modal';
+import AboutModal from './components/modal/AboutModal';
 
 import allCars from './data/cars.json';
 import tracks from './lib/tracks';
 import availableColumns from './data/availableColumns';
 
 import { seasonStart, seasonEnd, weekSeasonStart } from './config';
-
-import changelog from './data/changelog';
 
 import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
@@ -178,35 +176,7 @@ export default class App extends Component {
 
   openChangelogModal(e) {
     e.preventDefault();
-    this.renderModal(() => (
-      <Modal onClose={this.closeModal.bind(this)} title='About'
-        doneAction={this.closeModal.bind(this)}>
-        <div className='container-fluid'>
-
-          <p>
-            <span>This tool was created by <a href='https://twitter.com/tmoitie' target='_blank'>@tmoitie</a> (</span>
-            <a href='http://members.iracing.com/membersite/member/CareerStats.do?custid=69636'
-              target='_blank'>Tom Moitié</a>
-            <span> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or </span>
-            <span>questions. The code is hosted publicly on </span>
-            <a href='https://github.com/tmoitie/iRacing-week-planner' target='_blank'>Github</a>
-            <span>. Thanks!</span>
-          </p>
-
-          <h3>Changelog</h3>
-          {changelog.map(dayItem => {
-            return (
-              <div key={dayItem.date}>
-                <h4>{dayItem.date.local().format('YYYY MMM DD')}</h4>
-                <ul>
-                  {dayItem.items.map((changeItem, index) => <li key={index}>{changeItem}</li>)}
-                </ul>
-              </div>
-            );
-          })}
-        </div>
-      </Modal>
-    ));
+    this.renderModal(() => (<AboutModal onClose={this.closeModal.bind(this)} />));
   }
 
   saveOptions(key, value) {
