@@ -11,7 +11,7 @@ export default class NextRace extends Component {
     return (
       <td>
         <a
-          href={`http://members.iracing.com/membersite/member/SeriesNews.do?season=${race.seasonId}`}
+          href={`http://members.iracing.com/membersite/member/SeriesSessions.do?season=${race.seasonId}`}
           target='_blank'>
           <span className='glyphicon glyphicon-link' />
         </a>
