@@ -4,7 +4,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_231%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -131,7 +131,7 @@
         "id": 74,
         "lowername": "mazda+mx-5+cup+2016"
     }],
-    "currentTrack": 239,
+    "currentTrack": 18,
     "seriesid": 231,
     "driverChangeRule": 0,
     "licgroupid": 2,
@@ -177,7 +177,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_237%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -316,7 +316,7 @@
         "id": 59,
         "lowername": "gt3+class"
     }],
-    "currentTrack": 144,
+    "currentTrack": 252,
     "seriesid": 237,
     "driverChangeRule": 1,
     "licgroupid": 2,
@@ -386,7 +386,7 @@
     "seasonshortname": "2016+Season+1",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_268%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 2,
+    "raceweek": 3,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -894,7 +894,7 @@
         "id": 59,
         "lowername": "gt3+class"
     }],
-    "currentTrack": 41,
+    "currentTrack": 165,
     "seriesid": 268,
     "driverChangeRule": 1,
     "licgroupid": 7,
@@ -964,7 +964,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_228%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -1103,7 +1103,7 @@
         "id": 59,
         "lowername": "gt3+class"
     }],
-    "currentTrack": 144,
+    "currentTrack": 252,
     "seriesid": 228,
     "driverChangeRule": 0,
     "licgroupid": 3,
@@ -1173,7 +1173,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fcadillaccup%2Fstats_cadillaccup.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -1300,7 +1300,7 @@
         "id": 45,
         "lowername": "cadillac+cts-vr"
     }],
-    "currentTrack": 127,
+    "currentTrack": 233,
     "seriesid": 183,
     "driverChangeRule": 0,
     "licgroupid": 1,
@@ -1346,7 +1346,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_116%2Fwhats_hot.jpg",
     "cautionTypeRoad": 0,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -1488,7 +1488,7 @@
         "id": 50,
         "lowername": "sprint+cup"
     }],
-    "currentTrack": 40,
+    "currentTrack": 191,
     "seriesid": 116,
     "driverChangeRule": 0,
     "licgroupid": 1,
@@ -1546,7 +1546,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Flotusgrandprix%2Fstats_lotus.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -1673,7 +1673,7 @@
         "id": 22,
         "lowername": "lotus+79"
     }],
-    "currentTrack": 244,
+    "currentTrack": 250,
     "seriesid": 65,
     "driverChangeRule": 0,
     "licgroupid": 3,
@@ -1719,7 +1719,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_258%2Fwhats_hot.jpg",
     "cautionTypeRoad": 1,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -1855,7 +1855,7 @@
         "id": 26,
         "lowername": "dallara+indycar"
     }],
-    "currentTrack": 40,
+    "currentTrack": 104,
     "seriesid": 258,
     "driverChangeRule": 0,
     "licgroupid": 1,
@@ -1901,7 +1901,7 @@
     "seasonshortname": "2016+Season+2+Fixed",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_270%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -2028,7 +2028,7 @@
         "id": 74,
         "lowername": "mazda+mx-5+cup+2016"
     }],
-    "currentTrack": 9,
+    "currentTrack": 37,
     "seriesid": 270,
     "driverChangeRule": 0,
     "licgroupid": 1,
@@ -2074,7 +2074,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fgplegends%2Fwhats_hot.jpg",
     "cautionTypeRoad": 1,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -2201,7 +2201,7 @@
         "id": 46,
         "lowername": "lotus+49"
     }],
-    "currentTrack": 219,
+    "currentTrack": 234,
     "seriesid": 201,
     "driverChangeRule": 0,
     "licgroupid": 2,
@@ -2247,7 +2247,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_233%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -2377,7 +2377,7 @@
         "id": 73,
         "lowername": "gt1+class"
     }],
-    "currentTrack": 144,
+    "currentTrack": 95,
     "seriesid": 233,
     "driverChangeRule": 0,
     "licgroupid": 2,
@@ -2429,7 +2429,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_227%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -2574,7 +2574,7 @@
         "id": 77,
         "lowername": "corvette+c7+daytona+prototype"
     }],
-    "currentTrack": 192,
+    "currentTrack": 127,
     "seriesid": 227,
     "driverChangeRule": 0,
     "licgroupid": 3,
@@ -2855,7 +2855,7 @@
     "seasonshortname": "2016+Season+2+Fixed",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_165%2Fwhats_hot.jpg",
     "cautionTypeRoad": 0,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -2982,7 +2982,7 @@
         "id": 63,
         "lowername": "dallara+dw12"
     }],
-    "currentTrack": 115,
+    "currentTrack": 178,
     "seriesid": 165,
     "driverChangeRule": 0,
     "licgroupid": 2,
@@ -3028,7 +3028,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Findyroad%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 5,
+    "raceweek": 6,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -3101,7 +3101,7 @@
         "id": 63,
         "lowername": "dallara+dw12"
     }],
-    "currentTrack": 41,
+    "currentTrack": 18,
     "seriesid": 133,
     "driverChangeRule": 0,
     "licgroupid": 2,
@@ -3132,7 +3132,7 @@
     "isFixedSetup": false,
     "isOfficial": true,
     "minlicenselevel": 8,
-    "cautionTypeOval": 0,
+    "cautionTypeOval": 3,
     "licenseEligible": true,
     "complete": false,
     "driverChanges": false,
@@ -3147,7 +3147,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fadvlegcup%2Fstats_advlegends.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -3274,7 +3274,7 @@
         "id": 5,
         "lowername": "legends"
     }],
-    "currentTrack": 14,
+    "currentTrack": 161,
     "seriesid": 32,
     "driverChangeRule": 0,
     "licgroupid": 1,
@@ -3320,7 +3320,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_269%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -3447,7 +3447,7 @@
         "id": 81,
         "lowername": "formula+renault+2.0"
     }],
-    "currentTrack": 218,
+    "currentTrack": 145,
     "seriesid": 269,
     "driverChangeRule": 0,
     "licgroupid": 2,
@@ -3493,7 +3493,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_260%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -3620,7 +3620,7 @@
         "id": 78,
         "lowername": "mclaren+mp4-30"
     }],
-    "currentTrack": 163,
+    "currentTrack": 149,
     "seriesid": 260,
     "driverChangeRule": 0,
     "licgroupid": 4,
@@ -3666,7 +3666,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fgrandtour%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -3811,7 +3811,7 @@
         "id": 28,
         "lowername": "ford+mustang+fr500s"
     }],
-    "currentTrack": 152,
+    "currentTrack": 219,
     "seriesid": 130,
     "driverChangeRule": 0,
     "licgroupid": 1,
@@ -3869,7 +3869,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Flmtour%2Fstats_latemodel.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -3996,7 +3996,7 @@
         "id": 14,
         "lowername": "monte+carlo+ss"
     }],
-    "currentTrack": 161,
+    "currentTrack": 256,
     "seriesid": 33,
     "driverChangeRule": 0,
     "licgroupid": 1,
@@ -4042,7 +4042,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_112%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -4178,7 +4178,7 @@
         "id": 74,
         "lowername": "mazda+mx-5+cup+2016"
     }],
-    "currentTrack": 9,
+    "currentTrack": 34,
     "seriesid": 112,
     "driverChangeRule": 0,
     "licgroupid": 1,
@@ -4230,7 +4230,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_256%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -4366,7 +4366,7 @@
         "id": 40,
         "lowername": "hpd+arx-01c"
     }],
-    "currentTrack": 250,
+    "currentTrack": 185,
     "seriesid": 256,
     "driverChangeRule": 0,
     "licgroupid": 2,
@@ -4418,7 +4418,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fscrown%2Fstats_scrown.jpg",
     "cautionTypeRoad": 0,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -4545,7 +4545,7 @@
         "id": 16,
         "lowername": "silver+crown"
     }],
-    "currentTrack": 40,
+    "currentTrack": 31,
     "seriesid": 53,
     "driverChangeRule": 0,
     "licgroupid": 3,
@@ -4591,7 +4591,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fsrfchallenge%2Fstats_specracer.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -4718,7 +4718,7 @@
         "id": 20,
         "lowername": "spec+racer+ford"
     }],
-    "currentTrack": 219,
+    "currentTrack": 97,
     "seriesid": 63,
     "driverChangeRule": 0,
     "licgroupid": 1,
@@ -4764,7 +4764,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fsprintcar%2Fstats_sprintcar.jpg",
     "cautionTypeRoad": 0,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -4891,7 +4891,7 @@
         "id": 35,
         "lowername": "sprint+car"
     }],
-    "currentTrack": 201,
+    "currentTrack": 31,
     "seriesid": 131,
     "driverChangeRule": 0,
     "licgroupid": 3,
@@ -4937,7 +4937,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fseries_190%2Fwhats_hot.jpg",
     "cautionTypeRoad": 0,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -5064,7 +5064,7 @@
         "id": 34,
         "lowername": "street+stock"
     }],
-    "currentTrack": 190,
+    "currentTrack": 33,
     "seriesid": 190,
     "driverChangeRule": 0,
     "licgroupid": 2,
@@ -5110,7 +5110,7 @@
     "seasonshortname": "2016+Season+2+Fixed",
     "whatshotimg": "member_images%2Fseries%2Fseries_182%2Fwhats_hot.jpg",
     "cautionTypeRoad": 0,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 8,
     "tracks": [{
@@ -5237,7 +5237,7 @@
         "id": 34,
         "lowername": "street+stock"
     }],
-    "currentTrack": 16,
+    "currentTrack": 40,
     "seriesid": 182,
     "driverChangeRule": 0,
     "licgroupid": 1,
@@ -5283,7 +5283,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Firacingsuperlatemodel%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -5410,7 +5410,7 @@
         "id": 60,
         "lowername": "super+late+model"
     }],
-    "currentTrack": 12,
+    "currentTrack": 17,
     "seriesid": 223,
     "driverChangeRule": 0,
     "licgroupid": 2,
@@ -5456,7 +5456,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_88%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -5586,7 +5586,7 @@
         "id": 67,
         "lowername": "v8supercars"
     }],
-    "currentTrack": 144,
+    "currentTrack": 152,
     "seriesid": 88,
     "driverChangeRule": 0,
     "licgroupid": 2,
@@ -5817,80 +5817,6 @@
     "restrictedToCar": false,
     "seasonid": 1572,
     "category": 2
-}, {
-    "prefimg": "",
-    "seriesname": "iRacing.com+Indy+500",
-    "seasonshortname": "2016+iRacing.com+Indy+500",
-    "whatshotimg": "member_images%2Fseries%2Fseriesid_276%2Fwhats_hot.jpg",
-    "cautionTypeRoad": 0,
-    "raceweek": 1,
-    "active": true,
-    "maxlicenselevel": 28,
-    "tracks": [{
-        "config": "IndyCar+Oval",
-        "priority": 0,
-        "raceweek": 0,
-        "pkgid": 73,
-        "timeOfDay": 0,
-        "name": "Indianapolis+Motor+Speedway",
-        "id": 178,
-        "lowername": "indianapolis+motor+speedway"
-    }],
-    "isClubAllowed": true,
-    "serieslicgroupid": 3,
-    "restrictedByMember": false,
-    "lowerseriesshortname": "iracing.com+indy+500",
-    "allowedMembers": [],
-    "carclasses": [{
-        "carsinclass": [{
-            "name": "Dallara+DW12",
-            "id": 57
-        }],
-        "shortname": "DW12",
-        "name": "Dallara+DW12",
-        "id": 63,
-        "lowername": "dallara+dw12"
-    }],
-    "currentTrack": 178,
-    "seriesid": 276,
-    "driverChangeRule": 0,
-    "licgroupid": 2,
-    "ignoreLicenseForPractice": true,
-    "isWorldCup": false,
-    "islite": false,
-    "rookieseason": "",
-    "end": 1463976000000,
-    "cars": [{
-        "pkgid": 161,
-        "name": "Dallara+DW12",
-        "id": 57,
-        "lowername": "dallara+dw12",
-        "sku": 10370
-    }],
-    "carNumberMap": {
-        "carNumberMap": {}
-    },
-    "multiclass": false,
-    "isRegionCompetition": false,
-    "start": 1463457600000,
-    "lowerseasonshortname": "2016+iracing.com+indy+500",
-    "maxTeamDrivers": 1,
-    "quarter": 2,
-    "seriesshortname": "iRacing.com+Indy+500",
-    "catid": 1,
-    "minsr": "4.0",
-    "isFixedSetup": false,
-    "isOfficial": true,
-    "minlicenselevel": 8,
-    "cautionTypeOval": 3,
-    "licenseEligible": true,
-    "complete": false,
-    "driverChanges": false,
-    "minTeamDrivers": 1,
-    "year": 2016,
-    "restrictedToCar": false,
-    "seasonid": 1573,
-    "category": 1
 }, {
     "prefimg": "",
     "seriesname": "iRacing.com+World+Championship+Grand+Prix+Series",
@@ -6357,7 +6283,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_248%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -6484,7 +6410,7 @@
         "id": 48,
         "lowername": "kia+optima"
     }],
-    "currentTrack": 2,
+    "currentTrack": 1,
     "seriesid": 248,
     "driverChangeRule": 0,
     "licgroupid": 1,
@@ -6530,7 +6456,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_58%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -6663,7 +6589,7 @@
         "id": 50,
         "lowername": "sprint+cup"
     }],
-    "currentTrack": 103,
+    "currentTrack": 40,
     "seriesid": 58,
     "driverChangeRule": 0,
     "licgroupid": 4,
@@ -6721,7 +6647,7 @@
     "seasonshortname": "2016+Season+2+Fixed",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_191%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -6854,7 +6780,7 @@
         "id": 50,
         "lowername": "sprint+cup"
     }],
-    "currentTrack": 103,
+    "currentTrack": 40,
     "seriesid": 191,
     "driverChangeRule": 0,
     "licgroupid": 4,
@@ -7292,7 +7218,7 @@
     "seasonshortname": "2016+Season+2+Fixed",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_103%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -7425,7 +7351,7 @@
         "id": 57,
         "lowername": "xfinity+series"
     }],
-    "currentTrack": 53,
+    "currentTrack": 40,
     "seriesid": 103,
     "driverChangeRule": 0,
     "licgroupid": 3,
@@ -7483,7 +7409,7 @@
     "seasonshortname": "2016+Season",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_47%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 14,
+    "raceweek": 15,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -7865,7 +7791,7 @@
         "id": 71,
         "lowername": "camping+world+series"
     }],
-    "currentTrack": 40,
+    "currentTrack": 245,
     "seriesid": 47,
     "driverChangeRule": 0,
     "licgroupid": 2,
@@ -7917,7 +7843,7 @@
     "seasonshortname": "2016+Season+2+Fixed",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_164%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -8047,7 +7973,7 @@
         "id": 71,
         "lowername": "camping+world+series"
     }],
-    "currentTrack": 40,
+    "currentTrack": 245,
     "seriesid": 164,
     "driverChangeRule": 0,
     "licgroupid": 2,
@@ -8099,7 +8025,7 @@
     "seasonshortname": "2016+Season+2+Fixed",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_167%2Fwhats_hot.jpg",
     "cautionTypeRoad": 0,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -8226,7 +8152,7 @@
         "id": 21,
         "lowername": "k%26n+series"
     }],
-    "currentTrack": 162,
+    "currentTrack": 31,
     "seriesid": 167,
     "driverChangeRule": 0,
     "licgroupid": 1,
@@ -9086,7 +9012,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Ftour%2Fstats_tour.jpg",
     "cautionTypeRoad": 0,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -9213,7 +9139,7 @@
         "id": 29,
         "lowername": "whelen+modified"
     }],
-    "currentTrack": 235,
+    "currentTrack": 248,
     "seriesid": 102,
     "driverChangeRule": 0,
     "licgroupid": 2,
@@ -9259,7 +9185,7 @@
     "seasonshortname": "2016+Season",
     "whatshotimg": "member_images%2Fseries%2Fnascarpeakantifreeze%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 8,
+    "raceweek": 9,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -9428,7 +9354,7 @@
         "id": 50,
         "lowername": "sprint+cup"
     }],
-    "currentTrack": 40,
+    "currentTrack": 123,
     "seriesid": 205,
     "driverChangeRule": 0,
     "licgroupid": 6,
@@ -9486,7 +9412,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fskmodweekly%2Fstats_skmodified.jpg",
     "cautionTypeRoad": 0,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -9613,7 +9539,7 @@
         "id": 2,
         "lowername": "sk+modified"
     }],
-    "currentTrack": 256,
+    "currentTrack": 232,
     "seriesid": 45,
     "driverChangeRule": 0,
     "licgroupid": 1,
@@ -9659,7 +9585,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_259%2Fwhats_hot.jpg",
     "cautionTypeRoad": 0,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -9795,7 +9721,7 @@
         "id": 17,
         "lowername": "silverado"
     }],
-    "currentTrack": 27,
+    "currentTrack": 40,
     "seriesid": 259,
     "driverChangeRule": 0,
     "licgroupid": 1,
@@ -9841,7 +9767,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Frufcup%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -9968,7 +9894,7 @@
         "id": 58,
         "lowername": "ruf+rt12r+cspec"
     }],
-    "currentTrack": 233,
+    "currentTrack": 163,
     "seriesid": 224,
     "driverChangeRule": 0,
     "licgroupid": 2,
@@ -10014,7 +9940,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Fsbarbrs%2Fstats_skipbarber.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -10141,7 +10067,7 @@
         "id": 1,
         "lowername": "skip+barber+race+series"
     }],
-    "currentTrack": 249,
+    "currentTrack": 149,
     "seriesid": 34,
     "driverChangeRule": 0,
     "licgroupid": 1,
@@ -10187,7 +10113,7 @@
     "seasonshortname": "2016+Season+2",
     "whatshotimg": "member_images%2Fseries%2Ffmazchamp%2Fstats_fmazda.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -10314,7 +10240,7 @@
         "id": 4,
         "lowername": "star+mazda"
     }],
-    "currentTrack": 212,
+    "currentTrack": 232,
     "seriesid": 44,
     "driverChangeRule": 0,
     "licgroupid": 2,
@@ -10360,7 +10286,7 @@
     "seasonshortname": "2016+Season+2+Fixed",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_274%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 10,
+    "raceweek": 11,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
@@ -10487,7 +10413,7 @@
         "id": 74,
         "lowername": "mazda+mx-5+cup+2016"
     }],
-    "currentTrack": 142,
+    "currentTrack": 166,
     "seriesid": 274,
     "driverChangeRule": 0,
     "licgroupid": 1,
