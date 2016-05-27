@@ -292,7 +292,7 @@ export default [{
   // VRS Mazda (Fixed)
   seriesId: 274,
   everyTime: duration(1, 'hours'),
-  offset: duration(30, 'minutes')
+  offset: duration(0, 'minutes')
 }, {
   // Formula Renault 2.0
   seriesId: 269,
