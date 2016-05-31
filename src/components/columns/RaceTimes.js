@@ -54,6 +54,6 @@ export default class NextRace extends Component {
       );
     }
 
-    return <td />;
+    return <td>No time data</td>;
   }
 }
