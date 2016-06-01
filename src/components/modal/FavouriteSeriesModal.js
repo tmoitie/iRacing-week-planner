@@ -17,12 +17,14 @@ const groupedSeries = series.reduce((grouped, single) => {
 export default class FavouriteSeriesModal extends Component {
   static propTypes = {
     onClose: PropTypes.func,
+    isOpen: PropTypes.bool.isRequired,
     save: PropTypes.func,
     favouriteSeries: PropTypes.array
   }
 
   static defaultProps = {
     onClose: () => {},
+    isOpen: false,
     save: () => {},
     favouriteSeries: []
   }
@@ -52,9 +54,9 @@ export default class FavouriteSeriesModal extends Component {
   }
 
   render() {
-    const {onClose} = this.props;
+    const { onClose, isOpen } = this.props;
     return (
-      <Modal onClose={onClose} title='Choose favorite series' doneAction={onClose}>
+      <Modal isOpen={isOpen} onClose={onClose} title='Choose favorite series' doneAction={onClose}>
         <div className="container-fluid">
           <h3>Oval</h3>
           <div className="row">

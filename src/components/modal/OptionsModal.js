@@ -21,6 +21,7 @@ const toggleIdInCollection = (collection, id, newState) => {
 export default class OptionsModal extends Component {
   static propTypes = {
     onClose: PropTypes.func,
+    isOpen: PropTypes.bool.isRequired,
     columnIds: PropTypes.array,
     saveOptions: PropTypes.func,
     mode: PropTypes.string
@@ -28,6 +29,7 @@ export default class OptionsModal extends Component {
 
   static defaultProps = {
     onClose: () => {},
+    isOpen: false,
     columnIds: [],
     saveOptions: () => {},
     mode: 'both'
@@ -47,9 +49,9 @@ export default class OptionsModal extends Component {
   }
 
   render() {
-    const {onClose, columnIds, mode} = this.props;
+    const {onClose, isOpen, columnIds, mode} = this.props;
     return (
-      <Modal onClose={onClose} title='Options' doneAction={onClose}>
+      <Modal isOpen={isOpen} onClose={onClose} title='Options' doneAction={onClose}>
         <div className='container-fluid'>
           <h5>Mode</h5>
           <div className='row'>

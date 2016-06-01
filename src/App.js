@@ -48,23 +48,11 @@ const defaultSettings = {
 
 export default class App extends Component {
 
-  static childContextTypes = {
-    renderModal: PropTypes.func,
-    closeModal: PropTypes.func
-  };
-
   constructor(props) {
     super(props);
     this.state = cloneDeep(defaultSettings);
     this.state.date = moment().utc().startOf('day');
-    this.state.renderCurrentModal = () => null;
-  }
-
-  getChildContext() {
-    return {
-      renderModal: this.renderModal.bind(this),
-      closeModal: this.closeModal.bind(this)
-    };
+    this.state.currentModal = null;
   }
 
   componentDidMount() {
@@ -87,10 +75,6 @@ export default class App extends Component {
     }));
   }
 
-  closeModal() {
-    this.setState({ renderCurrentModal: () => null });
-  }
-
   updateFilters(newFilters) {
     this.setState({ filters: newFilters });
   }
@@ -103,90 +87,83 @@ export default class App extends Component {
     this.setState(cloneDeep(defaultSettings));
   }
 
-  openFavouriteSeriesModal(e) {
-    e.preventDefault();
-    this.renderModal(() => {
-      const { favouriteSeries, mode } = this.state;
-      return (
-        <FavouriteSeriesModal
-          onClose={this.closeModal.bind(this)}
-          favouriteSeries={favouriteSeries}
-          save={this.saveOptions.bind(this, 'favouriteSeries')}
-          oval={mode !== 'road'}
-          road={mode !== 'oval'}
-        />
-      );
-    });
+  renderFavouriteSeriesModal() {
+    const { favouriteSeries, mode, currentModal } = this.state;
+    return (
+      <FavouriteSeriesModal
+        isOpen={currentModal === 'favourite-series'}
+        onClose={this.closeModal.bind(this)}
+        favouriteSeries={favouriteSeries}
+        save={this.saveOptions.bind(this, 'favouriteSeries')}
+        oval={mode !== 'road'}
+        road={mode !== 'oval'}
+      />
+    );
   }
 
-  openMyTracksModal(e) {
-    e.preventDefault();
-    this.renderModal(() => {
-      const { ownedTracks, favouriteTracks, mode } = this.state;
-      return (
-        <ContentModal
-          onClose={this.closeModal.bind(this)}
-          title='Set My Tracks'
-          ownedContent={ownedTracks}
-          content={tracks}
-          idField='id'
-          defaultContent={cloneDeep(defaultSettings.ownedTracks)}
-          typeFilter={{ key: 'primaryType', oval: 'oval', road: 'road' }}
-          save={this.saveOptions.bind(this, 'ownedTracks')}
-          favourites={favouriteTracks}
-          saveFavourites={this.saveOptions.bind(this, 'favouriteTracks')}
-          oval={mode !== 'road'}
-          road={mode !== 'oval'}
-        />
-      );
-    });
+  renderMyTracksModal() {
+    const { ownedTracks, favouriteTracks, mode, currentModal } = this.state;
+    return(
+      <ContentModal
+        isOpen={currentModal === 'my-tracks'}
+        onClose={this.closeModal.bind(this)}
+        title='Set My Tracks'
+        ownedContent={ownedTracks}
+        content={tracks}
+        idField='id'
+        defaultContent={cloneDeep(defaultSettings.ownedTracks)}
+        typeFilter={{key: 'primaryType', oval: 'oval', road: 'road'}}
+        save={this.saveOptions.bind(this, 'ownedTracks')}
+        favourites={favouriteTracks}
+        saveFavourites={this.saveOptions.bind(this, 'favouriteTracks')}
+        oval={mode !== 'road'}
+        road={mode !== 'oval'}
+      />
+    );
   }
 
-  openMyCarsModal(e) {
-    e.preventDefault();
-    this.renderModal(() => {
-      const { ownedCars, favouriteCars, mode } = this.state;
-      return (
-        <ContentModal
-          onClose={this.closeModal.bind(this)}
-          title='Set My Cars'
-          ownedContent={ownedCars}
-          content={cars}
-          idField='sku'
-          defaultContent={cloneDeep(defaultSettings.ownedCars)}
-          typeFilter={{ key: 'discountGroupNames', oval: ['oval+car'], road: ['road+car'] }}
-          save={this.saveOptions.bind(this, 'ownedCars')}
-          favourites={favouriteCars}
-          saveFavourites={this.saveOptions.bind(this, 'favouriteCars')}
-          oval={mode !== 'road'}
-          road={mode !== 'oval'}
-        />
-      );
-    });
+  renderMyCarsModal() {
+    const { ownedCars, favouriteCars, mode, currentModal } = this.state;
+    return (
+      <ContentModal
+        isOpen={currentModal === 'my-cars'}
+        onClose={this.closeModal.bind(this)}
+        title='Set My Cars'
+        ownedContent={ownedCars}
+        content={cars}
+        idField='sku'
+        defaultContent={cloneDeep(defaultSettings.ownedCars)}
+        typeFilter={{key: 'discountGroupNames', oval: ['oval+car'], road: ['road+car']}}
+        save={this.saveOptions.bind(this, 'ownedCars')}
+        favourites={favouriteCars}
+        saveFavourites={this.saveOptions.bind(this, 'favouriteCars')}
+        oval={mode !== 'road'}
+        road={mode !== 'oval'}
+      />
+    );
   }
 
-  openOptionsModal(e) {
-    e.preventDefault();
-    this.renderModal(() => {
-      const { columns, mode } = this.state;
-      return (
-        <OptionsModal
-          onClose={this.closeModal.bind(this)}
-          columnIds={columns}
-          saveOptions={this.saveOptions.bind(this)}
-          mode={mode}
-        />
-      );
-    });
+  renderOptionsModal() {
+    const { columns, mode, currentModal } = this.state;
+    return (
+      <OptionsModal
+        isOpen={currentModal === 'options'}
+        onClose={this.closeModal.bind(this)}
+        columnIds={columns}
+        saveOptions={this.saveOptions.bind(this)}
+        mode={mode}
+      />
+    );
   }
 
-  openChangelogModal(e) {
-    e.preventDefault();
-    this.renderModal(() => (
-      <Modal onClose={this.closeModal.bind(this)} title='About'
-        doneAction={this.closeModal.bind(this)}>
+  renderChangelogModal() {
+    const { currentModal } = this.state;
+    return (
+      <Modal
+        isOpen={currentModal === 'about'} onClose={this.closeModal.bind(this)} title='About'
+        doneAction={this.closeModal.bind(this)}
+      >
         <div className='container-fluid'>
-
           <p>
             <span>This tool was created by <a href='https://twitter.com/tmoitie' target='_blank'>@tmoitie</a> (</span>
             <a href='http://members.iracing.com/membersite/member/CareerStats.do?custid=69636'
@@ -210,7 +187,7 @@ export default class App extends Component {
           })}
         </div>
       </Modal>
-    ));
+    );
   }
 
   saveOptions(key, value) {
@@ -221,13 +198,19 @@ export default class App extends Component {
     this.setState({ date: moment(date, 'X') });
   }
 
-  renderModal(renderModal) {
-    this.setState({ renderCurrentModal: renderModal });
+  openModal(modalName, e = { preventDefault: () => {} }) {
+    e.preventDefault();
+    this.setState({ currentModal: modalName });
+  }
+
+  closeModal(e = { preventDefault: () => {} }) {
+    e.preventDefault();
+    this.setState({ currentModal: null });
   }
 
   render() {
-    const { filters, favouriteSeries, ownedCars, ownedTracks, date, favouriteCars, favouriteTracks,
-      renderCurrentModal, columns, sort, mode } = this.state;
+    const {filters, favouriteSeries, ownedCars, ownedTracks, date, favouriteCars, favouriteTracks,
+      columns, sort, mode} = this.state;
     return (
       <div>
         <nav className='navbar navbar-inverse'>
@@ -235,20 +218,21 @@ export default class App extends Component {
             <div className='navbar-header'>
               <a className='navbar-brand' href=''>iRacing Week Planner</a>
             </div>
-            <ul className='nav navbar-nav navbar-right'>
-              <li><a href='' onClick={this.openMyTracksModal.bind(this)}>
+
+            <ul className="nav navbar-nav navbar-right">
+              <li><a href='' onClick={this.openModal.bind(this, 'my-tracks')}>
                 Set my tracks
               </a></li>
-              <li><a href='' onClick={this.openMyCarsModal.bind(this)}>
+              <li><a href='' onClick={this.openModal.bind(this, 'my-cars')}>
                 Set my cars
               </a></li>
-              <li><a href='' onClick={this.openFavouriteSeriesModal.bind(this)}>
+              <li><a href='' onClick={this.openModal.bind(this, 'favourite-series')}>
                 Set favorite series
               </a></li>
-              <li><a href='' onClick={this.openOptionsModal.bind(this)}>
+              <li><a href='' onClick={this.openModal.bind(this, 'options')}>
                 Options
               </a></li>
-              <li><a href='' onClick={this.openChangelogModal.bind(this)}>
+              <li><a href='' onClick={this.openModal.bind(this, 'about')}>
                 About
               </a></li>
             </ul>
@@ -290,7 +274,11 @@ export default class App extends Component {
             </div>
           </div>
         </div>
-        {renderCurrentModal()}
+        {this.renderMyCarsModal()}
+        {this.renderOptionsModal()}
+        {this.renderChangelogModal()}
+        {this.renderFavouriteSeriesModal()}
+        {this.renderMyTracksModal()}
       </div>
     );
   }
