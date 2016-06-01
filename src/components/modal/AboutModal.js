@@ -3,24 +3,20 @@ import Modal from './Modal';
 import changelog from '../../data/changelog';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { getContributorAction } from '../../actions/contributors';
-
-function mapStateToProps({ contributors: { contributors } }) {
-  return { contributors };
-}
-
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ getContributors: getContributorAction }, dispatch);
-}
+import { getContributors as getContributorsAction } from '../../actions/contributors';
 
 export class AboutModal extends Component {
   static propTypes = {
+    isOpen: PropTypes.bool.isRequired,
     onClose: PropTypes.func.isRequired,
     contributors: PropTypes.array,
+    loading: PropTypes.bool.isRequired,
     getContributors: PropTypes.func.isRequired
   }
 
   static defaultProps = {
+    isOpen: false,
+    loading: false,
     onClose: () => {},
     getContributors: () => {}
   }
@@ -34,17 +30,17 @@ export class AboutModal extends Component {
   }
 
   updateContributors() {
-    const { contributors, getContributors } = this.props;
-    if (contributors === null) {
+    const { contributors, getContributors, loading } = this.props;
+    if (contributors === null && loading === false) {
       getContributors();
     }
   }
 
   render() {
-    const { onClose, contributors } = this.props;
+    const { onClose, isOpen, contributors, loading } = this.props;
 
     return (
-      <Modal onClose={onClose} title='About' doneAction={onClose}>
+      <Modal onClose={onClose} isOpen={isOpen} title='About' doneAction={onClose}>
         <div className='container-fluid'>
 
           <p>
@@ -61,6 +57,20 @@ export class AboutModal extends Component {
             <span>. Thanks!</span>
           </p>
 
+          <h3>Contributors</h3>
+          {loading ? <p>Loading</p> : null}
+          {contributors ? (
+            <ul className='row'>
+              {contributors.map(contributor => (
+                <li className='col-md-3 col-sm-4 col-xs-6' key={contributor.id}>
+                  <a href={contributor.html_url} target='_blank'>
+                    {contributor.login}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          ) : null}
+
           <h3>Changelog</h3>
           {changelog.map(dayItem => (
             <div key={dayItem.date}>
@@ -75,5 +85,9 @@ export class AboutModal extends Component {
     );
   }
 }
+
+const mapStateToProps = ({ contributors: { contributors, loading } }) => ({ contributors, loading });
+
+const mapDispatchToProps = (dispatch) => bindActionCreators({ getContributors: getContributorsAction }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(AboutModal);

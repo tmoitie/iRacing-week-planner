@@ -1,6 +1,12 @@
 import moment from 'moment';
 
 export default [{
+  date: moment('2016-06-01 00:00:00').utc(),
+  items: [
+    'Added contributors list',
+    'Fixed various issues and cleaned up code.'
+  ]
+}, {
   date: moment('2016-05-23 00:00:00').utc(),
   items: [
     'Added season link'
