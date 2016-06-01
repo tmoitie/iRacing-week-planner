@@ -8,26 +8,34 @@ export default class Series extends Component {
     ownedTracks: PropTypes.array.isRequired
   }
 
-  static contextTypes = {
-    renderModal: PropTypes.func,
-    closeModal: PropTypes.func
+  constructor(props) {
+    super(props);
+    this.state = { modalOpen: false };
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
   }
 
-  showSeriesModal(seriesId) {
-    const { renderModal, closeModal } = this.context;
-    renderModal(() => {
-      const { ownedTracks } = this.props;
-      return (
-        <SeriesModal onClose={closeModal} ownedTracks={ownedTracks} seriesId={seriesId} />
-      );
-    });
+  openModal() {
+    this.setState({ modalOpen: true });
+  }
+
+  closeModal() {
+    this.setState({ modalOpen: false });
+  }
+
+  renderModal() {
+    const { ownedTracks, race: { seriesId } } = this.props;
+    const { modalOpen } = this.state;
+    return (
+      <SeriesModal isOpen={modalOpen} onClose={this.closeModal} ownedTracks={ownedTracks} seriesId={seriesId} />
+    );
   }
 
   render() {
     const { race, favouriteSeries } = this.props;
 
     return (
-      <td className='clickable-cell' onClick={this.showSeriesModal.bind(this, race.seriesId)}>
+      <td className='clickable-cell' onClick={this.openModal}>
         <div>
           {favouriteSeries.indexOf(race.seriesId) !== -1 ? (
             <span className='glyphicon glyphicon-star' />
@@ -37,6 +45,7 @@ export default class Series extends Component {
 
           {race.series}
         </div>
+        {this.renderModal()}
       </td>
     );
   }

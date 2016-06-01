@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 import { cloneDeep, difference, isEqual } from 'lodash';
-import update from 'react-addons-update';
 import Modal from './Modal';
 import Checkbox from '../Checkbox';
 import FavouriteStarButton from '../FavouriteStarButton';
@@ -23,6 +22,7 @@ const toggleIdInCollection = (collection, id, newState) => {
 export default class ContentModal extends Component {
   static propTypes = {
     title: PropTypes.string,
+    isOpen: PropTypes.bool.isRequired,
     onClose: PropTypes.func,
     save: PropTypes.func,
     content: PropTypes.array,
@@ -40,6 +40,7 @@ export default class ContentModal extends Component {
 
   static defaultProps = {
     title: 'Set My Content',
+    isOpen: false,
     onClose: () => {},
     save: () => {},
     content: [],
@@ -123,9 +124,9 @@ export default class ContentModal extends Component {
   }
 
   render() {
-    const {onClose, title, content, ownedContent, save, idField, defaultContent, favourites} = this.props;
+    const {onClose, title, content, ownedContent, isOpen, idField, defaultContent, favourites} = this.props;
     return (
-      <Modal onClose={onClose} title={title} doneAction={onClose}>
+      <Modal isOpen={isOpen} onClose={onClose} title={title} doneAction={onClose}>
         <div className="container-fluid">
           <p>Use the checkbox to set the content you own, and the star to set your favourite content.</p>
           <div className="row">

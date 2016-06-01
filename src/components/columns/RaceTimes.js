@@ -7,29 +7,38 @@ export default class NextRace extends Component {
     race: PropTypes.object.isRequired
   }
 
-  static contextTypes = {
-    renderModal: PropTypes.func,
-    closeModal: PropTypes.func
+  constructor(props) {
+    super(props);
+    this.state = { modalOpen: false };
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
   }
 
-  openSetTimes() {
-    const { renderModal, closeModal } = this.context;
+  openModal() {
+    this.setState({ modalOpen: true });
+  }
+
+  closeModal() {
+    this.setState({ modalOpen: false });
+  }
+
+  renderModal() {
     const { race } = this.props;
     const weekStart = moment().utc().startOf('week').add(1, 'day');
-    renderModal(() => {
-      return (
-        <Modal onClose={closeModal} title={`Set times for ${race.series}`}
-          doneAction={closeModal}>
-          <div className='container-fluid'>
-            <ul>
-              {race.raceTimes.setTimes.map(
-                (time, index) => <li key={index}>{moment(weekStart).add(time).local().format('ddd h:mma')}</li>
-              )}
-            </ul>
-          </div>
-        </Modal>
-      );
-    });
+    const { modalOpen } = this.state;
+
+    return (
+      <Modal isOpen={modalOpen} onClose={this.closeModal} title={`Set times for ${race.series}`}
+        doneAction={this.closeModal}>
+        <div className='container-fluid'>
+          <ul>
+            {race.raceTimes.setTimes.map(
+              (time, index) => <li key={index}>{moment(weekStart).add(time).local().format('ddd h:mma')}</li>
+            )}
+          </ul>
+        </div>
+      </Modal>
+    );
   }
 
   render() {
@@ -40,7 +49,12 @@ export default class NextRace extends Component {
     }
 
     if (race.raceTimes.setTimes) {
-      return <td onClick={this.openSetTimes.bind(this)} className='clickable-cell'>Set Times</td>;
+      return (
+        <td onClick={this.openModal} className='clickable-cell'>
+          Set Times
+          {this.renderModal()}
+        </td>
+      );
     }
 
     return (

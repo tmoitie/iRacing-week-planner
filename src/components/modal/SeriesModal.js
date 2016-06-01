@@ -10,21 +10,23 @@ const now = moment().utc();
 export default class SeriesModal extends Component {
   static propTypes = {
     onClose: PropTypes.func,
+    isOpen: PropTypes.bool.isRequired,
     seriesId: PropTypes.number.isRequired,
     ownedTracks: PropTypes.array
   }
 
   static defaultProps = {
     onClose: () => {},
+    isOpen: false,
     ownedTracks: [],
   }
 
   render() {
-    const {onClose, ownedTracks, seriesId} = this.props;
+    const {onClose, ownedTracks, isOpen, seriesId} = this.props;
     const races = allRaces.filter(race => race.seriesId === seriesId);
 
     return (
-      <Modal onClose={onClose} title={`Tracks for ${races[0].series}`} doneAction={onClose}>
+      <Modal isOpen={isOpen} onClose={onClose} title={`Tracks for ${races[0].series}`} doneAction={onClose}>
         <div className="container-fluid">
           <div className="table-responsive">
             <table className="table" style={{fontSize: '0.8em'}}>
