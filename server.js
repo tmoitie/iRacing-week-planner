@@ -1,6 +1,6 @@
-var webpack = require('webpack');
-var WebpackDevServer = require('webpack-dev-server');
-var config = require('./webpack.config');
+const webpack = require('webpack');
+const WebpackDevServer = require('webpack-dev-server');
+const config = require('./webpack.config');
 
 const port = process.env.PORT || 3000;
 
@@ -9,7 +9,7 @@ new WebpackDevServer(webpack(config), {
   hot: true,
   contentBase: config.output.contentBase,
   historyApiFallback: true
-}).listen(port, 'localhost', function (err, result) {
+}).listen(port, 'localhost', (err) => {
   if (err) {
     console.log(err);
   }

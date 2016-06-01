@@ -1,15 +1,11 @@
-import React, { Component, PropTypes } from 'react';
+import React, { PropTypes } from 'react';
 
-export default class Type extends Component {
-  static propTypes = {
-    race: PropTypes.object.isRequired
-  }
-
-  render() {
-    const { race } = this.props;
-
-    return (
-      <td><div>{race.type}</div></td>
-    );
-  }
+export default function Type({ race }) {
+  return (
+    <td><div>{race.type}</div></td>
+  );
 }
+
+Type.propTypes = {
+  race: PropTypes.object.isRequired
+};

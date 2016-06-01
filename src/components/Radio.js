@@ -17,10 +17,10 @@ export default class Radio extends Component {
   }
 
   render() {
-    const {onChange, selected, disabled, children, name} = this.props;
+    const { onChange, selected, disabled, children, name } = this.props;
 
     return (
-      <div className={classnames({radio: true, disabled: disabled})}>
+      <div className={classnames({ radio: true, disabled })}>
         <label>
           <input type='radio' onChange={onChange} checked={selected} disabled={disabled} name={name} />
           {children}

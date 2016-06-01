@@ -10,24 +10,26 @@ const now = moment().utc();
 export default class SeriesModal extends Component {
   static propTypes = {
     onClose: PropTypes.func,
+    isOpen: PropTypes.bool.isRequired,
     seriesId: PropTypes.number.isRequired,
     ownedTracks: PropTypes.array
   }
 
   static defaultProps = {
     onClose: () => {},
+    isOpen: false,
     ownedTracks: [],
   }
 
   render() {
-    const {onClose, ownedTracks, seriesId} = this.props;
+    const { onClose, ownedTracks, isOpen, seriesId } = this.props;
     const races = allRaces.filter(race => race.seriesId === seriesId);
 
     return (
-      <Modal onClose={onClose} title={`Tracks for ${races[0].series}`} doneAction={onClose}>
-        <div className="container-fluid">
-          <div className="table-responsive">
-            <table className="table" style={{fontSize: '0.8em'}}>
+      <Modal isOpen={isOpen} onClose={onClose} title={`Tracks for ${races[0].series}`} doneAction={onClose}>
+        <div className='container-fluid'>
+          <div className='table-responsive'>
+            <table className='table' style={{ fontSize: '0.8em' }}>
               <thead>
                 <tr>
                   <th>Week</th>
@@ -45,12 +47,14 @@ export default class SeriesModal extends Component {
                       <td>
                         {race.week + 1}
                       </td>
-                      <td className={classnames({success: ownedTracks.indexOf(race.trackId) !== -1})}>
+                      <td className={classnames({ success: ownedTracks.indexOf(race.trackId) !== -1 })}>
                         {race.track}
                       </td>
                       <td>{moment(race.startTime).local().format('YYYY-MM-DD')}</td>
                       <td>{
-                        moment(race.startTime).local().add(race.weekLength).subtract(1, 'days').format('YYYY-MM-DD')
+                        moment(race.startTime).local().add(race.weekLength)
+                          .subtract(1, 'days')
+                          .format('YYYY-MM-DD')
                       }</td>
                     </tr>
                   );

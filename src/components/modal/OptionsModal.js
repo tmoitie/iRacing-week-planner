@@ -21,6 +21,7 @@ const toggleIdInCollection = (collection, id, newState) => {
 export default class OptionsModal extends Component {
   static propTypes = {
     onClose: PropTypes.func,
+    isOpen: PropTypes.bool.isRequired,
     columnIds: PropTypes.array,
     saveOptions: PropTypes.func,
     mode: PropTypes.string
@@ -28,63 +29,70 @@ export default class OptionsModal extends Component {
 
   static defaultProps = {
     onClose: () => {},
+    isOpen: false,
     columnIds: [],
     saveOptions: () => {},
     mode: 'both'
   }
 
   toggleColumn(id, e) {
-    const {columnIds, saveOptions} = this.props;
+    const { columnIds, saveOptions } = this.props;
     const newColumns = toggleIdInCollection(columnIds, id, e.target.checked);
     saveOptions('columns', newColumns);
   }
 
   toggleMode(newMode, e) {
-    const {saveOptions} = this.props;
+    const { saveOptions } = this.props;
     if (e.target.value === 'on') {
       saveOptions('mode', newMode);
     }
   }
 
   render() {
-    const {onClose, columnIds, mode} = this.props;
+    const { onClose, isOpen, columnIds, mode } = this.props;
     return (
-      <Modal onClose={onClose} title='Options' doneAction={onClose}>
+      <Modal isOpen={isOpen} onClose={onClose} title='Options' doneAction={onClose}>
         <div className='container-fluid'>
           <h5>Mode</h5>
           <div className='row'>
             <div className='col-xs-3 col-md-2'>
-              <Radio name='mode' selected={mode === 'both'}
-                onChange={this.toggleMode.bind(this, 'both')}>
+              <Radio
+                name='mode' selected={mode === 'both'}
+                onChange={this.toggleMode.bind(this, 'both')}
+              >
                 Both
               </Radio>
             </div>
             <div className='col-xs-3 col-md-2'>
-              <Radio name='mode' selected={mode === 'road'}
-                onChange={this.toggleMode.bind(this, 'road')}>
+              <Radio
+                name='mode' selected={mode === 'road'}
+                onChange={this.toggleMode.bind(this, 'road')}
+              >
                 Road
               </Radio>
             </div>
             <div className='col-xs-3 col-md-2'>
-              <Radio name='mode' selected={mode === 'oval'}
-                onChange={this.toggleMode.bind(this, 'oval')}>
+              <Radio
+                name='mode' selected={mode === 'oval'}
+                onChange={this.toggleMode.bind(this, 'oval')}
+              >
                 Oval
               </Radio>
             </div>
           </div>
           <h5>Columns</h5>
           <div className='row'>
-            {availableColumns.map((column, index) => {
-              return (
-                <div className='col-xs-3 col-md-2' key={index}>
-                  <Checkbox disabled={column.forced === true}
-                    checked={columnIds.indexOf(column.id) !== -1}
-                    onChange={this.toggleColumn.bind(this, column.id)}>
-                    {column.header}
-                  </Checkbox>
-                </div>
-              );
-            })}
+            {availableColumns.map((column, index) => (
+              <div className='col-xs-3 col-md-2' key={index}>
+                <Checkbox
+                  disabled={column.forced === true}
+                  checked={columnIds.indexOf(column.id) !== -1}
+                  onChange={this.toggleColumn.bind(this, column.id)}
+                >
+                  {column.header}
+                </Checkbox>
+              </div>
+            ))}
           </div>
         </div>
       </Modal>

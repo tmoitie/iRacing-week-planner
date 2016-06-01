@@ -1,20 +1,16 @@
-import React, { Component, PropTypes } from 'react';
+import React, { PropTypes } from 'react';
 import moment from 'moment';
 
-export default class StartDate extends Component {
-  static propTypes = {
-    race: PropTypes.object.isRequired
-  }
-
-  render() {
-    const { race } = this.props;
-
-    return (
-      <td>
-        <div>
-          {moment(race.seriesEnd).local().format('YYYY-MM-DD')}
-        </div>
-      </td>
-    );
-  }
+export default function SeasonEnd({ race }) {
+  return (
+    <td>
+      <div>
+        {moment(race.seriesEnd).local().format('YYYY-MM-DD')}
+      </div>
+    </td>
+  );
 }
+
+SeasonEnd.propTypes = {
+  race: PropTypes.object.isRequired
+};

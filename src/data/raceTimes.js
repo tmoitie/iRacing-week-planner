@@ -1,9 +1,9 @@
-import {duration} from 'moment';
+import { duration } from 'moment';
 
 export default [{
   seriesId: 266,
   setTimes: [
-    duration({days: 4, hours: 13}),  // Sat 1pm
+    duration({ days: 4, hours: 13 }),  // Sat 1pm
   ]
 }, {
   // Advanced Legends
@@ -139,9 +139,9 @@ export default [{
   // Blancpain Endurance
   seriesId: 237,
   setTimes: [
-    duration({days: 4, hours: 9}),  // Sat 9am
-    duration({days: 4, hours: 19}), // Sat 7pm
-    duration({days: 5, hours: 17})  // Sun 5pm
+    duration({ days: 4, hours: 9 }),  // Sat 9am
+    duration({ days: 4, hours: 19 }), // Sat 7pm
+    duration({ days: 5, hours: 17 })  // Sun 5pm
   ]
 }, {
   // Lotus 49
@@ -217,10 +217,10 @@ export default [{
   // NIS Fixed
   seriesId: 207,
   setTimes: [
-    duration({days: 3, hours: 1}),  // Fri 1am
-    duration({days: 4, hours: 10}), // Sat 10am
-    duration({days: 4, hours: 16}), // Sat 4pm
-    duration({days: 6, hours: 1}),  // Mon 1am
+    duration({ days: 3, hours: 1 }),  // Fri 1am
+    duration({ days: 4, hours: 10 }), // Sat 10am
+    duration({ days: 4, hours: 16 }), // Sat 4pm
+    duration({ days: 6, hours: 1 }),  // Mon 1am
   ],
   offWeeks: [
     5.5, 12.5, 15.5, 22.5
@@ -229,9 +229,9 @@ export default [{
   // NIS Open
   seriesId: 229,
   setTimes: [
-    duration({days: 2, hours: 1}),  // Thu 1am
-    duration({days: 4, hours: 1}),  // Sat 1am
-    duration({days: 5, hours: 14}), // Sun 2pm
+    duration({ days: 2, hours: 1 }),  // Thu 1am
+    duration({ days: 4, hours: 1 }),  // Sat 1am
+    duration({ days: 5, hours: 14 }), // Sun 2pm
   ],
   offWeeks: [
     5.5, 12.5, 15.5, 22.5
@@ -240,28 +240,28 @@ export default [{
   // Road WC
   seriesId: 206,
   setTimes: [
-    duration({days: 4, hours: 14}), // Sat 2pm
+    duration({ days: 4, hours: 14 }), // Sat 2pm
   ],
-  weekStartOffset: duration({days: 9}),
-  weekEndOffset: duration({days: 2}),
+  weekStartOffset: duration({ days: 9 }),
+  weekEndOffset: duration({ days: 2 }),
   offWeeks: [2.5, 3.5, 4.5, 5.5, 6.5, 7.3, 7.6, 8.5, 9.3, 9.6, 10.5, 11.5, 12.5, 13.5, 14.3, 14.6, 15.5]
 }, {
   // Peak Antifreeze
   seriesId: 205,
   setTimes: [
-    duration({days: 1, hours: 0, minutes: 45}), // Sun 0:45am
+    duration({ days: 1, hours: 0, minutes: 45 }), // Sun 0:45am
   ],
-  weekStartOffset: duration({days: 14}),
-  weekEndOffset: duration({days: 5}),
+  weekStartOffset: duration({ days: 14 }),
+  weekEndOffset: duration({ days: 5 }),
   offWeeks: [2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.2, 8.4, 8.6, 8.8, 9.5, 10.5, 11.5, 12.5, 13.3, 13.6, 14.5, 15.5]
 }, {
   // 12 hours of Sebring
   seriesId: 271,
   setTimes: [
-    duration({days: 4, hours: 2}),  // Sat 2am
-    duration({days: 4, hours: 13}),  // Sat 1pm
-    duration({days: 4, hours: 17}),  // Sat 5pm
-    duration({days: 5, hours: 14}), // Sun 2am
+    duration({ days: 4, hours: 2 }),  // Sat 2am
+    duration({ days: 4, hours: 13 }),  // Sat 1pm
+    duration({ days: 4, hours: 17 }),  // Sat 5pm
+    duration({ days: 5, hours: 14 }), // Sun 2am
   ]
 }, {
   // W13 SRF
@@ -311,16 +311,16 @@ export default [{
   // Indy 500
   seriesId: 276,
   setTimes: [
-    duration({days: 4, hours: 1, minutes: 0}),
-    duration({days: 4, hours: 20, minutes: 0}),
-    duration({days: 5, hours: 1, minutes: 0}),
-    duration({days: 5, hours: 12, minutes: 0})
+    duration({ days: 4, hours: 1, minutes: 0 }),
+    duration({ days: 4, hours: 20, minutes: 0 }),
+    duration({ days: 5, hours: 1, minutes: 0 }),
+    duration({ days: 5, hours: 12, minutes: 0 })
   ]
 }, {
   // VLN Endurance
   seriesId: 275,
   offWeeks: [1.2, 1.4, 1.5, 1.6, 1.8, 2.2, 2.7, 3.2, 3.4, 3.6, 3.8, 4.5, 5.4, 5.7, 6.5, 7.5],
   setTimes: [
-    duration({days: 5, hours: 14, minutes: 0}), // Sun 2pm
+    duration({ days: 5, hours: 14, minutes: 0 }), // Sun 2pm
   ]
 }];
