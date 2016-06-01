@@ -1,19 +1,15 @@
-import React, { Component, PropTypes } from 'react';
+import React, { PropTypes } from 'react';
 
-export default class Fixed extends Component {
-  static propTypes = {
-    race: PropTypes.object.isRequired
-  }
-
-  render() {
-    const { race } = this.props;
-
-    return (
-      <td>
-        <div>
-          {race.fixed && <span className='glyphicon glyphicon-ok' />}
-        </div>
-      </td>
-    );
-  }
+export default function Fixed({ race }) {
+  return (
+    <td>
+      <div>
+        {race.fixed && <span className='glyphicon glyphicon-ok' />}
+      </div>
+    </td>
+  );
 }
+
+Fixed.propTypes = {
+  race: PropTypes.object.isRequired
+};

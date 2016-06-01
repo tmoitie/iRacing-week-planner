@@ -26,7 +26,7 @@ export default class RaceListing extends Component {
 
   static defaultProps = {
     date: moment().utc().startOf('day'),
-    sort: {key: 'licence', order: 'asc'},
+    sort: { key: 'licence', order: 'asc' },
     filters: [],
     favouriteSeries: [],
     ownedTracks: [],
@@ -37,7 +37,7 @@ export default class RaceListing extends Component {
   }
 
   sortColumn(columnId) {
-    const {sort, updateSort} = this.props;
+    const { sort, updateSort } = this.props;
     let newSort = clone(sort);
 
     if (sort.key === columnId) {
@@ -46,19 +46,26 @@ export default class RaceListing extends Component {
       return;
     }
 
-    newSort = {key: columnId, order: 'asc'};
+    newSort = { key: columnId, order: 'asc' };
     updateSort(newSort);
+  }
+
+  renderSortArrow() {
+    const { sort } = this.props;
+    if (sort.order === 'desc') {
+      return <span className='glyphicon glyphicon-triangle-bottom' />;
+    }
+
+    return <span className='glyphicon glyphicon-triangle-top' />;
   }
 
   render() {
     const { date, sort, filters, favouriteSeries, ownedTracks, ownedCars,
       favouriteCars, favouriteTracks, columnIds } = this.props;
-    let races = allRaces.filter((race) => {
-      return moment(date).add(1, 'ms').isBetween(
-        race.startTime,
-        moment(race.startTime).add(race.weekLength)
-      );
-    });
+    let races = allRaces.filter((race) => moment(date).add(1, 'ms').isBetween(
+      race.startTime,
+      moment(race.startTime).add(race.weekLength)
+    ));
 
     races = sortRaces(sort, races);
 
@@ -78,29 +85,22 @@ export default class RaceListing extends Component {
       return <p>No races this week match your favourite tracks. Try turning the filter off or adding some.</p>;
     }
 
-    const columns = availableColumns.filter((column) => {
-      return columnIds.indexOf(column.id) !== -1;
-    });
+    const columns = availableColumns.filter((column) => columnIds.indexOf(column.id) !== -1);
 
     return (
       <div className='table-responsive race-listing'>
-        <table className='table' style={{fontSize: '0.8em'}}>
+        <table className='table' style={{ fontSize: '0.8em' }}>
           <thead>
             <tr>
               {columns.map((column, colNum) => (
                 <th
                   key={colNum}
                   onClick={column.sort ? this.sortColumn.bind(this, column.id, column.defaultOrder) : () => {}}
-                  className={column.sort ? 'clickable-cell' : null}>
+                  className={column.sort ? 'clickable-cell' : null}
+                >
                   {column.header}
                   <span> </span>
-                  {sort.key === column.id ? (
-                    sort.order === 'desc' ? (
-                      <span className='glyphicon glyphicon-triangle-bottom' />
-                    ) : (
-                      <span className='glyphicon glyphicon-triangle-top' />
-                    )
-                  ) : null}
+                  {sort.key === column.id ? this.renderSortArrow() : null}
                 </th>
               ))}
             </tr>

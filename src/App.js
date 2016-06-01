@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { cloneDeep, uniqBy } from 'lodash';
 import TimeSlider from './components/TimeSlider';
 import moment, { duration } from 'moment';
@@ -87,6 +87,24 @@ export default class App extends Component {
     this.setState(cloneDeep(defaultSettings));
   }
 
+  closeModal(e = { preventDefault: () => {} }) {
+    e.preventDefault();
+    this.setState({ currentModal: null });
+  }
+
+  openModal(modalName, e = { preventDefault: () => {} }) {
+    e.preventDefault();
+    this.setState({ currentModal: modalName });
+  }
+
+  saveOptions(key, value) {
+    this.setState({ [key]: value });
+  }
+
+  updateDate(date) {
+    this.setState({ date: moment(date, 'X') });
+  }
+
   renderFavouriteSeriesModal() {
     const { favouriteSeries, mode, currentModal } = this.state;
     return (
@@ -103,7 +121,7 @@ export default class App extends Component {
 
   renderMyTracksModal() {
     const { ownedTracks, favouriteTracks, mode, currentModal } = this.state;
-    return(
+    return (
       <ContentModal
         isOpen={currentModal === 'my-tracks'}
         onClose={this.closeModal.bind(this)}
@@ -112,7 +130,7 @@ export default class App extends Component {
         content={tracks}
         idField='id'
         defaultContent={cloneDeep(defaultSettings.ownedTracks)}
-        typeFilter={{key: 'primaryType', oval: 'oval', road: 'road'}}
+        typeFilter={{ key: 'primaryType', oval: 'oval', road: 'road' }}
         save={this.saveOptions.bind(this, 'ownedTracks')}
         favourites={favouriteTracks}
         saveFavourites={this.saveOptions.bind(this, 'favouriteTracks')}
@@ -133,7 +151,7 @@ export default class App extends Component {
         content={cars}
         idField='sku'
         defaultContent={cloneDeep(defaultSettings.ownedCars)}
-        typeFilter={{key: 'discountGroupNames', oval: ['oval+car'], road: ['road+car']}}
+        typeFilter={{ key: 'discountGroupNames', oval: ['oval+car'], road: ['road+car'] }}
         save={this.saveOptions.bind(this, 'ownedCars')}
         favourites={favouriteCars}
         saveFavourites={this.saveOptions.bind(this, 'favouriteCars')}
@@ -166,8 +184,10 @@ export default class App extends Component {
         <div className='container-fluid'>
           <p>
             <span>This tool was created by <a href='https://twitter.com/tmoitie' target='_blank'>@tmoitie</a> (</span>
-            <a href='http://members.iracing.com/membersite/member/CareerStats.do?custid=69636'
-              target='_blank'>Tom Moitié</a>
+            <a
+              href='http://members.iracing.com/membersite/member/CareerStats.do?custid=69636'
+              target='_blank'
+            >Tom Moitié</a>
             <span> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or </span>
             <span>questions. The code is hosted publicly on </span>
             <a href='https://github.com/tmoitie/iRacing-week-planner' target='_blank'>Github</a>
@@ -175,42 +195,22 @@ export default class App extends Component {
           </p>
 
           <h3>Changelog</h3>
-          {changelog.map(dayItem => {
-            return (
-              <div key={dayItem.date}>
-                <h4>{dayItem.date.local().format('YYYY MMM DD')}</h4>
-                <ul>
-                  {dayItem.items.map((changeItem, index) => <li key={index}>{changeItem}</li>)}
-                </ul>
-              </div>
-            );
-          })}
+          {changelog.map(dayItem => (
+            <div key={dayItem.date}>
+              <h4>{dayItem.date.local().format('YYYY MMM DD')}</h4>
+              <ul>
+                {dayItem.items.map((changeItem, index) => <li key={index}>{changeItem}</li>)}
+              </ul>
+            </div>
+          ))}
         </div>
       </Modal>
     );
   }
 
-  saveOptions(key, value) {
-    this.setState({ [key]: value });
-  }
-
-  updateDate(date) {
-    this.setState({ date: moment(date, 'X') });
-  }
-
-  openModal(modalName, e = { preventDefault: () => {} }) {
-    e.preventDefault();
-    this.setState({ currentModal: modalName });
-  }
-
-  closeModal(e = { preventDefault: () => {} }) {
-    e.preventDefault();
-    this.setState({ currentModal: null });
-  }
-
   render() {
-    const {filters, favouriteSeries, ownedCars, ownedTracks, date, favouriteCars, favouriteTracks,
-      columns, sort, mode} = this.state;
+    const { filters, favouriteSeries, ownedCars, ownedTracks, date, favouriteCars, favouriteTracks,
+      columns, sort, mode } = this.state;
     return (
       <div>
         <nav className='navbar navbar-inverse'>
@@ -219,7 +219,7 @@ export default class App extends Component {
               <a className='navbar-brand' href=''>iRacing Week Planner</a>
             </div>
 
-            <ul className="nav navbar-nav navbar-right">
+            <ul className='nav navbar-nav navbar-right'>
               <li><a href='' onClick={this.openModal.bind(this, 'my-tracks')}>
                 Set my tracks
               </a></li>

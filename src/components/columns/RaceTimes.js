@@ -24,16 +24,24 @@ export default class NextRace extends Component {
 
   renderModal() {
     const { race } = this.props;
-    const weekStart = moment().utc().startOf('week').add(1, 'day');
+    const weekStart = moment().utc().startOf('week')
+      .add(1, 'day');
     const { modalOpen } = this.state;
 
     return (
-      <Modal isOpen={modalOpen} onClose={this.closeModal} title={`Set times for ${race.series}`}
-        doneAction={this.closeModal}>
+      <Modal
+        isOpen={modalOpen} onClose={this.closeModal} title={`Set times for ${race.series}`}
+        doneAction={this.closeModal}
+      >
         <div className='container-fluid'>
           <ul>
             {race.raceTimes.setTimes.map(
-              (time, index) => <li key={index}>{moment(weekStart).add(time).local().format('ddd h:mma')}</li>
+              (time, index) => <li key={index}>{
+                moment(weekStart)
+                  .add(time)
+                  .local()
+                  .format('ddd h:mma')
+              }</li>
             )}
           </ul>
         </div>
@@ -62,7 +70,9 @@ export default class NextRace extends Component {
         <td>
           <div>
             Every {race.raceTimes.everyTime.humanize().replace(/an?\s/, '')} starting
-            at {moment().utc().startOf('day').add(race.raceTimes.offset).format('H:mm')}
+            at {moment().utc().startOf('day')
+              .add(race.raceTimes.offset)
+              .format('H:mm')}
           </div>
         </td>
       );

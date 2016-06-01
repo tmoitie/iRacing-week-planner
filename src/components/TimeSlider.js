@@ -1,4 +1,4 @@
-import React, {Component, PropTypes} from 'react';
+import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import 'jquery-ui/slider';
@@ -22,13 +22,13 @@ export default class TimeSlider extends Component {
   }
 
   componentDidMount() {
-    const {minFrom, maxTo, initial, step} = this.props;
+    const { minFrom, maxTo, initial, step } = this.props;
     $(ReactDOM.findDOMNode(this)).slider({
       range: false,
       min: minFrom,
       max: maxTo,
       animate: true,
-      step: step,
+      step,
       value: initial,
       slide: this.handleSlide.bind(this)
     });

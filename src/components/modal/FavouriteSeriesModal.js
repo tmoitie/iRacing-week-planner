@@ -9,9 +9,9 @@ const fixText = (text) => (decodeURIComponent(text).replace(/\+/g, ' '));
 
 const groupedSeries = series.reduce((grouped, single) => {
   if (single.catid === 1) {
-    return update(grouped, {oval: {$push: [single]}});
+    return update(grouped, { oval: { $push: [single] } });
   }
-  return update(grouped, {road: {$push: [single]}});
+  return update(grouped, { road: { $push: [single] } });
 }, { oval: [], road: [] });
 
 export default class FavouriteSeriesModal extends Component {
@@ -30,7 +30,7 @@ export default class FavouriteSeriesModal extends Component {
   }
 
   setCheckboxFavourite(seriesId, e) {
-    const {favouriteSeries, save} = this.props;
+    const { favouriteSeries, save } = this.props;
     const newFavorites = cloneDeep(favouriteSeries);
     const index = newFavorites.indexOf(seriesId);
 
@@ -43,12 +43,16 @@ export default class FavouriteSeriesModal extends Component {
     save(newFavorites);
   }
 
-  renderCheckbox(series, index) {
+  renderCheckbox(cbSeries, index) {
     const { favouriteSeries } = this.props;
     return (
-      <div className="col-md-6" key={index}>
-        <Checkbox checked={favouriteSeries.indexOf(series.seriesid) !== -1}
-          onChange={this.setCheckboxFavourite.bind(this, series.seriesid)}>{fixText(series.seriesname)}</Checkbox>
+      <div className='col-md-6' key={index}>
+        <Checkbox
+          checked={favouriteSeries.indexOf(cbSeries.seriesid) !== -1}
+          onChange={this.setCheckboxFavourite.bind(this, cbSeries.seriesid)}
+        >
+          {fixText(cbSeries.seriesname)}
+        </Checkbox>
       </div>
     );
   }
@@ -57,13 +61,13 @@ export default class FavouriteSeriesModal extends Component {
     const { onClose, isOpen } = this.props;
     return (
       <Modal isOpen={isOpen} onClose={onClose} title='Choose favorite series' doneAction={onClose}>
-        <div className="container-fluid">
+        <div className='container-fluid'>
           <h3>Oval</h3>
-          <div className="row">
+          <div className='row'>
             {groupedSeries.oval.map(this.renderCheckbox.bind(this))}
           </div>
           <h3>Road</h3>
-          <div className="row">
+          <div className='row'>
             {groupedSeries.road.map(this.renderCheckbox.bind(this))}
           </div>
         </div>
