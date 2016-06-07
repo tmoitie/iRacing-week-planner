@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-export const GETTING = Symbol('GETTING');
-export const GOT = Symbol('GOT');
+export const GETTING = 'CONTRIB/GETTING';
+export const GOT = 'CONTRIB/GOT';
 
 function gettingAction() {
   return { type: GETTING };
