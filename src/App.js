@@ -1,7 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import { cloneDeep, uniqBy } from 'lodash';
 import TimeSlider from './components/TimeSlider';
 import moment, { duration } from 'moment';
+import { updateDate as updateDateCreator } from './actions/app';
 
 import RaceListing from './components/RaceListing';
 import Filters from './components/Filters';
@@ -44,12 +47,15 @@ const defaultSettings = {
   mode: 'both'
 };
 
-export default class App extends Component {
+export class App extends Component {
+  static propTypes = {
+    date: PropTypes.object,
+    updateDate: PropTypes.func
+  };
 
   constructor(props) {
     super(props);
     this.state = cloneDeep(defaultSettings);
-    this.state.date = moment().utc().startOf('day');
     this.state.currentModal = null;
   }
 
@@ -100,7 +106,7 @@ export default class App extends Component {
   }
 
   updateDate(date) {
-    this.setState({ date: moment(date, 'X') });
+    this.props.updateDate(moment(date, 'X').utc().startOf('day'));
   }
 
   renderFavouriteSeriesModal() {
@@ -178,8 +184,11 @@ export default class App extends Component {
   }
 
   render() {
-    const { filters, favouriteSeries, ownedCars, ownedTracks, date, favouriteCars, favouriteTracks,
+    const { filters, favouriteSeries, ownedCars, ownedTracks, favouriteCars, favouriteTracks,
       columns, sort, mode } = this.state;
+
+    const { date } = this.props;
+
     return (
       <div>
         <nav className='navbar navbar-inverse'>
@@ -228,14 +237,15 @@ export default class App extends Component {
               </div>
               <div style={{ marginBottom: 10 }}>
                 <TimeSlider
-                  minFrom={parseInt(seasonStart.format('X'), 10)} maxTo={parseInt(seasonEnd.format('X'), 10)}
-                  onChange={this.updateDate.bind(this)} initial={parseInt(date.format('X'), 10)}
+                  minFrom={parseInt(seasonStart.utc().format('X'), 10)}
+                  maxTo={parseInt(seasonEnd.utc().format('X'), 10)}
+                  onChange={this.updateDate.bind(this)} initial={parseInt(moment(date).utc().format('X'), 10)}
                   step={duration(1, 'days').asSeconds()}
                 />
               </div>
               <RaceListing
                 filters={filters} ownedCars={ownedCars} ownedTracks={ownedTracks}
-                favouriteSeries={favouriteSeries} date={date} favouriteTracks={favouriteTracks}
+                favouriteSeries={favouriteSeries} date={moment(date)} favouriteTracks={favouriteTracks}
                 favouriteCars={favouriteCars} columnIds={columns} sort={sort}
                 updateSort={this.saveOptions.bind(this, 'sort')}
                 oval={mode !== 'road'} road={mode !== 'oval'}
@@ -252,3 +262,13 @@ export default class App extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => ({
+  date: state.app.date
+});
+
+const mapDispatchToProps = (dispatch) => bindActionCreators({
+  updateDate: updateDateCreator
+}, dispatch);
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
