@@ -199,7 +199,7 @@ export default [{
   everyTime: duration(1, 'hours'),
   offset: duration(45, 'minutes'),
 }, {
-  // Dallera Dash
+  // Dallara Dash
   seriesId: 258,
   everyTime: duration(1, 'hours'),
   offset: duration(0, 'minutes'),
@@ -323,4 +323,19 @@ export default [{
   setTimes: [
     duration({ days: 5, hours: 14, minutes: 0 }), // Sun 2pm
   ]
+}, {
+  // 13th Fig Gr8
+  seriesId: 245,
+  everyTime: duration(30, 'minutes'),
+  offset: duration(0, 'minutes')
+}, {
+  // 13th Identity Crisis
+  seriesId: 244,
+  everyTime: duration(30, 'minutes'),
+  offset: duration(0, 'minutes')
+}, {
+  // 13th Tube Frame Twister
+  seriesId: 242,
+  everyTime: duration(30, 'minutes'),
+  offset: duration(15, 'minutes')
 }];
