@@ -4,10 +4,12 @@ const autoprefixer = require('autoprefixer');
 
 const port = process.env.PORT || 3000;
 
+const env = process.env.NODE_ENV || 'development';
+
 module.exports = {
-  devtool: process.env.ENV === 'production' ? null : 'eval-source-maps',
+  devtool: env === 'production' ? null : 'eval-source-maps',
   entry: {
-    main: process.env.ENV === 'production' ? ['./src/index'] : [
+    main: env === 'production' ? ['./src/index'] : [
       `webpack-dev-server/client?http://localhost:${port}`,
       'webpack/hot/only-dev-server',
       './src/index'
@@ -23,7 +25,7 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.js$/,
-      loaders: process.env.ENV === 'production' ? ['babel'] : ['react-hot', 'babel'],
+      loaders: env === 'production' ? ['babel'] : ['react-hot', 'babel'],
       include: [path.join(__dirname, 'src')]
     }, {
       test: /\.scss$/,
@@ -44,8 +46,8 @@ module.exports = {
   postcss: () => [autoprefixer],
   sassLoader: {
   },
-  plugins: process.env.ENV === 'production' ? [
-    new webpack.optimize.UglifyJsPlugin({minimize: true}),
+  plugins: env === 'production' ? [
+    new webpack.optimize.UglifyJsPlugin({ minimize: true }),
     new webpack.DefinePlugin({
       __DEV__: false,
       'process.env.NODE_ENV': JSON.stringify('production')
