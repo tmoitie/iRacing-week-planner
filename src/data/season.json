@@ -91,6 +91,89 @@
     "seasonid": 1620,
     "category": 1
 }, {
+    "prefimg": "member_images%2Fseries%2F13_gymkhana%2Fsp_o_gymkhana.gif",
+    "seriesname": "13th+Week+iRacing+Gymkhana",
+    "seasonshortname": "2016+Season+2+-+13th+Week",
+    "whatshotimg": "member_images%2Fseries%2F13_gymkhana%2Fstats_gymkhana.jpg",
+    "cautionTypeRoad": 0,
+    "raceweek": 1,
+    "active": true,
+    "maxlicenselevel": 28,
+    "tracks": [{
+        "config": "Road+Course+Short+A",
+        "priority": 5,
+        "raceweek": 0,
+        "pkgid": 61,
+        "timeOfDay": 0,
+        "name": "Texas+Motor+Speedway",
+        "id": 118,
+        "lowername": "texas+motor+speedway"
+    }],
+    "isClubAllowed": true,
+    "serieslicgroupid": 1,
+    "restrictedByMember": false,
+    "lowerseriesshortname": "13th+week+iracing+gymkhana",
+    "allowedMembers": [],
+    "carclasses": [{
+        "carsinclass": [{
+            "name": "Holden+Commodore+VF+V8",
+            "id": 60
+        }, {
+            "name": "Ford+Falcon+FG+V8",
+            "id": 61
+        }],
+        "shortname": "V8Supercars",
+        "name": "V8Supercars",
+        "id": 67,
+        "lowername": "v8supercars"
+    }],
+    "currentTrack": 118,
+    "seriesid": 136,
+    "driverChangeRule": 0,
+    "licgroupid": 1,
+    "ignoreLicenseForPractice": false,
+    "isWorldCup": false,
+    "islite": false,
+    "rookieseason": "",
+    "end": 1465876800000,
+    "cars": [{
+        "pkgid": 168,
+        "name": "Holden+Commodore+VF+V8",
+        "id": 60,
+        "lowername": "holden+commodore+vf+v8",
+        "sku": 10375
+    }, {
+        "pkgid": 171,
+        "name": "Ford+Falcon+FG+V8",
+        "id": 61,
+        "lowername": "ford+falcon+fg+v8",
+        "sku": 10379
+    }],
+    "carNumberMap": {
+        "carNumberMap": {}
+    },
+    "multiclass": false,
+    "isRegionCompetition": false,
+    "start": 1465272000000,
+    "lowerseasonshortname": "2016+season+2+-+13th+week",
+    "maxTeamDrivers": 1,
+    "quarter": 2,
+    "seriesshortname": "13th+Week+iRacing+Gymkhana",
+    "catid": 2,
+    "minsr": "1.0",
+    "isFixedSetup": false,
+    "isOfficial": true,
+    "minlicenselevel": 1,
+    "cautionTypeOval": 0,
+    "licenseEligible": true,
+    "complete": false,
+    "driverChanges": false,
+    "minTeamDrivers": 1,
+    "year": 2016,
+    "restrictedToCar": false,
+    "seasonid": 1619,
+    "category": 2
+}, {
     "prefimg": "",
     "seriesname": "13th+Week+iRacing+Identity+Crisis",
     "seasonshortname": "2016+Season+2+-+13th+Week",
@@ -728,14 +811,14 @@
         "teamId": -38678,
         "custId": 78342
     }, {
-        "teamId": -30633,
-        "custId": 89864
+        "teamId": -40222,
+        "custId": 38408
     }, {
         "teamId": -10272,
         "custId": 54792
     }, {
-        "teamId": -40222,
-        "custId": 38408
+        "teamId": -30633,
+        "custId": 89864
     }, {
         "teamId": -17904,
         "custId": 48395
@@ -755,29 +838,29 @@
         "teamId": -39190,
         "custId": 126480
     }, {
-        "teamId": -40075,
-        "custId": 163603
-    }, {
         "teamId": -40222,
         "custId": 96275
     }, {
-        "teamId": -38678,
-        "custId": 114966
+        "teamId": -40075,
+        "custId": 163603
     }, {
         "teamId": -10010,
         "custId": 16662
     }, {
-        "teamId": -17904,
-        "custId": 28696
+        "teamId": -38678,
+        "custId": 114966
     }, {
         "teamId": -36492,
         "custId": 17944
     }, {
-        "teamId": -40229,
-        "custId": 62490
+        "teamId": -17904,
+        "custId": 28696
     }, {
         "teamId": -41144,
         "custId": 59162
+    }, {
+        "teamId": -40229,
+        "custId": 62490
     }, {
         "teamId": -10034,
         "custId": 73499
@@ -809,11 +892,11 @@
         "teamId": -10081,
         "custId": 177963
     }, {
-        "teamId": -36492,
-        "custId": 81454
-    }, {
         "teamId": -38584,
         "custId": 68654
+    }, {
+        "teamId": -36492,
+        "custId": 81454
     }, {
         "teamId": -10081,
         "custId": 74294
@@ -821,11 +904,11 @@
         "teamId": -18662,
         "custId": 89143
     }, {
-        "teamId": -31131,
-        "custId": 57144
-    }, {
         "teamId": -38749,
         "custId": 35896
+    }, {
+        "teamId": -31131,
+        "custId": 57144
     }, {
         "teamId": -39188,
         "custId": 58168
@@ -839,11 +922,11 @@
         "teamId": -17904,
         "custId": 54587
     }, {
-        "teamId": -40164,
-        "custId": 156477
-    }, {
         "teamId": -39590,
         "custId": 119101
+    }, {
+        "teamId": -40164,
+        "custId": 156477
     }, {
         "teamId": -38749,
         "custId": 55103
@@ -854,11 +937,11 @@
         "teamId": -36094,
         "custId": 113984
     }, {
-        "teamId": -40168,
-        "custId": 157765
-    }, {
         "teamId": -10272,
         "custId": 16197
+    }, {
+        "teamId": -40168,
+        "custId": 157765
     }, {
         "teamId": -36091,
         "custId": 58950
@@ -878,14 +961,14 @@
         "teamId": -40240,
         "custId": 67157
     }, {
-        "teamId": -31131,
-        "custId": 73560
-    }, {
         "teamId": -39188,
         "custId": 25944
     }, {
         "teamId": -41144,
         "custId": 37976
+    }, {
+        "teamId": -31131,
+        "custId": 73560
     }, {
         "teamId": -40150,
         "custId": 81752
@@ -908,11 +991,11 @@
         "teamId": -40240,
         "custId": 127339
     }, {
-        "teamId": -40194,
-        "custId": 100462
-    }, {
         "teamId": -10010,
         "custId": 42606
+    }, {
+        "teamId": -40194,
+        "custId": 100462
     }, {
         "teamId": -39188,
         "custId": 116848
@@ -938,17 +1021,17 @@
         "teamId": -40193,
         "custId": 28023
     }, {
-        "teamId": -40239,
-        "custId": 62077
-    }, {
         "teamId": -10014,
         "custId": 21629
     }, {
-        "teamId": -38748,
-        "custId": 99198
+        "teamId": -40239,
+        "custId": 62077
     }, {
         "teamId": -17904,
         "custId": 19326
+    }, {
+        "teamId": -38748,
+        "custId": 99198
     }, {
         "teamId": -18739,
         "custId": 59007
@@ -968,11 +1051,11 @@
         "teamId": -41109,
         "custId": 28805
     }, {
-        "teamId": -38678,
-        "custId": 105862
-    }, {
         "teamId": -10034,
         "custId": 94598
+    }, {
+        "teamId": -38678,
+        "custId": 105862
     }, {
         "teamId": -18662,
         "custId": 18823
@@ -1001,11 +1084,11 @@
         "teamId": -41144,
         "custId": 124057
     }, {
-        "teamId": -38584,
-        "custId": 199325
-    }, {
         "teamId": -10014,
         "custId": 143773
+    }, {
+        "teamId": -38584,
+        "custId": 199325
     }, {
         "teamId": -36094,
         "custId": 164259
@@ -1031,11 +1114,11 @@
         "teamId": -38613,
         "custId": 25262
     }, {
-        "teamId": -30701,
-        "custId": 129455
-    }, {
         "teamId": -10272,
         "custId": 18095
+    }, {
+        "teamId": -30701,
+        "custId": 129455
     }, {
         "teamId": -38748,
         "custId": 54448
@@ -1043,11 +1126,11 @@
         "teamId": -38678,
         "custId": 70067
     }, {
-        "teamId": -10081,
-        "custId": 111542
-    }, {
         "teamId": -38748,
         "custId": 74422
+    }, {
+        "teamId": -10081,
+        "custId": 111542
     }, {
         "teamId": -40164,
         "custId": 139958
@@ -1085,17 +1168,17 @@
         "teamId": -18739,
         "custId": 100565
     }, {
-        "teamId": -38749,
-        "custId": 93910
-    }, {
         "teamId": -10010,
         "custId": 68566
     }, {
-        "teamId": -31131,
-        "custId": 45527
+        "teamId": -38749,
+        "custId": 93910
     }, {
         "teamId": -40241,
         "custId": 15575
+    }, {
+        "teamId": -31131,
+        "custId": 45527
     }, {
         "teamId": -30633,
         "custId": 57818
@@ -1127,17 +1210,17 @@
         "teamId": -38583,
         "custId": 170730
     }, {
-        "teamId": -40193,
-        "custId": 200432
-    }, {
         "teamId": -10034,
         "custId": 28656
     }, {
-        "teamId": -36492,
-        "custId": 42998
+        "teamId": -40193,
+        "custId": 200432
     }, {
         "teamId": -39190,
         "custId": 19446
+    }, {
+        "teamId": -36492,
+        "custId": 42998
     }, {
         "teamId": -40194,
         "custId": 26617
@@ -1618,352 +1701,6 @@
     "year": 2016,
     "restrictedToCar": false,
     "seasonid": 1561,
-    "category": 1
-}, {
-    "prefimg": "",
-    "seriesname": "European+MX-5+Cup",
-    "seasonshortname": "2016+Season+2+Fixed",
-    "whatshotimg": "member_images%2Fseries%2Fseriesid_270%2Fwhats_hot.jpg",
-    "cautionTypeRoad": 2,
-    "raceweek": 12,
-    "active": true,
-    "maxlicenselevel": 28,
-    "tracks": [{
-        "config": "Full+Course",
-        "priority": 1,
-        "raceweek": 0,
-        "pkgid": 34,
-        "timeOfDay": 0,
-        "name": "Mazda+Raceway+Laguna+Seca",
-        "id": 47,
-        "lowername": "mazda+raceway+laguna+seca"
-    }, {
-        "config": "Summit+Point+Raceway",
-        "priority": 1,
-        "raceweek": 1,
-        "pkgid": 13,
-        "timeOfDay": 0,
-        "name": "Summit+Point+Raceway",
-        "id": 9,
-        "lowername": "summit+point+raceway"
-    }, {
-        "config": "Full+Course",
-        "priority": 0,
-        "raceweek": 2,
-        "pkgid": 109,
-        "timeOfDay": 0,
-        "name": "Okayama+International+Circuit",
-        "id": 166,
-        "lowername": "okayama+international+circuit"
-    }, {
-        "config": "Road+Course",
-        "priority": 2,
-        "raceweek": 3,
-        "pkgid": 4,
-        "timeOfDay": 0,
-        "name": "Daytona+circa+2007",
-        "id": 26,
-        "lowername": "daytona+circa+2007"
-    }, {
-        "config": "Road+Course",
-        "priority": 2,
-        "raceweek": 4,
-        "pkgid": 55,
-        "timeOfDay": 0,
-        "name": "Phoenix+International+Raceway+-+2008",
-        "id": 105,
-        "lowername": "phoenix+international+raceway+-+2008"
-    }, {
-        "config": "Short",
-        "priority": 3,
-        "raceweek": 5,
-        "pkgid": 13,
-        "timeOfDay": 0,
-        "name": "Summit+Point+Raceway",
-        "id": 24,
-        "lowername": "summit+point+raceway"
-    }, {
-        "config": "Full+Course",
-        "priority": 1,
-        "raceweek": 6,
-        "pkgid": 9,
-        "timeOfDay": 0,
-        "name": "Lime+Rock+Park",
-        "id": 1,
-        "lowername": "lime+rock+park"
-    }, {
-        "config": "Full+Course",
-        "priority": 1,
-        "raceweek": 7,
-        "pkgid": 34,
-        "timeOfDay": 0,
-        "name": "Mazda+Raceway+Laguna+Seca",
-        "id": 47,
-        "lowername": "mazda+raceway+laguna+seca"
-    }, {
-        "config": "Full+Course",
-        "priority": 0,
-        "raceweek": 8,
-        "pkgid": 109,
-        "timeOfDay": 0,
-        "name": "Okayama+International+Circuit",
-        "id": 166,
-        "lowername": "okayama+international+circuit"
-    }, {
-        "config": "Summit+Point+Raceway",
-        "priority": 1,
-        "raceweek": 9,
-        "pkgid": 13,
-        "timeOfDay": 0,
-        "name": "Summit+Point+Raceway",
-        "id": 9,
-        "lowername": "summit+point+raceway"
-    }, {
-        "config": "Road+Course",
-        "priority": 2,
-        "raceweek": 10,
-        "pkgid": 31,
-        "timeOfDay": 0,
-        "name": "Charlotte+Motor+Speedway",
-        "id": 37,
-        "lowername": "charlotte+motor+speedway"
-    }, {
-        "config": "Chicane",
-        "priority": 2,
-        "raceweek": 11,
-        "pkgid": 9,
-        "timeOfDay": 0,
-        "name": "Lime+Rock+Park",
-        "id": 34,
-        "lowername": "lime+rock+park"
-    }],
-    "isClubAllowed": true,
-    "serieslicgroupid": 1,
-    "restrictedByMember": false,
-    "lowerseriesshortname": "european+mx-5+cup",
-    "allowedMembers": [],
-    "carclasses": [{
-        "carsinclass": [{
-            "name": "Global+Mazda+MX-5+Cup",
-            "id": 67
-        }],
-        "shortname": "MX5+Cup+2016",
-        "name": "Mazda+MX-5+Cup+2016",
-        "id": 74,
-        "lowername": "mazda+mx-5+cup+2016"
-    }],
-    "currentTrack": -1,
-    "seriesid": 270,
-    "driverChangeRule": 0,
-    "licgroupid": 1,
-    "ignoreLicenseForPractice": false,
-    "isWorldCup": false,
-    "islite": false,
-    "rookieseason": "A",
-    "end": 1465272000000,
-    "cars": [{
-        "pkgid": 182,
-        "name": "Global+Mazda+MX-5+Cup",
-        "id": 67,
-        "lowername": "global+mazda+mx-5+cup",
-        "sku": 10394
-    }],
-    "carNumberMap": {
-        "carNumberMap": {}
-    },
-    "multiclass": false,
-    "isRegionCompetition": false,
-    "start": 1458014400000,
-    "lowerseasonshortname": "2016+season+2+fixed",
-    "maxTeamDrivers": 1,
-    "quarter": 2,
-    "seriesshortname": "European+MX-5+Cup",
-    "catid": 2,
-    "minsr": "1.0",
-    "isFixedSetup": true,
-    "isOfficial": true,
-    "minlicenselevel": 1,
-    "cautionTypeOval": 0,
-    "licenseEligible": true,
-    "complete": false,
-    "driverChanges": false,
-    "minTeamDrivers": 1,
-    "year": 2016,
-    "restrictedToCar": false,
-    "seasonid": 1564,
-    "category": 2
-}, {
-    "prefimg": "",
-    "seriesname": "iRacing+Street+Stock+Series+-+R",
-    "seasonshortname": "2016+Season+2+Fixed",
-    "whatshotimg": "member_images%2Fseries%2Fseries_182%2Fwhats_hot.jpg",
-    "cautionTypeRoad": 0,
-    "raceweek": 12,
-    "active": true,
-    "maxlicenselevel": 8,
-    "tracks": [{
-        "config": "Oval",
-        "priority": 1,
-        "raceweek": 0,
-        "pkgid": 31,
-        "timeOfDay": 0,
-        "name": "Charlotte+Motor+Speedway",
-        "id": 40,
-        "lowername": "charlotte+motor+speedway"
-    }, {
-        "config": "",
-        "priority": 0,
-        "raceweek": 1,
-        "pkgid": 7,
-        "timeOfDay": 0,
-        "name": "USA+International+Speedway",
-        "id": 16,
-        "lowername": "usa+international+speedway"
-    }, {
-        "config": "Oval",
-        "priority": 1,
-        "raceweek": 2,
-        "pkgid": 31,
-        "timeOfDay": 3,
-        "name": "Charlotte+Motor+Speedway",
-        "id": 40,
-        "lowername": "charlotte+motor+speedway"
-    }, {
-        "config": "",
-        "priority": 0,
-        "raceweek": 3,
-        "pkgid": 7,
-        "timeOfDay": 3,
-        "name": "USA+International+Speedway",
-        "id": 16,
-        "lowername": "usa+international+speedway"
-    }, {
-        "config": "Oval",
-        "priority": 1,
-        "raceweek": 4,
-        "pkgid": 31,
-        "timeOfDay": 0,
-        "name": "Charlotte+Motor+Speedway",
-        "id": 40,
-        "lowername": "charlotte+motor+speedway"
-    }, {
-        "config": "",
-        "priority": 0,
-        "raceweek": 5,
-        "pkgid": 7,
-        "timeOfDay": 0,
-        "name": "USA+International+Speedway",
-        "id": 16,
-        "lowername": "usa+international+speedway"
-    }, {
-        "config": "Oval",
-        "priority": 1,
-        "raceweek": 6,
-        "pkgid": 31,
-        "timeOfDay": 3,
-        "name": "Charlotte+Motor+Speedway",
-        "id": 40,
-        "lowername": "charlotte+motor+speedway"
-    }, {
-        "config": "",
-        "priority": 0,
-        "raceweek": 7,
-        "pkgid": 7,
-        "timeOfDay": 3,
-        "name": "USA+International+Speedway",
-        "id": 16,
-        "lowername": "usa+international+speedway"
-    }, {
-        "config": "Oval",
-        "priority": 1,
-        "raceweek": 8,
-        "pkgid": 31,
-        "timeOfDay": 0,
-        "name": "Charlotte+Motor+Speedway",
-        "id": 40,
-        "lowername": "charlotte+motor+speedway"
-    }, {
-        "config": "",
-        "priority": 0,
-        "raceweek": 9,
-        "pkgid": 7,
-        "timeOfDay": 0,
-        "name": "USA+International+Speedway",
-        "id": 16,
-        "lowername": "usa+international+speedway"
-    }, {
-        "config": "Oval",
-        "priority": 1,
-        "raceweek": 10,
-        "pkgid": 31,
-        "timeOfDay": 3,
-        "name": "Charlotte+Motor+Speedway",
-        "id": 40,
-        "lowername": "charlotte+motor+speedway"
-    }, {
-        "config": "",
-        "priority": 0,
-        "raceweek": 11,
-        "pkgid": 7,
-        "timeOfDay": 3,
-        "name": "USA+International+Speedway",
-        "id": 16,
-        "lowername": "usa+international+speedway"
-    }],
-    "isClubAllowed": true,
-    "serieslicgroupid": 1,
-    "restrictedByMember": false,
-    "lowerseriesshortname": "iracing+street+stock+series+-+r",
-    "allowedMembers": [],
-    "carclasses": [{
-        "carsinclass": [{
-            "name": "Street+Stock",
-            "id": 36
-        }],
-        "shortname": "Street+Stock",
-        "name": "Street+Stock",
-        "id": 34,
-        "lowername": "street+stock"
-    }],
-    "currentTrack": -1,
-    "seriesid": 182,
-    "driverChangeRule": 0,
-    "licgroupid": 1,
-    "ignoreLicenseForPractice": false,
-    "isWorldCup": false,
-    "islite": false,
-    "rookieseason": "A",
-    "end": 1465272000000,
-    "cars": [{
-        "pkgid": 105,
-        "name": "Street+Stock",
-        "id": 36,
-        "lowername": "street+stock",
-        "sku": 10232
-    }],
-    "carNumberMap": {
-        "carNumberMap": {}
-    },
-    "multiclass": false,
-    "isRegionCompetition": false,
-    "start": 1458014400000,
-    "lowerseasonshortname": "2016+season+2+fixed",
-    "maxTeamDrivers": 1,
-    "quarter": 2,
-    "seriesshortname": "iRacing+Street+Stock+Series+-+R",
-    "catid": 1,
-    "minsr": "1.0",
-    "isFixedSetup": true,
-    "isOfficial": true,
-    "minlicenselevel": 1,
-    "cautionTypeOval": 0,
-    "licenseEligible": false,
-    "complete": false,
-    "driverChanges": false,
-    "minTeamDrivers": 1,
-    "year": 2016,
-    "restrictedToCar": false,
-    "seasonid": 1523,
     "category": 1
 }, {
     "prefimg": "",
@@ -4649,167 +4386,68 @@
     "category": 1
 }, {
     "prefimg": "",
-    "seriesname": "VirtualRacingSchool.com+MAZDA+MX-5+Cup",
-    "seasonshortname": "2016+Season+2+Fixed",
-    "whatshotimg": "member_images%2Fseries%2Fseriesid_274%2Fwhats_hot.jpg",
+    "seriesname": "World+Series+of+Renault",
+    "seasonshortname": "2016+Season+2+-+13th+Week",
+    "whatshotimg": "member_images%2Fseries%2Fseriesid_272%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
-    "raceweek": 12,
+    "raceweek": 1,
     "active": true,
     "maxlicenselevel": 28,
     "tracks": [{
-        "config": "Summit+Point+Raceway",
-        "priority": 1,
+        "config": "Grand+Prix",
+        "priority": 0,
         "raceweek": 0,
-        "pkgid": 13,
+        "pkgid": 197,
         "timeOfDay": 0,
-        "name": "Summit+Point+Raceway",
-        "id": 9,
-        "lowername": "summit+point+raceway"
-    }, {
-        "config": "Full+Course",
-        "priority": 0,
-        "raceweek": 1,
-        "pkgid": 109,
-        "timeOfDay": 0,
-        "name": "Okayama+International+Circuit",
-        "id": 166,
-        "lowername": "okayama+international+circuit"
-    }, {
-        "config": "Full+Course",
-        "priority": 1,
-        "raceweek": 2,
-        "pkgid": 9,
-        "timeOfDay": 0,
-        "name": "Lime+Rock+Park",
-        "id": 1,
-        "lowername": "lime+rock+park"
-    }, {
-        "config": "Full+Course",
-        "priority": 1,
-        "raceweek": 3,
-        "pkgid": 34,
-        "timeOfDay": 0,
-        "name": "Mazda+Raceway+Laguna+Seca",
-        "id": 47,
-        "lowername": "mazda+raceway+laguna+seca"
-    }, {
-        "config": "Jefferson+Circuit",
-        "priority": 2,
-        "raceweek": 4,
-        "pkgid": 13,
-        "timeOfDay": 0,
-        "name": "Summit+Point+Raceway",
-        "id": 8,
-        "lowername": "summit+point+raceway"
-    }, {
-        "config": "Road+Course",
-        "priority": 2,
-        "raceweek": 5,
-        "pkgid": 31,
-        "timeOfDay": 0,
-        "name": "Charlotte+Motor+Speedway",
-        "id": 37,
-        "lowername": "charlotte+motor+speedway"
-    }, {
-        "config": "Road+Course",
-        "priority": 2,
-        "raceweek": 6,
-        "pkgid": 55,
-        "timeOfDay": 0,
-        "name": "Phoenix+International+Raceway+-+2008",
-        "id": 105,
-        "lowername": "phoenix+international+raceway+-+2008"
-    }, {
-        "config": "Short",
-        "priority": 0,
-        "raceweek": 7,
-        "pkgid": 109,
-        "timeOfDay": 0,
-        "name": "Okayama+International+Circuit",
-        "id": 167,
-        "lowername": "okayama+international+circuit"
-    }, {
-        "config": "Chicane",
-        "priority": 2,
-        "raceweek": 8,
-        "pkgid": 9,
-        "timeOfDay": 0,
-        "name": "Lime+Rock+Park",
-        "id": 34,
-        "lowername": "lime+rock+park"
-    }, {
-        "config": "Jefferson+Reverse",
-        "priority": 4,
-        "raceweek": 9,
-        "pkgid": 13,
-        "timeOfDay": 0,
-        "name": "Summit+Point+Raceway",
-        "id": 142,
-        "lowername": "summit+point+raceway"
-    }, {
-        "config": "Full+Course",
-        "priority": 0,
-        "raceweek": 10,
-        "pkgid": 109,
-        "timeOfDay": 0,
-        "name": "Okayama+International+Circuit",
-        "id": 166,
-        "lowername": "okayama+international+circuit"
-    }, {
-        "config": "Full+Course",
-        "priority": 1,
-        "raceweek": 11,
-        "pkgid": 34,
-        "timeOfDay": 0,
-        "name": "Mazda+Raceway+Laguna+Seca",
-        "id": 47,
-        "lowername": "mazda+raceway+laguna+seca"
+        "name": "Autodromo+Internazionale+Enzo+e+Dino+Ferrari",
+        "id": 266,
+        "lowername": "autodromo+internazionale+enzo+e+dino+ferrari"
     }],
     "isClubAllowed": true,
     "serieslicgroupid": 1,
     "restrictedByMember": false,
-    "lowerseriesshortname": "virtualracingschool.com+mazda+mx-5+cup",
+    "lowerseriesshortname": "world+series+of+renault",
     "allowedMembers": [],
     "carclasses": [{
         "carsinclass": [{
-            "name": "Global+Mazda+MX-5+Cup",
-            "id": 67
+            "name": "Formula+Renault+2.0",
+            "id": 74
         }],
-        "shortname": "MX5+Cup+2016",
-        "name": "Mazda+MX-5+Cup+2016",
-        "id": 74,
-        "lowername": "mazda+mx-5+cup+2016"
+        "shortname": "Renault+2.0",
+        "name": "Formula+Renault+2.0",
+        "id": 81,
+        "lowername": "formula+renault+2.0"
     }],
-    "currentTrack": -1,
-    "seriesid": 274,
+    "currentTrack": 266,
+    "seriesid": 272,
     "driverChangeRule": 0,
     "licgroupid": 1,
     "ignoreLicenseForPractice": false,
     "isWorldCup": false,
     "islite": false,
-    "rookieseason": "A",
-    "end": 1465272000000,
+    "rookieseason": "",
+    "end": 1465876800000,
     "cars": [{
-        "pkgid": 182,
-        "name": "Global+Mazda+MX-5+Cup",
-        "id": 67,
-        "lowername": "global+mazda+mx-5+cup",
-        "sku": 10394
+        "pkgid": 203,
+        "name": "Formula+Renault+2.0",
+        "id": 74,
+        "lowername": "formula+renault+2.0",
+        "sku": 10406
     }],
     "carNumberMap": {
         "carNumberMap": {}
     },
     "multiclass": false,
     "isRegionCompetition": false,
-    "start": 1458014400000,
-    "lowerseasonshortname": "2016+season+2+fixed",
+    "start": 1465272000000,
+    "lowerseasonshortname": "2016+season+2+-+13th+week",
     "maxTeamDrivers": 1,
     "quarter": 2,
-    "seriesshortname": "VirtualRacingSchool.com+MAZDA+MX-5+Cup",
+    "seriesshortname": "World+Series+of+Renault",
     "catid": 2,
     "minsr": "1.0",
-    "isFixedSetup": true,
-    "isOfficial": true,
+    "isFixedSetup": false,
+    "isOfficial": false,
     "minlicenselevel": 1,
     "cautionTypeOval": 0,
     "licenseEligible": true,
@@ -4818,6 +4456,6 @@
     "minTeamDrivers": 1,
     "year": 2016,
     "restrictedToCar": false,
-    "seasonid": 1524,
+    "seasonid": 1623,
     "category": 2
 }]

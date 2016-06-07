@@ -223,7 +223,19 @@
     "allowWheelColor": true,
     "dirpath": "dallaradw12",
     "priceDisplay": "11.95",
-    "paintRules": {},
+    "paintRules": {
+        "24": {
+            "Color3": "0000FF",
+            "Sponsor2Available": false,
+            "RulesExplanation": "The+currently+selected+car+pattern+doesn%27t+allow+painting+the+car+or+the+car%27s+numbers.",
+            "Sponsor1Available": false,
+            "PaintCarAvailable": false,
+            "Sponsor1": "0",
+            "Sponsor2": "0",
+            "Color1": "FF0000",
+            "Color2": "00FF00"
+        }
+    },
     "forumID": 0,
     "allowSelectChrome": true
 }, {
