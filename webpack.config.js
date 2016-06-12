@@ -6,6 +6,8 @@ const port = process.env.PORT || 3000;
 
 const env = process.env.NODE_ENV || 'development';
 
+const airbrakeKey = process.env.AIRBRAKE_KEY || '';
+
 module.exports = {
   devtool: env === 'production' ? null : 'eval-source-maps',
   entry: {
@@ -50,7 +52,7 @@ module.exports = {
     new webpack.optimize.UglifyJsPlugin({ minimize: true }),
     new webpack.DefinePlugin({
       __DEV__: false,
-      'process.env.AIRBRAKE_KEY': process.env.AIRBRAKE_KEY || '',
+      'process.env.AIRBRAKE_KEY': JSON.stringify(airbrakeKey),
       'process.env.NODE_ENV': JSON.stringify('production')
     }),
   ] : [
