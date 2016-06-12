@@ -50,6 +50,7 @@ module.exports = {
     new webpack.optimize.UglifyJsPlugin({ minimize: true }),
     new webpack.DefinePlugin({
       __DEV__: false,
+      'process.env.AIRBRAKE_KEY': process.env.AIRBRAKE_KEY || '',
       'process.env.NODE_ENV': JSON.stringify('production')
     }),
   ] : [
