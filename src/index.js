@@ -1,15 +1,21 @@
+/* eslint global-require: 0 */
 import 'es5-shim';
 import 'es5-shim/es5-sham';
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import { Provider } from 'react-redux';
-import configureStore from './store/configureStore';
+let start = () => {
+  require('./entry');
+};
 
-ReactDOM.render(
-  <Provider store={configureStore({})}>
-    <App />
-  </Provider>,
-  document.getElementById('root')
-);
+if (process.env.NODE_ENV === 'production' && process.env.AIRBRAKE_KEY) {
+  const AirbrakeClient = require('airbrake-js');
+
+  const airbrake = new AirbrakeClient({
+    host: 'http://errbit.tmoitie.uk',
+    projectId: -1,
+    projectKey: process.env.AIRBRAKE_KEY
+  });
+
+  start = airbrake.wrap(start);
+}
+
+start();

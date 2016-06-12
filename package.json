@@ -48,6 +48,7 @@
     "webpack-dev-server": "^1.12.1"
   },
   "dependencies": {
+    "airbrake-js": "^0.5.9",
     "autoprefixer": "^6.3.3",
     "axios": "^0.11.1",
     "bootstrap-sass": "^3.3.6",
