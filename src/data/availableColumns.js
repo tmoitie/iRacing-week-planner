@@ -1,5 +1,5 @@
 import {
-  Car, Class, EndDate, Fixed, Licence, Link, NextRace, Official,
+  Id, Car, Class, EndDate, Fixed, Licence, Link, NextRace, Official,
   RaceTimes, Series, SeasonEnd, StartDate, Track, Type
 } from '../components/columns/';
 import moment from 'moment';
@@ -34,6 +34,17 @@ const sortByDate = (key, order, a, b) => {
 };
 
 export default [{
+  id: 'id',
+  header: 'ID',
+  component: Id,
+  default: false,
+  sort: (order, a, b) => {
+    if (order === 'asc') {
+      return (a.id < b.id ? -1 : 1);
+    }
+    return (a.id > b.id ? -1 : 1);
+  }
+}, {
   id: 'class',
   header: 'Class',
   component: Class,
