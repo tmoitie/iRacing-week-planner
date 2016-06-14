@@ -301,12 +301,10 @@ export default [{
 }, {
   // IndyCar Road - no time data yet
   seriesId: 133,
-  offWeeks: [1.5, 2.5, 3.5, 4.5, 5.5]
-  // everyTime: duration()
+  everyTime: duration(2, 'hours')
 }, {
-  // IndyCar Fixed Oval - no time data yet
-  seriesId: 132,
-  offWeeks: [1.5, 2.5, 3.5, 4.5, 5.5]
+  // IndyCar Oval - no time data yet
+  seriesId: 132
 }, {
   // Indy 500
   seriesId: 276,
@@ -338,4 +336,24 @@ export default [{
   seriesId: 242,
   everyTime: duration(30, 'minutes'),
   offset: duration(15, 'minutes')
+}, {
+  // Global Mazda
+  seriesId: 139,
+  everyTime: duration(60, 'minutes'),
+  offset: duration(0, 'minutes')
+}, {
+  // RUF GT3
+  seriesId: 277,
+  everyTime: duration(120, 'minutes'),
+  offset: duration(105, 'minutes')
+}, {
+  // Leo Bodnar ProtoGT
+  seriesId: 278,
+  everyTime: duration(120, 'minutes'),
+  offset: duration(105, 'minutes')
+}, {
+  // Radical
+  seriesId: 74,
+  everyTime: duration(120, 'minutes'),
+  offset: duration(60, 'minutes')
 }];

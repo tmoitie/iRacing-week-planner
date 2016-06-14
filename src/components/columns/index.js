@@ -2,6 +2,7 @@ export Car from './Car';
 export Class from './Class';
 export EndDate from './EndDate';
 export Fixed from './Fixed';
+export Id from './Id';
 export Licence from './Licence';
 export Link from './Link';
 export NextRace from './NextRace';
