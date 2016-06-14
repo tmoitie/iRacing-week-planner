@@ -15,7 +15,7 @@ export default [{
   // Street Stock
   seriesId: 182,
   everyTime: duration(1, 'hours'),
-  offset: duration(45, 'minutes'),
+  offset: duration(0, 'minutes'),
   lengths: ['20L', '40L', '20L', '40L', '20L', '40L', '20L', '40L', '20L', '40L', '20L', '40L']
 }, {
   // Late model
@@ -356,4 +356,13 @@ export default [{
   seriesId: 74,
   everyTime: duration(120, 'minutes'),
   offset: duration(60, 'minutes')
+}, {
+  // Blancpain GT
+  seriesId: 268,
+  setTimes: [
+    duration({ days: 4, hours: 13, minutes: 30 }), // Sat 1:30pm
+  ],
+  weekStartOffset: duration({ days: 2 }),
+  weekEndOffset: duration({ days: 7 }),
+  offWeeks: [1.1, 1.2, 1.3, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 3.1, 3.2, 3.3, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6]
 }];

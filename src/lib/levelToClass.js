@@ -1,4 +1,4 @@
-const levels = ['R', 'D', 'C', 'B', 'A', 'P'];
+const levels = ['R', 'D', 'C', 'B', 'A', 'P', 'P'];
 
 export default function levelToClass(level, effective = false) {
   return effective ? effectiveLevelToClass(level) : realLevelToClass(level);
