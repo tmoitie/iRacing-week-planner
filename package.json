@@ -51,6 +51,7 @@
     "airbrake-js": "^0.5.9",
     "autoprefixer": "^6.3.3",
     "axios": "^0.11.1",
+    "babel-polyfill": "^6.9.1",
     "bootstrap-sass": "^3.3.6",
     "console-polyfill": "^0.2.2",
     "es5-shim": "^4.4.1",
