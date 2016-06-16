@@ -19,6 +19,7 @@ import availableColumns from './data/availableColumns';
 
 import { seasonStart, seasonEnd, weekSeasonStart } from './config';
 
+import './components/styles/preBootstrap.scss';
 import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
 const cars = uniqBy(allCars, (car) => car.sku);
