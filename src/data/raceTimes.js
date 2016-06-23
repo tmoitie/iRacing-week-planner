@@ -243,7 +243,7 @@ export default [{
     duration({ days: 4, hours: 14 }), // Sat 2pm
   ],
   weekStartOffset: duration({ days: 9 }),
-  weekEndOffset: duration({ days: 2 }),
+  weekEndOffset: duration({ days: 7 }),
   offWeeks: [2.5, 3.5, 4.5, 5.5, 6.5, 7.3, 7.6, 8.5, 9.3, 9.6, 10.5, 11.5, 12.5, 13.5, 14.3, 14.6, 15.5]
 }, {
   // Peak Antifreeze
@@ -364,5 +364,13 @@ export default [{
   ],
   weekStartOffset: duration({ days: 2 }),
   weekEndOffset: duration({ days: 7 }),
-  offWeeks: [1.1, 1.2, 1.3, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 3.1, 3.2, 3.3, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6]
+  offWeeks: [1.1, 1.2, 1.3, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 3.1, 3.2, 3.3, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 5.1, 5.2]
+}, {
+  seriesId: 280,
+  setTimes: [
+    duration({ days: 4, hours: 2, minutes: 0 }),
+    duration({ days: 4, hours: 13, minutes: 0 }),
+    duration({ days: 4, hours: 17, minutes: 0 }),
+    duration({ days: 5, hours: 14, minutes: 0 })
+  ],
 }];

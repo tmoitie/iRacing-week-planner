@@ -1,5 +1,127 @@
 [{
     "prefimg": "",
+    "seriesname": "6+Hours+of+the+Glen",
+    "seasonshortname": "6+Hours+of+the+Glen",
+    "whatshotimg": "member_images%2Fseries%2Fseriesid_280%2Fwhats_hot.jpg",
+    "cautionTypeRoad": 2,
+    "raceweek": 1,
+    "active": true,
+    "maxlicenselevel": 28,
+    "tracks": [{
+        "config": "Boot",
+        "priority": 2,
+        "raceweek": 0,
+        "pkgid": 56,
+        "timeOfDay": 2,
+        "name": "Watkins+Glen+International",
+        "id": 107,
+        "lowername": "watkins+glen+international"
+    }],
+    "isClubAllowed": true,
+    "serieslicgroupid": 3,
+    "restrictedByMember": false,
+    "lowerseriesshortname": "6+hours+of+the+glen",
+    "allowedMembers": [],
+    "carclasses": [{
+        "carsinclass": [{
+            "name": "Ruf+RT+12R+C-Spec",
+            "id": 52
+        }],
+        "shortname": "Ruf+RT12R+CSpec",
+        "name": "Ruf+RT12R+CSpec",
+        "id": 58,
+        "lowername": "ruf+rt12r+cspec"
+    }, {
+        "carsinclass": [{
+            "name": "Chevrolet+Corvette+C7+Daytona+Prototype",
+            "id": 70
+        }],
+        "shortname": "C7+DP",
+        "name": "Corvette+C7+Daytona+Prototype",
+        "id": 77,
+        "lowername": "corvette+c7+daytona+prototype"
+    }, {
+        "carsinclass": [{
+            "name": "BMW+Z4+GT3",
+            "id": 55
+        }, {
+            "name": "Mercedes+AMG+GT3",
+            "id": 72
+        }, {
+            "name": "Audi+R8+LMS",
+            "id": 73
+        }],
+        "shortname": "GT3+German",
+        "name": "GT3+German",
+        "id": 82,
+        "lowername": "gt3+german"
+    }],
+    "currentTrack": 107,
+    "seriesid": 280,
+    "driverChangeRule": 1,
+    "licgroupid": 2,
+    "ignoreLicenseForPractice": true,
+    "isWorldCup": false,
+    "islite": false,
+    "rookieseason": "",
+    "end": 1467086400000,
+    "cars": [{
+        "pkgid": 144,
+        "name": "Ruf+RT+12R+C-Spec",
+        "id": 52,
+        "lowername": "ruf+rt+12r+c-spec",
+        "sku": 10353
+    }, {
+        "pkgid": 193,
+        "name": "Chevrolet+Corvette+C7+Daytona+Prototype",
+        "id": 70,
+        "lowername": "chevrolet+corvette+c7+daytona+prototype",
+        "sku": 10400
+    }, {
+        "pkgid": 156,
+        "name": "BMW+Z4+GT3",
+        "id": 55,
+        "lowername": "bmw+z4+gt3",
+        "sku": 10362
+    }, {
+        "pkgid": 199,
+        "name": "Mercedes+AMG+GT3",
+        "id": 72,
+        "lowername": "mercedes+amg+gt3",
+        "sku": 10404
+    }, {
+        "pkgid": 201,
+        "name": "Audi+R8+LMS",
+        "id": 73,
+        "lowername": "audi+r8+lms",
+        "sku": 10405
+    }],
+    "carNumberMap": {
+        "carNumberMap": {}
+    },
+    "multiclass": true,
+    "isRegionCompetition": false,
+    "start": 1465876800000,
+    "lowerseasonshortname": "6+hours+of+the+glen",
+    "maxTeamDrivers": 16,
+    "quarter": 3,
+    "seriesshortname": "6+Hours+of+the+Glen",
+    "catid": 2,
+    "minsr": "4.0",
+    "isFixedSetup": false,
+    "isOfficial": true,
+    "minlicenselevel": 8,
+    "cautionTypeOval": 0,
+    "licenseEligible": true,
+    "complete": false,
+    "driverChanges": true,
+    "minTeamDrivers": 2,
+    "year": 2016,
+    "restrictedToCar": false,
+    "seasonid": 1624,
+    "category": 2
+}, {
+    "prefimg": "",
     "seriesname": "Advanced+Mazda+MX-5+Cup+Series",
     "seasonshortname": "2016+Season+3",
     "whatshotimg": "member_images%2Fseries%2Fseriesid_231%2Fwhats_hot.jpg",
@@ -426,11 +548,20 @@
         "id": 145,
         "lowername": "brands+hatch+circuit"
     }, {
+        "config": "Grand+Prix",
+        "priority": 0,
+        "raceweek": 4,
+        "pkgid": 197,
+        "timeOfDay": 2,
+        "name": "Autodromo+Internazionale+Enzo+e+Dino+Ferrari",
+        "id": 266,
+        "lowername": "autodromo+internazionale+enzo+e+dino+ferrari"
+    }, {
         "config": "BES%2FWEC",
         "priority": 4,
         "raceweek": 4,
         "pkgid": 185,
-        "timeOfDay": 0,
+        "timeOfDay": 2,
         "name": "N%C3%BCrburgring+Grand-Prix-Strecke",
         "id": 255,
         "lowername": "n%C3%BCrburgring+grand-prix-strecke"
@@ -9730,10 +9861,10 @@
     "seasonid": 1614,
     "category": 1
 }, {
-    "prefimg": "member_images%2Fseries%2Fseriesid_74%2Fsp_r_radical.gif",
+    "prefimg": "",
     "seriesname": "Radical+Racing+Challenge+C",
     "seasonshortname": "2016+Season+3",
-    "whatshotimg": "member_images%2Fseries%2Fseriesid_74%2Fstats_radical.jpg",
+    "whatshotimg": "member_images%2Fseries%2Fseriesid_74%2Fwhats_hot.jpg",
     "cautionTypeRoad": 2,
     "raceweek": 1,
     "active": true,
@@ -10294,14 +10425,14 @@
         "id": 9,
         "lowername": "summit+point+raceway"
     }, {
-        "config": "Road+Course+B",
-        "priority": 3,
+        "config": "Industriefahrten",
+        "priority": 1,
         "raceweek": 4,
-        "pkgid": 5,
-        "timeOfDay": 0,
-        "name": "Homestead+Miami+Speedway",
-        "id": 22,
-        "lowername": "homestead+miami+speedway"
+        "pkgid": 184,
+        "timeOfDay": 2,
+        "name": "N%C3%BCrburgring+Nordschleife",
+        "id": 249,
+        "lowername": "n%C3%BCrburgring+nordschleife"
     }, {
         "config": "Grand+Prix",
         "priority": 1,
@@ -10339,14 +10470,14 @@
         "id": 102,
         "lowername": "sonoma+raceway"
     }, {
-        "config": "Industriefahrten",
-        "priority": 1,
+        "config": "Road+Course+B",
+        "priority": 3,
         "raceweek": 9,
-        "pkgid": 184,
-        "timeOfDay": 0,
-        "name": "N%C3%BCrburgring+Nordschleife",
-        "id": 249,
-        "lowername": "n%C3%BCrburgring+nordschleife"
+        "pkgid": 5,
+        "timeOfDay": 1,
+        "name": "Homestead+Miami+Speedway",
+        "id": 22,
+        "lowername": "homestead+miami+speedway"
     }, {
         "config": "National",
         "priority": 2,
