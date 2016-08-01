@@ -25,7 +25,7 @@ export default class NextRace extends Component {
   renderModal() {
     const { race } = this.props;
     const weekStart = moment().utc().startOf('week')
-      .add(1, 'day');
+      .add(2, 'days');
     const { modalOpen } = this.state;
 
     return (

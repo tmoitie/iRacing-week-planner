@@ -217,6 +217,7 @@ export default [{
   // NIS Fixed
   seriesId: 207,
   setTimes: [
+    duration({ days: 1, hours: 21 }), // Wed 9pm
     duration({ days: 3, hours: 1 }),  // Fri 1am
     duration({ days: 4, hours: 10 }), // Sat 10am
     duration({ days: 4, hours: 16 }), // Sat 4pm
@@ -230,6 +231,7 @@ export default [{
   seriesId: 229,
   setTimes: [
     duration({ days: 2, hours: 1 }),  // Thu 1am
+    duration({ days: 2, hours: 19 }), // Thu 7pm
     duration({ days: 4, hours: 1 }),  // Sat 1am
     duration({ days: 5, hours: 14 }), // Sun 2pm
   ],
@@ -304,7 +306,9 @@ export default [{
   everyTime: duration(2, 'hours')
 }, {
   // IndyCar Oval - no time data yet
-  seriesId: 132
+  seriesId: 132,
+  everyTime: duration(2, 'hours'),
+  offset: duration(105, 'minutes')
 }, {
   // Indy 500
   seriesId: 276,
@@ -345,7 +349,7 @@ export default [{
   // RUF GT3
   seriesId: 277,
   everyTime: duration(120, 'minutes'),
-  offset: duration(105, 'minutes')
+  offset: duration(60, 'minutes')
 }, {
   // Leo Bodnar ProtoGT
   seriesId: 278,
