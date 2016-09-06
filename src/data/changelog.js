@@ -1,6 +1,12 @@
 import moment from 'moment';
 
 export default [{
+  date: moment('2016-09-06 00:00:00').utc(),
+  items: [
+    'Update season listing',
+    'Fix NASCAR Peak timings'
+  ]
+}, {
   date: moment('2016-09-03 00:00:00').utc(),
   items: [
     'Add week 13'

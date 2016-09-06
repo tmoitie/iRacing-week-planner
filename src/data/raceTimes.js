@@ -254,7 +254,7 @@ export default [{
     duration({ days: 1, hours: 0, minutes: 45 }), // Sun 0:45am
   ],
   weekStartOffset: duration({ days: 14 }),
-  weekEndOffset: duration({ days: 5 }),
+  weekEndOffset: duration({ days: 7 }),
   offWeeks: [2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.2, 8.4, 8.6, 8.8, 9.5, 10.5, 11.5, 12.5, 13.3, 13.6, 14.5, 15.5]
 }, {
   // 12 hours of Sebring
@@ -377,4 +377,14 @@ export default [{
     duration({ days: 4, hours: 17, minutes: 0 }),
     duration({ days: 5, hours: 14, minutes: 0 })
   ],
+}, {
+  // #Parkedit
+  seriesId: 282,
+  everyTime: duration(30, 'minutes'),
+  offset: duration(0, 'minutes')
+}, {
+  // Gymkana
+  seriesId: 135,
+  everyTime: duration(30, 'minutes'),
+  offset: duration(0, 'minutes')
 }];
