@@ -670,6 +670,134 @@
     "rookieseason": "",
     "complete": false,
     "category": 1,
+    "raceweek": 3,
+    "quarter": 3,
+    "minTeamDrivers": 1
+}, {
+    "minsr": "1.0",
+    "driverChanges": false,
+    "serieslicgroupid": 1,
+    "prefimg": "",
+    "isRegionCompetition": false,
+    "year": 2016,
+    "carNumberMap": {
+        "carNumberMap": {}
+    },
+    "isClubAllowed": true,
+    "licgroupid": 1,
+    "minlicenselevel": 1,
+    "licenseEligible": true,
+    "seriesname": "24+Minutes+of+Le+Mans",
+    "catid": 2,
+    "lowerseriesshortname": "24+minutes+of+le+mans",
+    "whatshotimg": "member_images%2Fseries%2Fseriesid_283%2Fwhats_hot.jpg",
+    "seriesshortname": "24+Minutes+of+Le+Mans",
+    "ignoreLicenseForPractice": false,
+    "end": 1473724800000,
+    "allowedMembers": [],
+    "cautionTypeRoad": 2,
+    "seasonshortname": "2016+Season+3+-+13th+Week",
+    "currentTrack": 268,
+    "maxlicenselevel": 28,
+    "start": 1473120000000,
+    "active": true,
+    "restrictedToCar": false,
+    "islite": false,
+    "driverChangeRule": 0,
+    "seriesid": 283,
+    "cautionTypeOval": 0,
+    "carclasses": [{
+        "lowername": "hpd+arx-01c",
+        "name": "HPD+ARX-01c",
+        "carsinclass": [{
+            "name": "HPD+ARX-01c",
+            "id": 39
+        }],
+        "id": 40,
+        "shortname": "HPD+ARX-01c"
+    }, {
+        "lowername": "ford+gt",
+        "name": "Ford+GT",
+        "carsinclass": [{
+            "name": "Ford+GT",
+            "id": 40
+        }],
+        "id": 41,
+        "shortname": "Ford+GT"
+    }, {
+        "lowername": "gt1+class",
+        "name": "GT1+Class",
+        "carsinclass": [{
+            "name": "Chevrolet+Corvette+C6.R+GT1",
+            "id": 26
+        }, {
+            "name": "Aston+Martin+DBR9+GT1",
+            "id": 64
+        }],
+        "id": 73,
+        "shortname": "GT1+Class"
+    }, {
+        "lowername": "audi+r8+gt3",
+        "name": "Audi+R8+GT3",
+        "carsinclass": [{
+            "name": "Audi+R8+LMS",
+            "id": 73
+        }],
+        "id": 80,
+        "shortname": "Audi+R8+GT3"
+    }],
+    "tracks": [{
+        "lowername": "circuit+des+24+heures+du+mans",
+        "name": "Circuit+des+24+Heures+du+Mans",
+        "id": 268,
+        "pkgid": 204,
+        "priority": 1,
+        "raceweek": 0,
+        "config": "24+Heures+du+Mans",
+        "timeOfDay": 0
+    }],
+    "isOfficial": false,
+    "multiclass": true,
+    "maxTeamDrivers": 1,
+    "cars": [{
+        "lowername": "hpd+arx-01c",
+        "name": "HPD+ARX-01c",
+        "id": 39,
+        "pkgid": 111,
+        "sku": 10280
+    }, {
+        "lowername": "ford+gt",
+        "name": "Ford+GT",
+        "id": 40,
+        "pkgid": 113,
+        "sku": 10281
+    }, {
+        "lowername": "chevrolet+corvette+c6.r+gt1",
+        "name": "Chevrolet+Corvette+C6.R+GT1",
+        "id": 26,
+        "pkgid": 81,
+        "sku": 10113
+    }, {
+        "lowername": "aston+martin+dbr9+gt1",
+        "name": "Aston+Martin+DBR9+GT1",
+        "id": 64,
+        "pkgid": 179,
+        "sku": 10389
+    }, {
+        "lowername": "audi+r8+lms",
+        "name": "Audi+R8+LMS",
+        "id": 73,
+        "pkgid": 201,
+        "sku": 10405
+    }],
+    "restrictedByMember": false,
+    "isFixedSetup": false,
+    "seasonid": 1672,
+    "lowerseasonshortname": "2016+season+3+-+13th+week",
+    "isWorldCup": false,
+    "rookieseason": "",
+    "complete": false,
+    "category": 2,
     "raceweek": 1,
     "quarter": 3,
     "minTeamDrivers": 1
