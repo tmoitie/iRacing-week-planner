@@ -387,4 +387,9 @@ export default [{
   seriesId: 135,
   everyTime: duration(30, 'minutes'),
   offset: duration(0, 'minutes')
+}, {
+  // Gymkana
+  seriesId: 283,
+  everyTime: duration(30, 'minutes'),
+  offset: duration(15, 'minutes')
 }];
