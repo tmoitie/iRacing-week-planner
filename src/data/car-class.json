@@ -869,12 +869,12 @@
     "id": 82,
     "shortname": "GT3+German"
 }, {
-    "lowername": "dirt+test+1",
-    "name": "Dirt+Test+1",
+    "lowername": "audi+90+gto",
+    "name": "Audi+90+GTO",
     "carsinclass": [{
-        "name": "dirttest1",
+        "name": "Audi+90+GTO",
         "id": 76
     }],
     "id": 83,
-    "shortname": "Dirt+Test+1"
+    "shortname": "Audi+90+GTO"
 }]
