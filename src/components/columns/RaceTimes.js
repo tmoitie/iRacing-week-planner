@@ -73,6 +73,7 @@ export default class NextRace extends Component {
             at {moment().utc().startOf('day')
               .add(race.raceTimes.offset)
               .format('H:mm')}
+            UTC
           </div>
         </td>
       );

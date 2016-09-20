@@ -392,4 +392,14 @@ export default [{
   seriesId: 283,
   everyTime: duration(30, 'minutes'),
   offset: duration(15, 'minutes')
+}, {
+  // Kamel GT
+  seriesId: 285,
+  everyTime: duration(2, 'hours'),
+  offset: duration(1, 'hours')
+}, {
+  // Petit le mans
+  seriesId: 286,
+  everyTime: duration(1, 'hours'),
+  offset: duration(5, 'minutes')
 }];
