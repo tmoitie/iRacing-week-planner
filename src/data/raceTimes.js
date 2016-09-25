@@ -401,6 +401,7 @@ export default [{
 }, {
   // Petit le mans
   seriesId: 286,
-  everyTime: duration(1, 'hours'),
-  offset: duration(5, 'minutes')
+  setTimes: [
+    duration({ days: 5, hours: 14, minutes: 0 })
+  ],
 }];
