@@ -1,892 +1,892 @@
 [{
-    "carsinclass": [{
-        "name": "Skip+Barber+Formula+2000",
-        "id": 1
-    }, {
-        "name": "Modified+-+SK",
-        "id": 2
-    }, {
-        "name": "Pontiac+Solstice",
-        "id": 3
-    }, {
-        "name": "Star+Mazda",
-        "id": 4
-    }, {
-        "name": "Legends+Ford+%2734+Coupe",
-        "id": 5
-    }, {
-        "name": "Pace+Car+-+Solstice",
-        "id": 9
-    }, {
-        "name": "Pontiac+Solstice+-+Rookie",
-        "id": 10
-    }, {
-        "name": "Legends+Ford+%2734+Coupe+-+Rookie",
-        "id": 11
-    }, {
-        "name": "Chevrolet+Monte+Carlo+SS",
-        "id": 12
-    }, {
-        "name": "Radical+SR8",
-        "id": 13
-    }, {
-        "name": "Silver+Crown",
-        "id": 18
-    }, {
-        "name": "NASCAR+Truck+Series+Chevrolet+Silverado+circa+2013",
-        "id": 20
-    }, {
-        "name": "Riley+MkXX+Daytona+Prototype",
-        "id": 21
-    }, {
-        "name": "NASCAR+Sprint+Cup+Chevrolet+Impala+COT+circa+2013",
-        "id": 22
-    }, {
-        "name": "SCCA+Spec+Racer+Ford",
-        "id": 23
-    }, {
-        "name": "NASCAR+K%26N+Pro+Chevrolet+Impala",
-        "id": 24
-    }, {
-        "name": "Lotus+79",
-        "id": 25
-    }, {
-        "name": "Chevrolet+Corvette+C6.R+GT1",
-        "id": 26
-    }, {
-        "name": "VW+Jetta+TDI+Cup",
-        "id": 27
-    }, {
-        "name": "V8+Supercar+Ford+Falcon+circa+2012",
-        "id": 28
-    }, {
-        "name": "Indycar+Dallara+circa+2011",
-        "id": 29
-    }, {
-        "name": "Ford+Mustang+FR500S",
-        "id": 30
-    }, {
-        "name": "Modified+-+NASCAR+Whelen+Tour",
-        "id": 31
-    }, {
-        "name": "Pace+Car+-+Mustang",
-        "id": 32
-    }, {
-        "name": "Williams-Toyota+FW31",
-        "id": 33
-    }, {
-        "name": "Mazda+MX-5+Cup+circa+2015",
-        "id": 34
-    }, {
-        "name": "Mazda+MX-5+Roadster+circa+2015",
-        "id": 35
-    }, {
-        "name": "Street+Stock",
-        "id": 36
-    }, {
-        "name": "Sprint+Car",
-        "id": 37
-    }, {
-        "name": "NASCAR+Nationwide+Chevrolet+Impala+circa+2011",
-        "id": 38
-    }, {
-        "name": "HPD+ARX-01c",
-        "id": 39
-    }, {
-        "name": "Ford+GT",
-        "id": 40
-    }, {
-        "name": "Cadillac+CTS-V+Racecar",
-        "id": 41
-    }, {
-        "name": "Lotus+49",
-        "id": 42
-    }, {
-        "name": "McLaren+MP4-12C+GT3",
-        "id": 43
-    }, {
-        "name": "Kia+Optima",
-        "id": 44
-    }, {
-        "name": "NASCAR+Sprint+Cup+Chevrolet+SS",
-        "id": 45
-    }, {
-        "name": "NASCAR+Sprint+Cup+Ford+Fusion",
-        "id": 46
-    }, {
-        "name": "Ruf+RT+12R+AWD",
-        "id": 48
-    }, {
-        "name": "Ruf+RT+12R+RWD",
-        "id": 49
-    }, {
-        "name": "Ruf+RT+12R+Track",
-        "id": 50
-    }, {
-        "name": "NASCAR+XFINITY+Ford+Mustang",
-        "id": 51
-    }, {
-        "name": "Ruf+RT+12R+C-Spec",
-        "id": 52
-    }, {
-        "name": "Pace+Car+-+Ruf+RT12R",
-        "id": 53
-    }, {
-        "name": "Super+Late+Model",
-        "id": 54
-    }, {
-        "name": "BMW+Z4+GT3",
-        "id": 55
-    }, {
-        "name": "NASCAR+Sprint+Cup+Toyota+Camry",
-        "id": 56
-    }, {
-        "name": "Dallara+DW12",
-        "id": 57
-    }, {
-        "name": "NASCAR+XFINITY+Chevrolet+Camaro",
-        "id": 58
-    }, {
-        "name": "Ford+GT+GT3",
-        "id": 59
-    }, {
-        "name": "Holden+Commodore+VF+V8",
-        "id": 60
-    }, {
-        "name": "Ford+Falcon+FG+V8",
-        "id": 61
-    }, {
-        "name": "NASCAR+Camping+World+Toyota+Tundra",
-        "id": 62
-    }, {
-        "name": "NASCAR+Camping+World+Chevrolet+Silverado",
-        "id": 63
-    }, {
-        "name": "Aston+Martin+DBR9+GT1",
-        "id": 64
-    }, {
-        "name": "Global+Mazda+MX-5+Cup",
-        "id": 67
-    }, {
-        "name": "NASCAR+XFINITY+Toyota+Camry",
-        "id": 69
-    }, {
-        "name": "Chevrolet+Corvette+C7+Daytona+Prototype",
-        "id": 70
-    }, {
-        "name": "McLaren+MP4-30",
-        "id": 71
-    }, {
-        "name": "Mercedes+AMG+GT3",
-        "id": 72
-    }, {
-        "name": "Audi+R8+LMS",
-        "id": 73
-    }, {
-        "name": "Formula+Renault+2.0",
-        "id": 74
-    }, {
-        "name": "Nissan+GTP+ZX-T",
-        "id": 77
-    }],
-    "shortname": "Hosted+All+Cars",
-    "name": "Hosted+All+Cars+Class",
-    "id": 0,
-    "lowername": "hosted+all+cars+class"
-}, {
-    "carsinclass": [{
-        "name": "Skip+Barber+Formula+2000",
-        "id": 1
-    }],
-    "shortname": "SBRS",
-    "name": "Skip+Barber+Race+Series",
-    "id": 1,
-    "lowername": "skip+barber+race+series"
-}, {
-    "carsinclass": [{
-        "name": "Modified+-+SK",
-        "id": 2
-    }],
-    "shortname": "SK+Modified",
-    "name": "SK+Modified",
-    "id": 2,
-    "lowername": "sk+modified"
-}, {
-    "carsinclass": [{
-        "name": "Pontiac+Solstice",
-        "id": 3
-    }],
-    "shortname": "Solstice",
-    "name": "Solstice",
-    "id": 3,
-    "lowername": "solstice"
-}, {
-    "carsinclass": [{
-        "name": "Star+Mazda",
-        "id": 4
-    }],
-    "shortname": "Star+Mazda",
+  "carsinclass": [{
+    "name": "Skip+Barber+Formula+2000",
+    "id": 1
+  }, {
+    "name": "Modified+-+SK",
+    "id": 2
+  }, {
+    "name": "Pontiac+Solstice",
+    "id": 3
+  }, {
     "name": "Star+Mazda",
-    "id": 4,
-    "lowername": "star+mazda"
-}, {
-    "carsinclass": [{
-        "name": "Legends+Ford+%2734+Coupe",
-        "id": 5
-    }],
-    "shortname": "Legends",
-    "name": "Legends",
-    "id": 5,
-    "lowername": "legends"
-}, {
-    "carsinclass": [{
-        "name": "Pace+Car+-+Solstice",
-        "id": 9
-    }, {
-        "name": "Pace+Car+-+Mustang",
-        "id": 32
-    }, {
-        "name": "Pace+Car+-+Ruf+RT12R",
-        "id": 53
-    }],
-    "shortname": "Safety",
-    "name": "Safety+Vehicle",
-    "id": 11,
-    "lowername": "safety+vehicle"
-}, {
-    "carsinclass": [{
-        "name": "Legends+Ford+%2734+Coupe+-+Rookie",
-        "id": 11
-    }],
-    "shortname": "Rookie+Legends",
-    "name": "Rookie+Legends",
-    "id": 12,
-    "lowername": "rookie+legends"
-}, {
-    "carsinclass": [{
-        "name": "Pontiac+Solstice+-+Rookie",
-        "id": 10
-    }],
-    "shortname": "Rookie+Solstice",
-    "name": "Rookie+Solstice",
-    "id": 13,
-    "lowername": "rookie+solstice"
-}, {
-    "carsinclass": [{
-        "name": "Chevrolet+Monte+Carlo+SS",
-        "id": 12
-    }],
-    "shortname": "Late+Model",
-    "name": "Monte+Carlo+SS",
-    "id": 14,
-    "lowername": "monte+carlo+ss"
-}, {
-    "carsinclass": [{
-        "name": "Radical+SR8",
-        "id": 13
-    }],
-    "shortname": "SR8",
+    "id": 4
+  }, {
+    "name": "Legends+Ford+%2734+Coupe",
+    "id": 5
+  }, {
+    "name": "Pace+Car+-+Solstice",
+    "id": 9
+  }, {
+    "name": "Pontiac+Solstice+-+Rookie",
+    "id": 10
+  }, {
+    "name": "Legends+Ford+%2734+Coupe+-+Rookie",
+    "id": 11
+  }, {
+    "name": "Chevrolet+Monte+Carlo+SS",
+    "id": 12
+  }, {
     "name": "Radical+SR8",
-    "id": 15,
-    "lowername": "radical+sr8"
-}, {
-    "carsinclass": [{
-        "name": "Silver+Crown",
-        "id": 18
-    }],
-    "shortname": "Silver+Crown",
+    "id": 13
+  }, {
     "name": "Silver+Crown",
-    "id": 16,
-    "lowername": "silver+crown"
-}, {
-    "carsinclass": [{
-        "name": "NASCAR+Truck+Series+Chevrolet+Silverado+circa+2013",
-        "id": 20
-    }],
-    "shortname": "Truck",
-    "name": "Silverado",
-    "id": 17,
-    "lowername": "silverado"
-}, {
-    "carsinclass": [{
-        "name": "Riley+MkXX+Daytona+Prototype",
-        "id": 21
-    }],
-    "shortname": "Riley+DP",
-    "name": "Riley+Daytona+Prototype",
-    "id": 18,
-    "lowername": "riley+daytona+prototype"
-}, {
-    "carsinclass": [{
-        "name": "NASCAR+Sprint+Cup+Chevrolet+Impala+COT+circa+2013",
-        "id": 22
-    }],
-    "shortname": "Cup",
-    "name": "Impala+SS+Class+A",
-    "id": 19,
-    "lowername": "impala+ss+class+a"
-}, {
-    "carsinclass": [{
-        "name": "SCCA+Spec+Racer+Ford",
-        "id": 23
-    }],
-    "shortname": "SRF",
-    "name": "Spec+Racer+Ford",
-    "id": 20,
-    "lowername": "spec+racer+ford"
-}, {
-    "carsinclass": [{
-        "name": "NASCAR+K%26N+Pro+Chevrolet+Impala",
-        "id": 24
-    }],
-    "shortname": "K%26N+Series",
-    "name": "K%26N+Series",
-    "id": 21,
-    "lowername": "k%26n+series"
-}, {
-    "carsinclass": [{
-        "name": "Lotus+79",
-        "id": 25
-    }],
-    "shortname": "Lotus+79",
+    "id": 18
+  }, {
+    "name": "NASCAR+Truck+Series+Chevrolet+Silverado+circa+2013",
+    "id": 20
+  }, {
+    "name": "Riley+MkXX+Daytona+Prototype",
+    "id": 21
+  }, {
+    "name": "NASCAR+Sprint+Cup+Chevrolet+Impala+COT+circa+2013",
+    "id": 22
+  }, {
+    "name": "SCCA+Spec+Racer+Ford",
+    "id": 23
+  }, {
+    "name": "NASCAR+K%26N+Pro+Chevrolet+Impala",
+    "id": 24
+  }, {
     "name": "Lotus+79",
-    "id": 22,
-    "lowername": "lotus+79"
-}, {
-    "carsinclass": [{
-        "name": "Chevrolet+Corvette+C6.R+GT1",
-        "id": 26
-    }],
-    "shortname": "C6R+GT1",
-    "name": "Corvette+C6R+GT1",
-    "id": 23,
-    "lowername": "corvette+c6r+gt1"
-}, {
-    "carsinclass": [{
-        "name": "VW+Jetta+TDI+Cup",
-        "id": 27
-    }],
-    "shortname": "Jetta+TDI",
+    "id": 25
+  }, {
+    "name": "Chevrolet+Corvette+C6.R+GT1",
+    "id": 26
+  }, {
     "name": "VW+Jetta+TDI+Cup",
-    "id": 24,
-    "lowername": "vw+jetta+tdi+cup"
-}, {
-    "carsinclass": [{
-        "name": "V8+Supercar+Ford+Falcon+circa+2012",
-        "id": 28
-    }],
-    "shortname": "V8SC",
-    "name": "FG01+V8+-+circa+2012",
-    "id": 25,
-    "lowername": "fg01+v8+-+circa+2012"
-}, {
-    "carsinclass": [{
-        "name": "Indycar+Dallara+circa+2011",
-        "id": 29
-    }],
-    "shortname": "IndyCar",
-    "name": "Dallara+IndyCar",
-    "id": 26,
-    "lowername": "dallara+indycar"
-}, {
-    "carsinclass": [{
-        "name": "Ford+Mustang+FR500S",
-        "id": 30
-    }],
-    "shortname": "FR500S",
+    "id": 27
+  }, {
+    "name": "V8+Supercar+Ford+Falcon+circa+2012",
+    "id": 28
+  }, {
+    "name": "Indycar+Dallara+circa+2011",
+    "id": 29
+  }, {
     "name": "Ford+Mustang+FR500S",
-    "id": 28,
-    "lowername": "ford+mustang+fr500s"
-}, {
-    "carsinclass": [{
-        "name": "Modified+-+NASCAR+Whelen+Tour",
-        "id": 31
-    }],
-    "shortname": "+Whelen+Modified",
-    "name": "Whelen+Modified",
-    "id": 29,
-    "lowername": "whelen+modified"
-}, {
-    "carsinclass": [{
-        "name": "Williams-Toyota+FW31",
-        "id": 33
-    }],
-    "shortname": "Williams+FW31",
-    "name": "Williams+FW31",
-    "id": 30,
-    "lowername": "williams+fw31"
-}, {
-    "carsinclass": [{
-        "name": "Mazda+MX-5+Cup+circa+2015",
-        "id": 34
-    }, {
-        "name": "Mazda+MX-5+Roadster+circa+2015",
-        "id": 35
-    }],
-    "shortname": "MX-5",
-    "name": "Mazda+MX-5",
-    "id": 31,
-    "lowername": "mazda+mx-5"
-}, {
-    "carsinclass": [{
-        "name": "Mazda+MX-5+Cup+circa+2015",
-        "id": 34
-    }],
-    "shortname": "MX-5+Cup",
-    "name": "Mazda+MX-5+Cup",
-    "id": 32,
-    "lowername": "mazda+mx-5+cup"
-}, {
-    "carsinclass": [{
-        "name": "Mazda+MX-5+Roadster+circa+2015",
-        "id": 35
-    }],
-    "shortname": "MX-5+Roadster",
-    "name": "Mazda+MX-5+Roadster",
-    "id": 33,
-    "lowername": "mazda+mx-5+roadster"
-}, {
-    "carsinclass": [{
-        "name": "Street+Stock",
-        "id": 36
-    }],
-    "shortname": "Street+Stock",
+    "id": 30
+  }, {
+    "name": "Modified+-+NASCAR+Whelen+Tour",
+    "id": 31
+  }, {
+    "name": "Pace+Car+-+Mustang",
+    "id": 32
+  }, {
+    "name": "Williams-Toyota+FW31",
+    "id": 33
+  }, {
+    "name": "Mazda+MX-5+Cup+circa+2015",
+    "id": 34
+  }, {
+    "name": "Mazda+MX-5+Roadster+circa+2015",
+    "id": 35
+  }, {
     "name": "Street+Stock",
-    "id": 34,
-    "lowername": "street+stock"
-}, {
-    "carsinclass": [{
-        "name": "Sprint+Car",
-        "id": 37
-    }],
-    "shortname": "Sprint+Car",
+    "id": 36
+  }, {
     "name": "Sprint+Car",
-    "id": 35,
-    "lowername": "sprint+car"
-}, {
-    "carsinclass": [{
-        "name": "NASCAR+Nationwide+Chevrolet+Impala+circa+2011",
-        "id": 38
-    }],
-    "shortname": "Impala+Class+B",
-    "name": "Impala+Class+B",
-    "id": 36,
-    "lowername": "impala+class+b"
-}, {
-    "carsinclass": [{
-        "name": "HPD+ARX-01c",
-        "id": 39
-    }],
-    "shortname": "HPD+ARX-01c",
+    "id": 37
+  }, {
+    "name": "NASCAR+Nationwide+Chevrolet+Impala+circa+2011",
+    "id": 38
+  }, {
     "name": "HPD+ARX-01c",
-    "id": 40,
-    "lowername": "hpd+arx-01c"
-}, {
-    "carsinclass": [{
-        "name": "Ford+GT",
-        "id": 40
-    }],
-    "shortname": "Ford+GT",
+    "id": 39
+  }, {
     "name": "Ford+GT",
-    "id": 41,
-    "lowername": "ford+gt"
-}, {
-    "carsinclass": [{
-        "name": "Cadillac+CTS-V+Racecar",
-        "id": 41
-    }],
-    "shortname": "Cadillac+CTS-VR",
-    "name": "Cadillac+CTS-VR",
-    "id": 45,
-    "lowername": "cadillac+cts-vr"
-}, {
-    "carsinclass": [{
-        "name": "Lotus+49",
-        "id": 42
-    }],
-    "shortname": "Lotus+49",
+    "id": 40
+  }, {
+    "name": "Cadillac+CTS-V+Racecar",
+    "id": 41
+  }, {
     "name": "Lotus+49",
-    "id": 46,
-    "lowername": "lotus+49"
-}, {
-    "carsinclass": [{
-        "name": "McLaren+MP4-12C+GT3",
-        "id": 43
-    }],
-    "shortname": "MP4-12C",
+    "id": 42
+  }, {
     "name": "McLaren+MP4-12C+GT3",
-    "id": 47,
-    "lowername": "mclaren+mp4-12c+gt3"
-}, {
-    "carsinclass": [{
-        "name": "Kia+Optima",
-        "id": 44
-    }],
-    "shortname": "Kia+Optima",
+    "id": 43
+  }, {
     "name": "Kia+Optima",
-    "id": 48,
-    "lowername": "kia+optima"
-}, {
-    "carsinclass": [{
-        "name": "NASCAR+Sprint+Cup+Chevrolet+SS",
-        "id": 45
-    }],
-    "shortname": "SS-Gen6",
-    "name": "Chevrolet+SS-Gen6",
-    "id": 49,
-    "lowername": "chevrolet+ss-gen6"
-}, {
-    "carsinclass": [{
-        "name": "NASCAR+Sprint+Cup+Chevrolet+SS",
-        "id": 45
-    }, {
-        "name": "NASCAR+Sprint+Cup+Ford+Fusion",
-        "id": 46
-    }, {
-        "name": "NASCAR+Sprint+Cup+Toyota+Camry",
-        "id": 56
-    }],
-    "shortname": "Sprint+Cup",
-    "name": "Sprint+Cup",
-    "id": 50,
-    "lowername": "sprint+cup"
-}, {
-    "carsinclass": [{
-        "name": "NASCAR+Sprint+Cup+Ford+Fusion",
-        "id": 46
-    }],
-    "shortname": "Ford+Fusion",
-    "name": "Ford+Fusion",
-    "id": 51,
-    "lowername": "ford+fusion"
-}, {
-    "carsinclass": [{
-        "name": "Ruf+RT+12R+AWD",
-        "id": 48
-    }, {
-        "name": "Ruf+RT+12R+RWD",
-        "id": 49
-    }, {
-        "name": "Ruf+RT+12R+Track",
-        "id": 50
-    }, {
-        "name": "Ruf+RT+12R+C-Spec",
-        "id": 52
-    }],
-    "shortname": "Ruf+RT+12R",
-    "name": "Ruf+RT+12R",
-    "id": 52,
-    "lowername": "ruf+rt+12r"
-}, {
-    "carsinclass": [{
-        "name": "Ruf+RT+12R+AWD",
-        "id": 48
-    }],
-    "shortname": "Ruf+RT+12R+AWD",
+    "id": 44
+  }, {
+    "name": "NASCAR+Sprint+Cup+Chevrolet+SS",
+    "id": 45
+  }, {
+    "name": "NASCAR+Sprint+Cup+Ford+Fusion",
+    "id": 46
+  }, {
     "name": "Ruf+RT+12R+AWD",
-    "id": 53,
-    "lowername": "ruf+rt+12r+awd"
-}, {
-    "carsinclass": [{
-        "name": "Ruf+RT+12R+RWD",
-        "id": 49
-    }],
-    "shortname": "Ruf+RT+12R+RWD",
+    "id": 48
+  }, {
     "name": "Ruf+RT+12R+RWD",
-    "id": 54,
-    "lowername": "ruf+rt+12r+rwd"
-}, {
-    "carsinclass": [{
-        "name": "Ruf+RT+12R+Track",
-        "id": 50
-    }],
-    "shortname": "Ruf+RT+12R+Track",
+    "id": 49
+  }, {
     "name": "Ruf+RT+12R+Track",
-    "id": 55,
-    "lowername": "ruf+rt+12r+track"
-}, {
-    "carsinclass": [{
-        "name": "NASCAR+XFINITY+Ford+Mustang",
-        "id": 51
-    }],
-    "shortname": "Mustang+Class+B",
-    "name": "Mustang+Class+B",
-    "id": 56,
-    "lowername": "mustang+class+b"
-}, {
-    "carsinclass": [{
-        "name": "NASCAR+XFINITY+Ford+Mustang",
-        "id": 51
-    }, {
-        "name": "NASCAR+XFINITY+Chevrolet+Camaro",
-        "id": 58
-    }, {
-        "name": "NASCAR+XFINITY+Toyota+Camry",
-        "id": 69
-    }],
-    "shortname": "Xfinity+Series",
-    "name": "Xfinity+Series",
-    "id": 57,
-    "lowername": "xfinity+series"
-}, {
-    "carsinclass": [{
-        "name": "Ruf+RT+12R+C-Spec",
-        "id": 52
-    }],
-    "shortname": "Ruf+RT12R+CSpec",
-    "name": "Ruf+RT12R+CSpec",
-    "id": 58,
-    "lowername": "ruf+rt12r+cspec"
-}, {
-    "carsinclass": [{
-        "name": "McLaren+MP4-12C+GT3",
-        "id": 43
-    }, {
-        "name": "BMW+Z4+GT3",
-        "id": 55
-    }, {
-        "name": "Ford+GT+GT3",
-        "id": 59
-    }, {
-        "name": "Mercedes+AMG+GT3",
-        "id": 72
-    }, {
-        "name": "Audi+R8+LMS",
-        "id": 73
-    }],
-    "shortname": "GT3+Class",
-    "name": "GT3+Class",
-    "id": 59,
-    "lowername": "gt3+class"
-}, {
-    "carsinclass": [{
-        "name": "Super+Late+Model",
-        "id": 54
-    }],
-    "shortname": "Super+Late+Model",
+    "id": 50
+  }, {
+    "name": "NASCAR+XFINITY+Ford+Mustang",
+    "id": 51
+  }, {
+    "name": "Ruf+RT+12R+C-Spec",
+    "id": 52
+  }, {
+    "name": "Pace+Car+-+Ruf+RT12R",
+    "id": 53
+  }, {
     "name": "Super+Late+Model",
-    "id": 60,
-    "lowername": "super+late+model"
-}, {
-    "carsinclass": [{
-        "name": "BMW+Z4+GT3",
-        "id": 55
-    }],
-    "shortname": "BMW+Z4",
+    "id": 54
+  }, {
     "name": "BMW+Z4+GT3",
-    "id": 61,
-    "lowername": "bmw+z4+gt3"
-}, {
-    "carsinclass": [{
-        "name": "NASCAR+Sprint+Cup+Toyota+Camry",
-        "id": 56
-    }],
-    "shortname": "Camry-Gen6",
-    "name": "Toyota+Camry-Gen6",
-    "id": 62,
-    "lowername": "toyota+camry-gen6"
-}, {
-    "carsinclass": [{
-        "name": "Dallara+DW12",
-        "id": 57
-    }],
-    "shortname": "DW12",
+    "id": 55
+  }, {
+    "name": "NASCAR+Sprint+Cup+Toyota+Camry",
+    "id": 56
+  }, {
     "name": "Dallara+DW12",
-    "id": 63,
-    "lowername": "dallara+dw12"
-}, {
-    "carsinclass": [{
-        "name": "NASCAR+XFINITY+Chevrolet+Camaro",
-        "id": 58
-    }],
-    "shortname": "Camaro+Class+B",
-    "name": "Chevrolet+Camaro+Class+B",
-    "id": 64,
-    "lowername": "chevrolet+camaro+class+b"
-}, {
-    "carsinclass": [{
-        "name": "Ford+GT+GT3",
-        "id": 59
-    }],
-    "shortname": "Ford+GT+GT3",
+    "id": 57
+  }, {
+    "name": "NASCAR+XFINITY+Chevrolet+Camaro",
+    "id": 58
+  }, {
     "name": "Ford+GT+GT3",
-    "id": 65,
-    "lowername": "ford+gt+gt3"
-}, {
-    "carsinclass": [{
-        "name": "Holden+Commodore+VF+V8",
-        "id": 60
-    }],
-    "shortname": "Holden+V8",
+    "id": 59
+  }, {
     "name": "Holden+Commodore+VF+V8",
-    "id": 66,
-    "lowername": "holden+commodore+vf+v8"
-}, {
-    "carsinclass": [{
-        "name": "Holden+Commodore+VF+V8",
-        "id": 60
-    }, {
-        "name": "Ford+Falcon+FG+V8",
-        "id": 61
-    }],
-    "shortname": "V8Supercars",
-    "name": "V8Supercars",
-    "id": 67,
-    "lowername": "v8supercars"
-}, {
-    "carsinclass": [{
-        "name": "Ford+Falcon+FG+V8",
-        "id": 61
-    }],
-    "shortname": "Ford+FG+V8",
+    "id": 60
+  }, {
     "name": "Ford+Falcon+FG+V8",
-    "id": 68,
-    "lowername": "ford+falcon+fg+v8"
-}, {
-    "carsinclass": [{
-        "name": "NASCAR+Camping+World+Toyota+Tundra",
-        "id": 62
-    }],
-    "shortname": "Toyota+Tundra",
-    "name": "Toyota+Tundra",
-    "id": 69,
-    "lowername": "toyota+tundra"
-}, {
-    "carsinclass": [{
-        "name": "NASCAR+Camping+World+Chevrolet+Silverado",
-        "id": 63
-    }],
-    "shortname": "Chevy+Silverado",
-    "name": "Chevrolet+Silverado",
-    "id": 70,
-    "lowername": "chevrolet+silverado"
-}, {
-    "carsinclass": [{
-        "name": "NASCAR+Camping+World+Toyota+Tundra",
-        "id": 62
-    }, {
-        "name": "NASCAR+Camping+World+Chevrolet+Silverado",
-        "id": 63
-    }],
-    "shortname": "Camping+Series",
-    "name": "Camping+World+Series",
-    "id": 71,
-    "lowername": "camping+world+series"
-}, {
-    "carsinclass": [{
-        "name": "Aston+Martin+DBR9+GT1",
-        "id": 64
-    }],
-    "shortname": "Aston+Martin",
-    "name": "Aston+Martin",
-    "id": 72,
-    "lowername": "aston+martin"
-}, {
-    "carsinclass": [{
-        "name": "Chevrolet+Corvette+C6.R+GT1",
-        "id": 26
-    }, {
-        "name": "Aston+Martin+DBR9+GT1",
-        "id": 64
-    }],
-    "shortname": "GT1+Class",
-    "name": "GT1+Class",
-    "id": 73,
-    "lowername": "gt1+class"
-}, {
-    "carsinclass": [{
-        "name": "Global+Mazda+MX-5+Cup",
-        "id": 67
-    }],
-    "shortname": "MX5+Cup+2016",
-    "name": "Mazda+MX-5+Cup+2016",
-    "id": 74,
-    "lowername": "mazda+mx-5+cup+2016"
-}, {
-    "carsinclass": [{
-        "name": "NASCAR+XFINITY+Toyota+Camry",
-        "id": 69
-    }],
-    "shortname": "Camry+2015",
-    "name": "Toyota+Camry+2015",
-    "id": 76,
-    "lowername": "toyota+camry+2015"
-}, {
-    "carsinclass": [{
-        "name": "Chevrolet+Corvette+C7+Daytona+Prototype",
-        "id": 70
-    }],
-    "shortname": "C7+DP",
-    "name": "Corvette+C7+Daytona+Prototype",
-    "id": 77,
-    "lowername": "corvette+c7+daytona+prototype"
-}, {
-    "carsinclass": [{
-        "name": "McLaren+MP4-30",
-        "id": 71
-    }],
-    "shortname": "McLaren+MP4-30",
+    "id": 61
+  }, {
+    "name": "NASCAR+Camping+World+Toyota+Tundra",
+    "id": 62
+  }, {
+    "name": "NASCAR+Camping+World+Chevrolet+Silverado",
+    "id": 63
+  }, {
+    "name": "Aston+Martin+DBR9+GT1",
+    "id": 64
+  }, {
+    "name": "Global+Mazda+MX-5+Cup",
+    "id": 67
+  }, {
+    "name": "NASCAR+XFINITY+Toyota+Camry",
+    "id": 69
+  }, {
+    "name": "Chevrolet+Corvette+C7+Daytona+Prototype",
+    "id": 70
+  }, {
     "name": "McLaren+MP4-30",
-    "id": 78,
-    "lowername": "mclaren+mp4-30"
-}, {
-    "carsinclass": [{
-        "name": "Mercedes+AMG+GT3",
-        "id": 72
-    }],
-    "shortname": "AMG+GT3",
+    "id": 71
+  }, {
     "name": "Mercedes+AMG+GT3",
-    "id": 79,
-    "lowername": "mercedes+amg+gt3"
-}, {
-    "carsinclass": [{
-        "name": "Audi+R8+LMS",
-        "id": 73
-    }],
-    "shortname": "Audi+R8+GT3",
-    "name": "Audi+R8+GT3",
-    "id": 80,
-    "lowername": "audi+r8+gt3"
-}, {
-    "carsinclass": [{
-        "name": "Formula+Renault+2.0",
-        "id": 74
-    }],
-    "shortname": "Renault+2.0",
+    "id": 72
+  }, {
+    "name": "Audi+R8+LMS",
+    "id": 73
+  }, {
     "name": "Formula+Renault+2.0",
-    "id": 81,
-    "lowername": "formula+renault+2.0"
+    "id": 74
+  }, {
+    "name": "Nissan+GTP+ZX-T",
+    "id": 77
+  }],
+  "shortname": "Hosted+All+Cars",
+  "name": "Hosted+All+Cars+Class",
+  "id": 0,
+  "lowername": "hosted+all+cars+class"
 }, {
-    "carsinclass": [{
-        "name": "BMW+Z4+GT3",
-        "id": 55
-    }, {
-        "name": "Mercedes+AMG+GT3",
-        "id": 72
-    }, {
-        "name": "Audi+R8+LMS",
-        "id": 73
-    }],
-    "shortname": "GT3+German",
-    "name": "GT3+German",
-    "id": 82,
-    "lowername": "gt3+german"
+  "carsinclass": [{
+    "name": "Skip+Barber+Formula+2000",
+    "id": 1
+  }],
+  "shortname": "SBRS",
+  "name": "Skip+Barber+Race+Series",
+  "id": 1,
+  "lowername": "skip+barber+race+series"
 }, {
-    "carsinclass": [{
-        "name": "Audi+90+GTO",
-        "id": 76
-    }],
-    "shortname": "Audi+90+GTO",
+  "carsinclass": [{
+    "name": "Modified+-+SK",
+    "id": 2
+  }],
+  "shortname": "SK+Modified",
+  "name": "SK+Modified",
+  "id": 2,
+  "lowername": "sk+modified"
+}, {
+  "carsinclass": [{
+    "name": "Pontiac+Solstice",
+    "id": 3
+  }],
+  "shortname": "Solstice",
+  "name": "Solstice",
+  "id": 3,
+  "lowername": "solstice"
+}, {
+  "carsinclass": [{
+    "name": "Star+Mazda",
+    "id": 4
+  }],
+  "shortname": "Star+Mazda",
+  "name": "Star+Mazda",
+  "id": 4,
+  "lowername": "star+mazda"
+}, {
+  "carsinclass": [{
+    "name": "Legends+Ford+%2734+Coupe",
+    "id": 5
+  }],
+  "shortname": "Legends",
+  "name": "Legends",
+  "id": 5,
+  "lowername": "legends"
+}, {
+  "carsinclass": [{
+    "name": "Pace+Car+-+Solstice",
+    "id": 9
+  }, {
+    "name": "Pace+Car+-+Mustang",
+    "id": 32
+  }, {
+    "name": "Pace+Car+-+Ruf+RT12R",
+    "id": 53
+  }],
+  "shortname": "Safety",
+  "name": "Safety+Vehicle",
+  "id": 11,
+  "lowername": "safety+vehicle"
+}, {
+  "carsinclass": [{
+    "name": "Legends+Ford+%2734+Coupe+-+Rookie",
+    "id": 11
+  }],
+  "shortname": "Rookie+Legends",
+  "name": "Rookie+Legends",
+  "id": 12,
+  "lowername": "rookie+legends"
+}, {
+  "carsinclass": [{
+    "name": "Pontiac+Solstice+-+Rookie",
+    "id": 10
+  }],
+  "shortname": "Rookie+Solstice",
+  "name": "Rookie+Solstice",
+  "id": 13,
+  "lowername": "rookie+solstice"
+}, {
+  "carsinclass": [{
+    "name": "Chevrolet+Monte+Carlo+SS",
+    "id": 12
+  }],
+  "shortname": "Late+Model",
+  "name": "Monte+Carlo+SS",
+  "id": 14,
+  "lowername": "monte+carlo+ss"
+}, {
+  "carsinclass": [{
+    "name": "Radical+SR8",
+    "id": 13
+  }],
+  "shortname": "SR8",
+  "name": "Radical+SR8",
+  "id": 15,
+  "lowername": "radical+sr8"
+}, {
+  "carsinclass": [{
+    "name": "Silver+Crown",
+    "id": 18
+  }],
+  "shortname": "Silver+Crown",
+  "name": "Silver+Crown",
+  "id": 16,
+  "lowername": "silver+crown"
+}, {
+  "carsinclass": [{
+    "name": "NASCAR+Truck+Series+Chevrolet+Silverado+circa+2013",
+    "id": 20
+  }],
+  "shortname": "Truck",
+  "name": "Silverado",
+  "id": 17,
+  "lowername": "silverado"
+}, {
+  "carsinclass": [{
+    "name": "Riley+MkXX+Daytona+Prototype",
+    "id": 21
+  }],
+  "shortname": "Riley+DP",
+  "name": "Riley+Daytona+Prototype",
+  "id": 18,
+  "lowername": "riley+daytona+prototype"
+}, {
+  "carsinclass": [{
+    "name": "NASCAR+Sprint+Cup+Chevrolet+Impala+COT+circa+2013",
+    "id": 22
+  }],
+  "shortname": "Cup",
+  "name": "Impala+SS+Class+A",
+  "id": 19,
+  "lowername": "impala+ss+class+a"
+}, {
+  "carsinclass": [{
+    "name": "SCCA+Spec+Racer+Ford",
+    "id": 23
+  }],
+  "shortname": "SRF",
+  "name": "Spec+Racer+Ford",
+  "id": 20,
+  "lowername": "spec+racer+ford"
+}, {
+  "carsinclass": [{
+    "name": "NASCAR+K%26N+Pro+Chevrolet+Impala",
+    "id": 24
+  }],
+  "shortname": "K%26N+Series",
+  "name": "K%26N+Series",
+  "id": 21,
+  "lowername": "k%26n+series"
+}, {
+  "carsinclass": [{
+    "name": "Lotus+79",
+    "id": 25
+  }],
+  "shortname": "Lotus+79",
+  "name": "Lotus+79",
+  "id": 22,
+  "lowername": "lotus+79"
+}, {
+  "carsinclass": [{
+    "name": "Chevrolet+Corvette+C6.R+GT1",
+    "id": 26
+  }],
+  "shortname": "C6R+GT1",
+  "name": "Corvette+C6R+GT1",
+  "id": 23,
+  "lowername": "corvette+c6r+gt1"
+}, {
+  "carsinclass": [{
+    "name": "VW+Jetta+TDI+Cup",
+    "id": 27
+  }],
+  "shortname": "Jetta+TDI",
+  "name": "VW+Jetta+TDI+Cup",
+  "id": 24,
+  "lowername": "vw+jetta+tdi+cup"
+}, {
+  "carsinclass": [{
+    "name": "V8+Supercar+Ford+Falcon+circa+2012",
+    "id": 28
+  }],
+  "shortname": "V8SC",
+  "name": "FG01+V8+-+circa+2012",
+  "id": 25,
+  "lowername": "fg01+v8+-+circa+2012"
+}, {
+  "carsinclass": [{
+    "name": "Indycar+Dallara+circa+2011",
+    "id": 29
+  }],
+  "shortname": "IndyCar",
+  "name": "Dallara+IndyCar",
+  "id": 26,
+  "lowername": "dallara+indycar"
+}, {
+  "carsinclass": [{
+    "name": "Ford+Mustang+FR500S",
+    "id": 30
+  }],
+  "shortname": "FR500S",
+  "name": "Ford+Mustang+FR500S",
+  "id": 28,
+  "lowername": "ford+mustang+fr500s"
+}, {
+  "carsinclass": [{
+    "name": "Modified+-+NASCAR+Whelen+Tour",
+    "id": 31
+  }],
+  "shortname": "+Whelen+Modified",
+  "name": "Whelen+Modified",
+  "id": 29,
+  "lowername": "whelen+modified"
+}, {
+  "carsinclass": [{
+    "name": "Williams-Toyota+FW31",
+    "id": 33
+  }],
+  "shortname": "Williams+FW31",
+  "name": "Williams+FW31",
+  "id": 30,
+  "lowername": "williams+fw31"
+}, {
+  "carsinclass": [{
+    "name": "Mazda+MX-5+Cup+circa+2015",
+    "id": 34
+  }, {
+    "name": "Mazda+MX-5+Roadster+circa+2015",
+    "id": 35
+  }],
+  "shortname": "MX-5",
+  "name": "Mazda+MX-5",
+  "id": 31,
+  "lowername": "mazda+mx-5"
+}, {
+  "carsinclass": [{
+    "name": "Mazda+MX-5+Cup+circa+2015",
+    "id": 34
+  }],
+  "shortname": "MX-5+Cup",
+  "name": "Mazda+MX-5+Cup",
+  "id": 32,
+  "lowername": "mazda+mx-5+cup"
+}, {
+  "carsinclass": [{
+    "name": "Mazda+MX-5+Roadster+circa+2015",
+    "id": 35
+  }],
+  "shortname": "MX-5+Roadster",
+  "name": "Mazda+MX-5+Roadster",
+  "id": 33,
+  "lowername": "mazda+mx-5+roadster"
+}, {
+  "carsinclass": [{
+    "name": "Street+Stock",
+    "id": 36
+  }],
+  "shortname": "Street+Stock",
+  "name": "Street+Stock",
+  "id": 34,
+  "lowername": "street+stock"
+}, {
+  "carsinclass": [{
+    "name": "Sprint+Car",
+    "id": 37
+  }],
+  "shortname": "Sprint+Car",
+  "name": "Sprint+Car",
+  "id": 35,
+  "lowername": "sprint+car"
+}, {
+  "carsinclass": [{
+    "name": "NASCAR+Nationwide+Chevrolet+Impala+circa+2011",
+    "id": 38
+  }],
+  "shortname": "Impala+Class+B",
+  "name": "Impala+Class+B",
+  "id": 36,
+  "lowername": "impala+class+b"
+}, {
+  "carsinclass": [{
+    "name": "HPD+ARX-01c",
+    "id": 39
+  }],
+  "shortname": "HPD+ARX-01c",
+  "name": "HPD+ARX-01c",
+  "id": 40,
+  "lowername": "hpd+arx-01c"
+}, {
+  "carsinclass": [{
+    "name": "Ford+GT",
+    "id": 40
+  }],
+  "shortname": "Ford+GT",
+  "name": "Ford+GT",
+  "id": 41,
+  "lowername": "ford+gt"
+}, {
+  "carsinclass": [{
+    "name": "Cadillac+CTS-V+Racecar",
+    "id": 41
+  }],
+  "shortname": "Cadillac+CTS-VR",
+  "name": "Cadillac+CTS-VR",
+  "id": 45,
+  "lowername": "cadillac+cts-vr"
+}, {
+  "carsinclass": [{
+    "name": "Lotus+49",
+    "id": 42
+  }],
+  "shortname": "Lotus+49",
+  "name": "Lotus+49",
+  "id": 46,
+  "lowername": "lotus+49"
+}, {
+  "carsinclass": [{
+    "name": "McLaren+MP4-12C+GT3",
+    "id": 43
+  }],
+  "shortname": "MP4-12C",
+  "name": "McLaren+MP4-12C+GT3",
+  "id": 47,
+  "lowername": "mclaren+mp4-12c+gt3"
+}, {
+  "carsinclass": [{
+    "name": "Kia+Optima",
+    "id": 44
+  }],
+  "shortname": "Kia+Optima",
+  "name": "Kia+Optima",
+  "id": 48,
+  "lowername": "kia+optima"
+}, {
+  "carsinclass": [{
+    "name": "NASCAR+Sprint+Cup+Chevrolet+SS",
+    "id": 45
+  }],
+  "shortname": "SS-Gen6",
+  "name": "Chevrolet+SS-Gen6",
+  "id": 49,
+  "lowername": "chevrolet+ss-gen6"
+}, {
+  "carsinclass": [{
+    "name": "NASCAR+Sprint+Cup+Chevrolet+SS",
+    "id": 45
+  }, {
+    "name": "NASCAR+Sprint+Cup+Ford+Fusion",
+    "id": 46
+  }, {
+    "name": "NASCAR+Sprint+Cup+Toyota+Camry",
+    "id": 56
+  }],
+  "shortname": "Sprint+Cup",
+  "name": "Sprint+Cup",
+  "id": 50,
+  "lowername": "sprint+cup"
+}, {
+  "carsinclass": [{
+    "name": "NASCAR+Sprint+Cup+Ford+Fusion",
+    "id": 46
+  }],
+  "shortname": "Ford+Fusion",
+  "name": "Ford+Fusion",
+  "id": 51,
+  "lowername": "ford+fusion"
+}, {
+  "carsinclass": [{
+    "name": "Ruf+RT+12R+AWD",
+    "id": 48
+  }, {
+    "name": "Ruf+RT+12R+RWD",
+    "id": 49
+  }, {
+    "name": "Ruf+RT+12R+Track",
+    "id": 50
+  }, {
+    "name": "Ruf+RT+12R+C-Spec",
+    "id": 52
+  }],
+  "shortname": "Ruf+RT+12R",
+  "name": "Ruf+RT+12R",
+  "id": 52,
+  "lowername": "ruf+rt+12r"
+}, {
+  "carsinclass": [{
+    "name": "Ruf+RT+12R+AWD",
+    "id": 48
+  }],
+  "shortname": "Ruf+RT+12R+AWD",
+  "name": "Ruf+RT+12R+AWD",
+  "id": 53,
+  "lowername": "ruf+rt+12r+awd"
+}, {
+  "carsinclass": [{
+    "name": "Ruf+RT+12R+RWD",
+    "id": 49
+  }],
+  "shortname": "Ruf+RT+12R+RWD",
+  "name": "Ruf+RT+12R+RWD",
+  "id": 54,
+  "lowername": "ruf+rt+12r+rwd"
+}, {
+  "carsinclass": [{
+    "name": "Ruf+RT+12R+Track",
+    "id": 50
+  }],
+  "shortname": "Ruf+RT+12R+Track",
+  "name": "Ruf+RT+12R+Track",
+  "id": 55,
+  "lowername": "ruf+rt+12r+track"
+}, {
+  "carsinclass": [{
+    "name": "NASCAR+XFINITY+Ford+Mustang",
+    "id": 51
+  }],
+  "shortname": "Mustang+Class+B",
+  "name": "Mustang+Class+B",
+  "id": 56,
+  "lowername": "mustang+class+b"
+}, {
+  "carsinclass": [{
+    "name": "NASCAR+XFINITY+Ford+Mustang",
+    "id": 51
+  }, {
+    "name": "NASCAR+XFINITY+Chevrolet+Camaro",
+    "id": 58
+  }, {
+    "name": "NASCAR+XFINITY+Toyota+Camry",
+    "id": 69
+  }],
+  "shortname": "Xfinity+Series",
+  "name": "Xfinity+Series",
+  "id": 57,
+  "lowername": "xfinity+series"
+}, {
+  "carsinclass": [{
+    "name": "Ruf+RT+12R+C-Spec",
+    "id": 52
+  }],
+  "shortname": "Ruf+RT12R+CSpec",
+  "name": "Ruf+RT12R+CSpec",
+  "id": 58,
+  "lowername": "ruf+rt12r+cspec"
+}, {
+  "carsinclass": [{
+    "name": "McLaren+MP4-12C+GT3",
+    "id": 43
+  }, {
+    "name": "BMW+Z4+GT3",
+    "id": 55
+  }, {
+    "name": "Ford+GT+GT3",
+    "id": 59
+  }, {
+    "name": "Mercedes+AMG+GT3",
+    "id": 72
+  }, {
+    "name": "Audi+R8+LMS",
+    "id": 73
+  }],
+  "shortname": "GT3+Class",
+  "name": "GT3+Class",
+  "id": 59,
+  "lowername": "gt3+class"
+}, {
+  "carsinclass": [{
+    "name": "Super+Late+Model",
+    "id": 54
+  }],
+  "shortname": "Super+Late+Model",
+  "name": "Super+Late+Model",
+  "id": 60,
+  "lowername": "super+late+model"
+}, {
+  "carsinclass": [{
+    "name": "BMW+Z4+GT3",
+    "id": 55
+  }],
+  "shortname": "BMW+Z4",
+  "name": "BMW+Z4+GT3",
+  "id": 61,
+  "lowername": "bmw+z4+gt3"
+}, {
+  "carsinclass": [{
+    "name": "NASCAR+Sprint+Cup+Toyota+Camry",
+    "id": 56
+  }],
+  "shortname": "Camry-Gen6",
+  "name": "Toyota+Camry-Gen6",
+  "id": 62,
+  "lowername": "toyota+camry-gen6"
+}, {
+  "carsinclass": [{
+    "name": "Dallara+DW12",
+    "id": 57
+  }],
+  "shortname": "DW12",
+  "name": "Dallara+DW12",
+  "id": 63,
+  "lowername": "dallara+dw12"
+}, {
+  "carsinclass": [{
+    "name": "NASCAR+XFINITY+Chevrolet+Camaro",
+    "id": 58
+  }],
+  "shortname": "Camaro+Class+B",
+  "name": "Chevrolet+Camaro+Class+B",
+  "id": 64,
+  "lowername": "chevrolet+camaro+class+b"
+}, {
+  "carsinclass": [{
+    "name": "Ford+GT+GT3",
+    "id": 59
+  }],
+  "shortname": "Ford+GT+GT3",
+  "name": "Ford+GT+GT3",
+  "id": 65,
+  "lowername": "ford+gt+gt3"
+}, {
+  "carsinclass": [{
+    "name": "Holden+Commodore+VF+V8",
+    "id": 60
+  }],
+  "shortname": "Holden+V8",
+  "name": "Holden+Commodore+VF+V8",
+  "id": 66,
+  "lowername": "holden+commodore+vf+v8"
+}, {
+  "carsinclass": [{
+    "name": "Holden+Commodore+VF+V8",
+    "id": 60
+  }, {
+    "name": "Ford+Falcon+FG+V8",
+    "id": 61
+  }],
+  "shortname": "V8Supercars",
+  "name": "V8Supercars",
+  "id": 67,
+  "lowername": "v8supercars"
+}, {
+  "carsinclass": [{
+    "name": "Ford+Falcon+FG+V8",
+    "id": 61
+  }],
+  "shortname": "Ford+FG+V8",
+  "name": "Ford+Falcon+FG+V8",
+  "id": 68,
+  "lowername": "ford+falcon+fg+v8"
+}, {
+  "carsinclass": [{
+    "name": "NASCAR+Camping+World+Toyota+Tundra",
+    "id": 62
+  }],
+  "shortname": "Toyota+Tundra",
+  "name": "Toyota+Tundra",
+  "id": 69,
+  "lowername": "toyota+tundra"
+}, {
+  "carsinclass": [{
+    "name": "NASCAR+Camping+World+Chevrolet+Silverado",
+    "id": 63
+  }],
+  "shortname": "Chevy+Silverado",
+  "name": "Chevrolet+Silverado",
+  "id": 70,
+  "lowername": "chevrolet+silverado"
+}, {
+  "carsinclass": [{
+    "name": "NASCAR+Camping+World+Toyota+Tundra",
+    "id": 62
+  }, {
+    "name": "NASCAR+Camping+World+Chevrolet+Silverado",
+    "id": 63
+  }],
+  "shortname": "Camping+Series",
+  "name": "Camping+World+Series",
+  "id": 71,
+  "lowername": "camping+world+series"
+}, {
+  "carsinclass": [{
+    "name": "Aston+Martin+DBR9+GT1",
+    "id": 64
+  }],
+  "shortname": "Aston+Martin",
+  "name": "Aston+Martin",
+  "id": 72,
+  "lowername": "aston+martin"
+}, {
+  "carsinclass": [{
+    "name": "Chevrolet+Corvette+C6.R+GT1",
+    "id": 26
+  }, {
+    "name": "Aston+Martin+DBR9+GT1",
+    "id": 64
+  }],
+  "shortname": "GT1+Class",
+  "name": "GT1+Class",
+  "id": 73,
+  "lowername": "gt1+class"
+}, {
+  "carsinclass": [{
+    "name": "Global+Mazda+MX-5+Cup",
+    "id": 67
+  }],
+  "shortname": "MX5+Cup+2016",
+  "name": "Mazda+MX-5+Cup+2016",
+  "id": 74,
+  "lowername": "mazda+mx-5+cup+2016"
+}, {
+  "carsinclass": [{
+    "name": "NASCAR+XFINITY+Toyota+Camry",
+    "id": 69
+  }],
+  "shortname": "Camry+2015",
+  "name": "Toyota+Camry+2015",
+  "id": 76,
+  "lowername": "toyota+camry+2015"
+}, {
+  "carsinclass": [{
+    "name": "Chevrolet+Corvette+C7+Daytona+Prototype",
+    "id": 70
+  }],
+  "shortname": "C7+DP",
+  "name": "Corvette+C7+Daytona+Prototype",
+  "id": 77,
+  "lowername": "corvette+c7+daytona+prototype"
+}, {
+  "carsinclass": [{
+    "name": "McLaren+MP4-30",
+    "id": 71
+  }],
+  "shortname": "McLaren+MP4-30",
+  "name": "McLaren+MP4-30",
+  "id": 78,
+  "lowername": "mclaren+mp4-30"
+}, {
+  "carsinclass": [{
+    "name": "Mercedes+AMG+GT3",
+    "id": 72
+  }],
+  "shortname": "AMG+GT3",
+  "name": "Mercedes+AMG+GT3",
+  "id": 79,
+  "lowername": "mercedes+amg+gt3"
+}, {
+  "carsinclass": [{
+    "name": "Audi+R8+LMS",
+    "id": 73
+  }],
+  "shortname": "Audi+R8+GT3",
+  "name": "Audi+R8+GT3",
+  "id": 80,
+  "lowername": "audi+r8+gt3"
+}, {
+  "carsinclass": [{
+    "name": "Formula+Renault+2.0",
+    "id": 74
+  }],
+  "shortname": "Renault+2.0",
+  "name": "Formula+Renault+2.0",
+  "id": 81,
+  "lowername": "formula+renault+2.0"
+}, {
+  "carsinclass": [{
+    "name": "BMW+Z4+GT3",
+    "id": 55
+  }, {
+    "name": "Mercedes+AMG+GT3",
+    "id": 72
+  }, {
+    "name": "Audi+R8+LMS",
+    "id": 73
+  }],
+  "shortname": "GT3+German",
+  "name": "GT3+German",
+  "id": 82,
+  "lowername": "gt3+german"
+}, {
+  "carsinclass": [{
     "name": "Audi+90+GTO",
-    "id": 83,
-    "lowername": "audi+90+gto"
+    "id": 76
+  }],
+  "shortname": "Audi+90+GTO",
+  "name": "Audi+90+GTO",
+  "id": 83,
+  "lowername": "audi+90+gto"
 }, {
-    "carsinclass": [{
-        "name": "Nissan+GTP+ZX-T",
-        "id": 77
-    }],
-    "shortname": "Nissan+GTP",
-    "name": "Nissan+GTP",
-    "id": 84,
-    "lowername": "nissan+gtp"
+  "carsinclass": [{
+    "name": "Nissan+GTP+ZX-T",
+    "id": 77
+  }],
+  "shortname": "Nissan+GTP",
+  "name": "Nissan+GTP",
+  "id": 84,
+  "lowername": "nissan+gtp"
 }]
