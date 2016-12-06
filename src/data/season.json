@@ -1,16 +1,52 @@
 [{
-  "prefimg": "member_images%2Fseries%2F24hrsdufun%2Fsp_24hdf.gif",
-  "seriesname": "24+Heures+du+Fun",
-  "seasonshortname": "24+Heures+Du+Fun",
-  "whatshotimg": "member_images%2Fseries%2F24hrsdufun%2Fstats_24hdf.jpg",
-  "cautionTypeRoad": 2,
-  "raceweek": 6,
+  "prefimg": "",
+  "seriesname": "13th+Week+-+Battle+of+the+Little+Wings",
+  "seasonshortname": "2016+Season+4+-+13th+Week",
+  "whatshotimg": "member_images%2Fseries%2Fseriesid_295%2Fwhats_hot.jpg",
+  "cautionTypeRoad": 0,
+  "raceweek": 1,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
-    "config": "Grand+Prix",
+    "config": "",
     "priority": 0,
     "raceweek": 0,
+    "pkgid": 145,
+    "timeOfDay": 0,
+    "name": "Circuit+Gilles+Villeneuve",
+    "id": 218,
+    "lowername": "circuit+gilles+villeneuve"
+  }, {
+    "config": "Intl+w%2Fout+Brittens",
+    "priority": 0,
+    "raceweek": 1,
+    "pkgid": 117,
+    "timeOfDay": 2,
+    "name": "Oulton+Park+Circuit",
+    "id": 184,
+    "lowername": "oulton+park+circuit"
+  }, {
+    "config": "Grand+Prix",
+    "priority": 0,
+    "raceweek": 2,
+    "pkgid": 124,
+    "timeOfDay": 0,
+    "name": "Circuit+Zolder",
+    "id": 199,
+    "lowername": "circuit+zolder"
+  }, {
+    "config": "Road+Course+B",
+    "priority": 3,
+    "raceweek": 3,
+    "pkgid": 5,
+    "timeOfDay": 1,
+    "name": "Homestead+Miami+Speedway",
+    "id": 22,
+    "lowername": "homestead+miami+speedway"
+  }, {
+    "config": "Grand+Prix",
+    "priority": 0,
+    "raceweek": 4,
     "pkgid": 197,
     "timeOfDay": 0,
     "name": "Autodromo+Internazionale+Enzo+e+Dino+Ferrari",
@@ -19,90 +55,152 @@
   }, {
     "config": "Grand+Prix",
     "priority": 1,
-    "raceweek": 1,
-    "pkgid": 162,
-    "timeOfDay": 0,
-    "name": "Donington+Park+Racing+Circuit",
-    "id": 233,
-    "lowername": "donington+park+racing+circuit"
-  }, {
-    "config": "Full+Course",
-    "priority": 1,
-    "raceweek": 2,
-    "pkgid": 34,
-    "timeOfDay": 0,
-    "name": "Mazda+Raceway+Laguna+Seca",
-    "id": 47,
-    "lowername": "mazda+raceway+laguna+seca"
-  }, {
-    "config": "Grand+Prix",
-    "priority": 1,
-    "raceweek": 3,
-    "pkgid": 92,
-    "timeOfDay": 0,
-    "name": "Circuit+Park+Zandvoort",
-    "id": 149,
-    "lowername": "circuit+park+zandvoort"
-  }, {
-    "config": "Grand+Prix",
-    "priority": 1,
-    "raceweek": 4,
-    "pkgid": 134,
-    "timeOfDay": 0,
-    "name": "Aut%C3%B3dromo+Jos%C3%A9+Carlos+Pace",
-    "id": 212,
-    "lowername": "aut%C3%B3dromo+jos%C3%A9+carlos+pace"
-  }, {
-    "config": "",
-    "priority": 0,
     "raceweek": 5,
-    "pkgid": 145,
+    "pkgid": 172,
     "timeOfDay": 0,
-    "name": "Circuit+Gilles+Villeneuve",
-    "id": 218,
-    "lowername": "circuit+gilles+villeneuve"
+    "name": "Autodromo+Nazionale+Monza",
+    "id": 239,
+    "lowername": "autodromo+nazionale+monza"
+  }, {
+    "config": "Grand+Prix",
+    "priority": 3,
+    "raceweek": 6,
+    "pkgid": 185,
+    "timeOfDay": 1,
+    "name": "N%C3%BCrburgring+Grand-Prix-Strecke",
+    "id": 250,
+    "lowername": "n%C3%BCrburgring+grand-prix-strecke"
   }],
   "isClubAllowed": true,
   "serieslicgroupid": 1,
   "restrictedByMember": false,
-  "lowerseriesshortname": "24+heures+du+fun",
+  "lowerseriesshortname": "13th+week+-+battle+of+the+little+wings",
   "allowedMembers": [],
   "carclasses": [{
     "carsinclass": [{
-      "name": "Audi+90+GTO",
-      "id": 76
+      "name": "Star+Mazda",
+      "id": 4
     }],
-    "shortname": "Audi+90+GTO",
-    "name": "Audi+90+GTO",
-    "id": 83,
-    "lowername": "audi+90+gto"
+    "shortname": "Star+Mazda",
+    "name": "Star+Mazda",
+    "id": 4,
+    "lowername": "star+mazda"
+  }, {
+    "carsinclass": [{
+      "name": "Formula+Renault+2.0",
+      "id": 74
+    }],
+    "shortname": "Renault+2.0",
+    "name": "Formula+Renault+2.0",
+    "id": 81,
+    "lowername": "formula+renault+2.0"
   }],
-  "currentTrack": -1,
-  "seriesid": 54,
+  "currentTrack": 218,
+  "seriesid": 295,
   "driverChangeRule": 0,
   "licgroupid": 1,
   "ignoreLicenseForPractice": false,
   "isWorldCup": false,
   "islite": false,
   "rookieseason": "",
-  "end": 1474344000000,
+  "end": 1481605200000,
   "cars": [{
-    "pkgid": 206,
-    "name": "Audi+90+GTO",
-    "id": 76,
-    "lowername": "audi+90+gto",
-    "sku": 10410
+    "pkgid": 21,
+    "name": "Star+Mazda",
+    "id": 4,
+    "lowername": "star+mazda",
+    "sku": 10006
+  }, {
+    "pkgid": 203,
+    "name": "Formula+Renault+2.0",
+    "id": 74,
+    "lowername": "formula+renault+2.0",
+    "sku": 10406
+  }],
+  "carNumberMap": {
+    "carNumberMap": {}
+  },
+  "multiclass": true,
+  "isRegionCompetition": false,
+  "start": 1481000400000,
+  "lowerseasonshortname": "2016+season+4+-+13th+week",
+  "maxTeamDrivers": 1,
+  "quarter": 4,
+  "seriesshortname": "13th+Week+-+Battle+of+the+Little+Wings",
+  "catid": 2,
+  "minsr": "1.0",
+  "isFixedSetup": false,
+  "isOfficial": false,
+  "minlicenselevel": 1,
+  "cautionTypeOval": 0,
+  "licenseEligible": true,
+  "complete": false,
+  "driverChanges": false,
+  "minTeamDrivers": 1,
+  "year": 2016,
+  "restrictedToCar": false,
+  "seasonid": 1737,
+  "category": 2
+}, {
+  "prefimg": "",
+  "seriesname": "13th+Week+-+Brits+at+Bristol",
+  "seasonshortname": "2016+Season+4+-+13th+Week",
+  "whatshotimg": "member_images%2Fseries%2Fseriesid_293%2Fwhats_hot.jpg",
+  "cautionTypeRoad": 0,
+  "raceweek": 1,
+  "active": true,
+  "maxlicenselevel": 28,
+  "tracks": [{
+    "config": "",
+    "priority": 0,
+    "raceweek": 0,
+    "pkgid": 43,
+    "timeOfDay": 3,
+    "name": "Bristol+Motor+Speedway",
+    "id": 101,
+    "lowername": "bristol+motor+speedway"
+  }],
+  "isClubAllowed": true,
+  "serieslicgroupid": 1,
+  "restrictedByMember": false,
+  "lowerseriesshortname": "13th+week+-+brits+at+bristol",
+  "allowedMembers": [],
+  "carclasses": [{
+    "carsinclass": [{
+      "name": "Lotus+49",
+      "id": 42
+    }],
+    "shortname": "Lotus+49",
+    "name": "Lotus+49",
+    "id": 46,
+    "lowername": "lotus+49"
+  }],
+  "currentTrack": 101,
+  "seriesid": 293,
+  "driverChangeRule": 0,
+  "licgroupid": 1,
+  "ignoreLicenseForPractice": false,
+  "isWorldCup": false,
+  "islite": false,
+  "rookieseason": "",
+  "end": 1481605200000,
+  "cars": [{
+    "pkgid": 131,
+    "name": "Lotus+49",
+    "id": 42,
+    "lowername": "lotus+49",
+    "sku": 10334
   }],
   "carNumberMap": {
     "carNumberMap": {}
   },
   "multiclass": false,
   "isRegionCompetition": false,
-  "start": 1473825600000,
-  "lowerseasonshortname": "24+heures+du+fun",
+  "start": 1481000400000,
+  "lowerseasonshortname": "2016+season+4+-+13th+week",
   "maxTeamDrivers": 1,
   "quarter": 4,
-  "seriesshortname": "24+Heures+du+Fun",
+  "seriesshortname": "13th+Week+-+Brits+at+Bristol",
   "catid": 1,
   "minsr": "1.0",
   "isFixedSetup": false,
@@ -115,7 +213,566 @@
   "minTeamDrivers": 1,
   "year": 2016,
   "restrictedToCar": false,
-  "seasonid": 1675,
+  "seasonid": 1735,
+  "category": 1
+}, {
+  "prefimg": "",
+  "seriesname": "13th+Week+-+Ricky+Bobbys+European+Vacation",
+  "seasonshortname": "2016+Season+4+-+13th+Week",
+  "whatshotimg": "member_images%2Fseries%2Fseriesid_294%2Fwhats_hot.jpg",
+  "cautionTypeRoad": 2,
+  "raceweek": 1,
+  "active": true,
+  "maxlicenselevel": 28,
+  "tracks": [{
+    "config": "Historic",
+    "priority": 2,
+    "raceweek": 0,
+    "pkgid": 204,
+    "timeOfDay": 2,
+    "name": "Circuit+des+24+Heures+du+Mans",
+    "id": 269,
+    "lowername": "circuit+des+24+heures+du+mans"
+  }],
+  "isClubAllowed": true,
+  "serieslicgroupid": 1,
+  "restrictedByMember": false,
+  "lowerseriesshortname": "13th+week+-+ricky+bobbys+european+vacation",
+  "allowedMembers": [],
+  "carclasses": [{
+    "carsinclass": [{
+      "name": "NASCAR+Sprint+Cup+Chevrolet+SS",
+      "id": 45
+    }, {
+      "name": "NASCAR+Sprint+Cup+Ford+Fusion",
+      "id": 46
+    }, {
+      "name": "NASCAR+Sprint+Cup+Toyota+Camry",
+      "id": 56
+    }],
+    "shortname": "Sprint+Cup",
+    "name": "Sprint+Cup",
+    "id": 50,
+    "lowername": "sprint+cup"
+  }],
+  "currentTrack": 269,
+  "seriesid": 294,
+  "driverChangeRule": 0,
+  "licgroupid": 1,
+  "ignoreLicenseForPractice": false,
+  "isWorldCup": false,
+  "islite": false,
+  "rookieseason": "",
+  "end": 1481605200000,
+  "cars": [{
+    "pkgid": 139,
+    "name": "NASCAR+Sprint+Cup+Chevrolet+SS",
+    "id": 45,
+    "lowername": "nascar+sprint+cup+chevrolet+ss",
+    "sku": 10344
+  }, {
+    "pkgid": 141,
+    "name": "NASCAR+Sprint+Cup+Ford+Fusion",
+    "id": 46,
+    "lowername": "nascar+sprint+cup+ford+fusion",
+    "sku": 10408
+  }, {
+    "pkgid": 158,
+    "name": "NASCAR+Sprint+Cup+Toyota+Camry",
+    "id": 56,
+    "lowername": "nascar+sprint+cup+toyota+camry",
+    "sku": 10363
+  }],
+  "carNumberMap": {
+    "carNumberMap": {}
+  },
+  "multiclass": false,
+  "isRegionCompetition": false,
+  "start": 1481000400000,
+  "lowerseasonshortname": "2016+season+4+-+13th+week",
+  "maxTeamDrivers": 1,
+  "quarter": 4,
+  "seriesshortname": "13th+Week+-+Ricky+Bobbys+European+Vacation",
+  "catid": 2,
+  "minsr": "1.0",
+  "isFixedSetup": false,
+  "isOfficial": false,
+  "minlicenselevel": 1,
+  "cautionTypeOval": 0,
+  "licenseEligible": true,
+  "complete": false,
+  "driverChanges": false,
+  "minTeamDrivers": 1,
+  "year": 2016,
+  "restrictedToCar": false,
+  "seasonid": 1736,
+  "category": 2
+}, {
+  "prefimg": "",
+  "seriesname": "13th+Week+-+The+Dizzy+Contractor+Series",
+  "seasonshortname": "2016+Season+4+-+13th+Week",
+  "whatshotimg": "member_images%2Fseries%2Fseriesid_296%2Fwhats_hot.jpg",
+  "cautionTypeRoad": 0,
+  "raceweek": 1,
+  "active": true,
+  "maxlicenselevel": 28,
+  "tracks": [{
+    "config": "",
+    "priority": 0,
+    "raceweek": 0,
+    "pkgid": 8,
+    "timeOfDay": 3,
+    "name": "Lanier+National+Speedway",
+    "id": 17,
+    "lowername": "lanier+national+speedway"
+  }, {
+    "config": "",
+    "priority": 0,
+    "raceweek": 1,
+    "pkgid": 19,
+    "timeOfDay": 3,
+    "name": "South+Boston+Speedway",
+    "id": 14,
+    "lowername": "south+boston+speedway"
+  }, {
+    "config": "",
+    "priority": 0,
+    "raceweek": 2,
+    "pkgid": 125,
+    "timeOfDay": 3,
+    "name": "Langley+Speedway",
+    "id": 201,
+    "lowername": "langley+speedway"
+  }, {
+    "config": "",
+    "priority": 0,
+    "raceweek": 3,
+    "pkgid": 180,
+    "timeOfDay": 3,
+    "name": "Five+Flags+Speedway",
+    "id": 248,
+    "lowername": "five+flags+speedway"
+  }, {
+    "config": "",
+    "priority": 0,
+    "raceweek": 4,
+    "pkgid": 119,
+    "timeOfDay": 3,
+    "name": "New+Smyrna+Speedway",
+    "id": 190,
+    "lowername": "new+smyrna+speedway"
+  }, {
+    "config": "",
+    "priority": 0,
+    "raceweek": 5,
+    "pkgid": 7,
+    "timeOfDay": 3,
+    "name": "USA+International+Speedway",
+    "id": 16,
+    "lowername": "usa+international+speedway"
+  }, {
+    "config": "Outer",
+    "priority": 1,
+    "raceweek": 6,
+    "pkgid": 6,
+    "timeOfDay": 2,
+    "name": "Irwindale+Speedway",
+    "id": 23,
+    "lowername": "irwindale+speedway"
+  }],
+  "isClubAllowed": true,
+  "serieslicgroupid": 1,
+  "restrictedByMember": false,
+  "lowerseriesshortname": "13th+week+-+the+dizzy+contractor+series",
+  "allowedMembers": [],
+  "carclasses": [{
+    "carsinclass": [{
+      "name": "NASCAR+Camping+World+Toyota+Tundra",
+      "id": 62
+    }, {
+      "name": "NASCAR+Camping+World+Chevrolet+Silverado",
+      "id": 63
+    }],
+    "shortname": "Camping+Series",
+    "name": "Camping+World+Series",
+    "id": 71,
+    "lowername": "camping+world+series"
+  }],
+  "currentTrack": 17,
+  "seriesid": 296,
+  "driverChangeRule": 0,
+  "licgroupid": 1,
+  "ignoreLicenseForPractice": false,
+  "isWorldCup": false,
+  "islite": false,
+  "rookieseason": "",
+  "end": 1481605200000,
+  "cars": [{
+    "pkgid": 175,
+    "name": "NASCAR+Camping+World+Toyota+Tundra",
+    "id": 62,
+    "lowername": "nascar+camping+world+toyota+tundra",
+    "sku": 10386
+  }, {
+    "pkgid": 177,
+    "name": "NASCAR+Camping+World+Chevrolet+Silverado",
+    "id": 63,
+    "lowername": "nascar+camping+world+chevrolet+silverado",
+    "sku": 10387
+  }],
+  "carNumberMap": {
+    "carNumberMap": {}
+  },
+  "multiclass": false,
+  "isRegionCompetition": false,
+  "start": 1481000400000,
+  "lowerseasonshortname": "2016+season+4+-+13th+week",
+  "maxTeamDrivers": 1,
+  "quarter": 4,
+  "seriesshortname": "13th+Week+-+The+Dizzy+Contractor+Series",
+  "catid": 1,
+  "minsr": "1.0",
+  "isFixedSetup": false,
+  "isOfficial": false,
+  "minlicenselevel": 1,
+  "cautionTypeOval": 0,
+  "licenseEligible": true,
+  "complete": false,
+  "driverChanges": false,
+  "minTeamDrivers": 1,
+  "year": 2016,
+  "restrictedToCar": false,
+  "seasonid": 1738,
+  "category": 1
+}, {
+  "prefimg": "",
+  "seriesname": "13th+Week+iRacing+Figure+GR8",
+  "seasonshortname": "2016+Season+4+-+13th+Week",
+  "whatshotimg": "member_images%2Fseries%2Fseriesid_245%2Fwhats_hot.jpg",
+  "cautionTypeRoad": 0,
+  "raceweek": 1,
+  "active": true,
+  "maxlicenselevel": 28,
+  "tracks": [{
+    "config": "Figure+Eight",
+    "priority": 4,
+    "raceweek": 0,
+    "pkgid": 6,
+    "timeOfDay": 0,
+    "name": "Irwindale+Speedway",
+    "id": 217,
+    "lowername": "irwindale+speedway"
+  }],
+  "isClubAllowed": true,
+  "serieslicgroupid": 1,
+  "restrictedByMember": false,
+  "lowerseriesshortname": "13th+week+iracing+figure+gr8",
+  "allowedMembers": [],
+  "carclasses": [{
+    "carsinclass": [{
+      "name": "Audi+90+GTO",
+      "id": 76
+    }],
+    "shortname": "Audi+90+GTO",
+    "name": "Audi+90+GTO",
+    "id": 83,
+    "lowername": "audi+90+gto"
+  }],
+  "currentTrack": 217,
+  "seriesid": 245,
+  "driverChangeRule": 0,
+  "licgroupid": 1,
+  "ignoreLicenseForPractice": false,
+  "isWorldCup": false,
+  "islite": false,
+  "rookieseason": "",
+  "end": 1481605200000,
+  "cars": [{
+    "pkgid": 206,
+    "name": "Audi+90+GTO",
+    "id": 76,
+    "lowername": "audi+90+gto",
+    "sku": 10410
+  }],
+  "carNumberMap": {
+    "carNumberMap": {}
+  },
+  "multiclass": false,
+  "isRegionCompetition": false,
+  "start": 1481000400000,
+  "lowerseasonshortname": "2016+season+4+-+13th+week",
+  "maxTeamDrivers": 1,
+  "quarter": 4,
+  "seriesshortname": "13th+Week+iRacing+Figure+GR8",
+  "catid": 1,
+  "minsr": "1.0",
+  "isFixedSetup": false,
+  "isOfficial": false,
+  "minlicenselevel": 1,
+  "cautionTypeOval": 0,
+  "licenseEligible": true,
+  "complete": false,
+  "driverChanges": false,
+  "minTeamDrivers": 1,
+  "year": 2016,
+  "restrictedToCar": false,
+  "seasonid": 1734,
+  "category": 1
+}, {
+  "prefimg": "",
+  "seriesname": "13th+Week+Mazda+Cup",
+  "seasonshortname": "2016+Season+4+-+13th+Week",
+  "whatshotimg": "member_images%2Fseries%2Fseriesid_135%2Fwhats_hot.jpg",
+  "cautionTypeRoad": 0,
+  "raceweek": 1,
+  "active": true,
+  "maxlicenselevel": 28,
+  "tracks": [{
+    "config": "Full+Course",
+    "priority": 1,
+    "raceweek": 0,
+    "pkgid": 9,
+    "timeOfDay": 0,
+    "name": "Lime+Rock+Park",
+    "id": 1,
+    "lowername": "lime+rock+park"
+  }, {
+    "config": "Road+Course",
+    "priority": 2,
+    "raceweek": 1,
+    "pkgid": 31,
+    "timeOfDay": 0,
+    "name": "Charlotte+Motor+Speedway",
+    "id": 37,
+    "lowername": "charlotte+motor+speedway"
+  }, {
+    "config": "Full+Course",
+    "priority": 0,
+    "raceweek": 2,
+    "pkgid": 109,
+    "timeOfDay": 0,
+    "name": "Okayama+International+Circuit",
+    "id": 166,
+    "lowername": "okayama+international+circuit"
+  }, {
+    "config": "Summit+Point+Raceway",
+    "priority": 1,
+    "raceweek": 3,
+    "pkgid": 13,
+    "timeOfDay": 0,
+    "name": "Summit+Point+Raceway",
+    "id": 9,
+    "lowername": "summit+point+raceway"
+  }, {
+    "config": "Road+Course",
+    "priority": 2,
+    "raceweek": 4,
+    "pkgid": 55,
+    "timeOfDay": 0,
+    "name": "Phoenix+International+Raceway+-+2008",
+    "id": 105,
+    "lowername": "phoenix+international+raceway+-+2008"
+  }, {
+    "config": "Jefferson+Circuit",
+    "priority": 2,
+    "raceweek": 5,
+    "pkgid": 13,
+    "timeOfDay": 0,
+    "name": "Summit+Point+Raceway",
+    "id": 8,
+    "lowername": "summit+point+raceway"
+  }, {
+    "config": "Full+Course",
+    "priority": 1,
+    "raceweek": 6,
+    "pkgid": 34,
+    "timeOfDay": 0,
+    "name": "Mazda+Raceway+Laguna+Seca",
+    "id": 47,
+    "lowername": "mazda+raceway+laguna+seca"
+  }],
+  "isClubAllowed": true,
+  "serieslicgroupid": 1,
+  "restrictedByMember": false,
+  "lowerseriesshortname": "13th+week+mazda+cup",
+  "allowedMembers": [],
+  "carclasses": [{
+    "carsinclass": [{
+      "name": "Global+Mazda+MX-5+Cup",
+      "id": 67
+    }],
+    "shortname": "MX5+Cup+2016",
+    "name": "Mazda+MX-5+Cup+2016",
+    "id": 74,
+    "lowername": "mazda+mx-5+cup+2016"
+  }],
+  "currentTrack": 1,
+  "seriesid": 135,
+  "driverChangeRule": 0,
+  "licgroupid": 1,
+  "ignoreLicenseForPractice": false,
+  "isWorldCup": false,
+  "islite": false,
+  "rookieseason": "",
+  "end": 1481605200000,
+  "cars": [{
+    "pkgid": 182,
+    "name": "Global+Mazda+MX-5+Cup",
+    "id": 67,
+    "lowername": "global+mazda+mx-5+cup",
+    "sku": 10394
+  }],
+  "carNumberMap": {
+    "carNumberMap": {}
+  },
+  "multiclass": false,
+  "isRegionCompetition": false,
+  "start": 1481000400000,
+  "lowerseasonshortname": "2016+season+4+-+13th+week",
+  "maxTeamDrivers": 1,
+  "quarter": 4,
+  "seriesshortname": "13th+Week+Mazda+Cup",
+  "catid": 2,
+  "minsr": "1.0",
+  "isFixedSetup": false,
+  "isOfficial": true,
+  "minlicenselevel": 1,
+  "cautionTypeOval": 0,
+  "licenseEligible": true,
+  "complete": false,
+  "driverChanges": false,
+  "minTeamDrivers": 1,
+  "year": 2016,
+  "restrictedToCar": false,
+  "seasonid": 1733,
+  "category": 2
+}, {
+  "prefimg": "",
+  "seriesname": "13th+Week+Street+Stock+Challenge",
+  "seasonshortname": "2016+Season+4+-+13th+Week",
+  "whatshotimg": "member_images%2Fseries%2Fseriesid_134%2Fwhats_hot.jpg",
+  "cautionTypeRoad": 0,
+  "raceweek": 1,
+  "active": true,
+  "maxlicenselevel": 28,
+  "tracks": [{
+    "config": "Oval",
+    "priority": 0,
+    "raceweek": 0,
+    "pkgid": 97,
+    "timeOfDay": 0,
+    "name": "Thompson+Speedway+Motorsports+Park",
+    "id": 161,
+    "lowername": "thompson+speedway+motorsports+park"
+  }, {
+    "config": "",
+    "priority": 0,
+    "raceweek": 1,
+    "pkgid": 19,
+    "timeOfDay": 0,
+    "name": "South+Boston+Speedway",
+    "id": 14,
+    "lowername": "south+boston+speedway"
+  }, {
+    "config": "",
+    "priority": 0,
+    "raceweek": 2,
+    "pkgid": 8,
+    "timeOfDay": 0,
+    "name": "Lanier+National+Speedway",
+    "id": 17,
+    "lowername": "lanier+national+speedway"
+  }, {
+    "config": "Legends+Oval",
+    "priority": 3,
+    "raceweek": 3,
+    "pkgid": 31,
+    "timeOfDay": 0,
+    "name": "Charlotte+Motor+Speedway",
+    "id": 39,
+    "lowername": "charlotte+motor+speedway"
+  }, {
+    "config": "Oval",
+    "priority": 1,
+    "raceweek": 4,
+    "pkgid": 31,
+    "timeOfDay": 0,
+    "name": "Charlotte+Motor+Speedway",
+    "id": 40,
+    "lowername": "charlotte+motor+speedway"
+  }, {
+    "config": "",
+    "priority": 0,
+    "raceweek": 5,
+    "pkgid": 10,
+    "timeOfDay": 0,
+    "name": "Oxford+Plains+Speedway",
+    "id": 12,
+    "lowername": "oxford+plains+speedway"
+  }, {
+    "config": "",
+    "priority": 0,
+    "raceweek": 6,
+    "pkgid": 7,
+    "timeOfDay": 0,
+    "name": "USA+International+Speedway",
+    "id": 16,
+    "lowername": "usa+international+speedway"
+  }],
+  "isClubAllowed": true,
+  "serieslicgroupid": 1,
+  "restrictedByMember": false,
+  "lowerseriesshortname": "13th+week+street+stock+challenge",
+  "allowedMembers": [],
+  "carclasses": [{
+    "carsinclass": [{
+      "name": "Street+Stock",
+      "id": 36
+    }],
+    "shortname": "Street+Stock",
+    "name": "Street+Stock",
+    "id": 34,
+    "lowername": "street+stock"
+  }],
+  "currentTrack": 161,
+  "seriesid": 134,
+  "driverChangeRule": 0,
+  "licgroupid": 1,
+  "ignoreLicenseForPractice": false,
+  "isWorldCup": false,
+  "islite": false,
+  "rookieseason": "",
+  "end": 1481605200000,
+  "cars": [{
+    "pkgid": 105,
+    "name": "Street+Stock",
+    "id": 36,
+    "lowername": "street+stock",
+    "sku": 10232
+  }],
+  "carNumberMap": {
+    "carNumberMap": {}
+  },
+  "multiclass": false,
+  "isRegionCompetition": false,
+  "start": 1481000400000,
+  "lowerseasonshortname": "2016+season+4+-+13th+week",
+  "maxTeamDrivers": 1,
+  "quarter": 4,
+  "seriesshortname": "13th+Week+Street+Stock+Challenge",
+  "catid": 1,
+  "minsr": "1.0",
+  "isFixedSetup": false,
+  "isOfficial": true,
+  "minlicenselevel": 1,
+  "cautionTypeOval": 0,
+  "licenseEligible": true,
+  "complete": false,
+  "driverChanges": false,
+  "minTeamDrivers": 1,
+  "year": 2016,
+  "restrictedToCar": false,
+  "seasonid": 1732,
   "category": 1
 }, {
   "prefimg": "",
@@ -123,7 +780,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_231%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -250,7 +907,7 @@
     "id": 74,
     "lowername": "mazda+mx-5+cup+2016"
   }],
-  "currentTrack": 163,
+  "currentTrack": -1,
   "seriesid": 231,
   "driverChangeRule": 0,
   "licgroupid": 2,
@@ -292,11 +949,11 @@
   "category": 2
 }, {
   "prefimg": "",
-  "seriesname": "Blancpain+GT+Series",
-  "seasonshortname": "2016+Season+1",
-  "whatshotimg": "member_images%2Fseries%2Fseriesid_268%2Fwhats_hot.jpg",
+  "seriesname": "Blancpain+Endurance+Series",
+  "seasonshortname": "2016+Season+4",
+  "whatshotimg": "member_images%2Fseries%2Fseriesid_237%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 5,
+  "raceweek": 4,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -318,14 +975,14 @@
     "id": 41,
     "lowername": "silverstone+circuit"
   }, {
-    "config": "Endurance",
+    "config": "Grand+Prix",
     "priority": 0,
     "raceweek": 2,
-    "pkgid": 103,
+    "pkgid": 124,
     "timeOfDay": 0,
-    "name": "Circuit+de+Spa-Francorchamps",
-    "id": 165,
-    "lowername": "circuit+de+spa-francorchamps"
+    "name": "Circuit+Zolder",
+    "id": 199,
+    "lowername": "circuit+zolder"
   }, {
     "config": "Grand+Prix",
     "priority": 1,
@@ -336,14 +993,14 @@
     "id": 145,
     "lowername": "brands+hatch+circuit"
   }, {
-    "config": "Grand+Prix",
+    "config": "Endurance",
     "priority": 0,
     "raceweek": 4,
-    "pkgid": 197,
-    "timeOfDay": 2,
-    "name": "Autodromo+Internazionale+Enzo+e+Dino+Ferrari",
-    "id": 266,
-    "lowername": "autodromo+internazionale+enzo+e+dino+ferrari"
+    "pkgid": 103,
+    "timeOfDay": 0,
+    "name": "Circuit+de+Spa-Francorchamps",
+    "id": 165,
+    "lowername": "circuit+de+spa-francorchamps"
   }, {
     "config": "BES%2FWEC",
     "priority": 4,
@@ -355,430 +1012,10 @@
     "lowername": "n%C3%BCrburgring+grand-prix-strecke"
   }],
   "isClubAllowed": true,
-  "serieslicgroupid": 7,
-  "restrictedByMember": true,
-  "lowerseriesshortname": "blancpain+gt+series",
-  "allowedMembers": [{
-    "teamId": -10014,
-    "custId": 43779
-  }, {
-    "teamId": -38678,
-    "custId": 78342
-  }, {
-    "teamId": -40222,
-    "custId": 38408
-  }, {
-    "teamId": -10272,
-    "custId": 54792
-  }, {
-    "teamId": -30633,
-    "custId": 89864
-  }, {
-    "teamId": -17904,
-    "custId": 48395
-  }, {
-    "teamId": -40239,
-    "custId": 102923
-  }, {
-    "teamId": -40150,
-    "custId": 86541
-  }, {
-    "teamId": -38613,
-    "custId": 56846
-  }, {
-    "teamId": -38584,
-    "custId": 115215
-  }, {
-    "teamId": -39190,
-    "custId": 126480
-  }, {
-    "teamId": -40222,
-    "custId": 96275
-  }, {
-    "teamId": -40075,
-    "custId": 163603
-  }, {
-    "teamId": -10010,
-    "custId": 16662
-  }, {
-    "teamId": -38678,
-    "custId": 114966
-  }, {
-    "teamId": -36492,
-    "custId": 17944
-  }, {
-    "teamId": -17904,
-    "custId": 28696
-  }, {
-    "teamId": -41144,
-    "custId": 59162
-  }, {
-    "teamId": -40229,
-    "custId": 62490
-  }, {
-    "teamId": -10034,
-    "custId": 73499
-  }, {
-    "teamId": -40229,
-    "custId": 116508
-  }, {
-    "teamId": -41144,
-    "custId": 59171
-  }, {
-    "teamId": -39986,
-    "custId": 75045
-  }, {
-    "teamId": -10081,
-    "custId": 80166
-  }, {
-    "teamId": -40122,
-    "custId": 126246
-  }, {
-    "teamId": -40075,
-    "custId": 121640
-  }, {
-    "teamId": -40168,
-    "custId": 59178
-  }, {
-    "teamId": -39590,
-    "custId": 61738
-  }, {
-    "teamId": -10081,
-    "custId": 177963
-  }, {
-    "teamId": -38584,
-    "custId": 68654
-  }, {
-    "teamId": -36492,
-    "custId": 81454
-  }, {
-    "teamId": -10081,
-    "custId": 74294
-  }, {
-    "teamId": -18662,
-    "custId": 89143
-  }, {
-    "teamId": -38749,
-    "custId": 35896
-  }, {
-    "teamId": -39188,
-    "custId": 58168
-  }, {
-    "teamId": -38613,
-    "custId": 31545
-  }, {
-    "teamId": -40087,
-    "custId": 161594
-  }, {
-    "teamId": -39590,
-    "custId": 119101
-  }, {
-    "teamId": -40164,
-    "custId": 156477
-  }, {
-    "teamId": -38749,
-    "custId": 55103
-  }, {
-    "teamId": -39590,
-    "custId": 81472
-  }, {
-    "teamId": -36094,
-    "custId": 113984
-  }, {
-    "teamId": -10272,
-    "custId": 16197
-  }, {
-    "teamId": -40168,
-    "custId": 157765
-  }, {
-    "teamId": -36091,
-    "custId": 58950
-  }, {
-    "teamId": -39986,
-    "custId": 145223
-  }, {
-    "teamId": -36094,
-    "custId": 55625
-  }, {
-    "teamId": -40241,
-    "custId": 30287
-  }, {
-    "teamId": -40193,
-    "custId": 96849
-  }, {
-    "teamId": -40240,
-    "custId": 67157
-  }, {
-    "teamId": -39188,
-    "custId": 25944
-  }, {
-    "teamId": -41144,
-    "custId": 37976
-  }, {
-    "teamId": -31131,
-    "custId": 73560
-  }, {
-    "teamId": -40150,
-    "custId": 81752
-  }, {
-    "teamId": -40075,
-    "custId": 100190
-  }, {
-    "teamId": -39190,
-    "custId": 52576
-  }, {
-    "teamId": -36492,
-    "custId": 55138
-  }, {
-    "teamId": -38583,
-    "custId": 141160
-  }, {
-    "teamId": -30701,
-    "custId": 84075
-  }, {
-    "teamId": -40240,
-    "custId": 127339
-  }, {
-    "teamId": -10010,
-    "custId": 42606
-  }, {
-    "teamId": -40194,
-    "custId": 100462
-  }, {
-    "teamId": -39188,
-    "custId": 116848
-  }, {
-    "teamId": -40168,
-    "custId": 153713
-  }, {
-    "teamId": -36094,
-    "custId": 103282
-  }, {
-    "teamId": -36091,
-    "custId": 116338
-  }, {
-    "teamId": -10014,
-    "custId": 27251
-  }, {
-    "teamId": -40087,
-    "custId": 96630
-  }, {
-    "teamId": -40194,
-    "custId": 146294
-  }, {
-    "teamId": -40193,
-    "custId": 28023
-  }, {
-    "teamId": -10014,
-    "custId": 21629
-  }, {
-    "teamId": -40239,
-    "custId": 62077
-  }, {
-    "teamId": -17904,
-    "custId": 19326
-  }, {
-    "teamId": -38748,
-    "custId": 99198
-  }, {
-    "teamId": -18739,
-    "custId": 59007
-  }, {
-    "teamId": -39986,
-    "custId": 36738
-  }, {
-    "teamId": -10034,
-    "custId": 54659
-  }, {
-    "teamId": -41109,
-    "custId": 50308
-  }, {
-    "teamId": -10010,
-    "custId": 56196
-  }, {
-    "teamId": -41109,
-    "custId": 28805
-  }, {
-    "teamId": -10034,
-    "custId": 94598
-  }, {
-    "teamId": -38678,
-    "custId": 105862
-  }, {
-    "teamId": -18662,
-    "custId": 18823
-  }, {
-    "teamId": -30701,
-    "custId": 78730
-  }, {
-    "teamId": -40239,
-    "custId": 35213
-  }, {
-    "teamId": -38749,
-    "custId": 26256
-  }, {
-    "teamId": -40240,
-    "custId": 15250
-  }, {
-    "teamId": -39190,
-    "custId": 33687
-  }, {
-    "teamId": -38582,
-    "custId": 121240
-  }, {
-    "teamId": -18739,
-    "custId": 106393
-  }, {
-    "teamId": -41144,
-    "custId": 124057
-  }, {
-    "teamId": -10014,
-    "custId": 143773
-  }, {
-    "teamId": -38584,
-    "custId": 199325
-  }, {
-    "teamId": -36094,
-    "custId": 164259
-  }, {
-    "teamId": -30633,
-    "custId": 29349
-  }, {
-    "teamId": -38583,
-    "custId": 96933
-  }, {
-    "teamId": -40168,
-    "custId": 71846
-  }, {
-    "teamId": -39986,
-    "custId": 147366
-  }, {
-    "teamId": -18739,
-    "custId": 71593
-  }, {
-    "teamId": -38582,
-    "custId": 122282
-  }, {
-    "teamId": -38613,
-    "custId": 25262
-  }, {
-    "teamId": -10272,
-    "custId": 18095
-  }, {
-    "teamId": -30701,
-    "custId": 129455
-  }, {
-    "teamId": -38678,
-    "custId": 70067
-  }, {
-    "teamId": -38748,
-    "custId": 74422
-  }, {
-    "teamId": -10081,
-    "custId": 111542
-  }, {
-    "teamId": -40164,
-    "custId": 139958
-  }, {
-    "teamId": -38582,
-    "custId": 121275
-  }, {
-    "teamId": -38584,
-    "custId": 148414
-  }, {
-    "teamId": -38582,
-    "custId": 99265
-  }, {
-    "teamId": -30701,
-    "custId": 67778
-  }, {
-    "teamId": -36091,
-    "custId": 84932
-  }, {
-    "teamId": -41109,
-    "custId": 46789
-  }, {
-    "teamId": -40122,
-    "custId": 52678
-  }, {
-    "teamId": -38748,
-    "custId": 26065
-  }, {
-    "teamId": -39188,
-    "custId": 15826
-  }, {
-    "teamId": -36091,
-    "custId": 106195
-  }, {
-    "teamId": -18739,
-    "custId": 100565
-  }, {
-    "teamId": -10010,
-    "custId": 68566
-  }, {
-    "teamId": -38749,
-    "custId": 93910
-  }, {
-    "teamId": -40241,
-    "custId": 15575
-  }, {
-    "teamId": -31131,
-    "custId": 45527
-  }, {
-    "teamId": -30633,
-    "custId": 57818
-  }, {
-    "teamId": -18662,
-    "custId": 15579
-  }, {
-    "teamId": -18662,
-    "custId": 27868
-  }, {
-    "teamId": -40193,
-    "custId": 119518
-  }, {
-    "teamId": -40122,
-    "custId": 106463
-  }, {
-    "teamId": -40150,
-    "custId": 120544
-  }, {
-    "teamId": -39590,
-    "custId": 63459
-  }, {
-    "teamId": -38583,
-    "custId": 144356
-  }, {
-    "teamId": -38613,
-    "custId": 45033
-  }, {
-    "teamId": -38583,
-    "custId": 170730
-  }, {
-    "teamId": -10034,
-    "custId": 28656
-  }, {
-    "teamId": -40193,
-    "custId": 200432
-  }, {
-    "teamId": -39190,
-    "custId": 19446
-  }, {
-    "teamId": -36492,
-    "custId": 42998
-  }, {
-    "teamId": -40194,
-    "custId": 26617
-  }, {
-    "teamId": -40194,
-    "custId": 119290
-  }, {
-    "teamId": -40241,
-    "custId": 16891
-  }, {
-    "teamId": -40087,
-    "custId": 122110
-  }],
+  "serieslicgroupid": 5,
+  "restrictedByMember": false,
+  "lowerseriesshortname": "blancpain+endurance+series",
+  "allowedMembers": [],
   "carclasses": [{
     "carsinclass": [{
       "name": "McLaren+MP4-12C+GT3",
@@ -801,15 +1038,15 @@
     "id": 59,
     "lowername": "gt3+class"
   }],
-  "currentTrack": 266,
-  "seriesid": 268,
+  "currentTrack": 145,
+  "seriesid": 237,
   "driverChangeRule": 1,
-  "licgroupid": 7,
-  "ignoreLicenseForPractice": false,
+  "licgroupid": 4,
+  "ignoreLicenseForPractice": true,
   "isWorldCup": false,
   "islite": false,
   "rookieseason": "",
-  "end": 1477195200000,
+  "end": 1485234000000,
   "cars": [{
     "pkgid": 133,
     "name": "McLaren+MP4-12C+GT3",
@@ -845,17 +1082,17 @@
     "carNumberMap": {}
   },
   "multiclass": false,
-  "isRegionCompetition": false,
-  "start": 1460865600000,
-  "lowerseasonshortname": "2016+season+1",
+  "isRegionCompetition": true,
+  "start": 1478581200000,
+  "lowerseasonshortname": "2016+season+4",
   "maxTeamDrivers": 4,
-  "quarter": 1,
-  "seriesshortname": "Blancpain+GT+Series",
+  "quarter": 4,
+  "seriesshortname": "Blancpain+Endurance+Series",
   "catid": 2,
-  "minsr": "1.0",
+  "minsr": "4.0",
   "isFixedSetup": false,
   "isOfficial": true,
-  "minlicenselevel": 25,
+  "minlicenselevel": 16,
   "cautionTypeOval": 0,
   "licenseEligible": false,
   "complete": false,
@@ -863,7 +1100,7 @@
   "minTeamDrivers": 2,
   "year": 2016,
   "restrictedToCar": false,
-  "seasonid": 1518,
+  "seasonid": 1682,
   "category": 2
 }, {
   "prefimg": "",
@@ -871,7 +1108,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_228%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -1010,7 +1247,7 @@
     "id": 59,
     "lowername": "gt3+class"
   }],
-  "currentTrack": 127,
+  "currentTrack": -1,
   "seriesid": 228,
   "driverChangeRule": 0,
   "licgroupid": 3,
@@ -1080,7 +1317,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fcadillaccup%2Fstats_cadillaccup.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -1207,7 +1444,7 @@
     "id": 45,
     "lowername": "cadillac+cts-vr"
   }],
-  "currentTrack": 249,
+  "currentTrack": -1,
   "seriesid": 183,
   "driverChangeRule": 0,
   "licgroupid": 1,
@@ -1253,7 +1490,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_116%2Fwhats_hot.jpg",
   "cautionTypeRoad": 0,
-  "raceweek": 2,
+  "raceweek": 13,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -1395,7 +1632,7 @@
     "id": 50,
     "lowername": "sprint+cup"
   }],
-  "currentTrack": 40,
+  "currentTrack": 116,
   "seriesid": 116,
   "driverChangeRule": 0,
   "licgroupid": 1,
@@ -1453,7 +1690,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Flotusgrandprix%2Fstats_lotus.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -1580,7 +1817,7 @@
     "id": 22,
     "lowername": "lotus+79"
   }],
-  "currentTrack": 244,
+  "currentTrack": -1,
   "seriesid": 65,
   "driverChangeRule": 0,
   "licgroupid": 3,
@@ -1626,7 +1863,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_258%2Fwhats_hot.jpg",
   "cautionTypeRoad": 1,
-  "raceweek": 2,
+  "raceweek": 13,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -1762,7 +1999,7 @@
     "id": 26,
     "lowername": "dallara+indycar"
   }],
-  "currentTrack": 104,
+  "currentTrack": 40,
   "seriesid": 258,
   "driverChangeRule": 0,
   "licgroupid": 1,
@@ -1808,7 +2045,7 @@
   "seasonshortname": "2016+Season+4+Fixed",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_139%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -1935,7 +2172,7 @@
     "id": 74,
     "lowername": "mazda+mx-5+cup+2016"
   }],
-  "currentTrack": 166,
+  "currentTrack": -1,
   "seriesid": 139,
   "driverChangeRule": 0,
   "licgroupid": 1,
@@ -1981,7 +2218,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fgplegends%2Fwhats_hot.jpg",
   "cautionTypeRoad": 1,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -2108,7 +2345,7 @@
     "id": 46,
     "lowername": "lotus+49"
   }],
-  "currentTrack": 164,
+  "currentTrack": -1,
   "seriesid": 201,
   "driverChangeRule": 0,
   "licgroupid": 2,
@@ -2154,7 +2391,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_227%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -2305,7 +2542,7 @@
     "id": 82,
     "lowername": "gt3+german"
   }],
-  "currentTrack": 127,
+  "currentTrack": -1,
   "seriesid": 227,
   "driverChangeRule": 0,
   "licgroupid": 3,
@@ -2420,6 +2657,15 @@
     "name": "Mazda+MX-5+Cup+2016",
     "id": 74,
     "lowername": "mazda+mx-5+cup+2016"
+  }, {
+    "carsinclass": [{
+      "name": "Audi+R8+LMS",
+      "id": 73
+    }],
+    "shortname": "Audi+R8+GT3",
+    "name": "Audi+R8+GT3",
+    "id": 80,
+    "lowername": "audi+r8+gt3"
   }],
   "currentTrack": 249,
   "seriesid": 267,
@@ -2448,6 +2694,12 @@
     "id": 67,
     "lowername": "global+mazda+mx-5+cup",
     "sku": 10394
+  }, {
+    "pkgid": 201,
+    "name": "Audi+R8+LMS",
+    "id": 73,
+    "lowername": "audi+r8+lms",
+    "sku": 10405
   }],
   "carNumberMap": {
     "carNumberMap": {}
@@ -2479,7 +2731,7 @@
   "seasonshortname": "2016+Season+4+Fixed",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_165%2Fwhats_hot.jpg",
   "cautionTypeRoad": 0,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -2606,7 +2858,7 @@
     "id": 63,
     "lowername": "dallara+dw12"
   }],
-  "currentTrack": 121,
+  "currentTrack": -1,
   "seriesid": 165,
   "driverChangeRule": 0,
   "licgroupid": 2,
@@ -2652,7 +2904,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_133%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -2779,7 +3031,7 @@
     "id": 63,
     "lowername": "dallara+dw12"
   }],
-  "currentTrack": 121,
+  "currentTrack": -1,
   "seriesid": 133,
   "driverChangeRule": 0,
   "licgroupid": 2,
@@ -2825,7 +3077,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fadvlegcup%2Fstats_advlegends.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -2952,7 +3204,7 @@
     "id": 5,
     "lowername": "legends"
   }],
-  "currentTrack": 12,
+  "currentTrack": -1,
   "seriesid": 32,
   "driverChangeRule": 0,
   "licgroupid": 1,
@@ -2998,7 +3250,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_269%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -3125,7 +3377,7 @@
     "id": 81,
     "lowername": "formula+renault+2.0"
   }],
-  "currentTrack": 219,
+  "currentTrack": -1,
   "seriesid": 269,
   "driverChangeRule": 0,
   "licgroupid": 2,
@@ -3171,7 +3423,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_260%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -3298,7 +3550,7 @@
     "id": 78,
     "lowername": "mclaren+mp4-30"
   }],
-  "currentTrack": 41,
+  "currentTrack": -1,
   "seriesid": 260,
   "driverChangeRule": 0,
   "licgroupid": 4,
@@ -3344,7 +3596,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fgrandtour%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -3489,7 +3741,7 @@
     "id": 28,
     "lowername": "ford+mustang+fr500s"
   }],
-  "currentTrack": 192,
+  "currentTrack": -1,
   "seriesid": 130,
   "driverChangeRule": 0,
   "licgroupid": 1,
@@ -3547,7 +3799,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Flmtour%2Fstats_latemodel.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -3674,7 +3926,7 @@
     "id": 14,
     "lowername": "monte+carlo+ss"
   }],
-  "currentTrack": 101,
+  "currentTrack": -1,
   "seriesid": 33,
   "driverChangeRule": 0,
   "licgroupid": 1,
@@ -3720,7 +3972,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_112%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -3856,7 +4108,7 @@
     "id": 74,
     "lowername": "mazda+mx-5+cup+2016"
   }],
-  "currentTrack": 142,
+  "currentTrack": -1,
   "seriesid": 112,
   "driverChangeRule": 0,
   "licgroupid": 1,
@@ -3903,12 +4155,158 @@
   "seasonid": 1629,
   "category": 2
 }, {
+  "prefimg": "member_images%2Fseries%2Fproseriesroad%2Fsp_r_pro_riley.gif",
+  "seriesname": "iRacing+Road+Pro+Series",
+  "seasonshortname": "2016+Season",
+  "whatshotimg": "member_images%2Fseries%2Fproseriesroad%2Fwhats_hot.jpg",
+  "cautionTypeRoad": 2,
+  "raceweek": 6,
+  "active": true,
+  "maxlicenselevel": 28,
+  "tracks": [{
+    "config": "Grand+Prix",
+    "priority": 1,
+    "raceweek": 0,
+    "pkgid": 134,
+    "timeOfDay": 0,
+    "name": "Aut%C3%B3dromo+Jos%C3%A9+Carlos+Pace",
+    "id": 212,
+    "lowername": "aut%C3%B3dromo+jos%C3%A9+carlos+pace"
+  }, {
+    "config": "",
+    "priority": 0,
+    "raceweek": 1,
+    "pkgid": 145,
+    "timeOfDay": 0,
+    "name": "Circuit+Gilles+Villeneuve",
+    "id": 218,
+    "lowername": "circuit+gilles+villeneuve"
+  }, {
+    "config": "Grand+Prix",
+    "priority": 1,
+    "raceweek": 2,
+    "pkgid": 32,
+    "timeOfDay": 0,
+    "name": "Silverstone+Circuit",
+    "id": 41,
+    "lowername": "silverstone+circuit"
+  }, {
+    "config": "Grand+Prix",
+    "priority": 0,
+    "raceweek": 3,
+    "pkgid": 114,
+    "timeOfDay": 0,
+    "name": "Suzuka+International+Racing+Course",
+    "id": 168,
+    "lowername": "suzuka+international+racing+course"
+  }, {
+    "config": "Grand+Prix",
+    "priority": 0,
+    "raceweek": 4,
+    "pkgid": 154,
+    "timeOfDay": 0,
+    "name": "Circuit+of+the+Americas",
+    "id": 229,
+    "lowername": "circuit+of+the+americas"
+  }, {
+    "config": "Grand+Prix",
+    "priority": 1,
+    "raceweek": 5,
+    "pkgid": 172,
+    "timeOfDay": 0,
+    "name": "Autodromo+Nazionale+Monza",
+    "id": 239,
+    "lowername": "autodromo+nazionale+monza"
+  }, {
+    "config": "Grand+Prix+Pits",
+    "priority": 2,
+    "raceweek": 6,
+    "pkgid": 103,
+    "timeOfDay": 0,
+    "name": "Circuit+de+Spa-Francorchamps",
+    "id": 163,
+    "lowername": "circuit+de+spa-francorchamps"
+  }, {
+    "config": "Grand+Prix",
+    "priority": 0,
+    "raceweek": 7,
+    "pkgid": 197,
+    "timeOfDay": 0,
+    "name": "Autodromo+Internazionale+Enzo+e+Dino+Ferrari",
+    "id": 266,
+    "lowername": "autodromo+internazionale+enzo+e+dino+ferrari"
+  }, {
+    "config": "Grand+Prix",
+    "priority": 3,
+    "raceweek": 8,
+    "pkgid": 185,
+    "timeOfDay": 0,
+    "name": "N%C3%BCrburgring+Grand-Prix-Strecke",
+    "id": 250,
+    "lowername": "n%C3%BCrburgring+grand-prix-strecke"
+  }],
+  "isClubAllowed": true,
+  "serieslicgroupid": 5,
+  "restrictedByMember": false,
+  "lowerseriesshortname": "irps",
+  "allowedMembers": [],
+  "carclasses": [{
+    "carsinclass": [{
+      "name": "McLaren+MP4-30",
+      "id": 71
+    }],
+    "shortname": "McLaren+MP4-30",
+    "name": "McLaren+MP4-30",
+    "id": 78,
+    "lowername": "mclaren+mp4-30"
+  }],
+  "currentTrack": 239,
+  "seriesid": 67,
+  "driverChangeRule": 0,
+  "licgroupid": 4,
+  "ignoreLicenseForPractice": false,
+  "isWorldCup": false,
+  "islite": false,
+  "rookieseason": "",
+  "end": 1485147600000,
+  "cars": [{
+    "pkgid": 196,
+    "name": "McLaren+MP4-30",
+    "id": 71,
+    "lowername": "mclaren+mp4-30",
+    "sku": 10402
+  }],
+  "carNumberMap": {
+    "carNumberMap": {}
+  },
+  "multiclass": false,
+  "isRegionCompetition": false,
+  "start": 1477972800000,
+  "lowerseasonshortname": "2016+season",
+  "maxTeamDrivers": 1,
+  "quarter": 4,
+  "seriesshortname": "iRPS",
+  "catid": 2,
+  "minsr": "4.0",
+  "isFixedSetup": false,
+  "isOfficial": true,
+  "minlicenselevel": 16,
+  "cautionTypeOval": 0,
+  "licenseEligible": false,
+  "complete": false,
+  "driverChanges": false,
+  "minTeamDrivers": 1,
+  "year": 2016,
+  "restrictedToCar": false,
+  "seasonid": 1681,
+  "category": 2
+}, {
   "prefimg": "member_images%2Fseries%2Fscrown%2Fsp_o_scrown.gif",
   "seriesname": "iRacing+Silver+Crown+Cup",
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fscrown%2Fstats_scrown.jpg",
   "cautionTypeRoad": 0,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -4035,7 +4433,7 @@
     "id": 16,
     "lowername": "silver+crown"
   }],
-  "currentTrack": 169,
+  "currentTrack": -1,
   "seriesid": 53,
   "driverChangeRule": 0,
   "licgroupid": 3,
@@ -4081,7 +4479,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fsrfchallenge%2Fstats_specracer.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -4208,7 +4606,7 @@
     "id": 20,
     "lowername": "spec+racer+ford"
   }],
-  "currentTrack": 266,
+  "currentTrack": -1,
   "seriesid": 63,
   "driverChangeRule": 0,
   "licgroupid": 1,
@@ -4254,7 +4652,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fsprintcar%2Fstats_sprintcar.jpg",
   "cautionTypeRoad": 0,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -4381,7 +4779,7 @@
     "id": 35,
     "lowername": "sprint+car"
   }],
-  "currentTrack": 169,
+  "currentTrack": -1,
   "seriesid": 131,
   "driverChangeRule": 0,
   "licgroupid": 3,
@@ -4427,7 +4825,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fseries_190%2Fwhats_hot.jpg",
   "cautionTypeRoad": 0,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -4554,7 +4952,7 @@
     "id": 34,
     "lowername": "street+stock"
   }],
-  "currentTrack": 101,
+  "currentTrack": -1,
   "seriesid": 190,
   "driverChangeRule": 0,
   "licgroupid": 2,
@@ -4600,7 +4998,7 @@
   "seasonshortname": "2016+Season+4+Fixed",
   "whatshotimg": "member_images%2Fseries%2Fseries_182%2Fwhats_hot.jpg",
   "cautionTypeRoad": 0,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 8,
   "tracks": [{
@@ -4727,7 +5125,7 @@
     "id": 34,
     "lowername": "street+stock"
   }],
-  "currentTrack": 16,
+  "currentTrack": -1,
   "seriesid": 182,
   "driverChangeRule": 0,
   "licgroupid": 1,
@@ -4773,7 +5171,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Firacingsuperlatemodel%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -4900,7 +5298,7 @@
     "id": 60,
     "lowername": "super+late+model"
   }],
-  "currentTrack": 101,
+  "currentTrack": -1,
   "seriesid": 223,
   "driverChangeRule": 0,
   "licgroupid": 2,
@@ -4946,7 +5344,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_88%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -5076,7 +5474,7 @@
     "id": 67,
     "lowername": "v8supercars"
   }],
-  "currentTrack": 144,
+  "currentTrack": -1,
   "seriesid": 88,
   "driverChangeRule": 0,
   "licgroupid": 2,
@@ -5124,656 +5522,11 @@
   "category": 2
 }, {
   "prefimg": "",
-  "seriesname": "iRacing+VLN+Endurance+Championship",
-  "seasonshortname": "2016+Season",
-  "whatshotimg": "member_images%2Fseries%2Fseriesid_275%2Fwhats_hot.jpg",
-  "cautionTypeRoad": 2,
-  "raceweek": 6,
-  "active": true,
-  "maxlicenselevel": 28,
-  "tracks": [{
-    "config": "Gesamtstrecke+VLN",
-    "priority": 9,
-    "raceweek": 0,
-    "pkgid": 186,
-    "timeOfDay": 0,
-    "name": "N%C3%BCrburgring+Combined",
-    "id": 262,
-    "lowername": "n%C3%BCrburgring+combined"
-  }, {
-    "config": "Gesamtstrecke+VLN",
-    "priority": 9,
-    "raceweek": 1,
-    "pkgid": 186,
-    "timeOfDay": 0,
-    "name": "N%C3%BCrburgring+Combined",
-    "id": 262,
-    "lowername": "n%C3%BCrburgring+combined"
-  }, {
-    "config": "Gesamtstrecke+VLN",
-    "priority": 9,
-    "raceweek": 2,
-    "pkgid": 186,
-    "timeOfDay": 0,
-    "name": "N%C3%BCrburgring+Combined",
-    "id": 262,
-    "lowername": "n%C3%BCrburgring+combined"
-  }, {
-    "config": "Gesamtstrecke+VLN",
-    "priority": 9,
-    "raceweek": 3,
-    "pkgid": 186,
-    "timeOfDay": 0,
-    "name": "N%C3%BCrburgring+Combined",
-    "id": 262,
-    "lowername": "n%C3%BCrburgring+combined"
-  }, {
-    "config": "Gesamtstrecke+VLN",
-    "priority": 9,
-    "raceweek": 4,
-    "pkgid": 186,
-    "timeOfDay": 2,
-    "name": "N%C3%BCrburgring+Combined",
-    "id": 262,
-    "lowername": "n%C3%BCrburgring+combined"
-  }, {
-    "config": "Gesamtstrecke+VLN",
-    "priority": 9,
-    "raceweek": 5,
-    "pkgid": 186,
-    "timeOfDay": 0,
-    "name": "N%C3%BCrburgring+Combined",
-    "id": 262,
-    "lowername": "n%C3%BCrburgring+combined"
-  }, {
-    "config": "Gesamtstrecke+VLN",
-    "priority": 9,
-    "raceweek": 6,
-    "pkgid": 186,
-    "timeOfDay": 0,
-    "name": "N%C3%BCrburgring+Combined",
-    "id": 262,
-    "lowername": "n%C3%BCrburgring+combined"
-  }, {
-    "config": "Gesamtstrecke+VLN",
-    "priority": 9,
-    "raceweek": 7,
-    "pkgid": 186,
-    "timeOfDay": 0,
-    "name": "N%C3%BCrburgring+Combined",
-    "id": 262,
-    "lowername": "n%C3%BCrburgring+combined"
-  }],
-  "isClubAllowed": true,
-  "serieslicgroupid": 2,
-  "restrictedByMember": false,
-  "lowerseriesshortname": "iracing+vln+endurance+championship",
-  "allowedMembers": [],
-  "carclasses": [{
-    "carsinclass": [{
-      "name": "Kia+Optima",
-      "id": 44
-    }],
-    "shortname": "Kia+Optima",
-    "name": "Kia+Optima",
-    "id": 48,
-    "lowername": "kia+optima"
-  }, {
-    "carsinclass": [{
-      "name": "Global+Mazda+MX-5+Cup",
-      "id": 67
-    }],
-    "shortname": "MX5+Cup+2016",
-    "name": "Mazda+MX-5+Cup+2016",
-    "id": 74,
-    "lowername": "mazda+mx-5+cup+2016"
-  }, {
-    "carsinclass": [{
-      "name": "BMW+Z4+GT3",
-      "id": 55
-    }, {
-      "name": "Mercedes+AMG+GT3",
-      "id": 72
-    }, {
-      "name": "Audi+R8+LMS",
-      "id": 73
-    }],
-    "shortname": "GT3+German",
-    "name": "GT3+German",
-    "id": 82,
-    "lowername": "gt3+german"
-  }],
-  "currentTrack": 262,
-  "seriesid": 275,
-  "driverChangeRule": 0,
-  "licgroupid": 2,
-  "ignoreLicenseForPractice": true,
-  "isWorldCup": false,
-  "islite": false,
-  "rookieseason": "",
-  "end": 1477281600000,
-  "cars": [{
-    "pkgid": 136,
-    "name": "Kia+Optima",
-    "id": 44,
-    "lowername": "kia+optima",
-    "sku": 10341
-  }, {
-    "pkgid": 182,
-    "name": "Global+Mazda+MX-5+Cup",
-    "id": 67,
-    "lowername": "global+mazda+mx-5+cup",
-    "sku": 10394
-  }, {
-    "pkgid": 156,
-    "name": "BMW+Z4+GT3",
-    "id": 55,
-    "lowername": "bmw+z4+gt3",
-    "sku": 10362
-  }, {
-    "pkgid": 199,
-    "name": "Mercedes+AMG+GT3",
-    "id": 72,
-    "lowername": "mercedes+amg+gt3",
-    "sku": 10404
-  }, {
-    "pkgid": 201,
-    "name": "Audi+R8+LMS",
-    "id": 73,
-    "lowername": "audi+r8+lms",
-    "sku": 10405
-  }],
-  "carNumberMap": {
-    "carNumberMap": {}
-  },
-  "multiclass": true,
-  "isRegionCompetition": true,
-  "start": 1462852800000,
-  "lowerseasonshortname": "2016+season",
-  "maxTeamDrivers": 4,
-  "quarter": 2,
-  "seriesshortname": "iRacing+VLN+Endurance+Championship",
-  "catid": 2,
-  "minsr": "1.0",
-  "isFixedSetup": false,
-  "isOfficial": true,
-  "minlicenselevel": 5,
-  "cautionTypeOval": 0,
-  "licenseEligible": true,
-  "complete": false,
-  "driverChanges": true,
-  "minTeamDrivers": 1,
-  "year": 2016,
-  "restrictedToCar": false,
-  "seasonid": 1572,
-  "category": 2
-}, {
-  "prefimg": "",
-  "seriesname": "iRacing.com+World+Championship+Grand+Prix+Series",
-  "seasonshortname": "2016+Season",
-  "whatshotimg": "member_images%2Fseries%2Fseriesid_206%2Fwhats_hot.jpg",
-  "cautionTypeRoad": 2,
-  "raceweek": 16,
-  "active": true,
-  "maxlicenselevel": 28,
-  "tracks": [{
-    "config": "Grand+Prix",
-    "priority": 1,
-    "raceweek": 0,
-    "pkgid": 134,
-    "timeOfDay": 0,
-    "name": "Aut%C3%B3dromo+Jos%C3%A9+Carlos+Pace",
-    "id": 212,
-    "lowername": "aut%C3%B3dromo+jos%C3%A9+carlos+pace"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 1,
-    "pkgid": 93,
-    "timeOfDay": 0,
-    "name": "Phillip+Island+Circuit",
-    "id": 152,
-    "lowername": "phillip+island+circuit"
-  }, {
-    "config": "International",
-    "priority": 1,
-    "raceweek": 2,
-    "pkgid": 40,
-    "timeOfDay": 0,
-    "name": "Sebring+International+Raceway",
-    "id": 95,
-    "lowername": "sebring+international+raceway"
-  }, {
-    "config": "Full+Course",
-    "priority": 1,
-    "raceweek": 3,
-    "pkgid": 11,
-    "timeOfDay": 0,
-    "name": "Road+America",
-    "id": 18,
-    "lowername": "road+america"
-  }, {
-    "config": "Grand+Prix",
-    "priority": 1,
-    "raceweek": 4,
-    "pkgid": 172,
-    "timeOfDay": 0,
-    "name": "Autodromo+Nazionale+Monza",
-    "id": 239,
-    "lowername": "autodromo+nazionale+monza"
-  }, {
-    "config": "Classic+Boot",
-    "priority": 3,
-    "raceweek": 5,
-    "pkgid": 56,
-    "timeOfDay": 0,
-    "name": "Watkins+Glen+International",
-    "id": 108,
-    "lowername": "watkins+glen+international"
-  }, {
-    "config": "Grand+Prix",
-    "priority": 1,
-    "raceweek": 6,
-    "pkgid": 32,
-    "timeOfDay": 0,
-    "name": "Silverstone+Circuit",
-    "id": 41,
-    "lowername": "silverstone+circuit"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 7,
-    "pkgid": 145,
-    "timeOfDay": 0,
-    "name": "Circuit+Gilles+Villeneuve",
-    "id": 218,
-    "lowername": "circuit+gilles+villeneuve"
-  }, {
-    "config": "Grand+Prix",
-    "priority": 0,
-    "raceweek": 8,
-    "pkgid": 197,
-    "timeOfDay": 2,
-    "name": "Autodromo+Internazionale+Enzo+e+Dino+Ferrari",
-    "id": 266,
-    "lowername": "autodromo+internazionale+enzo+e+dino+ferrari"
-  }, {
-    "config": "Grand+Prix",
-    "priority": 0,
-    "raceweek": 9,
-    "pkgid": 123,
-    "timeOfDay": 0,
-    "name": "Twin+Ring+Motegi",
-    "id": 195,
-    "lowername": "twin+ring+motegi"
-  }, {
-    "config": "Full+Course",
-    "priority": 0,
-    "raceweek": 10,
-    "pkgid": 109,
-    "timeOfDay": 0,
-    "name": "Okayama+International+Circuit",
-    "id": 166,
-    "lowername": "okayama+international+circuit"
-  }, {
-    "config": "Road+Course",
-    "priority": 2,
-    "raceweek": 11,
-    "pkgid": 73,
-    "timeOfDay": 0,
-    "name": "Indianapolis+Motor+Speedway",
-    "id": 134,
-    "lowername": "indianapolis+motor+speedway"
-  }, {
-    "config": "Grand+Prix+Pits",
-    "priority": 2,
-    "raceweek": 12,
-    "pkgid": 103,
-    "timeOfDay": 0,
-    "name": "Circuit+de+Spa-Francorchamps",
-    "id": 163,
-    "lowername": "circuit+de+spa-francorchamps"
-  }, {
-    "config": "Grand+Prix",
-    "priority": 0,
-    "raceweek": 13,
-    "pkgid": 114,
-    "timeOfDay": 0,
-    "name": "Suzuka+International+Racing+Course",
-    "id": 168,
-    "lowername": "suzuka+international+racing+course"
-  }, {
-    "config": "Grand+Prix",
-    "priority": 3,
-    "raceweek": 14,
-    "pkgid": 185,
-    "timeOfDay": 0,
-    "name": "N%C3%BCrburgring+Grand-Prix-Strecke",
-    "id": 250,
-    "lowername": "n%C3%BCrburgring+grand-prix-strecke"
-  }, {
-    "config": "Grand+Prix",
-    "priority": 0,
-    "raceweek": 15,
-    "pkgid": 154,
-    "timeOfDay": 0,
-    "name": "Circuit+of+the+Americas",
-    "id": 229,
-    "lowername": "circuit+of+the+americas"
-  }],
-  "isClubAllowed": true,
-  "serieslicgroupid": 6,
-  "restrictedByMember": true,
-  "lowerseriesshortname": "iwcgps",
-  "allowedMembers": [{
-    "custId": 42754
-  }, {
-    "custId": 54659
-  }, {
-    "custId": 28810
-  }, {
-    "custId": 102923
-  }, {
-    "custId": 48395
-  }, {
-    "custId": 35213
-  }, {
-    "custId": 61454
-  }, {
-    "custId": 15250
-  }, {
-    "custId": 90265
-  }, {
-    "custId": 67098
-  }, {
-    "custId": 69408
-  }, {
-    "custId": 35491
-  }, {
-    "custId": 58404
-  }, {
-    "custId": 61738
-  }, {
-    "custId": 129455
-  }, {
-    "custId": 61747
-  }, {
-    "custId": 134581
-  }, {
-    "custId": 74422
-  }, {
-    "custId": 58168
-  }, {
-    "custId": 54587
-  }, {
-    "custId": 157244
-  }, {
-    "custId": 119101
-  }, {
-    "custId": 81472
-  }, {
-    "custId": 15808
-  }, {
-    "custId": 137413
-  }, {
-    "custId": 129990
-  }, {
-    "custId": 58950
-  }, {
-    "custId": 55879
-  }, {
-    "custId": 86604
-  }, {
-    "custId": 97359
-  }, {
-    "custId": 16463
-  }, {
-    "custId": 106195
-  }, {
-    "custId": 64851
-  }, {
-    "custId": 16339
-  }, {
-    "custId": 67157
-  }, {
-    "custId": 113622
-  }, {
-    "custId": 41176
-  }, {
-    "custId": 27868
-  }, {
-    "custId": 86881
-  }, {
-    "custId": 141923
-  }, {
-    "custId": 50919
-  }, {
-    "custId": 30569
-  }, {
-    "custId": 100972
-  }, {
-    "custId": 133616
-  }, {
-    "custId": 133618
-  }, {
-    "custId": 39029
-  }, {
-    "custId": 19446
-  }, {
-    "custId": 28023
-  }, {
-    "custId": 76412
-  }, {
-    "custId": 105085
-  }],
-  "carclasses": [{
-    "carsinclass": [{
-      "name": "McLaren+MP4-30",
-      "id": 71
-    }],
-    "shortname": "McLaren+MP4-30",
-    "name": "McLaren+MP4-30",
-    "id": 78,
-    "lowername": "mclaren+mp4-30"
-  }],
-  "currentTrack": 229,
-  "seriesid": 206,
-  "driverChangeRule": 0,
-  "licgroupid": 6,
-  "ignoreLicenseForPractice": false,
-  "isWorldCup": false,
-  "islite": false,
-  "rookieseason": "",
-  "end": 1475985600000,
-  "cars": [{
-    "pkgid": 196,
-    "name": "McLaren+MP4-30",
-    "id": 71,
-    "lowername": "mclaren+mp4-30",
-    "sku": 10402
-  }],
-  "carNumberMap": {
-    "carNumberMap": {
-      "42754": {
-        "71": "48"
-      },
-      "54659": {
-        "71": "77"
-      },
-      "28810": {
-        "71": "7"
-      },
-      "48395": {
-        "71": "51"
-      },
-      "102923": {
-        "71": "26"
-      },
-      "35213": {
-        "71": "3"
-      },
-      "61454": {
-        "71": "24"
-      },
-      "15250": {
-        "71": "66"
-      },
-      "90265": {
-        "71": "15"
-      },
-      "67098": {
-        "71": "63"
-      },
-      "69408": {
-        "71": "61"
-      },
-      "35491": {
-        "71": "33"
-      },
-      "58404": {
-        "71": "5"
-      },
-      "61738": {
-        "71": "18"
-      },
-      "129455": {
-        "71": "94"
-      },
-      "61747": {
-        "71": "10"
-      },
-      "134581": {
-        "71": "89"
-      },
-      "74422": {
-        "71": "93"
-      },
-      "58168": {
-        "71": "8"
-      },
-      "54587": {
-        "71": "99"
-      },
-      "157244": {
-        "71": "67"
-      },
-      "119101": {
-        "71": "12"
-      },
-      "15808": {
-        "71": "16"
-      },
-      "81472": {
-        "71": "05"
-      },
-      "137413": {
-        "71": "27"
-      },
-      "129990": {
-        "71": "4"
-      },
-      "58950": {
-        "71": "92"
-      },
-      "55879": {
-        "71": "64"
-      },
-      "86604": {
-        "71": "44"
-      },
-      "16463": {
-        "71": "90"
-      },
-      "97359": {
-        "71": "28"
-      },
-      "16339": {
-        "71": "07"
-      },
-      "64851": {
-        "71": "9"
-      },
-      "106195": {
-        "71": "43"
-      },
-      "67157": {
-        "71": "17"
-      },
-      "113622": {
-        "71": "22"
-      },
-      "41176": {
-        "71": "23"
-      },
-      "27868": {
-        "71": "11"
-      },
-      "86881": {
-        "71": "95"
-      },
-      "141923": {
-        "71": "2"
-      },
-      "50919": {
-        "71": "96"
-      },
-      "30569": {
-        "71": "91"
-      },
-      "100972": {
-        "71": "86"
-      },
-      "133616": {
-        "71": "69"
-      },
-      "133618": {
-        "71": "6"
-      },
-      "39029": {
-        "71": "1"
-      },
-      "19446": {
-        "71": "78"
-      },
-      "28023": {
-        "71": "88"
-      },
-      "76412": {
-        "71": "74"
-      },
-      "105085": {
-        "71": "32"
-      }
-    }
-  },
-  "multiclass": false,
-  "isRegionCompetition": false,
-  "start": 1455426000000,
-  "lowerseasonshortname": "2016+season",
-  "maxTeamDrivers": 1,
-  "quarter": 1,
-  "seriesshortname": "iWCGPS",
-  "catid": 2,
-  "minsr": "3.0",
-  "isFixedSetup": false,
-  "isOfficial": true,
-  "minlicenselevel": 23,
-  "cautionTypeOval": 0,
-  "licenseEligible": false,
-  "complete": false,
-  "driverChanges": false,
-  "minTeamDrivers": 1,
-  "year": 2016,
-  "restrictedToCar": false,
-  "seasonid": 1517,
-  "category": 2
-}, {
-  "prefimg": "",
   "seriesname": "Kamel+GT+Championship+",
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_285%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 1,
+  "raceweek": 11,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -5900,7 +5653,7 @@
     "id": 84,
     "lowername": "nissan+gtp"
   }],
-  "currentTrack": 192,
+  "currentTrack": -1,
   "seriesid": 285,
   "driverChangeRule": 0,
   "licgroupid": 2,
@@ -5952,7 +5705,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_248%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -6079,7 +5832,7 @@
     "id": 48,
     "lowername": "kia+optima"
   }],
-  "currentTrack": 145,
+  "currentTrack": -1,
   "seriesid": 248,
   "driverChangeRule": 0,
   "licgroupid": 1,
@@ -6125,7 +5878,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_58%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -6258,7 +6011,7 @@
     "id": 50,
     "lowername": "sprint+cup"
   }],
-  "currentTrack": 131,
+  "currentTrack": -1,
   "seriesid": 58,
   "driverChangeRule": 0,
   "licgroupid": 4,
@@ -6316,7 +6069,7 @@
   "seasonshortname": "2016+Season+4+Fixed",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_191%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -6449,7 +6202,7 @@
     "id": 50,
     "lowername": "sprint+cup"
   }],
-  "currentTrack": 131,
+  "currentTrack": -1,
   "seriesid": 191,
   "driverChangeRule": 0,
   "licgroupid": 4,
@@ -6503,391 +6256,11 @@
   "category": 1
 }, {
   "prefimg": "",
-  "seriesname": "NASCAR+iRacing+Class+B",
-  "seasonshortname": "2016+Season",
-  "whatshotimg": "member_images%2Fseries%2Fseriesid_62%2Fwhats_hot.jpg",
-  "cautionTypeRoad": 2,
-  "raceweek": 27,
-  "active": true,
-  "maxlicenselevel": 28,
-  "tracks": [{
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 0,
-    "pkgid": 120,
-    "timeOfDay": 3,
-    "name": "Daytona+International+Speedway",
-    "id": 191,
-    "lowername": "daytona+international+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 1,
-    "pkgid": 36,
-    "timeOfDay": 0,
-    "name": "Atlanta+Motor+Speedway",
-    "id": 53,
-    "lowername": "atlanta+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 2,
-    "pkgid": 54,
-    "timeOfDay": 0,
-    "name": "Las+Vegas+Motor+Speedway",
-    "id": 103,
-    "lowername": "las+vegas+motor+speedway"
-  }, {
-    "config": "Oval+w%2Fopen+dogleg",
-    "priority": 1,
-    "raceweek": 3,
-    "pkgid": 163,
-    "timeOfDay": 0,
-    "name": "Phoenix+International+Raceway",
-    "id": 236,
-    "lowername": "phoenix+international+raceway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 4,
-    "pkgid": 151,
-    "timeOfDay": 0,
-    "name": "Auto+Club+Speedway",
-    "id": 225,
-    "lowername": "auto+club+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 5,
-    "pkgid": 61,
-    "timeOfDay": 0,
-    "name": "Texas+Motor+Speedway",
-    "id": 121,
-    "lowername": "texas+motor+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 6,
-    "pkgid": 43,
-    "timeOfDay": 0,
-    "name": "Bristol+Motor+Speedway",
-    "id": 101,
-    "lowername": "bristol+motor+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 7,
-    "pkgid": 23,
-    "timeOfDay": 0,
-    "name": "Richmond+International+Raceway",
-    "id": 31,
-    "lowername": "richmond+international+raceway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 8,
-    "pkgid": 60,
-    "timeOfDay": 0,
-    "name": "Talladega+Superspeedway",
-    "id": 116,
-    "lowername": "talladega+superspeedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 9,
-    "pkgid": 100,
-    "timeOfDay": 0,
-    "name": "Dover+International+Speedway",
-    "id": 162,
-    "lowername": "dover+international+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 10,
-    "pkgid": 31,
-    "timeOfDay": 3,
-    "name": "Charlotte+Motor+Speedway",
-    "id": 40,
-    "lowername": "charlotte+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 11,
-    "pkgid": 74,
-    "timeOfDay": 0,
-    "name": "Pocono+Raceway",
-    "id": 136,
-    "lowername": "pocono+raceway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 12,
-    "pkgid": 66,
-    "timeOfDay": 0,
-    "name": "Michigan+International+Speedway",
-    "id": 124,
-    "lowername": "michigan+international+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 13,
-    "pkgid": 115,
-    "timeOfDay": 3,
-    "name": "Iowa+Speedway",
-    "id": 169,
-    "lowername": "iowa+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 14,
-    "pkgid": 120,
-    "timeOfDay": 3,
-    "name": "Daytona+International+Speedway",
-    "id": 191,
-    "lowername": "daytona+international+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 15,
-    "pkgid": 118,
-    "timeOfDay": 3,
-    "name": "Kentucky+Speedway",
-    "id": 188,
-    "lowername": "kentucky+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 16,
-    "pkgid": 72,
-    "timeOfDay": 0,
-    "name": "New+Hampshire+Motor+Speedway",
-    "id": 131,
-    "lowername": "new+hampshire+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 17,
-    "pkgid": 73,
-    "timeOfDay": 0,
-    "name": "Indianapolis+Motor+Speedway",
-    "id": 133,
-    "lowername": "indianapolis+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 18,
-    "pkgid": 115,
-    "timeOfDay": 3,
-    "name": "Iowa+Speedway",
-    "id": 169,
-    "lowername": "iowa+speedway"
-  }, {
-    "config": "Cup",
-    "priority": 1,
-    "raceweek": 19,
-    "pkgid": 56,
-    "timeOfDay": 0,
-    "name": "Watkins+Glen+International",
-    "id": 106,
-    "lowername": "watkins+glen+international"
-  }, {
-    "config": "Full+Course",
-    "priority": 1,
-    "raceweek": 20,
-    "pkgid": 96,
-    "timeOfDay": 0,
-    "name": "Mid-Ohio+Sports+Car+Course",
-    "id": 153,
-    "lowername": "mid-ohio+sports+car+course"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 21,
-    "pkgid": 43,
-    "timeOfDay": 3,
-    "name": "Bristol+Motor+Speedway",
-    "id": 101,
-    "lowername": "bristol+motor+speedway"
-  }, {
-    "config": "Full+Course",
-    "priority": 1,
-    "raceweek": 22,
-    "pkgid": 11,
-    "timeOfDay": 0,
-    "name": "Road+America",
-    "id": 18,
-    "lowername": "road+america"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 23,
-    "pkgid": 59,
-    "timeOfDay": 0,
-    "name": "Darlington+Raceway",
-    "id": 115,
-    "lowername": "darlington+raceway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 24,
-    "pkgid": 23,
-    "timeOfDay": 3,
-    "name": "Richmond+International+Raceway",
-    "id": 31,
-    "lowername": "richmond+international+raceway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 25,
-    "pkgid": 65,
-    "timeOfDay": 0,
-    "name": "Chicagoland+Speedway",
-    "id": 123,
-    "lowername": "chicagoland+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 26,
-    "pkgid": 118,
-    "timeOfDay": 3,
-    "name": "Kentucky+Speedway",
-    "id": 188,
-    "lowername": "kentucky+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 27,
-    "pkgid": 100,
-    "timeOfDay": 0,
-    "name": "Dover+International+Speedway",
-    "id": 162,
-    "lowername": "dover+international+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 28,
-    "pkgid": 31,
-    "timeOfDay": 3,
-    "name": "Charlotte+Motor+Speedway",
-    "id": 40,
-    "lowername": "charlotte+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 29,
-    "pkgid": 142,
-    "timeOfDay": 0,
-    "name": "Kansas+Speedway",
-    "id": 214,
-    "lowername": "kansas+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 30,
-    "pkgid": 61,
-    "timeOfDay": 0,
-    "name": "Texas+Motor+Speedway",
-    "id": 121,
-    "lowername": "texas+motor+speedway"
-  }, {
-    "config": "Oval+w%2Fopen+dogleg",
-    "priority": 1,
-    "raceweek": 31,
-    "pkgid": 163,
-    "timeOfDay": 0,
-    "name": "Phoenix+International+Raceway",
-    "id": 236,
-    "lowername": "phoenix+international+raceway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 32,
-    "pkgid": 5,
-    "timeOfDay": 0,
-    "name": "Homestead+Miami+Speedway",
-    "id": 20,
-    "lowername": "homestead+miami+speedway"
-  }],
-  "isClubAllowed": true,
-  "serieslicgroupid": 4,
-  "restrictedByMember": false,
-  "lowerseriesshortname": "nascar+iracing+class+b",
-  "allowedMembers": [],
-  "carclasses": [{
-    "carsinclass": [{
-      "name": "NASCAR+XFINITY+Ford+Mustang",
-      "id": 51
-    }, {
-      "name": "NASCAR+XFINITY+Chevrolet+Camaro",
-      "id": 58
-    }, {
-      "name": "NASCAR+XFINITY+Toyota+Camry",
-      "id": 69
-    }],
-    "shortname": "Xfinity+Series",
-    "name": "Xfinity+Series",
-    "id": 57,
-    "lowername": "xfinity+series"
-  }],
-  "currentTrack": 188,
-  "seriesid": 62,
-  "driverChangeRule": 0,
-  "licgroupid": 3,
-  "ignoreLicenseForPractice": true,
-  "isWorldCup": false,
-  "islite": false,
-  "rookieseason": "",
-  "end": 1479790800000,
-  "cars": [{
-    "pkgid": 149,
-    "name": "NASCAR+XFINITY+Ford+Mustang",
-    "id": 51,
-    "lowername": "nascar+xfinity+ford+mustang",
-    "sku": 10409
-  }, {
-    "pkgid": 165,
-    "name": "NASCAR+XFINITY+Chevrolet+Camaro",
-    "id": 58,
-    "lowername": "nascar+xfinity+chevrolet+camaro",
-    "sku": 10373
-  }, {
-    "pkgid": 190,
-    "name": "NASCAR+XFINITY+Toyota+Camry",
-    "id": 69,
-    "lowername": "nascar+xfinity+toyota+camry",
-    "sku": 10399
-  }],
-  "carNumberMap": {
-    "carNumberMap": {}
-  },
-  "multiclass": false,
-  "isRegionCompetition": true,
-  "start": 1455598800000,
-  "lowerseasonshortname": "2016+season",
-  "maxTeamDrivers": 1,
-  "quarter": 2,
-  "seriesshortname": "NASCAR+iRacing+Class+B",
-  "catid": 1,
-  "minsr": "4.0",
-  "isFixedSetup": false,
-  "isOfficial": true,
-  "minlicenselevel": 12,
-  "cautionTypeOval": 3,
-  "licenseEligible": false,
-  "complete": false,
-  "driverChanges": false,
-  "minTeamDrivers": 1,
-  "year": 2016,
-  "restrictedToCar": false,
-  "seasonid": 1521,
-  "category": 1
-}, {
-  "prefimg": "",
   "seriesname": "NASCAR+iRacing+Class+B+Fixed",
   "seasonshortname": "2016+Season+4+Fixed",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_103%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -7020,7 +6393,7 @@
     "id": 57,
     "lowername": "xfinity+series"
   }],
-  "currentTrack": 188,
+  "currentTrack": -1,
   "seriesid": 103,
   "driverChangeRule": 0,
   "licgroupid": 3,
@@ -7074,445 +6447,11 @@
   "category": 1
 }, {
   "prefimg": "",
-  "seriesname": "NASCAR+iRacing+Class+C",
-  "seasonshortname": "2016+Season",
-  "whatshotimg": "member_images%2Fseries%2Fseriesid_47%2Fwhats_hot.jpg",
-  "cautionTypeRoad": 2,
-  "raceweek": 32,
-  "active": true,
-  "maxlicenselevel": 28,
-  "tracks": [{
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 0,
-    "pkgid": 120,
-    "timeOfDay": 3,
-    "name": "Daytona+International+Speedway",
-    "id": 191,
-    "lowername": "daytona+international+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 1,
-    "pkgid": 36,
-    "timeOfDay": 0,
-    "name": "Atlanta+Motor+Speedway",
-    "id": 53,
-    "lowername": "atlanta+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 2,
-    "pkgid": 54,
-    "timeOfDay": 0,
-    "name": "Las+Vegas+Motor+Speedway",
-    "id": 103,
-    "lowername": "las+vegas+motor+speedway"
-  }, {
-    "config": "Oval+w%2Fopen+dogleg",
-    "priority": 1,
-    "raceweek": 3,
-    "pkgid": 163,
-    "timeOfDay": 3,
-    "name": "Phoenix+International+Raceway",
-    "id": 236,
-    "lowername": "phoenix+international+raceway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 4,
-    "pkgid": 151,
-    "timeOfDay": 3,
-    "name": "Auto+Club+Speedway",
-    "id": 225,
-    "lowername": "auto+club+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 5,
-    "pkgid": 123,
-    "timeOfDay": 0,
-    "name": "Twin+Ring+Motegi",
-    "id": 198,
-    "lowername": "twin+ring+motegi"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 6,
-    "pkgid": 26,
-    "timeOfDay": 0,
-    "name": "Martinsville+Speedway",
-    "id": 33,
-    "lowername": "martinsville+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 7,
-    "pkgid": 61,
-    "timeOfDay": 0,
-    "name": "Texas+Motor+Speedway",
-    "id": 121,
-    "lowername": "texas+motor+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 8,
-    "pkgid": 43,
-    "timeOfDay": 0,
-    "name": "Bristol+Motor+Speedway",
-    "id": 101,
-    "lowername": "bristol+motor+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 9,
-    "pkgid": 23,
-    "timeOfDay": 0,
-    "name": "Richmond+International+Raceway",
-    "id": 31,
-    "lowername": "richmond+international+raceway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 10,
-    "pkgid": 60,
-    "timeOfDay": 0,
-    "name": "Talladega+Superspeedway",
-    "id": 116,
-    "lowername": "talladega+superspeedway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 11,
-    "pkgid": 142,
-    "timeOfDay": 3,
-    "name": "Kansas+Speedway",
-    "id": 214,
-    "lowername": "kansas+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 12,
-    "pkgid": 100,
-    "timeOfDay": 0,
-    "name": "Dover+International+Speedway",
-    "id": 162,
-    "lowername": "dover+international+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 13,
-    "pkgid": 31,
-    "timeOfDay": 3,
-    "name": "Charlotte+Motor+Speedway",
-    "id": 40,
-    "lowername": "charlotte+motor+speedway"
-  }, {
-    "config": "Oval+-+Left+turning",
-    "priority": 9,
-    "raceweek": 14,
-    "pkgid": 172,
-    "timeOfDay": 0,
-    "name": "Autodromo+Nazionale+Monza",
-    "id": 245,
-    "lowername": "autodromo+nazionale+monza"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 15,
-    "pkgid": 74,
-    "timeOfDay": 0,
-    "name": "Pocono+Raceway",
-    "id": 136,
-    "lowername": "pocono+raceway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 16,
-    "pkgid": 61,
-    "timeOfDay": 0,
-    "name": "Texas+Motor+Speedway",
-    "id": 121,
-    "lowername": "texas+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 17,
-    "pkgid": 115,
-    "timeOfDay": 3,
-    "name": "Iowa+Speedway",
-    "id": 169,
-    "lowername": "iowa+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 18,
-    "pkgid": 169,
-    "timeOfDay": 3,
-    "name": "Gateway+Motorsports+Park",
-    "id": 237,
-    "lowername": "gateway+motorsports+park"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 19,
-    "pkgid": 120,
-    "timeOfDay": 3,
-    "name": "Daytona+International+Speedway",
-    "id": 191,
-    "lowername": "daytona+international+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 20,
-    "pkgid": 118,
-    "timeOfDay": 3,
-    "name": "Kentucky+Speedway",
-    "id": 188,
-    "lowername": "kentucky+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 21,
-    "pkgid": 72,
-    "timeOfDay": 0,
-    "name": "New+Hampshire+Motor+Speedway",
-    "id": 131,
-    "lowername": "new+hampshire+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 22,
-    "pkgid": 73,
-    "timeOfDay": 0,
-    "name": "Indianapolis+Motor+Speedway",
-    "id": 133,
-    "lowername": "indianapolis+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 23,
-    "pkgid": 74,
-    "timeOfDay": 0,
-    "name": "Pocono+Raceway",
-    "id": 136,
-    "lowername": "pocono+raceway"
-  }, {
-    "config": "Cup",
-    "priority": 1,
-    "raceweek": 24,
-    "pkgid": 56,
-    "timeOfDay": 0,
-    "name": "Watkins+Glen+International",
-    "id": 106,
-    "lowername": "watkins+glen+international"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 25,
-    "pkgid": 55,
-    "timeOfDay": 0,
-    "name": "Phoenix+International+Raceway+-+2008",
-    "id": 104,
-    "lowername": "phoenix+international+raceway+-+2008"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 26,
-    "pkgid": 43,
-    "timeOfDay": 3,
-    "name": "Bristol+Motor+Speedway",
-    "id": 101,
-    "lowername": "bristol+motor+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 27,
-    "pkgid": 66,
-    "timeOfDay": 0,
-    "name": "Michigan+International+Speedway",
-    "id": 124,
-    "lowername": "michigan+international+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 28,
-    "pkgid": 90,
-    "timeOfDay": 0,
-    "name": "Canadian+Tire+Motorsports+Park",
-    "id": 144,
-    "lowername": "canadian+tire+motorsports+park"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 29,
-    "pkgid": 23,
-    "timeOfDay": 3,
-    "name": "Richmond+International+Raceway",
-    "id": 31,
-    "lowername": "richmond+international+raceway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 30,
-    "pkgid": 65,
-    "timeOfDay": 0,
-    "name": "Chicagoland+Speedway",
-    "id": 123,
-    "lowername": "chicagoland+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 31,
-    "pkgid": 72,
-    "timeOfDay": 0,
-    "name": "New+Hampshire+Motor+Speedway",
-    "id": 131,
-    "lowername": "new+hampshire+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 32,
-    "pkgid": 54,
-    "timeOfDay": 0,
-    "name": "Las+Vegas+Motor+Speedway",
-    "id": 103,
-    "lowername": "las+vegas+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 33,
-    "pkgid": 31,
-    "timeOfDay": 3,
-    "name": "Charlotte+Motor+Speedway",
-    "id": 40,
-    "lowername": "charlotte+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 34,
-    "pkgid": 142,
-    "timeOfDay": 3,
-    "name": "Kansas+Speedway",
-    "id": 214,
-    "lowername": "kansas+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 35,
-    "pkgid": 60,
-    "timeOfDay": 0,
-    "name": "Talladega+Superspeedway",
-    "id": 116,
-    "lowername": "talladega+superspeedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 36,
-    "pkgid": 26,
-    "timeOfDay": 0,
-    "name": "Martinsville+Speedway",
-    "id": 33,
-    "lowername": "martinsville+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 37,
-    "pkgid": 61,
-    "timeOfDay": 0,
-    "name": "Texas+Motor+Speedway",
-    "id": 121,
-    "lowername": "texas+motor+speedway"
-  }, {
-    "config": "Oval+w%2Fopen+dogleg",
-    "priority": 1,
-    "raceweek": 38,
-    "pkgid": 163,
-    "timeOfDay": 3,
-    "name": "Phoenix+International+Raceway",
-    "id": 236,
-    "lowername": "phoenix+international+raceway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 39,
-    "pkgid": 5,
-    "timeOfDay": 0,
-    "name": "Homestead+Miami+Speedway",
-    "id": 20,
-    "lowername": "homestead+miami+speedway"
-  }],
-  "isClubAllowed": true,
-  "serieslicgroupid": 3,
-  "restrictedByMember": false,
-  "lowerseriesshortname": "nascar+iracing+class+c",
-  "allowedMembers": [],
-  "carclasses": [{
-    "carsinclass": [{
-      "name": "NASCAR+Camping+World+Toyota+Tundra",
-      "id": 62
-    }, {
-      "name": "NASCAR+Camping+World+Chevrolet+Silverado",
-      "id": 63
-    }],
-    "shortname": "Camping+Series",
-    "name": "Camping+World+Series",
-    "id": 71,
-    "lowername": "camping+world+series"
-  }],
-  "currentTrack": 131,
-  "seriesid": 47,
-  "driverChangeRule": 0,
-  "licgroupid": 2,
-  "ignoreLicenseForPractice": true,
-  "isWorldCup": false,
-  "islite": false,
-  "rookieseason": "",
-  "end": 1479790800000,
-  "cars": [{
-    "pkgid": 175,
-    "name": "NASCAR+Camping+World+Toyota+Tundra",
-    "id": 62,
-    "lowername": "nascar+camping+world+toyota+tundra",
-    "sku": 10386
-  }, {
-    "pkgid": 177,
-    "name": "NASCAR+Camping+World+Chevrolet+Silverado",
-    "id": 63,
-    "lowername": "nascar+camping+world+chevrolet+silverado",
-    "sku": 10387
-  }],
-  "carNumberMap": {
-    "carNumberMap": {}
-  },
-  "multiclass": false,
-  "isRegionCompetition": true,
-  "start": 1455598800000,
-  "lowerseasonshortname": "2016+season",
-  "maxTeamDrivers": 1,
-  "quarter": 2,
-  "seriesshortname": "NASCAR+iRacing+Class+C",
-  "catid": 1,
-  "minsr": "4.0",
-  "isFixedSetup": false,
-  "isOfficial": true,
-  "minlicenselevel": 8,
-  "cautionTypeOval": 3,
-  "licenseEligible": true,
-  "complete": false,
-  "driverChanges": false,
-  "minTeamDrivers": 1,
-  "year": 2016,
-  "restrictedToCar": false,
-  "seasonid": 1522,
-  "category": 1
-}, {
-  "prefimg": "",
   "seriesname": "NASCAR+iRacing+Class+C+Fixed",
   "seasonshortname": "2016+Season+4+Fixed",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_164%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -7642,7 +6581,7 @@
     "id": 71,
     "lowername": "camping+world+series"
   }],
-  "currentTrack": 131,
+  "currentTrack": -1,
   "seriesid": 164,
   "driverChangeRule": 0,
   "licgroupid": 2,
@@ -7694,7 +6633,7 @@
   "seasonshortname": "2016+Season+4+Fixed",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_167%2Fwhats_hot.jpg",
   "cautionTypeRoad": 0,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -7821,7 +6760,7 @@
     "id": 21,
     "lowername": "k%26n+series"
   }],
-  "currentTrack": 40,
+  "currentTrack": -1,
   "seriesid": 167,
   "driverChangeRule": 0,
   "licgroupid": 1,
@@ -7862,343 +6801,100 @@
   "seasonid": 1631,
   "category": 1
 }, {
-  "prefimg": "",
-  "seriesname": "NASCAR+iRacing+Series+-+Fixed",
+  "prefimg": "member_images%2Fseries%2Fproseriesoval%2Fsp_o_pro_impalass.",
+  "seriesname": "NASCAR+iRacing+Pro+Series",
   "seasonshortname": "2016+Season",
-  "whatshotimg": "member_images%2Fseries%2Fseriesid_207%2Fwhats_hot.jpg",
+  "whatshotimg": "member_images%2Fseries%2Fproseriesoval%2Fstats_impala.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 28,
+  "raceweek": 5,
   "active": true,
-  "maxlicenselevel": 28,
+  "maxlicenselevel": 20,
   "tracks": [{
     "config": "Oval",
-    "priority": 0,
+    "priority": 1,
     "raceweek": 0,
-    "pkgid": 120,
+    "pkgid": 61,
     "timeOfDay": 0,
-    "name": "Daytona+International+Speedway",
-    "id": 191,
-    "lowername": "daytona+international+speedway"
+    "name": "Texas+Motor+Speedway",
+    "id": 121,
+    "lowername": "texas+motor+speedway"
+  }, {
+    "config": "Oval+w%2Fopen+dogleg",
+    "priority": 1,
+    "raceweek": 1,
+    "pkgid": 163,
+    "timeOfDay": 3,
+    "name": "Phoenix+International+Raceway",
+    "id": 236,
+    "lowername": "phoenix+international+raceway"
   }, {
     "config": "Oval",
     "priority": 1,
-    "raceweek": 1,
+    "raceweek": 2,
+    "pkgid": 5,
+    "timeOfDay": 0,
+    "name": "Homestead+Miami+Speedway",
+    "id": 20,
+    "lowername": "homestead+miami+speedway"
+  }, {
+    "config": "Oval",
+    "priority": 0,
+    "raceweek": 3,
+    "pkgid": 151,
+    "timeOfDay": 3,
+    "name": "Auto+Club+Speedway",
+    "id": 225,
+    "lowername": "auto+club+speedway"
+  }, {
+    "config": "Oval",
+    "priority": 1,
+    "raceweek": 4,
     "pkgid": 36,
     "timeOfDay": 0,
     "name": "Atlanta+Motor+Speedway",
     "id": 53,
     "lowername": "atlanta+motor+speedway"
   }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 2,
-    "pkgid": 54,
-    "timeOfDay": 0,
-    "name": "Las+Vegas+Motor+Speedway",
-    "id": 103,
-    "lowername": "las+vegas+motor+speedway"
-  }, {
-    "config": "Oval+w%2Fopen+dogleg",
-    "priority": 1,
-    "raceweek": 3,
-    "pkgid": 163,
-    "timeOfDay": 0,
-    "name": "Phoenix+International+Raceway",
-    "id": 236,
-    "lowername": "phoenix+international+raceway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 4,
-    "pkgid": 151,
-    "timeOfDay": 0,
-    "name": "Auto+Club+Speedway",
-    "id": 225,
-    "lowername": "auto+club+speedway"
-  }, {
     "config": "",
     "priority": 0,
     "raceweek": 5,
-    "pkgid": 26,
-    "timeOfDay": 0,
-    "name": "Martinsville+Speedway",
-    "id": 33,
-    "lowername": "martinsville+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 6,
-    "pkgid": 61,
-    "timeOfDay": 0,
-    "name": "Texas+Motor+Speedway",
-    "id": 121,
-    "lowername": "texas+motor+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 7,
-    "pkgid": 43,
-    "timeOfDay": 0,
-    "name": "Bristol+Motor+Speedway",
-    "id": 101,
-    "lowername": "bristol+motor+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 8,
-    "pkgid": 23,
-    "timeOfDay": 0,
-    "name": "Richmond+International+Raceway",
-    "id": 31,
-    "lowername": "richmond+international+raceway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 9,
-    "pkgid": 60,
-    "timeOfDay": 0,
-    "name": "Talladega+Superspeedway",
-    "id": 116,
-    "lowername": "talladega+superspeedway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 10,
-    "pkgid": 142,
-    "timeOfDay": 3,
-    "name": "Kansas+Speedway",
-    "id": 214,
-    "lowername": "kansas+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 11,
-    "pkgid": 100,
-    "timeOfDay": 0,
-    "name": "Dover+International+Speedway",
-    "id": 162,
-    "lowername": "dover+international+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 12,
-    "pkgid": 31,
-    "timeOfDay": 3,
-    "name": "Charlotte+Motor+Speedway",
-    "id": 40,
-    "lowername": "charlotte+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 13,
-    "pkgid": 74,
-    "timeOfDay": 0,
-    "name": "Pocono+Raceway",
-    "id": 136,
-    "lowername": "pocono+raceway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 14,
-    "pkgid": 66,
-    "timeOfDay": 0,
-    "name": "Michigan+International+Speedway",
-    "id": 124,
-    "lowername": "michigan+international+speedway"
-  }, {
-    "config": "Cup",
-    "priority": 2,
-    "raceweek": 15,
-    "pkgid": 35,
-    "timeOfDay": 0,
-    "name": "Sonoma+Raceway",
-    "id": 48,
-    "lowername": "sonoma+raceway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 16,
-    "pkgid": 120,
-    "timeOfDay": 3,
-    "name": "Daytona+International+Speedway",
-    "id": 191,
-    "lowername": "daytona+international+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 17,
-    "pkgid": 118,
-    "timeOfDay": 3,
-    "name": "Kentucky+Speedway",
-    "id": 188,
-    "lowername": "kentucky+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 18,
-    "pkgid": 72,
-    "timeOfDay": 0,
-    "name": "New+Hampshire+Motor+Speedway",
-    "id": 131,
-    "lowername": "new+hampshire+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 19,
-    "pkgid": 73,
-    "timeOfDay": 0,
-    "name": "Indianapolis+Motor+Speedway",
-    "id": 133,
-    "lowername": "indianapolis+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 20,
-    "pkgid": 74,
-    "timeOfDay": 0,
-    "name": "Pocono+Raceway",
-    "id": 136,
-    "lowername": "pocono+raceway"
-  }, {
-    "config": "Cup",
-    "priority": 1,
-    "raceweek": 21,
-    "pkgid": 56,
-    "timeOfDay": 0,
-    "name": "Watkins+Glen+International",
-    "id": 106,
-    "lowername": "watkins+glen+international"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 22,
-    "pkgid": 43,
-    "timeOfDay": 3,
-    "name": "Bristol+Motor+Speedway",
-    "id": 101,
-    "lowername": "bristol+motor+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 23,
-    "pkgid": 66,
-    "timeOfDay": 0,
-    "name": "Michigan+International+Speedway",
-    "id": 124,
-    "lowername": "michigan+international+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 24,
     "pkgid": 59,
     "timeOfDay": 0,
     "name": "Darlington+Raceway",
     "id": 115,
     "lowername": "darlington+raceway"
   }, {
+    "config": "Cup",
+    "priority": 2,
+    "raceweek": 6,
+    "pkgid": 35,
+    "timeOfDay": 0,
+    "name": "Sonoma+Raceway",
+    "id": 48,
+    "lowername": "sonoma+raceway"
+  }, {
     "config": "",
     "priority": 0,
-    "raceweek": 25,
+    "raceweek": 7,
     "pkgid": 23,
     "timeOfDay": 3,
     "name": "Richmond+International+Raceway",
     "id": 31,
     "lowername": "richmond+international+raceway"
   }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 26,
-    "pkgid": 65,
-    "timeOfDay": 0,
-    "name": "Chicagoland+Speedway",
-    "id": 123,
-    "lowername": "chicagoland+speedway"
-  }, {
     "config": "Oval",
-    "priority": 1,
-    "raceweek": 27,
-    "pkgid": 72,
-    "timeOfDay": 0,
-    "name": "New+Hampshire+Motor+Speedway",
-    "id": 131,
-    "lowername": "new+hampshire+motor+speedway"
-  }, {
-    "config": "",
     "priority": 0,
-    "raceweek": 28,
-    "pkgid": 100,
-    "timeOfDay": 0,
-    "name": "Dover+International+Speedway",
-    "id": 162,
-    "lowername": "dover+international+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 29,
-    "pkgid": 31,
+    "raceweek": 8,
+    "pkgid": 120,
     "timeOfDay": 3,
-    "name": "Charlotte+Motor+Speedway",
-    "id": 40,
-    "lowername": "charlotte+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 30,
-    "pkgid": 142,
-    "timeOfDay": 0,
-    "name": "Kansas+Speedway",
-    "id": 214,
-    "lowername": "kansas+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 31,
-    "pkgid": 60,
-    "timeOfDay": 0,
-    "name": "Talladega+Superspeedway",
-    "id": 116,
-    "lowername": "talladega+superspeedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 32,
-    "pkgid": 26,
-    "timeOfDay": 0,
-    "name": "Martinsville+Speedway",
-    "id": 33,
-    "lowername": "martinsville+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 33,
-    "pkgid": 61,
-    "timeOfDay": 0,
-    "name": "Texas+Motor+Speedway",
-    "id": 121,
-    "lowername": "texas+motor+speedway"
-  }, {
-    "config": "Oval+w%2Fopen+dogleg",
-    "priority": 1,
-    "raceweek": 34,
-    "pkgid": 163,
-    "timeOfDay": 0,
-    "name": "Phoenix+International+Raceway",
-    "id": 236,
-    "lowername": "phoenix+international+raceway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 35,
-    "pkgid": 5,
-    "timeOfDay": 0,
-    "name": "Homestead+Miami+Speedway",
-    "id": 20,
-    "lowername": "homestead+miami+speedway"
+    "name": "Daytona+International+Speedway",
+    "id": 191,
+    "lowername": "daytona+international+speedway"
   }],
   "isClubAllowed": true,
-  "serieslicgroupid": 3,
+  "serieslicgroupid": 5,
   "restrictedByMember": false,
-  "lowerseriesshortname": "nascar+iracing+series+-+fixed",
+  "lowerseriesshortname": "nascar+iracing+pro+series",
   "allowedMembers": [],
   "carclasses": [{
     "carsinclass": [{
@@ -8216,15 +6912,15 @@
     "id": 50,
     "lowername": "sprint+cup"
   }],
-  "currentTrack": 131,
-  "seriesid": 207,
+  "currentTrack": 53,
+  "seriesid": 95,
   "driverChangeRule": 0,
-  "licgroupid": 2,
+  "licgroupid": 4,
   "ignoreLicenseForPractice": false,
   "isWorldCup": false,
   "islite": false,
   "rookieseason": "",
-  "end": 1479790800000,
+  "end": 1485406800000,
   "cars": [{
     "pkgid": 139,
     "name": "NASCAR+Sprint+Cup+Chevrolet+SS",
@@ -8249,431 +6945,24 @@
   },
   "multiclass": false,
   "isRegionCompetition": false,
-  "start": 1455598800000,
+  "start": 1478581200000,
   "lowerseasonshortname": "2016+season",
   "maxTeamDrivers": 1,
-  "quarter": 1,
-  "seriesshortname": "NASCAR+iRacing+Series+-+Fixed",
-  "catid": 1,
-  "minsr": "4.0",
-  "isFixedSetup": true,
-  "isOfficial": true,
-  "minlicenselevel": 8,
-  "cautionTypeOval": 3,
-  "licenseEligible": true,
-  "complete": false,
-  "driverChanges": false,
-  "minTeamDrivers": 1,
-  "year": 2016,
-  "restrictedToCar": false,
-  "seasonid": 1520,
-  "category": 1
-}, {
-  "prefimg": "",
-  "seriesname": "NASCAR+iRacing+Series+-+Open",
-  "seasonshortname": "2016+Season",
-  "whatshotimg": "member_images%2Fseries%2Fseriesid_229%2Fwhats_hot.jpg",
-  "cautionTypeRoad": 2,
-  "raceweek": 28,
-  "active": true,
-  "maxlicenselevel": 28,
-  "tracks": [{
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 0,
-    "pkgid": 120,
-    "timeOfDay": 0,
-    "name": "Daytona+International+Speedway",
-    "id": 191,
-    "lowername": "daytona+international+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 1,
-    "pkgid": 36,
-    "timeOfDay": 0,
-    "name": "Atlanta+Motor+Speedway",
-    "id": 53,
-    "lowername": "atlanta+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 2,
-    "pkgid": 54,
-    "timeOfDay": 0,
-    "name": "Las+Vegas+Motor+Speedway",
-    "id": 103,
-    "lowername": "las+vegas+motor+speedway"
-  }, {
-    "config": "Oval+w%2Fopen+dogleg",
-    "priority": 1,
-    "raceweek": 3,
-    "pkgid": 163,
-    "timeOfDay": 0,
-    "name": "Phoenix+International+Raceway",
-    "id": 236,
-    "lowername": "phoenix+international+raceway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 4,
-    "pkgid": 151,
-    "timeOfDay": 0,
-    "name": "Auto+Club+Speedway",
-    "id": 225,
-    "lowername": "auto+club+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 5,
-    "pkgid": 26,
-    "timeOfDay": 0,
-    "name": "Martinsville+Speedway",
-    "id": 33,
-    "lowername": "martinsville+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 6,
-    "pkgid": 61,
-    "timeOfDay": 0,
-    "name": "Texas+Motor+Speedway",
-    "id": 121,
-    "lowername": "texas+motor+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 7,
-    "pkgid": 43,
-    "timeOfDay": 0,
-    "name": "Bristol+Motor+Speedway",
-    "id": 101,
-    "lowername": "bristol+motor+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 8,
-    "pkgid": 23,
-    "timeOfDay": 0,
-    "name": "Richmond+International+Raceway",
-    "id": 31,
-    "lowername": "richmond+international+raceway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 9,
-    "pkgid": 60,
-    "timeOfDay": 0,
-    "name": "Talladega+Superspeedway",
-    "id": 116,
-    "lowername": "talladega+superspeedway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 10,
-    "pkgid": 142,
-    "timeOfDay": 3,
-    "name": "Kansas+Speedway",
-    "id": 214,
-    "lowername": "kansas+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 11,
-    "pkgid": 100,
-    "timeOfDay": 0,
-    "name": "Dover+International+Speedway",
-    "id": 162,
-    "lowername": "dover+international+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 12,
-    "pkgid": 31,
-    "timeOfDay": 3,
-    "name": "Charlotte+Motor+Speedway",
-    "id": 40,
-    "lowername": "charlotte+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 13,
-    "pkgid": 74,
-    "timeOfDay": 0,
-    "name": "Pocono+Raceway",
-    "id": 136,
-    "lowername": "pocono+raceway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 14,
-    "pkgid": 66,
-    "timeOfDay": 0,
-    "name": "Michigan+International+Speedway",
-    "id": 124,
-    "lowername": "michigan+international+speedway"
-  }, {
-    "config": "Cup",
-    "priority": 2,
-    "raceweek": 15,
-    "pkgid": 35,
-    "timeOfDay": 0,
-    "name": "Sonoma+Raceway",
-    "id": 48,
-    "lowername": "sonoma+raceway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 16,
-    "pkgid": 120,
-    "timeOfDay": 3,
-    "name": "Daytona+International+Speedway",
-    "id": 191,
-    "lowername": "daytona+international+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 17,
-    "pkgid": 118,
-    "timeOfDay": 3,
-    "name": "Kentucky+Speedway",
-    "id": 188,
-    "lowername": "kentucky+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 18,
-    "pkgid": 72,
-    "timeOfDay": 0,
-    "name": "New+Hampshire+Motor+Speedway",
-    "id": 131,
-    "lowername": "new+hampshire+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 19,
-    "pkgid": 73,
-    "timeOfDay": 0,
-    "name": "Indianapolis+Motor+Speedway",
-    "id": 133,
-    "lowername": "indianapolis+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 20,
-    "pkgid": 74,
-    "timeOfDay": 0,
-    "name": "Pocono+Raceway",
-    "id": 136,
-    "lowername": "pocono+raceway"
-  }, {
-    "config": "Cup",
-    "priority": 1,
-    "raceweek": 21,
-    "pkgid": 56,
-    "timeOfDay": 0,
-    "name": "Watkins+Glen+International",
-    "id": 106,
-    "lowername": "watkins+glen+international"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 22,
-    "pkgid": 43,
-    "timeOfDay": 3,
-    "name": "Bristol+Motor+Speedway",
-    "id": 101,
-    "lowername": "bristol+motor+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 23,
-    "pkgid": 66,
-    "timeOfDay": 0,
-    "name": "Michigan+International+Speedway",
-    "id": 124,
-    "lowername": "michigan+international+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 24,
-    "pkgid": 59,
-    "timeOfDay": 0,
-    "name": "Darlington+Raceway",
-    "id": 115,
-    "lowername": "darlington+raceway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 25,
-    "pkgid": 23,
-    "timeOfDay": 3,
-    "name": "Richmond+International+Raceway",
-    "id": 31,
-    "lowername": "richmond+international+raceway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 26,
-    "pkgid": 65,
-    "timeOfDay": 0,
-    "name": "Chicagoland+Speedway",
-    "id": 123,
-    "lowername": "chicagoland+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 27,
-    "pkgid": 72,
-    "timeOfDay": 0,
-    "name": "New+Hampshire+Motor+Speedway",
-    "id": 131,
-    "lowername": "new+hampshire+motor+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 28,
-    "pkgid": 100,
-    "timeOfDay": 0,
-    "name": "Dover+International+Speedway",
-    "id": 162,
-    "lowername": "dover+international+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 29,
-    "pkgid": 31,
-    "timeOfDay": 3,
-    "name": "Charlotte+Motor+Speedway",
-    "id": 40,
-    "lowername": "charlotte+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 30,
-    "pkgid": 142,
-    "timeOfDay": 3,
-    "name": "Kansas+Speedway",
-    "id": 214,
-    "lowername": "kansas+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 31,
-    "pkgid": 60,
-    "timeOfDay": 0,
-    "name": "Talladega+Superspeedway",
-    "id": 116,
-    "lowername": "talladega+superspeedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 32,
-    "pkgid": 26,
-    "timeOfDay": 0,
-    "name": "Martinsville+Speedway",
-    "id": 33,
-    "lowername": "martinsville+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 33,
-    "pkgid": 61,
-    "timeOfDay": 0,
-    "name": "Texas+Motor+Speedway",
-    "id": 121,
-    "lowername": "texas+motor+speedway"
-  }, {
-    "config": "Oval+w%2Fopen+dogleg",
-    "priority": 1,
-    "raceweek": 34,
-    "pkgid": 163,
-    "timeOfDay": 3,
-    "name": "Phoenix+International+Raceway",
-    "id": 236,
-    "lowername": "phoenix+international+raceway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 35,
-    "pkgid": 5,
-    "timeOfDay": 0,
-    "name": "Homestead+Miami+Speedway",
-    "id": 20,
-    "lowername": "homestead+miami+speedway"
-  }],
-  "isClubAllowed": true,
-  "serieslicgroupid": 3,
-  "restrictedByMember": false,
-  "lowerseriesshortname": "nascar+iracing+series+-+open",
-  "allowedMembers": [],
-  "carclasses": [{
-    "carsinclass": [{
-      "name": "NASCAR+Sprint+Cup+Chevrolet+SS",
-      "id": 45
-    }, {
-      "name": "NASCAR+Sprint+Cup+Ford+Fusion",
-      "id": 46
-    }, {
-      "name": "NASCAR+Sprint+Cup+Toyota+Camry",
-      "id": 56
-    }],
-    "shortname": "Sprint+Cup",
-    "name": "Sprint+Cup",
-    "id": 50,
-    "lowername": "sprint+cup"
-  }],
-  "currentTrack": 131,
-  "seriesid": 229,
-  "driverChangeRule": 0,
-  "licgroupid": 2,
-  "ignoreLicenseForPractice": false,
-  "isWorldCup": false,
-  "islite": false,
-  "rookieseason": "",
-  "end": 1479790800000,
-  "cars": [{
-    "pkgid": 139,
-    "name": "NASCAR+Sprint+Cup+Chevrolet+SS",
-    "id": 45,
-    "lowername": "nascar+sprint+cup+chevrolet+ss",
-    "sku": 10344
-  }, {
-    "pkgid": 141,
-    "name": "NASCAR+Sprint+Cup+Ford+Fusion",
-    "id": 46,
-    "lowername": "nascar+sprint+cup+ford+fusion",
-    "sku": 10408
-  }, {
-    "pkgid": 158,
-    "name": "NASCAR+Sprint+Cup+Toyota+Camry",
-    "id": 56,
-    "lowername": "nascar+sprint+cup+toyota+camry",
-    "sku": 10363
-  }],
-  "carNumberMap": {
-    "carNumberMap": {}
-  },
-  "multiclass": false,
-  "isRegionCompetition": false,
-  "start": 1455598800000,
-  "lowerseasonshortname": "2016+season",
-  "maxTeamDrivers": 1,
-  "quarter": 1,
-  "seriesshortname": "NASCAR+iRacing+Series+-+Open",
+  "quarter": 4,
+  "seriesshortname": "NASCAR+iRacing+Pro+Series",
   "catid": 1,
   "minsr": "4.0",
   "isFixedSetup": false,
   "isOfficial": true,
-  "minlicenselevel": 8,
+  "minlicenselevel": 16,
   "cautionTypeOval": 3,
-  "licenseEligible": true,
+  "licenseEligible": false,
   "complete": false,
   "driverChanges": false,
   "minTeamDrivers": 1,
   "year": 2016,
   "restrictedToCar": false,
-  "seasonid": 1519,
+  "seasonid": 1680,
   "category": 1
 }, {
   "prefimg": "member_images%2Fseries%2Ftour%2Fsp_o_tour.gif",
@@ -8681,7 +6970,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Ftour%2Fstats_tour.jpg",
   "cautionTypeRoad": 0,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -8734,7 +7023,7 @@
     "priority": 0,
     "raceweek": 5,
     "pkgid": 100,
-    "timeOfDay": 2,
+    "timeOfDay": 0,
     "name": "Dover+International+Speedway",
     "id": 162,
     "lowername": "dover+international+speedway"
@@ -8808,7 +7097,7 @@
     "id": 29,
     "lowername": "whelen+modified"
   }],
-  "currentTrack": 17,
+  "currentTrack": -1,
   "seriesid": 102,
   "driverChangeRule": 0,
   "licgroupid": 2,
@@ -8849,239 +7138,12 @@
   "seasonid": 1641,
   "category": 1
 }, {
-  "prefimg": "",
-  "seriesname": "NASCAR+PEAK+Antifreeze+Series",
-  "seasonshortname": "2016+Season",
-  "whatshotimg": "member_images%2Fseries%2Fnascarpeakantifreeze%2Fwhats_hot.jpg",
-  "cautionTypeRoad": 2,
-  "raceweek": 15,
-  "active": true,
-  "maxlicenselevel": 28,
-  "tracks": [{
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 0,
-    "pkgid": 120,
-    "timeOfDay": 0,
-    "name": "Daytona+International+Speedway",
-    "id": 191,
-    "lowername": "daytona+international+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 1,
-    "pkgid": 36,
-    "timeOfDay": 0,
-    "name": "Atlanta+Motor+Speedway",
-    "id": 53,
-    "lowername": "atlanta+motor+speedway"
-  }, {
-    "config": "Oval+w%2Fopen+dogleg",
-    "priority": 1,
-    "raceweek": 2,
-    "pkgid": 163,
-    "timeOfDay": 0,
-    "name": "Phoenix+International+Raceway",
-    "id": 236,
-    "lowername": "phoenix+international+raceway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 3,
-    "pkgid": 151,
-    "timeOfDay": 0,
-    "name": "Auto+Club+Speedway",
-    "id": 225,
-    "lowername": "auto+club+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 4,
-    "pkgid": 61,
-    "timeOfDay": 0,
-    "name": "Texas+Motor+Speedway",
-    "id": 121,
-    "lowername": "texas+motor+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 5,
-    "pkgid": 23,
-    "timeOfDay": 0,
-    "name": "Richmond+International+Raceway",
-    "id": 31,
-    "lowername": "richmond+international+raceway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 6,
-    "pkgid": 54,
-    "timeOfDay": 0,
-    "name": "Las+Vegas+Motor+Speedway",
-    "id": 103,
-    "lowername": "las+vegas+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 7,
-    "pkgid": 31,
-    "timeOfDay": 0,
-    "name": "Charlotte+Motor+Speedway",
-    "id": 40,
-    "lowername": "charlotte+motor+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 8,
-    "pkgid": 65,
-    "timeOfDay": 0,
-    "name": "Chicagoland+Speedway",
-    "id": 123,
-    "lowername": "chicagoland+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 0,
-    "raceweek": 9,
-    "pkgid": 118,
-    "timeOfDay": 0,
-    "name": "Kentucky+Speedway",
-    "id": 188,
-    "lowername": "kentucky+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 10,
-    "pkgid": 73,
-    "timeOfDay": 0,
-    "name": "Indianapolis+Motor+Speedway",
-    "id": 133,
-    "lowername": "indianapolis+motor+speedway"
-  }, {
-    "config": "Cup",
-    "priority": 1,
-    "raceweek": 11,
-    "pkgid": 56,
-    "timeOfDay": 0,
-    "name": "Watkins+Glen+International",
-    "id": 106,
-    "lowername": "watkins+glen+international"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 12,
-    "pkgid": 66,
-    "timeOfDay": 0,
-    "name": "Michigan+International+Speedway",
-    "id": 124,
-    "lowername": "michigan+international+speedway"
-  }, {
-    "config": "",
-    "priority": 0,
-    "raceweek": 13,
-    "pkgid": 59,
-    "timeOfDay": 0,
-    "name": "Darlington+Raceway",
-    "id": 115,
-    "lowername": "darlington+raceway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 14,
-    "pkgid": 72,
-    "timeOfDay": 0,
-    "name": "New+Hampshire+Motor+Speedway",
-    "id": 131,
-    "lowername": "new+hampshire+motor+speedway"
-  }, {
-    "config": "Oval",
-    "priority": 1,
-    "raceweek": 15,
-    "pkgid": 5,
-    "timeOfDay": 0,
-    "name": "Homestead+Miami+Speedway",
-    "id": 20,
-    "lowername": "homestead+miami+speedway"
-  }],
-  "isClubAllowed": true,
-  "serieslicgroupid": 6,
-  "restrictedByMember": false,
-  "lowerseriesshortname": "nascar+peak+antifreeze+series",
-  "allowedMembers": [],
-  "carclasses": [{
-    "carsinclass": [{
-      "name": "NASCAR+Sprint+Cup+Chevrolet+SS",
-      "id": 45
-    }, {
-      "name": "NASCAR+Sprint+Cup+Ford+Fusion",
-      "id": 46
-    }, {
-      "name": "NASCAR+Sprint+Cup+Toyota+Camry",
-      "id": 56
-    }],
-    "shortname": "Sprint+Cup",
-    "name": "Sprint+Cup",
-    "id": 50,
-    "lowername": "sprint+cup"
-  }],
-  "currentTrack": 131,
-  "seriesid": 205,
-  "driverChangeRule": 0,
-  "licgroupid": 6,
-  "ignoreLicenseForPractice": false,
-  "isWorldCup": false,
-  "islite": false,
-  "rookieseason": "",
-  "end": 1476331200000,
-  "cars": [{
-    "pkgid": 139,
-    "name": "NASCAR+Sprint+Cup+Chevrolet+SS",
-    "id": 45,
-    "lowername": "nascar+sprint+cup+chevrolet+ss",
-    "sku": 10344
-  }, {
-    "pkgid": 141,
-    "name": "NASCAR+Sprint+Cup+Ford+Fusion",
-    "id": 46,
-    "lowername": "nascar+sprint+cup+ford+fusion",
-    "sku": 10408
-  }, {
-    "pkgid": 158,
-    "name": "NASCAR+Sprint+Cup+Toyota+Camry",
-    "id": 56,
-    "lowername": "nascar+sprint+cup+toyota+camry",
-    "sku": 10363
-  }],
-  "carNumberMap": {
-    "carNumberMap": {}
-  },
-  "multiclass": false,
-  "isRegionCompetition": false,
-  "start": 1454994000000,
-  "lowerseasonshortname": "2016+season",
-  "maxTeamDrivers": 1,
-  "quarter": 1,
-  "seriesshortname": "NASCAR+PEAK+Antifreeze+Series",
-  "catid": 1,
-  "minsr": "1.0",
-  "isFixedSetup": false,
-  "isOfficial": true,
-  "minlicenselevel": 21,
-  "cautionTypeOval": 3,
-  "licenseEligible": false,
-  "complete": false,
-  "driverChanges": false,
-  "minTeamDrivers": 1,
-  "year": 2016,
-  "restrictedToCar": false,
-  "seasonid": 1516,
-  "category": 1
-}, {
   "prefimg": "member_images%2Fseries%2Fskmodweekly%2Fsp_o_skmodified.gif",
   "seriesname": "NASCAR+SK+Modified+Weekly+Series",
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fskmodweekly%2Fstats_skmodified.jpg",
   "cautionTypeRoad": 0,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -9208,7 +7270,7 @@
     "id": 2,
     "lowername": "sk+modified"
   }],
-  "currentTrack": 11,
+  "currentTrack": -1,
   "seriesid": 45,
   "driverChangeRule": 0,
   "licgroupid": 1,
@@ -9250,133 +7312,11 @@
   "category": 1
 }, {
   "prefimg": "",
-  "seriesname": "Petit+Le+Mans",
-  "seasonshortname": "Petit+Le+Mans",
-  "whatshotimg": "member_images%2Fseries%2Fseriesid_286%2Fwhats_hot.jpg",
-  "cautionTypeRoad": 2,
-  "raceweek": 1,
-  "active": true,
-  "maxlicenselevel": 28,
-  "tracks": [{
-    "config": "Full+Course",
-    "priority": 1,
-    "raceweek": 0,
-    "pkgid": 67,
-    "timeOfDay": 2,
-    "name": "Road+Atlanta",
-    "id": 127,
-    "lowername": "road+atlanta"
-  }],
-  "isClubAllowed": true,
-  "serieslicgroupid": 3,
-  "restrictedByMember": false,
-  "lowerseriesshortname": "petit+le+mans",
-  "allowedMembers": [],
-  "carclasses": [{
-    "carsinclass": [{
-      "name": "Ruf+RT+12R+C-Spec",
-      "id": 52
-    }],
-    "shortname": "Ruf+RT12R+CSpec",
-    "name": "Ruf+RT12R+CSpec",
-    "id": 58,
-    "lowername": "ruf+rt12r+cspec"
-  }, {
-    "carsinclass": [{
-      "name": "Chevrolet+Corvette+C7+Daytona+Prototype",
-      "id": 70
-    }],
-    "shortname": "C7+DP",
-    "name": "Corvette+C7+Daytona+Prototype",
-    "id": 77,
-    "lowername": "corvette+c7+daytona+prototype"
-  }, {
-    "carsinclass": [{
-      "name": "BMW+Z4+GT3",
-      "id": 55
-    }, {
-      "name": "Mercedes+AMG+GT3",
-      "id": 72
-    }, {
-      "name": "Audi+R8+LMS",
-      "id": 73
-    }],
-    "shortname": "GT3+German",
-    "name": "GT3+German",
-    "id": 82,
-    "lowername": "gt3+german"
-  }],
-  "currentTrack": 127,
-  "seriesid": 286,
-  "driverChangeRule": 1,
-  "licgroupid": 2,
-  "ignoreLicenseForPractice": true,
-  "isWorldCup": false,
-  "islite": false,
-  "rookieseason": "",
-  "end": 1474948800000,
-  "cars": [{
-    "pkgid": 144,
-    "name": "Ruf+RT+12R+C-Spec",
-    "id": 52,
-    "lowername": "ruf+rt+12r+c-spec",
-    "sku": 10353
-  }, {
-    "pkgid": 193,
-    "name": "Chevrolet+Corvette+C7+Daytona+Prototype",
-    "id": 70,
-    "lowername": "chevrolet+corvette+c7+daytona+prototype",
-    "sku": 10400
-  }, {
-    "pkgid": 156,
-    "name": "BMW+Z4+GT3",
-    "id": 55,
-    "lowername": "bmw+z4+gt3",
-    "sku": 10362
-  }, {
-    "pkgid": 199,
-    "name": "Mercedes+AMG+GT3",
-    "id": 72,
-    "lowername": "mercedes+amg+gt3",
-    "sku": 10404
-  }, {
-    "pkgid": 201,
-    "name": "Audi+R8+LMS",
-    "id": 73,
-    "lowername": "audi+r8+lms",
-    "sku": 10405
-  }],
-  "carNumberMap": {
-    "carNumberMap": {}
-  },
-  "multiclass": true,
-  "isRegionCompetition": false,
-  "start": 1473739200000,
-  "lowerseasonshortname": "petit+le+mans",
-  "maxTeamDrivers": 16,
-  "quarter": 4,
-  "seriesshortname": "Petit+Le+Mans",
-  "catid": 2,
-  "minsr": "4.0",
-  "isFixedSetup": false,
-  "isOfficial": true,
-  "minlicenselevel": 8,
-  "cautionTypeOval": 0,
-  "licenseEligible": true,
-  "complete": false,
-  "driverChanges": true,
-  "minTeamDrivers": 2,
-  "year": 2016,
-  "restrictedToCar": false,
-  "seasonid": 1677,
-  "category": 2
-}, {
-  "prefimg": "",
   "seriesname": "PickUp+Cup",
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_259%2Fwhats_hot.jpg",
   "cautionTypeRoad": 0,
-  "raceweek": 2,
+  "raceweek": 13,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -9512,7 +7452,7 @@
     "id": 17,
     "lowername": "silverado"
   }],
-  "currentTrack": 40,
+  "currentTrack": 27,
   "seriesid": 259,
   "driverChangeRule": 0,
   "licgroupid": 1,
@@ -9558,7 +7498,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_278%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -9706,7 +7646,7 @@
     "id": 73,
     "lowername": "gt1+class"
   }],
-  "currentTrack": 165,
+  "currentTrack": -1,
   "seriesid": 278,
   "driverChangeRule": 0,
   "licgroupid": 2,
@@ -9770,7 +7710,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_74%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -9897,7 +7837,7 @@
     "id": 15,
     "lowername": "radical+sr8"
   }],
-  "currentTrack": 144,
+  "currentTrack": -1,
   "seriesid": 74,
   "driverChangeRule": 0,
   "licgroupid": 2,
@@ -9943,7 +7883,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Frufcup%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -10070,7 +8010,7 @@
     "id": 58,
     "lowername": "ruf+rt12r+cspec"
   }],
-  "currentTrack": 266,
+  "currentTrack": -1,
   "seriesid": 224,
   "driverChangeRule": 0,
   "licgroupid": 2,
@@ -10116,7 +8056,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fseriesid_277%2Fwhats_hot.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -10243,7 +8183,7 @@
     "id": 55,
     "lowername": "ruf+rt+12r+track"
   }],
-  "currentTrack": 152,
+  "currentTrack": -1,
   "seriesid": 277,
   "driverChangeRule": 0,
   "licgroupid": 1,
@@ -10289,7 +8229,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Fsbarbrs%2Fstats_skipbarber.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -10416,7 +8356,7 @@
     "id": 1,
     "lowername": "skip+barber+race+series"
   }],
-  "currentTrack": 144,
+  "currentTrack": -1,
   "seriesid": 34,
   "driverChangeRule": 0,
   "licgroupid": 1,
@@ -10462,7 +8402,7 @@
   "seasonshortname": "2016+Season+4",
   "whatshotimg": "member_images%2Fseries%2Ffmazchamp%2Fstats_fmazda.jpg",
   "cautionTypeRoad": 2,
-  "raceweek": 2,
+  "raceweek": 12,
   "active": true,
   "maxlicenselevel": 28,
   "tracks": [{
@@ -10589,7 +8529,7 @@
     "id": 4,
     "lowername": "star+mazda"
   }],
-  "currentTrack": 18,
+  "currentTrack": -1,
   "seriesid": 44,
   "driverChangeRule": 0,
   "licgroupid": 2,

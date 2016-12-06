@@ -1,11 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
-import 'jquery-ui/slider';
+import 'jquery-ui/ui/widgets/slider';
 
-import 'jquery-ui/themes/base/jquery.ui.core.css';
-import 'jquery-ui/themes/base/jquery.ui.slider.css';
-import 'jquery-ui/themes/black-tie/jquery.ui.theme.css';
+import 'jquery-ui/themes/base/core.css';
+import 'jquery-ui/themes/base/slider.css';
+import './styles/jquery-ui.theme.css';
 
 export default class TimeSlider extends Component {
   static propTypes = {

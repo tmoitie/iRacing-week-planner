@@ -889,4 +889,85 @@
   "name": "Nissan+GTP",
   "id": 84,
   "lowername": "nissan+gtp"
+}, {
+  "carsinclass": [{
+    "name": "Dirt+Late+Model+-+305",
+    "id": 78
+  }],
+  "shortname": "DLM+305",
+  "name": "Dirt+Late+Model+-+305",
+  "id": 85,
+  "lowername": "dirt+late+model+-+305"
+}, {
+  "carsinclass": [{
+    "name": "Dirt+Street+Stock",
+    "id": 79
+  }],
+  "shortname": "Dirt+StreetStock",
+  "name": "Dirt+Street+Stock",
+  "id": 86,
+  "lowername": "dirt+street+stock"
+}, {
+  "carsinclass": [{
+    "name": "Dirt+Sprint+Car+-+305",
+    "id": 80
+  }],
+  "shortname": "DSC+305",
+  "name": "Dirt+SprintCar+-+305",
+  "id": 87,
+  "lowername": "dirt+sprintcar+-+305"
+}, {
+  "carsinclass": [{
+    "name": "Ford+Fiesta+RS+WRC",
+    "id": 81
+  }],
+  "shortname": "Ford+RS+WRC",
+  "name": "Ford+Fiesta+RS+WRC",
+  "id": 88,
+  "lowername": "ford+fiesta+rs+wrc"
+}, {
+  "carsinclass": [{
+    "name": "Dirt+Late+Model+-+358",
+    "id": 83
+  }],
+  "shortname": "DLM+358",
+  "name": "Dirt+Late+Model+-+358",
+  "id": 90,
+  "lowername": "dirt+late+model+-+358"
+}, {
+  "carsinclass": [{
+    "name": "Dirt+Late+Model+-+438",
+    "id": 84
+  }],
+  "shortname": "DLM+438",
+  "name": "Dirt+Late+Model+-+438",
+  "id": 91,
+  "lowername": "dirt+late+model+-+438"
+}, {
+  "carsinclass": [{
+    "name": "Dirt+Sprint+Car+-+360",
+    "id": 85
+  }],
+  "shortname": "DSC+360",
+  "name": "Dirt+SprintCar+-+360",
+  "id": 92,
+  "lowername": "dirt+sprintcar+-+360"
+}, {
+  "carsinclass": [{
+    "name": "Dirt+Sprint+Car+-+410",
+    "id": 86
+  }],
+  "shortname": "DSC+410",
+  "name": "Dirt+Sprintcar+-+410",
+  "id": 93,
+  "lowername": "dirt+sprintcar+-+410"
+}, {
+  "carsinclass": [{
+    "name": "Dirt+Sprint+Car+-+410+wingless",
+    "id": 87
+  }],
+  "shortname": "DSC+410W",
+  "name": "Dirt+SprintCar+-+410wingless",
+  "id": 94,
+  "lowername": "dirt+sprintcar+-+410wingless"
 }]

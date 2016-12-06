@@ -1,6 +1,11 @@
 import moment from 'moment';
 
 export default [{
+  date: moment('2016-12-06 00:00:00').utc(),
+  items: [
+    'Added Week 13'
+  ]
+}, {
   date: moment('2016-09-20 00:00:00').utc(),
   items: [
     'Add some extra transient series'
