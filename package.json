@@ -2,6 +2,11 @@
   "name": "iracing-week-planner",
   "version": "1.0.0",
   "description": "Weekly planner for iRacing.com races",
+  "engines": {
+    "node": ">=7.2",
+    "npm": ">=3.10.9",
+    "yarn": ">=0.17.10"
+  },
   "scripts": {
     "build": "node_modules/.bin/webpack --config webpack.config.js",
     "start": "node server.js"
