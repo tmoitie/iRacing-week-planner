@@ -9,7 +9,7 @@
     "name": "Pontiac+Solstice",
     "id": 3
   }, {
-    "name": "Star+Mazda",
+    "name": "Pro+Mazda",
     "id": 4
   }, {
     "name": "Legends+Ford+%2734+Coupe",
@@ -222,13 +222,13 @@
   "lowername": "solstice"
 }, {
   "carsinclass": [{
-    "name": "Star+Mazda",
+    "name": "Pro+Mazda",
     "id": 4
   }],
-  "shortname": "Star+Mazda",
-  "name": "Star+Mazda",
+  "shortname": "Pro+Mazda",
+  "name": "Pro+Mazda",
   "id": 4,
-  "lowername": "star+mazda"
+  "lowername": "pro+mazda"
 }, {
   "carsinclass": [{
     "name": "Legends+Ford+%2734+Coupe",
