@@ -1,5 +1,5 @@
-export const UPDATE_DATE = 'APP/UPDATE_DATE';
+export const UPDATE_DAYS = 'APP/UPDATE_DAYS';
 
-export function updateDate(date) {
-  return { type: UPDATE_DATE, date };
+export function updateDays(days) {
+  return { type: UPDATE_DAYS, days };
 }

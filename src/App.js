@@ -2,8 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { cloneDeep, uniqBy } from 'lodash';
-import moment, { duration } from 'moment';
-import { updateDate as updateDateCreator } from './actions/app';
+import { updateDays as updateDaysCreator } from './actions/app';
 
 import RaceListing from './components/RaceListing';
 import Filters from './components/Filters';
@@ -16,7 +15,7 @@ import allCars from './data/cars.json';
 import tracks from './lib/tracks';
 import availableColumns from './data/availableColumns';
 
-import { seasonStart, seasonEnd, weekSeasonStart } from './config';
+import { seasonStart, seasonEnd } from './config';
 
 import { Slider } from '@blueprintjs/core';
 
@@ -50,10 +49,15 @@ const defaultSettings = {
   mode: 'both'
 };
 
+const seasonLengthDays = seasonEnd.diff(seasonStart, 'days');
+
 export class App extends Component {
   static propTypes = {
     date: PropTypes.object,
-    updateDate: PropTypes.func
+    dateDays: PropTypes.number,
+    dateView: PropTypes.string,
+    week: PropTypes.number,
+    updateDays: PropTypes.func
   };
 
   constructor(props) {
@@ -108,8 +112,8 @@ export class App extends Component {
     this.setState({ [key]: value });
   }
 
-  updateDate(days) {
-    this.props.updateDate(moment(seasonStart).add(days, 'days'));
+  updateDays(days) {
+    this.props.updateDays(days);
   }
 
   renderFavouriteSeriesModal() {
@@ -190,7 +194,7 @@ export class App extends Component {
     const { filters, favouriteSeries, ownedCars, ownedTracks, favouriteCars, favouriteTracks,
       columns, sort, mode } = this.state;
 
-    const { date } = this.props;
+    const { date, dateDays, dateView, week } = this.props;
 
     return (
       <div>
@@ -232,25 +236,25 @@ export class App extends Component {
             <div className='col-md-10'>
               <div className='row'>
                 <h3 className='col-xs-8'>
-                  Races for date: {moment(date).local().format('YYYY MMM DD')}
+                  Races for date: {dateView}
                 </h3>
                 <h3 className='col-xs-4' style={{ textAlign: 'right' }}>
-                  Week {Math.ceil(moment.duration(moment(date).add({ second: 1 }).diff(weekSeasonStart)).asWeeks())}
+                  Week {week}
                 </h3>
               </div>
               <div style={{ marginBottom: 10 }}>
                 <Slider
                   min={0}
-                  max={seasonEnd.diff(seasonStart, 'days')}
-                  value={date.diff(seasonStart, 'days')}
+                  max={seasonLengthDays}
+                  value={dateDays}
                   stepSize={1}
-                  onChange={this.updateDate.bind(this)}
+                  onChange={this.updateDays.bind(this)}
                   renderLabel={false}
                 />
               </div>
               <RaceListing
                 filters={filters} ownedCars={ownedCars} ownedTracks={ownedTracks}
-                favouriteSeries={favouriteSeries} date={moment(date)} favouriteTracks={favouriteTracks}
+                favouriteSeries={favouriteSeries} date={date} favouriteTracks={favouriteTracks}
                 favouriteCars={favouriteCars} columnIds={columns} sort={sort}
                 updateSort={this.saveOptions.bind(this, 'sort')}
                 oval={mode !== 'road'} road={mode !== 'oval'}
@@ -269,11 +273,14 @@ export class App extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  date: state.app.date
+  date: state.app.date,
+  dateDays: state.app.daysSinceSeasonStart,
+  dateView: state.app.dateView,
+  week: state.app.week
 });
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
-  updateDate: updateDateCreator
+  updateDays: updateDaysCreator
 }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
