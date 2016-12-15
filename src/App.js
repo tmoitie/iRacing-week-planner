@@ -2,7 +2,6 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { cloneDeep, uniqBy } from 'lodash';
-import TimeSlider from './components/TimeSlider';
 import moment, { duration } from 'moment';
 import { updateDate as updateDateCreator } from './actions/app';
 
@@ -19,8 +18,11 @@ import availableColumns from './data/availableColumns';
 
 import { seasonStart, seasonEnd, weekSeasonStart } from './config';
 
+import { Slider } from '@blueprintjs/core';
+
 import './components/styles/preBootstrap.scss';
 import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+import '@blueprintjs/core/dist/blueprint.css';
 
 const cars = uniqBy(allCars, (car) => car.sku);
 
@@ -106,8 +108,8 @@ export class App extends Component {
     this.setState({ [key]: value });
   }
 
-  updateDate(date) {
-    this.props.updateDate(moment(date, 'X').utc().startOf('day'));
+  updateDate(days) {
+    this.props.updateDate(moment(seasonStart).add(days, 'days'));
   }
 
   renderFavouriteSeriesModal() {
@@ -237,11 +239,13 @@ export class App extends Component {
                 </h3>
               </div>
               <div style={{ marginBottom: 10 }}>
-                <TimeSlider
-                  minFrom={parseInt(seasonStart.utc().format('X'), 10)}
-                  maxTo={parseInt(seasonEnd.utc().format('X'), 10)}
-                  onChange={this.updateDate.bind(this)} initial={parseInt(moment(date).utc().format('X'), 10)}
-                  step={duration(1, 'days').asSeconds()}
+                <Slider
+                  min={0}
+                  max={seasonEnd.diff(seasonStart, 'days')}
+                  value={date.diff(seasonStart, 'days')}
+                  stepSize={1}
+                  onChange={this.updateDate.bind(this)}
+                  renderLabel={false}
                 />
               </div>
               <RaceListing
