@@ -83,14 +83,18 @@ export default season.reduce((carry, series) => {
       nextTime = getNextRaceSetTimes(raceTimes.setTimes);
     }
 
+    const startTime = moment(seriesStart).add(raceWeekLength * realRaceWeek, 'ms').startOf('day').utc();
+    const weekLength = duration(raceWeekLength);
+
     return {
       series: seriesName,
       seriesId: series.seriesid,
       track: fixText(trackName),
       trackId: track.pkgid,
       week: track.raceweek,
-      startTime: moment(seriesStart).add(raceWeekLength * realRaceWeek, 'ms').startOf('day').utc(),
-      weekLength: duration(raceWeekLength),
+      startTime,
+      weekLength,
+      endTime: moment(startTime).add(weekLength),
       official: series.isOfficial,
       licenceLevel: series.minlicenselevel,
       licenceClassNumber: levelToClassNumber(series.minlicenselevel),

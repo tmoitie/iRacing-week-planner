@@ -63,10 +63,7 @@ export default class RaceListing extends Component {
     const { date, sort, filters, favouriteSeries, ownedTracks, ownedCars,
       favouriteCars, favouriteTracks, columnIds } = this.props;
 
-    let races = allRaces.filter((race) => moment(date).add(1, 'hour').isBetween(
-      race.startTime,
-      moment(race.startTime).add(race.weekLength)
-    ));
+    let races = allRaces.filter((race) => moment(date).add(1, 'hour').isBetween(race.startTime, race.endTime));
 
     races = sortRaces(sort, races);
 
