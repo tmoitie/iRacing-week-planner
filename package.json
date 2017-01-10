@@ -9,7 +9,8 @@
   },
   "scripts": {
     "build": "node_modules/.bin/webpack --config webpack.config.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "debugRaces": "node_modules/.bin/babel-node debugRaces.js"
   },
   "repository": {
     "type": "git",
@@ -57,8 +58,10 @@
     "airbrake-js": "^0.5.9",
     "autoprefixer": "^6.3.3",
     "axios": "^0.11.1",
+    "babel-cli": "^6.18.0",
     "babel-polyfill": "^6.9.1",
     "bootstrap-sass": "^3.3.6",
+    "cli-table": "^0.3.1",
     "console-polyfill": "^0.2.2",
     "es5-shim": "^4.4.1",
     "html5shiv": "^3.7.3",
