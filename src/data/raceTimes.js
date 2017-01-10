@@ -78,7 +78,6 @@ export default [{
   seriesId: 62,
   everyTime: duration(2, 'hours'),
   offset: duration(0, 'minutes'),
-  offWeeks: [5.3, 5.6, 9.5, 10.5, 14.5, 30.3, 30.6]
 }, {
   // Xfinity Fixed
   seriesId: 103,
