@@ -105,6 +105,7 @@ export default season.reduce((carry, series) => {
       carIds: series.cars.map((car) => car.sku),
       raceTimes: raceTimes,
       nextTime: nextTime,
+      seriesStart: seriesStart,
       seriesEnd: seriesEnd,
       seasonId: series.seasonid
     };
