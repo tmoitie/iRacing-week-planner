@@ -28,7 +28,7 @@ if (seriesIds.length > 0) {
 table.push(...seriess.map(series => [
   series.seriesId,
   series.series,
-  series.weekLength.asWeeks(),
+  series.weekLength.asDays(),
   moment(series.startTime).local().format('ddd'),
   moment(series.seriesStart).local().format('YYYY-MM-DD'),
   moment(series.seriesEnd).local().format('YYYY-MM-DD'),

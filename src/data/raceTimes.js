@@ -142,8 +142,7 @@ export default [{
     duration({ days: 4, hours: 17 }),  // Sat 5pm
     duration({ days: 5, hours: 9 }), // Sun 9am
     duration({ days: 5, hours: 19 })  // Sun 7pm
-  ],
-  offWeeks: [1.5, 2.5, 3.2, 3.5, 4.5]
+  ]
 }, {
   // Lotus 49
   seriesId: 201,
@@ -429,4 +428,10 @@ export default [{
     duration({ days: 5, hours: 14, minutes: 0 })
   ],
   weekEndOffset: duration({ days: -7 }),
+}, {
+  // 24 du fun
+  seriesId: 54,
+  everyTime: duration(30, 'minutes'),
+  offset: duration(0, 'minutes'),
+  weekEndOffset: duration({ days: 1 }),
 }];
