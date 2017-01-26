@@ -190,6 +190,9 @@
   }, {
     "name": "Nissan+GTP+ZX-T",
     "id": 77
+  }, {
+    "name": "Porsche+911+GT3+Cup+%28991%29",
+    "id": 88
   }],
   "id": 0,
   "shortname": "Hosted+All+Cars"
@@ -979,4 +982,13 @@
   }],
   "id": 95,
   "shortname": "Porsche+911"
+}, {
+  "lowername": "dirt+sprintcar+-+360",
+  "name": "Dirt+SprintCar+-+360",
+  "carsinclass": [{
+    "name": "Dirt+Sprint+Car+-+360+wingless",
+    "id": 89
+  }],
+  "id": 96,
+  "shortname": "DSC+360"
 }]
