@@ -434,4 +434,9 @@ export default [{
   everyTime: duration(30, 'minutes'),
   offset: duration(0, 'minutes'),
   weekEndOffset: duration({ days: 1 }),
+}, {
+  // Porsche cup
+  seriesId: 299,
+  everyTime: duration(2, 'hours'),
+  offset: duration(105, 'minutes')
 }];

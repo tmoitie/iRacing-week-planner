@@ -1,6 +1,11 @@
 import moment from 'moment';
 
 export default [{
+  date: moment('2017-02-08 00:00:00').utc(),
+  items: [
+    'Added Porsche cup'
+  ]
+}, {
   date: moment('2016-12-13 00:00:00').utc(),
   items: [
     'Added 2016 S1'

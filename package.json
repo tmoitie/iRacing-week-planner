@@ -10,7 +10,8 @@
   "scripts": {
     "build": "node_modules/.bin/webpack --config webpack.config.js",
     "start": "node server.js",
-    "debugRaces": "node_modules/.bin/babel-node debugRaces.js"
+    "debugRaces": "node_modules/.bin/babel-node debugRaces.js",
+    "scrapeData": "node_modules/.bin/babel-node scrape.js"
   },
   "repository": {
     "type": "git",
