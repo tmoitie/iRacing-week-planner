@@ -9,20 +9,17 @@ export default [{
   // Advanced Legends
   seriesId: 32,
   everyTime: duration(1, 'hours'),
-  offset: duration(30, 'minutes'),
-  lengths: ['40L', '40L', '40L', '40L', '30L', '40L', '40L', '40L', '40L', '40L', '30L', '40L']
+  offset: duration(30, 'minutes')
 }, {
   // Street Stock
   seriesId: 182,
   everyTime: duration(1, 'hours'),
-  offset: duration(0, 'minutes'),
-  lengths: ['20L', '40L', '20L', '40L', '20L', '40L', '20L', '40L', '20L', '40L', '20L', '40L']
+  offset: duration(0, 'minutes')
 }, {
   // Late model
   seriesId: 33,
   everyTime: duration(2, 'hours'),
-  offset: duration(15, 'minutes'),
-  lengths: ['50L', '60L', '40L', '40L', '50L', '40L', '50L', '60L', '50L', '40L', '60L', '50L']
+  offset: duration(15, 'minutes')
 }, {
   // National
   seriesId: 167,
@@ -78,7 +75,6 @@ export default [{
   seriesId: 62,
   everyTime: duration(2, 'hours'),
   offset: duration(0, 'minutes'),
-  offWeeks: [5.3, 5.6, 9.5, 10.5, 14.5, 30.3, 30.6]
 }, {
   // Xfinity Fixed
   seriesId: 103,
@@ -99,6 +95,11 @@ export default [{
   seriesId: 112,
   everyTime: duration(1, 'hours'),
   offset: duration(30, 'minutes'),
+}, {
+  // Global Challenge
+  seriesId: 210,
+  everyTime: duration(2, 'hours'),
+  offset: duration(90, 'minutes'),
 }, {
   // iRacing Nordschleife Hotlap
   seriesId: 263,
@@ -133,15 +134,14 @@ export default [{
   // Advanced Mazda
   seriesId: 231,
   everyTime: duration(2, 'hours'),
-  offset: duration(15, 'minutes'),
-  lengths: ['25m', '25m', '25m', '25m', '45m', '25m', '25m', '25m', '25m', '25m', '25m', '45m']
+  offset: duration(15, 'minutes')
 }, {
   // Blancpain Endurance
   seriesId: 237,
   setTimes: [
-    duration({ days: 4, hours: 9 }),  // Sat 9am
-    duration({ days: 4, hours: 19 }), // Sat 7pm
-    duration({ days: 5, hours: 17 })  // Sun 5pm
+    duration({ days: 4, hours: 17 }),  // Sat 5pm
+    duration({ days: 5, hours: 9 }), // Sun 9am
+    duration({ days: 5, hours: 19 })  // Sun 7pm
   ]
 }, {
   // Lotus 49
@@ -246,7 +246,13 @@ export default [{
   ],
   weekStartOffset: duration({ days: 9 }),
   weekEndOffset: duration({ days: 7 }),
-  offWeeks: [2.5, 3.5, 4.5, 5.5, 6.5, 7.3, 7.6, 8.5, 9.3, 9.6, 10.5, 11.5, 12.5, 13.5, 14.3, 14.6, 15.5]
+}, {
+  // Road Pro Series
+  seriesId: 67,
+  setTimes: [
+    duration({ days: 4, hours: 14 }), // Sat 2pm
+  ],
+  offWeeks: [4.5, 5.2, 5.5]
 }, {
   // Peak Antifreeze
   seriesId: 205,
@@ -256,6 +262,14 @@ export default [{
   weekStartOffset: duration({ days: 14 }),
   weekEndOffset: duration({ days: 7 }),
   offWeeks: [2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.2, 8.4, 8.6, 8.8, 9.5, 10.5, 11.5, 12.5, 13.3, 13.6, 14.5, 15.5]
+}, {
+  // NASCAR iRacing Pro Series
+  seriesId: 95,
+  setTimes: [
+    duration({ days: 1, hours: 2 }), // Wed 2am
+  ],
+  weekEndOffset: duration({ days: 7 }),
+  offWeeks: [3.5, 5.2, 5.5]
 }, {
   // 12 hours of Sebring
   seriesId: 271,
@@ -404,4 +418,25 @@ export default [{
   setTimes: [
     duration({ days: 5, hours: 14, minutes: 0 })
   ],
+}, {
+  // Roar before the 24
+  seriesId: 297,
+  setTimes: [
+    duration({ days: 4, hours: 2, minutes: 0 }),
+    duration({ days: 4, hours: 13, minutes: 0 }),
+    duration({ days: 4, hours: 17, minutes: 0 }),
+    duration({ days: 5, hours: 14, minutes: 0 })
+  ],
+  weekEndOffset: duration({ days: -7 }),
+}, {
+  // 24 du fun
+  seriesId: 54,
+  everyTime: duration(30, 'minutes'),
+  offset: duration(0, 'minutes'),
+  weekEndOffset: duration({ days: 1 }),
+}, {
+  // Porsche cup
+  seriesId: 299,
+  everyTime: duration(2, 'hours'),
+  offset: duration(105, 'minutes')
 }];
