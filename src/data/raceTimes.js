@@ -224,7 +224,7 @@ export default [{
     duration({ days: 6, hours: 1 }),  // Mon 1am
   ],
   offWeeks: [
-    5.5, 12.5, 15.5, 22.5
+    7.5, 11.5, 24.5
   ]
 }, {
   // NIS Open
@@ -236,7 +236,7 @@ export default [{
     duration({ days: 5, hours: 14 }), // Sun 2pm
   ],
   offWeeks: [
-    5.5, 12.5, 15.5, 22.5
+    7.5, 11.5, 24.5
   ]
 }, {
   // Road WC
@@ -246,6 +246,7 @@ export default [{
   ],
   weekStartOffset: duration({ days: 9 }),
   weekEndOffset: duration({ days: 7 }),
+  offWeeks: [1.5, 2.5, 3.1, 3.6, 4.3, 4.7, 5.2, 5.4, 5.6, 5.8, 6.2, 6.4, 7.3, 7.6, 7.7, 8.5, 9.5, 10.3, 10.8, 11.5]
 }, {
   // Road Pro Series
   seriesId: 67,
@@ -259,9 +260,9 @@ export default [{
   setTimes: [
     duration({ days: 1, hours: 0, minutes: 45 }), // Sun 0:45am
   ],
-  weekStartOffset: duration({ days: 14 }),
+  weekStartOffset: duration({ days: 28 }),
   weekEndOffset: duration({ days: 7 }),
-  offWeeks: [2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.2, 8.4, 8.6, 8.8, 9.5, 10.5, 11.5, 12.5, 13.3, 13.6, 14.5, 15.5]
+  offWeeks: [3.5, 4.5, 5.5, 6.5, 7.2, 7.3, 8.5, 9.3, 9.6, 10.5, 11.5, 12.5, 13.5, 14.5, 15.5]
 }, {
   // NASCAR iRacing Pro Series
   seriesId: 95,

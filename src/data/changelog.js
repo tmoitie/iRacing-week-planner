@@ -1,6 +1,11 @@
 import moment from 'moment';
 
 export default [{
+  date: moment('2017-03-07 00:00:00').utc(),
+  items: [
+    'Added Week 13. Updating race times tonight'
+  ]
+}, {
   date: moment('2017-02-08 00:00:00').utc(),
   items: [
     'Added Porsche cup'
