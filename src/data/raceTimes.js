@@ -336,7 +336,7 @@ export default [{
 }, {
   // VLN Endurance
   seriesId: 275,
-  offWeeks: [1.2, 1.4, 1.5, 1.6, 1.8, 2.2, 2.7, 3.2, 3.4, 3.6, 3.8, 4.5, 5.4, 5.7, 6.5, 7.5],
+  offWeeks: [1.5, 2.1, 2.15, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3.1, 4.1, 4.2, 4.3, 4.4, 4.5, 5.1, 6.1, 6.2, 7.1, 8.1],
   setTimes: [
     duration({ days: 5, hours: 6, minutes: 0 }), // Sun 6am
     duration({ days: 5, hours: 14, minutes: 0 }), // Sun 2pm

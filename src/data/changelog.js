@@ -1,9 +1,14 @@
 import moment from 'moment';
 
 export default [{
+  date: moment('2017-03-14 00:00:00').utc(),
+  items: [
+    'Added 2017 S2. Will update race times soon'
+  ]
+}, {
   date: moment('2017-03-07 00:00:00').utc(),
   items: [
-    'Added Week 13. Updating race times tonight'
+    'Added Week 13.'
   ]
 }, {
   date: moment('2017-02-08 00:00:00').utc(),
@@ -13,7 +18,7 @@ export default [{
 }, {
   date: moment('2016-12-13 00:00:00').utc(),
   items: [
-    'Added 2016 S1'
+    'Added 2017 S1'
   ]
 }, {
   date: moment('2016-12-06 00:00:00').utc(),
