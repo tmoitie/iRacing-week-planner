@@ -45,8 +45,7 @@ const defaultSettings = {
   favouriteCars: [],
   favouriteTracks: [],
   sort: { key: 'licence', order: 'asc' },
-  columns: availableColumns.filter(column => column.default === true).map(column => column.id),
-  mode: 'both'
+  columns: availableColumns.filter(column => column.default === true).map(column => column.id)
 };
 
 const seasonLengthDays = seasonEnd.diff(seasonStart, 'days');
@@ -77,12 +76,12 @@ export class App extends Component {
   componentDidUpdate() {
     const {
       filters, ownedCars, ownedTracks, favouriteSeries, favouriteTracks, favouriteCars,
-      columns, sort, mode
+      columns, sort
     } = this.state;
 
     window.localStorage.setItem('iracing-state', JSON.stringify({
       filters, ownedCars, ownedTracks, favouriteSeries, favouriteTracks, favouriteCars,
-      columns, sort, mode
+      columns, sort
     }));
   }
 
@@ -117,21 +116,19 @@ export class App extends Component {
   }
 
   renderFavouriteSeriesModal() {
-    const { favouriteSeries, mode, currentModal } = this.state;
+    const { favouriteSeries, currentModal } = this.state;
     return (
       <FavouriteSeriesModal
         isOpen={currentModal === 'favourite-series'}
         onClose={this.closeModal.bind(this)}
         favouriteSeries={favouriteSeries}
         save={this.saveOptions.bind(this, 'favouriteSeries')}
-        oval={mode !== 'road'}
-        road={mode !== 'oval'}
       />
     );
   }
 
   renderMyTracksModal() {
-    const { ownedTracks, favouriteTracks, mode, currentModal } = this.state;
+    const { ownedTracks, favouriteTracks, currentModal } = this.state;
     return (
       <ContentModal
         isOpen={currentModal === 'my-tracks'}
@@ -145,14 +142,12 @@ export class App extends Component {
         save={this.saveOptions.bind(this, 'ownedTracks')}
         favourites={favouriteTracks}
         saveFavourites={this.saveOptions.bind(this, 'favouriteTracks')}
-        oval={mode !== 'road'}
-        road={mode !== 'oval'}
       />
     );
   }
 
   renderMyCarsModal() {
-    const { ownedCars, favouriteCars, mode, currentModal } = this.state;
+    const { ownedCars, favouriteCars, currentModal } = this.state;
     return (
       <ContentModal
         isOpen={currentModal === 'my-cars'}
@@ -166,21 +161,18 @@ export class App extends Component {
         save={this.saveOptions.bind(this, 'ownedCars')}
         favourites={favouriteCars}
         saveFavourites={this.saveOptions.bind(this, 'favouriteCars')}
-        oval={mode !== 'road'}
-        road={mode !== 'oval'}
       />
     );
   }
 
   renderOptionsModal() {
-    const { columns, mode, currentModal } = this.state;
+    const { columns, currentModal } = this.state;
     return (
       <OptionsModal
         isOpen={currentModal === 'options'}
         onClose={this.closeModal.bind(this)}
         columnIds={columns}
         saveOptions={this.saveOptions.bind(this)}
-        mode={mode}
       />
     );
   }
@@ -192,7 +184,7 @@ export class App extends Component {
 
   render() {
     const { filters, favouriteSeries, ownedCars, ownedTracks, favouriteCars, favouriteTracks,
-      columns, sort, mode } = this.state;
+      columns, sort } = this.state;
 
     const { date, dateDays, dateView, week } = this.props;
 
@@ -230,7 +222,6 @@ export class App extends Component {
               <Filters
                 currentFilters={filters} updateFilters={this.updateFilters.bind(this)}
                 resetSettings={this.resetSettings.bind(this)} resetFilters={this.resetFilters.bind(this)}
-                oval={mode !== 'road'} road={mode !== 'oval'}
               />
             </div>
             <div className='col-md-10'>
@@ -257,7 +248,6 @@ export class App extends Component {
                 favouriteSeries={favouriteSeries} date={date} favouriteTracks={favouriteTracks}
                 favouriteCars={favouriteCars} columnIds={columns} sort={sort}
                 updateSort={this.saveOptions.bind(this, 'sort')}
-                oval={mode !== 'road'} road={mode !== 'oval'}
               />
             </div>
           </div>
