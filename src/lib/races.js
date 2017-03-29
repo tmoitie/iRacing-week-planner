@@ -3,9 +3,14 @@ import levelToClass, {levelToClassNumber} from './levelToClass';
 import raceTimesArray from '../data/raceTimes';
 import moment, {duration} from 'moment';
 
+import tracks from '../data/tracks.json';
+
+const tracksById = tracks.reduce((tracksObj, track) => {
+  return { ...tracksObj, [track.id]: track };
+}, {});
+
 const raceTimesById = raceTimesArray.reduce((races, race) => {
-  races[race.seriesId] = race;
-  return races;
+  return { ...races, [race.seriesId]: race };
 }, {});
 
 const now = moment().utc();
@@ -85,6 +90,11 @@ export default season.reduce((carry, series) => {
 
     const startTime = moment(seriesStart).add(raceWeekLength * realRaceWeek, 'ms').startOf('day').utc();
     const weekLength = duration(raceWeekLength);
+    
+    let type = series.catid === 1 ? 'Oval' : 'Road';
+    if (tracksById[track.id].isDirt) {
+      type = 'Dirt';
+    }
 
     return {
       series: seriesName,
@@ -99,14 +109,14 @@ export default season.reduce((carry, series) => {
       licenceLevel: series.minlicenselevel,
       licenceClassNumber: levelToClassNumber(series.minlicenselevel),
       licenceClass: levelToClass(series.minlicenselevel, true),
-      type: series.catid === 1 ? 'Oval' : 'Road',
+      type,
       fixed: series.isFixedSetup,
       carClasses: series.carclasses.map((carClass) => fixText(carClass.shortname)),
       carIds: series.cars.map((car) => car.sku),
-      raceTimes: raceTimes,
-      nextTime: nextTime,
-      seriesStart: seriesStart,
-      seriesEnd: seriesEnd,
+      raceTimes,
+      nextTime,
+      seriesStart,
+      seriesEnd,
       seasonId: series.seasonid
     };
   }));

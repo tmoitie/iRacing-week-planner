@@ -26,7 +26,7 @@ import '@blueprintjs/core/dist/blueprint.css';
 const cars = uniqBy(allCars, (car) => car.sku);
 
 const defaultFilters = {
-  type: ['Road', 'Oval'],
+  type: ['Road', 'Oval', 'Dirt'],
   licence: ['R', 'D', 'C', 'B', 'A', 'P'],
   official: [false, true],
   fixed: [false, true],

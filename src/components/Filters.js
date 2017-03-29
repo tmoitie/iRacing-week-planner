@@ -60,6 +60,12 @@ export default class Filters extends Component {
         >
           Road
         </Checkbox>
+        <Checkbox
+          checked={currentFilters.type.indexOf('Dirt') !== -1}
+          onChange={this.setCheckboxFilter.bind(this, 'type', 'Dirt')}
+        >
+          Dirt
+        </Checkbox>
 
         <h4>Licence</h4>
         <Checkbox
