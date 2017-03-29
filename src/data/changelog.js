@@ -1,6 +1,11 @@
 import moment from 'moment';
 
 export default [{
+  date: moment('2017-03-29 00:00:00').utc(),
+  items: [
+    'Add Dirt content and Dirt type'
+  ]
+}, {
   date: moment('2017-03-14 00:00:00').utc(),
   items: [
     'Added 2017 S2. Will update race times soon'
