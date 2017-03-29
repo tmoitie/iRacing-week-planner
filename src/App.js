@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { cloneDeep, uniqBy } from 'lodash';
+import { uniq, uniqBy } from 'lodash';
 import { updateDays as updateDaysCreator } from './actions/app';
 
 import RaceListing from './components/RaceListing';
@@ -61,7 +61,7 @@ export class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = cloneDeep(defaultSettings);
+    this.state = { ...defaultSettings };
     this.state.currentModal = null;
   }
 
@@ -75,14 +75,28 @@ export class App extends Component {
 
   componentDidUpdate() {
     const {
-      filters, ownedCars, ownedTracks, favouriteSeries, favouriteTracks, favouriteCars,
+      filters, favouriteSeries, favouriteTracks, favouriteCars,
       columns, sort
     } = this.state;
 
     window.localStorage.setItem('iracing-state', JSON.stringify({
-      filters, ownedCars, ownedTracks, favouriteSeries, favouriteTracks, favouriteCars,
-      columns, sort
+      filters, ownedCars: this.getOwnedCars(), ownedTracks: this.getOwnedTracks(), favouriteSeries, favouriteTracks,
+      favouriteCars, columns, sort
     }));
+  }
+
+  getOwnedCars() {
+    return uniq([
+      ...this.state.ownedCars,
+      ...defaultSettings.ownedCars
+    ]);
+  }
+
+  getOwnedTracks() {
+    return uniq([
+      ...this.state.ownedTracks,
+      ...defaultSettings.ownedTracks
+    ]);
   }
 
   updateFilters(newFilters) {
@@ -90,11 +104,11 @@ export class App extends Component {
   }
 
   resetFilters() {
-    this.setState({ filters: cloneDeep(defaultFilters) });
+    this.setState({ filters: { ...defaultFilters } });
   }
 
   resetSettings() {
-    this.setState(cloneDeep(defaultSettings));
+    this.setState({ ...defaultSettings });
   }
 
   closeModal(e = { preventDefault: () => {} }) {
@@ -128,16 +142,16 @@ export class App extends Component {
   }
 
   renderMyTracksModal() {
-    const { ownedTracks, favouriteTracks, currentModal } = this.state;
+    const { favouriteTracks, currentModal } = this.state;
     return (
       <ContentModal
         isOpen={currentModal === 'my-tracks'}
         onClose={this.closeModal.bind(this)}
         title='Set My Tracks'
-        ownedContent={ownedTracks}
+        ownedContent={this.getOwnedTracks()}
         content={tracks}
         idField='id'
-        defaultContent={cloneDeep(defaultSettings.ownedTracks)}
+        defaultContent={[...defaultSettings.ownedTracks]}
         typeFilter={{ key: 'primaryType', oval: 'oval', road: 'road' }}
         save={this.saveOptions.bind(this, 'ownedTracks')}
         favourites={favouriteTracks}
@@ -147,16 +161,16 @@ export class App extends Component {
   }
 
   renderMyCarsModal() {
-    const { ownedCars, favouriteCars, currentModal } = this.state;
+    const { favouriteCars, currentModal } = this.state;
     return (
       <ContentModal
         isOpen={currentModal === 'my-cars'}
         onClose={this.closeModal.bind(this)}
         title='Set My Cars'
-        ownedContent={ownedCars}
+        ownedContent={this.getOwnedCars()}
         content={cars}
         idField='sku'
-        defaultContent={cloneDeep(defaultSettings.ownedCars)}
+        defaultContent={[...defaultSettings.ownedCars]}
         typeFilter={{ key: 'discountGroupNames', oval: ['oval+car'], road: ['road+car'] }}
         save={this.saveOptions.bind(this, 'ownedCars')}
         favourites={favouriteCars}
@@ -183,7 +197,7 @@ export class App extends Component {
   }
 
   render() {
-    const { filters, favouriteSeries, ownedCars, ownedTracks, favouriteCars, favouriteTracks,
+    const { filters, favouriteSeries, favouriteCars, favouriteTracks,
       columns, sort } = this.state;
 
     const { date, dateDays, dateView, week } = this.props;
@@ -244,7 +258,7 @@ export class App extends Component {
                 />
               </div>
               <RaceListing
-                filters={filters} ownedCars={ownedCars} ownedTracks={ownedTracks}
+                filters={filters} ownedCars={this.getOwnedCars()} ownedTracks={this.getOwnedTracks()}
                 favouriteSeries={favouriteSeries} date={date} favouriteTracks={favouriteTracks}
                 favouriteCars={favouriteCars} columnIds={columns} sort={sort}
                 updateSort={this.saveOptions.bind(this, 'sort')}
