@@ -36,12 +36,12 @@ export default class NextRace extends Component {
         <div className='container-fluid'>
           <ul>
             {race.raceTimes.setTimes.map(
-              (time, index) => <li key={index}>{
-                moment(weekStart)
-                  .add(time)
-                  .local()
-                  .format('ddd h:mma')
-              }</li>
+              (time, index) => (
+                <li key={index}>
+                  {moment(weekStart).add(time).local().format('ddd h:mma')},
+                  ({moment(weekStart).add(time).utc().format('ddd h:mma z')})
+                </li>
+              )
             )}
           </ul>
         </div>

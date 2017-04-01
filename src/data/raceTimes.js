@@ -139,9 +139,9 @@ export default [{
   // Blancpain Endurance
   seriesId: 237,
   setTimes: [
-    duration({ days: 4, hours: 17 }),  // Sat 5pm
-    duration({ days: 5, hours: 9 }), // Sun 9am
-    duration({ days: 5, hours: 19 })  // Sun 7pm
+    duration({ days: 4, hours: 9 }), // Sat 9am
+    duration({ days: 4, hours: 19 }),  // Sat 7pm
+    duration({ days: 5, hours: 17 })  // Sun 5pm
   ]
 }, {
   // Lotus 49
@@ -338,8 +338,8 @@ export default [{
   seriesId: 275,
   offWeeks: [1.5, 2.1, 2.15, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3.1, 4.1, 4.2, 4.3, 4.4, 4.5, 5.1, 6.1, 6.2, 7.1, 8.1],
   setTimes: [
-    duration({ days: 5, hours: 6, minutes: 0 }), // Sun 6am
-    duration({ days: 5, hours: 14, minutes: 0 }), // Sun 2pm
+    duration({ days: 4, hours: 14, minutes: 0 }), // Sat 2pm
+    duration({ days: 5, hours: 3, minutes: 0 }), // Sun 3am
   ]
 }, {
   // 13th Fig Gr8
