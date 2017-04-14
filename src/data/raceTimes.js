@@ -2,11 +2,13 @@ import { duration } from 'moment';
 import dirtR from './race-times/dirtR.js';
 import dirtD from './race-times/dirtD.js';
 import dirtC from './race-times/dirtC.js';
+import dirtB from './race-times/dirtB.js';
 
 export default [
   ...dirtR,
   ...dirtD,
   ...dirtC,
+  ...dirtB,
   {
     seriesId: 266,
     setTimes: [
