@@ -13,4 +13,10 @@ export default [
     everyTime: duration(2, 'hours'),
     offset: duration(90, 'minutes')
   },
+  {
+    // AMSoil Sprint
+    seriesId: 309,
+    everyTime: duration(2, 'hours'),
+    offset: duration(105, 'minutes')
+  },
 ];

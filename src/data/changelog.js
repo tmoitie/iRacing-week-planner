@@ -1,6 +1,11 @@
 import moment from 'moment';
 
 export default [{
+  date: moment('2017-04-29 00:00:00').utc(),
+  items: [
+    'Add new Dirt Series'
+  ]
+}, {
   date: moment('2017-04-01 00:00:00').utc(),
   items: [
     'Add Dirt times and fix Endurance times'

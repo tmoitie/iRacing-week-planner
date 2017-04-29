@@ -13,4 +13,10 @@ export default [
     everyTime: duration(2, 'hours'),
     offset: duration(30, 'minutes')
   },
+  {
+    // USAC 360 Sprint Car
+    seriesId: 310,
+    everyTime: duration(2, 'hours'),
+    offset: duration(45, 'minutes')
+  },
 ];
