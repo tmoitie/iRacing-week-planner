@@ -7,7 +7,7 @@ const writeFile = promisify(fs.writeFile);
 
 const client = remote({
   logLevel: 'command',
-  desiredCapabilities: { browserName: 'phantomjs' }
+  desiredCapabilities: { browserName: 'chrome' }
 }).init();
 
 const username = process.env.IWP_USERNAME || 'test';
