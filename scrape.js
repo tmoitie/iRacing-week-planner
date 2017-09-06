@@ -16,7 +16,7 @@ const password = process.env.IWP_PASSWORD || 'test';
 const extractJSONString = (sourceLines, variableName, fileName) => {
   const regexp = new RegExp(`^var ${variableName} = extractJSON\\('`);
   const listingLine = sourceLines.filter(line => line.search(regexp) !== -1)[0];
-  if (listingLine.length === 0) {
+  if (listingLine === undefined || listingLine.length === 0) {
     console.error(`${variableName} could not be found`);
     process.exit(1);
   }

@@ -1,6 +1,11 @@
 import moment from 'moment';
 
 export default [{
+  date: moment('2017-09-06 00:00:00').utc(),
+  items: [
+    'Updated to S2 Week 13'
+  ]
+}, {
   date: moment('2017-04-29 00:00:00').utc(),
   items: [
     'Add new Dirt Series'

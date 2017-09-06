@@ -90,9 +90,10 @@ export default season.reduce((carry, series) => {
 
     const startTime = moment(seriesStart).add(raceWeekLength * realRaceWeek, 'ms').startOf('day').utc();
     const weekLength = duration(raceWeekLength);
-    
+
     let type = series.catid === 1 ? 'Oval' : 'Road';
-    if (tracksById[track.id].isDirt) {
+
+    if (tracksById[track.id] !== undefined && tracksById[track.id].isDirt) {
       type = 'Dirt';
     }
 
