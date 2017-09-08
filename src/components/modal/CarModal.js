@@ -2,7 +2,6 @@ import React, { Component, PropTypes } from 'react';
 import Modal from './Modal';
 import moment from 'moment';
 import classnames from 'classnames';
-import { intersection } from 'lodash';
 
 import allCars from '../../data/cars.json';
 
@@ -46,12 +45,12 @@ export default class CarModal extends Component {
                   <tr 
                     key={index}
                     className={classnames({
-                    success: intersection(ownedCars, car.sku).length !== 0,
+                    success: ownedCars.includes(car.sku),
                     'clickable-cell': true
                   })}
                   >
                     <td>
-                      {intersection(favouriteCars, car.sku).length !== 0 ? (
+                      {favouriteCars.includes(car.sku) ? (
                         <span className='glyphicon glyphicon-star' />
                       ) : null}<span> </span>
                       {fixText(car.name)}
