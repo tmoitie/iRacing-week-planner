@@ -46,12 +46,12 @@ export default class CarModal extends Component {
                   <tr 
                     key={index}
                     className={classnames({
-                    success: intersection(ownedCars, carIds).length !== 0,
+                    success: intersection(ownedCars, car.sku).length !== 0,
                     'clickable-cell': true
                   })}
                   >
                     <td>
-                      {intersection(favouriteCars, carIds).length !== 0 ? (
+                      {intersection(favouriteCars, car.sku).length !== 0 ? (
                         <span className='glyphicon glyphicon-star' />
                       ) : null}<span> </span>
                       {fixText(car.name)}
