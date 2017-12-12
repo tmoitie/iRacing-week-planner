@@ -11,7 +11,7 @@ export default [
     // WoO Late Model
     seriesId: 308,
     everyTime: duration(2, 'hours'),
-    offset: duration(90, 'minutes')
+    offset: duration(105, 'minutes')
   },
   {
     // AMSoil Sprint
