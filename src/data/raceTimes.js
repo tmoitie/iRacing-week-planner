@@ -3,12 +3,14 @@ import dirtR from './race-times/dirtR.js';
 import dirtD from './race-times/dirtD.js';
 import dirtC from './race-times/dirtC.js';
 import dirtB from './race-times/dirtB.js';
+import roadC from './race-times/roadC.js';
 
 export default [
   ...dirtR,
   ...dirtD,
   ...dirtC,
   ...dirtB,
+  ...roadC,
   {
     seriesId: 266,
     setTimes: [
@@ -144,14 +146,6 @@ export default [
     seriesId: 231,
     everyTime: duration(2, 'hours'),
     offset: duration(15, 'minutes')
-  }, {
-    // Blancpain Endurance
-    seriesId: 237,
-    setTimes: [
-      duration({ days: 4, hours: 9 }), // Sat 9am
-      duration({ days: 4, hours: 19 }),  // Sat 7pm
-      duration({ days: 5, hours: 17 })  // Sun 5pm
-    ]
   }, {
     // Lotus 49
     seriesId: 201,
