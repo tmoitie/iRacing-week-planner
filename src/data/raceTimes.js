@@ -4,9 +4,12 @@ import dirtD from './race-times/dirtD.js';
 import dirtC from './race-times/dirtC.js';
 import dirtB from './race-times/dirtB.js';
 import roadR from './race-times/roadR.js';
+import roadD from './race-times/roadD.js';
 import roadC from './race-times/roadC.js';
 import ovalR from './race-times/ovalR.js';
+import ovalD from './race-times/ovalD.js';
 import rxR from './race-times/rxR.js';
+import rxD from './race-times/rxD.js';
 
 export default [
   ...dirtR,
@@ -14,29 +17,17 @@ export default [
   ...dirtC,
   ...dirtB,
   ...roadR,
+  ...roadD,
   ...roadC,
   ...ovalR,
+  ...ovalD,
   ...rxR,
+  ...rxD,
   {
     seriesId: 266,
     setTimes: [
       duration({ days: 4, hours: 13 }),  // Sat 1pm
     ]
-  }, {
-    // Late model
-    seriesId: 33,
-    everyTime: duration(2, 'hours'),
-    offset: duration(15, 'minutes')
-  }, {
-    // National
-    seriesId: 167,
-    everyTime: duration(2, 'hours'),
-    offset: duration(105, 'minutes'),
-  }, {
-    // SK Modified
-    seriesId: 45,
-    everyTime: duration(2, 'hours'),
-    offset: duration(60, 'minutes'),
   }, {
     // Indy Fixed
     seriesId: 165,
@@ -98,11 +89,6 @@ export default [
     everyTime: duration(2, 'hours'),
     offset: duration(45, 'minutes'),
   }, {
-    // Global Challenge
-    seriesId: 210,
-    everyTime: duration(2, 'hours'),
-    offset: duration(90, 'minutes'),
-  }, {
     // iRacing Nordschleife Hotlap
     seriesId: 263,
     everyTime: duration(10, 'minutes'),
@@ -113,25 +99,10 @@ export default [
     everyTime: duration(2, 'hours'),
     offset: duration(90, 'minutes'),
   }, {
-    // GT Cup
-    seriesId: 130,
-    everyTime: duration(2, 'hours'),
-    offset: duration(75, 'minutes'),
-  }, {
-    // SRF
-    seriesId: 63,
-    everyTime: duration(2, 'hours'),
-    offset: duration(45, 'minutes'),
-  }, {
     // Kia Cup
     seriesId: 248,
     everyTime: duration(2, 'hours'),
     offset: duration(45, 'minutes'),
-  }, {
-    // Skippy
-    seriesId: 34,
-    everyTime: duration(1, 'hours'),
-    offset: duration(15, 'minutes'),
   }, {
     // Advanced Mazda
     seriesId: 231,
@@ -333,11 +304,6 @@ export default [
     seriesId: 242,
     everyTime: duration(30, 'minutes'),
     offset: duration(15, 'minutes')
-  }, {
-    // RUF GT3
-    seriesId: 277,
-    everyTime: duration(120, 'minutes'),
-    offset: duration(60, 'minutes')
   }, {
     // Leo Bodnar ProtoGT
     seriesId: 278,
