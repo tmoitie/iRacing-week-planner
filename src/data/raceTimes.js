@@ -6,9 +6,11 @@ import dirtB from './race-times/dirtB.js';
 import roadR from './race-times/roadR.js';
 import roadD from './race-times/roadD.js';
 import roadC from './race-times/roadC.js';
+import roadB from './race-times/roadB.js';
 import roadA from './race-times/roadA.js';
 import ovalR from './race-times/ovalR.js';
 import ovalD from './race-times/ovalD.js';
+import ovalB from './race-times/ovalB.js';
 import ovalA from './race-times/ovalA.js';
 import rxR from './race-times/rxR.js';
 import rxD from './race-times/rxD.js';
@@ -21,9 +23,11 @@ export default [
   ...roadR,
   ...roadD,
   ...roadC,
+  ...roadB,
   ...roadA,
   ...ovalR,
   ...ovalD,
+  ...ovalB,
   ...ovalA,
   ...rxR,
   ...rxD,
@@ -62,26 +66,6 @@ export default [
     seriesId: 102,
     everyTime: duration(2, 'hours'),
     offset: duration(0, 'minutes'),
-  }, {
-    // Silver Crown
-    seriesId: 53,
-    everyTime: duration(2, 'hours'),
-    offset: duration(105, 'minutes'),
-  }, {
-    // Sprint Car
-    seriesId: 131,
-    everyTime: duration(2, 'hours'),
-    offset: duration(60, 'minutes'),
-  }, {
-    // Xfinity Open
-    seriesId: 62,
-    everyTime: duration(2, 'hours'),
-    offset: duration(0, 'minutes'),
-  }, {
-    // Xfinity Fixed
-    seriesId: 103,
-    everyTime: duration(2, 'hours'),
-    offset: duration(60, 'minutes'),
   }, {
     // iRacing Nordschleife Hotlap
     seriesId: 263,
@@ -132,21 +116,6 @@ export default [
     seriesId: 44,
     everyTime: duration(2, 'hours'),
     offset: duration(105, 'minutes'),
-  }, {
-    // Blancpain Sprint
-    seriesId: 228,
-    everyTime: duration(2, 'hours'),
-    offset: duration(0, 'minutes'),
-  }, {
-    // Lotus 79
-    seriesId: 65,
-    everyTime: duration(2, 'hours'),
-    offset: duration(30, 'minutes'),
-  }, {
-    // IMSA
-    seriesId: 227,
-    everyTime: duration(2, 'hours'),
-    offset: duration(45, 'minutes'),
   }, {
     // NIS Fixed
     seriesId: 207,
