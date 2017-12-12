@@ -1,6 +1,12 @@
 import moment from 'moment';
 
 export default [{
+  date: moment('2017-12-12 00:00:00').utc(),
+  items: [
+    'Updated to new season',
+    'Added RX Category'
+  ]
+}, {
   date: moment('2017-09-12 00:00:00').utc(),
   items: [
     'Updated to new season',

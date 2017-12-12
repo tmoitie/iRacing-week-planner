@@ -50,6 +50,17 @@ function getNextRaceSetTimes(setTimes) {
 
 const fixText = (text) => (decodeURIComponent(text).replace(/\+/g, ' ').trim());
 
+const getType = (catId) => {
+  const categories = {
+    1: 'Oval',
+    2: 'Road',
+    3: 'Dirt',
+    4: 'RX'
+  };
+
+  return categories[catId];
+};
+
 export default season.reduce((carry, series) => {
   const raceTimes = raceTimesById[series.seriesid] || {};
 
@@ -91,11 +102,7 @@ export default season.reduce((carry, series) => {
     const startTime = moment(seriesStart).add(raceWeekLength * realRaceWeek, 'ms').startOf('day').utc();
     const weekLength = duration(raceWeekLength);
 
-    let type = series.catid === 1 ? 'Oval' : 'Road';
-
-    if (tracksById[track.id] !== undefined && tracksById[track.id].isDirt) {
-      type = 'Dirt';
-    }
+    let type = getType(series.catid);
 
     return {
       series: seriesName,
