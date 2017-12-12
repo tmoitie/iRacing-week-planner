@@ -19,4 +19,10 @@ export default [
     everyTime: duration(1, 'hours'),
     offset: duration(0, 'minutes')
   },
+  {
+    // iRacing Dirt Legends Cup
+    seriesId: 315,
+    everyTime: duration(30, 'minutes'),
+    offset: duration(15, 'minutes')
+  },
 ];

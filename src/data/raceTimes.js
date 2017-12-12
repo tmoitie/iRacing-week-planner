@@ -3,29 +3,25 @@ import dirtR from './race-times/dirtR.js';
 import dirtD from './race-times/dirtD.js';
 import dirtC from './race-times/dirtC.js';
 import dirtB from './race-times/dirtB.js';
+import roadR from './race-times/roadR.js';
 import roadC from './race-times/roadC.js';
+import ovalR from './race-times/ovalR.js';
+import rxR from './race-times/rxR.js';
 
 export default [
   ...dirtR,
   ...dirtD,
   ...dirtC,
   ...dirtB,
+  ...roadR,
   ...roadC,
+  ...ovalR,
+  ...rxR,
   {
     seriesId: 266,
     setTimes: [
       duration({ days: 4, hours: 13 }),  // Sat 1pm
     ]
-  }, {
-    // Advanced Legends
-    seriesId: 32,
-    everyTime: duration(1, 'hours'),
-    offset: duration(30, 'minutes')
-  }, {
-    // Street Stock
-    seriesId: 182,
-    everyTime: duration(1, 'hours'),
-    offset: duration(0, 'minutes')
   }, {
     // Late model
     seriesId: 33,
@@ -101,11 +97,6 @@ export default [
     seriesId: 191,
     everyTime: duration(2, 'hours'),
     offset: duration(45, 'minutes'),
-  }, {
-    // Production Car Challenge
-    seriesId: 112,
-    everyTime: duration(1, 'hours'),
-    offset: duration(30, 'minutes'),
   }, {
     // Global Challenge
     seriesId: 210,
@@ -196,26 +187,6 @@ export default [
     seriesId: 260,
     everyTime: duration(2, 'hours'),
     offset: duration(0, 'minutes'),
-  }, {
-    // Carb Cup
-    seriesId: 116,
-    everyTime: duration(1, 'hours'),
-    offset: duration(45, 'minutes'),
-  }, {
-    // Dallara Dash
-    seriesId: 258,
-    everyTime: duration(1, 'hours'),
-    offset: duration(0, 'minutes'),
-  }, {
-    // Pickup Cup
-    seriesId: 259,
-    everyTime: duration(1, 'hours'),
-    offset: duration(30, 'minutes'),
-  }, {
-    // Nurbergring Fun
-    seriesId: 267,
-    everyTime: duration(1, 'hours'),
-    offset: duration(30, 'minutes'),
   }, {
     // NIS Fixed
     seriesId: 207,
@@ -362,11 +333,6 @@ export default [
     seriesId: 242,
     everyTime: duration(30, 'minutes'),
     offset: duration(15, 'minutes')
-  }, {
-    // Global Mazda
-    seriesId: 139,
-    everyTime: duration(60, 'minutes'),
-    offset: duration(0, 'minutes')
   }, {
     // RUF GT3
     seriesId: 277,
