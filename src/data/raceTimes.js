@@ -6,8 +6,10 @@ import dirtB from './race-times/dirtB.js';
 import roadR from './race-times/roadR.js';
 import roadD from './race-times/roadD.js';
 import roadC from './race-times/roadC.js';
+import roadA from './race-times/roadA.js';
 import ovalR from './race-times/ovalR.js';
 import ovalD from './race-times/ovalD.js';
+import ovalA from './race-times/ovalA.js';
 import rxR from './race-times/rxR.js';
 import rxD from './race-times/rxD.js';
 
@@ -19,8 +21,10 @@ export default [
   ...roadR,
   ...roadD,
   ...roadC,
+  ...roadA,
   ...ovalR,
   ...ovalD,
+  ...ovalA,
   ...rxR,
   ...rxD,
   {
@@ -78,16 +82,6 @@ export default [
     seriesId: 103,
     everyTime: duration(2, 'hours'),
     offset: duration(60, 'minutes'),
-  }, {
-    // Sprint Cup Open
-    seriesId: 58,
-    everyTime: duration(2, 'hours'),
-    offset: duration(30, 'minutes'),
-  }, {
-    // Sprint Cup Fixed
-    seriesId: 191,
-    everyTime: duration(2, 'hours'),
-    offset: duration(45, 'minutes'),
   }, {
     // iRacing Nordschleife Hotlap
     seriesId: 263,
@@ -154,11 +148,6 @@ export default [
     everyTime: duration(2, 'hours'),
     offset: duration(45, 'minutes'),
   }, {
-    // Grand Prix
-    seriesId: 260,
-    everyTime: duration(2, 'hours'),
-    offset: duration(0, 'minutes'),
-  }, {
     // NIS Fixed
     seriesId: 207,
     setTimes: [
@@ -193,13 +182,6 @@ export default [
     weekEndOffset: duration({ days: 7 }),
     offWeeks: [1.5, 2.5, 3.1, 3.6, 4.3, 4.7, 5.2, 5.4, 5.6, 5.8, 6.2, 6.4, 7.3, 7.6, 7.7, 8.5, 9.5, 10.3, 10.8, 11.5]
   }, {
-    // Road Pro Series
-    seriesId: 67,
-    setTimes: [
-      duration({ days: 4, hours: 14 }), // Sat 2pm
-    ],
-    offWeeks: [4.5, 5.2, 5.5]
-  }, {
     // Peak Antifreeze
     seriesId: 205,
     setTimes: [
@@ -208,14 +190,6 @@ export default [
     weekStartOffset: duration({ days: 28 }),
     weekEndOffset: duration({ days: 7 }),
     offWeeks: [3.5, 4.5, 5.5, 6.5, 7.2, 7.3, 8.5, 9.3, 9.6, 10.5, 11.5, 12.5, 13.5, 14.5, 15.5]
-  }, {
-    // NASCAR iRacing Pro Series
-    seriesId: 95,
-    setTimes: [
-      duration({ days: 1, hours: 2 }), // Wed 2am
-    ],
-    weekEndOffset: duration({ days: 7 }),
-    offWeeks: [3.5, 5.2, 5.5]
   }, {
     // 12 hours of Sebring
     seriesId: 271,
