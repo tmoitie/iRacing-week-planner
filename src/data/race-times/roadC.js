@@ -71,5 +71,15 @@ export default [
     seriesId: 74,
     everyTime: duration(120, 'minutes'),
     offset: duration(60, 'minutes')
+  },
+  {
+    // ROAR
+    seriesId: 297,
+    setTimes: [
+      duration({ days: 5, hours: 2 }), // Sun 2am
+      duration({ days: 5, hours: 13 }), // Sun 1pm
+      duration({ days: 5, hours: 17 }), // Sun 5pm
+      duration({ days: 6, hours: 14 }) // Mon 2pm
+    ]
   }
 ];
