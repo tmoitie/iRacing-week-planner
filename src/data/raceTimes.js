@@ -15,6 +15,7 @@ import ovalB from './race-times/ovalB.js';
 import ovalA from './race-times/ovalA.js';
 import rxR from './race-times/rxR.js';
 import rxD from './race-times/rxD.js';
+import pro from './race-times/pro.js';
 
 export default [
   ...dirtR,
@@ -33,6 +34,7 @@ export default [
   ...ovalA,
   ...rxR,
   ...rxD,
+  ...pro,
   // {
   //   seriesId: 266,
   //   setTimes: [

@@ -17,7 +17,7 @@ export default [
     ],
     weekStartOffset: duration({ days: 0 }),
     weekEndOffset: duration({ days: 0 }),
-    offWeeks: [2.5, 3.5, 4.2, 4.7, 5.5]
+    offWeeks: []
   },
   {
     // Lotus 49

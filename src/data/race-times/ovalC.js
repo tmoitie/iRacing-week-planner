@@ -36,5 +36,15 @@ export default [
     seriesId: 102,
     everyTime: duration(2, 'hours'),
     offset: duration(0, 'minutes'),
+  },
+  {
+    // NIS Fixed
+    seriesId: 207,
+    offWeeks: [6.5, 12.5, 15.5, 24.5]
+  },
+  {
+    // NIS Open
+    seriesId: 229,
+    offWeeks: [6.5, 12.5, 15.5, 24.5]
   }
 ];
