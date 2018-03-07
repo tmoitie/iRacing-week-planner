@@ -4,9 +4,9 @@ export default [
   {
     // NASCAR PEAK Antifreeze Series
     seriesId: 205,
-    // setTimes: [
-      // duration({ days: 1, hours: 2 }), // Wed 2am
-    // ],
+    setTimes: [
+      duration({ days: 1, hours: 0, minutes: 45 }), // Wed 0:45
+    ],
     weekStartOffset: duration({ days: 14 }),
     weekEndOffset: duration({ days: 7 }),
     offWeeks: [
@@ -25,6 +25,18 @@ export default [
       1.1, 2.1, 3.1, 4.1, 5.1, 5.2, 6.1, 7.1, 7.2, 8.1, 9.1, 9.2, 9.3,
       10.1, 11.1, 12.1, 13.1
     ]
+  },
+  {
+    // VRS GT iRacing World Championship
+    seriesId: 268,
+    setTimes: [
+      duration({ days: 4, hours: 13, minutes: 30 }), // Sat 1330
+    ],
+    weekStartOffset: duration({ days: 2 }),
+    weekEndOffset: duration({ days: 7 }),
+    offWeeks: [
+      1.1, 1.2, 2.1, 2.2, 2.3, 3.1, 3.2, 3.3, 4.1, 4.2, 4.3, 4.4, 4.5, 5.1, 6.1,
+      6.2, 7.1, 7.2, 7.3
+    ]
   }
 ];
-206
