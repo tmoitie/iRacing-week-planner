@@ -1,6 +1,11 @@
 import moment from 'moment';
 
 export default [{
+  date: moment('2018-03-07 00:00:00').utc(),
+  items: [
+    'Add W13 and update WC'
+  ]
+}, {
   date: moment('2018-01-10 00:00:00').utc(),
   items: [
     'Added ROAR before the 24'
