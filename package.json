@@ -64,6 +64,7 @@
     "babel-preset-env": "^1.6.0",
     "bluebird": "^3.4.7",
     "bootstrap-sass": "^3.3.6",
+    "child_process": "^1.0.2",
     "cli-table": "^0.3.1",
     "console-polyfill": "^0.2.2",
     "es5-shim": "^4.4.1",
@@ -81,6 +82,7 @@
     "redux-promise": "^0.5.3",
     "redux-thunk": "^2.1.0",
     "respond.js": "^1.4.2",
+    "rollbar": "^2.4.2",
     "webdriverio": "^4.6.2"
   }
 }

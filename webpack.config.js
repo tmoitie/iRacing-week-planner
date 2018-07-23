@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
+const cp = require('child_process');
 
 const port = process.env.PORT || 3000;
 
@@ -8,8 +9,19 @@ const env = process.env.NODE_ENV || 'development';
 
 const airbrakeKey = process.env.AIRBRAKE_KEY || '';
 
+let version;
+try {
+  version = cp.execSync('git rev-parse HEAD', {
+    cwd: __dirname,
+    encoding: 'utf8'
+  });
+} catch (err) {
+  console.log('Error getting revision', err); // eslint-disable-line no-console
+  process.exit(1);
+}
+
 module.exports = {
-  devtool: env === 'production' ? null : 'eval-source-maps',
+  devtool: 'source-map',
   entry: {
     main: env === 'production' ? ['./src/index'] : [
       `webpack-dev-server/client?http://localhost:${port}`,
@@ -53,13 +65,17 @@ module.exports = {
     new webpack.DefinePlugin({
       __DEV__: false,
       'process.env.AIRBRAKE_KEY': JSON.stringify(airbrakeKey),
-      'process.env.NODE_ENV': JSON.stringify('production')
+      'process.env.NODE_ENV': JSON.stringify('production'),
+      'process.env.ROLLBAR_CLIENT_KEY': JSON.stringify(process.env.ROLLBAR_CLIENT_KEY),
+      'process.env.CODE_VERSION': JSON.stringify(version)
     }),
   ] : [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({
       __DEV__: true,
-      'process.env.NODE_ENV': JSON.stringify('development')
+      'process.env.NODE_ENV': JSON.stringify('development'),
+      'process.env.ROLLBAR_CLIENT_KEY': JSON.stringify(process.env.ROLLBAR_CLIENT_KEY),
+      'process.env.CODE_VERSION': JSON.stringify(version)
     }),
   ]
 };
