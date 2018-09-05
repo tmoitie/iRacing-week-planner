@@ -37,4 +37,15 @@ export default [
     everyTime: duration(2, 'hours'),
     offset: duration(45, 'minutes')
   },
+  {
+    // Rallycross World Champs
+    seriesId: 348,
+    setTimes: [
+      duration({ days: 3, hours: 1 }), // Fri 1am
+    ],
+    weekEndOffset: duration({ days: 7 }),
+    offWeeks: [
+      2.1, 2.2, 4.1, 6.1, 7.1, 8.1, 8.2, 10.1
+    ]
+  },
 ];
