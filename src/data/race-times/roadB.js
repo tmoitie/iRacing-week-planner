@@ -20,8 +20,19 @@ export default [
     offset: duration(45, 'minutes'),
   },
   {
+    // Le Mans
+    seriesId: 330,
+    everyTime: duration(2, 'hours'),
+    offset: duration(60, 'minutes'),
+  },
+  {
     // Le Mans Enduro
     seriesId: 331,
+    setTimes: [
+      duration({ days: 4, hours: 7 }), // Sat 7am
+      duration({ days: 4, hours: 19 }),  // Sat 7pm
+      duration({ days: 5, hours: 14 })  // Sun 2pm
+    ],
     offWeeks: [1.5, 2.5, 3.5, 4.5, 5.5]
   },
 ];
