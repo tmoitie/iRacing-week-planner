@@ -38,5 +38,14 @@ export default [
       1.1, 1.2, 2.1, 2.2, 2.3, 3.1, 3.2, 3.3, 4.1, 4.2, 4.3, 4.4, 4.5, 5.1, 6.1,
       6.2, 7.1, 7.2, 7.3
     ]
-  }
+  },
+  {
+    // NASCAR iRacing Pro Series
+    seriesId: 95,
+    setTimes: [
+      duration({ days: 1, hours: 2 }), // Wed 2am
+    ],
+    weekEndOffset: duration({ days: 7 }),
+    offWeeks: [2.1, 3.1, 3.2, 4.1, 4.2, ]
+  },
 ];
