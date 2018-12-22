@@ -1,6 +1,13 @@
 import moment from 'moment';
 
 export default [{
+  date: moment('2018-12-27 00:00:00').utc(),
+  items: [
+    'Added races times for Dallara F3',
+    'Added races times for Formula Renault 3.5',
+    'Added races times for Ferrari GT3 Challenge',
+  ]
+},{
   date: moment('2018-12-11 00:00:00').utc(),
   items: [
     'Update to 2019S1'

@@ -35,4 +35,10 @@ export default [
     ],
     offWeeks: [1.5, 2.5, 3.5, 4.5, 5.5]
   },
+  {
+    // Formula Renault 3.5
+    seriesId: 359,
+    everyTime: duration(2, 'hours'),
+    offset: duration(0, 'minutes')
+  },
 ];
