@@ -81,5 +81,11 @@ export default [
       duration({ days: 5, hours: 17 }), // Sun 5pm
       duration({ days: 6, hours: 14 }) // Mon 2pm
     ]
+  },
+  {
+    // Dallara F3
+    seriesId: 358,
+    everyTime: duration(120, 'minutes'),
+    offset: duration(75, 'minutes')
   }
 ];

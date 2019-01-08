@@ -33,5 +33,10 @@ export default [
       1.1, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 2.11, 3.1, 4.1, 4.2,
       4.3, 4.4, 4.5, 5.1, 6.1, 6.2, 7.1, 8.1
     ]
+  }, {
+    // Ferrari GT3 Challenge
+    seriesId: 353,
+    everyTime: duration(1, 'hours'),
+    offset: duration(30, 'minutes')
   }
 ];
