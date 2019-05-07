@@ -25,5 +25,16 @@ export default [
     weekStartOffset: duration({ days: 7 }),
     weekEndOffset: duration({ days: 0 }),
     offWeeks: [1.1, 2.1, 3.1, 4.1, 5.1]
+  },
+  {
+    // Porsche ESport Challenge
+    seriesId: 373,
+    // setTimes: [
+    //   duration({ days: 4, hours: 9 }), // Sat 9am
+    //   duration({ days: 4, hours: 19 }), // Sat 7pm
+    // ],
+    // weekStartOffset: duration({ days: 7 }),
+    weekEndOffset: duration({ days: 7 }),
+    offWeeks: [1.1, 2.1, 3.1, 4.1, 5.1, 5.2, 6.1, 7.1, 8.1, 8.2, 8.3, 8.4, 8.5, 8.6, 9.1]
   }
 ];
