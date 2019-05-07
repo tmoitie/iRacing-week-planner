@@ -33,7 +33,7 @@ export default [
       duration({ days: 4, hours: 19 }),  // Sat 7pm
       duration({ days: 5, hours: 14 })  // Sun 2pm
     ],
-    offWeeks: [1.5, 2.5, 3.5, 4.5, 5.5]
+    offWeeks: [1.1, 2.1, 3.1, 4.1]
   },
   {
     // Formula Renault 3.5
