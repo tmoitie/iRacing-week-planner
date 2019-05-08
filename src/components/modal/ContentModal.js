@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { cloneDeep, difference, isEqual } from 'lodash';
 import Modal from './Modal';
 import Checkbox from '../Checkbox';

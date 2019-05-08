@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { uniq, uniqBy } from 'lodash';
@@ -21,7 +22,7 @@ import { Slider } from '@blueprintjs/core';
 
 import './components/styles/preBootstrap.scss';
 import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
-import '@blueprintjs/core/dist/blueprint.css';
+import '@blueprintjs/core/lib/css/blueprint.css';
 
 const cars = uniqBy(allCars, (car) => car.sku);
 

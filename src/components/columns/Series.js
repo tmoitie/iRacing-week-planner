@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import SeriesModal from '../modal/SeriesModal';
 
 export default class Series extends Component {

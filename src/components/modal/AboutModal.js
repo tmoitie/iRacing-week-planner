@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Modal from './Modal';
 import changelog from '../../data/changelog';
 import { bindActionCreators } from 'redux';

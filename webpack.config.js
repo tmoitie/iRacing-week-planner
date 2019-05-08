@@ -24,6 +24,7 @@ module.exports = {
   devtool: 'source-map',
   entry: {
     main: env === 'production' ? ['./src/index'] : [
+      'react-hot-loader/patch',
       `webpack-dev-server/client?http://localhost:${port}`,
       'webpack/hot/only-dev-server',
       './src/index'
@@ -39,7 +40,7 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.js$/,
-      loaders: env === 'production' ? ['babel'] : ['react-hot', 'babel'],
+      loaders: ['babel'],
       include: [path.join(__dirname, 'src')]
     }, {
       test: /\.scss$/,

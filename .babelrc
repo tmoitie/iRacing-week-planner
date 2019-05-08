@@ -1,4 +1,4 @@
 {
   "presets": ["env", "stage-0", "react"],
-  "plugins": ["syntax-class-properties"]
+  "plugins": ["syntax-class-properties", "react-hot-loader/babel"]
 }

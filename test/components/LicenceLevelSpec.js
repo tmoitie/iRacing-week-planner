@@ -2,12 +2,12 @@
 /* eslint no-unused-expressions: 0 */
 
 import React from 'react';
-import { createRenderer } from 'react-addons-test-utils';
+import ShallowRenderer from 'react-test-renderer/shallow';
 import { expect } from 'chai';
 
 import LicenceLevel from '../../src/components/LicenceLevel';
 
-const renderer = createRenderer();
+const renderer = new ShallowRenderer();
 
 describe('components/LicenceLevel', () => {
 

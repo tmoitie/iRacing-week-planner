@@ -1,6 +1,7 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { cloneDeep } from 'lodash';
-import update from 'react-addons-update';
+import update from 'immutability-helper';
 import Modal from './Modal';
 import Checkbox from '../Checkbox';
 import series from '../../data/season.json';
