@@ -1,9 +1,9 @@
 /yarn-error.log
-node_modules
-npm-debug.log
-.DS_Store
-public/dist
-src/data/car-class.json
-src/data/cars.json
-src/data/season.json
-src/data/tracks.json
+/node_modules
+/npm-debug.log
+/.DS_Store
+/public/dist
+/src/data/car-class.json
+/src/data/cars.json
+/src/data/season.json
+/src/data/tracks.json
