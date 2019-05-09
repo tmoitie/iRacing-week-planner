@@ -1,11 +1,11 @@
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import rootReducer from '../reducers';
+import { createLogger } from 'redux-logger';
 
 let enhancer = applyMiddleware(thunk);
 
 if (process.env.NODE_ENV === 'development') {
-  const createLogger = require('redux-logger');
   const logger = createLogger({
     level: 'info',
     collapsed: true,

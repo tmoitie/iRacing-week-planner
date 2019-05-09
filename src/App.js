@@ -255,7 +255,7 @@ export class App extends Component {
                   value={dateDays}
                   stepSize={1}
                   onChange={this.updateDays.bind(this)}
-                  renderLabel={false}
+                  labelRenderer={false}
                 />
               </div>
               <RaceListing
