@@ -1,7 +1,7 @@
 import Table from 'cli-table';
 import moment from 'moment';
 
-import allRaces from './src/lib/races';
+import allRaces from '../src/lib/races';
 
 const seriesId = parseInt(process.argv[2], 10);
 const races = allRaces.filter(race => race.seriesId === seriesId);

@@ -2,7 +2,7 @@ import Table from 'cli-table';
 import { uniqBy } from 'lodash';
 import moment from 'moment';
 
-import races from './src/lib/races';
+import races from '../src/lib/races';
 
 const seriesIds = process.argv.slice(2).map(id => parseInt(id, 10));
 
