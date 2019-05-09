@@ -1,3 +1,4 @@
 --reporter spec
---compilers js:babel-register,css:./test/support/css-null
+--require @babel/register
+--require ignore-styles
 ./test/**/*Spec.js
