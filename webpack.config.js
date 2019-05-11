@@ -28,7 +28,7 @@ const postcssLoader = {
 
 module.exports = {
   mode: env,
-  devtool: env === 'development' ? 'inline-source-map' : null,
+  devtool: env === 'development' ? 'inline-source-map' : false,
   entry: {
     main: './src/index',
     ie8: './src/ie8',
