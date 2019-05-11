@@ -119,7 +119,7 @@ module.exports = {
       chunkFilename: '[id].css',
     }),
     new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /en|de|es|fr|nl|pt|pl|da|it|sv|cs|fi|hu|ca/),
-    new BundleAnalyzerPlugin(),
+    // new BundleAnalyzerPlugin(),
   ] : [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({
