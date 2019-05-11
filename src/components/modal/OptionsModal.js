@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { cloneDeep } from 'lodash';
 import Modal from './Modal';
 import Checkbox from '../Checkbox';
 import Radio from '../Radio';
 import availableColumns from '../../data/availableColumns';
 
 const toggleIdInCollection = (collection, id, newState) => {
-  const newCollection = cloneDeep(collection);
+  const newCollection = [ ...collection ];
   const index = newCollection.indexOf(id);
 
   if (index === -1 && newState) {

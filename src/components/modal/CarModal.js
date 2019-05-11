@@ -6,8 +6,6 @@ import classnames from 'classnames';
 
 import allCars from '../../data/cars.json';
 
-const fixText = (text) => (decodeURIComponent(text).replace(/\+/g, ' '));
-
 export default class CarModal extends Component {
   static propTypes = {
     onClose: PropTypes.func,
@@ -54,7 +52,7 @@ export default class CarModal extends Component {
                       {favouriteCars.includes(car.sku) ? (
                         <span className='glyphicon glyphicon-star' />
                       ) : null}<span> </span>
-                      {fixText(car.name)}
+                      {car.name}
                     </td>
                   </tr>
                 ))}

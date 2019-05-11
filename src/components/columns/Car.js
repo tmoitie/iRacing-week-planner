@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import CarModal from '../modal/CarModal';
 import classnames from 'classnames';
-import { intersection } from 'lodash';
+import intersection from 'lodash.intersection';
 
 export default class Car extends Component {
   static propTypes = {

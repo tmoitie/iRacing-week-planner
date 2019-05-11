@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { cloneDeep, difference, isEqual } from 'lodash';
+import difference from 'lodash.difference';
+import isEqual from 'lodash.isequal';
 import Modal from './Modal';
 import Checkbox from '../Checkbox';
 import FavouriteStarButton from '../FavouriteStarButton';
 
-const fixText = (text) => (decodeURIComponent(text).replace(/\+/g, ' '));
-
 const toggleIdInCollection = (collection, id, newState) => {
-  const newCollection = cloneDeep(collection);
+  const newCollection = [ ...collection ];
   const index = newCollection.indexOf(id);
 
   if (index === -1 && newState) {
@@ -190,7 +189,7 @@ export default class ContentModal extends Component {
                   checked={ownedContent.indexOf(item[idField]) !== -1}
                   onChange={this.toggleContent.bind(this, item[idField])}
                 >
-                  {item.skuname ? fixText(item.skuname) : fixText(item.name)}
+                  { item.skuname ? item.skuname : item.name }
 
                   <span> </span>
 

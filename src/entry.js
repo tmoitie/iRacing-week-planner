@@ -3,9 +3,14 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
-import { hot } from 'react-hot-loader/root'
 
-const HotApp = hot(App);
+let HotApp = App;
+
+if (process.env.NODE_ENV === 'development') {
+  const { hot } = require('react-hot-loader/root');
+
+  HotApp = hot(App);
+}
 
 ReactDOM.render(
   <Provider store={configureStore({})}>

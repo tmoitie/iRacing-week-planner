@@ -3,12 +3,16 @@ import fs from 'fs';
 import path from 'path';
 import { promisify } from 'bluebird';
 
+import seasonFilter from './scraper-filters/seasonFilter';
+import tracksFilter from './scraper-filters/tracksFilter';
+import carsFilter from './scraper-filters/carsFilter';
+
 const writeFile = promisify(fs.writeFile);
 
 const username = process.env.IWP_USERNAME || 'test';
 const password = process.env.IWP_PASSWORD || 'test';
 
-const extractJSONString = (sourceLines, variableName, fileName) => {
+const extractJSONString = (sourceLines, variableName, fileName, filter = (a) => a) => {
   const regexp = new RegExp(`^var ${variableName} = extractJSON\\('`);
   const listingLine = sourceLines.filter(line => line.search(regexp) !== -1)[0];
   if (listingLine === undefined || listingLine.length === 0) {
@@ -20,7 +24,8 @@ const extractJSONString = (sourceLines, variableName, fileName) => {
     .replace(/'\);$/, '');
 
   const listing = JSON.parse(listingJson);
-  writeFile(path.join(__dirname, fileName), JSON.stringify(listing, null, 2));
+  const filteredListing = filter(listing);
+  writeFile(path.join(__dirname, fileName), JSON.stringify(filteredListing, null, 2));
 };
 
 (async () => {
@@ -53,10 +58,10 @@ const extractJSONString = (sourceLines, variableName, fileName) => {
   const source = await browser.getPageSource();
   const sourceLines = source.split('\n');
   
-  extractJSONString(sourceLines, 'TrackListing', '../src/data/tracks.json');
+  extractJSONString(sourceLines, 'TrackListing', '../src/data/tracks.json', tracksFilter);
   extractJSONString(sourceLines, 'CarClassListing', '../src/data/car-class.json');
-  extractJSONString(sourceLines, 'CarListing', '../src/data/cars.json');
-  extractJSONString(sourceLines, 'SeasonListing', '../src/data/season.json');
+  extractJSONString(sourceLines, 'CarListing', '../src/data/cars.json', carsFilter);
+  extractJSONString(sourceLines, 'SeasonListing', '../src/data/season.json', seasonFilter);
   
   await browser.deleteSession();
 })().catch((e) => console.error(e));

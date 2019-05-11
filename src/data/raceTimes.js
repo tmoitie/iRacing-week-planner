@@ -1,4 +1,3 @@
-import { duration } from 'moment';
 import dirtR from './race-times/dirtR.js';
 import dirtD from './race-times/dirtD.js';
 import dirtC from './race-times/dirtC.js';

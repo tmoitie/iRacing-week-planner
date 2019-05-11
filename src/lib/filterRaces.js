@@ -1,9 +1,9 @@
-import {clone, intersection} from 'lodash';
+import intersection from 'lodash.intersection';
 
 export default function({
   races, filters, ownedTracks, ownedCars, favouriteSeries, favouriteCars, favouriteTracks
 }) {
-  let filteredRaces = clone(races);
+  let filteredRaces = [ ...races ];
 
   filteredRaces = filteredRaces.filter((race) => {
     return filters.type.indexOf(race.type) !== -1;

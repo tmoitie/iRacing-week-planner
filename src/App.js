@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { uniq, uniqBy } from 'lodash';
+import uniq from 'lodash.uniq';
+import uniqBy from 'lodash.uniqby';
 import { updateDays as updateDaysCreator } from './actions/app';
 
 import RaceListing from './components/RaceListing';
@@ -13,7 +14,7 @@ import OptionsModal from './components/modal/OptionsModal';
 import AboutModal from './components/modal/AboutModal';
 
 import allCars from './data/cars.json';
-import tracks from './lib/tracks';
+import tracks from './data/tracks.json';
 import availableColumns from './data/availableColumns';
 
 import { seasonStart, seasonEnd } from './config';

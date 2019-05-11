@@ -1,4 +1,3 @@
-import { clone } from 'lodash';
 import columns from '../data/availableColumns';
 
 const columnsById = columns.reduce((columnObject, column) => {
@@ -7,7 +6,7 @@ const columnsById = columns.reduce((columnObject, column) => {
 }, {});
 
 export default (rule, unordered) => {
-  const races = clone(unordered);
+  const races = [ ...unordered ];
 
   races.sort(columnsById[rule.key].sort.bind(null, rule.order));
 

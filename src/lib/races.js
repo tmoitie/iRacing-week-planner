@@ -1,13 +1,7 @@
 import season from '../data/season.json';
-import levelToClass, {levelToClassNumber} from './levelToClass';
+import levelToClass, { levelToClassNumber } from './levelToClass';
 import raceTimesArray from '../data/raceTimes';
-import moment, {duration} from 'moment';
-
-import tracks from '../data/tracks.json';
-
-const tracksById = tracks.reduce((tracksObj, track) => {
-  return { ...tracksObj, [track.id]: track };
-}, {});
+import moment, { duration } from 'moment';
 
 const raceTimesById = raceTimesArray.reduce((races, race) => {
   return { ...races, [race.seriesId]: race };
@@ -48,8 +42,6 @@ function getNextRaceSetTimes(setTimes) {
   return null;
 }
 
-const fixText = (text) => (decodeURIComponent(text).replace(/\+/g, ' ').trim());
-
 const getType = (catId) => {
   const categories = {
     1: 'Oval',
@@ -64,7 +56,7 @@ const getType = (catId) => {
 export default season.reduce((carry, series) => {
   const raceTimes = raceTimesById[series.seriesid] || {};
 
-  const seriesName = fixText(series.seriesname);
+  const seriesName = series.seriesname;
   const seriesStart = moment(series.start, 'x').utc().startOf('day');
 
   if (raceTimes.weekStartOffset) {
@@ -86,7 +78,7 @@ export default season.reduce((carry, series) => {
   allRaceWeeks.sort((a, b) => a - b);
 
   return carry.concat(series.tracks.map((track) => {
-    const trackName = track.config ? `${track.name} - ${track.config}` : track.name;
+    const trackName = track.name;
     let nextTime = null;
 
     const realRaceWeek = allRaceWeeks.indexOf(track.raceweek);
@@ -107,7 +99,7 @@ export default season.reduce((carry, series) => {
     return {
       series: seriesName,
       seriesId: series.seriesid,
-      track: fixText(trackName),
+      track: track.name,
       trackId: track.pkgid,
       week: track.raceweek,
       startTime,
@@ -119,8 +111,8 @@ export default season.reduce((carry, series) => {
       licenceClass: levelToClass(series.minlicenselevel, true),
       type,
       fixed: series.isFixedSetup,
-      carClasses: series.carclasses.map((carClass) => fixText(carClass.shortname)),
-      carIds: series.cars.map((car) => car.sku),
+      carClasses: series.carclasses.map(({ shortname }) => shortname),
+      carIds: series.cars.map(({ sku }) => sku),
       raceTimes,
       nextTime,
       seriesStart,

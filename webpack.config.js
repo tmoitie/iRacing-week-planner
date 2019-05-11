@@ -1,6 +1,10 @@
 const path = require('path');
 const webpack = require('webpack');
 const cp = require('child_process');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const port = process.env.PORT || 3000;
 const env = process.env.NODE_ENV || 'development';
@@ -50,7 +54,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          'style-loader',
+          { loader: MiniCssExtractPlugin.loader },
           'css-loader',
           postcssLoader,
           'sass-loader',
@@ -59,7 +63,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          'style-loader',
+          { loader: MiniCssExtractPlugin.loader },
           'css-loader',
           postcssLoader,
         ],
@@ -110,6 +114,20 @@ module.exports = {
       'process.env.NODE_ENV': JSON.stringify('production'),
       'process.env.CODE_VERSION': JSON.stringify(version),
     }),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+    }),
+    new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /en|de|es|fr|nl|pt|pl|da|it|sv|cs|fi|hu|ca/),
+    new BundleAnalyzerPlugin(),
+    new OptimizeCssAssetsPlugin({
+      assetNameRegExp: /\.optimize\.css$/g,
+      cssProcessor: require('cssnano'),
+      cssProcessorPluginOptions: {
+        preset: ['default', { discardComments: { removeAll: true } }],
+      },
+      canPrint: true
+    })
   ] : [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({
@@ -117,11 +135,23 @@ module.exports = {
       'process.env.NODE_ENV': JSON.stringify('development'),
       'process.env.CODE_VERSION': JSON.stringify(version),
     }),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+    }),
   ],
   devServer: {
     contentBase: path.resolve(__dirname, 'public'),
     compress: true,
     port: port,
     hot: true,
+  },
+  optimization: {
+    minimizer: [
+      new TerserPlugin({
+        parallel: true,
+        test: /\.m?jso?n?(\?.*)?$/i
+      }),
+    ],
   },
 };

@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { cloneDeep } from 'lodash';
 import update from 'immutability-helper';
 import Modal from './Modal';
 import Checkbox from '../Checkbox';
 import series from '../../data/season.json';
-
-const fixText = (text) => (decodeURIComponent(text).replace(/\+/g, ' '));
 
 const groupedSeries = series.reduce((grouped, single) => {
   if (single.catid === 1) {
@@ -32,7 +29,7 @@ export default class FavouriteSeriesModal extends Component {
 
   setCheckboxFavourite(seriesId, e) {
     const { favouriteSeries, save } = this.props;
-    const newFavorites = cloneDeep(favouriteSeries);
+    const newFavorites = [ ...favouriteSeries ];
     const index = newFavorites.indexOf(seriesId);
 
     if (index === -1 && e.target.checked) {
@@ -52,7 +49,7 @@ export default class FavouriteSeriesModal extends Component {
           checked={favouriteSeries.indexOf(cbSeries.seriesid) !== -1}
           onChange={this.setCheckboxFavourite.bind(this, cbSeries.seriesid)}
         >
-          {fixText(cbSeries.seriesname)}
+          {cbSeries.seriesname}
         </Checkbox>
       </div>
     );

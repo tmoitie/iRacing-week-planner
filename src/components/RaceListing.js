@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
-import { clone } from 'lodash';
 
 import allRaces from '../lib/races';
 import filterRaces from '../lib/filterRaces';
@@ -39,7 +38,7 @@ export default class RaceListing extends Component {
 
   sortColumn(columnId) {
     const { sort, updateSort } = this.props;
-    let newSort = clone(sort);
+    let newSort = { ...sort };
 
     if (sort.key === columnId) {
       newSort.order = sort.order === 'asc' ? 'desc' : 'asc';

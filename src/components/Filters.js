@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { cloneDeep } from 'lodash';
 import update from 'immutability-helper';
 import Checkbox from './Checkbox';
 
@@ -21,7 +20,7 @@ export default class Filters extends Component {
 
   setCheckboxFilter(key, value, e) {
     const { currentFilters, updateFilters } = this.props;
-    const newFilters = cloneDeep(currentFilters);
+    const newFilters = { ...currentFilters };
     if (typeof newFilters[key] !== 'object') {
       newFilters[key] = [];
     }
