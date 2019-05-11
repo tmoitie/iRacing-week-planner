@@ -4,7 +4,7 @@ const cp = require('child_process');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const port = process.env.PORT || 3000;
 const env = process.env.NODE_ENV || 'development';
@@ -120,14 +120,6 @@ module.exports = {
     }),
     new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /en|de|es|fr|nl|pt|pl|da|it|sv|cs|fi|hu|ca/),
     new BundleAnalyzerPlugin(),
-    new OptimizeCssAssetsPlugin({
-      assetNameRegExp: /\.optimize\.css$/g,
-      cssProcessor: require('cssnano'),
-      cssProcessorPluginOptions: {
-        preset: ['default', { discardComments: { removeAll: true } }],
-      },
-      canPrint: true
-    })
   ] : [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({
@@ -152,6 +144,7 @@ module.exports = {
         parallel: true,
         test: /\.m?jso?n?(\?.*)?$/i
       }),
+      new OptimizeCSSAssetsPlugin({})
     ],
   },
 };
