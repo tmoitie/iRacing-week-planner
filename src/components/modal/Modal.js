@@ -45,8 +45,16 @@ export default class Modal extends Component {
 
   close(e) {
     e.preventDefault();
+    e.stopPropagation();
 
     this.props.onClose(e);
+  }
+  
+  clickDone(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    this.props.doneAction(e);
   }
 
   render() {
@@ -64,7 +72,7 @@ export default class Modal extends Component {
           {children}
         </div>
         <div className='modal-footer'>
-          <button type='button' className='btn btn-primary' onClick={doneAction}>{doneButtonText}</button>
+          <button type='button' className='btn btn-primary' onClick={this.clickDone.bind(this)}>{doneButtonText}</button>
         </div>
       </div>
     </BaseModal>);
