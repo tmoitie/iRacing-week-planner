@@ -31,4 +31,9 @@ export default [
     everyTime: duration(1, 'hours'),
     offset: duration(30, 'minutes')
   },
+  {
+    // Advanced Legends
+    seriesId: 347,
+    weekEndOffset: duration({ days: 7 }),
+  },
 ];
