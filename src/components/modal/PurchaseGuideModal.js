@@ -17,7 +17,6 @@ export default class PurchaseGuideModal extends Component {
 
     const purchaseItems = purchaseOptimization({ownedTracks, favouriteSeries})
 
-    // https://members.iracing.com/membersite/member/TrackDetail.do?trkid=51
     return (
       <Modal isOpen={isOpen} onClose={onClose} title={`Purchase Guide`} doneAction={onClose}>
         <div className='container-fluid'>
@@ -39,7 +38,13 @@ export default class PurchaseGuideModal extends Component {
                   <tr key={index}>
                     <td>{item.count}</td>
                     <td>{item.name}</td>
-                    <td></td>
+                    <td>
+                      <ul>
+                        {item.series.map((name, index) => {
+                          return <li key={index}>{name}</li>
+                        })}
+                      </ul>
+                    </td>
                     <td>
                       <a href={`https://members.iracing.com/membersite/member/TrackDetail.do?trkid=${item.id}`}
                          target='_blank'>
