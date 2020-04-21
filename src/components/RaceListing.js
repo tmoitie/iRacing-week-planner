@@ -5,7 +5,6 @@ import moment from 'moment';
 import allRaces from '../lib/races';
 import filterRaces from '../lib/filterRaces';
 import sortRaces from '../lib/sortRaces';
-import purchaseOptimization from "../lib/purchaseOptimization";
 
 import availableColumns from '../data/availableColumns';
 
@@ -65,8 +64,6 @@ export default class RaceListing extends Component {
       favouriteCars, favouriteTracks, columnIds } = this.props;
 
     let races = allRaces.filter((race) => moment(date).add(1, 'hour').isBetween(race.startTime, race.endTime));
-
-    purchaseOptimization({ownedTracks, favouriteSeries});
 
     races = sortRaces(sort, races);
 
