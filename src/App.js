@@ -120,17 +120,12 @@ export class App extends Component {
     this.setState({ ...defaultSettings });
   }
 
-  closeModal(e = {
-    preventDefault: () => {}
-  }) {
+  closeModal(e = { preventDefault: () => {} }) {
     e.preventDefault();
     this.setState({ currentModal: null });
   }
 
-  openModal(modalName, e = {
-    preventDefault: () => {
-    }
-  }) {
+  openModal(modalName, e = { preventDefault: () => {} }) {
     e.preventDefault();
     this.setState({ currentModal: modalName });
   }
@@ -291,14 +286,10 @@ export class App extends Component {
             <div className='col-md-10'>
               <div className='row'>
                 <h3 className='col-xs-8'>
-                  Races for date:
-                  {' '}
-                  {dateView}
+                  Races for date: {dateView}
                 </h3>
                 <h3 className='col-xs-4' style={{ textAlign: 'right' }}>
-                  Week
-                  {' '}
-                  {week}
+                  Week {week}
                 </h3>
               </div>
               <div style={{ marginBottom: 10 }}>
