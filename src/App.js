@@ -1,10 +1,11 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import uniq from 'lodash.uniq';
 import uniqBy from 'lodash.uniqby';
-import {updateDays as updateDaysCreator} from './actions/app';
+import { Slider } from '@blueprintjs/core';
+import { updateDays as updateDaysCreator } from './actions/app';
 
 import RaceListing from './components/RaceListing';
 import Filters from './components/Filters';
@@ -17,14 +18,13 @@ import allCars from './data/cars.json';
 import tracks from './data/tracks.json';
 import availableColumns from './data/availableColumns';
 
-import {seasonStart, seasonEnd} from './config';
+import { seasonStart, seasonEnd } from './config';
 
-import {Slider} from '@blueprintjs/core';
 
 import './components/styles/preBootstrap.scss';
 import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 import '@blueprintjs/core/lib/css/blueprint.css';
-import PurchaseGuideModal from "./components/modal/PurchaseGuideModal";
+import PurchaseGuideModal from './components/modal/PurchaseGuideModal';
 
 const cars = uniqBy(allCars, (car) => car.sku);
 
@@ -42,13 +42,13 @@ const defaultFilters = {
 
 const defaultSettings = {
   filters: defaultFilters,
-  ownedCars: cars.filter(car => car.freeWithSubscription === true).map(car => car.sku),
-  ownedTracks: tracks.filter(track => track.default).map(track => track.pkgid),
+  ownedCars: cars.filter((car) => car.freeWithSubscription === true).map((car) => car.sku),
+  ownedTracks: tracks.filter((track) => track.default).map((track) => track.pkgid),
   favouriteSeries: [],
   favouriteCars: [],
   favouriteTracks: [],
-  sort: {key: 'licence', order: 'asc'},
-  columns: availableColumns.filter(column => column.default === true).map(column => column.id)
+  sort: { key: 'licence', order: 'asc' },
+  columns: availableColumns.filter((column) => column.default === true).map((column) => column.id)
 };
 
 const seasonLengthDays = seasonEnd.diff(seasonStart, 'days');
@@ -64,7 +64,7 @@ export class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {...defaultSettings};
+    this.state = { ...defaultSettings };
     this.state.currentModal = null;
   }
 
@@ -83,8 +83,14 @@ export class App extends Component {
     } = this.state;
 
     window.localStorage.setItem('iracing-state', JSON.stringify({
-      filters, ownedCars: this.getOwnedCars(), ownedTracks: this.getOwnedTracks(), favouriteSeries, favouriteTracks,
-      favouriteCars, columns, sort
+      filters,
+      ownedCars: this.getOwnedCars(),
+      ownedTracks: this.getOwnedTracks(),
+      favouriteSeries,
+      favouriteTracks,
+      favouriteCars,
+      columns,
+      sort
     }));
   }
 
@@ -103,23 +109,22 @@ export class App extends Component {
   }
 
   updateFilters(newFilters) {
-    this.setState({filters: newFilters});
+    this.setState({ filters: newFilters });
   }
 
   resetFilters() {
-    this.setState({filters: {...defaultFilters}});
+    this.setState({ filters: { ...defaultFilters } });
   }
 
   resetSettings() {
-    this.setState({...defaultSettings});
+    this.setState({ ...defaultSettings });
   }
 
   closeModal(e = {
-    preventDefault: () => {
-    }
+    preventDefault: () => {}
   }) {
     e.preventDefault();
-    this.setState({currentModal: null});
+    this.setState({ currentModal: null });
   }
 
   openModal(modalName, e = {
@@ -127,11 +132,11 @@ export class App extends Component {
     }
   }) {
     e.preventDefault();
-    this.setState({currentModal: modalName});
+    this.setState({ currentModal: modalName });
   }
 
   saveOptions(key, value) {
-    this.setState({[key]: value});
+    this.setState({ [key]: value });
   }
 
   updateDays(days) {
@@ -139,7 +144,7 @@ export class App extends Component {
   }
 
   renderFavouriteSeriesModal() {
-    const {favouriteSeries, currentModal} = this.state;
+    const { favouriteSeries, currentModal } = this.state;
     return (
       <FavouriteSeriesModal
         isOpen={currentModal === 'favourite-series'}
@@ -151,7 +156,7 @@ export class App extends Component {
   }
 
   renderMyTracksModal() {
-    const {favouriteTracks, currentModal} = this.state;
+    const { favouriteTracks, currentModal } = this.state;
     return (
       <ContentModal
         isOpen={currentModal === 'my-tracks'}
@@ -161,7 +166,7 @@ export class App extends Component {
         content={tracks}
         idField='pkgid'
         defaultContent={[...defaultSettings.ownedTracks]}
-        typeFilter={{key: 'primaryType', oval: 'oval', road: 'road'}}
+        typeFilter={{ key: 'primaryType', oval: 'oval', road: 'road' }}
         save={this.saveOptions.bind(this, 'ownedTracks')}
         favourites={favouriteTracks}
         saveFavourites={this.saveOptions.bind(this, 'favouriteTracks')}
@@ -170,7 +175,7 @@ export class App extends Component {
   }
 
   renderMyCarsModal() {
-    const {favouriteCars, currentModal} = this.state;
+    const { favouriteCars, currentModal } = this.state;
     return (
       <ContentModal
         isOpen={currentModal === 'my-cars'}
@@ -180,7 +185,7 @@ export class App extends Component {
         content={cars}
         idField='sku'
         defaultContent={[...defaultSettings.ownedCars]}
-        typeFilter={{key: 'discountGroupNames', oval: ['oval+car'], road: ['road+car']}}
+        typeFilter={{ key: 'discountGroupNames', oval: ['oval+car'], road: ['road+car'] }}
         save={this.saveOptions.bind(this, 'ownedCars')}
         favourites={favouriteCars}
         saveFavourites={this.saveOptions.bind(this, 'favouriteCars')}
@@ -189,7 +194,7 @@ export class App extends Component {
   }
 
   renderOptionsModal() {
-    const {columns, currentModal} = this.state;
+    const { columns, currentModal } = this.state;
     return (
       <OptionsModal
         isOpen={currentModal === 'options'}
@@ -201,12 +206,12 @@ export class App extends Component {
   }
 
   renderChangelogModal() {
-    const {currentModal} = this.state;
-    return <AboutModal isOpen={currentModal === 'about'} onClose={this.closeModal.bind(this)}/>;
+    const { currentModal } = this.state;
+    return <AboutModal isOpen={currentModal === 'about'} onClose={this.closeModal.bind(this)} />;
   }
 
   renderPurchaseGuideModal() {
-    const {favouriteSeries, currentModal} = this.state
+    const { favouriteSeries, currentModal } = this.state;
     return (
       <PurchaseGuideModal
         isOpen={currentModal === 'purchase-guide'}
@@ -214,7 +219,7 @@ export class App extends Component {
         ownedTracks={this.getOwnedTracks()}
         favouriteSeries={favouriteSeries}
       />
-    )
+    );
   }
 
   render() {
@@ -223,7 +228,9 @@ export class App extends Component {
       columns, sort
     } = this.state;
 
-    const {date, dateDays, dateView, week} = this.props;
+    const {
+      date, dateDays, dateView, week
+    } = this.props;
 
     return (
       <div>
@@ -234,27 +241,39 @@ export class App extends Component {
             </div>
 
             <ul className='nav navbar-nav navbar-left'>
-              <li><a href='' onClick={this.openModal.bind(this, 'purchase-guide')}>
-                Purchase guide
-              </a></li>
+              <li>
+                <a href='' onClick={this.openModal.bind(this, 'purchase-guide')}>
+                  Purchase guide
+                </a>
+              </li>
             </ul>
 
             <ul className='nav navbar-nav navbar-right'>
-              <li><a href='' onClick={this.openModal.bind(this, 'my-tracks')}>
-                Set my tracks
-              </a></li>
-              <li><a href='' onClick={this.openModal.bind(this, 'my-cars')}>
-                Set my cars
-              </a></li>
-              <li><a href='' onClick={this.openModal.bind(this, 'favourite-series')}>
-                Set favorite series
-              </a></li>
-              <li><a href='' onClick={this.openModal.bind(this, 'options')}>
-                Options
-              </a></li>
-              <li><a href='' onClick={this.openModal.bind(this, 'about')}>
-                About
-              </a></li>
+              <li>
+                <a href='' onClick={this.openModal.bind(this, 'my-tracks')}>
+                  Set my tracks
+                </a>
+              </li>
+              <li>
+                <a href='' onClick={this.openModal.bind(this, 'my-cars')}>
+                  Set my cars
+                </a>
+              </li>
+              <li>
+                <a href='' onClick={this.openModal.bind(this, 'favourite-series')}>
+                  Set favorite series
+                </a>
+              </li>
+              <li>
+                <a href='' onClick={this.openModal.bind(this, 'options')}>
+                  Options
+                </a>
+              </li>
+              <li>
+                <a href='' onClick={this.openModal.bind(this, 'about')}>
+                  About
+                </a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -263,20 +282,26 @@ export class App extends Component {
             <div className='col-md-2'>
               <h3>Filters</h3>
               <Filters
-                currentFilters={filters} updateFilters={this.updateFilters.bind(this)}
-                resetSettings={this.resetSettings.bind(this)} resetFilters={this.resetFilters.bind(this)}
+                currentFilters={filters}
+                updateFilters={this.updateFilters.bind(this)}
+                resetSettings={this.resetSettings.bind(this)}
+                resetFilters={this.resetFilters.bind(this)}
               />
             </div>
             <div className='col-md-10'>
               <div className='row'>
                 <h3 className='col-xs-8'>
-                  Races for date: {dateView}
+                  Races for date:
+                  {' '}
+                  {dateView}
                 </h3>
-                <h3 className='col-xs-4' style={{textAlign: 'right'}}>
-                  Week {week}
+                <h3 className='col-xs-4' style={{ textAlign: 'right' }}>
+                  Week
+                  {' '}
+                  {week}
                 </h3>
               </div>
-              <div style={{marginBottom: 10}}>
+              <div style={{ marginBottom: 10 }}>
                 <Slider
                   min={0}
                   max={seasonLengthDays}
@@ -287,9 +312,15 @@ export class App extends Component {
                 />
               </div>
               <RaceListing
-                filters={filters} ownedCars={this.getOwnedCars()} ownedTracks={this.getOwnedTracks()}
-                favouriteSeries={favouriteSeries} date={date} favouriteTracks={favouriteTracks}
-                favouriteCars={favouriteCars} columnIds={columns} sort={sort}
+                filters={filters}
+                ownedCars={this.getOwnedCars()}
+                ownedTracks={this.getOwnedTracks()}
+                favouriteSeries={favouriteSeries}
+                date={date}
+                favouriteTracks={favouriteTracks}
+                favouriteCars={favouriteCars}
+                columnIds={columns}
+                sort={sort}
                 updateSort={this.saveOptions.bind(this, 'sort')}
               />
             </div>
