@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import Modal from './Modal';
 import purchaseOptimization from '../../lib/purchaseOptimization';
 import '../styles/purchaseGuide.scss';
 
-export function PurchaseGuideModal({ isOpen, onClose, ownedTracks, favouriteSeries }) {
+export default function PurchaseGuideModal({ isOpen, onClose, ownedTracks, favouriteSeries }) {
   const purchaseItems = purchaseOptimization({ ownedTracks, favouriteSeries });
   const { t } = useTranslation();
 
