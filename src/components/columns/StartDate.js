@@ -1,12 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
+import { useTranslation } from 'react-i18next';
 
 export default function StartDate({ race }) {
+  const { t } = useTranslation();
+  const date = moment(race.startTime).local().toDate();
   return (
     <td>
       <div>
-        {moment(race.startTime).local().format('YYYY-MM-DD')}
+        {t('{{date, YYYY-MM-DD}}', { date })}
       </div>
     </td>
   );

@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 import Modal from './Modal';
 import moment from 'moment';
 import classnames from 'classnames';
@@ -8,63 +9,73 @@ import allRaces from '../../lib/races';
 
 const now = moment().utc();
 
-export default class SeriesModal extends Component {
-  static propTypes = {
-    onClose: PropTypes.func,
-    isOpen: PropTypes.bool.isRequired,
-    seriesId: PropTypes.number.isRequired,
-    ownedTracks: PropTypes.array
-  }
+export default function SeriesModal( { onClose, ownedTracks, isOpen, seriesId }) {
+  const races = allRaces.filter(race => race.seriesId === seriesId);
+  const { t } = useTranslation();
 
-  static defaultProps = {
-    onClose: () => {},
-    isOpen: false,
-    ownedTracks: [],
-  }
+  return (
+    <Modal
+      isOpen={isOpen}
+      onClose={onClose}
+      title={t('Tracks for {{series}}', {
+        series: t(races[0].series),
+      })}
+      doneAction={onClose}
+    >
+      <div className='container-fluid'>
+        <div className='table-responsive'>
+          <table className='table' style={{ fontSize: '0.8em' }}>
+            <thead>
+              <tr>
+                <th>{t('Week')}</th>
+                <th>{t('Track')}</th>
+                <th>{t('Start')}</th>
+                <th>{t('End')}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {races.map((race) => {
+                const raceWeekEnd = moment(race.startTime).add(race.weekLength);
+                const current = now.isBetween(race.startTime, raceWeekEnd);
 
-  render() {
-    const { onClose, ownedTracks, isOpen, seriesId } = this.props;
-    const races = allRaces.filter(race => race.seriesId === seriesId);
+                const startDate = moment(race.startTime).local().toDate();
+                const endDate = moment(race.startTime).local().add(race.weekLength)
+                  .subtract(1, 'days').toDate();
 
-    return (
-      <Modal isOpen={isOpen} onClose={onClose} title={`Tracks for ${races[0].series}`} doneAction={onClose}>
-        <div className='container-fluid'>
-          <div className='table-responsive'>
-            <table className='table' style={{ fontSize: '0.8em' }}>
-              <thead>
-                <tr>
-                  <th>Week</th>
-                  <th>Track</th>
-                  <th>Start</th>
-                  <th>End</th>
-                </tr>
-              </thead>
-              <tbody>
-                {races.map((race, index) => {
-                  const raceWeekEnd = moment(race.startTime).add(race.weekLength);
-                  const current = now.isBetween(race.startTime, raceWeekEnd);
-                  return (
-                    <tr key={index} style={current ? { fontWeight: 700 } : {}}>
-                      <td>
-                        {race.week + 1}
-                      </td>
-                      <td className={classnames({ success: ownedTracks.indexOf(race.trackId) !== -1 })}>
-                        {race.track}
-                      </td>
-                      <td>{moment(race.startTime).local().format('YYYY-MM-DD')}</td>
-                      <td>{
-                        moment(race.startTime).local().add(race.weekLength)
-                          .subtract(1, 'days')
-                          .format('YYYY-MM-DD')
-                      }</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
+                return (
+                  <tr key={race.week} style={current ? { fontWeight: 700 } : {}}>
+                    <td>
+                      {race.week + 1}
+                    </td>
+                    <td className={classnames({ success: ownedTracks.indexOf(race.trackId) !== -1 })}>
+                      {t(race.track)}
+                    </td>
+                    <td>
+                      {t('{{date, YYYY-MM-DD}}', { date: startDate })}
+                    </td>
+                    <td>
+                      {t('{{date, YYYY-MM-DD}}', { date: endDate })}
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
         </div>
-      </Modal>
-    );
-  }
+      </div>
+    </Modal>
+  );
+}
+
+SeriesModal.propTypes = {
+  onClose: PropTypes.func,
+  isOpen: PropTypes.bool.isRequired,
+  seriesId: PropTypes.number.isRequired,
+  ownedTracks: PropTypes.array,
+}
+
+SeriesModal.defaultProps = {
+  onClose: () => {},
+  isOpen: false,
+  ownedTracks: [],
 }

@@ -1,85 +1,67 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 import Modal from '../modal/Modal';
 import moment from 'moment';
 
-export default class NextRace extends Component {
-  static propTypes = {
-    race: PropTypes.object.isRequired
+export default function NextRace({ race }) {
+  const [modalOpen, setModalOpen] = useState(false);
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
+  const { t } = useTranslation();
+
+  if (race.raceTimes === null) {
+    return <td>{t('No time data')}</td>;
   }
 
-  constructor(props) {
-    super(props);
-    this.state = { modalOpen: false };
-    this.openModal = this.openModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
-  }
-
-  openModal() {
-    this.setState({ modalOpen: true });
-  }
-
-  closeModal() {
-    this.setState({ modalOpen: false });
-  }
-
-  renderModal() {
-    const { race } = this.props;
-    const weekStart = moment().utc().startOf('week')
-      .add(2, 'days');
-    const { modalOpen } = this.state;
+  if (race.raceTimes.setTimes) {
+    const weekStart = moment().utc().startOf('week').add(2, 'days');
 
     return (
-      <Modal
-        isOpen={modalOpen} onClose={this.closeModal} title={`Set times for ${race.series}`}
-        doneAction={this.closeModal}
-      >
-        <div className='container-fluid'>
-          <ul>
-            {race.raceTimes.setTimes.map(
-              (time, index) => (
-                <li key={index}>
-                  {moment(weekStart).add(time).local().format('ddd h:mma')},
-                  ({moment(weekStart).add(time).utc().format('ddd h:mma z')})
-                </li>
-              )
-            )}
-          </ul>
-        </div>
-      </Modal>
+      <td onClick={openModal} className='clickable-cell'>
+        {t('Set Times')}
+
+        <Modal
+          isOpen={modalOpen}
+          onClose={closeModal}
+          title={t('Set times for {{series}}', { series: t(race.series) })}
+          doneAction={closeModal}
+        >
+          <div className='container-fluid'>
+            <ul>
+              {race.raceTimes.setTimes.map(
+                (time) => (
+                  <li key={time}>
+                    {t('{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})', {
+                      timeLocal: moment(weekStart).add(time).local().toDate(),
+                      timeUtc: moment(weekStart).add(time).utc().toDate(),
+                    })}
+                  </li>
+                )
+              )}
+            </ul>
+          </div>
+        </Modal>
+      </td>
     );
   }
 
-  render() {
-    const { race } = this.props;
-
-    if (race.raceTimes === null) {
-      return <td>No time data</td>;
-    }
-
-    if (race.raceTimes.setTimes) {
-      return (
-        <td onClick={this.openModal} className='clickable-cell'>
-          Set Times
-          {this.renderModal()}
-        </td>
-      );
-    }
-
-    if (race.raceTimes.everyTime) {
-      return (
-        <td>
-          <div>
-            Every {race.raceTimes.everyTime.humanize().replace(/an?\s/, '')} starting
-            at {moment().utc().startOf('day')
-              .add(race.raceTimes.offset)
-              .format('H:mm')}
-            UTC
-          </div>
-        </td>
-      );
-    }
-
-    return <td>No time data</td>;
+  if (race.raceTimes.everyTime) {
+    return (
+      <td>
+        <div>
+          {t('Every {{every}} starting at {{time, H:mm}} UTC', {
+            every: race.raceTimes.everyTime.humanize().replace(/an?\s/, ''),
+            time: moment().utc().startOf('day').add(race.raceTimes.offset).toDate(),
+          })}
+        </div>
+      </td>
+    );
   }
+
+  return <td>{t('No time data')}</td>;
 }
+
+NextRace.propTypes = {
+  race: PropTypes.object.isRequired,
+};

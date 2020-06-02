@@ -16,6 +16,6 @@ export function getContributors() {
     dispatch(gettingAction());
     return axios.get('https://api.github.com/repos/tmoitie/iRacing-week-planner/contributors')
       .then(response => dispatch(gotAction(response.data)))
-      .catch(error => console.error(error.data));
+      .catch(error => console.log(error.data));
   };
 }
