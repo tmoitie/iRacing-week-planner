@@ -87,5 +87,26 @@ export default [
     seriesId: 358,
     everyTime: duration(120, 'minutes'),
     offset: duration(75, 'minutes')
-  }
+  },
+  {
+    // IndyCar iRacing Series
+    seriesId: 374,
+    offWeeks: [1.1, 2.1, 5.1, 7.1, 9.1, 9.2, 10.1, 13.1, 14.1],
+  },
+  {
+    // IndyCar iRacing Series
+    seriesId: 408,
+    weekEndOffset: duration({ days: 7 }),
+    offWeeks: [
+      1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 2.1, 2.1, 2.1, 2.1, 2.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1,
+    ],
+  },
+  {
+    // Porsche Esports Sprint Challenge
+    seriesId: 410,
+    weekEndOffset: duration({ days: 7 }),
+    offWeeks: [
+      2.1, 3.1, 3.1, 3.1, 4.1, 5.1, 6.1, 7.1, 8.1, 9.1, 9.1,
+    ],
+  },
 ];
