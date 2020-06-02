@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
+import { withTranslation } from 'react-i18next';
 
 import allRaces from '../lib/races';
 import filterRaces from '../lib/filterRaces';
@@ -10,7 +11,7 @@ import availableColumns from '../data/availableColumns';
 
 import './styles/raceListing.scss';
 
-export default class RaceListing extends Component {
+export class RaceListing extends Component {
   static propTypes = {
     date: PropTypes.object,
     sort: PropTypes.object,
@@ -21,7 +22,8 @@ export default class RaceListing extends Component {
     favouriteCars: PropTypes.array,
     favouriteTracks: PropTypes.array,
     columnIds: PropTypes.array,
-    updateSort: PropTypes.func
+    updateSort: PropTypes.func,
+    t: PropTypes.func.isRequired,
   }
 
   static defaultProps = {
@@ -33,7 +35,7 @@ export default class RaceListing extends Component {
     ownedCars: [],
     favouriteCars: [],
     favouriteTracks: [],
-    updateSort: () => {}
+    updateSort: () => {},
   }
 
   sortColumn(columnId) {
@@ -60,8 +62,10 @@ export default class RaceListing extends Component {
   }
 
   render() {
-    const { date, sort, filters, favouriteSeries, ownedTracks, ownedCars,
-      favouriteCars, favouriteTracks, columnIds } = this.props;
+    const {
+      date, sort, filters, favouriteSeries, ownedTracks, ownedCars,
+      favouriteCars, favouriteTracks, columnIds, t,
+    } = this.props;
 
     let races = allRaces.filter((race) => moment(date).add(1, 'hour').isBetween(race.startTime, race.endTime));
 
@@ -72,15 +76,15 @@ export default class RaceListing extends Component {
     });
 
     if (filters.favouriteSeries && races.length === 0) {
-      return <p>No races this week match your favourite series. Try turning the filter off or adding some.</p>;
+      return <p>{t('No races this week match your favourite series. Try turning the filter off or adding some.')}</p>;
     }
 
     if (filters.favouriteCarsOnly && races.length === 0) {
-      return <p>No races this week match your favourite cars. Try turning the filter off or adding some.</p>;
+      return <p>{t('No races this week match your favourite cars. Try turning the filter off or adding some.')}</p>;
     }
 
     if (filters.favouriteTracksOnly && races.length === 0) {
-      return <p>No races this week match your favourite tracks. Try turning the filter off or adding some.</p>;
+      return <p>{t('No races this week match your favourite tracks. Try turning the filter off or adding some.')}</p>;
     }
 
     const columns = availableColumns.filter((column) => columnIds.indexOf(column.id) !== -1);
@@ -96,7 +100,7 @@ export default class RaceListing extends Component {
                   onClick={column.sort ? this.sortColumn.bind(this, column.id, column.defaultOrder) : () => {}}
                   className={column.sort ? 'clickable-cell' : null}
                 >
-                  {column.header}
+                  {t(column.header)}
                   <span> </span>
                   {sort.key === column.id ? this.renderSortArrow() : null}
                 </th>
@@ -117,3 +121,5 @@ export default class RaceListing extends Component {
     );
   }
 }
+
+export default withTranslation()(RaceListing);

@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import uniq from 'lodash.uniq';
 import uniqBy from 'lodash.uniqby';
+import { withTranslation } from 'react-i18next';
 import { updateDays as updateDaysCreator } from './actions/app';
 
 import RaceListing from './components/RaceListing';
@@ -24,6 +25,9 @@ import { Slider } from '@blueprintjs/core';
 import './components/styles/preBootstrap.scss';
 import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 import '@blueprintjs/core/lib/css/blueprint.css';
+
+import 'bootstrap-sass';
+import { languageFlags } from './i18n';
 
 const cars = uniqBy(allCars, (car) => car.sku);
 
@@ -56,9 +60,9 @@ export class App extends Component {
   static propTypes = {
     date: PropTypes.object,
     dateDays: PropTypes.number,
-    dateView: PropTypes.string,
     week: PropTypes.number,
-    updateDays: PropTypes.func
+    updateDays: PropTypes.func,
+    t: PropTypes.func.isRequired,
   };
 
   constructor(props) {
@@ -131,6 +135,13 @@ export class App extends Component {
     this.props.updateDays(days);
   }
 
+  switchLanguage(language) {
+    return (e) => {
+      e.preventDefault();
+      this.props.i18n.changeLanguage(language);
+    }
+  }
+
   renderFavouriteSeriesModal() {
     const { favouriteSeries, currentModal } = this.state;
     return (
@@ -145,11 +156,12 @@ export class App extends Component {
 
   renderMyTracksModal() {
     const { favouriteTracks, currentModal } = this.state;
+    const { t } = this.props;
     return (
       <ContentModal
         isOpen={currentModal === 'my-tracks'}
         onClose={this.closeModal.bind(this)}
-        title='Set My Tracks'
+        title={t('Set my tracks')}
         ownedContent={this.getOwnedTracks()}
         content={tracks}
         idField='id'
@@ -164,11 +176,12 @@ export class App extends Component {
 
   renderMyCarsModal() {
     const { favouriteCars, currentModal } = this.state;
+    const { t } = this.props;
     return (
       <ContentModal
         isOpen={currentModal === 'my-cars'}
         onClose={this.closeModal.bind(this)}
-        title='Set My Cars'
+        title={t('Set my cars')}
         ownedContent={this.getOwnedCars()}
         content={cars}
         idField='sku'
@@ -202,39 +215,47 @@ export class App extends Component {
     const { filters, favouriteSeries, favouriteCars, favouriteTracks,
       columns, sort } = this.state;
 
-    const { date, dateDays, dateView, week } = this.props;
+    const { date, dateDays, week, t, i18n } = this.props;
 
     return (
       <div>
         <nav className='navbar navbar-inverse'>
           <div className='container-fluid'>
             <div className='navbar-header'>
-              <a className='navbar-brand' href=''>iRacing Week Planner</a>
+              <a className='navbar-brand' href=''>{t('iRacing Week Planner')}</a>
             </div>
 
             <ul className='nav navbar-nav navbar-right'>
               <li><a href='' onClick={this.openModal.bind(this, 'my-tracks')}>
-                Set my tracks
+                {t('Set my tracks')}
               </a></li>
               <li><a href='' onClick={this.openModal.bind(this, 'my-cars')}>
-                Set my cars
+                {t('Set my cars')}
               </a></li>
               <li><a href='' onClick={this.openModal.bind(this, 'favourite-series')}>
-                Set favorite series
+                {t('Set favorite series')}
               </a></li>
               <li><a href='' onClick={this.openModal.bind(this, 'options')}>
-                Options
+                {t('Options')}
               </a></li>
               <li><a href='' onClick={this.openModal.bind(this, 'about')}>
-                About
+                {t('About')}
               </a></li>
+              <li className="dropdown">
+                <a href="" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                   aria-expanded="false">{languageFlags[i18n.language]} <span className="caret"></span></a>
+                <ul className="dropdown-menu">
+                  <li><a href="" onClick={this.switchLanguage('en')}>🇺🇸 English (US)</a></li>
+                  <li><a href="" onClick={this.switchLanguage('en-GB')}>🇬🇧 English (UK)</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </nav>
         <div className='container-fluid'>
           <div className='row'>
             <div className='col-md-2'>
-              <h3>Filters</h3>
+              <h3>{t('Filters')}</h3>
               <Filters
                 currentFilters={filters} updateFilters={this.updateFilters.bind(this)}
                 resetSettings={this.resetSettings.bind(this)} resetFilters={this.resetFilters.bind(this)}
@@ -243,10 +264,10 @@ export class App extends Component {
             <div className='col-md-10'>
               <div className='row'>
                 <h3 className='col-xs-8'>
-                  Races for date: {dateView}
+                  {t('Races for date: {{date, YYYY MMM DD}}', { date: date.local().toDate() })}
                 </h3>
                 <h3 className='col-xs-4' style={{ textAlign: 'right' }}>
-                  Week {week}
+                  {t('Week {{week}}', { week })}
                 </h3>
               </div>
               <div style={{ marginBottom: 10 }}>
@@ -281,12 +302,11 @@ export class App extends Component {
 const mapStateToProps = (state) => ({
   date: state.app.date,
   dateDays: state.app.daysSinceSeasonStart,
-  dateView: state.app.dateView,
-  week: state.app.week
+  week: state.app.week,
 });
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
   updateDays: updateDaysCreator
 }, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(withTranslation()(App));

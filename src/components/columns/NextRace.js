@@ -1,16 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
+import { useTranslation } from 'react-i18next';
 
 export default function NextRace({ race }) {
+  const { t } = useTranslation();
+
   if (race.nextTime === null) {
-    return <td>No time data</td>;
+    return <td>{t('No time data')}</td>;
   }
+
+  const date = moment(race.nextTime).local().toDate();
 
   return (
     <td>
       <div>
-        {moment(race.nextTime).local().format('ddd h:mma')}
+        {t('{{date, ddd h:mma}}', { date })}
       </div>
     </td>
   );

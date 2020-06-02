@@ -1,0 +1,75 @@
+export default {
+  translation: {
+    'iRacing Week Planner': 'iRacing Week Planner',
+    'Set my tracks': 'Set my tracks',
+    'Set my cars': 'Set my cars',
+    'Set favorite series': 'Set favorite series',
+    'Options': 'Options',
+    'About': 'About',
+    'Week {{week}}': 'Week {{week}}',
+    'Races for date: {{date, YYYY MMM DD}}': 'Races for date: {{date, YYYY MMM DD}}',
+    'No time data': 'No time data',
+
+    // Filters
+    'Filters': 'Filters',
+    'Type': 'Type',
+    'Oval': 'Oval',
+    'Dirt': 'Dirt',
+    'Road': 'Road',
+    'RX': 'RX', // Rally Cross/Road Dirt
+    'Licence': 'Licence',
+    'Official/Fixed': 'Official/Fixed',
+    'Unofficial': 'Unofficial',
+    'Official': 'Official',
+    'Open setup': 'Open setup',
+    'Fixed setup': 'Fixed setup',
+    'Content': 'Content',
+    'Owned cars only': 'Owned cars only',
+    'Owned tracks only': 'Owned tracks only',
+    'Favorite series only': 'Favorite series only',
+    'Favorite cars only': 'Favorite cars only',
+    'Favorite tracks only': 'Favorite tracks only',
+    'Reset filters': 'Reset filters',
+    'Reset all settings': 'Reset all settings',
+
+    // Column Headers
+    'Columns': 'Columns',
+    'ID': 'ID',
+    'Class': 'Class',
+    'Series': 'Series',
+    'Track': 'Track',
+    'Car': 'Car',
+    'Start': 'Start',
+    'End': 'End',
+    'Fixed': 'Fixed',
+    'Race times': 'Race times',
+    'Next race': 'Next race',
+    'Season end': 'Season end',
+    'Link': 'Link',
+    'Week': 'Week',
+
+    // Modals
+    'Use the checkbox to set the content you own, and use the star to set your favourite content.':
+      'Use the checkbox to set the content you own, and use the star to set your favourite content.',
+    'Select all': 'Select all',
+    'Select all oval': 'Select all oval',
+    'Select all road': 'Select all road',
+    'Choose favorite series': 'Choose favorite series',
+    'Close': 'Close',
+    'Contributors': 'Contributors',
+    'Changelog': 'Changelog',
+    'This tool was created by <1>tmoitie</1> (<3>Tom Moitié</3> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on <5>Github</5>. Thanks!':
+      'This tool was created by <1>tmoitie</1> (<3>Tom Moitié</3> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on <5>Github</5>. Thanks!',
+    'Loading': 'Loading',
+    'Cars for {{series}}': 'Cars for {{series}}',
+    'Tracks for {{series}}': 'Tracks for {{series}}',
+
+    // Dates
+    '{{date, YYYY MMMM DD}}': '{{date, YYYY MMMM DD}}',
+    '{{date, YYYY-MM-DD}}': '{{date, YYYY-MM-DD}}',
+    'Every {{every}} starting at {{time, H:mm}} UTC': 'Every {{every}} starting at {{time, H:mm z}}',
+    '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})': '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})',
+    'Set times': 'Set times',
+    '{{date, ddd h:mma}}': '{{date, ddd h:mma}}',
+  },
+};

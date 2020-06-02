@@ -2,26 +2,15 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import difference from 'lodash.difference';
 import isEqual from 'lodash.isequal';
+import { withTranslation } from 'react-i18next';
+import toggleIdInCollection from '../../lib/toggleIdInCollection';
 import Modal from './Modal';
 import Checkbox from '../Checkbox';
 import FavouriteStarButton from '../FavouriteStarButton';
 
-const toggleIdInCollection = (collection, id, newState) => {
-  const newCollection = [ ...collection ];
-  const index = newCollection.indexOf(id);
-
-  if (index === -1 && newState) {
-    newCollection.push(id);
-  }
-  if (index !== -1 && newState === false) {
-    newCollection.splice(index, 1);
-  }
-  return newCollection;
-};
-
-export default class ContentModal extends Component {
+export class ContentModal extends Component {
   static propTypes = {
-    title: PropTypes.string,
+    title: PropTypes.string.isRequired,
     isOpen: PropTypes.bool.isRequired,
     onClose: PropTypes.func,
     save: PropTypes.func,
@@ -35,11 +24,11 @@ export default class ContentModal extends Component {
       road: PropTypes.any
     }),
     favourites: PropTypes.array,
-    saveFavourites: PropTypes.func
+    saveFavourites: PropTypes.func,
+    t: PropTypes.func.isRequired,
   }
 
   static defaultProps = {
-    title: 'Set My Content',
     isOpen: false,
     onClose: () => {},
     save: () => {},
@@ -124,18 +113,18 @@ export default class ContentModal extends Component {
   }
 
   render() {
-    const { onClose, title, content, ownedContent, isOpen, idField, defaultContent, favourites } = this.props;
+    const { onClose, title, content, ownedContent, isOpen, idField, defaultContent, favourites, t } = this.props;
     return (
       <Modal isOpen={isOpen} onClose={onClose} title={title} doneAction={onClose}>
         <div className='container-fluid'>
-          <p>Use the checkbox to set the content you own, and the star to set your favourite content.</p>
+          <p>{t('Use the checkbox to set the content you own, and use the star to set your favourite content.')}</p>
           <div className='row'>
             <div className='col-sm-4'>
               <Checkbox
                 checked={ownedContent.length === content.length}
                 onChange={this.toggleAllContent.bind(this)}
               >
-                Select All
+                {t('Select all')}
 
                 <span> </span>
 
@@ -150,7 +139,7 @@ export default class ContentModal extends Component {
                 checked={this.allTypeContentChecked('oval')}
                 onChange={this.setAllTypeContent.bind(this, 'oval')}
               >
-                Select All Oval
+                {t('Select all oval')}
 
                 <span> </span>
 
@@ -165,7 +154,7 @@ export default class ContentModal extends Component {
                 checked={this.allTypeContentChecked('road')}
                 onChange={this.setAllTypeContent.bind(this, 'road')}
               >
-                Select All Road
+                {t('Select all road')}
 
                 <span> </span>
 
@@ -189,7 +178,7 @@ export default class ContentModal extends Component {
                   checked={ownedContent.indexOf(item[idField]) !== -1}
                   onChange={this.toggleContent.bind(this, item[idField])}
                 >
-                  { item.skuname ? item.skuname : item.name }
+                  { item.skuname ? t(item.skuname) : t(item.name) }
 
                   <span> </span>
 
@@ -206,3 +195,5 @@ export default class ContentModal extends Component {
     );
   }
 }
+
+export default withTranslation()(ContentModal);

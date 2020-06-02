@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { withTranslation } from 'react-i18next';
 
 import BaseModal from './BaseModal';
 
 import './styles/modal.scss';
 
-export default class Modal extends Component {
+export class Modal extends Component {
   static propTypes = {
     isOpen: PropTypes.bool.isRequired,
     onClose: PropTypes.func,
@@ -13,7 +14,8 @@ export default class Modal extends Component {
     className: PropTypes.string,
     title: PropTypes.string.isRequired,
     doneAction: PropTypes.func,
-    doneButtonText: PropTypes.string
+    doneButtonText: PropTypes.string,
+    t: PropTypes.func.isRequired,
   };
 
   static defaultProps = {
@@ -49,16 +51,16 @@ export default class Modal extends Component {
 
     this.props.onClose(e);
   }
-  
+
   clickDone(e) {
     e.preventDefault();
     e.stopPropagation();
-    
+
     this.props.doneAction(e);
   }
 
   render() {
-    const { children, title, isOpen, onClose, doneAction, doneButtonText } = this.props;
+    const { children, title, isOpen, onClose, doneButtonText, t } = this.props;
 
     return (<BaseModal isOpen={isOpen} onRequestClose={onClose}>
       <div className='modal-content'>
@@ -72,9 +74,11 @@ export default class Modal extends Component {
           {children}
         </div>
         <div className='modal-footer'>
-          <button type='button' className='btn btn-primary' onClick={this.clickDone.bind(this)}>{doneButtonText}</button>
+          <button type='button' className='btn btn-primary' onClick={this.clickDone.bind(this)}>{t(doneButtonText)}</button>
         </div>
       </div>
     </BaseModal>);
   }
 }
+
+export default withTranslation()(Modal);

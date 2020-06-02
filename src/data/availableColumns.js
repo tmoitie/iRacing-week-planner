@@ -181,17 +181,17 @@ export default [{
   }
 }, {
   id: 'raceTimes',
-  header: 'Race Times',
+  header: 'Race times',
   component: RaceTimes
 }, {
   id: 'nextRace',
-  header: 'Next Race',
+  header: 'Next race',
   component: NextRace,
   default: true,
   sort: sortByDate.bind(null, 'nextTime')
 }, {
   id: 'seriesEnd',
-  header: 'Season End',
+  header: 'Season end',
   component: SeasonEnd,
   default: false,
   sort: sortByDate.bind(null, 'seriesEnd')

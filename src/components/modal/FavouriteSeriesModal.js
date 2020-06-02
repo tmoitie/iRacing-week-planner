@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import update from 'immutability-helper';
+import { withTranslation } from 'react-i18next';
 import Modal from './Modal';
 import Checkbox from '../Checkbox';
 import series from '../../data/season.json';
@@ -12,12 +13,13 @@ const groupedSeries = series.reduce((grouped, single) => {
   return update(grouped, { road: { $push: [single] } });
 }, { oval: [], road: [] });
 
-export default class FavouriteSeriesModal extends Component {
+export class FavouriteSeriesModal extends Component {
   static propTypes = {
     onClose: PropTypes.func,
     isOpen: PropTypes.bool.isRequired,
     save: PropTypes.func,
-    favouriteSeries: PropTypes.array
+    favouriteSeries: PropTypes.array,
+    t: PropTypes.func.isRequired,
   }
 
   static defaultProps = {
@@ -42,29 +44,29 @@ export default class FavouriteSeriesModal extends Component {
   }
 
   renderCheckbox(cbSeries, index) {
-    const { favouriteSeries } = this.props;
+    const { favouriteSeries, t } = this.props;
     return (
       <div className='col-md-6' key={index}>
         <Checkbox
           checked={favouriteSeries.indexOf(cbSeries.seriesid) !== -1}
           onChange={this.setCheckboxFavourite.bind(this, cbSeries.seriesid)}
         >
-          {cbSeries.seriesname}
+          {t(cbSeries.seriesname)}
         </Checkbox>
       </div>
     );
   }
 
   render() {
-    const { onClose, isOpen } = this.props;
+    const { onClose, isOpen, t } = this.props;
     return (
-      <Modal isOpen={isOpen} onClose={onClose} title='Choose favorite series' doneAction={onClose}>
+      <Modal isOpen={isOpen} onClose={onClose} title={t('Choose favorite series')} doneAction={onClose}>
         <div className='container-fluid'>
-          <h3>Oval</h3>
+          <h3>{t('Oval')}</h3>
           <div className='row'>
             {groupedSeries.oval.map(this.renderCheckbox.bind(this))}
           </div>
-          <h3>Road</h3>
+          <h3>{t('Road')}</h3>
           <div className='row'>
             {groupedSeries.road.map(this.renderCheckbox.bind(this))}
           </div>
@@ -73,3 +75,5 @@ export default class FavouriteSeriesModal extends Component {
     );
   }
 }
+
+export default withTranslation()(FavouriteSeriesModal);
