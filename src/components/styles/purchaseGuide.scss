@@ -1,0 +1,17 @@
+.purchase-table {
+  font-size: 1em;
+  text-align: center;
+  th {
+    text-align: center;
+  }
+  tbody tr td {
+    vertical-align: middle;
+  }
+  ul {
+    margin: 0;
+    list-style: none;
+  }
+  td:first-child {
+    font-weight: bold;
+  }
+}

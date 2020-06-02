@@ -4,7 +4,9 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import uniq from 'lodash.uniq';
 import uniqBy from 'lodash.uniqby';
+import { Slider } from '@blueprintjs/core';
 import { withTranslation } from 'react-i18next';
+
 import { updateDays as updateDaysCreator } from './actions/app';
 
 import RaceListing from './components/RaceListing';
@@ -20,11 +22,11 @@ import availableColumns from './data/availableColumns';
 
 import { seasonStart, seasonEnd } from './config';
 
-import { Slider } from '@blueprintjs/core';
 
 import './components/styles/preBootstrap.scss';
 import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 import '@blueprintjs/core/lib/css/blueprint.css';
+import PurchaseGuideModal from './components/modal/PurchaseGuideModal';
 
 import 'bootstrap-sass';
 import { languageFlags } from './i18n';
@@ -45,13 +47,13 @@ const defaultFilters = {
 
 const defaultSettings = {
   filters: defaultFilters,
-  ownedCars: cars.filter(car => car.freeWithSubscription === true).map(car => car.sku),
-  ownedTracks: tracks.filter(track => track.default).map(track => track.id),
+  ownedCars: cars.filter((car) => car.freeWithSubscription === true).map((car) => car.sku),
+  ownedTracks: tracks.filter((track) => track.default).map((track) => track.pkgid),
   favouriteSeries: [],
   favouriteCars: [],
   favouriteTracks: [],
   sort: { key: 'licence', order: 'asc' },
-  columns: availableColumns.filter(column => column.default === true).map(column => column.id)
+  columns: availableColumns.filter((column) => column.default === true).map((column) => column.id)
 };
 
 const seasonLengthDays = seasonEnd.diff(seasonStart, 'days');
@@ -86,8 +88,14 @@ export class App extends Component {
     } = this.state;
 
     window.localStorage.setItem('iracing-state', JSON.stringify({
-      filters, ownedCars: this.getOwnedCars(), ownedTracks: this.getOwnedTracks(), favouriteSeries, favouriteTracks,
-      favouriteCars, columns, sort
+      filters,
+      ownedCars: this.getOwnedCars(),
+      ownedTracks: this.getOwnedTracks(),
+      favouriteSeries,
+      favouriteTracks,
+      favouriteCars,
+      columns,
+      sort
     }));
   }
 
@@ -164,7 +172,7 @@ export class App extends Component {
         title={t('Set my tracks')}
         ownedContent={this.getOwnedTracks()}
         content={tracks}
-        idField='id'
+        idField='pkgid'
         defaultContent={[...defaultSettings.ownedTracks]}
         typeFilter={{ key: 'primaryType', oval: 'oval', road: 'road' }}
         save={this.saveOptions.bind(this, 'ownedTracks')}
@@ -211,11 +219,27 @@ export class App extends Component {
     return <AboutModal isOpen={currentModal === 'about'} onClose={this.closeModal.bind(this)} />;
   }
 
-  render() {
-    const { filters, favouriteSeries, favouriteCars, favouriteTracks,
-      columns, sort } = this.state;
+  renderPurchaseGuideModal() {
+    const { favouriteSeries, currentModal } = this.state;
+    return (
+      <PurchaseGuideModal
+        isOpen={currentModal === 'purchase-guide'}
+        onClose={this.closeModal.bind(this)}
+        ownedTracks={this.getOwnedTracks()}
+        favouriteSeries={favouriteSeries}
+      />
+    );
+  }
 
-    const { date, dateDays, week, t, i18n } = this.props;
+  render() {
+    const {
+      filters, favouriteSeries, favouriteCars, favouriteTracks,
+      columns, sort
+    } = this.state;
+
+    const {
+      date, dateDays, week, t, i18n,
+    } = this.props;
 
     return (
       <div>
@@ -224,6 +248,14 @@ export class App extends Component {
             <div className='navbar-header'>
               <a className='navbar-brand' href=''>{t('iRacing Week Planner')}</a>
             </div>
+
+            <ul className='nav navbar-nav navbar-left'>
+              <li>
+                <a href='' onClick={this.openModal.bind(this, 'purchase-guide')}>
+                  Purchase guide
+                </a>
+              </li>
+            </ul>
 
             <ul className='nav navbar-nav navbar-right'>
               <li><a href='' onClick={this.openModal.bind(this, 'my-tracks')}>
@@ -264,8 +296,10 @@ export class App extends Component {
             <div className='col-md-2'>
               <h3>{t('Filters')}</h3>
               <Filters
-                currentFilters={filters} updateFilters={this.updateFilters.bind(this)}
-                resetSettings={this.resetSettings.bind(this)} resetFilters={this.resetFilters.bind(this)}
+                currentFilters={filters}
+                updateFilters={this.updateFilters.bind(this)}
+                resetSettings={this.resetSettings.bind(this)}
+                resetFilters={this.resetFilters.bind(this)}
               />
             </div>
             <div className='col-md-10'>
@@ -288,14 +322,21 @@ export class App extends Component {
                 />
               </div>
               <RaceListing
-                filters={filters} ownedCars={this.getOwnedCars()} ownedTracks={this.getOwnedTracks()}
-                favouriteSeries={favouriteSeries} date={date} favouriteTracks={favouriteTracks}
-                favouriteCars={favouriteCars} columnIds={columns} sort={sort}
+                filters={filters}
+                ownedCars={this.getOwnedCars()}
+                ownedTracks={this.getOwnedTracks()}
+                favouriteSeries={favouriteSeries}
+                date={date}
+                favouriteTracks={favouriteTracks}
+                favouriteCars={favouriteCars}
+                columnIds={columns}
+                sort={sort}
                 updateSort={this.saveOptions.bind(this, 'sort')}
               />
             </div>
           </div>
         </div>
+        {this.renderPurchaseGuideModal()}
         {this.renderMyCarsModal()}
         {this.renderOptionsModal()}
         {this.renderChangelogModal()}
