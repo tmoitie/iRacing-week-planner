@@ -252,7 +252,7 @@ export class App extends Component {
             <ul className='nav navbar-nav navbar-left'>
               <li>
                 <a href='' onClick={this.openModal.bind(this, 'purchase-guide')}>
-                  Purchase guide
+                  {t('Purchase guide')}
                 </a>
               </li>
             </ul>

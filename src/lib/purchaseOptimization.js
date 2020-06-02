@@ -15,17 +15,21 @@ export default function ({
   const countById = Object.values(allTrackPkgIds.reduce((resultMap, trackPkgId) => {
     const originalTrack = tracks.find((track) => track.pkgid === trackPkgId);
     const fromSeries = currentSeries
-      .filter((serie) => serie.tracks.filter((serieTrack) => serieTrack.pkgid === trackPkgId).length > 0)
-      .map((serie) => serie.seriesname);
+      .filter((series) => series.tracks.filter((seriesTrack) => seriesTrack.pkgid === trackPkgId).length > 0)
+      .map((series) => series.seriesname);
+
     resultMap[trackPkgId] = resultMap[trackPkgId] || {
       id: originalTrack.id,
       name: originalTrack.name,
       series: fromSeries,
       count: 0
     };
+
     resultMap[trackPkgId].count += 1;
+
     return resultMap;
   }, {}));
+
   return countById
     .filter((item) => item.count > 1)
     .sort((a, b) => b.count - a.count);

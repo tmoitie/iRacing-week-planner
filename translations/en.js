@@ -1,6 +1,7 @@
 export default {
   translation: {
     'iRacing Week Planner': 'iRacing Week Planner',
+    'Purchase guide': 'Purchase guide',
     'Set my tracks': 'Set my tracks',
     'Set my cars': 'Set my cars',
     'Set favorite series': 'Set favorite series',
@@ -47,6 +48,7 @@ export default {
     'Season end': 'Season end',
     'Link': 'Link',
     'Week': 'Week',
+    'Count': 'Count',
 
     // Modals
     'Use the checkbox to set the content you own, and use the star to set your favourite content.':
@@ -63,6 +65,7 @@ export default {
     'Loading': 'Loading',
     'Cars for {{series}}': 'Cars for {{series}}',
     'Tracks for {{series}}': 'Tracks for {{series}}',
+    'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.',
 
     // Dates
     '{{date, YYYY MMMM DD}}': '{{date, YYYY MMMM DD}}',
