@@ -57,6 +57,14 @@ export default [
     seriesId: 402,
     weekStartOffset: duration({ days: 6 }),
     // weekEndOffset: duration({ days: 7 }),
-    offWeeks: [1.1, 1.2, 2.1, 3.1, 4.1, 5.1, 6.1, 7.1, 8.1, 8.2, 8.3, 8.4, 9.1, 10.1, 11.1, 12.1, 13.1, 13.2]
+    offWeeks: [1.1, 1.2, 2.1, 3.1, 4.1, 5.1, 6.1, 7.1, 8.1, 8.2, 8.3, 8.4, 9.1, 10.1, 11.1, 12.1, 13.1, 13.2],
+  },
+  {
+    // Porsche TAG Heuer Esports Supercup
+    seriesId: 409,
+    weekEndOffset: duration({ days: 7 }),
+    offWeeks: [
+      2.1, 3.1, 3.1, 3.1, 4.1, 5.1, 6.1, 7.1, 8.1, 9.1, 9.1,
+    ],
   },
 ];

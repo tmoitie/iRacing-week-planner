@@ -6,10 +6,10 @@ export default function ({
 }) {
   const currentSeries = favouriteSeries.length === 0
     ? series
-    : series.filter((serie) => favouriteSeries.includes(serie.seriesid));
+    : series.filter((series) => favouriteSeries.includes(series.seriesid));
 
   const allTrackPkgIds = currentSeries
-    .flatMap((serie) => serie.tracks.map((track) => track.pkgid))
+    .flatMap((series) => series.tracks.map((track) => track.pkgid))
     .filter((pkgId) => !ownedTracks.includes(pkgId));
 
   const countById = Object.values(allTrackPkgIds.reduce((resultMap, trackPkgId) => {

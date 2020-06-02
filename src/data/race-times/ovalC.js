@@ -47,9 +47,4 @@ export default [
     seriesId: 229,
     offWeeks: [6.5, 12.5, 15.5, 24.5]
   },
-  {
-    // IndyCar iRacing series
-    seriesId: 374,
-    offWeeks: [1.1, 1.2, 1.3, 2.1, 5.1, 6.1, 6.2, 6.3, 8.1, 8.2, 10.1, 10.2, 10.3]
-  }
 ];

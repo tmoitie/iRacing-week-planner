@@ -29,9 +29,10 @@ export default [
   }, {
     // VLN Endurance Champs
     seriesId: 275,
+    // weekStartOffset: duration({ days: 7 }),
+    // weekEndOffset: duration({ days: 7 }),
     offWeeks: [
-      1.1, 1.2, 2.1, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 3.10, 4.1, 4.2, 5.1, 5.2, 5.3, 5.4, 6.1,
-      6.2, 7.1, 8.1,
+      1.1, 2.1, 2.1, 3.1, 3.1, 3.1, 3.1, 3.1, 4.1, 4.1, 4.1, 4.1, 6.1, 6.1, 6.1, 7.1, 7.1, 8.1, 8.1, 8.1, 8.1, 8.1,
     ],
   }, {
     // Ferrari GT3 Challenge
