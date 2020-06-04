@@ -8,7 +8,7 @@ const races = allRaces.filter(race => race.seriesId === seriesId);
 
 const table = new Table({
   head: [
-    'ID', 'Name', 'Week Length', 'Start', 'End', 'Season Start', 'Season End'
+    'Week', 'ID', 'Name', 'Week Length', 'Start', 'End', 'Season Start', 'Season End'
   ],
   chars: {
     top: '═', 'top-mid': '╤', 'top-left': '╔', 'top-right': '╗',
@@ -20,7 +20,8 @@ const table = new Table({
   }
 });
 
-table.push(...races.map(race => [
+table.push(...races.map((race, index) => [
+  index + 1,
   race.seriesId,
   race.series,
   race.weekLength.asDays(),

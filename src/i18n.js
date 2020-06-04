@@ -5,15 +5,18 @@ import moment from 'moment';
 
 import en from '../translations/en';
 import enGB from '../translations/en-GB';
+import es from '../translations/es';
 
 export const languageFlags = {
   en: '🇺🇸',
   'en-GB': '🇬🇧',
+  'es': '🇪🇸',
 };
 
 const resources = {
   en,
   'en-GB': enGB,
+  'es': es,
 };
 
 i18n

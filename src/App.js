@@ -279,6 +279,7 @@ export class App extends Component {
                 <ul className="dropdown-menu">
                   <li><a href="" onClick={this.switchLanguage('en')}>🇺🇸 English (US)</a></li>
                   <li><a href="" onClick={this.switchLanguage('en-GB')}>🇬🇧 English (UK)</a></li>
+                  <li><a href="" onClick={this.switchLanguage('es')}>🇪🇸 Español (ES)</a></li>
                   <li>
                     <a
                       href="https://github.com/tmoitie/iRacing-week-planner/blob/master/Translate.md"
