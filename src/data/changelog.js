@@ -1,6 +1,11 @@
 import moment from 'moment';
 
 export default [{
+  date: moment('2020-06-04 00:00:00').utc(),
+  items: [
+    'Add Spanish translation, (thanks Sergi @sergidome!)',
+  ]
+}, {
   date: moment('2020-06-02 00:00:00').utc(),
   items: [
     'Updated to 2020S2 W13',
