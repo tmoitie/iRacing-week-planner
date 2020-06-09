@@ -15,12 +15,17 @@ export default function ({
   const countById = Object.values(allTrackPkgIds.reduce((resultMap, trackPkgId) => {
     const originalTrack = tracks.find((track) => track.pkgid === trackPkgId);
     const fromSeries = currentSeries
-      .filter((series) => series.tracks.filter((seriesTrack) => seriesTrack.pkgid === trackPkgId).length > 0)
-      .map((series) => series.seriesname);
+      .filter((series) => series.tracks.filter((seriesTrack) => seriesTrack.pkgid === trackPkgId).length > 0);
+
+    // Annotate each series noting the week we're racing the target track
+    fromSeries.map(
+      s => {
+        s.racedOnWeek = s.tracks.find((seriesTrack) => seriesTrack.pkgid === trackPkgId).raceweek
+      }
+    );
 
     resultMap[trackPkgId] = resultMap[trackPkgId] || {
-      id: originalTrack.id,
-      name: originalTrack.name,
+      track: originalTrack,
       series: fromSeries,
       count: 0
     };
