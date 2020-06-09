@@ -32,7 +32,7 @@ export default function PurchaseGuideModal({ isOpen, onClose, ownedTracks, favou
                 <td>{t(item.track.name)}</td>
                 <td>
                   <ul>
-                    {item.series.map((series) => <li key={series.seriesname}>{t(series.seriesname)} (Week {series.racedOnWeek})</li>)}
+                    {item.series.map((series) => <li key={series.seriesname}>{t(series.seriesname)} ({t('Week {{week}}', { week: series.racedOnWeek })})</li>)}
                   </ul>
                 </td>
                 <td>
