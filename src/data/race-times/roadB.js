@@ -28,12 +28,12 @@ export default [
   {
     // Le Mans Enduro
     seriesId: 331,
-    setTimes: [
-      duration({ days: 4, hours: 7 }), // Sat 7am
-      duration({ days: 4, hours: 19 }),  // Sat 7pm
-      duration({ days: 5, hours: 14 })  // Sun 2pm
-    ],
-    offWeeks: [1.1, 2.1, 3.1, 4.1, 5.1],
+    // setTimes: [
+    //   duration({ days: 4, hours: 7 }), // Sat 7am
+    //   duration({ days: 4, hours: 19 }),  // Sat 7pm
+    //   duration({ days: 5, hours: 14 })  // Sun 2pm
+    // ],
+    offWeeks: [1.1, 1.1, 2.1, 3.1, 4.1, 5.1],
   },
   {
     // Formula Renault 3.5
