@@ -10,7 +10,7 @@ export default function PurchaseGuideModal({ isOpen, onClose, ownedTracks, favou
   const { t } = useTranslation();
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose} title='Purchase Guide' doneAction={onClose}>
+    <Modal isOpen={isOpen} onClose={onClose} title={t('Purchase Guide')} doneAction={onClose}>
       <div className='container-fluid'>
         <p>
           {t('These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.')}

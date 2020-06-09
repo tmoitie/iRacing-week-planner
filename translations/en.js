@@ -60,6 +60,7 @@ export default {
     'Close': 'Close',
     'Contributors': 'Contributors',
     'Changelog': 'Changelog',
+    'Purchase Guide': 'Purchase Guide',
     'This tool was created by <1>tmoitie</1> (<3>Tom Moitié</3> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on <5>Github</5>. Thanks!':
       'This tool was created by <1>tmoitie</1> (<3>Tom Moitié</3> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on <5>Github</5>. Thanks!',
     'Loading': 'Loading',
