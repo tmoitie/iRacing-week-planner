@@ -66,7 +66,7 @@ export default {
     'Loading': 'Carregando',
     'Cars for {{series}}': 'Carros para {{series}}',
     'Tracks for {{series}}': 'Pistas para {{series}}',
-    'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'Essas são as pistas você não tem as quais aparecem aparecem várias vezes para esta temporada. Você pode comprar essas pistas com o link.',
+    'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'Essas são as pistas você não tem, as quais aparecem aparecem várias vezes para esta temporada. Você pode comprar essas pistas com o link.',
 
     // Dates
     '{{date, YYYY MMMM DD}}': '{{date, DD MMMM YYYY}}',
