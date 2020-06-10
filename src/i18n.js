@@ -6,17 +6,20 @@ import moment from 'moment';
 import en from '../translations/en';
 import enGB from '../translations/en-GB';
 import es from '../translations/es';
+import ptBR from '../translations/pt-BR';
 
 export const languageFlags = {
   en: '🇺🇸',
   'en-GB': '🇬🇧',
   'es': '🇪🇸',
+  'pt-BR': '🇧🇷',
 };
 
 const resources = {
   en,
   'en-GB': enGB,
   'es': es,
+  'pt-BR': ptBR,
 };
 
 i18n
