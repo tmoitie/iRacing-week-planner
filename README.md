@@ -6,7 +6,7 @@ This is a ES6/React/Webpack app.
 ### Editing
 
 ```
-npm install
-npm start
+yarn install
+yarn start
 open http://localhost:3000
 ```
