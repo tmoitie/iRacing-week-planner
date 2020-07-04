@@ -37,7 +37,7 @@ export default function PurchaseGuideModal({ isOpen, onClose, ownedTracks, favou
                 </td>
                 <td>
                   <a
-                    href={`https://members.iracing.com/membersite/member/TrackDetail.do?trkid=${item.id}`}
+                    href={`https://members.iracing.com/membersite/member/TrackDetail.do?trkid=${item.track.pkgid}`}
                     target='_blank'
                   >
                     <span className='glyphicon glyphicon-shopping-cart' />
