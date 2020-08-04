@@ -2,22 +2,20 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import update from 'immutability-helper';
 import { withTranslation } from 'react-i18next';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { updateDays as updateDaysCreator } from '../actions/app';
+import { signOut, startListener } from '../actions/auth';
+import { resetFilters, resetSettings, updateFilters } from '../actions/settings';
 import Checkbox from './Checkbox';
 
 export class Filters extends Component {
   static propTypes = {
-    currentFilters: PropTypes.object,
-    updateFilters: PropTypes.func,
-    resetSettings: PropTypes.func,
-    resetFilters: PropTypes.func,
+    currentFilters: PropTypes.object.isRequired,
+    updateFilters: PropTypes.func.isRequired,
+    resetSettings: PropTypes.func.isRequired,
+    resetFilters: PropTypes.func.isRequired,
     t: PropTypes.func.isRequired,
-  }
-
-  static defaultProps = {
-    currentFilters: {},
-    updateFilters: () => {},
-    resetSettings: () => {},
-    resetFilters: () => {},
   }
 
   setCheckboxFilter(key, value, e) {
@@ -187,5 +185,15 @@ export class Filters extends Component {
   }
 }
 
-export default withTranslation()(Filters);
+const mapStateToProps = (state) => ({
+  currentFilters: state.settings.filters,
+});
+
+const mapDispatchToProps = (dispatch) => bindActionCreators({
+  updateFilters,
+  resetFilters,
+  resetSettings,
+}, dispatch);
+
+export default connect(mapStateToProps, mapDispatchToProps)(withTranslation()(Filters));
 

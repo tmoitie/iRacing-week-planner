@@ -1,4 +1,4 @@
-import { UPDATE_DAYS } from '../actions/app';
+import { CHANGE_MODAL, UPDATE_DAYS } from '../actions/app';
 import moment, { duration } from 'moment';
 import { seasonStart, weekSeasonStart } from '../config';
 
@@ -10,17 +10,25 @@ export default function app(
   state = {
     date: currentDate,
     daysSinceSeasonStart: currentDays,
-    week: getWeek(currentDate)
+    week: getWeek(currentDate),
+    currentModal: null,
   },
-  action
+  { type, days, modalName }
 ) {
-  if (action.type === UPDATE_DAYS) {
-    const date = moment(seasonStart).add(action.days, 'days');
+  if (type === UPDATE_DAYS) {
+    const date = moment(seasonStart).add(days, 'days');
     return {
       ...state,
       date,
-      daysSinceSeasonStart: action.days,
+      daysSinceSeasonStart: days,
       week: getWeek(date)
+    };
+  }
+
+  if (type === CHANGE_MODAL) {
+    return {
+      ...state,
+      currentModal: modalName,
     };
   }
 
