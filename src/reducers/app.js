@@ -1,5 +1,6 @@
 import { CHANGE_MODAL, UPDATE_DAYS } from '../actions/app';
 import moment, { duration } from 'moment';
+import { SIGNED_IN } from '../actions/auth';
 import { seasonStart, weekSeasonStart } from '../config';
 
 const currentDate = moment(new Date()).utc().startOf('day');
@@ -29,6 +30,13 @@ export default function app(
     return {
       ...state,
       currentModal: modalName,
+    };
+  }
+
+  if (type === SIGNED_IN) {
+    return {
+      ...state,
+      currentModal: null,
     };
   }
 

@@ -4,10 +4,13 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Slider } from '@blueprintjs/core';
 import { withTranslation } from 'react-i18next';
+import 'firebase/auth';
 import { updateSetting } from './actions/settings';
 
 import { defaultSettings } from './reducers/settings';
 import { changeModal, updateDays as updateDaysCreator } from './actions/app';
+import { signOut, startListener } from './actions/auth';
+import LoginModal from './components/modal/LoginModal';
 
 import { tracks, cars } from './data';
 import RaceListing from './components/RaceListing';
@@ -36,7 +39,10 @@ export class App extends Component {
     week: PropTypes.number,
     updateDays: PropTypes.func.isRequired,
     t: PropTypes.func.isRequired,
+    user: PropTypes.object,
     settings: PropTypes.object.isRequired,
+    signOut: PropTypes.func.isRequired,
+    startListener: PropTypes.func.isRequired,
     updateSetting: PropTypes.func.isRequired,
     currentModal: PropTypes.string,
     changeModal: PropTypes.func.isRequired,
@@ -48,6 +54,7 @@ export class App extends Component {
   };
 
   componentDidMount() {
+    this.props.startListener();
   }
 
   getCloseModalHandler() {
@@ -216,6 +223,18 @@ export class App extends Component {
               <li><a href='' onClick={this.getOpenModalHandler('about')}>
                 {t('About')}
               </a></li>
+              {user ? (
+                <li><a href='' onClick={(e) => {
+                  e.preventDefault();
+                  signOut();
+                }}>
+                  {t('Sign out')}
+                </a></li>
+              ) : (
+                <li><a href='' onClick={this.getOpenModalHandler('login')}>
+                  {t('Sign in')}
+                </a></li>
+              )}
               <li className="dropdown">
                 <a href="" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                    aria-expanded="false">{languageFlags[i18n.language]} <span className="caret"></span></a>
@@ -282,6 +301,7 @@ export class App extends Component {
         {this.renderChangelogModal()}
         {this.renderFavouriteSeriesModal()}
         {this.renderMyTracksModal()}
+        {this.renderLoginModal()}
       </div>
     );
   }
@@ -293,12 +313,15 @@ const mapStateToProps = (state) => ({
   date: state.app.date,
   dateDays: state.app.daysSinceSeasonStart,
   week: state.app.week,
+  user: state.auth.user,
   settings: state.settings,
   currentModal: state.app.currentModal,
 });
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
   updateDays: updateDaysCreator,
+  signOut,
+  startListener,
   updateSetting,
   changeModal,
 }, dispatch);
