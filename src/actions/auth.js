@@ -2,6 +2,7 @@ import { debouncedDispatcherSaveSettings, getSettingsFromFirebase, saveSettingsT
 
 export const LOADING_AUTH = 'AUTH/LOADING_SIGN_IN';
 export const ERROR_AUTH = 'AUTH/ERROR_AUTH';
+export const ERROR_RESET = 'AUTH/ERROR_RESET';
 export const ERROR_ACKNOWLEDGE = 'AUTH/ERROR_ACKNOWLEDGE';
 export const SIGNED_IN = 'AUTH/SIGNED_IN';
 export const SIGNED_OUT = 'AUTH/SIGNED_OUT';
@@ -20,8 +21,6 @@ export function signOut() {
     dispatch({ type: SIGNED_OUT });
   };
 }
-
-
 
 export function signIn(email, password) {
   return async (dispatch, getState) => {
@@ -77,7 +76,13 @@ export function startListener() {
 export function forgottenPassword(email) {
   return async (dispatch, getState) => {
     dispatch({ type: LOADING_RESET });
-    await getState().auth.firebaseApp.auth().sendPasswordResetEmail(email);
-    dispatch({ type: RESET_SENT });
+    try {
+      await getState().auth.firebaseApp.auth().sendPasswordResetEmail(email);
+      dispatch({ type: RESET_SENT });
+      return { type: RESET_SENT };
+    } catch (error) {
+      dispatch({ type: ERROR_RESET, error });
+      return { type: ERROR_RESET };
+    }
   };
 }

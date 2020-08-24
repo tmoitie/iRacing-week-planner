@@ -2,7 +2,7 @@ import * as firebase from 'firebase/app';
 import 'firebase/firestore';
 
 import {
-  LOADING_AUTH, SIGNED_OUT, SIGNED_IN, LOADING_RESET, RESET_SENT, ERROR_AUTH, ERROR_ACKNOWLEDGE,
+  LOADING_AUTH, SIGNED_OUT, SIGNED_IN, LOADING_RESET, RESET_SENT, ERROR_AUTH, ERROR_ACKNOWLEDGE, ERROR_RESET,
 } from '../actions/auth';
 import { firebaseConfig } from '../config';
 
@@ -15,6 +15,7 @@ export default function auth(
     loadingAuth: true,
     loadingReset: false,
     errorAuth: null,
+    errorReset: null,
   },
   { type, user, error },
 ) {
@@ -30,12 +31,16 @@ export default function auth(
     return { ...state, loadingAuth: false, errorAuth: error };
   }
 
+  if (type === ERROR_RESET) {
+    return { ...state, loadingReset: false, errorReset: error };
+  }
+
   if (type === ERROR_ACKNOWLEDGE) {
-    return { ...state, errorAuth: null };
+    return { ...state, errorAuth: null, errorReset: null };
   }
 
   if (type === SIGNED_IN) {
-    return { ...state, loadingAuth: false, user };
+    return { ...state, loadingAuth: false, errorAuth: null, user };
   }
 
   if (type === LOADING_RESET) {
@@ -43,7 +48,7 @@ export default function auth(
   }
 
   if (type === RESET_SENT) {
-    return { ...state, loadingReset: false };
+    return { ...state, loadingReset: false, errorReset: null };
   }
 
   return state;

@@ -4,12 +4,14 @@ import { useTranslation } from 'react-i18next';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { acknowledgeAuthError, createAccount, ERROR_AUTH, signIn } from '../../actions/auth';
+import ForgottenPasswordModal from './ForgottenPasswordModal';
 import Modal from './Modal';
 
 function LoginModal({ isOpen, onClose, error, loading, signIn, acknowledgeAuthError }) {
   const { t } = useTranslation();
   const [ email, setEmail ] = useState('');
   const [ password, setPassword ] = useState('');
+  const [ forgotPasswordModalOpen, setFPModalOpen ] = useState(false);
 
   const resetForm = () => {
     setEmail('');
@@ -60,6 +62,12 @@ function LoginModal({ isOpen, onClose, error, loading, signIn, acknowledgeAuthEr
               <input type="password" className="form-control" id="loginPassword" placeholder={t('Password')}
                      onChange={(e) => setPassword(e.target.value)} value={password} />
             </div>
+            <div className="form-group">
+              <a href="" onClick={(e) => { e.preventDefault(); setFPModalOpen(true); }}>
+                {t('Forgotten password?')}
+              </a>
+            </div>
+
             <button type="submit" className="btn btn-default">Sign In</button>
             <button type="button" className="btn" onClick={(e) => {
               e.preventDefault();
@@ -69,6 +77,10 @@ function LoginModal({ isOpen, onClose, error, loading, signIn, acknowledgeAuthEr
         )}
 
       </div>
+      <ForgottenPasswordModal
+        isOpen={forgotPasswordModalOpen}
+        onClose={() => setFPModalOpen(false)}
+      />
     </Modal>
   );
 }
