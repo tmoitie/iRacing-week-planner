@@ -39,7 +39,7 @@ function LoginModal({ isOpen, onClose, error, loading, signIn, acknowledgeAuthEr
         <p>{t('When you first sign in it will use your current settings to set up the account, but once an account is' +
           ' set up logging in will overwrite any settings you stored as a guest.')}</p>
         {loading ? (
-          <div>Loading…</div>
+          <div>{t('Loading')}</div>
         ): (
           <form onSubmit={(e) => {
             e.preventDefault();
@@ -68,11 +68,11 @@ function LoginModal({ isOpen, onClose, error, loading, signIn, acknowledgeAuthEr
               </a>
             </div>
 
-            <button type="submit" className="btn btn-default">Sign In</button>
+            <button type="submit" className="btn btn-default">{t('Sign In')}</button>
             <button type="button" className="btn" onClick={(e) => {
               e.preventDefault();
               createAccountClick();
-            }}>Create Account</button>
+            }}>{t('Create Account')}</button>
           </form>
         )}
 

@@ -29,7 +29,7 @@ function ForgottenPasswordModal({ isOpen, onClose, error, loading, forgottenPass
       <div className='container-fluid'>
         <p>{t('Enter your email address to reset your password.')}</p>
         {loading ? (
-          <div>Loading…</div>
+          <div>{t('Loading')}</div>
         ): (
           <form onSubmit={(e) => {
             e.preventDefault();
@@ -47,7 +47,7 @@ function ForgottenPasswordModal({ isOpen, onClose, error, loading, forgottenPass
               <input type="email" className="form-control" id="loginEmail" placeholder={t('Email address')}
                      onChange={(e) => setEmail(e.target.value)} value={email} />
             </div>
-            <button type="submit" className="btn btn-default">Submit</button>
+            <button type="submit" className="btn btn-default">{t('Submit')}</button>
           </form>
         )}
       </div>
