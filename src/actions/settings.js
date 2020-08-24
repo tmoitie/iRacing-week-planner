@@ -55,7 +55,7 @@ export function getSettingsFromFirebase() {
   };
 }
 
-function saveSettingsToFirebase() {
+export function saveSettingsToFirebase() {
   return async (dispatch, getState) => {
     const { user, firebaseApp } = getState().auth;
     const { settings } = getState();
@@ -75,5 +75,5 @@ const dispatchSaveSettingsToFirebase = (dispatch) => {
   dispatch(saveSettingsToFirebase());
 }
 
-const debouncedDispatcherSaveSettings = debounce(dispatchSaveSettingsToFirebase, 10000);
+export const debouncedDispatcherSaveSettings = debounce(dispatchSaveSettingsToFirebase, 10000);
 

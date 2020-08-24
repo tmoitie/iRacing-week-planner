@@ -1,4 +1,4 @@
-import { getSettingsFromFirebase } from './settings';
+import { debouncedDispatcherSaveSettings, getSettingsFromFirebase, saveSettingsToFirebase } from './settings';
 
 export const LOADING_AUTH = 'AUTH/LOADING_SIGN_IN';
 export const ERROR_AUTH = 'AUTH/ERROR_AUTH';
@@ -11,17 +11,27 @@ export const LOADING_RESET = 'AUTH/LOADING_RESET';
 export function signOut() {
   return async (dispatch, getState) => {
     dispatch({ type: LOADING_AUTH });
+    if (getState().settings.firebaseSynced === false) {
+      debouncedDispatcherSaveSettings.cancel();
+      await dispatch(saveSettingsToFirebase());
+    }
+
     await getState().auth.firebaseApp.auth().signOut();
+    dispatch({ type: SIGNED_OUT });
   };
 }
+
+
 
 export function signIn(email, password) {
   return async (dispatch, getState) => {
     dispatch({ type: LOADING_AUTH });
     try {
       await getState().auth.firebaseApp.auth().signInWithEmailAndPassword(email, password);
+      return {};
     } catch (error) {
       dispatch({ type: ERROR_AUTH, error });
+      return { type: ERROR_AUTH };
     }
   };
 }
@@ -31,8 +41,10 @@ export function createAccount(email, password) {
     dispatch({ type: LOADING_AUTH });
     try {
       await getState().auth.firebaseApp.auth().createUserWithEmailAndPassword(email, password);
+      return {};
     } catch (error) {
       dispatch({ type: ERROR_AUTH, error });
+      return { type: ERROR_AUTH };
     }
   };
 }

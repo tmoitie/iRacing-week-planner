@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { acknowledgeAuthError, createAccount, signIn } from '../../actions/auth';
+import { acknowledgeAuthError, createAccount, ERROR_AUTH, signIn } from '../../actions/auth';
 import Modal from './Modal';
 
 function LoginModal({ isOpen, onClose, error, loading, signIn, acknowledgeAuthError }) {
@@ -11,14 +11,23 @@ function LoginModal({ isOpen, onClose, error, loading, signIn, acknowledgeAuthEr
   const [ email, setEmail ] = useState('');
   const [ password, setPassword ] = useState('');
 
+  const resetForm = () => {
+    setEmail('');
+    setPassword('');
+  };
+
   const signInClick = async () => {
-    const result = await signIn(email, password);
-    console.log(result);
+    const output = await signIn(email, password);
+    if (output.type !== ERROR_AUTH) {
+      resetForm();
+    }
   };
 
   const createAccountClick = async () => {
-    const result = await createAccount(email, password);
-    console.log(result);
+    const output = await createAccount(email, password);
+    if (output.type !== ERROR_AUTH) {
+      resetForm();
+    }
   };
 
   return (

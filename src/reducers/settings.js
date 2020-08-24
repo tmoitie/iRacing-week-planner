@@ -1,5 +1,6 @@
 import uniq from 'lodash.uniq';
 import { actionTypes as localStorageActionTypes } from 'redux-localstorage'
+import { SIGNED_OUT } from '../actions/auth';
 import {
   FIREBASE_SYNCED,
   LOAD_SETTINGS_FROM_FIREBASE,
@@ -68,7 +69,7 @@ export default function settings(state = startupSettings, { type, payload }) {
     return { ...state, filters: defaultFilters, firebaseSynced: false };
   }
 
-  if (type === RESET_SETTINGS) {
+  if (type === RESET_SETTINGS || type === SIGNED_OUT) {
     return { ...defaultSettings, firebaseSynced: false };
   }
 
