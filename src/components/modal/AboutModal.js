@@ -36,8 +36,8 @@ export function AboutModal({ onClose, isOpen, contributors, getContributors, loa
 
         <p>
           <Trans>
-            This is now costing me a few quid a month to run, so if you like using this tool, please feel free to{' '}
-            <a href='https://www.buymeacoffee.com/tmoitie'
+            This is now costing me a few quid a month to run, so if you like using this tool, please feel free
+            to <a href='https://www.buymeacoffee.com/tmoitie'
                target='_blank'
             >buy me a coffee</a>.
           </Trans>

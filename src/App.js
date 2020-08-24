@@ -29,7 +29,7 @@ import '@blueprintjs/core/lib/css/blueprint.css';
 import PurchaseGuideModal from './components/modal/PurchaseGuideModal';
 
 import 'bootstrap-sass';
-import { languageFlags } from './i18n';
+import { languages } from './i18n';
 
 const seasonLengthDays = seasonEnd.diff(seasonStart, 'days');
 
@@ -238,12 +238,15 @@ export class App extends Component {
               )}
               <li className="dropdown">
                 <a href="" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                   aria-expanded="false">{languageFlags[i18n.language]} <span className="caret"></span></a>
+                   aria-expanded="false">{languages[i18n.language].flag} <span className="caret"></span></a>
                 <ul className="dropdown-menu">
-                  <li><a href="" onClick={this.getSwitchLanguageHandler('en')}>🇺🇸 English (US)</a></li>
-                  <li><a href="" onClick={this.getSwitchLanguageHandler('en-GB')}>🇬🇧 English (UK)</a></li>
-                  <li><a href="" onClick={this.getSwitchLanguageHandler('es')}>🇪🇸 Español (ES)</a></li>
-                  <li><a href="" onClick={this.getSwitchLanguageHandler('pt-BR')}>🇧🇷 Português (BR)</a></li>
+                  {Object.entries(languages).map(([code, language]) => (
+                    <li key={code}>
+                      <a href="" onClick={this.getSwitchLanguageHandler(code)}>
+                        {language.flag} {language.name}
+                      </a>
+                    </li>
+                  ))}
                   <li>
                     <a
                       href="https://github.com/tmoitie/iRacing-week-planner/blob/master/Translate.md"

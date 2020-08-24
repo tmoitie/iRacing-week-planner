@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { acknowledgeAuthError, ERROR_RESET, forgottenPassword } from '../../actions/auth';
+import {
+  acknowledgeAuthError as acknowledgeAuthErrorAction,
+  ERROR_RESET,
+  forgottenPassword as forgottenPasswordAction,
+} from '../../actions/auth';
 import Modal from './Modal';
 
 function ForgottenPasswordModal({ isOpen, onClose, error, loading, forgottenPassword, acknowledgeAuthError }) {
@@ -39,7 +43,7 @@ function ForgottenPasswordModal({ isOpen, onClose, error, loading, forgottenPass
               <div className="alert alert-warning alert-dismissible" role="alert">
                 <button className="close" type="button" aria-label="Close" onClick={acknowledgeAuthError}><span
                   aria-hidden="true">&times;</span></button>
-                {t(error)}
+                {t(error.message)}
               </div>
             )}
             <div className="form-group">
@@ -88,8 +92,8 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
-  forgottenPassword,
-  acknowledgeAuthError,
+  forgottenPassword: forgottenPasswordAction,
+  acknowledgeAuthError: acknowledgeAuthErrorAction,
 }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(ForgottenPasswordModal)
