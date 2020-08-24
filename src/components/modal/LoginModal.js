@@ -47,7 +47,7 @@ function LoginModal({ isOpen, onClose, error, loading, signIn, acknowledgeAuthEr
           }}>
             {error && (
               <div className="alert alert-warning alert-dismissible" role="alert">
-                <button type="button" aria-label="Close" onClick={acknowledgeAuthError}><span
+                <button type="button" aria-label="Close" onClick={acknowledgeAuthError} className="close"><span
                   aria-hidden="true">&times;</span></button>
                 {t(error)}
               </div>

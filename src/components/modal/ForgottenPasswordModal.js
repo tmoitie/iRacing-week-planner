@@ -37,7 +37,7 @@ function ForgottenPasswordModal({ isOpen, onClose, error, loading, forgottenPass
           }}>
             {error && (
               <div className="alert alert-warning alert-dismissible" role="alert">
-                <button type="button" aria-label="Close" onClick={acknowledgeAuthError}><span
+                <button className="close" type="button" aria-label="Close" onClick={acknowledgeAuthError}><span
                   aria-hidden="true">&times;</span></button>
                 {t(error)}
               </div>
