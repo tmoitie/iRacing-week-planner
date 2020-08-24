@@ -8,11 +8,23 @@ import enGB from '../translations/en-GB';
 import es from '../translations/es';
 import ptBR from '../translations/pt-BR';
 
-export const languageFlags = {
-  en: '🇺🇸',
-  'en-GB': '🇬🇧',
-  'es': '🇪🇸',
-  'pt-BR': '🇧🇷',
+export const languages = {
+  en: {
+    flag: '🇺🇸',
+    name: 'English (US)',
+  },
+  'en-GB': {
+    flag: '🇬🇧',
+    name: 'English (UK)',
+  },
+  'es': {
+    flag: '🇪🇸',
+    name: 'Español (ES)',
+  },
+  'pt-BR': {
+    flag: '🇧🇷',
+    name: 'Português (BR)',
+  },
 };
 
 const resources = {
@@ -21,6 +33,11 @@ const resources = {
   'es': es,
   'pt-BR': ptBR,
 };
+
+if (process.env.NODE_ENV === 'development') {
+  languages.test = { flag: '👀', name: 'Test' };
+  resources.test = require('../translations/test').default;
+}
 
 i18n
   .use(LanguageDetector)

@@ -36,32 +36,32 @@ const extractJSONString = (sourceLines, variableName, fileName, filter = (a) => 
         browserName: 'phantomjs'
     }
   });
-  
+
   await browser.url('https://members.iracing.com/membersite/login.jsp');
-  
+
   const userField = await browser.$('[name="username"]');
   await userField.addValue(username);
-  
+
   const passwordField = await browser.$('[name="password"]');
   await passwordField.addValue(password);
-  
+
   const button = await browser.$('input.log-in');
   await button.click();
-  
+
   await browser.waitUntil(async () => {
     const url = await browser.getUrl();
     return url === 'https://members.iracing.com/membersite/member/Home.do';
   }, 5000, 'expected to be logged in');
-  
+
   await browser.url('http://members.iracing.com/membersite/member/Series.do');
-  
+
   const source = await browser.getPageSource();
   const sourceLines = source.split('\n');
-  
+
   extractJSONString(sourceLines, 'TrackListing', '../src/data/tracks.json', tracksFilter);
   extractJSONString(sourceLines, 'CarClassListing', '../src/data/car-class.json');
   extractJSONString(sourceLines, 'CarListing', '../src/data/cars.json', carsFilter);
   extractJSONString(sourceLines, 'SeasonListing', '../src/data/season.json', seasonFilter);
-  
+
   await browser.deleteSession();
 })().catch((e) => console.error(e));

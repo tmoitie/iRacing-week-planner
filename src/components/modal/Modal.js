@@ -16,13 +16,15 @@ export class Modal extends Component {
     doneAction: PropTypes.func,
     doneButtonText: PropTypes.string,
     t: PropTypes.func.isRequired,
+    showFooter: PropTypes.bool,
   };
 
   static defaultProps = {
     isOpen: false,
     onClose: () => {},
     doneAction: () => {},
-    doneButtonText: 'Close'
+    doneButtonText: 'Close',
+    showFooter: true,
   };
 
   constructor(props) {
@@ -60,7 +62,7 @@ export class Modal extends Component {
   }
 
   render() {
-    const { children, title, isOpen, onClose, doneButtonText, t } = this.props;
+    const { children, title, isOpen, onClose, doneButtonText, t, showFooter } = this.props;
 
     return (<BaseModal isOpen={isOpen} onRequestClose={onClose}>
       <div className='modal-content'>
@@ -73,9 +75,9 @@ export class Modal extends Component {
         <div className='modal-body' style={{ maxHeight: '55vh', overflowY: 'auto' }}>
           {children}
         </div>
-        <div className='modal-footer'>
+        {showFooter && <div className='modal-footer'>
           <button type='button' className='btn btn-primary' onClick={this.clickDone.bind(this)}>{t(doneButtonText)}</button>
-        </div>
+        </div>}
       </div>
     </BaseModal>);
   }
