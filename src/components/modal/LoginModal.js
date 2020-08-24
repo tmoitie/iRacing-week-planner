@@ -16,8 +16,9 @@ function LoginModal({ isOpen, onClose, error, loading, signIn, acknowledgeAuthEr
     console.log(result);
   };
 
-  const createAccountClick = () => {
-    createAccount(email, password);
+  const createAccountClick = async () => {
+    const result = await createAccount(email, password);
+    console.log(result);
   };
 
   return (
@@ -26,30 +27,38 @@ function LoginModal({ isOpen, onClose, error, loading, signIn, acknowledgeAuthEr
         <p>{t('Signing in will sync your settings across multiple browsers or devices.')}</p>
         <p>{t('When you first sign in it will use your current settings to set up the account, but once an account is' +
           ' set up logging in will overwrite any settings you stored as a guest.')}</p>
-        <form onSubmit={(e) => {
-          e.preventDefault();
-          signInClick();
-        }}>
-          {error && (
-            <div className="alert alert-warning alert-dismissible" role="alert">
-              <button type="button" aria-label="Close" onClick={acknowledgeAuthError}><span
-                aria-hidden="true">&times;</span></button>
-              {t(error)}
+        {loading ? (
+          <div>Loading…</div>
+        ): (
+          <form onSubmit={(e) => {
+            e.preventDefault();
+            signInClick();
+          }}>
+            {error && (
+              <div className="alert alert-warning alert-dismissible" role="alert">
+                <button type="button" aria-label="Close" onClick={acknowledgeAuthError}><span
+                  aria-hidden="true">&times;</span></button>
+                {t(error)}
+              </div>
+            )}
+            <div className="form-group">
+              <label htmlFor="loginEmail">{t('Email address')}</label>
+              <input type="email" className="form-control" id="loginEmail" placeholder={t('Email address')}
+                     onChange={(e) => setEmail(e.target.value)} value={email} />
             </div>
-          )}
-          <div className="form-group">
-            <label htmlFor="loginEmail">{t('Email address')}</label>
-            <input type="email" className="form-control" id="loginEmail" placeholder={t('Email address')}
-                   onChange={(e) => setEmail(e.target.value)} value={email} />
-          </div>
-          <div className="form-group">
-            <label htmlFor="loginPassword">{t('Password')}</label>
-            <input type="password" className="form-control" id="loginPassword" placeholder={t('Password')}
-                   onChange={(e) => setPassword(e.target.value)} value={password} />
-          </div>
-          <button type="submit" className="btn btn-default">Sign In</button>
-          <button type="button" className="btn" onClick={createAccountClick}>Create Account</button>
-        </form>
+            <div className="form-group">
+              <label htmlFor="loginPassword">{t('Password')}</label>
+              <input type="password" className="form-control" id="loginPassword" placeholder={t('Password')}
+                     onChange={(e) => setPassword(e.target.value)} value={password} />
+            </div>
+            <button type="submit" className="btn btn-default">Sign In</button>
+            <button type="button" className="btn" onClick={(e) => {
+              e.preventDefault();
+              createAccountClick();
+            }}>Create Account</button>
+          </form>
+        )}
+
       </div>
     </Modal>
   );

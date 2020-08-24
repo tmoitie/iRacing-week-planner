@@ -1,3 +1,5 @@
+import { getSettingsFromFirebase } from './settings';
+
 export const LOADING_AUTH = 'AUTH/LOADING_SIGN_IN';
 export const ERROR_AUTH = 'AUTH/ERROR_AUTH';
 export const ERROR_ACKNOWLEDGE = 'AUTH/ERROR_ACKNOWLEDGE';
@@ -39,14 +41,24 @@ export function acknowledgeAuthError() {
   return { type: ERROR_ACKNOWLEDGE };
 }
 
+export function signedIn(user) {
+  return async (dispatch) => {
+    await dispatch({ type: SIGNED_IN, user });
+
+    if (user) {
+      dispatch(getSettingsFromFirebase());
+    }
+  };
+}
+
 export function startListener() {
   return async (dispatch, getState) => {
     const { currentUser } = getState().auth.firebaseApp.auth();
-    dispatch({ type: SIGNED_IN, user: currentUser });
+    dispatch(signedIn(currentUser));
 
     getState().auth.firebaseApp.auth().onAuthStateChanged((user) => {
-      dispatch({ type: SIGNED_IN, user: user });
-    })
+      dispatch(signedIn(user));
+    });
   };
 }
 

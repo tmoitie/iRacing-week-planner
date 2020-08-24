@@ -1,6 +1,12 @@
 import uniq from 'lodash.uniq';
 import { actionTypes as localStorageActionTypes } from 'redux-localstorage'
-import { RESET_FILTERS, RESET_SETTINGS, UPDATE_FILTERS, UPDATE_SETTING } from '../actions/settings';
+import {
+  LOAD_SETTINGS_FROM_FIREBASE,
+  RESET_FILTERS,
+  RESET_SETTINGS,
+  UPDATE_FILTERS,
+  UPDATE_SETTING
+} from '../actions/settings';
 
 import availableColumns from '../data/availableColumns';
 import { tracks, cars } from '../data';
@@ -33,10 +39,7 @@ const LEGACY_STORAGE_KEY = 'iracing-state';
 const legacyStored = window.localStorage.getItem(LEGACY_STORAGE_KEY);
 const startupSettings = legacyStored ? JSON.parse(legacyStored) : defaultSettings;
 
-export default function settings(
-  state = startupSettings,
-  { type, filters, key, value, payload },
-) {
+export default function settings(state = startupSettings, { type, payload }) {
   if (type === localStorageActionTypes.INIT) {
     const persistedStateSettings = payload ? payload.settings : {};
 
@@ -56,7 +59,7 @@ export default function settings(
   }
 
   if (type === UPDATE_FILTERS) {
-    return { ...state, filters };
+    return { ...state, filters: payload.filters };
   }
 
   if (type === RESET_FILTERS) {
@@ -68,7 +71,11 @@ export default function settings(
   }
 
   if (type === UPDATE_SETTING) {
-    return { ...state, [key]: value };
+    return { ...state, [payload.key]: payload.value };
+  }
+
+  if (type === LOAD_SETTINGS_FROM_FIREBASE) {
+    return { ...state, ...defaultSettings, ...payload };
   }
 
   return state;
