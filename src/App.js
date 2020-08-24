@@ -6,6 +6,7 @@ import { Slider } from '@blueprintjs/core';
 import { withTranslation } from 'react-i18next';
 import 'firebase/auth';
 import { updateSetting } from './actions/settings';
+import BuyACoffee from './components/BuyACoffee';
 
 import { defaultSettings } from './reducers/settings';
 import { changeModal, updateDays as updateDaysCreator } from './actions/app';
@@ -258,6 +259,9 @@ export class App extends Component {
         <div className='container-fluid'>
           <div className='row'>
             <div className='col-md-2'>
+              <div>
+                <BuyACoffee />
+              </div>
               <h3>{t('Filters')}</h3>
               <Filters />
             </div>
