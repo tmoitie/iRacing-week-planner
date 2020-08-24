@@ -16,6 +16,8 @@ export class Filters extends Component {
     resetSettings: PropTypes.func.isRequired,
     resetFilters: PropTypes.func.isRequired,
     t: PropTypes.func.isRequired,
+    user: PropTypes.object,
+    firebaseSynced: PropTypes.bool.isRequired,
   }
 
   setCheckboxFilter(key, value, e) {
@@ -44,7 +46,7 @@ export class Filters extends Component {
   }
 
   render() {
-    const { currentFilters, resetSettings, resetFilters, t } = this.props;
+    const { currentFilters, resetSettings, resetFilters, t, user, firebaseSynced } = this.props;
     return (
       <div className='filters-component' style={{ fontSize: '0.8em' }}>
         <h4>{t('Type')}</h4>
@@ -180,6 +182,10 @@ export class Filters extends Component {
             {t('Reset all settings')}
           </button>
         </p>
+
+        {user ? (<p>
+          <span>{firebaseSynced ? t('Synced') : t('Awaiting sync')} {t('(refresh browser to download latest)')}</span>
+        </p>) : null}
       </div>
     );
   }
@@ -187,6 +193,8 @@ export class Filters extends Component {
 
 const mapStateToProps = (state) => ({
   currentFilters: state.settings.filters,
+  user: state.auth.user,
+  firebaseSynced: state.settings.firebaseSynced,
 });
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({

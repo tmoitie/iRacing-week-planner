@@ -1,6 +1,7 @@
 import uniq from 'lodash.uniq';
 import { actionTypes as localStorageActionTypes } from 'redux-localstorage'
 import {
+  FIREBASE_SYNCED,
   LOAD_SETTINGS_FROM_FIREBASE,
   RESET_FILTERS,
   RESET_SETTINGS,
@@ -32,6 +33,7 @@ export const defaultSettings = {
   favouriteTracks: [],
   sort: { key: 'licence', order: 'asc' },
   columns: availableColumns.filter((column) => column.default === true).map((column) => column.id),
+  firebaseSynced: false,
 };
 
 const LEGACY_STORAGE_KEY = 'iracing-state';
@@ -59,23 +61,27 @@ export default function settings(state = startupSettings, { type, payload }) {
   }
 
   if (type === UPDATE_FILTERS) {
-    return { ...state, filters: payload.filters };
+    return { ...state, filters: payload.filters, firebaseSynced: false };
   }
 
   if (type === RESET_FILTERS) {
-    return { ...state, filters: defaultFilters };
+    return { ...state, filters: defaultFilters, firebaseSynced: false };
   }
 
   if (type === RESET_SETTINGS) {
-    return { ...defaultSettings };
+    return { ...defaultSettings, firebaseSynced: false };
   }
 
   if (type === UPDATE_SETTING) {
-    return { ...state, [payload.key]: payload.value };
+    return { ...state, [payload.key]: payload.value, firebaseSynced: false };
   }
 
   if (type === LOAD_SETTINGS_FROM_FIREBASE) {
-    return { ...state, ...defaultSettings, ...payload };
+    return { ...state, ...defaultSettings, ...payload, firebaseSynced: true };
+  }
+
+  if (type === FIREBASE_SYNCED) {
+    return { ...state, firebaseSynced: true };
   }
 
   return state;

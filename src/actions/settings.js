@@ -1,34 +1,37 @@
+import debounce from 'lodash.debounce';
+
 export const UPDATE_FILTERS = 'SETTINGS/UPDATE_FILTERS';
 export const RESET_FILTERS = 'SETTINGS/RESET_FILTERS';
 export const RESET_SETTINGS = 'SETTINGS/RESET_SETTINGS';
 export const UPDATE_SETTING = 'SETTINGS/UPDATE_SETTING';
 export const LOAD_SETTINGS_FROM_FIREBASE = 'SETTINGS/LOAD_SETTINGS_FROM_FIREBASE';
+export const FIREBASE_SYNCED = 'SETTINGS/FIREBASE_SYNCED';
 
 export function updateFilters(newFilters) {
   return async (dispatch) => {
     await dispatch({ type: UPDATE_FILTERS, payload: { filters: newFilters } });
-    dispatch(saveSettingsToFirebase());
+    debouncedDispatcherSaveSettings(dispatch);
   };
 }
 
 export function resetFilters() {
   return async (dispatch) => {
     await dispatch({ type: RESET_FILTERS });
-    dispatch(saveSettingsToFirebase());
+    debouncedDispatcherSaveSettings(dispatch);
   };
 }
 
 export function resetSettings() {
   return async (dispatch) => {
     await dispatch({ type: RESET_SETTINGS });
-    dispatch(saveSettingsToFirebase());
+    debouncedDispatcherSaveSettings(dispatch);
   };
 }
 
 export function updateSetting(key, value) {
   return async (dispatch) => {
     await dispatch({ type: UPDATE_SETTING, payload: { key, value } });
-    dispatch(saveSettingsToFirebase());
+    debouncedDispatcherSaveSettings(dispatch);
   };
 }
 
@@ -52,7 +55,7 @@ export function getSettingsFromFirebase() {
   };
 }
 
-export function saveSettingsToFirebase() {
+function saveSettingsToFirebase() {
   return async (dispatch, getState) => {
     const { user, firebaseApp } = getState().auth;
     const { settings } = getState();
@@ -64,5 +67,13 @@ export function saveSettingsToFirebase() {
     const db = firebaseApp.firestore();
     const docRef = db.collection('settings').doc(user.uid);
     await docRef.set(settings);
+    dispatch({ type: FIREBASE_SYNCED });
   };
 }
+
+const dispatchSaveSettingsToFirebase = (dispatch) => {
+  dispatch(saveSettingsToFirebase());
+}
+
+const debouncedDispatcherSaveSettings = debounce(dispatchSaveSettingsToFirebase, 10000);
+

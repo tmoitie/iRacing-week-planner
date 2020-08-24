@@ -57,6 +57,7 @@
     "ignore-styles": "^5.0.1",
     "immutability-helper": "^3.0.0",
     "jquery": "^3.5.1",
+    "lodash.debounce": "^4.0.8",
     "lodash.difference": "^4.5.0",
     "lodash.intersection": "^4.4.0",
     "lodash.isequal": "^4.5.0",
