@@ -7,8 +7,13 @@ import en from '../translations/en';
 import enGB from '../translations/en-GB';
 import es from '../translations/es';
 import ptBR from '../translations/pt-BR';
+import de from '../translations/de';
 
 export const languages = {
+  'de': {
+    flag: '🇩🇪',
+    name: 'Deutsch (DE)',
+  },
   en: {
     flag: '🇺🇸',
     name: 'English (US)',
@@ -32,6 +37,7 @@ const resources = {
   'en-GB': enGB,
   'es': es,
   'pt-BR': ptBR,
+  'de': de,
 };
 
 if (process.env.NODE_ENV === 'development') {
