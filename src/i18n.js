@@ -54,6 +54,7 @@ i18n
     debug: false,
     keySeparator: false,
     nsSeparator: false,
+    supportedLngs: Object.keys(languages),
     interpolation: {
       escapeValue: false,
       format: (value, format) => {
