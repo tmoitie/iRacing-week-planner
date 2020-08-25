@@ -13,13 +13,13 @@
     "debugRaces": "babel-node ./build/debugRaces.js",
     "debugSeries": "babel-node ./build/debugSeries.js",
     "scrapeData": "babel-node ./build/scrape.js",
-    "test": "_mocha"
+    "test": "_mocha --reporter spec --require @babel/register --require ignore-styles ./test/**/*Spec.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/tmoitie/iRacing-week-planner.git"
   },
-  "author": "Tom Moitié <tom@tmoitie.co.uk",
+  "author": "Tom Moitié <tom@tmoitie.co.uk>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/tmoitie/iRacing-week-planner/issues"
