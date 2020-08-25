@@ -13,7 +13,7 @@
     "debugRaces": "babel-node ./build/debugRaces.js",
     "debugSeries": "babel-node ./build/debugSeries.js",
     "scrapeData": "babel-node ./build/scrape.js",
-    "test": "_mocha"
+    "test": "_mocha --reporter spec --require @babel/register --require ignore-styles ./test/**/*Spec.js"
   },
   "repository": {
     "type": "git",
