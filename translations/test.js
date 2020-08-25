@@ -74,7 +74,7 @@ export default {
     'Every {{every}} starting at {{time, H:mm}} UTC': 'abc',
     '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})': 'abc',
     'Set times': 'abc',
-    '{{date, ddd h:mma}}': 'abc',
+    '{{date, ddd k:mm}}': 'abc',
 
     //New Auth strings
     'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <1>buy me a coffee</1>.':
