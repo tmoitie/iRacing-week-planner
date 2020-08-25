@@ -17,7 +17,7 @@ export class Filters extends Component {
     resetFilters: PropTypes.func.isRequired,
     t: PropTypes.func.isRequired,
     user: PropTypes.object,
-    firebaseSynced: PropTypes.bool.isRequired,
+    firebaseSynced: PropTypes.bool,
   }
 
   setCheckboxFilter(key, value, e) {

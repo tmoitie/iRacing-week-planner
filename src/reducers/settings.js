@@ -44,7 +44,11 @@ const startupSettings = legacyStored ? JSON.parse(legacyStored) : defaultSetting
 
 export default function settings(state = startupSettings, { type, payload }) {
   if (type === localStorageActionTypes.INIT) {
-    const persistedStateSettings = payload ? payload.settings : {};
+    if (!payload) {
+      return state;
+    }
+
+    const persistedStateSettings = { ...payload.settings };
 
     persistedStateSettings.ownedCars = uniq([
       ...persistedStateSettings.ownedCars,
@@ -52,11 +56,11 @@ export default function settings(state = startupSettings, { type, payload }) {
     ]);
 
     persistedStateSettings.ownedTracks = uniq([
-      ...persistedStateSettings.ownedCars,
+      ...persistedStateSettings.ownedTracks,
       ...defaultSettings.ownedTracks,
     ]);
 
-    window.localStorage.removeItem(LEGACY_STORAGE_KEY)
+    window.localStorage.removeItem(LEGACY_STORAGE_KEY);
 
     return { ...state, ...persistedStateSettings };
   }
