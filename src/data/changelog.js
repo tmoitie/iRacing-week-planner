@@ -1,6 +1,11 @@
 import moment from 'moment';
 
 export default [{
+  date: moment('2020-08-24 00:00:00').utc(),
+  items: [
+    'Added login!',
+  ]
+}, {
   date: moment('2020-06-09 00:00:00').utc(),
   items: [
     'Updated to 2020S3',

@@ -2,22 +2,22 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import update from 'immutability-helper';
 import { withTranslation } from 'react-i18next';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { updateDays as updateDaysCreator } from '../actions/app';
+import { signOut, startListener } from '../actions/auth';
+import { resetFilters, resetSettings, updateFilters } from '../actions/settings';
 import Checkbox from './Checkbox';
 
 export class Filters extends Component {
   static propTypes = {
-    currentFilters: PropTypes.object,
-    updateFilters: PropTypes.func,
-    resetSettings: PropTypes.func,
-    resetFilters: PropTypes.func,
+    currentFilters: PropTypes.object.isRequired,
+    updateFilters: PropTypes.func.isRequired,
+    resetSettings: PropTypes.func.isRequired,
+    resetFilters: PropTypes.func.isRequired,
     t: PropTypes.func.isRequired,
-  }
-
-  static defaultProps = {
-    currentFilters: {},
-    updateFilters: () => {},
-    resetSettings: () => {},
-    resetFilters: () => {},
+    user: PropTypes.object,
+    firebaseSynced: PropTypes.bool,
   }
 
   setCheckboxFilter(key, value, e) {
@@ -46,7 +46,7 @@ export class Filters extends Component {
   }
 
   render() {
-    const { currentFilters, resetSettings, resetFilters, t } = this.props;
+    const { currentFilters, resetSettings, resetFilters, t, user, firebaseSynced } = this.props;
     return (
       <div className='filters-component' style={{ fontSize: '0.8em' }}>
         <h4>{t('Type')}</h4>
@@ -182,10 +182,26 @@ export class Filters extends Component {
             {t('Reset all settings')}
           </button>
         </p>
+
+        {user ? (<p>
+          <span>{firebaseSynced ? t('Synced') : t('Awaiting sync')} {t('(refresh browser to download latest)')}</span>
+        </p>) : null}
       </div>
     );
   }
 }
 
-export default withTranslation()(Filters);
+const mapStateToProps = (state) => ({
+  currentFilters: state.settings.filters,
+  user: state.auth.user,
+  firebaseSynced: state.settings.firebaseSynced,
+});
+
+const mapDispatchToProps = (dispatch) => bindActionCreators({
+  updateFilters,
+  resetFilters,
+  resetSettings,
+}, dispatch);
+
+export default connect(mapStateToProps, mapDispatchToProps)(withTranslation()(Filters));
 
