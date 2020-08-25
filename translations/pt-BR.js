@@ -74,6 +74,6 @@ export default {
     'Every {{every}} starting at {{time, H:mm}} UTC': 'Cada {{every}} começando às {{time, H:mm z}}',
     '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})': '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})',
     'Set times': 'Definir horários',
-    '{{date, ddd h:mma}}': '{{date, ddd h:mma}}',
+    '{{date, ddd k:mm}}': '{{date, ddd k:mm}}',
   },
 };

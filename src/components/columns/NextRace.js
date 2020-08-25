@@ -15,7 +15,7 @@ export default function NextRace({ race }) {
   return (
     <td>
       <div>
-        {t('{{date, ddd h:mma}}', { date })}
+        {t('{{date, ddd k:mm}}', { date })}
       </div>
     </td>
   );

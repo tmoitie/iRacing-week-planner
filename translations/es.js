@@ -72,7 +72,7 @@ export default {
     '{{date, YYYY-MM-DD}}': '{{date, DD-MM-YYYY}}',
     'Every {{every}} starting at {{time, H:mm}} UTC': 'Cada {{every}} empezando a las {{time, H:mm z}}',
     '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})': '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})',
-    '{{date, ddd h:mma}}': '{{date, ddd h:mma}}',
+    '{{date, ddd k:mm}}': '{{date, ddd k:mm}}',
 
     // Missing
     // 'Set times': 'Set times',
