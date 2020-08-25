@@ -1301,6 +1301,81 @@
   resolved "https://verdaccio.internal.gendius.co.uk/@protobufjs%2futf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
+"@sentry/browser@5.21.4":
+  version "5.21.4"
+  resolved "https://verdaccio.internal.gendius.co.uk/@sentry%2fbrowser/-/browser-5.21.4.tgz#50cb1f815f5468bb7c891fee329b8298f2aa5d9a"
+  integrity sha512-/bRGMNjJc4Qt9Me9qLobZe0pREUAMFQAR7GOF9HbgzxUc49qVvmPRglvwzwhPJ6XKPg0NH/C6MOn+yuIRjfMag==
+  dependencies:
+    "@sentry/core" "5.21.4"
+    "@sentry/types" "5.21.4"
+    "@sentry/utils" "5.21.4"
+    tslib "^1.9.3"
+
+"@sentry/core@5.21.4":
+  version "5.21.4"
+  resolved "https://verdaccio.internal.gendius.co.uk/@sentry%2fcore/-/core-5.21.4.tgz#e2557344e106ad3af0dbe7a81fc00909c768470c"
+  integrity sha512-2hB0shKL6RUuLqqmnDUPvwiV25OSnchxkJ6NbLqnn2DYLqLARfZuVcw2II4wb/Jlw7SDnbkQIPs0/ax7GPe1Nw==
+  dependencies:
+    "@sentry/hub" "5.21.4"
+    "@sentry/minimal" "5.21.4"
+    "@sentry/types" "5.21.4"
+    "@sentry/utils" "5.21.4"
+    tslib "^1.9.3"
+
+"@sentry/hub@5.21.4":
+  version "5.21.4"
+  resolved "https://verdaccio.internal.gendius.co.uk/@sentry%2fhub/-/hub-5.21.4.tgz#5cfc400f48796286f1a24cb013fdbd40958841b3"
+  integrity sha512-bgEgBHK6OWoAkrnYwVsIOw+sR4MWpe5/CB7H7r+GBJsSnBysncbSaBgndKmtb1GTWdzMxMlvXU16zC6TR5JX5Q==
+  dependencies:
+    "@sentry/types" "5.21.4"
+    "@sentry/utils" "5.21.4"
+    tslib "^1.9.3"
+
+"@sentry/minimal@5.21.4":
+  version "5.21.4"
+  resolved "https://verdaccio.internal.gendius.co.uk/@sentry%2fminimal/-/minimal-5.21.4.tgz#7a6872e98fe21cb4addd36b3a0b9906c13076047"
+  integrity sha512-pIpIH2ZTwdijGTw6VwfkTETAEoc9k/Aejz6mAjFDMzlOPb3bCx+W8EbGzFOxuwOsiE84bysd2UPVgFY4YSLV/g==
+  dependencies:
+    "@sentry/hub" "5.21.4"
+    "@sentry/types" "5.21.4"
+    tslib "^1.9.3"
+
+"@sentry/react@^5.21.4":
+  version "5.21.4"
+  resolved "https://verdaccio.internal.gendius.co.uk/@sentry%2freact/-/react-5.21.4.tgz#814525a33256698bfee43cf9e60d2a41f96ea132"
+  integrity sha512-7mzpgIJx1JkBr//IiJoN5rjYziUcg5wpO5lfcjKEtHZd1O076z2qHIdyEaP8/+845vDddK032srWSqPGFKFkWA==
+  dependencies:
+    "@sentry/browser" "5.21.4"
+    "@sentry/minimal" "5.21.4"
+    "@sentry/types" "5.21.4"
+    "@sentry/utils" "5.21.4"
+    hoist-non-react-statics "^3.3.2"
+    tslib "^1.9.3"
+
+"@sentry/tracing@^5.21.4":
+  version "5.21.4"
+  resolved "https://verdaccio.internal.gendius.co.uk/@sentry%2ftracing/-/tracing-5.21.4.tgz#98383b01cf533385e50c12ffe8b0d8c011792de9"
+  integrity sha512-7gSt7DYuda4CSTUoEiH0KJBCItkCfSFu7gwE0tUuxeenEqzNQrCSz4wV/dtqS20QgA+tqsaf89CYt9rGPxrUNQ==
+  dependencies:
+    "@sentry/hub" "5.21.4"
+    "@sentry/minimal" "5.21.4"
+    "@sentry/types" "5.21.4"
+    "@sentry/utils" "5.21.4"
+    tslib "^1.9.3"
+
+"@sentry/types@5.21.4":
+  version "5.21.4"
+  resolved "https://verdaccio.internal.gendius.co.uk/@sentry%2ftypes/-/types-5.21.4.tgz#f088a36ca765657b74b869f8739056961383c159"
+  integrity sha512-uJTRxW//NPO0UJJzRQOtYHg5tiSBvn1dRk5FvURXmeXt9d9XtwmRhHWDwI51uAkyv+51tun3v+0OZQfLvAI+gQ==
+
+"@sentry/utils@5.21.4":
+  version "5.21.4"
+  resolved "https://verdaccio.internal.gendius.co.uk/@sentry%2futils/-/utils-5.21.4.tgz#353264fdd5743edf140daf4c37209d350c9d8258"
+  integrity sha512-zY8OvaE/lU+DCzTSFrDZNXZmBLM/0URUlyYD4RubqzrgKY/eP1pSbEsDzYYhc+OrBr8TjG66N+5T3gMZX0BfNg==
+  dependencies:
+    "@sentry/types" "5.21.4"
+    tslib "^1.9.3"
+
 "@sindresorhus/is@^3.0.0":
   version "3.1.2"
   resolved "https://verdaccio.internal.gendius.co.uk/@sindresorhus%2fis/-/is-3.1.2.tgz#548650de521b344e3781fbdb0ece4aa6f729afb8"
@@ -4501,7 +4576,7 @@ hmac-drbg@^1.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
 
-hoist-non-react-statics@^3.3.0:
+hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.2:
   version "3.3.2"
   resolved "https://verdaccio.internal.gendius.co.uk/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
   integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
@@ -8625,7 +8700,7 @@ tryer@^1.0.1:
   resolved "https://verdaccio.internal.gendius.co.uk/tryer/-/tryer-1.0.1.tgz#f2c85406800b9b0f74c9f7465b81eaad241252f8"
   integrity sha512-c3zayb8/kWWpycWYg87P71E1S1ZL6b6IJxfb5fvsUgsf0S2MVGaDhDXXjDMpdCpfWXqptc+4mXwmiy1ypXqRAA==
 
-tslib@^1.11.1, tslib@^1.9.0, tslib@~1.13.0:
+tslib@^1.11.1, tslib@^1.9.0, tslib@^1.9.3, tslib@~1.13.0:
   version "1.13.0"
   resolved "https://verdaccio.internal.gendius.co.uk/tslib/-/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
   integrity sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
