@@ -55,6 +55,7 @@ module.exports = {
         test: /\.scss$/,
         use: [
           { loader: MiniCssExtractPlugin.loader },
+          'css-modules-flow-types-loader',
           'css-loader',
           postcssLoader,
           'sass-loader',
@@ -64,6 +65,7 @@ module.exports = {
         test: /\.css$/,
         use: [
           { loader: MiniCssExtractPlugin.loader },
+          'css-modules-flow-types-loader',
           'css-loader',
           postcssLoader,
         ],

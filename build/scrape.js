@@ -1,67 +1,63 @@
-import { remote } from 'webdriverio';
 import fs from 'fs';
 import path from 'path';
-import { promisify } from 'bluebird';
+import Promise from 'bluebird';
+import puppeteer from 'puppeteer';
 
 import seasonFilter from './scraper-filters/seasonFilter';
 import tracksFilter from './scraper-filters/tracksFilter';
 import carsFilter from './scraper-filters/carsFilter';
 
-const writeFile = promisify(fs.writeFile);
+const writeFile = Promise.promisify(fs.writeFile);
 
 const username = process.env.IWP_USERNAME || 'test';
 const password = process.env.IWP_PASSWORD || 'test';
 
-const extractJSONString = (sourceLines, variableName, fileName, filter = (a) => a) => {
-  const regexp = new RegExp(`^var ${variableName} = extractJSON\\('`);
-  const listingLine = sourceLines.filter(line => line.search(regexp) !== -1)[0];
-  if (listingLine === undefined || listingLine.length === 0) {
-    console.error(`${variableName} could not be found`);
-    process.exit(1);
-  }
-  const listingJson = listingLine
-    .replace(regexp, '')
-    .replace(/'\);$/, '');
-
-  const listing = JSON.parse(listingJson);
-  const filteredListing = filter(listing);
-  writeFile(path.join(__dirname, fileName), JSON.stringify(filteredListing, null, 2));
-};
-
 (async () => {
-  const browser = await remote({
-    logLevel: 'error',
-    // desiredCapabilities: { browserName: 'phantomjs' },
-    capabilities: {
-        browserName: 'phantomjs'
-    }
-  });
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  await page.goto('https://members.iracing.com/membersite/login.jsp');
 
-  await browser.url('https://members.iracing.com/membersite/login.jsp');
+  const userField = await page.$('[name="username"]');
+  await userField.focus();
+  await userField.type(username);
 
-  const userField = await browser.$('[name="username"]');
-  await userField.addValue(username);
+  const passwordField = await page.$('[name="password"]');
+  await passwordField.focus();
+  await passwordField.type(password);
 
-  const passwordField = await browser.$('[name="password"]');
-  await passwordField.addValue(password);
-
-  const button = await browser.$('input.log-in');
+  const button = await page.$('input.log-in');
   await button.click();
 
-  await browser.waitUntil(async () => {
-    const url = await browser.getUrl();
-    return url === 'https://members.iracing.com/membersite/member/Home.do';
-  }, 5000, 'expected to be logged in');
+  await page.waitForResponse('https://members.iracing.com/membersite/member/Home.do');
 
-  await browser.url('http://members.iracing.com/membersite/member/Series.do');
+  await page.goto('http://members.iracing.com/membersite/member/Series.do');
 
-  const source = await browser.getPageSource();
-  const sourceLines = source.split('\n');
+  const trackListing = await page.evaluate(() => window.TrackListing);
+  const filteredTrackListing = tracksFilter(trackListing);
+  await writeFile(
+    path.join(__dirname, '../src/data/tracks.json'),
+    JSON.stringify(filteredTrackListing, null, 2),
+  );
 
-  extractJSONString(sourceLines, 'TrackListing', '../src/data/tracks.json', tracksFilter);
-  extractJSONString(sourceLines, 'CarClassListing', '../src/data/car-class.json');
-  extractJSONString(sourceLines, 'CarListing', '../src/data/cars.json', carsFilter);
-  extractJSONString(sourceLines, 'SeasonListing', '../src/data/season.json', seasonFilter);
+  const carClassListing = await page.evaluate(() => window.CarClassListing);
+  await writeFile(
+    path.join(__dirname, '../src/data/car-class.json'),
+    JSON.stringify(carClassListing, null, 2),
+  );
 
-  await browser.deleteSession();
+  const carListing = await page.evaluate(() => window.CarListing);
+  const filteredCarListing = carsFilter(carListing);
+  await writeFile(
+    path.join(__dirname, '../src/data/cars.json'),
+    JSON.stringify(filteredCarListing, null, 2),
+  );
+
+  const seasonListing = await page.evaluate(() => window.SeasonListing);
+  const filteredSeasonListing = seasonFilter(seasonListing);
+  await writeFile(
+    path.join(__dirname, '../src/data/season.json'),
+    JSON.stringify(filteredSeasonListing, null, 2),
+  );
+
+  await browser.close();
 })().catch((e) => console.error(e));

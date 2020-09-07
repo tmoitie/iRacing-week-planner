@@ -8,3 +8,5 @@
 /src/data/season.json
 /src/data/tracks.json
 .idea
+*.css.flow
+*.scss.flow

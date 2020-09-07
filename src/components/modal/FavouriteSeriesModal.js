@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import update from 'immutability-helper';
 import { withTranslation } from 'react-i18next';
 import Modal from './Modal';
 import Checkbox from '../Checkbox';
@@ -8,10 +7,40 @@ import series from '../../data/season.json';
 
 const groupedSeries = series.reduce((grouped, single) => {
   if (single.catid === 1) {
-    return update(grouped, { oval: { $push: [single] } });
+    return {
+      ...grouped,
+      oval: [
+        ...grouped.oval,
+        single,
+      ],
+    };
   }
-  return update(grouped, { road: { $push: [single] } });
-}, { oval: [], road: [] });
+  if (single.catid === 3) {
+    return {
+      ...grouped,
+      dirtOval: [
+        ...grouped.dirtOval,
+        single,
+      ],
+    };
+  }
+  if (single.catid === 4) {
+    return {
+      ...grouped,
+      rx: [
+        ...grouped.rx,
+        single,
+      ],
+    };
+  }
+  return {
+    ...grouped,
+    road: [
+      ...grouped.road,
+      single,
+    ],
+  };
+}, { oval: [], road: [], dirtOval: [], rx: [] });
 
 export class FavouriteSeriesModal extends Component {
   static propTypes = {
@@ -69,6 +98,14 @@ export class FavouriteSeriesModal extends Component {
           <h3>{t('Road')}</h3>
           <div className='row'>
             {groupedSeries.road.map(this.renderCheckbox.bind(this))}
+          </div>
+          <h3>{t('Dirt Oval')}</h3>
+          <div className='row'>
+            {groupedSeries.dirtOval.map(this.renderCheckbox.bind(this))}
+          </div>
+          <h3>{t('RX')}</h3>
+          <div className='row'>
+            {groupedSeries.rx.map(this.renderCheckbox.bind(this))}
           </div>
         </div>
       </Modal>

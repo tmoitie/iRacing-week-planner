@@ -238,7 +238,7 @@ export class App extends Component {
               )}
               <li className="dropdown">
                 <a href="" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                   aria-expanded="false">{languages[i18n.language].flag} <span className="caret"></span></a>
+                   aria-expanded="false">{languages[i18n.language].flag} <span className="caret" /></a>
                 <ul className="dropdown-menu">
                   {Object.entries(languages).map(([code, language]) => (
                     <li key={code}>
