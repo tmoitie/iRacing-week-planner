@@ -80,9 +80,8 @@ export class ContentModal extends Component {
 
     if (newState) {
       const addValues = difference(allIdsOfType, currentCollection);
-      const newValues = cloneDeep(currentCollection);
-      newValues.push(...addValues);
-      return newValues;
+
+      return [...currentCollection, ...addValues];
     }
 
     return difference(currentCollection, difference(allIdsOfType, defaultContent));

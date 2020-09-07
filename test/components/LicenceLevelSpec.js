@@ -1,48 +1,38 @@
-/* eslint-env mocha */
-/* eslint no-unused-expressions: 0 */
-
 import React from 'react';
-import ShallowRenderer from 'react-test-renderer/shallow';
+import { shallow } from 'enzyme';
 import { expect } from 'chai';
 
 import LicenceLevel from '../../src/components/LicenceLevel';
 
-const renderer = new ShallowRenderer();
-
 describe('components/LicenceLevel', () => {
+  it('renders for high D Class', () => {
+    const render = shallow(<LicenceLevel licence={8} />);
 
-  it('renders for high D Class', function() {
-    renderer.render(<LicenceLevel licence={8} />);
-    const render = renderer.getRenderOutput();
-
-    expect(render.props.children[0].props.children).to.equal('D');
-    expect(render.props.children[1]).to.equal('4.00');
-    expect(render.props.className).to.contain('licence-d');
+    expect(render.find('.licence-letter').text()).to.equal('D');
+    expect(render.find('.licence-text').text()).to.equal('4.00');
+    expect(render.hasClass('licence-d')).to.equal(true);
   });
 
-  it('renders for Pro', function() {
-    renderer.render(<LicenceLevel licence={21} />);
-    const render = renderer.getRenderOutput();
+  it('renders for Pro', () => {
+    const render = shallow(<LicenceLevel licence={21} />);
 
-    expect(render.props.children[1]).to.equal('1.00');
-    expect(render.props.className).to.contain('licence-p');
+    expect(render.find('.licence-text').text()).to.equal('1.00');
+    expect(render.hasClass('licence-p')).to.equal(true);
   });
 
-  it('renders for float levels', function() {
-    renderer.render(<LicenceLevel licence={7.5} />);
-    const render = renderer.getRenderOutput();
+  it('renders for float levels', () => {
+    const render = shallow(<LicenceLevel licence={7.5} />);
 
-    expect(render.props.children[0].props.children).to.equal('D');
-    expect(render.props.children[1]).to.equal('3.50');
-    expect(render.props.className).to.contain('licence-d');
+    expect(render.find('.licence-letter').text()).to.equal('D');
+    expect(render.find('.licence-text').text()).to.equal('3.50');
+    expect(render.hasClass('licence-d')).to.equal(true);
   });
 
-  it('renders for other float levels', function() {
-    renderer.render(<LicenceLevel licence={8.5} />);
-    const render = renderer.getRenderOutput();
+  it('renders for other float levels', () => {
+    const render = shallow(<LicenceLevel licence={8.5} />);
 
-    expect(render.props.children[0].props.children).to.equal('D');
-    expect(render.props.children[1]).to.equal('4.50');
-    expect(render.props.className).to.contain('licence-d');
+    expect(render.find('.licence-letter').text()).to.equal('D');
+    expect(render.find('.licence-text').text()).to.equal('4.50');
+    expect(render.hasClass('licence-d')).to.equal(true);
   });
 });

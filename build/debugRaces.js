@@ -1,5 +1,5 @@
 import Table from 'cli-table';
-import { uniqBy } from 'lodash';
+import uniqBy from 'lodash.uniqby';
 import moment from 'moment';
 
 import races from '../src/lib/races';

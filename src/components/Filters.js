@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import update from 'immutability-helper';
 import { withTranslation } from 'react-i18next';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { updateDays as updateDaysCreator } from '../actions/app';
-import { signOut, startListener } from '../actions/auth';
 import { resetFilters, resetSettings, updateFilters } from '../actions/settings';
 import Checkbox from './Checkbox';
 
@@ -40,9 +37,11 @@ export class Filters extends Component {
 
   setBooleanFilter(key, e) {
     const { currentFilters, updateFilters } = this.props;
-    updateFilters(update(currentFilters, {
-      [key]: { $set: e.target.checked }
-    }));
+
+    updateFilters({
+      ...currentFilters,
+      [key]: e.target.checked,
+    });
   }
 
   render() {
