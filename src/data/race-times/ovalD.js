@@ -10,8 +10,8 @@ export default [
   {
     // National
     seriesId: 167,
-    everyTime: duration(2, 'hours'),
-    offset: duration(105, 'minutes'),
+    everyTime: duration(1, 'hours'),
+    offset: duration(45, 'minutes'),
   },
   {
     // SK Modified
