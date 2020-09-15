@@ -9,7 +9,7 @@ const seriesIds = process.argv.slice(2).map(id => parseInt(id, 10));
 let seriess = uniqBy(races, (race) => race.seriesId);
 const table = new Table({
   head: [
-    'ID', 'Name', 'Week Length', 'Week Day', 'Start', 'End', 'Next time'
+    'ID', 'Type', 'Class', 'Name', 'Week Length', 'Week Day', 'Start', 'End', 'Next time'
   ],
   chars: {
     top: '═', 'top-mid': '╤', 'top-left': '╔', 'top-right': '╗',
@@ -25,8 +25,23 @@ if (seriesIds.length > 0) {
   seriess = seriess.filter(series => seriesIds.includes(series.seriesId));
 }
 
+seriess.sort((a, b) => {
+  if (a.type !== b.type) {
+    return a.type < b.type ? -1 : 1;
+  }
+
+  if (a.licenceLevel !== b.licenceLevel) {
+    return a.licenceLevel - b.licenceLevel;
+  }
+
+  return a.series < b.series ? -1 : 1;
+
+});
+
 table.push(...seriess.map(series => [
   series.seriesId,
+  series.type,
+  series.licenceClass,
   series.series,
   series.weekLength.asDays(),
   moment(series.startTime).local().format('ddd'),

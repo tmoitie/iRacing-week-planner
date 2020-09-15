@@ -15,6 +15,7 @@ import ovalB from './race-times/ovalB.js';
 import ovalA from './race-times/ovalA.js';
 import rxR from './race-times/rxR.js';
 import rxD from './race-times/rxD.js';
+import rxC from './race-times/rxC.js';
 import pro from './race-times/pro.js';
 
 export default [
@@ -35,5 +36,6 @@ export default [
   ...ovalA,
   ...rxR,
   ...rxD,
+  ...rxC,
   ...pro,
 ];
