@@ -1,19 +1,12 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Trans, useTranslation } from 'react-i18next';
 import BuyACoffee from '../BuyACoffee';
 import Modal from './Modal';
 import changelog from '../../data/changelog';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import { getContributors as getContributorsAction } from '../../actions/contributors';
+import contributors from '../../data/contributors.json';
 
-export function AboutModal({ onClose, isOpen, contributors, getContributors, loading }) {
-  useEffect(() => {
-    if (contributors === null && loading === false) {
-      getContributors();
-    }
-  }, []);
+export default function AboutModal({ onClose, isOpen }) {
   const { t } = useTranslation();
 
   return (
@@ -48,7 +41,6 @@ export function AboutModal({ onClose, isOpen, contributors, getContributors, loa
         </p>
 
         <h3>{t('Contributors')}</h3>
-        {loading ? <p>{t('Loading')}</p> : null}
         {contributors ? (
           <ul className='row'>
             {contributors.map(contributor => (
@@ -78,22 +70,9 @@ export function AboutModal({ onClose, isOpen, contributors, getContributors, loa
 AboutModal.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   onClose: PropTypes.func.isRequired,
-  contributors: PropTypes.array,
-  loading: PropTypes.bool.isRequired,
-  getContributors: PropTypes.func,
 };
 
 AboutModal.defaultProps = {
   isOpen: false,
-  loading: false,
   onClose: () => {},
-  getContributors: () => {},
 };
-
-const mapStateToProps = ({ contributors: { contributors, loading } }) => ({ contributors, loading });
-
-const mapDispatchToProps = (dispatch) => bindActionCreators({
-  getContributors: getContributorsAction,
-}, dispatch);
-
-export default connect(mapStateToProps, mapDispatchToProps)(AboutModal);

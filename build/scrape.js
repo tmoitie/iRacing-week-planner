@@ -1,7 +1,9 @@
+import axios from 'axios';
 import fs from 'fs';
 import path from 'path';
 import Promise from 'bluebird';
 import puppeteer from 'puppeteer';
+import contributorsFilter from './scraper-filters/contributorsFilter';
 
 import seasonFilter from './scraper-filters/seasonFilter';
 import tracksFilter from './scraper-filters/tracksFilter';
@@ -60,4 +62,21 @@ const password = process.env.IWP_PASSWORD || 'test';
   );
 
   await browser.close();
+
+  const githubToken = process.env.GH_TOKEN;
+  const githubOptions = githubToken ? {
+    headers: {
+      Authorization: `token ${githubToken}`,
+    },
+  } : {};
+
+  const contribResponse = await axios.get(
+    'https://api.github.com/repos/tmoitie/iRacing-week-planner/contributors',
+    githubOptions
+  );
+  const filteredContributors = contributorsFilter(contribResponse.data);
+  await writeFile(
+    path.join(__dirname, '../src/data/contributors.json'),
+    JSON.stringify(filteredContributors, null, 2),
+  );
 })().catch((e) => console.error(e));
