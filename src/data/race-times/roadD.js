@@ -32,7 +32,11 @@ export default [
     // weekStartOffset: duration({ days: 7 }),
     // weekEndOffset: duration({ days: 7 }),
     offWeeks: [
-      1.1, 2.1, 2.1, 3.1, 3.1, 3.1, 3.1, 3.1, 4.1, 4.1, 4.1, 4.1, 6.1, 6.1, 6.1, 7.1, 7.1, 8.1, 8.1, 8.1, 8.1, 8.1,
+      1.1, 2.1, 2.1, 3.1, 3.1, 3.1, 3.1, 3.1, 4.1, 4.1, 4.1, 4.1, 6.1, 6.1, 6.1, 7.1, 7.1, 8.1, 8.1, 8.1, 8.1, 8.1, 8.1
+    ],
+    setTimes: [
+      duration({ days: 5, hours: 1, minutes: 0 }), // Sat, 01:00 GMT
+      duration({ days: 5, hours: 13, minutes: 0 }), // Sat, 13:00 GMT
     ],
   }, {
     // Ferrari GT3 Challenge

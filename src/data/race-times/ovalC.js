@@ -40,11 +40,24 @@ export default [
   {
     // NIS Fixed
     seriesId: 207,
-    offWeeks: [6.5, 12.5, 15.5, 24.5]
+    offWeeks: [8.1, 12.1, 21.1, 21.1],
+    setTimes: [
+      duration({ days: 1, hours: 21, minutes: 0 }), // Wed, 21:00 GMT
+      duration({ days: 3, hours: 1, minutes: 0 }), // Fri, 01:00 GMT
+      duration({ days: 4, hours: 10, minutes: 0 }), // Sat, 10:00 GMT
+      duration({ days: 4, hours: 16, minutes: 0 }), // Sat, 16:00 GMT
+      duration({ days: 6, hours: 1, minutes: 0 }), // Mon, 01:00 GMT
+    ],
   },
   {
     // NIS Open
     seriesId: 229,
-    offWeeks: [6.5, 12.5, 15.5, 24.5]
+    offWeeks: [8.1, 12.1, 21.1, 21.1],
+    setTimes: [
+      duration({ days: 2, hours: 1, minutes: 0 }), // Thu, 01:00 GMT
+      duration({ days: 2, hours: 19, minutes: 0 }), // Thu, 19:00 GMT
+      duration({ days: 4, hours: 1, minutes: 0 }), // Sat, 01:00 GMT
+      duration({ days: 5, hours: 14, minutes: 0 }), // Sun, 14:00 GMT
+    ],
   },
 ];
