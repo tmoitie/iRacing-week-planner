@@ -123,4 +123,20 @@ export default [
     everyTime: duration(120, 'minutes'),
     offset: duration(60, 'minutes'),
   },
+  {
+    // Bathurst 1000 AU
+    seriesId: 423,
+    weekEndOffset: duration({ days: 7 }),
+    setTimes: [
+      duration({ days: 4, hours: 1 }), // Sat 01:00 GMT
+    ]
+  },
+  {
+    // Bathurst 1000 US
+    seriesId: 422,
+    weekEndOffset: duration({ days: 7 }),
+    setTimes: [
+      duration({ days: 4, hours: 13 }), // Sat 13:00 GMT
+    ]
+  },
 ];
