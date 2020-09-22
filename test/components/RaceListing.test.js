@@ -12,7 +12,7 @@ jest.mock('../../src/data/season.json');
 
 describe.only('components/RaceListing', () => {
   const defaultProps = {
-    date: moment('2020-09-24 12:00:00'),
+    date: moment('2020-09-24T12:00:00.000Z'),
     sort: { key: 'id', order: 'asc' },
     filters: defaultFilters,
     favouriteSeries: [],
