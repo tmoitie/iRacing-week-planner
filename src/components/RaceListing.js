@@ -97,6 +97,7 @@ export class RaceListing extends Component {
               {columns.map((column, colNum) => (
                 <th
                   key={colNum}
+                  id={`raceListing-th-${column.id}`}
                   onClick={column.sort ? this.sortColumn.bind(this, column.id, column.defaultOrder) : () => {}}
                   className={column.sort ? 'clickable-cell' : null}
                 >

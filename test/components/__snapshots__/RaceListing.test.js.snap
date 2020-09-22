@@ -1,0 +1,2304 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/RaceListing changes sort on click 1`] = `
+<div
+  className="table-responsive race-listing"
+>
+  <table
+    className="table"
+    style={
+      Object {
+        "fontSize": "0.8em",
+      }
+    }
+  >
+    <thead>
+      <tr>
+        <th
+          className="clickable-cell"
+          id="raceListing-th-id"
+          key="0"
+          onClick={[Function]}
+        >
+          <span>
+             
+          </span>
+          <span
+            className="glyphicon glyphicon-triangle-top"
+          />
+        </th>
+        <th
+          className="clickable-cell"
+          id="raceListing-th-series"
+          key="1"
+          onClick={[Function]}
+        >
+          <span>
+             
+          </span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        key="0"
+      >
+        <Id
+          columnIds={
+            Array [
+              "id",
+              "series",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="0"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "MX5 Cup 2016",
+              ],
+              "carIds": Array [
+                10394,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": true,
+              "licenceClass": "R",
+              "licenceClassNumber": 0,
+              "licenceLevel": 1,
+              "nextTime": "2020-09-22T22:00:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT1H",
+                "offset": "P0D",
+                "seriesId": 139,
+              },
+              "seasonId": 2915,
+              "series": "Fanatec Global Mazda MX-5 Cup",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 139,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Okayama International Circuit - Full Course",
+              "trackId": 109,
+              "type": "Road",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "id",
+              "order": "asc",
+            }
+          }
+          t={[Function]}
+          updateSort={[MockFunction]}
+        />
+        <Series
+          columnIds={
+            Array [
+              "id",
+              "series",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="1"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "MX5 Cup 2016",
+              ],
+              "carIds": Array [
+                10394,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": true,
+              "licenceClass": "R",
+              "licenceClassNumber": 0,
+              "licenceLevel": 1,
+              "nextTime": "2020-09-22T22:00:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT1H",
+                "offset": "P0D",
+                "seriesId": 139,
+              },
+              "seasonId": 2915,
+              "series": "Fanatec Global Mazda MX-5 Cup",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 139,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Okayama International Circuit - Full Course",
+              "trackId": 109,
+              "type": "Road",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "id",
+              "order": "asc",
+            }
+          }
+          t={[Function]}
+          updateSort={[MockFunction]}
+        />
+      </tr>
+      <tr
+        key="1"
+      >
+        <Id
+          columnIds={
+            Array [
+              "id",
+              "series",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="0"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "GT1 Class",
+                "Ford GT",
+              ],
+              "carIds": Array [
+                10113,
+                10389,
+                10281,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": false,
+              "licenceClass": "C",
+              "licenceClassNumber": 2,
+              "licenceLevel": 8,
+              "nextTime": "2020-09-22T21:45:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT2H",
+                "offset": "PT1H45M",
+                "seriesId": 278,
+              },
+              "seasonId": 2948,
+              "series": "Fanatec GT Challenge",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 278,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Nürburgring Combined - Gesamtstrecke 24h",
+              "trackId": 186,
+              "type": "Road",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "id",
+              "order": "asc",
+            }
+          }
+          t={[Function]}
+          updateSort={[MockFunction]}
+        />
+        <Series
+          columnIds={
+            Array [
+              "id",
+              "series",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="1"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "GT1 Class",
+                "Ford GT",
+              ],
+              "carIds": Array [
+                10113,
+                10389,
+                10281,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": false,
+              "licenceClass": "C",
+              "licenceClassNumber": 2,
+              "licenceLevel": 8,
+              "nextTime": "2020-09-22T21:45:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT2H",
+                "offset": "PT1H45M",
+                "seriesId": 278,
+              },
+              "seasonId": 2948,
+              "series": "Fanatec GT Challenge",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 278,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Nürburgring Combined - Gesamtstrecke 24h",
+              "trackId": 186,
+              "type": "Road",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "id",
+              "order": "asc",
+            }
+          }
+          t={[Function]}
+          updateSort={[MockFunction]}
+        />
+      </tr>
+      <tr
+        key="2"
+      >
+        <Id
+          columnIds={
+            Array [
+              "id",
+              "series",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="0"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "Legends",
+              ],
+              "carIds": Array [
+                10008,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": false,
+              "licenceClass": "R",
+              "licenceClassNumber": 0,
+              "licenceLevel": 1,
+              "nextTime": "2020-09-22T21:30:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT1H",
+                "offset": "PT30M",
+                "seriesId": 32,
+              },
+              "seasonId": 2917,
+              "series": "iRacing Advanced Legends Cup",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 32,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Oxford Plains Speedway",
+              "trackId": 10,
+              "type": "Oval",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "id",
+              "order": "asc",
+            }
+          }
+          t={[Function]}
+          updateSort={[MockFunction]}
+        />
+        <Series
+          columnIds={
+            Array [
+              "id",
+              "series",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="1"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "Legends",
+              ],
+              "carIds": Array [
+                10008,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": false,
+              "licenceClass": "R",
+              "licenceClassNumber": 0,
+              "licenceLevel": 1,
+              "nextTime": "2020-09-22T21:30:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT1H",
+                "offset": "PT30M",
+                "seriesId": 32,
+              },
+              "seasonId": 2917,
+              "series": "iRacing Advanced Legends Cup",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 32,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Oxford Plains Speedway",
+              "trackId": 10,
+              "type": "Oval",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "id",
+              "order": "asc",
+            }
+          }
+          t={[Function]}
+          updateSort={[MockFunction]}
+        />
+      </tr>
+      <tr
+        key="3"
+      >
+        <Id
+          columnIds={
+            Array [
+              "id",
+              "series",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="0"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "K&N Series",
+              ],
+              "carIds": Array [
+                10088,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": true,
+              "licenceClass": "D",
+              "licenceClassNumber": 1,
+              "licenceLevel": 4,
+              "nextTime": "2020-09-22T21:45:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT1H",
+                "offset": "PT45M",
+                "seriesId": 167,
+              },
+              "seasonId": 2923,
+              "series": "iRacing ARCA Menards Series",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 167,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Lanier National Speedway - Asphalt",
+              "trackId": 8,
+              "type": "Oval",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "id",
+              "order": "asc",
+            }
+          }
+          t={[Function]}
+          updateSort={[MockFunction]}
+        />
+        <Series
+          columnIds={
+            Array [
+              "id",
+              "series",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="1"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "K&N Series",
+              ],
+              "carIds": Array [
+                10088,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": true,
+              "licenceClass": "D",
+              "licenceClassNumber": 1,
+              "licenceLevel": 4,
+              "nextTime": "2020-09-22T21:45:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT1H",
+                "offset": "PT45M",
+                "seriesId": 167,
+              },
+              "seasonId": 2923,
+              "series": "iRacing ARCA Menards Series",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 167,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Lanier National Speedway - Asphalt",
+              "trackId": 8,
+              "type": "Oval",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "id",
+              "order": "asc",
+            }
+          }
+          t={[Function]}
+          updateSort={[MockFunction]}
+        />
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`components/RaceListing changes sort on click 2`] = `
+<div
+  className="table-responsive race-listing"
+>
+  <table
+    className="table"
+    style={
+      Object {
+        "fontSize": "0.8em",
+      }
+    }
+  >
+    <thead>
+      <tr>
+        <th
+          className="clickable-cell"
+          id="raceListing-th-id"
+          key="0"
+          onClick={[Function]}
+        >
+          <span>
+             
+          </span>
+        </th>
+        <th
+          className="clickable-cell"
+          id="raceListing-th-series"
+          key="1"
+          onClick={[Function]}
+        >
+          <span>
+             
+          </span>
+          <span
+            className="glyphicon glyphicon-triangle-bottom"
+          />
+        </th>
+        <th
+          className={null}
+          id="raceListing-th-raceTimes"
+          key="2"
+          onClick={[Function]}
+        >
+          <span>
+             
+          </span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        key="0"
+      >
+        <Id
+          columnIds={
+            Array [
+              "id",
+              "series",
+              "raceTimes",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="0"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "K&N Series",
+              ],
+              "carIds": Array [
+                10088,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": true,
+              "licenceClass": "D",
+              "licenceClassNumber": 1,
+              "licenceLevel": 4,
+              "nextTime": "2020-09-22T21:45:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT1H",
+                "offset": "PT45M",
+                "seriesId": 167,
+              },
+              "seasonId": 2923,
+              "series": "iRacing ARCA Menards Series",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 167,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Lanier National Speedway - Asphalt",
+              "trackId": 8,
+              "type": "Oval",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "series",
+              "order": "desc",
+            }
+          }
+          t={[Function]}
+          updateSort={[MockFunction]}
+        />
+        <Series
+          columnIds={
+            Array [
+              "id",
+              "series",
+              "raceTimes",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="1"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "K&N Series",
+              ],
+              "carIds": Array [
+                10088,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": true,
+              "licenceClass": "D",
+              "licenceClassNumber": 1,
+              "licenceLevel": 4,
+              "nextTime": "2020-09-22T21:45:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT1H",
+                "offset": "PT45M",
+                "seriesId": 167,
+              },
+              "seasonId": 2923,
+              "series": "iRacing ARCA Menards Series",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 167,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Lanier National Speedway - Asphalt",
+              "trackId": 8,
+              "type": "Oval",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "series",
+              "order": "desc",
+            }
+          }
+          t={[Function]}
+          updateSort={[MockFunction]}
+        />
+        <NextRace
+          columnIds={
+            Array [
+              "id",
+              "series",
+              "raceTimes",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="2"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "K&N Series",
+              ],
+              "carIds": Array [
+                10088,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": true,
+              "licenceClass": "D",
+              "licenceClassNumber": 1,
+              "licenceLevel": 4,
+              "nextTime": "2020-09-22T21:45:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT1H",
+                "offset": "PT45M",
+                "seriesId": 167,
+              },
+              "seasonId": 2923,
+              "series": "iRacing ARCA Menards Series",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 167,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Lanier National Speedway - Asphalt",
+              "trackId": 8,
+              "type": "Oval",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "series",
+              "order": "desc",
+            }
+          }
+          t={[Function]}
+          updateSort={[MockFunction]}
+        />
+      </tr>
+      <tr
+        key="1"
+      >
+        <Id
+          columnIds={
+            Array [
+              "id",
+              "series",
+              "raceTimes",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="0"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "Legends",
+              ],
+              "carIds": Array [
+                10008,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": false,
+              "licenceClass": "R",
+              "licenceClassNumber": 0,
+              "licenceLevel": 1,
+              "nextTime": "2020-09-22T21:30:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT1H",
+                "offset": "PT30M",
+                "seriesId": 32,
+              },
+              "seasonId": 2917,
+              "series": "iRacing Advanced Legends Cup",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 32,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Oxford Plains Speedway",
+              "trackId": 10,
+              "type": "Oval",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "series",
+              "order": "desc",
+            }
+          }
+          t={[Function]}
+          updateSort={[MockFunction]}
+        />
+        <Series
+          columnIds={
+            Array [
+              "id",
+              "series",
+              "raceTimes",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="1"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "Legends",
+              ],
+              "carIds": Array [
+                10008,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": false,
+              "licenceClass": "R",
+              "licenceClassNumber": 0,
+              "licenceLevel": 1,
+              "nextTime": "2020-09-22T21:30:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT1H",
+                "offset": "PT30M",
+                "seriesId": 32,
+              },
+              "seasonId": 2917,
+              "series": "iRacing Advanced Legends Cup",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 32,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Oxford Plains Speedway",
+              "trackId": 10,
+              "type": "Oval",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "series",
+              "order": "desc",
+            }
+          }
+          t={[Function]}
+          updateSort={[MockFunction]}
+        />
+        <NextRace
+          columnIds={
+            Array [
+              "id",
+              "series",
+              "raceTimes",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="2"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "Legends",
+              ],
+              "carIds": Array [
+                10008,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": false,
+              "licenceClass": "R",
+              "licenceClassNumber": 0,
+              "licenceLevel": 1,
+              "nextTime": "2020-09-22T21:30:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT1H",
+                "offset": "PT30M",
+                "seriesId": 32,
+              },
+              "seasonId": 2917,
+              "series": "iRacing Advanced Legends Cup",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 32,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Oxford Plains Speedway",
+              "trackId": 10,
+              "type": "Oval",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "series",
+              "order": "desc",
+            }
+          }
+          t={[Function]}
+          updateSort={[MockFunction]}
+        />
+      </tr>
+      <tr
+        key="2"
+      >
+        <Id
+          columnIds={
+            Array [
+              "id",
+              "series",
+              "raceTimes",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="0"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "GT1 Class",
+                "Ford GT",
+              ],
+              "carIds": Array [
+                10113,
+                10389,
+                10281,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": false,
+              "licenceClass": "C",
+              "licenceClassNumber": 2,
+              "licenceLevel": 8,
+              "nextTime": "2020-09-22T21:45:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT2H",
+                "offset": "PT1H45M",
+                "seriesId": 278,
+              },
+              "seasonId": 2948,
+              "series": "Fanatec GT Challenge",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 278,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Nürburgring Combined - Gesamtstrecke 24h",
+              "trackId": 186,
+              "type": "Road",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "series",
+              "order": "desc",
+            }
+          }
+          t={[Function]}
+          updateSort={[MockFunction]}
+        />
+        <Series
+          columnIds={
+            Array [
+              "id",
+              "series",
+              "raceTimes",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="1"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "GT1 Class",
+                "Ford GT",
+              ],
+              "carIds": Array [
+                10113,
+                10389,
+                10281,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": false,
+              "licenceClass": "C",
+              "licenceClassNumber": 2,
+              "licenceLevel": 8,
+              "nextTime": "2020-09-22T21:45:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT2H",
+                "offset": "PT1H45M",
+                "seriesId": 278,
+              },
+              "seasonId": 2948,
+              "series": "Fanatec GT Challenge",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 278,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Nürburgring Combined - Gesamtstrecke 24h",
+              "trackId": 186,
+              "type": "Road",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "series",
+              "order": "desc",
+            }
+          }
+          t={[Function]}
+          updateSort={[MockFunction]}
+        />
+        <NextRace
+          columnIds={
+            Array [
+              "id",
+              "series",
+              "raceTimes",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="2"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "GT1 Class",
+                "Ford GT",
+              ],
+              "carIds": Array [
+                10113,
+                10389,
+                10281,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": false,
+              "licenceClass": "C",
+              "licenceClassNumber": 2,
+              "licenceLevel": 8,
+              "nextTime": "2020-09-22T21:45:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT2H",
+                "offset": "PT1H45M",
+                "seriesId": 278,
+              },
+              "seasonId": 2948,
+              "series": "Fanatec GT Challenge",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 278,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Nürburgring Combined - Gesamtstrecke 24h",
+              "trackId": 186,
+              "type": "Road",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "series",
+              "order": "desc",
+            }
+          }
+          t={[Function]}
+          updateSort={[MockFunction]}
+        />
+      </tr>
+      <tr
+        key="3"
+      >
+        <Id
+          columnIds={
+            Array [
+              "id",
+              "series",
+              "raceTimes",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="0"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "MX5 Cup 2016",
+              ],
+              "carIds": Array [
+                10394,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": true,
+              "licenceClass": "R",
+              "licenceClassNumber": 0,
+              "licenceLevel": 1,
+              "nextTime": "2020-09-22T22:00:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT1H",
+                "offset": "P0D",
+                "seriesId": 139,
+              },
+              "seasonId": 2915,
+              "series": "Fanatec Global Mazda MX-5 Cup",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 139,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Okayama International Circuit - Full Course",
+              "trackId": 109,
+              "type": "Road",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "series",
+              "order": "desc",
+            }
+          }
+          t={[Function]}
+          updateSort={[MockFunction]}
+        />
+        <Series
+          columnIds={
+            Array [
+              "id",
+              "series",
+              "raceTimes",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="1"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "MX5 Cup 2016",
+              ],
+              "carIds": Array [
+                10394,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": true,
+              "licenceClass": "R",
+              "licenceClassNumber": 0,
+              "licenceLevel": 1,
+              "nextTime": "2020-09-22T22:00:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT1H",
+                "offset": "P0D",
+                "seriesId": 139,
+              },
+              "seasonId": 2915,
+              "series": "Fanatec Global Mazda MX-5 Cup",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 139,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Okayama International Circuit - Full Course",
+              "trackId": 109,
+              "type": "Road",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "series",
+              "order": "desc",
+            }
+          }
+          t={[Function]}
+          updateSort={[MockFunction]}
+        />
+        <NextRace
+          columnIds={
+            Array [
+              "id",
+              "series",
+              "raceTimes",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="2"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "MX5 Cup 2016",
+              ],
+              "carIds": Array [
+                10394,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": true,
+              "licenceClass": "R",
+              "licenceClassNumber": 0,
+              "licenceLevel": 1,
+              "nextTime": "2020-09-22T22:00:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT1H",
+                "offset": "P0D",
+                "seriesId": 139,
+              },
+              "seasonId": 2915,
+              "series": "Fanatec Global Mazda MX-5 Cup",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 139,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Okayama International Circuit - Full Course",
+              "trackId": 109,
+              "type": "Road",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "series",
+              "order": "desc",
+            }
+          }
+          t={[Function]}
+          updateSort={[MockFunction]}
+        />
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`components/RaceListing renders correctly 1`] = `
+<div
+  className="table-responsive race-listing"
+>
+  <table
+    className="table"
+    style={
+      Object {
+        "fontSize": "0.8em",
+      }
+    }
+  >
+    <thead>
+      <tr>
+        <th
+          className="clickable-cell"
+          id="raceListing-th-id"
+          key="0"
+          onClick={[Function]}
+        >
+          <span>
+             
+          </span>
+          <span
+            className="glyphicon glyphicon-triangle-top"
+          />
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        key="0"
+      >
+        <Id
+          columnIds={
+            Array [
+              "id",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="0"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "MX5 Cup 2016",
+              ],
+              "carIds": Array [
+                10394,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": true,
+              "licenceClass": "R",
+              "licenceClassNumber": 0,
+              "licenceLevel": 1,
+              "nextTime": "2020-09-22T22:00:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT1H",
+                "offset": "P0D",
+                "seriesId": 139,
+              },
+              "seasonId": 2915,
+              "series": "Fanatec Global Mazda MX-5 Cup",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 139,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Okayama International Circuit - Full Course",
+              "trackId": 109,
+              "type": "Road",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "id",
+              "order": "asc",
+            }
+          }
+          t={[Function]}
+          updateSort={[Function]}
+        />
+      </tr>
+      <tr
+        key="1"
+      >
+        <Id
+          columnIds={
+            Array [
+              "id",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="0"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "GT1 Class",
+                "Ford GT",
+              ],
+              "carIds": Array [
+                10113,
+                10389,
+                10281,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": false,
+              "licenceClass": "C",
+              "licenceClassNumber": 2,
+              "licenceLevel": 8,
+              "nextTime": "2020-09-22T21:45:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT2H",
+                "offset": "PT1H45M",
+                "seriesId": 278,
+              },
+              "seasonId": 2948,
+              "series": "Fanatec GT Challenge",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 278,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Nürburgring Combined - Gesamtstrecke 24h",
+              "trackId": 186,
+              "type": "Road",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "id",
+              "order": "asc",
+            }
+          }
+          t={[Function]}
+          updateSort={[Function]}
+        />
+      </tr>
+      <tr
+        key="2"
+      >
+        <Id
+          columnIds={
+            Array [
+              "id",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="0"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "Legends",
+              ],
+              "carIds": Array [
+                10008,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": false,
+              "licenceClass": "R",
+              "licenceClassNumber": 0,
+              "licenceLevel": 1,
+              "nextTime": "2020-09-22T21:30:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT1H",
+                "offset": "PT30M",
+                "seriesId": 32,
+              },
+              "seasonId": 2917,
+              "series": "iRacing Advanced Legends Cup",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 32,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Oxford Plains Speedway",
+              "trackId": 10,
+              "type": "Oval",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "id",
+              "order": "asc",
+            }
+          }
+          t={[Function]}
+          updateSort={[Function]}
+        />
+      </tr>
+      <tr
+        key="3"
+      >
+        <Id
+          columnIds={
+            Array [
+              "id",
+            ]
+          }
+          date={"2020-09-24T11:00:00.000Z"}
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          filters={
+            Object {
+              "favouriteCarsOnly": false,
+              "favouriteSeries": false,
+              "favouriteTracksOnly": false,
+              "fixed": Array [
+                false,
+                true,
+              ],
+              "licence": Array [
+                "R",
+                "D",
+                "C",
+                "B",
+                "A",
+                "P",
+              ],
+              "official": Array [
+                false,
+                true,
+              ],
+              "ownedCars": false,
+              "ownedTracks": false,
+              "type": Array [
+                "Road",
+                "Oval",
+                "Dirt",
+                "RX",
+              ],
+            }
+          }
+          key="0"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "K&N Series",
+              ],
+              "carIds": Array [
+                10088,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "fixed": true,
+              "licenceClass": "D",
+              "licenceClassNumber": 1,
+              "licenceLevel": 4,
+              "nextTime": "2020-09-22T21:45:00.000Z",
+              "official": true,
+              "raceTimes": Object {
+                "everyTime": "PT1H",
+                "offset": "PT45M",
+                "seriesId": 167,
+              },
+              "seasonId": 2923,
+              "series": "iRacing ARCA Menards Series",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 167,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Lanier National Speedway - Asphalt",
+              "trackId": 8,
+              "type": "Oval",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+          sort={
+            Object {
+              "key": "id",
+              "order": "asc",
+            }
+          }
+          t={[Function]}
+          updateSort={[Function]}
+        />
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`components/RaceListing renders not found favourite cars 1`] = `<p />`;
+
+exports[`components/RaceListing renders not found favourite series 1`] = `<p />`;
+
+exports[`components/RaceListing renders not found favourite tracks 1`] = `<p />`;

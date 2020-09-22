@@ -1,0 +1,391 @@
+[
+  {
+    "seriesid": 139,
+    "seriesname": "Fanatec Global Mazda MX-5 Cup",
+    "start": 1600128000000,
+    "end": 1607385600000,
+    "tracks": [
+      {
+        "raceweek": 0,
+        "config": "2000 Full",
+        "name": "Tsukuba Circuit - 2000 Full",
+        "pkgid": 267
+      },
+      {
+        "raceweek": 1,
+        "config": "Full Course",
+        "name": "Okayama International Circuit - Full Course",
+        "pkgid": 109
+      },
+      {
+        "raceweek": 2,
+        "config": "Grand Prix",
+        "name": "Lime Rock Park - Grand Prix",
+        "pkgid": 304
+      },
+      {
+        "raceweek": 3,
+        "config": "Summit Point Raceway",
+        "name": "Summit Point Raceway - Summit Point Raceway",
+        "pkgid": 13
+      },
+      {
+        "raceweek": 4,
+        "config": "International",
+        "name": "Oulton Park Circuit - International",
+        "pkgid": 117
+      },
+      {
+        "raceweek": 5,
+        "config": "Roval",
+        "name": "Charlotte Motor Speedway - Roval",
+        "pkgid": 268
+      },
+      {
+        "raceweek": 6,
+        "config": "Grand Prix",
+        "name": "Oran Park Raceway - Grand Prix",
+        "pkgid": 126
+      },
+      {
+        "raceweek": 7,
+        "config": "Short",
+        "name": "Okayama International Circuit - Short",
+        "pkgid": 109
+      },
+      {
+        "raceweek": 8,
+        "config": "Jefferson Circuit",
+        "name": "Summit Point Raceway - Jefferson Circuit",
+        "pkgid": 13
+      },
+      {
+        "raceweek": 9,
+        "config": "Fosters",
+        "name": "Oulton Park Circuit - Fosters",
+        "pkgid": 117
+      },
+      {
+        "raceweek": 10,
+        "config": "South",
+        "name": "Oran Park Raceway - South",
+        "pkgid": 126
+      },
+      {
+        "raceweek": 11,
+        "config": "Full Course",
+        "name": "WeatherTech Raceway at Laguna Seca - Full Course",
+        "pkgid": 34
+      }
+    ],
+    "catid": 2,
+    "isOfficial": true,
+    "minlicenselevel": 1,
+    "isFixedSetup": true,
+    "carclasses": [
+      {
+        "shortname": "MX5 Cup 2016"
+      }
+    ],
+    "cars": [
+      {
+        "sku": 10394
+      }
+    ],
+    "seasonid": 2915
+  },
+  {
+    "seriesid": 278,
+    "seriesname": "Fanatec GT Challenge",
+    "start": 1600128000000,
+    "end": 1607385600000,
+    "tracks": [
+      {
+        "raceweek": 0,
+        "config": "",
+        "name": "Circuit Gilles Villeneuve",
+        "pkgid": 145
+      },
+      {
+        "raceweek": 1,
+        "config": "Gesamtstrecke 24h",
+        "name": "Nürburgring Combined - Gesamtstrecke 24h",
+        "pkgid": 186
+      },
+      {
+        "raceweek": 2,
+        "config": "Road Course",
+        "name": "Indianapolis Motor Speedway - Road Course",
+        "pkgid": 73
+      },
+      {
+        "raceweek": 3,
+        "config": "Road Course Combined",
+        "name": "[Legacy] Texas Motor Speedway - 2009 - Road Course Combined",
+        "pkgid": 61
+      },
+      {
+        "raceweek": 4,
+        "config": "Grand Prix",
+        "name": "Suzuka International Racing Course - Grand Prix",
+        "pkgid": 114
+      },
+      {
+        "raceweek": 5,
+        "config": "Grand Prix Pits",
+        "name": "Circuit de Spa-Francorchamps - Grand Prix Pits",
+        "pkgid": 103
+      },
+      {
+        "raceweek": 6,
+        "config": "Full Course",
+        "name": "Okayama International Circuit - Full Course",
+        "pkgid": 109
+      },
+      {
+        "raceweek": 7,
+        "config": "",
+        "name": "Phillip Island Circuit",
+        "pkgid": 93
+      },
+      {
+        "raceweek": 8,
+        "config": "Full Course",
+        "name": "WeatherTech Raceway at Laguna Seca - Full Course",
+        "pkgid": 34
+      },
+      {
+        "raceweek": 9,
+        "config": "Road Course",
+        "name": "Daytona International Speedway - Road Course",
+        "pkgid": 120
+      },
+      {
+        "raceweek": 10,
+        "config": "Grand Prix",
+        "name": "Lime Rock Park - Grand Prix",
+        "pkgid": 304
+      },
+      {
+        "raceweek": 11,
+        "config": "Grand Prix",
+        "name": "Autodromo Nazionale Monza - Grand Prix",
+        "pkgid": 172
+      }
+    ],
+    "catid": 2,
+    "isOfficial": true,
+    "minlicenselevel": 8,
+    "isFixedSetup": false,
+    "carclasses": [
+      {
+        "shortname": "GT1 Class"
+      },
+      {
+        "shortname": "Ford GT"
+      }
+    ],
+    "cars": [
+      {
+        "sku": 10113
+      },
+      {
+        "sku": 10389
+      },
+      {
+        "sku": 10281
+      }
+    ],
+    "seasonid": 2948
+  },
+  {
+    "seriesid": 32,
+    "seriesname": "iRacing Advanced Legends Cup",
+    "start": 1600128000000,
+    "end": 1607385600000,
+    "tracks": [
+      {
+        "raceweek": 0,
+        "config": "Legends Oval - 2018",
+        "name": "Charlotte Motor Speedway - Legends Oval - 2018",
+        "pkgid": 268
+      },
+      {
+        "raceweek": 1,
+        "config": "",
+        "name": "Oxford Plains Speedway",
+        "pkgid": 10
+      },
+      {
+        "raceweek": 2,
+        "config": "Asphalt",
+        "name": "USA International Speedway - Asphalt",
+        "pkgid": 7
+      },
+      {
+        "raceweek": 3,
+        "config": "",
+        "name": "South Boston Speedway",
+        "pkgid": 19
+      },
+      {
+        "raceweek": 4,
+        "config": "",
+        "name": "Southern National Motorsports Park",
+        "pkgid": 194
+      },
+      {
+        "raceweek": 5,
+        "config": "Asphalt",
+        "name": "Lanier National Speedway - Asphalt",
+        "pkgid": 8
+      },
+      {
+        "raceweek": 6,
+        "config": "Legends Oval - 2018",
+        "name": "Charlotte Motor Speedway - Legends Oval - 2018",
+        "pkgid": 268
+      },
+      {
+        "raceweek": 7,
+        "config": "",
+        "name": "Concord Speedway",
+        "pkgid": 3
+      },
+      {
+        "raceweek": 8,
+        "config": "Asphalt",
+        "name": "USA International Speedway - Asphalt",
+        "pkgid": 7
+      },
+      {
+        "raceweek": 9,
+        "config": "",
+        "name": "South Boston Speedway",
+        "pkgid": 19
+      },
+      {
+        "raceweek": 10,
+        "config": "Oval",
+        "name": "Thompson Speedway Motorsports Park - Oval",
+        "pkgid": 97
+      },
+      {
+        "raceweek": 11,
+        "config": "",
+        "name": "Langley Speedway",
+        "pkgid": 125
+      }
+    ],
+    "catid": 1,
+    "isOfficial": true,
+    "minlicenselevel": 1,
+    "isFixedSetup": false,
+    "carclasses": [
+      {
+        "shortname": "Legends"
+      }
+    ],
+    "cars": [
+      {
+        "sku": 10008
+      }
+    ],
+    "seasonid": 2917
+  },
+  {
+    "seriesid": 167,
+    "seriesname": "iRacing ARCA Menards Series",
+    "start": 1600128000000,
+    "end": 1607385600000,
+    "tracks": [
+      {
+        "raceweek": 0,
+        "config": "",
+        "name": "Darlington Raceway",
+        "pkgid": 59
+      },
+      {
+        "raceweek": 1,
+        "config": "Asphalt",
+        "name": "Lanier National Speedway - Asphalt",
+        "pkgid": 8
+      },
+      {
+        "raceweek": 2,
+        "config": "Dual Pit Roads",
+        "name": "Bristol Motor Speedway - Dual Pit Roads",
+        "pkgid": 43
+      },
+      {
+        "raceweek": 3,
+        "config": "Oval",
+        "name": "Nashville Fairgrounds Speedway - Oval",
+        "pkgid": 331
+      },
+      {
+        "raceweek": 4,
+        "config": "Oval",
+        "name": "[Legacy] Kentucky Speedway - 2011 - Oval",
+        "pkgid": 118
+      },
+      {
+        "raceweek": 5,
+        "config": "Roval",
+        "name": "Charlotte Motor Speedway - Roval",
+        "pkgid": 268
+      },
+      {
+        "raceweek": 6,
+        "config": "",
+        "name": "Five Flags Speedway",
+        "pkgid": 180
+      },
+      {
+        "raceweek": 7,
+        "config": "Oval",
+        "name": "Texas Motor Speedway - Oval",
+        "pkgid": 310
+      },
+      {
+        "raceweek": 8,
+        "config": "",
+        "name": "Martinsville Speedway",
+        "pkgid": 26
+      },
+      {
+        "raceweek": 9,
+        "config": "Oval",
+        "name": "[Legacy] Phoenix Raceway - 2008 - Oval",
+        "pkgid": 55
+      },
+      {
+        "raceweek": 10,
+        "config": "Oval",
+        "name": "Iowa Speedway - Oval",
+        "pkgid": 115
+      },
+      {
+        "raceweek": 11,
+        "config": "",
+        "name": "[Legacy] Michigan International Speedway - 2009",
+        "pkgid": 66
+      }
+    ],
+    "catid": 1,
+    "isOfficial": true,
+    "minlicenselevel": 4,
+    "isFixedSetup": true,
+    "carclasses": [
+      {
+        "shortname": "K&N Series"
+      }
+    ],
+    "cars": [
+      {
+        "sku": 10088
+      }
+    ],
+    "seasonid": 2923
+  }
+]
