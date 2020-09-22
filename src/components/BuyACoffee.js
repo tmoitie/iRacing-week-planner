@@ -1,8 +1,10 @@
+// @flow
+
 import './styles/buyACoffee.css';
-import React from 'react';
+import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 
-export default function BuyACoffee() {
+export default function BuyACoffee(): React.Node {
   const { t } = useTranslation();
   return (
     <a className="bmc-button" target="_blank" href="https://www.buymeacoffee.com/tmoitie">

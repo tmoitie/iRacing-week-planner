@@ -7,8 +7,8 @@ import Checkbox from '../Checkbox';
 import availableColumns from '../../data/availableColumns';
 
 export default function OptionsModal({ onClose, isOpen, columnIds, saveOptions }) {
-  const getColumnToggler = (id) => (e) => {
-    const newColumns = toggleIdInCollection(columnIds, id, e.target.checked);
+  const getColumnToggler = (id) => (newValue) => {
+    const newColumns = toggleIdInCollection(columnIds, id, newValue);
     saveOptions('columns', newColumns);
   };
 

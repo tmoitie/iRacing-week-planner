@@ -58,15 +58,15 @@ export class FavouriteSeriesModal extends Component {
     favouriteSeries: []
   }
 
-  setCheckboxFavourite(seriesId, e) {
+  setCheckboxFavourite(seriesId, newValue) {
     const { favouriteSeries, save } = this.props;
     const newFavorites = [ ...favouriteSeries ];
     const index = newFavorites.indexOf(seriesId);
 
-    if (index === -1 && e.target.checked) {
+    if (index === -1 && newValue) {
       newFavorites.push(seriesId);
     }
-    if (index !== -1 && e.target.checked === false) {
+    if (index !== -1 && newValue === false) {
       newFavorites.splice(index, 1);
     }
     save(newFavorites);

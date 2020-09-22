@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/FavouriteStarButton renders correctly 1`] = `
+<span
+  className="glyphicon glyphicon-star-empty"
+  onClick={[Function]}
+/>
+`;
+
+exports[`components/FavouriteStarButton renders disabled with onClick 1`] = `
+<span
+  className="glyphicon glyphicon-star-empty"
+  onClick={[Function]}
+/>
+`;
+
+exports[`components/FavouriteStarButton renders enabled with onClick 1`] = `
+<span
+  className="glyphicon glyphicon-star"
+  onClick={[Function]}
+/>
+`;

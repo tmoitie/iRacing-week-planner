@@ -40,9 +40,9 @@ export class ContentModal extends Component {
     saveFavourites: () => {},
   }
 
-  setAllTypeContent(type, e) {
+  setAllTypeContent(type, newValue) {
     const { ownedContent, save, defaultContent } = this.props;
-    save(this.toggleAllTypeInCollection(type, e.target.checked, ownedContent, defaultContent));
+    save(this.toggleAllTypeInCollection(type, newValue, ownedContent, defaultContent));
   }
 
   setAllTypeFavourites(type, newState, e) {
@@ -87,9 +87,9 @@ export class ContentModal extends Component {
     return difference(currentCollection, difference(allIdsOfType, defaultContent));
   }
 
-  toggleContent(id, e) {
+  toggleContent(id, newValue) {
     const { ownedContent, save } = this.props;
-    const newFavourites = toggleIdInCollection(ownedContent, id, e.target.checked);
+    const newFavourites = toggleIdInCollection(ownedContent, id, newValue);
     save(newFavourites);
   }
 
@@ -100,9 +100,9 @@ export class ContentModal extends Component {
     saveFavourites(newFavourites);
   }
 
-  toggleAllContent(e) {
+  toggleAllContent(newValue) {
     const { save, content, idField, defaultContent } = this.props;
-    save(e.target.checked ? content.map(item => item[idField]) : defaultContent);
+    save(newValue ? content.map(item => item[idField]) : defaultContent);
   }
 
   toggleAllFavourites(newState, e) {

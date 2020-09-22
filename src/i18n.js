@@ -42,7 +42,7 @@ const resources = {
 
 if (process.env.NODE_ENV === 'development') {
   languages.test = { flag: '👀', name: 'Test' };
-  resources.test = require('../translations/test').default;
+  resources.test = require('../translations/fake').default;
 }
 
 i18n

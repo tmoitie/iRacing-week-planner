@@ -1,0 +1,999 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Filters correctly click a filter item checkbox 1`] = `
+<div
+  className="filters-component"
+  style={
+    Object {
+      "fontSize": "0.8em",
+    }
+  }
+>
+  <h4>
+    Type
+  </h4>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-type-oval"
+    onChange={[Function]}
+  >
+    Oval
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-type-road"
+    onChange={[Function]}
+  >
+    Road
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-type-dirt"
+    onChange={[Function]}
+  >
+    Dirt
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-type-rx"
+    onChange={[Function]}
+  >
+    RX
+  </Checkbox>
+  <h4>
+    Licence
+  </h4>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-r"
+    onChange={[Function]}
+  >
+    R
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-d"
+    onChange={[Function]}
+  >
+    D
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-c"
+    onChange={[Function]}
+  >
+    C
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-b"
+    onChange={[Function]}
+  >
+    B
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-a"
+    onChange={[Function]}
+  >
+    A
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-p"
+    onChange={[Function]}
+  >
+    P
+  </Checkbox>
+  <h4>
+    Official/Fixed
+  </h4>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-official-false"
+    onChange={[Function]}
+  >
+    Unofficial
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-official-true"
+    onChange={[Function]}
+  >
+    Official
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-fixed-false"
+    onChange={[Function]}
+  >
+    Open setup
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-fixed-true"
+    onChange={[Function]}
+  >
+    Fixed setup
+  </Checkbox>
+  <h4>
+    Content
+  </h4>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-ownedCars"
+    onChange={[Function]}
+  >
+    Owned cars only
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-ownedTracks"
+    onChange={[Function]}
+  >
+    Owned tracks only
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-favouriteSeries"
+    onChange={[Function]}
+  >
+    Favorite series only
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-favouriteCarsOnly"
+    onChange={[Function]}
+  >
+    Favorite cars only
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-favouriteTracksOnly"
+    onChange={[Function]}
+  >
+    Favorite tracks only
+  </Checkbox>
+  <p>
+    <button
+      className="btn btn-primary"
+      id="filters-reset-filters-button"
+      onClick={[MockFunction]}
+      type="button"
+    >
+      Reset filters
+    </button>
+  </p>
+  <p>
+    <button
+      className="btn btn-primary"
+      id="filters-reset-settings-button"
+      onClick={[MockFunction]}
+      type="button"
+    >
+      Reset all settings
+    </button>
+  </p>
+</div>
+`;
+
+exports[`components/Filters correctly click a true/false checkbox 1`] = `
+<div
+  className="filters-component"
+  style={
+    Object {
+      "fontSize": "0.8em",
+    }
+  }
+>
+  <h4>
+    Type
+  </h4>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-type-oval"
+    onChange={[Function]}
+  >
+    Oval
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-type-road"
+    onChange={[Function]}
+  >
+    Road
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-type-dirt"
+    onChange={[Function]}
+  >
+    Dirt
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-type-rx"
+    onChange={[Function]}
+  >
+    RX
+  </Checkbox>
+  <h4>
+    Licence
+  </h4>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-r"
+    onChange={[Function]}
+  >
+    R
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-d"
+    onChange={[Function]}
+  >
+    D
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-c"
+    onChange={[Function]}
+  >
+    C
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-b"
+    onChange={[Function]}
+  >
+    B
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-a"
+    onChange={[Function]}
+  >
+    A
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-p"
+    onChange={[Function]}
+  >
+    P
+  </Checkbox>
+  <h4>
+    Official/Fixed
+  </h4>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-official-false"
+    onChange={[Function]}
+  >
+    Unofficial
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-official-true"
+    onChange={[Function]}
+  >
+    Official
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-fixed-false"
+    onChange={[Function]}
+  >
+    Open setup
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-fixed-true"
+    onChange={[Function]}
+  >
+    Fixed setup
+  </Checkbox>
+  <h4>
+    Content
+  </h4>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-ownedCars"
+    onChange={[Function]}
+  >
+    Owned cars only
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-ownedTracks"
+    onChange={[Function]}
+  >
+    Owned tracks only
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-favouriteSeries"
+    onChange={[Function]}
+  >
+    Favorite series only
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-favouriteCarsOnly"
+    onChange={[Function]}
+  >
+    Favorite cars only
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-favouriteTracksOnly"
+    onChange={[Function]}
+  >
+    Favorite tracks only
+  </Checkbox>
+  <p>
+    <button
+      className="btn btn-primary"
+      id="filters-reset-filters-button"
+      onClick={[MockFunction]}
+      type="button"
+    >
+      Reset filters
+    </button>
+  </p>
+  <p>
+    <button
+      className="btn btn-primary"
+      id="filters-reset-settings-button"
+      onClick={[MockFunction]}
+      type="button"
+    >
+      Reset all settings
+    </button>
+  </p>
+</div>
+`;
+
+exports[`components/Filters not synced user 1`] = `
+<div
+  className="filters-component"
+  style={
+    Object {
+      "fontSize": "0.8em",
+    }
+  }
+>
+  <h4>
+    Type
+  </h4>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-type-oval"
+    onChange={[Function]}
+  >
+    Oval
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-type-road"
+    onChange={[Function]}
+  >
+    Road
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-type-dirt"
+    onChange={[Function]}
+  >
+    Dirt
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-type-rx"
+    onChange={[Function]}
+  >
+    RX
+  </Checkbox>
+  <h4>
+    Licence
+  </h4>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-r"
+    onChange={[Function]}
+  >
+    R
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-d"
+    onChange={[Function]}
+  >
+    D
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-c"
+    onChange={[Function]}
+  >
+    C
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-b"
+    onChange={[Function]}
+  >
+    B
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-a"
+    onChange={[Function]}
+  >
+    A
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-p"
+    onChange={[Function]}
+  >
+    P
+  </Checkbox>
+  <h4>
+    Official/Fixed
+  </h4>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-official-false"
+    onChange={[Function]}
+  >
+    Unofficial
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-official-true"
+    onChange={[Function]}
+  >
+    Official
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-fixed-false"
+    onChange={[Function]}
+  >
+    Open setup
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-fixed-true"
+    onChange={[Function]}
+  >
+    Fixed setup
+  </Checkbox>
+  <h4>
+    Content
+  </h4>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-ownedCars"
+    onChange={[Function]}
+  >
+    Owned cars only
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-ownedTracks"
+    onChange={[Function]}
+  >
+    Owned tracks only
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-favouriteSeries"
+    onChange={[Function]}
+  >
+    Favorite series only
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-favouriteCarsOnly"
+    onChange={[Function]}
+  >
+    Favorite cars only
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-favouriteTracksOnly"
+    onChange={[Function]}
+  >
+    Favorite tracks only
+  </Checkbox>
+  <p>
+    <button
+      className="btn btn-primary"
+      id="filters-reset-filters-button"
+      onClick={[MockFunction]}
+      type="button"
+    >
+      Reset filters
+    </button>
+  </p>
+  <p>
+    <button
+      className="btn btn-primary"
+      id="filters-reset-settings-button"
+      onClick={[MockFunction]}
+      type="button"
+    >
+      Reset all settings
+    </button>
+  </p>
+  <p>
+    <span
+      id="filters-synced-status"
+    >
+      Awaiting sync
+       
+      (refresh browser to download latest)
+    </span>
+  </p>
+</div>
+`;
+
+exports[`components/Filters renders correctly 1`] = `
+<div
+  className="filters-component"
+  style={
+    Object {
+      "fontSize": "0.8em",
+    }
+  }
+>
+  <h4>
+    Type
+  </h4>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-type-oval"
+    onChange={[Function]}
+  >
+    Oval
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-type-road"
+    onChange={[Function]}
+  >
+    Road
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-type-dirt"
+    onChange={[Function]}
+  >
+    Dirt
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-type-rx"
+    onChange={[Function]}
+  >
+    RX
+  </Checkbox>
+  <h4>
+    Licence
+  </h4>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-r"
+    onChange={[Function]}
+  >
+    R
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-d"
+    onChange={[Function]}
+  >
+    D
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-c"
+    onChange={[Function]}
+  >
+    C
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-b"
+    onChange={[Function]}
+  >
+    B
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-a"
+    onChange={[Function]}
+  >
+    A
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-p"
+    onChange={[Function]}
+  >
+    P
+  </Checkbox>
+  <h4>
+    Official/Fixed
+  </h4>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-official-false"
+    onChange={[Function]}
+  >
+    Unofficial
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-official-true"
+    onChange={[Function]}
+  >
+    Official
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-fixed-false"
+    onChange={[Function]}
+  >
+    Open setup
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-fixed-true"
+    onChange={[Function]}
+  >
+    Fixed setup
+  </Checkbox>
+  <h4>
+    Content
+  </h4>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-ownedCars"
+    onChange={[Function]}
+  >
+    Owned cars only
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-ownedTracks"
+    onChange={[Function]}
+  >
+    Owned tracks only
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-favouriteSeries"
+    onChange={[Function]}
+  >
+    Favorite series only
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-favouriteCarsOnly"
+    onChange={[Function]}
+  >
+    Favorite cars only
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-favouriteTracksOnly"
+    onChange={[Function]}
+  >
+    Favorite tracks only
+  </Checkbox>
+  <p>
+    <button
+      className="btn btn-primary"
+      id="filters-reset-filters-button"
+      onClick={[MockFunction]}
+      type="button"
+    >
+      Reset filters
+    </button>
+  </p>
+  <p>
+    <button
+      className="btn btn-primary"
+      id="filters-reset-settings-button"
+      onClick={[MockFunction]}
+      type="button"
+    >
+      Reset all settings
+    </button>
+  </p>
+</div>
+`;
+
+exports[`components/Filters synced user 1`] = `
+<div
+  className="filters-component"
+  style={
+    Object {
+      "fontSize": "0.8em",
+    }
+  }
+>
+  <h4>
+    Type
+  </h4>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-type-oval"
+    onChange={[Function]}
+  >
+    Oval
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-type-road"
+    onChange={[Function]}
+  >
+    Road
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-type-dirt"
+    onChange={[Function]}
+  >
+    Dirt
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-type-rx"
+    onChange={[Function]}
+  >
+    RX
+  </Checkbox>
+  <h4>
+    Licence
+  </h4>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-r"
+    onChange={[Function]}
+  >
+    R
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-d"
+    onChange={[Function]}
+  >
+    D
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-c"
+    onChange={[Function]}
+  >
+    C
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-b"
+    onChange={[Function]}
+  >
+    B
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-a"
+    onChange={[Function]}
+  >
+    A
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-licence-p"
+    onChange={[Function]}
+  >
+    P
+  </Checkbox>
+  <h4>
+    Official/Fixed
+  </h4>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-official-false"
+    onChange={[Function]}
+  >
+    Unofficial
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-official-true"
+    onChange={[Function]}
+  >
+    Official
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-fixed-false"
+    onChange={[Function]}
+  >
+    Open setup
+  </Checkbox>
+  <Checkbox
+    checked={true}
+    disabled={false}
+    id="checkbox-fixed-true"
+    onChange={[Function]}
+  >
+    Fixed setup
+  </Checkbox>
+  <h4>
+    Content
+  </h4>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-ownedCars"
+    onChange={[Function]}
+  >
+    Owned cars only
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-ownedTracks"
+    onChange={[Function]}
+  >
+    Owned tracks only
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-favouriteSeries"
+    onChange={[Function]}
+  >
+    Favorite series only
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-favouriteCarsOnly"
+    onChange={[Function]}
+  >
+    Favorite cars only
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    disabled={false}
+    id="checkbox-favouriteTracksOnly"
+    onChange={[Function]}
+  >
+    Favorite tracks only
+  </Checkbox>
+  <p>
+    <button
+      className="btn btn-primary"
+      id="filters-reset-filters-button"
+      onClick={[MockFunction]}
+      type="button"
+    >
+      Reset filters
+    </button>
+  </p>
+  <p>
+    <button
+      className="btn btn-primary"
+      id="filters-reset-settings-button"
+      onClick={[MockFunction]}
+      type="button"
+    >
+      Reset all settings
+    </button>
+  </p>
+  <p>
+    <span
+      id="filters-synced-status"
+    >
+      Synced
+       
+      (refresh browser to download latest)
+    </span>
+  </p>
+</div>
+`;

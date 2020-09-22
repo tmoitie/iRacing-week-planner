@@ -11,3 +11,5 @@
 .idea
 *.css.flow
 *.scss.flow
+.nyc_output
+coverage

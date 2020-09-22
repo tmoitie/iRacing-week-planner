@@ -12,7 +12,7 @@
     "debugRaces": "babel-node ./build/debugRaces.js",
     "debugSeries": "babel-node ./build/debugSeries.js",
     "scrapeData": "babel-node ./build/scrape.js",
-    "test": "_mocha --reporter spec --require @babel/register --require ignore-styles  --file ./test/setup.js ./test/**/*Spec.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -42,7 +42,6 @@
     "babel-loader": "^8.1.0",
     "bluebird": "^3.7.2",
     "bootstrap-sass": "^3.3.6",
-    "chai": "^4.2.0",
     "classnames": "^2.2.6",
     "cli-table": "^0.3.1",
     "css-loader": "^4.2.2",
@@ -65,7 +64,6 @@
     "lodash.uniq": "^4.5.0",
     "lodash.uniqby": "^4.7.0",
     "mini-css-extract-plugin": "^0.11.0",
-    "mocha": "^8.1.2",
     "moment": "^2.27.0",
     "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
@@ -91,8 +89,15 @@
     "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
+    "@jest/globals": "^26.4.2",
+    "enzyme-to-json": "^3.5.0",
+    "eslint-plugin-flowtype": "^5.2.0",
     "flow-bin": "^0.132.0",
+    "jest": "^26.4.2",
+    "jest-css-modules-transform": "^4.0.1",
+    "jsdom": "^16.4.0",
     "redux-logger": "^3.0.6",
+    "redux-mock-store": "^1.5.4",
     "webpack-dev-server": "^3.11.0"
   }
 }
