@@ -3,6 +3,7 @@ import {
   RaceTimes, Series, SeasonEnd, StartDate, Track, Type
 } from '../components/columns/';
 import moment from 'moment';
+import { getNextRace } from '../lib/races';
 
 /* eslint react/no-multi-comp: 0 */
 
@@ -13,24 +14,31 @@ const defaultSort = (a, b) => {
   return a.licenceClassNumber < b.licenceClassNumber ? -1 : 1;
 };
 
-const sortByDate = (key, order, a, b) => {
-  if (a[key] === b[key]) {
-    return defaultSort(a, b);
+const sortByDate = (order: string, a?: moment.Moment, b?: moment.Moment) => {
+  if (a === b) {
+    return 0;
   }
-  if (a[key] === null) {
+  if (a === null) {
     return 1;
   }
-  if (b[key] === null) {
+  if (b === null) {
     return -1;
   }
-  if (a[key].isSame(b[key])) {
-    return defaultSort(a, b);
+  if (a.isSame(b)) {
+    return 0;
   }
   if (order === 'asc') {
-    return a[key].isBefore(b[key]) ? -1 : 1;
+    return a.isBefore(b) ? -1 : 1;
   }
 
-  return a[key].isAfter(b[key]) ? -1 : 1;
+  return a.isAfter(b) ? -1 : 1;
+};
+
+const getSortByDate = (key) => {
+  return (order, a, b) => {
+    const sort = sortByDate(order, a[key], b[key]);
+    return sort !== 0 ? sort : defaultSort(a, b);
+  }
 };
 
 export default [{
@@ -136,7 +144,7 @@ export default [{
   header: 'Start',
   component: StartDate,
   default: true,
-  sort: sortByDate.bind(null, 'startTime')
+  sort: getSortByDate('startTime')
 }, {
   id: 'end',
   header: 'End',
@@ -188,13 +196,19 @@ export default [{
   header: 'Next race',
   component: NextRace,
   default: true,
-  sort: sortByDate.bind(null, 'nextTime')
+  sort: (order, a, b) => {
+    const now = moment().utc();
+    const aNextDate = getNextRace(now, a);
+    const bNextDate = getNextRace(now, b);
+    const sort = sortByDate(order, aNextDate, bNextDate);
+    return sort !== 0 ? sort : defaultSort(a, b);
+  }
 }, {
   id: 'seriesEnd',
   header: 'Season end',
   component: SeasonEnd,
   default: false,
-  sort: sortByDate.bind(null, 'seriesEnd')
+  sort: getSortByDate('seriesEnd'),
 }, {
   id: 'seriesLink',
   header: 'Link',

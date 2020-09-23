@@ -1,7 +1,8 @@
-import { describe, test } from '@jest/globals';
+import { describe, test, beforeEach, afterEach } from '@jest/globals';
 import moment from 'moment';
 import React from 'react';
 import { shallow } from 'enzyme';
+import MockDate from 'mockdate';
 
 import RaceListing from '../../src/components/RaceListing';
 import { defaultFilters } from '../../src/reducers/settings';
@@ -12,7 +13,7 @@ jest.mock('../../src/data/season.json');
 
 describe.only('components/RaceListing', () => {
   const defaultProps = {
-    date: moment('2020-09-24T12:00:00.000Z'),
+    date: moment('2020-09-23T01:00:00.000Z'),
     sort: { key: 'id', order: 'asc' },
     filters: defaultFilters,
     favouriteSeries: [],
@@ -22,6 +23,15 @@ describe.only('components/RaceListing', () => {
     favouriteTracks: [],
     columnIds: ['id'],
   };
+
+  beforeEach(() => {
+    MockDate.set('2020-09-23T13:30:00.000Z');
+  });
+
+  afterEach(() => {
+    MockDate.reset();
+  });
+
   test('renders correctly', () => {
     const component = shallow(<RaceListing
       {...defaultProps}

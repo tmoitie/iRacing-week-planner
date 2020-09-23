@@ -7,10 +7,27 @@ const raceTimesById = raceTimesArray.reduce((races, race) => {
   return { ...races, [race.seriesId]: race };
 }, {});
 
-const now = moment().utc();
-const startOfWeek = now.clone().subtract(1, 'days').startOf('isoWeek').add(1, 'days');
+function getStartOfWeek(date) {
+  return moment(date).subtract(1, 'days').startOf('isoWeek').add(1, 'days');
+}
 
-function getNextRaceFromRecur(everyTime, offset) {
+export function getNextRace(date: moment.Moment, race): ?moment.Moment {
+  const raceTimes = raceTimesById[race.seriesId] || {};
+
+  if (race.everyTime) {
+    return getNextRaceFromRecur(date, raceTimes.everyTime, raceTimes.offset);
+  }
+
+  if (race.setTimes) {
+    return getNextRaceSetTimes(date, raceTimes.setTimes);
+  }
+
+  return null;
+}
+
+function getNextRaceFromRecur(now, everyTime, offset) {
+  const startOfWeek = getStartOfWeek(now);
+
   const nextDate = startOfWeek.clone().add(offset);
   const endDate = startOfWeek.clone().add({ weeks: 1, days: 1});
 
@@ -25,7 +42,9 @@ function getNextRaceFromRecur(everyTime, offset) {
   return nextDate;
 }
 
-function getNextRaceSetTimes(setTimes) {
+function getNextRaceSetTimes(now, setTimes) {
+  const startOfWeek = getStartOfWeek(now);
+
   for (const time of setTimes) {
     const date = startOfWeek.clone().add(time);
     if (date.isAfter(now)) {
@@ -78,18 +97,7 @@ export default season.reduce((carry, series) => {
   allRaceWeeks.sort((a, b) => a - b);
 
   return carry.concat(series.tracks.map((track) => {
-    const trackName = track.name;
-    let nextTime = null;
-
     const realRaceWeek = allRaceWeeks.indexOf(track.raceweek);
-
-    if (raceTimes.everyTime) {
-      nextTime = getNextRaceFromRecur(raceTimes.everyTime, raceTimes.offset);
-    }
-
-    if (raceTimes.setTimes) {
-      nextTime = getNextRaceSetTimes(raceTimes.setTimes);
-    }
 
     const startTime = moment(seriesStart).add(raceWeekLength * realRaceWeek, 'ms').startOf('day').utc();
     const weekLength = duration(raceWeekLength);
@@ -114,10 +122,12 @@ export default season.reduce((carry, series) => {
       carClasses: series.carclasses.map(({ shortname }) => shortname),
       carIds: series.cars.map(({ sku }) => sku),
       raceTimes,
-      nextTime,
       seriesStart,
       seriesEnd,
-      seasonId: series.seasonid
+      seasonId: series.seasonid,
+      everyTime: raceTimes.everyTime,
+      offset: raceTimes.offset,
+      setTimes: raceTimes.setTimes
     };
   }));
 }, []);

@@ -2,7 +2,7 @@ import Table from 'cli-table';
 import uniqBy from 'lodash.uniqby';
 import moment from 'moment';
 
-import races from '../src/lib/races';
+import races, { getNextRace } from '../src/lib/races';
 
 const seriesIds = process.argv.slice(2).map(id => parseInt(id, 10));
 
@@ -38,16 +38,21 @@ seriess.sort((a, b) => {
 
 });
 
-table.push(...seriess.map(series => [
-  series.seriesId,
-  series.type,
-  series.licenceClass,
-  series.series,
-  series.weekLength.asDays(),
-  moment(series.startTime).local().format('ddd'),
-  moment(series.seriesStart).local().format('YYYY-MM-DD'),
-  moment(series.seriesEnd).local().format('YYYY-MM-DD'),
-  series.nextTime !== null ? moment(series.nextTime).local().format('ddd h:mma') : 'NO DATA'
-]));
+const now = moment().utc();
+
+table.push(...seriess.map(series => {
+  const nextTime = getNextRace(now, series);
+  return [
+    series.seriesId,
+    series.type,
+    series.licenceClass,
+    series.series,
+    series.weekLength.asDays(),
+    moment(series.startTime).local().format('ddd'),
+    moment(series.seriesStart).local().format('YYYY-MM-DD'),
+    moment(series.seriesEnd).local().format('YYYY-MM-DD'),
+    nextTime !== null ? nextTime.local().format('ddd h:mma') : 'NO DATA'
+  ];
+}));
 
 console.log(table.toString());
