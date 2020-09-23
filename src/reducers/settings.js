@@ -13,7 +13,19 @@ import {
 import availableColumns from '../data/availableColumns';
 import { tracks, cars } from '../data';
 
-export const defaultFilters = {
+export type filters = {
+  type: Array<string>,
+  licence: Array<string>,
+  official: Array<boolean>,
+  fixed: boolean[],
+  ownedCars: boolean,
+  ownedTracks: boolean,
+  favouriteSeries: boolean,
+  favouriteCarsOnly: boolean,
+  favouriteTracksOnly: boolean,
+};
+
+export const defaultFilters: filters = {
   type: ['Road', 'Oval', 'Dirt', 'RX'],
   licence: ['R', 'D', 'C', 'B', 'A', 'P'],
   official: [false, true],

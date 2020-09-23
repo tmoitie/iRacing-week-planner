@@ -7,7 +7,7 @@ export function useTranslation() {
 }
 export function withTranslation() {
   return (Component) => {
-    Component.defaultProps = { ...Component.defaultProps, t: () => "" };
+    Component.defaultProps = { ...Component.defaultProps, t: (key) => (key) };
     return Component;
   };
 }

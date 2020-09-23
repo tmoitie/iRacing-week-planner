@@ -4,24 +4,13 @@ import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import type { filters } from '../reducers/settings';
 import {
   resetFilters as resetFiltersAction,
   resetSettings as resetSettingsAction,
   updateFilters as updateFiltersAction
 } from '../actions/settings';
 import Checkbox from './Checkbox';
-
-type filters = {
-  type: Array<string>,
-  licence: Array<string>,
-  official: Array<boolean>,
-  fixed: boolean[],
-  ownedCars: boolean,
-  ownedTracks: boolean,
-  favouriteSeries: boolean,
-  favouriteCarsOnly: boolean,
-  favouriteTracksOnly: boolean,
-};
 
 type Props = {
   currentFilters: filters,
