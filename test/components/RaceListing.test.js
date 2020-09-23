@@ -22,6 +22,7 @@ describe.only('components/RaceListing', () => {
     favouriteCars: [],
     favouriteTracks: [],
     columnIds: ['id'],
+    updateSort: () => {},
   };
 
   beforeEach(() => {

@@ -24,8 +24,13 @@ exports[`components/RaceListing changes sort on click 1`] = `
           <span>
              
           </span>
-          <span
-            className="glyphicon glyphicon-triangle-top"
+          <SortArrow
+            sort={
+              Object {
+                "key": "id",
+                "order": "asc",
+              }
+            }
           />
         </th>
         <th
@@ -46,47 +51,9 @@ exports[`components/RaceListing changes sort on click 1`] = `
         key="0"
       >
         <Id
-          columnIds={
-            Array [
-              "id",
-              "series",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="0"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -125,57 +92,11 @@ exports[`components/RaceListing changes sort on click 1`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "id",
-              "order": "asc",
-            }
-          }
-          t={[Function]}
-          updateSort={[MockFunction]}
         />
         <Series
-          columnIds={
-            Array [
-              "id",
-              "series",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="1"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -214,61 +135,15 @@ exports[`components/RaceListing changes sort on click 1`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "id",
-              "order": "asc",
-            }
-          }
-          t={[Function]}
-          updateSort={[MockFunction]}
         />
       </tr>
       <tr
         key="1"
       >
         <Id
-          columnIds={
-            Array [
-              "id",
-              "series",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="0"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -310,57 +185,11 @@ exports[`components/RaceListing changes sort on click 1`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "id",
-              "order": "asc",
-            }
-          }
-          t={[Function]}
-          updateSort={[MockFunction]}
         />
         <Series
-          columnIds={
-            Array [
-              "id",
-              "series",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="1"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -402,61 +231,15 @@ exports[`components/RaceListing changes sort on click 1`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "id",
-              "order": "asc",
-            }
-          }
-          t={[Function]}
-          updateSort={[MockFunction]}
         />
       </tr>
       <tr
         key="2"
       >
         <Id
-          columnIds={
-            Array [
-              "id",
-              "series",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="0"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -495,57 +278,11 @@ exports[`components/RaceListing changes sort on click 1`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "id",
-              "order": "asc",
-            }
-          }
-          t={[Function]}
-          updateSort={[MockFunction]}
         />
         <Series
-          columnIds={
-            Array [
-              "id",
-              "series",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="1"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -584,61 +321,15 @@ exports[`components/RaceListing changes sort on click 1`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "id",
-              "order": "asc",
-            }
-          }
-          t={[Function]}
-          updateSort={[MockFunction]}
         />
       </tr>
       <tr
         key="3"
       >
         <Id
-          columnIds={
-            Array [
-              "id",
-              "series",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="0"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -677,57 +368,11 @@ exports[`components/RaceListing changes sort on click 1`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "id",
-              "order": "asc",
-            }
-          }
-          t={[Function]}
-          updateSort={[MockFunction]}
         />
         <Series
-          columnIds={
-            Array [
-              "id",
-              "series",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="1"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -766,14 +411,6 @@ exports[`components/RaceListing changes sort on click 1`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "id",
-              "order": "asc",
-            }
-          }
-          t={[Function]}
-          updateSort={[MockFunction]}
         />
       </tr>
     </tbody>
@@ -816,8 +453,13 @@ exports[`components/RaceListing changes sort on click 2`] = `
           <span>
              
           </span>
-          <span
-            className="glyphicon glyphicon-triangle-bottom"
+          <SortArrow
+            sort={
+              Object {
+                "key": "series",
+                "order": "desc",
+              }
+            }
           />
         </th>
         <th
@@ -838,48 +480,9 @@ exports[`components/RaceListing changes sort on click 2`] = `
         key="0"
       >
         <Id
-          columnIds={
-            Array [
-              "id",
-              "series",
-              "raceTimes",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="0"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -918,58 +521,11 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "series",
-              "order": "desc",
-            }
-          }
-          t={[Function]}
-          updateSort={[MockFunction]}
         />
         <Series
-          columnIds={
-            Array [
-              "id",
-              "series",
-              "raceTimes",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="1"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -1008,58 +564,11 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "series",
-              "order": "desc",
-            }
-          }
-          t={[Function]}
-          updateSort={[MockFunction]}
         />
         <NextRace
-          columnIds={
-            Array [
-              "id",
-              "series",
-              "raceTimes",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="2"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -1098,62 +607,15 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "series",
-              "order": "desc",
-            }
-          }
-          t={[Function]}
-          updateSort={[MockFunction]}
         />
       </tr>
       <tr
         key="1"
       >
         <Id
-          columnIds={
-            Array [
-              "id",
-              "series",
-              "raceTimes",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="0"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -1192,58 +654,11 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "series",
-              "order": "desc",
-            }
-          }
-          t={[Function]}
-          updateSort={[MockFunction]}
         />
         <Series
-          columnIds={
-            Array [
-              "id",
-              "series",
-              "raceTimes",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="1"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -1282,58 +697,11 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "series",
-              "order": "desc",
-            }
-          }
-          t={[Function]}
-          updateSort={[MockFunction]}
         />
         <NextRace
-          columnIds={
-            Array [
-              "id",
-              "series",
-              "raceTimes",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="2"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -1372,62 +740,15 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "series",
-              "order": "desc",
-            }
-          }
-          t={[Function]}
-          updateSort={[MockFunction]}
         />
       </tr>
       <tr
         key="2"
       >
         <Id
-          columnIds={
-            Array [
-              "id",
-              "series",
-              "raceTimes",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="0"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -1469,58 +790,11 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "series",
-              "order": "desc",
-            }
-          }
-          t={[Function]}
-          updateSort={[MockFunction]}
         />
         <Series
-          columnIds={
-            Array [
-              "id",
-              "series",
-              "raceTimes",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="1"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -1562,58 +836,11 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "series",
-              "order": "desc",
-            }
-          }
-          t={[Function]}
-          updateSort={[MockFunction]}
         />
         <NextRace
-          columnIds={
-            Array [
-              "id",
-              "series",
-              "raceTimes",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="2"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -1655,62 +882,15 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "series",
-              "order": "desc",
-            }
-          }
-          t={[Function]}
-          updateSort={[MockFunction]}
         />
       </tr>
       <tr
         key="3"
       >
         <Id
-          columnIds={
-            Array [
-              "id",
-              "series",
-              "raceTimes",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="0"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -1749,58 +929,11 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "series",
-              "order": "desc",
-            }
-          }
-          t={[Function]}
-          updateSort={[MockFunction]}
         />
         <Series
-          columnIds={
-            Array [
-              "id",
-              "series",
-              "raceTimes",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="1"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -1839,58 +972,11 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "series",
-              "order": "desc",
-            }
-          }
-          t={[Function]}
-          updateSort={[MockFunction]}
         />
         <NextRace
-          columnIds={
-            Array [
-              "id",
-              "series",
-              "raceTimes",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="2"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -1929,14 +1015,6 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "series",
-              "order": "desc",
-            }
-          }
-          t={[Function]}
-          updateSort={[MockFunction]}
         />
       </tr>
     </tbody>
@@ -1968,8 +1046,13 @@ exports[`components/RaceListing renders correctly 1`] = `
           <span>
              
           </span>
-          <span
-            className="glyphicon glyphicon-triangle-top"
+          <SortArrow
+            sort={
+              Object {
+                "key": "id",
+                "order": "asc",
+              }
+            }
           />
         </th>
       </tr>
@@ -1979,46 +1062,9 @@ exports[`components/RaceListing renders correctly 1`] = `
         key="0"
       >
         <Id
-          columnIds={
-            Array [
-              "id",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="0"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -2057,60 +1103,15 @@ exports[`components/RaceListing renders correctly 1`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "id",
-              "order": "asc",
-            }
-          }
-          t={[Function]}
-          updateSort={[Function]}
         />
       </tr>
       <tr
         key="1"
       >
         <Id
-          columnIds={
-            Array [
-              "id",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="0"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -2152,60 +1153,15 @@ exports[`components/RaceListing renders correctly 1`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "id",
-              "order": "asc",
-            }
-          }
-          t={[Function]}
-          updateSort={[Function]}
         />
       </tr>
       <tr
         key="2"
       >
         <Id
-          columnIds={
-            Array [
-              "id",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="0"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -2244,60 +1200,15 @@ exports[`components/RaceListing renders correctly 1`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "id",
-              "order": "asc",
-            }
-          }
-          t={[Function]}
-          updateSort={[Function]}
         />
       </tr>
       <tr
         key="3"
       >
         <Id
-          columnIds={
-            Array [
-              "id",
-            ]
-          }
-          date={"2020-09-23T01:00:00.000Z"}
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          filters={
-            Object {
-              "favouriteCarsOnly": false,
-              "favouriteSeries": false,
-              "favouriteTracksOnly": false,
-              "fixed": Array [
-                false,
-                true,
-              ],
-              "licence": Array [
-                "R",
-                "D",
-                "C",
-                "B",
-                "A",
-                "P",
-              ],
-              "official": Array [
-                false,
-                true,
-              ],
-              "ownedCars": false,
-              "ownedTracks": false,
-              "type": Array [
-                "Road",
-                "Oval",
-                "Dirt",
-                "RX",
-              ],
-            }
-          }
           key="0"
           ownedCars={Array []}
           ownedTracks={Array []}
@@ -2336,14 +1247,6 @@ exports[`components/RaceListing renders correctly 1`] = `
               "weekLength": "PT168H",
             }
           }
-          sort={
-            Object {
-              "key": "id",
-              "order": "asc",
-            }
-          }
-          t={[Function]}
-          updateSort={[Function]}
         />
       </tr>
     </tbody>

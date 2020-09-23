@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/columns/Class renders correctly 1`] = `
+<td>
+  <LicenceLevel
+    effective={true}
+    licence={5}
+  />
+</td>
+`;

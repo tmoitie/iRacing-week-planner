@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/columns/StartDate renders correctly 1`] = `
+<td>
+  <div>
+    2020-09-23
+  </div>
+</td>
+`;

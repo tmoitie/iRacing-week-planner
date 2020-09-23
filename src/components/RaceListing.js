@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { useMemo } from 'react';
 import moment from 'moment';
-import { withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import type { filters } from '../reducers/settings';
 
 import allRaces from '../lib/races';
 import filterRaces from '../lib/filterRaces';
@@ -11,35 +11,43 @@ import availableColumns from '../data/availableColumns';
 
 import './styles/raceListing.scss';
 
-export class RaceListing extends Component {
-  static propTypes = {
-    date: PropTypes.object,
-    sort: PropTypes.object,
-    filters: PropTypes.object,
-    favouriteSeries: PropTypes.array,
-    ownedTracks: PropTypes.array,
-    ownedCars: PropTypes.array,
-    favouriteCars: PropTypes.array,
-    favouriteTracks: PropTypes.array,
-    columnIds: PropTypes.array,
-    updateSort: PropTypes.func,
-    t: PropTypes.func.isRequired,
+type sort = {
+  key: string,
+  order: string,
+};
+
+type Props = {
+  date: moment.Moment,
+  sort: sort,
+  filters: filters,
+  favouriteSeries: Array<number>,
+  ownedTracks: Array<number>,
+  ownedCars: Array<number>,
+  favouriteCars: Array<number>,
+  favouriteTracks: Array<number>,
+  columnIds: Array<string>,
+  updateSort: (sort) => void,
+  t: (string) => string,
+};
+
+type SortArrowProps = {
+  sort: sort,
+};
+
+function SortArrow({ sort }: SortArrowProps): React.Node {
+  if (sort.order === 'desc') {
+    return <span className='glyphicon glyphicon-triangle-bottom' />;
   }
 
-  static defaultProps = {
-    date: moment().utc().startOf('day'),
-    sort: { key: 'licence', order: 'asc' },
-    filters: [],
-    favouriteSeries: [],
-    ownedTracks: [],
-    ownedCars: [],
-    favouriteCars: [],
-    favouriteTracks: [],
-    updateSort: () => {},
-  }
+  return <span className='glyphicon glyphicon-triangle-top' />;
+}
 
-  sortColumn(columnId) {
-    const { sort, updateSort } = this.props;
+export default function RaceListing({
+  sort, updateSort, date, filters, favouriteSeries, ownedTracks, ownedCars, favouriteCars, favouriteTracks, columnIds
+}: Props): React.Node {
+  const { t } = useTranslation();
+
+  const getSortColumnHandler = (columnId: string) => () => {
     let newSort = { ...sort };
 
     if (sort.key === columnId) {
@@ -50,77 +58,64 @@ export class RaceListing extends Component {
 
     newSort = { key: columnId, order: 'asc' };
     updateSort(newSort);
+  };
+
+  const dateFilteredRaces = useMemo(() => allRaces.filter(
+    (race) => moment(date).add(1, 'hour').isBetween(race.startTime, race.endTime)
+  ), [date]);
+
+  const sortedRaces = useMemo(() => sortRaces(sort, dateFilteredRaces), [sort, dateFilteredRaces]);
+
+  const filteredRaces = useMemo(() => filterRaces({
+    races: sortedRaces, filters, ownedTracks, ownedCars, favouriteSeries, favouriteCars, favouriteTracks
+  }), [sortedRaces, filters, ownedTracks, ownedCars, favouriteSeries, favouriteCars, favouriteTracks]);
+
+  if (filters.favouriteSeries && filteredRaces.length === 0) {
+    return <p>{t('No races this week match your favourite series. Try turning the filter off or adding some.')}</p>;
   }
 
-  renderSortArrow() {
-    const { sort } = this.props;
-    if (sort.order === 'desc') {
-      return <span className='glyphicon glyphicon-triangle-bottom' />;
-    }
-
-    return <span className='glyphicon glyphicon-triangle-top' />;
+  if (filters.favouriteCarsOnly && filteredRaces.length === 0) {
+    return <p>{t('No races this week match your favourite cars. Try turning the filter off or adding some.')}</p>;
   }
 
-  render() {
-    const {
-      date, sort, filters, favouriteSeries, ownedTracks, ownedCars,
-      favouriteCars, favouriteTracks, columnIds, t,
-    } = this.props;
+  if (filters.favouriteTracksOnly && filteredRaces.length === 0) {
+    return <p>{t('No races this week match your favourite tracks. Try turning the filter off or adding some.')}</p>;
+  }
 
-    let races = allRaces.filter((race) => moment(date).add(1, 'hour').isBetween(race.startTime, race.endTime));
+  const columns = availableColumns.filter((column) => columnIds.indexOf(column.id) !== -1);
 
-    races = sortRaces(sort, races);
-
-    races = filterRaces({
-      races, filters, ownedTracks, ownedCars, favouriteSeries, favouriteCars, favouriteTracks
-    });
-
-    if (filters.favouriteSeries && races.length === 0) {
-      return <p>{t('No races this week match your favourite series. Try turning the filter off or adding some.')}</p>;
-    }
-
-    if (filters.favouriteCarsOnly && races.length === 0) {
-      return <p>{t('No races this week match your favourite cars. Try turning the filter off or adding some.')}</p>;
-    }
-
-    if (filters.favouriteTracksOnly && races.length === 0) {
-      return <p>{t('No races this week match your favourite tracks. Try turning the filter off or adding some.')}</p>;
-    }
-
-    const columns = availableColumns.filter((column) => columnIds.indexOf(column.id) !== -1);
-
-    return (
-      <div className='table-responsive race-listing'>
-        <table className='table' style={{ fontSize: '0.8em' }}>
-          <thead>
-            <tr>
-              {columns.map((column, colNum) => (
-                <th
-                  key={colNum}
-                  id={`raceListing-th-${column.id}`}
-                  onClick={column.sort ? this.sortColumn.bind(this, column.id, column.defaultOrder) : () => {}}
-                  className={column.sort ? 'clickable-cell' : null}
-                >
-                  {t(column.header)}
-                  <span> </span>
-                  {sort.key === column.id ? this.renderSortArrow() : null}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {races.map((race, index) => (
-              <tr key={index}>
-                {columns.map((column, colNum) => (
-                  <column.component key={colNum} race={race} {...this.props} />
-                ))}
-              </tr>
+  return (
+    <div className='table-responsive race-listing'>
+      <table className='table' style={{ fontSize: '0.8em' }}>
+        <thead>
+        <tr>
+          {columns.map((column, colNum) => (
+            <th
+              key={colNum}
+              id={`raceListing-th-${column.id}`}
+              onClick={column.sort ? getSortColumnHandler(column.id) : () => {}}
+              className={column.sort ? 'clickable-cell' : null}
+            >
+              {t(column.header)}
+              <span> </span>
+              {sort.key === column.id ? <SortArrow sort={sort} /> : null}
+            </th>
+          ))}
+        </tr>
+        </thead>
+        <tbody>
+        {filteredRaces.map((race, index) => (
+          <tr key={index}>
+            {columns.map((column, colNum) => (
+              <column.component
+                key={colNum} race={race} ownedCars={ownedCars} favouriteCars={favouriteCars} ownedTracks={ownedTracks}
+                favouriteTracks={favouriteTracks} favouriteSeries={favouriteSeries}
+              />
             ))}
-          </tbody>
-        </table>
-      </div>
-    );
-  }
+          </tr>
+        ))}
+        </tbody>
+      </table>
+    </div>
+  );
 }
-
-export default withTranslation()(RaceListing);
