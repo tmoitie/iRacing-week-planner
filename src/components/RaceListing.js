@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import moment from 'moment';
 import { useTranslation } from 'react-i18next';
 import type { filters } from '../reducers/settings';
+import SortArrow from './SortArrow';
 
 import allRaces from '../lib/races';
 import filterRaces from '../lib/filterRaces';
@@ -11,10 +12,7 @@ import availableColumns from '../data/availableColumns';
 
 import './styles/raceListing.scss';
 
-type sort = {
-  key: string,
-  order: string,
-};
+import type sort from '../reducers/settings';
 
 type Props = {
   date: moment.Moment,
@@ -29,18 +27,6 @@ type Props = {
   updateSort: (sort) => void,
   t: (string) => string,
 };
-
-type SortArrowProps = {
-  sort: sort,
-};
-
-function SortArrow({ sort }: SortArrowProps): React.Node {
-  if (sort.order === 'desc') {
-    return <span className='glyphicon glyphicon-triangle-bottom' />;
-  }
-
-  return <span className='glyphicon glyphicon-triangle-top' />;
-}
 
 export default function RaceListing({
   sort, updateSort, date, filters, favouriteSeries, ownedTracks, ownedCars, favouriteCars, favouriteTracks, columnIds

@@ -2,7 +2,7 @@ import { shallow } from 'enzyme';
 import React from 'react';
 import { describe, test } from '@jest/globals';
 
-import Checkbox from '../../src/components/Checkbox';
+import Checkbox from '../Checkbox';
 
 describe('components/Checkbox', () => {
   test('renders', () => {

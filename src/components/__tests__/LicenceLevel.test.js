@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { describe, test } from '@jest/globals';
 
-import LicenceLevel from '../../src/components/LicenceLevel';
+import LicenceLevel from '../LicenceLevel';
 
 describe('components/LicenceLevel', () => {
   test('renders for high D Class', () => {

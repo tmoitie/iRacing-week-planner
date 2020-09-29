@@ -4,7 +4,8 @@ module.exports = {
   clearMocks: true,
   // collectCoverage: false,
   collectCoverageFrom: [
-    'src/**/*',
+    'src/**/*.js',
+    "!src/**/*.{css,scss,test.js}",
   ],
   coverageDirectory: 'coverage',
   // coverageProvider: "babel",

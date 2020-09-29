@@ -2,11 +2,11 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { describe, test } from '@jest/globals';
 
-import BuyACoffee from '../../src/components/BuyACoffee';
+import Class from '../Class';
 
-describe('components/BuyACoffee', () => {
+describe('components/columns/Class', () => {
   test('renders correctly', () => {
-    const component = shallow(<BuyACoffee />);
+    const component = shallow(<Class race={{ licenceLevel: 5 }} />);
 
     expect(component).toMatchSnapshot();
   });

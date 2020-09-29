@@ -3,8 +3,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import configureMockStore from 'redux-mock-store';
 
-import ConnectedFilters, { Filters } from '../../src/components/Filters';
-import { defaultFilters } from '../../src/reducers/settings'
+import ConnectedFilters, { Filters } from '../Filters';
+import { defaultFilters } from '../../reducers/settings'
 
 const mockStore = configureMockStore();
 

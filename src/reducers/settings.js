@@ -13,6 +13,11 @@ import {
 import availableColumns from '../data/availableColumns';
 import { tracks, cars } from '../data';
 
+export type sort = {
+  key: string,
+  order: string,
+};
+
 export type filters = {
   type: Array<string>,
   licence: Array<string>,

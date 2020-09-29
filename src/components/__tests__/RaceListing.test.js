@@ -4,12 +4,12 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import MockDate from 'mockdate';
 
-import RaceListing from '../../src/components/RaceListing';
-import { defaultFilters } from '../../src/reducers/settings';
+import RaceListing from '../RaceListing';
+import { defaultFilters } from '../../reducers/settings';
 
-import '../../src/data/season.json';
+import '../../data/season.json';
 
-jest.mock('../../src/data/season.json');
+jest.mock('../../data/season.json');
 
 describe.only('components/RaceListing', () => {
   const defaultProps = {

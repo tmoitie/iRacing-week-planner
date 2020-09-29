@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/columns/Licence renders correctly 1`] = `
+<td>
+  <LicenceLevel
+    licence={7}
+  />
+</td>
+`;

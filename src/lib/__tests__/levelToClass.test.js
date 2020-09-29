@@ -1,7 +1,6 @@
-import React from 'react';
 import { describe, test } from '@jest/globals';
 
-import levelToClass, { levelToClassNumber } from '../../src/lib/levelToClass';
+import levelToClass, { levelToClassNumber } from '../levelToClass';
 
 describe('lib/levelToClass', () => {
   test('levelToClass', () => {

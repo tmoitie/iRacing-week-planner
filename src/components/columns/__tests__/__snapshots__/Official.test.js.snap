@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/columns/Official renders correctly 1`] = `
+<td>
+  <div>
+    <span
+      className="glyphicon glyphicon-ok"
+    />
+  </div>
+</td>
+`;
+
+exports[`components/columns/Official renders false correctly 1`] = `
+<td>
+  <div />
+</td>
+`;

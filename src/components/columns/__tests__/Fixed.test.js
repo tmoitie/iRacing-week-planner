@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { describe, test } from '@jest/globals';
 
-import Fixed from '../../../src/components/columns/Fixed';
+import Fixed from '../Fixed';
 
 describe('components/columns/Fixed', () => {
   test('renders correctly', () => {

@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/columns/Track renders favourite 1`] = `
+<td
+  className=""
+>
+  <div>
+    <span
+      className="glyphicon glyphicon-star"
+    />
+    <span>
+       
+    </span>
+  </div>
+</td>
+`;
+
+exports[`components/columns/Track renders no own or fave 1`] = `
+<td
+  className=""
+>
+  <div>
+    <span>
+       
+    </span>
+  </div>
+</td>
+`;
+
+exports[`components/columns/Track renders ownership 1`] = `
+<td
+  className="success"
+>
+  <div>
+    <span>
+       
+    </span>
+  </div>
+</td>
+`;

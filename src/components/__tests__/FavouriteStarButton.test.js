@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { describe, test } from '@jest/globals';
 
-import FavouriteStarButton from '../../src/components/FavouriteStarButton';
+import FavouriteStarButton from '../FavouriteStarButton';
 
 describe('components/FavouriteStarButton', () => {
   test('renders correctly', () => {
