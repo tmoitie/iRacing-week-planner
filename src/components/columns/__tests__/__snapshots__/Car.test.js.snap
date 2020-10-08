@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/columns/Car opens modal 1`] = `
+<td
+  className="success clickable-cell"
+  onClick={[Function]}
+>
+  <div>
+    <span
+      className="glyphicon glyphicon-star"
+    />
+    <span>
+       
+    </span>
+    Mazda Cup
+  </div>
+  <CarModal
+    carIds={
+      Array [
+        4,
+        5,
+      ]
+    }
+    favouriteCars={
+      Array [
+        4,
+      ]
+    }
+    isOpen={true}
+    onClose={[Function]}
+    ownedCars={
+      Array [
+        5,
+      ]
+    }
+    seriesName="Mazda Cup"
+  />
+</td>
+`;
+
+exports[`components/columns/Car opens modal 2`] = `
+<td
+  className="success clickable-cell"
+  onClick={[Function]}
+>
+  <div>
+    <span
+      className="glyphicon glyphicon-star"
+    />
+    <span>
+       
+    </span>
+    Mazda Cup
+  </div>
+  <CarModal
+    carIds={
+      Array [
+        4,
+        5,
+      ]
+    }
+    favouriteCars={
+      Array [
+        4,
+      ]
+    }
+    isOpen={false}
+    onClose={[Function]}
+    ownedCars={
+      Array [
+        5,
+      ]
+    }
+    seriesName="Mazda Cup"
+  />
+</td>
+`;
+
+exports[`components/columns/Car renders correctly 1`] = `
+<td
+  className="clickable-cell"
+  onClick={[Function]}
+>
+  <div>
+    <span>
+       
+    </span>
+    Mazda Cup
+  </div>
+  <CarModal
+    carIds={
+      Array [
+        4,
+        5,
+      ]
+    }
+    favouriteCars={Array []}
+    isOpen={false}
+    onClose={[Function]}
+    ownedCars={Array []}
+    seriesName="Mazda Cup"
+  />
+</td>
+`;
+
+exports[`components/columns/Car renders owned, favourite 1`] = `
+<td
+  className="success clickable-cell"
+  onClick={[Function]}
+>
+  <div>
+    <span
+      className="glyphicon glyphicon-star"
+    />
+    <span>
+       
+    </span>
+    Mazda Cup
+  </div>
+  <CarModal
+    carIds={
+      Array [
+        4,
+        5,
+      ]
+    }
+    favouriteCars={
+      Array [
+        4,
+      ]
+    }
+    isOpen={false}
+    onClose={[Function]}
+    ownedCars={
+      Array [
+        5,
+      ]
+    }
+    seriesName="Mazda Cup"
+  />
+</td>
+`;
