@@ -14,13 +14,13 @@ export default [
     offset: duration(60, 'minutes'),
   },
   {
-    // Xfinity Open
+    // Class B Open
     seriesId: 62,
     everyTime: duration(2, 'hours'),
     offset: duration(0, 'minutes'),
   },
   {
-    // Xfinity Fixed
+    // Class B Fixed
     seriesId: 103,
     everyTime: duration(2, 'hours'),
     offset: duration(60, 'minutes'),

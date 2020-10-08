@@ -20,6 +20,12 @@ export default [
     offset: duration(75, 'minutes'),
   },
   {
+    // Super Late Model Fixed
+    seriesId: 416,
+    everyTime: duration(2, 'hours'),
+    offset: duration(15, 'minutes'),
+  },
+  {
     // Class C Trucks Open
     seriesId: 47,
     everyTime: duration(2, 'hours'),
@@ -36,6 +42,12 @@ export default [
     seriesId: 102,
     everyTime: duration(2, 'hours'),
     offset: duration(0, 'minutes'),
+  },
+  {
+    // Tour Modified Fixed
+    seriesId: 417,
+    everyTime: duration(2, 'hours'),
+    offset: duration(60, 'minutes'),
   },
   {
     // NIS Fixed
@@ -59,5 +71,11 @@ export default [
       duration({ days: 4, hours: 1, minutes: 0 }), // Sat, 01:00 GMT
       duration({ days: 5, hours: 14, minutes: 0 }), // Sun, 14:00 GMT
     ],
+  },
+  {
+    // Old School NASCAR
+    seriesId: 413,
+    everyTime: duration(1, 'hours'),
+    offset: duration(45, 'minutes'),
   },
 ];

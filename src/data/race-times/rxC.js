@@ -13,6 +13,7 @@ export default [
     weekEndOffset: duration({ days: 7 }),
     setTimes: [
       duration({ days: 4, hours: 17, minutes: 45 }), // Sat 17:45 GMT
-    ]
+    ],
+    offWeeks: [1.1, 8.1]
   },
 ];

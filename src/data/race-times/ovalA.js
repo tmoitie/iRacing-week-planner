@@ -2,16 +2,16 @@ import { duration } from 'moment';
 
 export default [
   {
-    // Sprint Cup Open
+    // Class A Open
     seriesId: 58,
     everyTime: duration(2, 'hours'),
     offset: duration(30, 'minutes'),
   },
   {
-    // Sprint Cup Fixed
+    // Class A Fixed
     seriesId: 191,
     everyTime: duration(2, 'hours'),
-    offset: duration(45, 'minutes'),
+    offset: duration(0, 'minutes'),
   },
   {
     // NASCAR Road to Pro

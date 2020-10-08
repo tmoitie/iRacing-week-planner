@@ -7,12 +7,12 @@ export default [
     everyTime: duration(1, 'hours'),
     offset: duration(30, 'minutes')
   },
-  {
-    // Fun Dirt Late Models
-    seriesId: 304,
-    everyTime: duration(1, 'hours'),
-    offset: duration(30, 'minutes')
-  },
+  // {
+  //   // Fun Dirt Late Models
+  //   seriesId: 304,
+  //   everyTime: duration(1, 'hours'),
+  //   offset: duration(30, 'minutes')
+  // },
   {
     // Fun Dirt Sprint Cars
     seriesId: 303,
