@@ -5,6 +5,7 @@ import { bindActionCreators } from 'redux';
 import { Slider } from '@blueprintjs/core';
 import { withTranslation } from 'react-i18next';
 import 'firebase/auth';
+import classNames from 'classnames';
 import { updateSetting } from './actions/settings';
 import BuyACoffee from './components/BuyACoffee';
 
@@ -28,7 +29,6 @@ import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 import '@blueprintjs/core/lib/css/blueprint.css';
 import PurchaseGuideModal from './components/modal/PurchaseGuideModal';
 
-import 'bootstrap-sass';
 import { languages } from './i18n';
 
 const seasonLengthDays = seasonEnd.diff(seasonStart, 'days');
@@ -53,6 +53,14 @@ export class App extends Component {
     currentModal: null,
     user: null,
   };
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      languageDropdown: false,
+    };
+  }
 
   componentDidMount() {
     this.props.startListener();
@@ -182,6 +190,13 @@ export class App extends Component {
     );
   }
 
+  getToggleLangDropdownHandler() {
+    return (e) => {
+      e.preventDefault();
+      this.setState((prevState) => ({ languageDropdown: !prevState.languageDropdown }));
+    };
+  }
+
   render() {
     const {
       date, dateDays, week, t, i18n, user, signOut,
@@ -191,6 +206,8 @@ export class App extends Component {
       filters, favouriteSeries, favouriteCars, favouriteTracks,
       columns, sort, ownedCars, ownedTracks,
     } = this.props.settings;
+
+    const { languageDropdown } = this.state;
 
     return (
       <div>
@@ -236,20 +253,29 @@ export class App extends Component {
                   {t('Sign in')}
                 </a></li>
               )}
-              <li className="dropdown">
-                <a href="" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                   aria-expanded="false">{languages[i18n.language].flag} <span className="caret" /></a>
+              <li className={classNames({ dropdown: true, open: languageDropdown })}>
+                <button
+                  type="button"
+                  onClick={this.getToggleLangDropdownHandler()}
+                  className="btn btn-link"
+                >
+                  {languages[i18n.language].flag}
+                  <span className="caret" />
+                </button>
                 <ul className="dropdown-menu">
                   {Object.entries(languages).map(([code, language]) => (
                     <li key={code}>
-                      <a href="" onClick={this.getSwitchLanguageHandler(code)}>
-                        {language.flag} {language.name}
-                      </a>
+                      <button type="button" className="btn btn-link" onClick={this.getSwitchLanguageHandler(code)}>
+                        {language.flag}
+                        {language.name}
+                      </button>
                     </li>
                   ))}
                   <li>
                     <a
                       href="https://github.com/tmoitie/iRacing-week-planner/blob/master/Translate.md"
+                      target="_blank"
+                      rel="noreferrer"
                     >
                       Help me translate!
                     </a>

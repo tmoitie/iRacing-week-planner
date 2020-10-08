@@ -10,11 +10,7 @@
     "node": true
   },
   "rules": {
-    "react/jsx-no-bind": 0,
-    "jsx-quotes": [2,  "prefer-single"],
-    "comma-dangle": 0,
-    "no-use-before-define": 0,
-    "consistent-return": 0,
+    "react/jsx-filename-extension": [0],
     "max-len": [1, 120]
   },
   "plugins": [
