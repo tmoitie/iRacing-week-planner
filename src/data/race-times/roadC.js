@@ -26,19 +26,14 @@ export default [
     offset: duration(90, 'minutes'),
   },
   {
-    // IndyCar Road
-    seriesId: 133,
-    everyTime: duration(2, 'hours')
-  },
-  {
-    // Formula Renault 2.0
-    seriesId: 269,
-    everyTime: duration(2, 'hours'),
-    offset: duration(45, 'minutes')
-  },
-  {
     // V8 Supercar
-    seriesId: 88,
+    seriesId: 399,
+    everyTime: duration(2, 'hours'),
+    offset: duration(15, 'minutes'),
+  },
+  {
+    // V8 Supercar Aussie
+    seriesId: 405,
     everyTime: duration(2, 'hours'),
     offset: duration(15, 'minutes'),
   },
@@ -54,14 +49,14 @@ export default [
     everyTime: duration(2, 'hours'),
     offset: duration(105, 'minutes')
   },
+  // {
+  //   // Star Mazda
+  //   seriesId: 44,
+  //   // everyTime: duration(2, 'hours'),
+  //   // offset: duration(105, 'minutes'),
+  // },
   {
-    // Star Mazda
-    seriesId: 44,
-    everyTime: duration(2, 'hours'),
-    offset: duration(105, 'minutes'),
-  },
-  {
-    // Leo Bodnar ProtoGT
+    // Fanatec GT
     seriesId: 278,
     everyTime: duration(120, 'minutes'),
     offset: duration(105, 'minutes')
@@ -72,16 +67,16 @@ export default [
     everyTime: duration(120, 'minutes'),
     offset: duration(60, 'minutes')
   },
-  {
-    // ROAR
-    seriesId: 297,
-    setTimes: [
-      duration({ days: 5, hours: 2 }), // Sun 2am
-      duration({ days: 5, hours: 13 }), // Sun 1pm
-      duration({ days: 5, hours: 17 }), // Sun 5pm
-      duration({ days: 6, hours: 14 }) // Mon 2pm
-    ]
-  },
+  // {
+  //   // ROAR
+  //   seriesId: 297,
+  //   // setTimes: [
+  //   //   duration({ days: 5, hours: 2 }), // Sun 2am
+  //   //   duration({ days: 5, hours: 13 }), // Sun 1pm
+  //   //   duration({ days: 5, hours: 17 }), // Sun 5pm
+  //   //   duration({ days: 6, hours: 14 }) // Mon 2pm
+  //   // ]
+  // },
   {
     // Dallara F3
     seriesId: 358,
@@ -123,20 +118,46 @@ export default [
     everyTime: duration(120, 'minutes'),
     offset: duration(60, 'minutes'),
   },
+  // {
+  //   // Bathurst 1000 AU
+  //   seriesId: 423,
+  //   weekEndOffset: duration({ days: 7 }),
+  //   setTimes: [
+  //     duration({ days: 4, hours: 1 }), // Sat 01:00 GMT
+  //   ]
+  // },
+  // {
+  //   // Bathurst 1000 US
+  //   seriesId: 422,
+  //   weekEndOffset: duration({ days: 7 }),
+  //   setTimes: [
+  //     duration({ days: 4, hours: 13 }), // Sat 13:00 GMT
+  //   ]
+  // },
   {
-    // Bathurst 1000 AU
-    seriesId: 423,
-    weekEndOffset: duration({ days: 7 }),
+    // IMSA Triple Crown
+    seriesId: 425,
     setTimes: [
-      duration({ days: 4, hours: 1 }), // Sat 01:00 GMT
-    ]
+      duration({ days: 5, hours: 18 }), // Sun 18:00 GMT
+    ],
+    offWeeks: [1.1, 2.1],
   },
   {
-    // Bathurst 1000 US
-    seriesId: 422,
-    weekEndOffset: duration({ days: 7 }),
-    setTimes: [
-      duration({ days: 4, hours: 13 }), // Sat 13:00 GMT
-    ]
+    // IMSA Michelin Pilot
+    seriesId: 386,
+    everyTime: duration(120, 'minutes'),
+    offset: duration(15, 'minutes'),
+  },
+  {
+    // IMSA
+    seriesId: 227,
+    everyTime: duration(2, 'hours'),
+    offset: duration(45, 'minutes'),
+  },
+  {
+    // Pro 2000
+    seriesId: 414,
+    everyTime: duration(2, 'hours'),
+    offset: duration(0, 'minutes'),
   },
 ];

@@ -55,6 +55,9 @@ export default [
   {
     // eNASCAR Coca-Cola Series
     seriesId: 402,
+    setTimes: [
+      duration({ days: 1, hours: 0, minutes: 30 }), // Wed 12:30am
+    ],
     weekStartOffset: duration({ days: 6 }),
     // weekEndOffset: duration({ days: 7 }),
     offWeeks: [1.1, 2.1, 2.2, 3.1, 4.1, 5.1, 6.1, 7.1, 8.1, 8.2, 8.3, 8.4, 9.1, 10.1, 11.1, 12.1, 13.1, 13.2],
@@ -63,6 +66,9 @@ export default [
     // Porsche TAG Heuer Esports Supercup
     seriesId: 409,
     weekEndOffset: duration({ days: 7 }),
+    setTimes: [
+      duration({ days: 4, hours: 13, minutes: 45 }), // Sat 1:45pm
+    ],
     offWeeks: [
       2.1, 3.1, 3.1, 3.1, 4.1, 5.1, 6.1, 7.1, 8.1, 10.1, 10.1, 11.1,
     ],

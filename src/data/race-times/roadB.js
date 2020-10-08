@@ -2,7 +2,7 @@ import { duration } from 'moment';
 
 export default [
   {
-    // Blancpain Sprint
+    // VRS Sprint
     seriesId: 228,
     everyTime: duration(2, 'hours'),
     offset: duration(0, 'minutes'),
@@ -12,12 +12,6 @@ export default [
     seriesId: 65,
     everyTime: duration(2, 'hours'),
     offset: duration(30, 'minutes'),
-  },
-  {
-    // IMSA
-    seriesId: 227,
-    everyTime: duration(2, 'hours'),
-    offset: duration(45, 'minutes'),
   },
   {
     // Le Mans
@@ -50,5 +44,11 @@ export default [
       duration({ days: 4, hours: 18 }),  // Sat 6pm
       duration({ days: 5, hours: 14 }),  // Sun 2pm
     ],
+  },
+  {
+    // IndyCar Road
+    seriesId: 133,
+    everyTime: duration(2, 'hours'),
+    offset: duration(0, 'minutes'),
   },
 ];

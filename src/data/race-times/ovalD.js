@@ -8,7 +8,7 @@ export default [
     offset: duration(15, 'minutes')
   },
   {
-    // National
+    // ARCA
     seriesId: 167,
     everyTime: duration(1, 'hours'),
     offset: duration(45, 'minutes'),
