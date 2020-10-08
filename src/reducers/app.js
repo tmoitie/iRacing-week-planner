@@ -1,5 +1,5 @@
-import { CHANGE_MODAL, UPDATE_DAYS } from '../actions/app';
 import moment, { duration } from 'moment';
+import { CHANGE_MODAL, UPDATE_DAYS } from '../actions/app';
 import { SIGNED_IN } from '../actions/auth';
 import { seasonStart, weekSeasonStart } from '../config';
 

@@ -1,10 +1,25 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import { useTranslation } from 'react-i18next';
-import Modal from '../modal/Modal';
-import moment from 'moment';
+// @flow
 
-export default function NextRace({ race }) {
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import moment from 'moment';
+import Modal from '../modal/Modal';
+import styles from './columns.scss';
+
+type Props = {
+  race: {
+    series: string,
+    raceTimes?: {
+      setTimes?: Array<moment.Duration>,
+      everyTime?: moment.Duration,
+      offset?: moment.Duration,
+    },
+  },
+};
+
+console.log(styles);
+
+export default function NextRace({ race }: Props) {
   const [modalOpen, setModalOpen] = useState(false);
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
@@ -18,16 +33,17 @@ export default function NextRace({ race }) {
     const weekStart = moment().utc().startOf('week').add(2, 'days');
 
     return (
-      <td onClick={openModal} className='clickable-cell'>
-        {t('Set Times')}
-
+      <td className={styles.clickableCell}>
+        <button type="button" className={styles.cellButton} onClick={openModal} onKeyPress={openModal}>
+          {t('Set Times')}
+        </button>
         <Modal
           isOpen={modalOpen}
           onClose={closeModal}
           title={t('Set times for {{series}}', { series: t(race.series) })}
           doneAction={closeModal}
         >
-          <div className='container-fluid'>
+          <div className="container-fluid">
             <ul>
               {race.raceTimes.setTimes.map(
                 (time) => (
@@ -37,7 +53,7 @@ export default function NextRace({ race }) {
                       timeUtc: moment(weekStart).add(time).utc().toDate(),
                     })}
                   </li>
-                )
+                ),
               )}
             </ul>
           </div>
@@ -52,7 +68,8 @@ export default function NextRace({ race }) {
         <div>
           {t('Every {{every}} starting at {{time, H:mm}} UTC', {
             every: race.raceTimes.everyTime.humanize().replace(/an?\s/, ''),
-            time: moment().utc().startOf('day').add(race.raceTimes.offset).toDate(),
+            time: moment().utc().startOf('day').add(race.raceTimes.offset)
+              .toDate(),
           })}
         </div>
       </td>
@@ -61,7 +78,3 @@ export default function NextRace({ race }) {
 
   return <td>{t('No time data')}</td>;
 }
-
-NextRace.propTypes = {
-  race: PropTypes.object.isRequired,
-};

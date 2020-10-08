@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/columns/RaceTimes renders everytime 1`] = `
+<td>
+  <div>
+    Every 3 hours starting at 2:30 UTC
+  </div>
+</td>
+`;
+
+exports[`components/columns/RaceTimes renders no time data 1`] = `
+<td>
+  No time data
+</td>
+`;
+
+exports[`components/columns/RaceTimes renders settimes 1`] = `
+<td
+  className="clickable-cell"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  Set Times
+  <WithoutTranslationModal
+    doneAction={[Function]}
+    doneButtonText="Close"
+    isOpen={false}
+    onClose={[Function]}
+    showFooter={true}
+    t={[Function]}
+    title="Set times for Mazda Cup"
+  >
+    <div
+      className="container-fluid"
+    >
+      <ul>
+        <li
+          key="266400000"
+        >
+          Fri 3:00am (Fri 3:00am )
+        </li>
+        <li
+          key="392400000"
+        >
+          Sat 2:00pm (Sat 2:00pm )
+        </li>
+      </ul>
+    </div>
+  </WithoutTranslationModal>
+</td>
+`;
+
+exports[`components/columns/RaceTimes renders settimes 2`] = `
+<td
+  className="clickable-cell"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  Set Times
+  <WithoutTranslationModal
+    doneAction={[Function]}
+    doneButtonText="Close"
+    isOpen={true}
+    onClose={[Function]}
+    showFooter={true}
+    t={[Function]}
+    title="Set times for Mazda Cup"
+  >
+    <div
+      className="container-fluid"
+    >
+      <ul>
+        <li
+          key="266400000"
+        >
+          Fri 3:00am (Fri 3:00am )
+        </li>
+        <li
+          key="392400000"
+        >
+          Sat 2:00pm (Sat 2:00pm )
+        </li>
+      </ul>
+    </div>
+  </WithoutTranslationModal>
+</td>
+`;
+
+exports[`components/columns/RaceTimes renders settimes 3`] = `
+<td
+  className="clickable-cell"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  Set Times
+  <WithoutTranslationModal
+    doneAction={[Function]}
+    doneButtonText="Close"
+    isOpen={false}
+    onClose={[Function]}
+    showFooter={true}
+    t={[Function]}
+    title="Set times for Mazda Cup"
+  >
+    <div
+      className="container-fluid"
+    >
+      <ul>
+        <li
+          key="266400000"
+        >
+          Fri 3:00am (Fri 3:00am )
+        </li>
+        <li
+          key="392400000"
+        >
+          Sat 2:00pm (Sat 2:00pm )
+        </li>
+      </ul>
+    </div>
+  </WithoutTranslationModal>
+</td>
+`;

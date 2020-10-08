@@ -1,0 +1,14 @@
+:global(.table > tbody > tr) .clickableCell {
+  padding: 0;
+
+  .cellButton {
+    padding: 8px;
+    width: 100%;
+    text-align: left;
+    appearance: none;
+    display: block;
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+  }
+}

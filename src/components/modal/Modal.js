@@ -6,7 +6,7 @@ import BaseModal from './BaseModal';
 
 import './styles/modal.scss';
 
-export class Modal extends Component {
+export class WithoutTranslationModal extends Component {
   static propTypes = {
     isOpen: PropTypes.bool.isRequired,
     onClose: PropTypes.func,
@@ -83,4 +83,4 @@ export class Modal extends Component {
   }
 }
 
-export default withTranslation()(Modal);
+export default withTranslation()(WithoutTranslationModal);

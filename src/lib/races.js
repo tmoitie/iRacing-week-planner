@@ -11,15 +11,20 @@ function getStartOfWeek(date) {
   return moment(date).subtract(1, 'days').startOf('isoWeek').add(1, 'days');
 }
 
-export function getNextRace(date: moment.Moment, race): ?moment.Moment {
-  const raceTimes = raceTimesById[race.seriesId] || {};
+export type TimeableRace = {
+  seriesId: number,
+  everyTime?: moment.Duration,
+  offset?: moment.Duration,
+  setTimes?: Array<moment.Duration>,
+}
 
+export function getNextRace(date: moment.Moment, race: TimeableRace): ?moment.Moment {
   if (race.everyTime) {
-    return getNextRaceFromRecur(date, raceTimes.everyTime, raceTimes.offset);
+    return getNextRaceFromRecur(date, race.everyTime, race.offset);
   }
 
   if (race.setTimes) {
-    return getNextRaceSetTimes(date, raceTimes.setTimes);
+    return getNextRaceSetTimes(date, race.setTimes);
   }
 
   return null;
