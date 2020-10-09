@@ -60,6 +60,7 @@ export class App extends Component {
     this.state = {
       languageDropdown: false,
     };
+    this.dropdownRef = React.createRef();
   }
 
   componentDidMount() {
@@ -84,6 +85,7 @@ export class App extends Component {
   getSwitchLanguageHandler(language) {
     return (e) => {
       e.preventDefault();
+      this.setState({ languageDropdown: false });
       this.props.i18n.changeLanguage(language);
     }
   }
@@ -197,6 +199,15 @@ export class App extends Component {
     };
   }
 
+  getClickEventHandler() {
+    return (e) => {
+      const { languageDropdown } = this.state;
+      if (!this.dropdownRef.current.contains(e.target) && languageDropdown === true) {
+        this.setState({ languageDropdown: false });
+      }
+    };
+  }
+
   render() {
     const {
       date, dateDays, week, t, i18n, user, signOut,
@@ -210,7 +221,7 @@ export class App extends Component {
     const { languageDropdown } = this.state;
 
     return (
-      <div>
+      <div onMouseDown={this.getClickEventHandler()}>
         <nav className='navbar navbar-inverse'>
           <div className='container-fluid'>
             <div className='navbar-header'>
@@ -254,21 +265,20 @@ export class App extends Component {
                 </a></li>
               )}
               <li className={classNames({ dropdown: true, open: languageDropdown })}>
-                <button
-                  type="button"
+                <a
+                  href=""
                   onClick={this.getToggleLangDropdownHandler()}
-                  className="btn btn-link"
                 >
                   {languages[i18n.language].flag}
                   <span className="caret" />
-                </button>
-                <ul className="dropdown-menu">
+                </a>
+                <ul className="dropdown-menu" ref={this.dropdownRef}>
                   {Object.entries(languages).map(([code, language]) => (
                     <li key={code}>
-                      <button type="button" className="btn btn-link" onClick={this.getSwitchLanguageHandler(code)}>
+                      <a href="" onClick={this.getSwitchLanguageHandler(code)}>
                         {language.flag}
                         {language.name}
-                      </button>
+                      </a>
                     </li>
                   ))}
                   <li>

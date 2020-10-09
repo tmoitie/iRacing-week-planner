@@ -17,19 +17,13 @@ type Props = {
   },
 };
 
-console.log(styles);
-
 export default function NextRace({ race }: Props) {
   const [modalOpen, setModalOpen] = useState(false);
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
   const { t } = useTranslation();
 
-  if (race.raceTimes === null) {
-    return <td>{t('No time data')}</td>;
-  }
-
-  if (race.raceTimes.setTimes) {
+  if (race.raceTimes && race.raceTimes.setTimes) {
     const weekStart = moment().utc().startOf('week').add(2, 'days');
 
     return (
@@ -62,7 +56,7 @@ export default function NextRace({ race }: Props) {
     );
   }
 
-  if (race.raceTimes.everyTime) {
+  if (race.raceTimes && race.raceTimes.everyTime) {
     return (
       <td>
         <div>

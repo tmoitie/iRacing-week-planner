@@ -7,3 +7,9 @@ exports[`components/columns/NextRace renders correctly 1`] = `
   </div>
 </td>
 `;
+
+exports[`components/columns/NextRace renders no time data 1`] = `
+<td>
+  No time data
+</td>
+`;

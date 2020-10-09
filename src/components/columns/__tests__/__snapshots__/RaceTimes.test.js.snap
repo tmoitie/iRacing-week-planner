@@ -16,11 +16,16 @@ exports[`components/columns/RaceTimes renders no time data 1`] = `
 
 exports[`components/columns/RaceTimes renders settimes 1`] = `
 <td
-  className="clickable-cell"
-  onClick={[Function]}
-  onKeyPress={[Function]}
+  className="clickableCell"
 >
-  Set Times
+  <button
+    className="cellButton"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    type="button"
+  >
+    Set Times
+  </button>
   <WithoutTranslationModal
     doneAction={[Function]}
     doneButtonText="Close"
@@ -52,15 +57,20 @@ exports[`components/columns/RaceTimes renders settimes 1`] = `
 
 exports[`components/columns/RaceTimes renders settimes 2`] = `
 <td
-  className="clickable-cell"
-  onClick={[Function]}
-  onKeyPress={[Function]}
+  className="clickableCell"
 >
-  Set Times
+  <button
+    className="cellButton"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    type="button"
+  >
+    Set Times
+  </button>
   <WithoutTranslationModal
     doneAction={[Function]}
     doneButtonText="Close"
-    isOpen={true}
+    isOpen={false}
     onClose={[Function]}
     showFooter={true}
     t={[Function]}
@@ -88,11 +98,16 @@ exports[`components/columns/RaceTimes renders settimes 2`] = `
 
 exports[`components/columns/RaceTimes renders settimes 3`] = `
 <td
-  className="clickable-cell"
-  onClick={[Function]}
-  onKeyPress={[Function]}
+  className="clickableCell"
 >
-  Set Times
+  <button
+    className="cellButton"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    type="button"
+  >
+    Set Times
+  </button>
   <WithoutTranslationModal
     doneAction={[Function]}
     doneButtonText="Close"

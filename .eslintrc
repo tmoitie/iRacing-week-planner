@@ -2,7 +2,8 @@
   "parser": "babel-eslint",
   "extends": [
     "airbnb",
-    "plugin:flowtype/recommended"
+    "plugin:flowtype/recommended",
+    "plugin:jest/recommended"
   ],
   "env": {
     "browser": true,
@@ -11,7 +12,13 @@
   },
   "rules": {
     "react/jsx-filename-extension": [0],
-    "max-len": [1, 120]
+    "max-len": [1, 120],
+    "object-curly-newline": ["error", {
+      "ObjectExpression": { "minProperties": 12, "multiline": true, "consistent": true },
+      "ObjectPattern": { "minProperties": 12, "multiline": true, "consistent": true },
+      "ImportDeclaration": { "minProperties": 12, "multiline": true, "consistent": true },
+      "ExportDeclaration": { "minProperties": 12, "multiline": true, "consistent": true }
+    }]
   },
   "plugins": [
     "react",
