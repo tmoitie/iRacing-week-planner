@@ -27,7 +27,7 @@ export default {
     'Content': 'Contenu',
     'Owned cars only': 'Voitures possédées seulement',
     'Owned tracks only': 'Circuits possédés seulement',
-    'Favorite series only': 'Séries favories seulement',
+    'Favorite series only': 'Séries favorites seulement',
     'Favorite cars only': 'Voitures favories seulement',
     'Favorite tracks only': 'Circuits favoris seulement',
     'Reset filters': 'Remettre les filtres à 0',
