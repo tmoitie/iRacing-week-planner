@@ -56,7 +56,7 @@ export default {
     'Select all': 'Sélectionner tout',
     'Select all oval': 'Sélectionner tous les ovales',
     'Select all road': 'Sélectionner tous les routiers',
-    'Choose favorite series': 'Sélectionner les séries favories',
+    'Choose favorite series': 'Sélectionner les séries favorites',
     'Close': 'Fermer',
     'Contributors': 'Contributeurs',
     'Changelog': 'Journal des modifications',
