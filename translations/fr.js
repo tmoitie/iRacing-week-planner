@@ -4,7 +4,7 @@ export default {
     'Purchase guide': 'Guide d\'achats',
     'Set my tracks': 'Circuits possédés',
     'Set my cars': 'Voitures possédées',
-    'Set favorite series': 'Séries favories',
+    'Set favorite series': 'Séries favorites',
     'Options': 'Options',
     'About': 'A propos',
     'Week {{week}}': 'Semaine {{week}}',
