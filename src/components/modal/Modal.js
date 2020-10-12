@@ -1,86 +1,94 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { withTranslation } from 'react-i18next';
+// @flow
+
+import * as React from 'react';
+import { useTranslation } from 'react-i18next';
+import RemoveIcon from '../icon/RemoveIcon';
 
 import BaseModal from './BaseModal';
 
 import './styles/modal.scss';
 
-export class WithoutTranslationModal extends Component {
-  static propTypes = {
-    isOpen: PropTypes.bool.isRequired,
-    onClose: PropTypes.func,
-    children: PropTypes.node,
-    className: PropTypes.string,
-    title: PropTypes.string.isRequired,
-    doneAction: PropTypes.func,
-    doneButtonText: PropTypes.string,
-    t: PropTypes.func.isRequired,
-    showFooter: PropTypes.bool,
-  };
+import styles from '../../styles/main.scss';
 
-  static defaultProps = {
-    isOpen: false,
-    onClose: () => {},
-    doneAction: () => {},
-    doneButtonText: 'Close',
-    showFooter: true,
-  };
+type Props = {
+  children: React.node,
+  title: string,
+  isOpen?: boolean,
+  onClose?: () => void,
+  doneButtonText?: string,
+  showFooter?: boolean,
+  doneAction?: () => void,
+};
 
-  constructor(props) {
-    super(props);
+const defaultProps = {
+  isOpen: false,
+  onClose: () => {},
+  doneAction: () => {},
+  doneButtonText: 'Close',
+  showFooter: true,
+};
 
-    this.escapeModal = this.escapeModal.bind(this);
-  }
+export default function Modal({
+  children,
+  title,
+  isOpen,
+  onClose,
+  doneButtonText,
+  showFooter,
+  doneAction,
+}: Props): React.Node {
+  const { t } = useTranslation();
 
-  componentDidMount() {
-    document.addEventListener('keyup', this.escapeModal);
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener('keyup', this.escapeModal);
-  }
-
-  escapeModal(e) {
-    if (e.keyCode === 27) {
-      this.close(e);
-    }
-  }
-
-  close(e) {
+  const close = (e) => {
     e.preventDefault();
     e.stopPropagation();
 
-    this.props.onClose(e);
-  }
+    onClose(e);
+  };
 
-  clickDone(e) {
+  const clickDone = (e) => {
     e.preventDefault();
     e.stopPropagation();
 
-    this.props.doneAction(e);
-  }
+    doneAction();
+  };
 
-  render() {
-    const { children, title, isOpen, onClose, doneButtonText, t, showFooter } = this.props;
+  React.useEffect(() => {
+    const escapeModal = (e) => {
+      if (e.keyCode === 27) {
+        onClose();
+      }
+    };
 
-    return (<BaseModal isOpen={isOpen} onRequestClose={onClose}>
-      <div className='modal-content'>
-        <div className='modal-header'>
-          <button type='button' className='close' onClick={this.close.bind(this)}>
-            <span className='glyphicon glyphicon-remove' />
+    document.addEventListener('keydown', escapeModal);
+
+    return () => {
+      document.removeEventListener('keydown', escapeModal);
+    };
+  }, []);
+
+  return (
+    <BaseModal isOpen={isOpen} onRequestClose={onClose}>
+      <div className={styles['modal-content']}>
+        <div className={styles['modal-header']}>
+          <button type="button" className={styles.close} onClick={close}>
+            <RemoveIcon />
           </button>
-          <h4 className='modal-title'>{title}</h4>
+          <h4 className={styles['modal-title']}>{title}</h4>
         </div>
-        <div className='modal-body' style={{ maxHeight: '55vh', overflowY: 'auto' }}>
+        <div className={styles['modal-body']} style={{ maxHeight: '55vh', overflowY: 'auto' }}>
           {children}
         </div>
-        {showFooter && <div className='modal-footer'>
-          <button type='button' className='btn btn-primary' onClick={this.clickDone.bind(this)}>{t(doneButtonText)}</button>
-        </div>}
+        {showFooter && (
+          <div className={styles['modal-footer']}>
+            <button type="button" className={`${styles.btn} ${styles['btn-primary']}`} onClick={clickDone}>
+              {t(doneButtonText)}
+            </button>
+          </div>
+        )}
       </div>
-    </BaseModal>);
-  }
+    </BaseModal>
+  );
 }
 
-export default withTranslation()(WithoutTranslationModal);
+Modal.defaultProps = defaultProps;

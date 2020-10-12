@@ -1,19 +1,31 @@
-import React, { Component, useState } from 'react';
-import PropTypes from 'prop-types';
-import { useTranslation } from 'react-i18next';
-import SeriesModal from '../modal/SeriesModal';
+// @flow
 
-export default function Series({ race, favouriteSeries, ownedTracks }) {
-  const [modalOpen, setModalOpen] = useState(false);
+import * as React from 'react';
+import { useTranslation } from 'react-i18next';
+import StarIcon from '../icon/StarIcon';
+import SeriesModal from '../modal/SeriesModal';
+import raceListingStyles from '../styles/raceListing.scss';
+
+type Props = {
+  race: {
+    seriesId: number,
+    series: string,
+  },
+  favouriteSeries: Array<number>,
+  ownedTracks: Array<number>,
+};
+
+export default function Series({ race, favouriteSeries, ownedTracks }: Props) {
+  const [modalOpen, setModalOpen] = React.useState(false);
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
   const { t } = useTranslation();
 
   return (
-    <td className='clickable-cell' onClick={openModal}>
+    <td className={raceListingStyles.clickableCell} onClick={openModal}>
       <div>
         {favouriteSeries.indexOf(race.seriesId) !== -1 ? (
-          <span className='glyphicon glyphicon-star' />
+          <StarIcon />
         ) : null}
 
         <span> </span>
@@ -25,9 +37,3 @@ export default function Series({ race, favouriteSeries, ownedTracks }) {
     </td>
   );
 }
-
-Series.propTypes = {
-  race: PropTypes.object.isRequired,
-  favouriteSeries: PropTypes.array.isRequired,
-  ownedTracks: PropTypes.array.isRequired
-};

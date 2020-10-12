@@ -2,8 +2,9 @@
 
 exports[`components/BuyACoffee renders correctly 1`] = `
 <a
-  className="bmc-button"
+  className="bmcButton"
   href="https://www.buymeacoffee.com/tmoitie"
+  rel="noreferrer"
   target="_blank"
 >
   <img

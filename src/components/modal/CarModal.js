@@ -1,13 +1,27 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// @flow
+
+import * as React from 'react';
 import { useTranslation } from 'react-i18next';
-import Modal from './Modal';
 import classnames from 'classnames';
+import StarIcon from '../icon/StarIcon';
+import Modal from './Modal';
+
+import raceListingStyles from '../styles/raceListing.scss';
 
 import allCars from '../../data/cars.json';
+import styles from '../../styles/main.scss';
 
-export default function CarModal({ onClose, ownedCars, favouriteCars, isOpen, carIds, seriesName }) {
-  const cars = allCars.filter(car => carIds.includes(car.sku));
+type Props = {
+  onClose: () => void,
+  isOpen: boolean,
+  ownedCars: Array<number>,
+  favouriteCars: Array<number>,
+  carIds: Array<number>,
+  seriesName: string,
+};
+
+export default function CarModal({ onClose, ownedCars, favouriteCars, isOpen, carIds, seriesName }: Props) {
+  const cars = allCars.filter((car) => carIds.includes(car.sku));
   const { t } = useTranslation();
 
   return (
@@ -19,27 +33,28 @@ export default function CarModal({ onClose, ownedCars, favouriteCars, isOpen, ca
       })}
       doneAction={onClose}
     >
-      <div className='container-fluid'>
-        <div className='table-responsive'>
-          <table className='table' style={{ fontSize: '0.8em' }}>
+      <div className={styles['container-fluid']}>
+        <div className={styles['table-responsive']}>
+          <table className={styles.table} style={{ fontSize: '0.8em' }}>
             <thead>
               <tr>
                 <th>{t('Car')}</th>
               </tr>
             </thead>
             <tbody>
-              {cars.map((car, index) => (
+              {cars.map((car) => (
                 <tr
-                  key={index}
+                  key={car}
                   className={classnames({
-                  success: ownedCars.includes(car.sku),
-                  'clickable-cell': true
-                })}
+                    success: ownedCars.includes(car.sku),
+                    [raceListingStyles.clickableCell]: true,
+                  })}
                 >
                   <td>
                     {favouriteCars.includes(car.sku) ? (
-                      <span className='glyphicon glyphicon-star' />
-                    ) : null}<span> </span>
+                      <StarIcon />
+                    ) : null}
+                    <span> </span>
                     {t(car.name)}
                   </td>
                 </tr>
@@ -51,21 +66,3 @@ export default function CarModal({ onClose, ownedCars, favouriteCars, isOpen, ca
     </Modal>
   );
 }
-
-CarModal.propTypes = {
-  onClose: PropTypes.func,
-  isOpen: PropTypes.bool.isRequired,
-  favouriteCars: PropTypes.array,
-  seriesName: PropTypes.string.isRequired,
-  ownedCars: PropTypes.array,
-  carIds: PropTypes.array,
-};
-
-CarModal.defaultProps = {
-  onClose: () => {},
-  isOpen: false,
-  favouriteCars: [],
-  ownedCars: [],
-  carIds: [],
-  seriesName: '',
-};

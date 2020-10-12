@@ -1,7 +1,9 @@
-import React, { useMemo } from 'react';
+// @flow
+
+import * as React from 'react';
 import moment from 'moment';
 import { useTranslation } from 'react-i18next';
-import type { filters } from '../reducers/settings';
+import type { filters as filtersType, sort as sortType } from '../reducers/settings';
 import SortArrow from './SortArrow';
 
 import allRaces from '../lib/races';
@@ -10,26 +12,24 @@ import sortRaces from '../lib/sortRaces';
 
 import availableColumns from '../data/availableColumns';
 
-import './styles/raceListing.scss';
-
-import type sort from '../reducers/settings';
+import styles from '../styles/main.scss';
+import raceListingStyles from './styles/raceListing.scss';
 
 type Props = {
   date: moment.Moment,
-  sort: sort,
-  filters: filters,
+  sort: sortType,
+  filters: filtersType,
   favouriteSeries: Array<number>,
   ownedTracks: Array<number>,
   ownedCars: Array<number>,
   favouriteCars: Array<number>,
   favouriteTracks: Array<number>,
   columnIds: Array<string>,
-  updateSort: (sort) => void,
-  t: (string) => string,
+  updateSort: (sortType) => void,
 };
 
 export default function RaceListing({
-  sort, updateSort, date, filters, favouriteSeries, ownedTracks, ownedCars, favouriteCars, favouriteTracks, columnIds
+  sort, updateSort, date, filters, favouriteSeries, ownedTracks, ownedCars, favouriteCars, favouriteTracks, columnIds,
 }: Props): React.Node {
   const { t } = useTranslation();
 
@@ -46,14 +46,14 @@ export default function RaceListing({
     updateSort(newSort);
   };
 
-  const dateFilteredRaces = useMemo(() => allRaces.filter(
-    (race) => moment(date).add(1, 'hour').isBetween(race.startTime, race.endTime)
+  const dateFilteredRaces = React.useMemo(() => allRaces.filter(
+    (race) => moment(date).add(1, 'hour').isBetween(race.startTime, race.endTime),
   ), [date]);
 
-  const sortedRaces = useMemo(() => sortRaces(sort, dateFilteredRaces), [sort, dateFilteredRaces]);
+  const sortedRaces = React.useMemo(() => sortRaces(sort, dateFilteredRaces), [sort, dateFilteredRaces]);
 
-  const filteredRaces = useMemo(() => filterRaces({
-    races: sortedRaces, filters, ownedTracks, ownedCars, favouriteSeries, favouriteCars, favouriteTracks
+  const filteredRaces = React.useMemo(() => filterRaces({
+    races: sortedRaces, filters, ownedTracks, ownedCars, favouriteSeries, favouriteCars, favouriteTracks,
   }), [sortedRaces, filters, ownedTracks, ownedCars, favouriteSeries, favouriteCars, favouriteTracks]);
 
   if (filters.favouriteSeries && filteredRaces.length === 0) {
@@ -71,35 +71,40 @@ export default function RaceListing({
   const columns = availableColumns.filter((column) => columnIds.indexOf(column.id) !== -1);
 
   return (
-    <div className='table-responsive race-listing'>
-      <table className='table' style={{ fontSize: '0.8em' }}>
+    <div className={`${styles['table-responsive']} ${raceListingStyles.raceListing}`}>
+      <table className={styles.table} style={{ fontSize: '0.8em' }}>
         <thead>
-        <tr>
-          {columns.map((column, colNum) => (
-            <th
-              key={colNum}
-              id={`raceListing-th-${column.id}`}
-              onClick={column.sort ? getSortColumnHandler(column.id) : () => {}}
-              className={column.sort ? 'clickable-cell' : null}
-            >
-              {t(column.header)}
-              <span> </span>
-              {sort.key === column.id ? <SortArrow sort={sort} /> : null}
-            </th>
-          ))}
-        </tr>
-        </thead>
-        <tbody>
-        {filteredRaces.map((race, index) => (
-          <tr key={index}>
-            {columns.map((column, colNum) => (
-              <column.component
-                key={colNum} race={race} ownedCars={ownedCars} favouriteCars={favouriteCars} ownedTracks={ownedTracks}
-                favouriteTracks={favouriteTracks} favouriteSeries={favouriteSeries}
-              />
+          <tr>
+            {columns.map((column) => (
+              <th
+                key={column.id}
+                id={`raceListing-th-${column.id}`}
+                onClick={column.sort ? getSortColumnHandler(column.id) : () => {}}
+                className={column.sort ? raceListingStyles.clickableCell : null}
+              >
+                {t(column.header)}
+                <span> </span>
+                {sort.key === column.id ? <SortArrow sort={sort} /> : null}
+              </th>
             ))}
           </tr>
-        ))}
+        </thead>
+        <tbody>
+          {filteredRaces.map((race) => (
+            <tr key={race.seriesId}>
+              {columns.map((column) => (
+                <column.component
+                  key={column.id}
+                  race={race}
+                  ownedCars={ownedCars}
+                  favouriteCars={favouriteCars}
+                  ownedTracks={ownedTracks}
+                  favouriteTracks={favouriteTracks}
+                  favouriteSeries={favouriteSeries}
+                />
+              ))}
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>

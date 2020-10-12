@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/LicenceLevel renders effective licence 1`] = `
+<div
+  className="licenceLevelComponent licenceC"
+>
+  <span
+    className="licenceLetter"
+  >
+    C
+  </span>
+  <span
+    className="licenceText"
+  />
+</div>
+`;
+
+exports[`components/LicenceLevel renders for Pro 1`] = `
+<div
+  className="licenceLevelComponent licenceP"
+>
+  <span
+    className="licenceLetter"
+  >
+    P
+  </span>
+  <span
+    className="licenceText"
+  >
+    1.00
+  </span>
+</div>
+`;
+
+exports[`components/LicenceLevel renders for float levels 1`] = `
+<div
+  className="licenceLevelComponent licenceD"
+>
+  <span
+    className="licenceLetter"
+  >
+    D
+  </span>
+  <span
+    className="licenceText"
+  >
+    3.50
+  </span>
+</div>
+`;
+
+exports[`components/LicenceLevel renders for high D Class 1`] = `
+<div
+  className="licenceLevelComponent licenceD"
+>
+  <span
+    className="licenceLetter"
+  >
+    D
+  </span>
+  <span
+    className="licenceText"
+  >
+    4.00
+  </span>
+</div>
+`;
+
+exports[`components/LicenceLevel renders for other float levels 1`] = `
+<div
+  className="licenceLevelComponent licenceD"
+>
+  <span
+    className="licenceLetter"
+  >
+    D
+  </span>
+  <span
+    className="licenceText"
+  >
+    4.50
+  </span>
+</div>
+`;

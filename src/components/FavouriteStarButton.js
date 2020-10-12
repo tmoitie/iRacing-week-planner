@@ -3,18 +3,21 @@
 import * as React from 'react';
 import classnames from 'classnames';
 
+import styles from '../styles/main.scss';
+
 type Props = {
-  onClick: (newValue: boolean) => void,
-  enabled: boolean,
+  onClick?: (newValue: boolean) => void,
+  enabled?: boolean,
 };
 
 export default function FavouriteStarButton({ enabled, onClick }: Props): React.Node {
   return (
     <span
-      onClick={() => onClick(!enabled)} className={classnames({
-        glyphicon: true,
-        'glyphicon-star': enabled,
-        'glyphicon-star-empty': !enabled
+      onClick={() => onClick(!enabled)}
+      className={classnames({
+        [styles.glyphicon]: true,
+        [styles['glyphicon-star']]: enabled,
+        [styles['glyphicon-star-empty']]: !enabled
       })}
     />
   );
@@ -22,5 +25,5 @@ export default function FavouriteStarButton({ enabled, onClick }: Props): React.
 
 FavouriteStarButton.defaultProps = {
   enabled: false,
-  onClick: () => {}
+  onClick: () => {},
 };

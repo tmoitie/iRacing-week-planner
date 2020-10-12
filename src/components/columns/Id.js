@@ -1,7 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// @flow
 
-export default function Id({ race: { seriesId } }) {
+import * as React from 'react';
+
+type Props = {
+  race: {
+    seriesId: number,
+  }
+};
+
+export default function Id({ race: { seriesId } }: Props) {
   return (
     <td>
       <div>
@@ -10,7 +17,3 @@ export default function Id({ race: { seriesId } }) {
     </td>
   );
 }
-
-Id.propTypes = {
-  race: PropTypes.object.isRequired
-};

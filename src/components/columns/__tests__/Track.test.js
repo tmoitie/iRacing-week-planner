@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { describe, test } from '@jest/globals';
+import StarIcon from '../../icon/StarIcon';
 
 import { Track } from '../index';
 
@@ -18,7 +19,7 @@ describe('components/columns/Track', () => {
 
     expect(component).toMatchSnapshot();
     expect(component.find('.success').length).toBe(0);
-    expect(component.find('.glyphicon-star').length).toBe(0);
+    expect(component.find(StarIcon).length).toBe(0);
   });
 
   test('renders ownership', () => {
@@ -34,7 +35,7 @@ describe('components/columns/Track', () => {
 
     expect(component).toMatchSnapshot();
     expect(component.find('.success').length).toBe(1);
-    expect(component.find('.glyphicon-star').length).toBe(0);
+    expect(component.find(StarIcon).length).toBe(0);
   });
 
   test('renders favourite', () => {
@@ -50,6 +51,6 @@ describe('components/columns/Track', () => {
 
     expect(component).toMatchSnapshot();
     expect(component.find('.success').length).toBe(0);
-    expect(component.find('.glyphicon-star').length).toBe(1);
+    expect(component.find(StarIcon).length).toBe(1);
   });
 });

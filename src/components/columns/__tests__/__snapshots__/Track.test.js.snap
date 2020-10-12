@@ -5,9 +5,7 @@ exports[`components/columns/Track renders favourite 1`] = `
   className=""
 >
   <div>
-    <span
-      className="glyphicon glyphicon-star"
-    />
+    <StarIcon />
     <span>
        
     </span>

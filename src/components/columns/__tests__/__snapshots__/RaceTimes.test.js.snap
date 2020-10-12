@@ -26,13 +26,12 @@ exports[`components/columns/RaceTimes renders settimes 1`] = `
   >
     Set Times
   </button>
-  <WithoutTranslationModal
+  <Modal
     doneAction={[Function]}
     doneButtonText="Close"
     isOpen={false}
     onClose={[Function]}
     showFooter={true}
-    t={[Function]}
     title="Set times for Mazda Cup"
   >
     <div
@@ -51,7 +50,7 @@ exports[`components/columns/RaceTimes renders settimes 1`] = `
         </li>
       </ul>
     </div>
-  </WithoutTranslationModal>
+  </Modal>
 </td>
 `;
 
@@ -67,13 +66,12 @@ exports[`components/columns/RaceTimes renders settimes 2`] = `
   >
     Set Times
   </button>
-  <WithoutTranslationModal
+  <Modal
     doneAction={[Function]}
     doneButtonText="Close"
     isOpen={false}
     onClose={[Function]}
     showFooter={true}
-    t={[Function]}
     title="Set times for Mazda Cup"
   >
     <div
@@ -92,7 +90,7 @@ exports[`components/columns/RaceTimes renders settimes 2`] = `
         </li>
       </ul>
     </div>
-  </WithoutTranslationModal>
+  </Modal>
 </td>
 `;
 
@@ -108,13 +106,12 @@ exports[`components/columns/RaceTimes renders settimes 3`] = `
   >
     Set Times
   </button>
-  <WithoutTranslationModal
+  <Modal
     doneAction={[Function]}
     doneButtonText="Close"
     isOpen={false}
     onClose={[Function]}
     showFooter={true}
-    t={[Function]}
     title="Set times for Mazda Cup"
   >
     <div
@@ -133,6 +130,6 @@ exports[`components/columns/RaceTimes renders settimes 3`] = `
         </li>
       </ul>
     </div>
-  </WithoutTranslationModal>
+  </Modal>
 </td>
 `;

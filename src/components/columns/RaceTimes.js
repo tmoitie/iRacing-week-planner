@@ -1,29 +1,28 @@
 // @flow
 
-import React, { useState } from 'react';
+import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import moment from 'moment';
+import type { TimeableRace } from '../../lib/races';
 import Modal from '../modal/Modal';
 import styles from './columns.scss';
 
+import bootstrapStyles from '../../styles/main.scss';
+
 type Props = {
   race: {
+    ...TimeableRace,
     series: string,
-    raceTimes?: {
-      setTimes?: Array<moment.Duration>,
-      everyTime?: moment.Duration,
-      offset?: moment.Duration,
-    },
   },
 };
 
 export default function NextRace({ race }: Props) {
-  const [modalOpen, setModalOpen] = useState(false);
+  const [modalOpen, setModalOpen] = React.useState(false);
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
   const { t } = useTranslation();
 
-  if (race.raceTimes && race.raceTimes.setTimes) {
+  if (race.setTimes) {
     const weekStart = moment().utc().startOf('week').add(2, 'days');
 
     return (
@@ -37,9 +36,9 @@ export default function NextRace({ race }: Props) {
           title={t('Set times for {{series}}', { series: t(race.series) })}
           doneAction={closeModal}
         >
-          <div className="container-fluid">
+          <div className={bootstrapStyles['container-fluid']}>
             <ul>
-              {race.raceTimes.setTimes.map(
+              {race.setTimes.map(
                 (time) => (
                   <li key={time}>
                     {t('{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})', {
@@ -56,13 +55,13 @@ export default function NextRace({ race }: Props) {
     );
   }
 
-  if (race.raceTimes && race.raceTimes.everyTime) {
+  if (race.everyTime) {
     return (
       <td>
         <div>
           {t('Every {{every}} starting at {{time, H:mm}} UTC', {
-            every: race.raceTimes.everyTime.humanize().replace(/an?\s/, ''),
-            time: moment().utc().startOf('day').add(race.raceTimes.offset)
+            every: race.everyTime.humanize().replace(/an?\s/, ''),
+            time: moment().utc().startOf('day').add(race.offset)
               .toDate(),
           })}
         </div>

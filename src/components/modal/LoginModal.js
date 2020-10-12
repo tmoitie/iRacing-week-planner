@@ -11,12 +11,13 @@ import {
 } from '../../actions/auth';
 import ForgottenPasswordModal from './ForgottenPasswordModal';
 import Modal from './Modal';
+import styles from '../../styles/main.scss';
 
 function LoginModal({ isOpen, onClose, error, loading, signIn, createAccount, acknowledgeAuthError }) {
   const { t } = useTranslation();
-  const [ email, setEmail ] = useState('');
-  const [ password, setPassword ] = useState('');
-  const [ forgotPasswordModalOpen, setFPModalOpen ] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [forgotPasswordModalOpen, setFPModalOpen] = useState(false);
 
   const resetForm = () => {
     setEmail('');
@@ -39,45 +40,71 @@ function LoginModal({ isOpen, onClose, error, loading, signIn, createAccount, ac
 
   return (
     <Modal isOpen={isOpen} onClose={onClose} title={t('Sign in/Create account')} doneAction={onClose} showFooter={false}>
-      <div className='container-fluid'>
+      <div className={styles['container-fluid']}>
         <p>{t('Signing in will sync your settings across multiple browsers or devices.')}</p>
-        <p>{t('When you first sign in it will use your current settings to set up the account, but once an account is' +
-          ' set-up logging in will overwrite any settings you stored as a guest.')}</p>
+        <p>
+          {t('When you first sign in it will use your current settings to set up the account, but once an account is'
+          + ' set-up logging in will overwrite any settings you stored as a guest.')}
+        </p>
         {loading ? (
           <div>{t('Loading')}</div>
-        ): (
+        ) : (
           <form onSubmit={(e) => {
             e.preventDefault();
             signInClick();
-          }}>
+          }}
+          >
             {error && (
-              <div className="alert alert-warning alert-dismissible" role="alert">
-                <button type="button" aria-label="Close" onClick={acknowledgeAuthError} className="close"><span
-                  aria-hidden="true">&times;</span></button>
+              <div className={`${styles.alert} ${styles['alert-warning']} ${styles['alert-dismissible']}`} role="alert">
+                <button type="button" aria-label="Close" onClick={acknowledgeAuthError} className={styles.close}>
+                  <span
+                    aria-hidden="true"
+                  >
+                    &times;
+                  </span>
+                </button>
                 {t(error.message)}
               </div>
             )}
-            <div className="form-group">
+            <div className={styles['form-group']}>
               <label htmlFor="loginEmail">{t('Email address')}</label>
-              <input type="email" className="form-control" id="loginEmail" placeholder={t('Email address')}
-                     onChange={(e) => setEmail(e.target.value)} value={email} />
+              <input
+                type="email"
+                className={styles['form-control']}
+                id="loginEmail"
+                placeholder={t('Email address')}
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+              />
             </div>
-            <div className="form-group">
+            <div className={styles['form-group']}>
               <label htmlFor="loginPassword">{t('Password')}</label>
-              <input type="password" className="form-control" id="loginPassword" placeholder={t('Password')}
-                     onChange={(e) => setPassword(e.target.value)} value={password} />
+              <input
+                type="password"
+                className={styles['form-control']}
+                id="loginPassword"
+                placeholder={t('Password')}
+                onChange={(e) => setPassword(e.target.value)}
+                value={password}
+              />
             </div>
-            <div className="form-group">
+            <div className={styles['form-group']}>
               <a href="" onClick={(e) => { e.preventDefault(); setFPModalOpen(true); }}>
                 {t('Forgotten password?')}
               </a>
             </div>
 
-            <button type="submit" className="btn btn-default">{t('Sign in')}</button>
-            <button type="button" className="btn" onClick={(e) => {
-              e.preventDefault();
-              createAccountClick();
-            }}>{t('Create account')}</button>
+            <button type="submit" className={`${styles.btn} ${styles['btn-default']}`}>{t('Sign in')}</button>
+            <button
+              type="button"
+              className={styles.btn}
+              onClick={(e) => {
+                e.preventDefault();
+                createAccountClick();
+              }}
+            >
+              {t('Create account')}
+            </button>
           </form>
         )}
 
@@ -99,7 +126,7 @@ LoginModal.propTypes = {
   error: PropTypes.shape({
     message: PropTypes.string,
   }),
-  loading: PropTypes.bool.isRequired
+  loading: PropTypes.bool.isRequired,
 };
 
 LoginModal.defaultProps = {
@@ -119,4 +146,4 @@ const mapDispatchToProps = (dispatch) => bindActionCreators({
   acknowledgeAuthError: acknowledgeAuthErrorAction,
 }, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)(LoginModal)
+export default connect(mapStateToProps, mapDispatchToProps)(LoginModal);

@@ -1,10 +1,12 @@
-import React from 'react';
+import * as React from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import toggleIdInCollection from '../../lib/toggleIdInCollection';
 import Modal from './Modal';
 import Checkbox from '../Checkbox';
 import availableColumns from '../../data/availableColumns';
+
+import styles from '../../styles/main.scss';
 
 export default function OptionsModal({ onClose, isOpen, columnIds, saveOptions }) {
   const getColumnToggler = (id) => (newValue) => {
@@ -16,12 +18,13 @@ export default function OptionsModal({ onClose, isOpen, columnIds, saveOptions }
 
   return (
     <Modal isOpen={isOpen} onClose={onClose} title={t('Options')} doneAction={onClose}>
-      <div className='container-fluid'>
+      <div className={styles['container-fluid']}>
         <h5>{t('Columns')}</h5>
-        <div className='row'>
+        <div className={styles.row}>
           {availableColumns.map((column) => (
-            <div className='col-xs-3 col-md-2' key={column.id}>
+            <div className={`${styles['col-xs-3']} ${styles['col-md-2']}`} key={column.id}>
               <Checkbox
+                id={`options-columns-${column.id}`}
                 disabled={column.forced === true}
                 checked={columnIds.indexOf(column.id) !== -1}
                 onChange={getColumnToggler(column.id)}

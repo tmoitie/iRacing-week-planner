@@ -1,3 +1,5 @@
+// @flow
+
 import * as React from 'react';
 import moment from 'moment';
 import { useTranslation } from 'react-i18next';

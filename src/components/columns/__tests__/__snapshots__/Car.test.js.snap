@@ -2,13 +2,11 @@
 
 exports[`components/columns/Car opens modal 1`] = `
 <td
-  className="success clickable-cell"
+  className="success clickableCell"
   onClick={[Function]}
 >
   <div>
-    <span
-      className="glyphicon glyphicon-star"
-    />
+    <StarIcon />
     <span>
        
     </span>
@@ -40,13 +38,11 @@ exports[`components/columns/Car opens modal 1`] = `
 
 exports[`components/columns/Car opens modal 2`] = `
 <td
-  className="success clickable-cell"
+  className="success clickableCell"
   onClick={[Function]}
 >
   <div>
-    <span
-      className="glyphicon glyphicon-star"
-    />
+    <StarIcon />
     <span>
        
     </span>
@@ -78,7 +74,7 @@ exports[`components/columns/Car opens modal 2`] = `
 
 exports[`components/columns/Car renders correctly 1`] = `
 <td
-  className="clickable-cell"
+  className="clickableCell"
   onClick={[Function]}
 >
   <div>
@@ -105,13 +101,11 @@ exports[`components/columns/Car renders correctly 1`] = `
 
 exports[`components/columns/Car renders owned, favourite 1`] = `
 <td
-  className="success clickable-cell"
+  className="success clickableCell"
   onClick={[Function]}
 >
   <div>
-    <span
-      className="glyphicon glyphicon-star"
-    />
+    <StarIcon />
     <span>
        
     </span>

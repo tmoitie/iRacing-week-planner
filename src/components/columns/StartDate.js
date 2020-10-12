@@ -1,9 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// @flow
+import * as React from 'react';
 import moment from 'moment';
 import { useTranslation } from 'react-i18next';
 
-export default function StartDate({ race }) {
+type Props = {
+  race: {
+    startTime: moment.Moment,
+  }
+};
+export default function StartDate({ race }: Props) {
   const { t } = useTranslation();
   const date = moment(race.startTime).local().toDate();
   return (
@@ -14,7 +19,3 @@ export default function StartDate({ race }) {
     </td>
   );
 }
-
-StartDate.propTypes = {
-  race: PropTypes.object.isRequired
-};

@@ -1,7 +1,13 @@
+// @flow
+
 import * as React from 'react';
-import CarModal from '../modal/CarModal';
 import classnames from 'classnames';
 import intersection from 'lodash.intersection';
+import StarIcon from '../icon/StarIcon';
+import CarModal from '../modal/CarModal';
+import raceListingStyles from '../styles/raceListing.scss';
+
+import styles from '../../styles/main.scss';
 
 type Props = {
   race: {
@@ -13,21 +19,22 @@ type Props = {
   ownedCars: Array<number>,
 };
 
-export default function Car({race, favouriteCars, ownedCars}: Props) {
+export default function Car({ race, favouriteCars, ownedCars }: Props) {
   const [modalOpen, setModalOpen] = React.useState(false);
 
   return (
     <td
       className={classnames({
-        success: intersection(ownedCars, race.carIds).length !== 0,
-        'clickable-cell': true,
+        [styles.success]: intersection(ownedCars, race.carIds).length !== 0,
+        [raceListingStyles.clickableCell]: true,
       })}
       onClick={() => setModalOpen(true)}
     >
       <div>
         {intersection(favouriteCars, race.carIds).length !== 0 ? (
-          <span className='glyphicon glyphicon-star' />
-        ) : null}<span> </span>
+          <StarIcon />
+        ) : null}
+        <span> </span>
         {race.carClasses.join(', ')}
       </div>
       <CarModal

@@ -1,4 +1,4 @@
-.bmc-button img {
+.bmcButton img {
   height: 16px;
   width: 16px;
   margin-bottom: 1px;
@@ -7,7 +7,7 @@
   vertical-align: middle;
 }
 
-.bmc-button {
+.bmcButton {
   padding: 7px 10px 7px 7px;
   line-height: 16px;
   height: 32px;
@@ -25,9 +25,9 @@
   box-sizing: border-box;
 }
 
-.bmc-button:hover,
-.bmc-button:active,
-.bmc-button:focus {
+.bmcButton:hover,
+.bmcButton:active,
+.bmcButton:focus {
   text-decoration: none;
   box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5);
   opacity: 0.85;

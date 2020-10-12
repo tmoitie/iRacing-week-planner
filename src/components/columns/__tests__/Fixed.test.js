@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { describe, test } from '@jest/globals';
+import TickIcon from '../../icon/TickIcon';
 
 import Fixed from '../Fixed';
 
@@ -9,11 +10,11 @@ describe('components/columns/Fixed', () => {
     const component = shallow(<Fixed race={{ fixed: true }} />);
 
     expect(component).toMatchSnapshot();
-    expect(component.find('.glyphicon-ok').length).toBe(1);
+    expect(component.find(TickIcon).length).toBe(1);
 
     const component2 = shallow(<Fixed race={{ fixed: false }} />);
 
     expect(component2).toMatchSnapshot();
-    expect(component2.find('.glyphicon-ok').length).toBe(0);
+    expect(component2.find(TickIcon).length).toBe(0);
   });
 });

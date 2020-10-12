@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import * as React from 'react';
 import PropTypes from 'prop-types';
 import difference from 'lodash.difference';
 import isEqual from 'lodash.isequal';
@@ -7,8 +7,9 @@ import toggleIdInCollection from '../../lib/toggleIdInCollection';
 import Modal from './Modal';
 import Checkbox from '../Checkbox';
 import FavouriteStarButton from '../FavouriteStarButton';
+import styles from '../../styles/main.scss';
 
-export class ContentModal extends Component {
+class ContentModal extends React.Component {
   static propTypes = {
     title: PropTypes.string.isRequired,
     isOpen: PropTypes.bool.isRequired,
@@ -21,7 +22,7 @@ export class ContentModal extends Component {
     typeFilter: PropTypes.shape({
       key: PropTypes.string,
       oval: PropTypes.any,
-      road: PropTypes.any
+      road: PropTypes.any,
     }),
     favourites: PropTypes.array,
     saveFavourites: PropTypes.func,
@@ -60,7 +61,7 @@ export class ContentModal extends Component {
 
     const { key } = typeFilter;
     const value = typeFilter[type];
-    return content.filter(item => isEqual(item[key], value)).map(item => item[idField]);
+    return content.filter((item) => isEqual(item[key], value)).map((item) => item[idField]);
   }
 
   allTypeContentChecked(type) {
@@ -102,24 +103,25 @@ export class ContentModal extends Component {
 
   toggleAllContent(newValue) {
     const { save, content, idField, defaultContent } = this.props;
-    save(newValue ? content.map(item => item[idField]) : defaultContent);
+    save(newValue ? content.map((item) => item[idField]) : defaultContent);
   }
 
   toggleAllFavourites(newState, e) {
     e.preventDefault();
     const { saveFavourites, content, idField } = this.props;
-    saveFavourites(newState ? content.map(item => item[idField]) : []);
+    saveFavourites(newState ? content.map((item) => item[idField]) : []);
   }
 
   render() {
     const { onClose, title, content, ownedContent, isOpen, idField, defaultContent, favourites, t } = this.props;
     return (
       <Modal isOpen={isOpen} onClose={onClose} title={title} doneAction={onClose}>
-        <div className='container-fluid'>
+        <div className={styles['container-fluid']}>
           <p>{t('Use the checkbox to set the content you own, and use the star to set your favourite content.')}</p>
-          <div className='row'>
-            <div className='col-sm-4'>
+          <div className={styles.row}>
+            <div className={styles['col-sm-4']}>
               <Checkbox
+                id="content-select-all"
                 checked={ownedContent.length === content.length}
                 onChange={this.toggleAllContent.bind(this)}
               >
@@ -133,8 +135,9 @@ export class ContentModal extends Component {
                 />
               </Checkbox>
             </div>
-            <div className='col-sm-4'>
+            <div className={styles['col-sm-4']}>
               <Checkbox
+                id="content-select-all-oval"
                 checked={this.allTypeContentChecked('oval')}
                 onChange={this.setAllTypeContent.bind(this, 'oval')}
               >
@@ -148,8 +151,9 @@ export class ContentModal extends Component {
                 />
               </Checkbox>
             </div>
-            <div className='col-sm-4'>
+            <div className={styles['col-sm-4']}>
               <Checkbox
+                id="content-select-all-road"
                 checked={this.allTypeContentChecked('road')}
                 onChange={this.setAllTypeContent.bind(this, 'road')}
               >
@@ -167,17 +171,18 @@ export class ContentModal extends Component {
 
           <hr />
 
-          <div className='row'>
-            {content.map((item, index) => (
-              <div className='col-md-6' key={index}>
+          <div className={styles.row}>
+            {content.map((item) => (
+              <div className={styles['col-md-6']} key={item[idField]}>
                 <Checkbox
+                  id={`content-select-item-${item[idField]}`}
                   disabled={
                     ownedContent.indexOf(item[idField]) !== -1 && defaultContent.indexOf(item[idField]) !== -1
                   }
                   checked={ownedContent.indexOf(item[idField]) !== -1}
                   onChange={this.toggleContent.bind(this, item[idField])}
                 >
-                  { item.skuname ? t(item.skuname) : t(item.name) }
+                  {item.skuname ? t(item.skuname) : t(item.name)}
 
                   <span> </span>
 

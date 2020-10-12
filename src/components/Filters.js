@@ -8,16 +8,17 @@ import type { filters } from '../reducers/settings';
 import {
   resetFilters as resetFiltersAction,
   resetSettings as resetSettingsAction,
-  updateFilters as updateFiltersAction
+  updateFilters as updateFiltersAction,
 } from '../actions/settings';
 import Checkbox from './Checkbox';
+
+import styles from '../styles/main.scss';
 
 type Props = {
   currentFilters: filters,
   updateFilters: (filters) => void,
   resetSettings: () => void,
   resetFilters: () => void,
-  t: (string) => string,
   user?: {},
   firebaseSynced?: boolean,
 };
@@ -28,7 +29,7 @@ const defaultProps = {
 };
 
 export function Filters({
-  currentFilters, updateFilters, resetSettings, resetFilters, user, firebaseSynced
+  currentFilters, updateFilters, resetSettings, resetFilters, user, firebaseSynced,
 }: Props = defaultProps): React.Node {
   const getCheckboxFilterHandler = (key: string, value: any) => (
     (newValue: boolean): void => {
@@ -37,7 +38,7 @@ export function Filters({
       const index = newFilters[key].indexOf(value);
 
       if (index === -1 && newValue) {
-        newFilters[key] = [ ...newFilters[key], value ];
+        newFilters[key] = [...newFilters[key], value];
       }
       if (index !== -1 && newValue === false) {
         newFilters[key] = newFilters[key].filter((_, i) => i !== index);
@@ -58,7 +59,7 @@ export function Filters({
   const { t } = useTranslation();
 
   return (
-    <div className='filters-component' style={{ fontSize: '0.8em' }}>
+    <div style={{ fontSize: '0.8em' }}>
       <h4>{t('Type')}</h4>
       <Checkbox
         id="checkbox-type-oval"
@@ -203,7 +204,9 @@ export function Filters({
       <p>
         <button
           id="filters-reset-filters-button"
-          type='button' className='btn btn-primary' onClick={resetFilters}
+          type="button"
+          className={`${styles.btn} ${styles['btn-primary']}`}
+          onClick={resetFilters}
         >
           {t('Reset filters')}
         </button>
@@ -212,22 +215,29 @@ export function Filters({
       <p>
         <button
           id="filters-reset-settings-button"
-          type='button' className='btn btn-primary' onClick={resetSettings}
+          type="button"
+          className={`${styles.btn} ${styles['btn-primary']}`}
+          onClick={resetSettings}
         >
           {t('Reset all settings')}
         </button>
       </p>
 
-      {user ? (<p>
+      {user ? (
+        <p>
           <span
             id="filters-synced-status"
           >
-            {firebaseSynced ? t('Synced') : t('Awaiting sync')} {t('(refresh browser to download latest)')}
+            {firebaseSynced ? t('Synced') : t('Awaiting sync')}
+            {t('(refresh browser to download latest)')}
           </span>
-      </p>) : null}
+        </p>
+      ) : null}
     </div>
   );
 }
+
+Filters.defaultProps = defaultProps;
 
 const mapStateToProps = (state) => ({
   currentFilters: state.settings.filters,
@@ -242,4 +252,3 @@ const mapDispatchToProps = (dispatch) => bindActionCreators({
 }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(Filters);
-

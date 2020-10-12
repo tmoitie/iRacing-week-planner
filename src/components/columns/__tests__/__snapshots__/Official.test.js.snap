@@ -3,9 +3,7 @@
 exports[`components/columns/Official renders correctly 1`] = `
 <td>
   <div>
-    <span
-      className="glyphicon glyphicon-ok"
-    />
+    <TickIcon />
   </div>
 </td>
 `;

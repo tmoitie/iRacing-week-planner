@@ -1,15 +1,19 @@
-import React from 'react';
+// @flow
 
-import type sort from '../reducers/settings';
+import * as React from 'react';
+
+import type { sort as sortType } from '../reducers/settings';
+
+import styles from '../styles/main.scss';
 
 type Props = {
-  sort: sort,
+  sort: sortType,
 };
 
 export default function SortArrow({ sort }: Props): React.Node {
   if (sort.order === 'desc') {
-    return <span className='glyphicon glyphicon-triangle-bottom' />;
+    return <span className={`${styles.glyphicon} ${styles['glyphicon-triangle-bottom']}`} />;
   }
 
-  return <span className='glyphicon glyphicon-triangle-top' />;
+  return <span className={`${styles.glyphicon} ${styles['glyphicon-triangle-top']}`} />;
 }

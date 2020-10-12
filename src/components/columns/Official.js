@@ -1,16 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// @flow
 
-export default function Official({ race }) {
+import * as React from 'react';
+import TickIcon from '../icon/TickIcon';
+
+type Props = {
+  race: {
+    official: boolean,
+  }
+};
+
+export default function Official({ race }: Props) {
   return (
     <td>
       <div>
-        {race.official && <span className='glyphicon glyphicon-ok' />}
+        {race.official && <TickIcon />}
       </div>
     </td>
   );
 }
-
-Official.propTypes = {
-  race: PropTypes.object.isRequired
-};

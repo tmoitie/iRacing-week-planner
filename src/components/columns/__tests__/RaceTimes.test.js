@@ -21,12 +21,10 @@ describe('components/columns/RaceTimes', () => {
     const component = shallow(<RaceTimes
       race={{
         series: 'Mazda Cup',
-        raceTimes: {
-          setTimes: [
-            moment.duration({ days: 3, hours: 2 }),
-            moment.duration({ days: 4, hours: 13 }),
-          ],
-        },
+        setTimes: [
+          moment.duration({ days: 3, hours: 2 }),
+          moment.duration({ days: 4, hours: 13 }),
+        ],
       }}
     />);
 
@@ -45,10 +43,8 @@ describe('components/columns/RaceTimes', () => {
     const component = shallow(<RaceTimes
       race={{
         series: 'Mazda Cup',
-        raceTimes: {
-          everyTime: moment.duration({ hours: 3 }),
-          offset: moment.duration({ minutes: 90 }),
-        },
+        everyTime: moment.duration({ hours: 3 }),
+        offset: moment.duration({ minutes: 90 }),
       }}
     />);
 

@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
+import * as React from 'react';
 import PropTypes from 'prop-types';
 import { withTranslation } from 'react-i18next';
 import Modal from './Modal';
 import Checkbox from '../Checkbox';
 import series from '../../data/season.json';
+
+import styles from '../../styles/main.scss';
 
 const groupedSeries = series.reduce((grouped, single) => {
   if (single.catid === 1) {
@@ -42,7 +44,7 @@ const groupedSeries = series.reduce((grouped, single) => {
   };
 }, { oval: [], road: [], dirtOval: [], rx: [] });
 
-export class FavouriteSeriesModal extends Component {
+class FavouriteSeriesModal extends React.Component {
   static propTypes = {
     onClose: PropTypes.func,
     isOpen: PropTypes.bool.isRequired,
@@ -55,12 +57,12 @@ export class FavouriteSeriesModal extends Component {
     onClose: () => {},
     isOpen: false,
     save: () => {},
-    favouriteSeries: []
+    favouriteSeries: [],
   }
 
   setCheckboxFavourite(seriesId, newValue) {
     const { favouriteSeries, save } = this.props;
-    const newFavorites = [ ...favouriteSeries ];
+    const newFavorites = [...favouriteSeries];
     const index = newFavorites.indexOf(seriesId);
 
     if (index === -1 && newValue) {
@@ -72,40 +74,41 @@ export class FavouriteSeriesModal extends Component {
     save(newFavorites);
   }
 
-  renderCheckbox(cbSeries, index) {
-    const { favouriteSeries, t } = this.props;
-    return (
-      <div className='col-md-6' key={index}>
+  render() {
+    const { onClose, isOpen, t, favouriteSeries } = this.props;
+
+    const renderCheckboxes = (cbSeries) => (
+      <div className={styles['col-md-6']} key={cbSeries.seriesid}>
         <Checkbox
+          id={`favourite-series-${cbSeries.seriesid}`}
           checked={favouriteSeries.indexOf(cbSeries.seriesid) !== -1}
-          onChange={this.setCheckboxFavourite.bind(this, cbSeries.seriesid)}
+          onChange={() => {
+            this.setCheckboxFavourite(cbSeries.seriesid);
+          }}
         >
           {t(cbSeries.seriesname)}
         </Checkbox>
       </div>
     );
-  }
 
-  render() {
-    const { onClose, isOpen, t } = this.props;
     return (
       <Modal isOpen={isOpen} onClose={onClose} title={t('Choose favorite series')} doneAction={onClose}>
-        <div className='container-fluid'>
+        <div className={styles['container-fluid']}>
           <h3>{t('Oval')}</h3>
-          <div className='row'>
-            {groupedSeries.oval.map(this.renderCheckbox.bind(this))}
+          <div className={styles.row}>
+            {groupedSeries.oval.map(renderCheckboxes)}
           </div>
           <h3>{t('Road')}</h3>
-          <div className='row'>
-            {groupedSeries.road.map(this.renderCheckbox.bind(this))}
+          <div className={styles.row}>
+            {groupedSeries.road.map(renderCheckboxes)}
           </div>
           <h3>{t('Dirt Oval')}</h3>
-          <div className='row'>
-            {groupedSeries.dirtOval.map(this.renderCheckbox.bind(this))}
+          <div className={styles.row}>
+            {groupedSeries.dirtOval.map(renderCheckboxes)}
           </div>
           <h3>{t('RX')}</h3>
-          <div className='row'>
-            {groupedSeries.rx.map(this.renderCheckbox.bind(this))}
+          <div className={styles.row}>
+            {groupedSeries.rx.map(renderCheckboxes)}
           </div>
         </div>
       </Modal>

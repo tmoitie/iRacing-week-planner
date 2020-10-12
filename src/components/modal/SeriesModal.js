@@ -1,16 +1,26 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// @flow
+
+import * as React from 'react';
 import { useTranslation } from 'react-i18next';
-import Modal from './Modal';
 import moment from 'moment';
 import classnames from 'classnames';
+import Modal from './Modal';
 
 import allRaces from '../../lib/races';
 
+import styles from '../../styles/main.scss';
+
 const now = moment().utc();
 
-export default function SeriesModal( { onClose, ownedTracks, isOpen, seriesId }) {
-  const races = allRaces.filter(race => race.seriesId === seriesId);
+type Props = {
+  onClose: () => void,
+  isOpen: boolean,
+  ownedTracks: Array<number>,
+  seriesId: number,
+};
+
+export default function SeriesModal({ onClose, ownedTracks, isOpen, seriesId }: Props) {
+  const races = allRaces.filter((race) => race.seriesId === seriesId);
   const { t } = useTranslation();
 
   return (
@@ -22,9 +32,9 @@ export default function SeriesModal( { onClose, ownedTracks, isOpen, seriesId })
       })}
       doneAction={onClose}
     >
-      <div className='container-fluid'>
-        <div className='table-responsive'>
-          <table className='table' style={{ fontSize: '0.8em' }}>
+      <div className={styles['container-fluid']}>
+        <div className={styles['table-responsive']}>
+          <table className={styles.table} style={{ fontSize: '0.8em' }}>
             <thead>
               <tr>
                 <th>{t('Week')}</th>
@@ -40,14 +50,15 @@ export default function SeriesModal( { onClose, ownedTracks, isOpen, seriesId })
 
                 const startDate = moment(race.startTime).local().toDate();
                 const endDate = moment(race.startTime).local().add(race.weekLength)
-                  .subtract(1, 'days').toDate();
+                  .subtract(1, 'days')
+                  .toDate();
 
                 return (
                   <tr key={race.week} style={current ? { fontWeight: 700 } : {}}>
                     <td>
                       {race.week + 1}
                     </td>
-                    <td className={classnames({ success: ownedTracks.indexOf(race.trackId) !== -1 })}>
+                    <td className={classnames({ [styles.success]: ownedTracks.indexOf(race.trackId) !== -1 })}>
                       {t(race.track)}
                     </td>
                     <td>
@@ -65,17 +76,4 @@ export default function SeriesModal( { onClose, ownedTracks, isOpen, seriesId })
       </div>
     </Modal>
   );
-}
-
-SeriesModal.propTypes = {
-  onClose: PropTypes.func,
-  isOpen: PropTypes.bool.isRequired,
-  seriesId: PropTypes.number.isRequired,
-  ownedTracks: PropTypes.array,
-}
-
-SeriesModal.defaultProps = {
-  onClose: () => {},
-  isOpen: false,
-  ownedTracks: [],
 }

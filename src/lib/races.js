@@ -1,7 +1,10 @@
+// @flow
+
+import moment, { duration } from 'moment';
+
 import season from '../data/season.json';
 import levelToClass, { levelToClassNumber } from './levelToClass';
 import raceTimesArray from '../data/raceTimes';
-import moment, { duration } from 'moment';
 
 const raceTimesById = raceTimesArray.reduce((races, race) => {
   return { ...races, [race.seriesId]: race };
@@ -126,13 +129,12 @@ export default season.reduce((carry, series) => {
       fixed: series.isFixedSetup,
       carClasses: series.carclasses.map(({ shortname }) => shortname),
       carIds: series.cars.map(({ sku }) => sku),
-      raceTimes,
       seriesStart,
       seriesEnd,
       seasonId: series.seasonid,
       everyTime: raceTimes.everyTime,
       offset: raceTimes.offset,
-      setTimes: raceTimes.setTimes
+      setTimes: raceTimes.setTimes,
     };
   }));
 }, []);

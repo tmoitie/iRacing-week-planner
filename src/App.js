@@ -24,10 +24,9 @@ import AboutModal from './components/modal/AboutModal';
 
 import { seasonStart, seasonEnd } from './config';
 
-import './components/styles/preBootstrap.scss';
-import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
-import '@blueprintjs/core/lib/css/blueprint.css';
 import PurchaseGuideModal from './components/modal/PurchaseGuideModal';
+
+import styles from './styles/main.scss';
 
 import { languages } from './i18n';
 
@@ -222,13 +221,13 @@ export class App extends Component {
 
     return (
       <div onMouseDown={this.getClickEventHandler()}>
-        <nav className='navbar navbar-inverse'>
-          <div className='container-fluid'>
-            <div className='navbar-header'>
-              <a className='navbar-brand' href=''>{t('iRacing Week Planner')}</a>
+        <nav className={`${styles.navbar} ${styles['navbar-inverse']}`}>
+          <div className={styles['container-fluid']}>
+            <div className={styles['navbar-header']}>
+              <a className={styles['navbar-brand']} href=''>{t('iRacing Week Planner')}</a>
             </div>
 
-            <ul className='nav navbar-nav navbar-left'>
+            <ul className={`${styles.nav} ${styles['navbar-nav']} ${styles['navbar-left']}`}>
               <li>
                 <a href='' onClick={this.getOpenModalHandler('purchase-guide')}>
                   {t('Purchase guide')}
@@ -236,7 +235,7 @@ export class App extends Component {
               </li>
             </ul>
 
-            <ul className='nav navbar-nav navbar-right'>
+            <ul className={`nav ${styles['navbar-nav']} ${styles['navbar-right']}`}>
               <li><a href='' onClick={this.getOpenModalHandler('my-tracks')}>
                 {t('Set my tracks')}
               </a></li>
@@ -264,15 +263,15 @@ export class App extends Component {
                   {t('Sign in')}
                 </a></li>
               )}
-              <li className={classNames({ dropdown: true, open: languageDropdown })}>
+              <li className={classNames({ [styles.dropdown]: true, [styles.open]: languageDropdown })}>
                 <a
                   href=""
                   onClick={this.getToggleLangDropdownHandler()}
                 >
                   {languages[i18n.language].flag}
-                  <span className="caret" />
+                  <span className={styles.caret} />
                 </a>
-                <ul className="dropdown-menu" ref={this.dropdownRef}>
+                <ul className={styles['dropdown-menu']} ref={this.dropdownRef}>
                   {Object.entries(languages).map(([code, language]) => (
                     <li key={code}>
                       <a href="" onClick={this.getSwitchLanguageHandler(code)}>
@@ -295,21 +294,21 @@ export class App extends Component {
             </ul>
           </div>
         </nav>
-        <div className='container-fluid'>
-          <div className='row'>
-            <div className='col-md-2'>
+        <div className={styles['container-fluid']}>
+          <div className={styles.row}>
+            <div className={styles['col-md-2']}>
               <div>
                 <BuyACoffee />
               </div>
               <h3>{t('Filters')}</h3>
               <Filters />
             </div>
-            <div className='col-md-10'>
-              <div className='row'>
-                <h3 className='col-xs-8'>
+            <div className={styles['col-md-10']}>
+              <div className={styles.row}>
+                <h3 className={styles['col-xs-8']}>
                   {t('Races for date: {{date, YYYY MMM DD}}', { date: date.local().toDate() })}
                 </h3>
-                <h3 className='col-xs-4' style={{ textAlign: 'right' }}>
+                <h3 className={styles['col-xs-4']} style={{ textAlign: 'right' }}>
                   {t('Week {{week}}', { week })}
                 </h3>
               </div>

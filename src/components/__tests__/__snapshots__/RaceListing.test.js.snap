@@ -2,7 +2,7 @@
 
 exports[`components/RaceListing changes sort on click 1`] = `
 <div
-  className="table-responsive race-listing"
+  className="table-responsive raceListing"
 >
   <table
     className="table"
@@ -15,9 +15,9 @@ exports[`components/RaceListing changes sort on click 1`] = `
     <thead>
       <tr>
         <th
-          className="clickable-cell"
+          className="clickableCell"
           id="raceListing-th-id"
-          key="0"
+          key="id"
           onClick={[Function]}
         >
           ID
@@ -34,9 +34,9 @@ exports[`components/RaceListing changes sort on click 1`] = `
           />
         </th>
         <th
-          className="clickable-cell"
+          className="clickableCell"
           id="raceListing-th-series"
-          key="1"
+          key="series"
           onClick={[Function]}
         >
           Series
@@ -48,13 +48,13 @@ exports[`components/RaceListing changes sort on click 1`] = `
     </thead>
     <tbody>
       <tr
-        key="0"
+        key="139"
       >
         <Id
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="0"
+          key="id"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -73,11 +73,6 @@ exports[`components/RaceListing changes sort on click 1`] = `
               "licenceLevel": 1,
               "official": true,
               "offset": "P0D",
-              "raceTimes": Object {
-                "everyTime": "PT1H",
-                "offset": "P0D",
-                "seriesId": 139,
-              },
               "seasonId": 2915,
               "series": "Fanatec Global Mazda MX-5 Cup",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -97,7 +92,7 @@ exports[`components/RaceListing changes sort on click 1`] = `
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="1"
+          key="series"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -116,11 +111,6 @@ exports[`components/RaceListing changes sort on click 1`] = `
               "licenceLevel": 1,
               "official": true,
               "offset": "P0D",
-              "raceTimes": Object {
-                "everyTime": "PT1H",
-                "offset": "P0D",
-                "seriesId": 139,
-              },
               "seasonId": 2915,
               "series": "Fanatec Global Mazda MX-5 Cup",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -138,13 +128,13 @@ exports[`components/RaceListing changes sort on click 1`] = `
         />
       </tr>
       <tr
-        key="1"
+        key="278"
       >
         <Id
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="0"
+          key="id"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -166,11 +156,6 @@ exports[`components/RaceListing changes sort on click 1`] = `
               "licenceLevel": 8,
               "official": true,
               "offset": "PT1H45M",
-              "raceTimes": Object {
-                "everyTime": "PT2H",
-                "offset": "PT1H45M",
-                "seriesId": 278,
-              },
               "seasonId": 2948,
               "series": "Fanatec GT Challenge",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -190,7 +175,7 @@ exports[`components/RaceListing changes sort on click 1`] = `
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="1"
+          key="series"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -212,11 +197,6 @@ exports[`components/RaceListing changes sort on click 1`] = `
               "licenceLevel": 8,
               "official": true,
               "offset": "PT1H45M",
-              "raceTimes": Object {
-                "everyTime": "PT2H",
-                "offset": "PT1H45M",
-                "seriesId": 278,
-              },
               "seasonId": 2948,
               "series": "Fanatec GT Challenge",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -234,13 +214,13 @@ exports[`components/RaceListing changes sort on click 1`] = `
         />
       </tr>
       <tr
-        key="2"
+        key="32"
       >
         <Id
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="0"
+          key="id"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -259,11 +239,6 @@ exports[`components/RaceListing changes sort on click 1`] = `
               "licenceLevel": 1,
               "official": true,
               "offset": "PT30M",
-              "raceTimes": Object {
-                "everyTime": "PT1H",
-                "offset": "PT30M",
-                "seriesId": 32,
-              },
               "seasonId": 2917,
               "series": "iRacing Advanced Legends Cup",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -283,7 +258,7 @@ exports[`components/RaceListing changes sort on click 1`] = `
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="1"
+          key="series"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -302,11 +277,6 @@ exports[`components/RaceListing changes sort on click 1`] = `
               "licenceLevel": 1,
               "official": true,
               "offset": "PT30M",
-              "raceTimes": Object {
-                "everyTime": "PT1H",
-                "offset": "PT30M",
-                "seriesId": 32,
-              },
               "seasonId": 2917,
               "series": "iRacing Advanced Legends Cup",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -324,13 +294,13 @@ exports[`components/RaceListing changes sort on click 1`] = `
         />
       </tr>
       <tr
-        key="3"
+        key="167"
       >
         <Id
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="0"
+          key="id"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -349,11 +319,6 @@ exports[`components/RaceListing changes sort on click 1`] = `
               "licenceLevel": 4,
               "official": true,
               "offset": "PT45M",
-              "raceTimes": Object {
-                "everyTime": "PT1H",
-                "offset": "PT45M",
-                "seriesId": 167,
-              },
               "seasonId": 2923,
               "series": "iRacing ARCA Menards Series",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -373,7 +338,7 @@ exports[`components/RaceListing changes sort on click 1`] = `
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="1"
+          key="series"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -392,11 +357,6 @@ exports[`components/RaceListing changes sort on click 1`] = `
               "licenceLevel": 4,
               "official": true,
               "offset": "PT45M",
-              "raceTimes": Object {
-                "everyTime": "PT1H",
-                "offset": "PT45M",
-                "seriesId": 167,
-              },
               "seasonId": 2923,
               "series": "iRacing ARCA Menards Series",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -420,7 +380,7 @@ exports[`components/RaceListing changes sort on click 1`] = `
 
 exports[`components/RaceListing changes sort on click 2`] = `
 <div
-  className="table-responsive race-listing"
+  className="table-responsive raceListing"
 >
   <table
     className="table"
@@ -433,9 +393,9 @@ exports[`components/RaceListing changes sort on click 2`] = `
     <thead>
       <tr>
         <th
-          className="clickable-cell"
+          className="clickableCell"
           id="raceListing-th-id"
-          key="0"
+          key="id"
           onClick={[Function]}
         >
           ID
@@ -444,9 +404,9 @@ exports[`components/RaceListing changes sort on click 2`] = `
           </span>
         </th>
         <th
-          className="clickable-cell"
+          className="clickableCell"
           id="raceListing-th-series"
-          key="1"
+          key="series"
           onClick={[Function]}
         >
           Series
@@ -465,7 +425,7 @@ exports[`components/RaceListing changes sort on click 2`] = `
         <th
           className={null}
           id="raceListing-th-raceTimes"
-          key="2"
+          key="raceTimes"
           onClick={[Function]}
         >
           Race times
@@ -477,13 +437,13 @@ exports[`components/RaceListing changes sort on click 2`] = `
     </thead>
     <tbody>
       <tr
-        key="0"
+        key="167"
       >
         <Id
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="0"
+          key="id"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -502,11 +462,6 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "licenceLevel": 4,
               "official": true,
               "offset": "PT45M",
-              "raceTimes": Object {
-                "everyTime": "PT1H",
-                "offset": "PT45M",
-                "seriesId": 167,
-              },
               "seasonId": 2923,
               "series": "iRacing ARCA Menards Series",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -526,7 +481,7 @@ exports[`components/RaceListing changes sort on click 2`] = `
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="1"
+          key="series"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -545,11 +500,6 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "licenceLevel": 4,
               "official": true,
               "offset": "PT45M",
-              "raceTimes": Object {
-                "everyTime": "PT1H",
-                "offset": "PT45M",
-                "seriesId": 167,
-              },
               "seasonId": 2923,
               "series": "iRacing ARCA Menards Series",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -569,7 +519,7 @@ exports[`components/RaceListing changes sort on click 2`] = `
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="2"
+          key="raceTimes"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -588,11 +538,6 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "licenceLevel": 4,
               "official": true,
               "offset": "PT45M",
-              "raceTimes": Object {
-                "everyTime": "PT1H",
-                "offset": "PT45M",
-                "seriesId": 167,
-              },
               "seasonId": 2923,
               "series": "iRacing ARCA Menards Series",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -610,13 +555,13 @@ exports[`components/RaceListing changes sort on click 2`] = `
         />
       </tr>
       <tr
-        key="1"
+        key="32"
       >
         <Id
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="0"
+          key="id"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -635,11 +580,6 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "licenceLevel": 1,
               "official": true,
               "offset": "PT30M",
-              "raceTimes": Object {
-                "everyTime": "PT1H",
-                "offset": "PT30M",
-                "seriesId": 32,
-              },
               "seasonId": 2917,
               "series": "iRacing Advanced Legends Cup",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -659,7 +599,7 @@ exports[`components/RaceListing changes sort on click 2`] = `
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="1"
+          key="series"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -678,11 +618,6 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "licenceLevel": 1,
               "official": true,
               "offset": "PT30M",
-              "raceTimes": Object {
-                "everyTime": "PT1H",
-                "offset": "PT30M",
-                "seriesId": 32,
-              },
               "seasonId": 2917,
               "series": "iRacing Advanced Legends Cup",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -702,7 +637,7 @@ exports[`components/RaceListing changes sort on click 2`] = `
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="2"
+          key="raceTimes"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -721,11 +656,6 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "licenceLevel": 1,
               "official": true,
               "offset": "PT30M",
-              "raceTimes": Object {
-                "everyTime": "PT1H",
-                "offset": "PT30M",
-                "seriesId": 32,
-              },
               "seasonId": 2917,
               "series": "iRacing Advanced Legends Cup",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -743,13 +673,13 @@ exports[`components/RaceListing changes sort on click 2`] = `
         />
       </tr>
       <tr
-        key="2"
+        key="278"
       >
         <Id
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="0"
+          key="id"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -771,11 +701,6 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "licenceLevel": 8,
               "official": true,
               "offset": "PT1H45M",
-              "raceTimes": Object {
-                "everyTime": "PT2H",
-                "offset": "PT1H45M",
-                "seriesId": 278,
-              },
               "seasonId": 2948,
               "series": "Fanatec GT Challenge",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -795,7 +720,7 @@ exports[`components/RaceListing changes sort on click 2`] = `
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="1"
+          key="series"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -817,11 +742,6 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "licenceLevel": 8,
               "official": true,
               "offset": "PT1H45M",
-              "raceTimes": Object {
-                "everyTime": "PT2H",
-                "offset": "PT1H45M",
-                "seriesId": 278,
-              },
               "seasonId": 2948,
               "series": "Fanatec GT Challenge",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -841,7 +761,7 @@ exports[`components/RaceListing changes sort on click 2`] = `
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="2"
+          key="raceTimes"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -863,11 +783,6 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "licenceLevel": 8,
               "official": true,
               "offset": "PT1H45M",
-              "raceTimes": Object {
-                "everyTime": "PT2H",
-                "offset": "PT1H45M",
-                "seriesId": 278,
-              },
               "seasonId": 2948,
               "series": "Fanatec GT Challenge",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -885,13 +800,13 @@ exports[`components/RaceListing changes sort on click 2`] = `
         />
       </tr>
       <tr
-        key="3"
+        key="139"
       >
         <Id
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="0"
+          key="id"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -910,11 +825,6 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "licenceLevel": 1,
               "official": true,
               "offset": "P0D",
-              "raceTimes": Object {
-                "everyTime": "PT1H",
-                "offset": "P0D",
-                "seriesId": 139,
-              },
               "seasonId": 2915,
               "series": "Fanatec Global Mazda MX-5 Cup",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -934,7 +844,7 @@ exports[`components/RaceListing changes sort on click 2`] = `
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="1"
+          key="series"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -953,11 +863,6 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "licenceLevel": 1,
               "official": true,
               "offset": "P0D",
-              "raceTimes": Object {
-                "everyTime": "PT1H",
-                "offset": "P0D",
-                "seriesId": 139,
-              },
               "seasonId": 2915,
               "series": "Fanatec Global Mazda MX-5 Cup",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -977,7 +882,7 @@ exports[`components/RaceListing changes sort on click 2`] = `
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="2"
+          key="raceTimes"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -996,11 +901,6 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "licenceLevel": 1,
               "official": true,
               "offset": "P0D",
-              "raceTimes": Object {
-                "everyTime": "PT1H",
-                "offset": "P0D",
-                "seriesId": 139,
-              },
               "seasonId": 2915,
               "series": "Fanatec Global Mazda MX-5 Cup",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -1024,7 +924,7 @@ exports[`components/RaceListing changes sort on click 2`] = `
 
 exports[`components/RaceListing renders correctly 1`] = `
 <div
-  className="table-responsive race-listing"
+  className="table-responsive raceListing"
 >
   <table
     className="table"
@@ -1037,9 +937,9 @@ exports[`components/RaceListing renders correctly 1`] = `
     <thead>
       <tr>
         <th
-          className="clickable-cell"
+          className="clickableCell"
           id="raceListing-th-id"
-          key="0"
+          key="id"
           onClick={[Function]}
         >
           ID
@@ -1059,13 +959,13 @@ exports[`components/RaceListing renders correctly 1`] = `
     </thead>
     <tbody>
       <tr
-        key="0"
+        key="139"
       >
         <Id
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="0"
+          key="id"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -1084,11 +984,6 @@ exports[`components/RaceListing renders correctly 1`] = `
               "licenceLevel": 1,
               "official": true,
               "offset": "P0D",
-              "raceTimes": Object {
-                "everyTime": "PT1H",
-                "offset": "P0D",
-                "seriesId": 139,
-              },
               "seasonId": 2915,
               "series": "Fanatec Global Mazda MX-5 Cup",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -1106,13 +1001,13 @@ exports[`components/RaceListing renders correctly 1`] = `
         />
       </tr>
       <tr
-        key="1"
+        key="278"
       >
         <Id
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="0"
+          key="id"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -1134,11 +1029,6 @@ exports[`components/RaceListing renders correctly 1`] = `
               "licenceLevel": 8,
               "official": true,
               "offset": "PT1H45M",
-              "raceTimes": Object {
-                "everyTime": "PT2H",
-                "offset": "PT1H45M",
-                "seriesId": 278,
-              },
               "seasonId": 2948,
               "series": "Fanatec GT Challenge",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -1156,13 +1046,13 @@ exports[`components/RaceListing renders correctly 1`] = `
         />
       </tr>
       <tr
-        key="2"
+        key="32"
       >
         <Id
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="0"
+          key="id"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -1181,11 +1071,6 @@ exports[`components/RaceListing renders correctly 1`] = `
               "licenceLevel": 1,
               "official": true,
               "offset": "PT30M",
-              "raceTimes": Object {
-                "everyTime": "PT1H",
-                "offset": "PT30M",
-                "seriesId": 32,
-              },
               "seasonId": 2917,
               "series": "iRacing Advanced Legends Cup",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
@@ -1203,13 +1088,13 @@ exports[`components/RaceListing renders correctly 1`] = `
         />
       </tr>
       <tr
-        key="3"
+        key="167"
       >
         <Id
           favouriteCars={Array []}
           favouriteSeries={Array []}
           favouriteTracks={Array []}
-          key="0"
+          key="id"
           ownedCars={Array []}
           ownedTracks={Array []}
           race={
@@ -1228,11 +1113,6 @@ exports[`components/RaceListing renders correctly 1`] = `
               "licenceLevel": 4,
               "official": true,
               "offset": "PT45M",
-              "raceTimes": Object {
-                "everyTime": "PT1H",
-                "offset": "PT45M",
-                "seriesId": 167,
-              },
               "seasonId": 2923,
               "series": "iRacing ARCA Menards Series",
               "seriesEnd": "2020-12-08T00:00:00.000Z",

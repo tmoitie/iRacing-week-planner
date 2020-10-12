@@ -9,11 +9,12 @@ import {
   forgottenPassword as forgottenPasswordAction,
 } from '../../actions/auth';
 import Modal from './Modal';
+import styles from '../../styles/main.scss';
 
 function ForgottenPasswordModal({ isOpen, onClose, error, loading, forgottenPassword, acknowledgeAuthError }) {
   const { t } = useTranslation();
-  const [ email, setEmail ] = useState('');
-  const [ thanksModal, setThanksModal ] = useState(false);
+  const [email, setEmail] = useState('');
+  const [thanksModal, setThanksModal] = useState(false);
 
   const submitClick = async () => {
     const output = await forgottenPassword(email);
@@ -26,32 +27,44 @@ function ForgottenPasswordModal({ isOpen, onClose, error, loading, forgottenPass
   const closeThanks = () => {
     setThanksModal(false);
     onClose();
-  }
+  };
 
   return (
     <Modal isOpen={isOpen} onClose={onClose} title={t('Reset Password')} doneAction={onClose} showFooter={false}>
-      <div className='container-fluid'>
+      <div className={styles['container-fluid']}>
         <p>{t('Enter your email address to reset your password.')}</p>
         {loading ? (
           <div>{t('Loading')}</div>
-        ): (
+        ) : (
           <form onSubmit={(e) => {
             e.preventDefault();
             submitClick();
-          }}>
+          }}
+          >
             {error && (
-              <div className="alert alert-warning alert-dismissible" role="alert">
-                <button className="close" type="button" aria-label="Close" onClick={acknowledgeAuthError}><span
-                  aria-hidden="true">&times;</span></button>
+              <div className={`${styles.alert} ${styles['alert-warning']} ${styles['alert-dismissible']}`} role="alert">
+                <button className={styles.close} type="button" aria-label="Close" onClick={acknowledgeAuthError}>
+                  <span
+                    aria-hidden="true"
+                  >
+                    &times;
+                  </span>
+                </button>
                 {t(error.message)}
               </div>
             )}
-            <div className="form-group">
+            <div className={styles['form-group']}>
               <label htmlFor="loginEmail">{t('Email address')}</label>
-              <input type="email" className="form-control" id="loginEmail" placeholder={t('Email address')}
-                     onChange={(e) => setEmail(e.target.value)} value={email} />
+              <input
+                type="email"
+                className={styles['form-control']}
+                id="loginEmail"
+                placeholder={t('Email address')}
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+              />
             </div>
-            <button type="submit" className="btn btn-default">{t('Submit')}</button>
+            <button type="submit" className={`${styles.btn} ${styles['btn-default']}`}>{t('Submit')}</button>
           </form>
         )}
       </div>
@@ -61,7 +74,7 @@ function ForgottenPasswordModal({ isOpen, onClose, error, loading, forgottenPass
         title={t('Reset Password')}
         doneAction={closeThanks}
       >
-        <div className='container-fluid'>
+        <div className={styles['container-fluid']}>
           <p>{t('Thanks, please check your email for further details.')}</p>
         </div>
       </Modal>
@@ -77,7 +90,7 @@ ForgottenPasswordModal.propTypes = {
   error: PropTypes.shape({
     message: PropTypes.string,
   }),
-  loading: PropTypes.bool.isRequired
+  loading: PropTypes.bool.isRequired,
 };
 
 ForgottenPasswordModal.defaultProps = {
@@ -96,4 +109,4 @@ const mapDispatchToProps = (dispatch) => bindActionCreators({
   acknowledgeAuthError: acknowledgeAuthErrorAction,
 }, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)(ForgottenPasswordModal)
+export default connect(mapStateToProps, mapDispatchToProps)(ForgottenPasswordModal);
