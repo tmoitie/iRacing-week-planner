@@ -3,7 +3,7 @@
 exports[`components/columns/RaceTimes renders everytime 1`] = `
 <td>
   <div>
-    Every 3 hours starting at 2:30 UTC
+    Every 3 hours starting at 1:30 UTC
   </div>
 </td>
 `;
@@ -41,12 +41,12 @@ exports[`components/columns/RaceTimes renders settimes 1`] = `
         <li
           key="266400000"
         >
-          Fri 3:00am (Fri 3:00am )
+          Fri 2:00am (Fri 2:00am )
         </li>
         <li
           key="392400000"
         >
-          Sat 2:00pm (Sat 2:00pm )
+          Sat 1:00pm (Sat 1:00pm )
         </li>
       </ul>
     </div>
@@ -81,12 +81,12 @@ exports[`components/columns/RaceTimes renders settimes 2`] = `
         <li
           key="266400000"
         >
-          Fri 3:00am (Fri 3:00am )
+          Fri 2:00am (Fri 2:00am )
         </li>
         <li
           key="392400000"
         >
-          Sat 2:00pm (Sat 2:00pm )
+          Sat 1:00pm (Sat 1:00pm )
         </li>
       </ul>
     </div>
@@ -121,12 +121,12 @@ exports[`components/columns/RaceTimes renders settimes 3`] = `
         <li
           key="266400000"
         >
-          Fri 3:00am (Fri 3:00am )
+          Fri 2:00am (Fri 2:00am )
         </li>
         <li
           key="392400000"
         >
-          Sat 2:00pm (Sat 2:00pm )
+          Sat 1:00pm (Sat 1:00pm )
         </li>
       </ul>
     </div>

@@ -11,7 +11,7 @@ import '../../data/season.json';
 
 jest.mock('../../data/season.json');
 
-describe.only('components/RaceListing', () => {
+describe('components/RaceListing', () => {
   const defaultProps = {
     date: moment('2020-09-23T01:00:00.000Z'),
     sort: { key: 'id', order: 'asc' },

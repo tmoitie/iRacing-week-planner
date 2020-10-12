@@ -18,7 +18,8 @@
       "ObjectPattern": { "minProperties": 12, "multiline": true, "consistent": true },
       "ImportDeclaration": { "minProperties": 12, "multiline": true, "consistent": true },
       "ExportDeclaration": { "minProperties": 12, "multiline": true, "consistent": true }
-    }]
+    }],
+    "react/jsx-props-no-spreading": [0]
   },
   "plugins": [
     "react",
