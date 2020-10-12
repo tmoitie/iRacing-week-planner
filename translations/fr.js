@@ -1,7 +1,7 @@
 export default {
   translation: {
     'iRacing Week Planner': 'Planificateur hedbomadaire iRacing',
-    'Purchase guide': 'Guide d'achats',
+    'Purchase guide': 'Guide d\'achats',
     'Set my tracks': 'Circuits possédés',
     'Set my cars': 'Voitures possédées',
     'Set favorite series': 'Séries favories',
