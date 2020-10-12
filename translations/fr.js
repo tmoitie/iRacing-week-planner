@@ -34,7 +34,7 @@ export default {
     'Reset all settings': 'Remettre tous les paramètres à 0',
 
     // Column Headers
-    'Columns': 'Colomnes',
+    'Columns': 'Colonnes',
     'ID': 'ID',
     'Class': 'Classe',
     'Series': 'Séries',
