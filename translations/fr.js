@@ -54,7 +54,7 @@ export default {
     'Use the checkbox to set the content you own, and use the star to set your favourite content.':
       'Use the checkbox to set the content you own, and use the star to set your favourite content.',
     'Select all': 'Sélectionner tout',
-    'Select all oval': 'Sélectionner tous les ovaux',
+    'Select all oval': 'Sélectionner tous les ovales',
     'Select all road': 'Sélectionner tous les routiers',
     'Choose favorite series': 'Sélectionner les séries favories',
     'Close': 'Fermer',
