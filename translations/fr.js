@@ -62,7 +62,7 @@ export default {
     'Changelog': 'Journal des modifications',
     'Purchase Guide': 'Guide d\'achat',
     'This tool was created by <1>tmoitie</1> (<3>Tom Moitié</3> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on <5>Github</5>. Thanks!':
-      'Cet outil a été créé par <1>tmoitie</1> (<3>Tom Moitié</3> sur iRacing). N'hésitez pas à me contacter sur Twitter ou iRacing si vous avez un retour à faire ou des questions à poser. Le code source est hébergé publiquement sur <5>Github</5>. Merci!',
+      'Cet outil a été créé par <1>tmoitie</1> (<3>Tom Moitié</3> sur iRacing). N\'hésitez pas à me contacter sur Twitter ou iRacing si vous avez un retour à faire ou des questions à poser. Le code source est hébergé publiquement sur <5>Github</5>. Merci !',
     'Loading': 'Chargement',
     'Cars for {{series}}': 'Véhicules pour {{series}}',
     'Tracks for {{series}}': 'Circuits pour {{series}}',
