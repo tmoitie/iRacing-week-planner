@@ -8,6 +8,7 @@ import enGB from '../translations/en-GB';
 import es from '../translations/es';
 import ptBR from '../translations/pt-BR';
 import de from '../translations/de';
+import fr from '../translations/fr';
 
 export const languages = {
   'de': {
@@ -26,6 +27,10 @@ export const languages = {
     flag: '🇪🇸',
     name: 'Español (ES)',
   },
+  'fr': {
+    flag: '🇫🇷',
+    name: 'Français (FR)',
+  },
   'pt-BR': {
     flag: '🇧🇷',
     name: 'Português (BR)',
@@ -38,6 +43,7 @@ const resources = {
   'es': es,
   'pt-BR': ptBR,
   'de': de,
+  'fr': fr,
 };
 
 if (process.env.NODE_ENV === 'development') {
