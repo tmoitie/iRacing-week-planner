@@ -52,7 +52,7 @@ export default {
 
     // Modals
     'Use the checkbox to set the content you own, and use the star to set your favourite content.':
-      'Use the checkbox to set the content you own, and use the star to set your favourite content.',
+      'Utilisez les cases à cocher pour enregistrer le contenu que vous possédez et utilisez l\'étoile pour enregistrer vos contenus favoris.',
     'Select all': 'Sélectionner tout',
     'Select all oval': 'Sélectionner tous les ovales',
     'Select all road': 'Sélectionner tous les routiers',
