@@ -114,6 +114,7 @@ export class App extends Component {
     const { t } = this.props;
     return (
       <ContentModal
+        id="content-modal-tracks"
         isOpen={currentModal === 'my-tracks'}
         onClose={this.getCloseModalHandler()}
         title={t('Set my tracks')}
@@ -135,6 +136,7 @@ export class App extends Component {
     const { t } = this.props;
     return (
       <ContentModal
+        id="content-modal-cars"
         isOpen={currentModal === 'my-cars'}
         onClose={this.getCloseModalHandler()}
         title={t('Set my cars')}

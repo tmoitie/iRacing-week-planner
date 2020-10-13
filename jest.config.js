@@ -56,7 +56,7 @@ module.exports = {
   // ],
   // runner: "jest-runner",
   // setupFiles: [],
-  setupFilesAfterEnv: ['<rootDir>/test/setup.js'],
+  setupFilesAfterEnv: ['jest-extended', '<rootDir>/test/setup.js'],
   // slowTestThreshold: 5,
   snapshotSerializers: ['enzyme-to-json/serializer'],
   testEnvironment: 'jsdom',

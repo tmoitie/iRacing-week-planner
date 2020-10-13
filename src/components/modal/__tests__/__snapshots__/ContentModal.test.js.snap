@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/modal/ContentModal renders correctly 1`] = `
+<Modal
+  doneAction={[Function]}
+  doneButtonText="Close"
+  isOpen={true}
+  onClose={[Function]}
+  showFooter={true}
+  title="Cars Modal"
+>
+  <div
+    className="container-fluid"
+  >
+    <p>
+      Use the checkbox to set the content you own, and use the star to set your favourite content.
+    </p>
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-4"
+      >
+        <Checkbox
+          checked={false}
+          disabled={false}
+          id="cars-select-all"
+          onChange={[Function]}
+        >
+          Select all
+          <span>
+             
+          </span>
+          <FavouriteStarButton
+            enabled={false}
+            id="cars-favourite-all"
+            onClick={[Function]}
+          />
+        </Checkbox>
+      </div>
+      <div
+        className="col-sm-4"
+      >
+        <Checkbox
+          checked={false}
+          disabled={false}
+          id="cars-select-oval"
+          onChange={[Function]}
+        >
+          Select all oval
+          <span>
+             
+          </span>
+          <FavouriteStarButton
+            enabled={false}
+            id="cars-favourite-oval"
+            onClick={[Function]}
+          />
+        </Checkbox>
+      </div>
+      <div
+        className="col-sm-4"
+      >
+        <Checkbox
+          checked={true}
+          disabled={false}
+          id="cars-select-road"
+          onChange={[Function]}
+        >
+          Select all road
+          <span>
+             
+          </span>
+          <FavouriteStarButton
+            enabled={false}
+            id="cars-favourite-road"
+            onClick={[Function]}
+          />
+        </Checkbox>
+      </div>
+    </div>
+    <hr />
+    <div
+      className="row"
+    >
+      <div
+        className="col-md-6"
+        key="123"
+      >
+        <Checkbox
+          checked={true}
+          disabled={false}
+          id="cars-select-item-123"
+          onChange={[Function]}
+        >
+          Ford
+          <span>
+             
+          </span>
+          <FavouriteStarButton
+            enabled={false}
+            id="cars-favourite-item-123"
+            onClick={[Function]}
+          />
+        </Checkbox>
+      </div>
+      <div
+        className="col-md-6"
+        key="234"
+      >
+        <Checkbox
+          checked={false}
+          disabled={false}
+          id="cars-select-item-234"
+          onChange={[Function]}
+        >
+          Toyota
+          <span>
+             
+          </span>
+          <FavouriteStarButton
+            enabled={false}
+            id="cars-favourite-item-234"
+            onClick={[Function]}
+          />
+        </Checkbox>
+      </div>
+      <div
+        className="col-md-6"
+        key="456"
+      >
+        <Checkbox
+          checked={true}
+          disabled={true}
+          id="cars-select-item-456"
+          onChange={[Function]}
+        >
+          Mazda
+          <span>
+             
+          </span>
+          <FavouriteStarButton
+            enabled={true}
+            id="cars-favourite-item-456"
+            onClick={[Function]}
+          />
+        </Checkbox>
+      </div>
+      <div
+        className="col-md-6"
+        key="645"
+      >
+        <Checkbox
+          checked={true}
+          disabled={false}
+          id="cars-select-item-645"
+          onChange={[Function]}
+        >
+          McLaren
+          <span>
+             
+          </span>
+          <FavouriteStarButton
+            enabled={false}
+            id="cars-favourite-item-645"
+            onClick={[Function]}
+          />
+        </Checkbox>
+      </div>
+    </div>
+  </div>
+</Modal>
+`;
