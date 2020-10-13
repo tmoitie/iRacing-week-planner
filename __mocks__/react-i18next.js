@@ -1,5 +1,4 @@
 import moment from 'moment';
-import * as React from 'react';
 import i18n from 'i18next';
 
 i18n
@@ -27,6 +26,7 @@ export function useTranslation() {
 }
 export function withTranslation() {
   return (Component) => {
+    // eslint-disable-next-line no-param-reassign
     Component.defaultProps = { ...Component.defaultProps, t: i18n.t.bind(i18n) };
     return Component;
   };

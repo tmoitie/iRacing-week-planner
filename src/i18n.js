@@ -11,7 +11,7 @@ import de from '../translations/de';
 import fr from '../translations/fr';
 
 export const languages = {
-  'de': {
+  de: {
     flag: '🇩🇪',
     name: 'Deutsch (DE)',
   },
@@ -23,11 +23,11 @@ export const languages = {
     flag: '🇬🇧',
     name: 'English (UK)',
   },
-  'es': {
+  es: {
     flag: '🇪🇸',
     name: 'Español (ES)',
   },
-  'fr': {
+  fr: {
     flag: '🇫🇷',
     name: 'Français (FR)',
   },
@@ -40,10 +40,10 @@ export const languages = {
 const resources = {
   en,
   'en-GB': enGB,
-  'es': es,
+  es,
   'pt-BR': ptBR,
-  'de': de,
-  'fr': fr,
+  de,
+  fr,
 };
 
 if (process.env.NODE_ENV === 'development') {

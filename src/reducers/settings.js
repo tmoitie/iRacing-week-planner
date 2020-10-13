@@ -1,5 +1,7 @@
+// @flow
+
 import uniq from 'lodash.uniq';
-import { actionTypes as localStorageActionTypes } from 'redux-localstorage'
+import { actionTypes as localStorageActionTypes } from 'redux-localstorage';
 import { SIGNED_OUT } from '../actions/auth';
 import {
   FIREBASE_SYNCED,
@@ -7,7 +9,7 @@ import {
   RESET_FILTERS,
   RESET_SETTINGS,
   UPDATE_FILTERS,
-  UPDATE_SETTING
+  UPDATE_SETTING,
 } from '../actions/settings';
 
 import availableColumns from '../data/availableColumns';

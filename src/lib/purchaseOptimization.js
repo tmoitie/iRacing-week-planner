@@ -1,39 +1,40 @@
 import series from '../data/season.json';
 import tracks from '../data/tracks.json';
 
-export default function ({
+export default function calulatePurchaseOptimization({
   ownedTracks, favouriteSeries,
 }) {
   const currentSeries = favouriteSeries.length === 0
     ? series
-    : series.filter((series) => favouriteSeries.includes(series.seriesid));
+    : series.filter((seriesToFilter) => favouriteSeries.includes(seriesToFilter.seriesid));
 
   const allTrackPkgIds = currentSeries
-    .flatMap((series) => series.tracks.map((track) => track.pkgid))
+    .flatMap((seriesToFilter) => seriesToFilter.tracks.map((track) => track.pkgid))
     .filter((pkgId) => !ownedTracks.includes(pkgId));
 
   const countById = Object.values(allTrackPkgIds.reduce((resultMap, trackPkgId) => {
     const originalTrack = tracks.find((track) => track.pkgid === trackPkgId);
     const filteredSeries = currentSeries
-      .filter((series) => series.tracks.filter((seriesTrack) => seriesTrack.pkgid === trackPkgId).length > 0);
+      .filter(
+        (seriesToFilter) => seriesToFilter.tracks.filter((seriesTrack) => seriesTrack.pkgid === trackPkgId).length > 0,
+      );
 
     // Annotate each series noting the week we're racing the target track
     const fromSeries = filteredSeries.map(
-      (series) => ({
-        seriesname: series.seriesname,
-        racedOnWeek: series.tracks.find((seriesTrack) => seriesTrack.pkgid === trackPkgId).raceweek,
-      })
+      (seriesToFilter) => ({
+        seriesname: seriesToFilter.seriesname,
+        racedOnWeek: seriesToFilter.tracks.find((seriesTrack) => seriesTrack.pkgid === trackPkgId).raceweek,
+      }),
     );
 
-    resultMap[trackPkgId] = resultMap[trackPkgId] || {
-      track: originalTrack,
-      series: fromSeries,
-      count: 0,
+    return {
+      ...resultMap,
+      [trackPkgId]: {
+        track: resultMap[trackPkgId] ? resultMap[trackPkgId].track : originalTrack,
+        series: resultMap[trackPkgId] ? resultMap[trackPkgId].series : fromSeries,
+        count: resultMap[trackPkgId] ? resultMap[trackPkgId].count + 1 : 0,
+      },
     };
-
-    resultMap[trackPkgId].count += 1;
-
-    return resultMap;
   }, {}));
 
   return countById

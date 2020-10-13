@@ -5,19 +5,19 @@ export default [
     // Advanced Mazda
     seriesId: 231,
     everyTime: duration(2, 'hours'),
-    offset: duration(15, 'minutes')
+    offset: duration(15, 'minutes'),
   },
   {
     // Blancpain Endurance
     seriesId: 237,
     setTimes: [
       duration({ days: 4, hours: 9 }), // Sat 9am
-      duration({ days: 4, hours: 19 }),  // Sat 7pm
-      duration({ days: 5, hours: 17 })  // Sun 5pm
+      duration({ days: 4, hours: 19 }), // Sat 7pm
+      duration({ days: 5, hours: 17 }), // Sun 5pm
     ],
     // weekStartOffset: duration({ days: 0 }),
     // weekEndOffset: duration({ days: 7 }),
-    offWeeks: []
+    offWeeks: [],
   },
   {
     // Lotus 49
@@ -41,13 +41,13 @@ export default [
     // Kamel GT
     seriesId: 285,
     everyTime: duration(2, 'hours'),
-    offset: duration(1, 'hours')
+    offset: duration(1, 'hours'),
   },
   {
     // Porsche cup
     seriesId: 299,
     everyTime: duration(2, 'hours'),
-    offset: duration(105, 'minutes')
+    offset: duration(105, 'minutes'),
   },
   // {
   //   // Star Mazda
@@ -59,13 +59,13 @@ export default [
     // Fanatec GT
     seriesId: 278,
     everyTime: duration(120, 'minutes'),
-    offset: duration(105, 'minutes')
+    offset: duration(105, 'minutes'),
   },
   {
     // Radical
     seriesId: 74,
     everyTime: duration(120, 'minutes'),
-    offset: duration(60, 'minutes')
+    offset: duration(60, 'minutes'),
   },
   // {
   //   // ROAR
@@ -81,7 +81,7 @@ export default [
     // Dallara F3
     seriesId: 358,
     everyTime: duration(120, 'minutes'),
-    offset: duration(75, 'minutes')
+    offset: duration(75, 'minutes'),
   },
   {
     // IndyCar iRacing Series
@@ -106,14 +106,14 @@ export default [
     setTimes: [
       duration({ days: 4, hours: 1 }), // Sat 01:00 GMT
       duration({ days: 4, hours: 13 }), // Sat 13:00 GMT
-    ]
+    ],
   },
   {
     // Porsche Esports Sprint Challenge
     seriesId: 410,
     weekEndOffset: duration({ days: 7 }),
     offWeeks: [
-      2.1, 3.1, 3.1, 3.1, 4.1, 5.1, 6.1, 7.1, 8.1, 9.1, 9.1, 9.1, 10.1
+      2.1, 3.1, 3.1, 3.1, 4.1, 5.1, 6.1, 7.1, 8.1, 9.1, 9.1, 9.1, 10.1,
     ],
     everyTime: duration(120, 'minutes'),
     offset: duration(60, 'minutes'),

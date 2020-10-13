@@ -17,7 +17,7 @@ export default [
     // Street Stock
     seriesId: 182,
     everyTime: duration(1, 'hours'),
-    offset: duration(0, 'minutes')
+    offset: duration(0, 'minutes'),
   },
   {
     // Pickup Cup
@@ -29,7 +29,7 @@ export default [
     // Advanced Legends
     seriesId: 32,
     everyTime: duration(1, 'hours'),
-    offset: duration(30, 'minutes')
+    offset: duration(30, 'minutes'),
   },
   // {
   //   // Advanced Legends
