@@ -1,0 +1,212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Navbar changes language 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -77,11 +77,11 @@
+            >
+              Sign out
+            </a>
+          </li>
+          <li
+-           class=\\"dropdown\\"
++           class=\\"dropdown open\\"
+            id=\\"navbar-language-dropdown\\"
+          >
+            <a
+              href=\\"\\"
+              id=\\"navbar-link-open-language-dropdown\\""
+`;
+
+exports[`components/Navbar changes language 2`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -77,11 +77,11 @@
+            >
+              Sign out
+            </a>
+          </li>
+          <li
+-           class=\\"dropdown open\\"
++           class=\\"dropdown\\"
+            id=\\"navbar-language-dropdown\\"
+          >
+            <a
+              href=\\"\\"
+              id=\\"navbar-link-open-language-dropdown\\""
+`;
+
+exports[`components/Navbar closes dropdown 1`] = `
+"Snapshot Diff:
+Compared values have no visual difference."
+`;
+
+exports[`components/Navbar renders correctly and links work 1`] = `
+<nav
+  class="navbar navbar-inverse"
+>
+  <div
+    class="container-fluid"
+  >
+    <div
+      class="navbar-header"
+    >
+      <a
+        class="navbar-brand"
+        href="/"
+      >
+        iRacing Week Planner
+      </a>
+    </div>
+    <ul
+      class="nav navbar-nav navbar-left"
+    >
+      <li>
+        <a
+          href=""
+          id="navbar-link-purchase-guide"
+        >
+          Purchase guide
+        </a>
+      </li>
+    </ul>
+    <ul
+      class="nav navbar-nav navbar-right"
+    >
+      <li>
+        <a
+          href=""
+          id="navbar-link-my-tracks"
+        >
+          Set my tracks
+        </a>
+      </li>
+      <li>
+        <a
+          href=""
+          id="navbar-link-my-cars"
+        >
+          Set my cars
+        </a>
+      </li>
+      <li>
+        <a
+          href=""
+          id="navbar-link-favourite-series"
+        >
+          Set favorite series
+        </a>
+      </li>
+      <li>
+        <a
+          href=""
+          id="navbar-link-options"
+        >
+          Options
+        </a>
+      </li>
+      <li>
+        <a
+          href=""
+          id="navbar-link-about"
+        >
+          About
+        </a>
+      </li>
+      <li>
+        <a
+          href=""
+          id="navbar-link-sign-out"
+        >
+          Sign out
+        </a>
+      </li>
+      <li
+        class="dropdown"
+        id="navbar-language-dropdown"
+      >
+        <a
+          href=""
+          id="navbar-link-open-language-dropdown"
+        >
+          🇺🇸
+          <span
+            class="caret"
+          />
+        </a>
+        <ul
+          class="dropdown-menu"
+        >
+          <li>
+            <a
+              href=""
+              id="navbar-link-language-de"
+            >
+              🇩🇪
+              Deutsch (DE)
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
+              id="navbar-link-language-en"
+            >
+              🇺🇸
+              English (US)
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
+              id="navbar-link-language-en-GB"
+            >
+              🇬🇧
+              English (UK)
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
+              id="navbar-link-language-es"
+            >
+              🇪🇸
+              Español (ES)
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
+              id="navbar-link-language-fr"
+            >
+              🇫🇷
+              Français (FR)
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
+              id="navbar-link-language-pt-BR"
+            >
+              🇧🇷
+              Português (BR)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/tmoitie/iRacing-week-planner/blob/master/Translate.md"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Help me translate!
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+`;

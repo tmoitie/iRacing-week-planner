@@ -4,7 +4,7 @@ export { default as EndDate } from './EndDate';
 export { default as Fixed } from './Fixed';
 export { default as Id } from './Id';
 export { default as Licence } from './Licence';
-export { default as Link } from './Link';
+export { default as LinkColumn } from './LinkColumn';
 export { default as NextRace } from './NextRace';
 export { default as Official } from './Official';
 export { default as RaceTimes } from './RaceTimes';

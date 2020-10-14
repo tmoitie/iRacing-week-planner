@@ -1,3 +1,7 @@
+// @flow
+
+import * as React from 'react';
+
 import moment from 'moment';
 import i18n from 'i18next';
 
@@ -22,12 +26,10 @@ i18n
 export function useTranslation() {
   return {
     t: i18n.t.bind(i18n),
+    i18n,
   };
 }
-export function withTranslation() {
-  return (Component) => {
-    // eslint-disable-next-line no-param-reassign
-    Component.defaultProps = { ...Component.defaultProps, t: i18n.t.bind(i18n) };
-    return Component;
-  };
+export const initReactI18next = { type: '3rdParty', init: () => {} };
+export function Trans({ children }: { children: React.Node }) {
+  return <>{children}</>;
 }

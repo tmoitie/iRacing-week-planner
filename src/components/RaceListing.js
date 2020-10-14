@@ -3,7 +3,8 @@
 import * as React from 'react';
 import moment from 'moment';
 import { useTranslation } from 'react-i18next';
-import type { filters as filtersType, sort as sortType } from '../reducers/settings';
+import { shallowEqual, useDispatch, useSelector } from 'react-redux';
+import { updateSetting } from '../actions/settings';
 import SortArrow from './SortArrow';
 
 import allRaces from '../lib/races';
@@ -15,35 +16,26 @@ import availableColumns from '../data/availableColumns';
 import styles from '../styles/main.scss';
 import raceListingStyles from './styles/raceListing.scss';
 
-type Props = {
-  date: moment.Moment,
-  sort: sortType,
-  filters: filtersType,
-  favouriteSeries: Array<number>,
-  ownedTracks: Array<number>,
-  ownedCars: Array<number>,
-  favouriteCars: Array<number>,
-  favouriteTracks: Array<number>,
-  columnIds: Array<string>,
-  updateSort: (sortType) => void,
-};
+const settingsSelector = (state) => state.settings;
+const dateSelector = (state) => state.app.date;
 
-export default function RaceListing({
-  sort, updateSort, date, filters, favouriteSeries, ownedTracks, ownedCars, favouriteCars, favouriteTracks, columnIds,
-}: Props): React.Node {
+export default function RaceListing(): React.Node {
   const { t } = useTranslation();
+  const settings = useSelector(settingsSelector, shallowEqual);
+  const date = useSelector(dateSelector, shallowEqual);
+  const {
+    filters, favouriteSeries, favouriteCars, favouriteTracks,
+    sort, ownedCars, ownedTracks, columns,
+  } = settings;
+  const dispatch = useDispatch();
 
   const getSortColumnHandler = (columnId: string) => () => {
-    let newSort = { ...sort };
-
     if (sort.key === columnId) {
-      newSort.order = sort.order === 'asc' ? 'desc' : 'asc';
-      updateSort(newSort);
+      dispatch(updateSetting('sort', { ...sort, order: sort.order === 'asc' ? 'desc' : 'asc' }));
       return;
     }
 
-    newSort = { key: columnId, order: 'asc' };
-    updateSort(newSort);
+    dispatch(updateSetting('sort', { key: columnId, order: 'asc' }));
   };
 
   const dateFilteredRaces = React.useMemo(() => allRaces.filter(
@@ -68,14 +60,14 @@ export default function RaceListing({
     return <p>{t('No races this week match your favourite tracks. Try turning the filter off or adding some.')}</p>;
   }
 
-  const columns = availableColumns.filter((column) => columnIds.indexOf(column.id) !== -1);
+  const chosenColumns = availableColumns.filter((column) => columns.indexOf(column.id) !== -1);
 
   return (
     <div className={`${styles['table-responsive']} ${raceListingStyles.raceListing}`}>
       <table className={styles.table} style={{ fontSize: '0.8em' }}>
         <thead>
           <tr>
-            {columns.map((column) => (
+            {chosenColumns.map((column) => (
               <th
                 key={column.id}
                 id={`raceListing-th-${column.id}`}
@@ -92,7 +84,7 @@ export default function RaceListing({
         <tbody>
           {filteredRaces.map((race) => (
             <tr key={race.seriesId}>
-              {columns.map((column) => (
+              {chosenColumns.map((column) => (
                 <column.component
                   key={column.id}
                   race={race}

@@ -1,23 +1,39 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+// @flow
+
+import * as React from 'react';
 import { useTranslation } from 'react-i18next';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 import {
-  acknowledgeAuthError as acknowledgeAuthErrorAction,
+  acknowledgeAuthError,
   ERROR_RESET,
-  forgottenPassword as forgottenPasswordAction,
+  forgottenPassword,
 } from '../../actions/auth';
 import Modal from './Modal';
 import styles from '../../styles/main.scss';
 
-function ForgottenPasswordModal({ isOpen, onClose, error, loading, forgottenPassword, acknowledgeAuthError }) {
+type Props = {
+  isOpen?: boolean,
+  onClose?: () => void,
+};
+
+const defaultProps = {
+  onClose: () => {},
+  isOpen: false,
+};
+
+const errorSelector = (state) => state.auth.errorReset;
+const loadingSelector = (state) => state.auth.loadingReset;
+
+export default function ForgottenPasswordModal({ isOpen, onClose }: Props) {
+  const error = useSelector(errorSelector, shallowEqual);
+  const loading = useSelector(loadingSelector);
+  const dispatch = useDispatch();
   const { t } = useTranslation();
-  const [email, setEmail] = useState('');
-  const [thanksModal, setThanksModal] = useState(false);
+  const [email, setEmail] = React.useState('');
+  const [thanksModal, setThanksModal] = React.useState(false);
 
   const submitClick = async () => {
-    const output = await forgottenPassword(email);
+    const output = await dispatch(forgottenPassword(email));
     if (output.type !== ERROR_RESET) {
       setEmail('');
       setThanksModal(true);
@@ -43,7 +59,12 @@ function ForgottenPasswordModal({ isOpen, onClose, error, loading, forgottenPass
           >
             {error && (
               <div className={`${styles.alert} ${styles['alert-warning']} ${styles['alert-dismissible']}`} role="alert">
-                <button className={styles.close} type="button" aria-label="Close" onClick={acknowledgeAuthError}>
+                <button
+                  className={styles.close}
+                  type="button"
+                  aria-label="Close"
+                  onClick={() => dispatch(acknowledgeAuthError())}
+                >
                   <span
                     aria-hidden="true"
                   >
@@ -82,31 +103,4 @@ function ForgottenPasswordModal({ isOpen, onClose, error, loading, forgottenPass
   );
 }
 
-ForgottenPasswordModal.propTypes = {
-  onClose: PropTypes.func,
-  isOpen: PropTypes.bool.isRequired,
-  forgottenPassword: PropTypes.func.isRequired,
-  acknowledgeAuthError: PropTypes.func.isRequired,
-  error: PropTypes.shape({
-    message: PropTypes.string,
-  }),
-  loading: PropTypes.bool.isRequired,
-};
-
-ForgottenPasswordModal.defaultProps = {
-  onClose: () => {},
-  isOpen: false,
-  error: null,
-};
-
-const mapStateToProps = (state) => ({
-  error: state.auth.errorReset,
-  loading: state.auth.loadingReset,
-});
-
-const mapDispatchToProps = (dispatch) => bindActionCreators({
-  forgottenPassword: forgottenPasswordAction,
-  acknowledgeAuthError: acknowledgeAuthErrorAction,
-}, dispatch);
-
-export default connect(mapStateToProps, mapDispatchToProps)(ForgottenPasswordModal);
+ForgottenPasswordModal.defaultProps = defaultProps;

@@ -1,144 +1,131 @@
 import { describe, test } from '@jest/globals';
 import React from 'react';
-import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
+import { Provider } from 'react-redux';
 import configureMockStore from 'redux-mock-store';
+import thunk from 'redux-thunk';
+import { RESET_FILTERS, RESET_SETTINGS, UPDATE_FILTERS } from '../../actions/settings';
 
-import ConnectedFilters, { Filters } from '../Filters';
-import { defaultFilters } from '../../reducers/settings'
+import { defaultFilters } from '../../reducers/settings';
+import Filters from '../Filters';
 
-const mockStore = configureMockStore();
+const mockStore = configureMockStore([thunk]);
 
 describe('components/Filters', () => {
-  const updateFilters = jest.fn();
-  const resetSettings = jest.fn();
-  const resetFilters = jest.fn();
-  const t = jest.fn((key) => key);
-
   test('renders correctly', () => {
-    const component = shallow(<Filters
-      currentFilters={defaultFilters}
-      updateFilters={updateFilters}
-      resetSettings={resetSettings}
-      resetFilters={resetFilters}
-      t={t}
-    />);
+    const store = mockStore({
+      settings: { filters: defaultFilters, firebaseSynced: false },
+      auth: { user: null },
+    });
 
-    expect(component).toMatchSnapshot();
+    const component = renderer.create(<Provider store={store}><Filters /></Provider>);
+
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('correctly click a filter item checkbox', () => {
-    const component = shallow(<Filters
-      currentFilters={{ ...defaultFilters, type: ['Oval', 'Road'] }}
-      updateFilters={updateFilters}
-      resetSettings={resetSettings}
-      resetFilters={resetFilters}
-      t={t}
-    />);
+    const filters = { ...defaultFilters, type: ['Oval', 'Road'] };
+    const store = mockStore({
+      settings: { filters, firebaseSynced: false },
+      auth: { user: null },
+    });
 
-    const ovalCheckbox = component.find({ id: 'checkbox-type-oval' });
+    const component = renderer.create(<Provider store={store}><Filters /></Provider>);
 
-    ovalCheckbox.first().invoke('onChange')(false);
+    const ovalCheckbox = component.root.findByProps({ id: 'checkbox-type-oval' });
 
-    expect(updateFilters).toHaveBeenCalledWith(expect.objectContaining({
-      type: ['Road']
+    ovalCheckbox.props.onChange(false);
+
+    expect(store.getActions()[0]).toEqual(expect.objectContaining({
+      type: UPDATE_FILTERS,
+      payload: expect.objectContaining({ filters: expect.objectContaining({ type: ['Road'] }) }),
     }));
 
-    updateFilters.mockClear();
+    const rxCheckbox = component.root.findByProps({ id: 'checkbox-type-rx' });
 
-    const rxCheckbox = component.find({ id: 'checkbox-type-rx' });
+    rxCheckbox.props.onChange(true);
 
-    rxCheckbox.first().invoke('onChange')(true);
-
-    expect(updateFilters).toHaveBeenCalledWith(expect.objectContaining({
-      type: ['Oval', 'Road', 'RX']
+    expect(store.getActions()[1]).toEqual(expect.objectContaining({
+      type: UPDATE_FILTERS,
+      payload: expect.objectContaining({
+        filters: expect.objectContaining({ type: ['Oval', 'Road', 'RX'] }),
+      }),
     }));
 
-    expect(component).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('correctly click a true/false checkbox', () => {
-    const component = shallow(<Filters
-      currentFilters={{ ...defaultFilters, ownedTracks: true }}
-      updateFilters={updateFilters}
-      resetSettings={resetSettings}
-      resetFilters={resetFilters}
-      t={t}
-    />);
+    const filters = { ...defaultFilters, ownedTracks: true };
+    const store = mockStore({
+      settings: { filters, firebaseSynced: false },
+      auth: { user: null },
+    });
 
-    const ownedTracksCheckbox = component.find({ id: 'checkbox-ownedTracks' });
+    const component = renderer.create(<Provider store={store}><Filters /></Provider>);
 
-    ownedTracksCheckbox.first().invoke('onChange')(false);
+    const ownedTracksCheckbox = component.root.findByProps({ id: 'checkbox-ownedTracks' });
 
-    expect(updateFilters).toHaveBeenCalledWith(expect.objectContaining({
-      ownedTracks: false,
+    ownedTracksCheckbox.props.onChange(false);
+
+    expect(store.getActions()[0]).toEqual(expect.objectContaining({
+      type: UPDATE_FILTERS,
+      payload: expect.objectContaining({
+        filters: expect.objectContaining({ ownedTracks: false }),
+      }),
     }));
 
-    updateFilters.mockClear();
+    const favouriteSeriesCheckbox = component.root.findByProps({ id: 'checkbox-favouriteSeries' });
 
-    const favouriteSeriesCheckbox = component.find({ id: 'checkbox-favouriteSeries' });
+    favouriteSeriesCheckbox.props.onChange(true);
 
-    favouriteSeriesCheckbox.first().invoke('onChange')(true);
-
-    expect(updateFilters).toHaveBeenCalledWith(expect.objectContaining({
-      favouriteSeries: true,
+    expect(store.getActions()[1]).toEqual(expect.objectContaining({
+      type: UPDATE_FILTERS,
+      payload: expect.objectContaining({
+        filters: expect.objectContaining({ ownedTracks: true }),
+      }),
     }));
 
     expect(component).toMatchSnapshot();
   });
 
   test('not synced user', () => {
-    const component = shallow(<Filters
-      currentFilters={defaultFilters}
-      updateFilters={updateFilters}
-      resetSettings={resetSettings}
-      resetFilters={resetFilters}
-      t={t}
-      user={{ id: 12 }}
-      firebaseSynced={false}
-    />);
+    const store = mockStore({
+      settings: { filters: defaultFilters, firebaseSynced: false },
+      auth: { user: { id: 12 } },
+    });
+
+    const component = renderer.create(<Provider store={store}><Filters /></Provider>);
 
     expect(component).toMatchSnapshot();
   });
 
   test('synced user', () => {
-    const component = shallow(<Filters
-      currentFilters={defaultFilters}
-      updateFilters={updateFilters}
-      resetSettings={resetSettings}
-      resetFilters={resetFilters}
-      t={t}
-      user={{ id: 12 }}
-      firebaseSynced
-    />);
+    const store = mockStore({
+      settings: { filters: defaultFilters, firebaseSynced: true },
+      auth: { user: { id: 12 } },
+    });
+
+    const component = renderer.create(<Provider store={store}><Filters /></Provider>);
 
     expect(component).toMatchSnapshot();
   });
 
   test('buttons fire events', () => {
-    const component = shallow(<Filters
-      currentFilters={defaultFilters}
-      updateFilters={updateFilters}
-      resetSettings={resetSettings}
-      resetFilters={resetFilters}
-      t={t}
-      user={{ id: 12 }}
-      firebaseSynced
-    />);
-    component.find({ id: 'filters-reset-filters-button' }).first().simulate('click');
-    expect(resetFilters).toBeCalled();
-
-    component.find({ id: 'filters-reset-settings-button' }).first().simulate('click');
-    expect(resetSettings).toBeCalled();
-  });
-
-  test('passes redux props', () => {
     const store = mockStore({
-      settings: { filters: defaultFilters, firebaseSynced: true },
+      settings: { filters: defaultFilters, firebaseSynced: false },
       auth: { user: null },
     });
-    const component = shallow(<ConnectedFilters store={store} />);
-    expect(component.children().first().prop('currentFilters')).toBe(defaultFilters);
-    expect(component.children().first().prop('user')).toBe(null);
-    expect(component.children().first().prop('firebaseSynced')).toBe(true);
+    const component = renderer.create(<Provider store={store}><Filters /></Provider>);
+
+    const resetFiltersButton = component.root.findByProps({ id: 'filters-reset-filters-button' });
+    resetFiltersButton.props.onClick();
+
+    expect(store.getActions()[0].type).toEqual(RESET_FILTERS);
+
+    const resetSettingsButton = component.root.findByProps({ id: 'filters-reset-settings-button' });
+    resetSettingsButton.props.onClick();
+
+    expect(store.getActions()[1].type).toEqual(RESET_SETTINGS);
   });
 });

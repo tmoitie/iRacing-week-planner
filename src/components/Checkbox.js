@@ -10,7 +10,7 @@ type Props = {
   onChange?: (newValue: boolean) => void,
   checked?: boolean,
   disabled?: boolean,
-  children: ?React.Node,
+  children?: React.Node,
 };
 
 export default function Checkbox({ id, onChange, checked, disabled, children }: Props): React.Node {
@@ -34,4 +34,5 @@ Checkbox.defaultProps = {
   checked: false,
   disabled: false,
   onChange: () => {},
+  children: null,
 };

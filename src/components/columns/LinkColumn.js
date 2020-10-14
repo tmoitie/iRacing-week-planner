@@ -9,7 +9,7 @@ type Props = {
   }
 };
 
-export default function Link({ race }: Props) {
+export default function LinkColumn({ race }: Props) {
   return (
     <td>
       <a

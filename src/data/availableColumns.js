@@ -2,7 +2,7 @@
 
 import moment from 'moment';
 import {
-  Id, Car, Class, EndDate, Fixed, Licence, Link, NextRace, Official,
+  Id, Car, Class, EndDate, Fixed, Licence, LinkColumn, NextRace, Official,
   RaceTimes, Series, SeasonEnd, StartDate, Track, Type,
 } from '../components/columns';
 import { getNextRace } from '../lib/races';
@@ -212,6 +212,6 @@ export default [{
 }, {
   id: 'seriesLink',
   header: 'Link',
-  component: Link,
+  component: LinkColumn,
   default: true,
 }];

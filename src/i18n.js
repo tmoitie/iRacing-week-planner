@@ -10,7 +10,7 @@ import ptBR from '../translations/pt-BR';
 import de from '../translations/de';
 import fr from '../translations/fr';
 
-export const languages = {
+const languages = {
   de: {
     flag: '🇩🇪',
     name: 'Deutsch (DE)',
@@ -37,6 +37,8 @@ export const languages = {
   },
 };
 
+export default languages;
+
 const resources = {
   en,
   'en-GB': enGB,
@@ -48,6 +50,7 @@ const resources = {
 
 if (process.env.NODE_ENV === 'development') {
   languages.test = { flag: '👀', name: 'Test' };
+  // eslint-disable-next-line global-require
   resources.test = require('../translations/fake').default;
 }
 

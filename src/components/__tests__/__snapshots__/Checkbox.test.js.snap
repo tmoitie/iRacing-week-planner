@@ -4,10 +4,13 @@ exports[`components/Checkbox renders 1`] = `
 <div
   className="checkbox"
 >
-  <label>
+  <label
+    htmlFor="test-renders"
+  >
     <input
       checked={false}
       disabled={false}
+      id="test-renders"
       onChange={[Function]}
       type="checkbox"
     />
@@ -20,10 +23,13 @@ exports[`components/Checkbox renders checked 1`] = `
 <div
   className="checkbox"
 >
-  <label>
+  <label
+    htmlFor="test-checked"
+  >
     <input
       checked={true}
       disabled={false}
+      id="test-checked"
       onChange={[Function]}
       type="checkbox"
     />
@@ -35,10 +41,13 @@ exports[`components/Checkbox renders disabled 1`] = `
 <div
   className="checkbox disabled"
 >
-  <label>
+  <label
+    htmlFor="test-disabled"
+  >
     <input
       checked={false}
       disabled={true}
+      id="test-disabled"
       onChange={[Function]}
       type="checkbox"
     />

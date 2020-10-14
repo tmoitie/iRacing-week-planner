@@ -17,7 +17,7 @@ export default function FavouriteStarButton({ enabled, onClick }: Props): React.
       className={classnames({
         [styles.glyphicon]: true,
         [styles['glyphicon-star']]: enabled,
-        [styles['glyphicon-star-empty']]: !enabled
+        [styles['glyphicon-star-empty']]: !enabled,
       })}
     />
   );
