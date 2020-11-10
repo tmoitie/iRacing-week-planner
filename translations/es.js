@@ -91,7 +91,7 @@ export default {
     'Sign in/Create account': 'Iniciar sesión/Registrarse',
     'Signing in will sync your settings across multiple browsers or devices.': 'Iniciar sesión sincronizará su configuración en varios navegadores o dispositivos.',
     'When you first sign in it will use your current settings to set up the account, but once an account is set-up logging in will overwrite any settings you stored as a guest.':
-      'Cuando inicias sesión pro primera vez se utilizará la configuración actual para setear la cuenta, pero una vez configurada, el inicio de sesión sobrescribirá cualquier configuración que haya almacenado como invitado.',
+      'Cuando inicias sesión por primera vez se utilizará la configuración actual para setear la cuenta, pero una vez configurada, el inicio de sesión sobrescribirá cualquier configuración que haya almacenado como invitado.',
     'Password': 'Contraseña',
     'Forgotten password?': '¿Olvido la contraseña?',
     'Sign in': 'Iniciar sesión',
