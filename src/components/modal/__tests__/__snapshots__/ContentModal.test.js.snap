@@ -19,64 +19,73 @@ exports[`components/modal/ContentModal renders correctly 1`] = `
       className="row"
     >
       <div
-        className="col-sm-4"
+        className="checkboxContainer col-sm-4"
       >
-        <Checkbox
-          checked={false}
-          disabled={false}
-          id="cars-select-all"
-          onChange={[Function]}
+        <div>
+          <Checkbox
+            checked={false}
+            disabled={false}
+            id="cars-select-all"
+            onChange={[Function]}
+          >
+            Select all
+          </Checkbox>
+        </div>
+        <div
+          className="favourite"
         >
-          Select all
-          <span>
-             
-          </span>
           <FavouriteStarButton
             enabled={false}
             id="cars-favourite-all"
             onClick={[Function]}
           />
-        </Checkbox>
+        </div>
       </div>
       <div
-        className="col-sm-4"
+        className="checkboxContainer col-sm-4"
       >
-        <Checkbox
-          checked={false}
-          disabled={false}
-          id="cars-select-oval"
-          onChange={[Function]}
+        <div>
+          <Checkbox
+            checked={false}
+            disabled={false}
+            id="cars-select-oval"
+            onChange={[Function]}
+          >
+            Select all oval
+          </Checkbox>
+        </div>
+        <div
+          className="favourite"
         >
-          Select all oval
-          <span>
-             
-          </span>
           <FavouriteStarButton
             enabled={false}
             id="cars-favourite-oval"
             onClick={[Function]}
           />
-        </Checkbox>
+        </div>
       </div>
       <div
-        className="col-sm-4"
+        className="checkboxContainer col-sm-4"
       >
-        <Checkbox
-          checked={true}
-          disabled={false}
-          id="cars-select-road"
-          onChange={[Function]}
+        <div>
+          <Checkbox
+            checked={true}
+            disabled={false}
+            id="cars-select-road"
+            onChange={[Function]}
+          >
+            Select all road
+          </Checkbox>
+        </div>
+        <div
+          className="favourite"
         >
-          Select all road
-          <span>
-             
-          </span>
           <FavouriteStarButton
             enabled={false}
             id="cars-favourite-road"
             onClick={[Function]}
           />
-        </Checkbox>
+        </div>
       </div>
     </div>
     <hr />
@@ -84,88 +93,100 @@ exports[`components/modal/ContentModal renders correctly 1`] = `
       className="row"
     >
       <div
-        className="col-md-6"
+        className="checkboxContainer col-md-6"
         key="123"
       >
-        <Checkbox
-          checked={true}
-          disabled={false}
-          id="cars-select-item-123"
-          onChange={[Function]}
+        <div>
+          <Checkbox
+            checked={true}
+            disabled={false}
+            id="cars-select-item-123"
+            onChange={[Function]}
+          >
+            Ford
+          </Checkbox>
+        </div>
+        <div
+          className="favourite"
         >
-          Ford
-          <span>
-             
-          </span>
           <FavouriteStarButton
             enabled={false}
             id="cars-favourite-item-123"
             onClick={[Function]}
           />
-        </Checkbox>
+        </div>
       </div>
       <div
-        className="col-md-6"
+        className="checkboxContainer col-md-6"
         key="234"
       >
-        <Checkbox
-          checked={false}
-          disabled={false}
-          id="cars-select-item-234"
-          onChange={[Function]}
+        <div>
+          <Checkbox
+            checked={false}
+            disabled={false}
+            id="cars-select-item-234"
+            onChange={[Function]}
+          >
+            Toyota
+          </Checkbox>
+        </div>
+        <div
+          className="favourite"
         >
-          Toyota
-          <span>
-             
-          </span>
           <FavouriteStarButton
             enabled={false}
             id="cars-favourite-item-234"
             onClick={[Function]}
           />
-        </Checkbox>
+        </div>
       </div>
       <div
-        className="col-md-6"
+        className="checkboxContainer col-md-6"
         key="456"
       >
-        <Checkbox
-          checked={true}
-          disabled={true}
-          id="cars-select-item-456"
-          onChange={[Function]}
+        <div>
+          <Checkbox
+            checked={true}
+            disabled={true}
+            id="cars-select-item-456"
+            onChange={[Function]}
+          >
+            Mazda
+          </Checkbox>
+        </div>
+        <div
+          className="favourite"
         >
-          Mazda
-          <span>
-             
-          </span>
           <FavouriteStarButton
             enabled={true}
             id="cars-favourite-item-456"
             onClick={[Function]}
           />
-        </Checkbox>
+        </div>
       </div>
       <div
-        className="col-md-6"
+        className="checkboxContainer col-md-6"
         key="645"
       >
-        <Checkbox
-          checked={true}
-          disabled={false}
-          id="cars-select-item-645"
-          onChange={[Function]}
+        <div>
+          <Checkbox
+            checked={true}
+            disabled={false}
+            id="cars-select-item-645"
+            onChange={[Function]}
+          >
+            McLaren
+          </Checkbox>
+        </div>
+        <div
+          className="favourite"
         >
-          McLaren
-          <span>
-             
-          </span>
           <FavouriteStarButton
             enabled={false}
             id="cars-favourite-item-645"
             onClick={[Function]}
           />
-        </Checkbox>
+        </div>
       </div>
     </div>
   </div>
