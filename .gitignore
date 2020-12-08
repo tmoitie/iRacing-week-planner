@@ -13,3 +13,4 @@
 *.scss.flow
 .nyc_output
 coverage
+.DS_Store

@@ -98,7 +98,7 @@ export default {
     'Sign out': 'Se déconnecter',
     'Create account': 'Créer un compte',
     'There is no user record corresponding to this identifier. The user may have been deleted.': 'Il n\'y a pas de données concernant cet utilisateur. Cet utilisateur pourrait avoir été supprimé.',
-    'The password is invalid or the user does not have a password.': 'Le mot de passe est invalide ou l\utilisateur ne possede pas de mot de passe.',
+    'The password is invalid or the user does not have a password.': 'Le mot de passe est invalide ou l\'utilisateur ne possede pas de mot de passe.',
     'The email address is badly formatted.': 'Le format de l\'adresse e-mail est incorrect.',
     'The password must be 6 characters long or more.': 'Le mot de passe doit être composé de 6 caractères ou plus.',
     'The email address is already in use by another account.': 'Cette adresse e-mail est déjà utilisée par un autre compte.',
