@@ -37,21 +37,23 @@ export default [
   //     1.1, 1.2, 2.1, 2.2, 2.3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 4.1, 4.2, 4.3, 4.4, 5.1
   //   ]
   // },
-  // {
-  //   // NASCAR iRacing Pro Series
-  //   seriesId: 95,
-  //   setTimes: [
-  //     duration({ days: 1, hours: 2 }), // Wed 2am
-  //   ],
-  //   weekEndOffset: duration({ days: 7 }),
-  //   offWeeks: [2.1, 3.1, 3.2, 4.1, 4.2, ]
-  // },
-  // {
-  //   // WoO Sprint Car WC Series
-  //   seriesId: 338,
-  //   weekStartOffset: duration({ days: -7 }),
-  //   offWeeks: []
-  // },
+  {
+    // NASCAR iRacing Pro Series
+    seriesId: 95,
+    setTimes: [
+      duration({ days: 1, hours: 2 }), // Wednesday 2am
+    ],
+  },
+  {
+    // WoO Sprint Car WC Series
+    seriesId: 338,
+    weekStartOffset: duration({ days: 7 }),
+    weekEndOffset: duration({ days: 7 }),
+    offWeeks: [5.1, 6.1],
+    setTimes: [
+      duration({ days: 0, hours: 1, minutes: 45 }), // Tuesday 1:45am
+    ],
+  },
   {
     // eNASCAR Coca-Cola Series
     seriesId: 402,
