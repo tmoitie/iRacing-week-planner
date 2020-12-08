@@ -6,5 +6,6 @@ export default function carsFilter(cars) {
     skuname: fixText(car.skuname),
     name: fixText(car.name),
     sku: car.sku,
+    discountGroupNames: car.discountGroupNames,
   }));
 }

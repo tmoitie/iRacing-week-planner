@@ -146,7 +146,7 @@ export class App extends Component {
         content={cars}
         idField='sku'
         defaultContent={[...defaultSettings.ownedCars]}
-        typeFilter={{ key: 'discountGroupNames', oval: ['oval+car'], road: ['road+car'] }}
+        typeFilter={{ key: 'discountGroupNames', oval: ['oval car'], road: ['road car'] }}
         save={this.getSettingUpdater('ownedCars')}
         favourites={favouriteCars}
         saveFavourites={this.getSettingUpdater('favouriteCars')}
