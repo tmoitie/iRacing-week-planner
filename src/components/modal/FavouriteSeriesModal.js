@@ -77,19 +77,22 @@ class FavouriteSeriesModal extends React.Component {
   render() {
     const { onClose, isOpen, t, favouriteSeries } = this.props;
 
-    const renderCheckboxes = (cbSeries) => (
-      <div className={styles['col-md-6']} key={cbSeries.seriesid}>
-        <Checkbox
-          id={`favourite-series-${cbSeries.seriesid}`}
-          checked={favouriteSeries.indexOf(cbSeries.seriesid) !== -1}
-          onChange={() => {
-            this.setCheckboxFavourite(cbSeries.seriesid);
-          }}
-        >
-          {t(cbSeries.seriesname)}
-        </Checkbox>
-      </div>
-    );
+    const renderCheckboxes = (cbSeries) => {
+      const checked = favouriteSeries.indexOf(cbSeries.seriesid) !== -1;
+      return (
+        <div className={styles['col-md-6']} key={cbSeries.seriesid}>
+          <Checkbox
+            id={`favourite-series-${cbSeries.seriesid}`}
+            checked={checked}
+            onChange={() => {
+              this.setCheckboxFavourite(cbSeries.seriesid, !checked);
+            }}
+          >
+            {t(cbSeries.seriesname)}
+          </Checkbox>
+        </div>
+      );
+    };
 
     return (
       <Modal isOpen={isOpen} onClose={onClose} title={t('Choose favorite series')} doneAction={onClose}>
