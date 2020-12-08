@@ -1,194 +1,243 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { withTranslation } from 'react-i18next';
+// @flow
+
+import * as React from 'react';
+import { useTranslation } from 'react-i18next';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { resetFilters, resetSettings, updateFilters } from '../actions/settings';
+import type { filters } from '../reducers/settings';
+import {
+  resetFilters as resetFiltersAction,
+  resetSettings as resetSettingsAction,
+  updateFilters as updateFiltersAction,
+} from '../actions/settings';
 import Checkbox from './Checkbox';
 
-export class Filters extends Component {
-  static propTypes = {
-    currentFilters: PropTypes.object.isRequired,
-    updateFilters: PropTypes.func.isRequired,
-    resetSettings: PropTypes.func.isRequired,
-    resetFilters: PropTypes.func.isRequired,
-    t: PropTypes.func.isRequired,
-    user: PropTypes.object,
-    firebaseSynced: PropTypes.bool,
-  }
+import styles from '../styles/main.module.scss';
 
-  setCheckboxFilter(key, value, e) {
-    const { currentFilters, updateFilters } = this.props;
-    const newFilters = { ...currentFilters };
-    if (typeof newFilters[key] !== 'object') {
-      newFilters[key] = [];
+type Props = {
+  currentFilters: filters,
+  updateFilters: (filters) => void,
+  resetSettings: () => void,
+  resetFilters: () => void,
+  user?: {},
+  firebaseSynced?: boolean,
+};
+
+const defaultProps = {
+  user: null,
+  firebaseSynced: false,
+};
+
+export function Filters({
+  currentFilters, updateFilters, resetSettings, resetFilters, user, firebaseSynced,
+}: Props = defaultProps): React.Node {
+  const getCheckboxFilterHandler = (key: string, value: any) => (
+    (newValue: boolean): void => {
+      const newFilters = { ...currentFilters };
+
+      const index = newFilters[key].indexOf(value);
+
+      if (index === -1 && newValue) {
+        newFilters[key] = [...newFilters[key], value];
+      }
+      if (index !== -1 && newValue === false) {
+        newFilters[key] = newFilters[key].filter((_, i) => i !== index);
+      }
+      updateFilters(newFilters);
     }
+  );
 
-    const index = newFilters[key].indexOf(value);
-
-    if (index === -1 && e.target.checked) {
-      newFilters[key].push(value);
+  const getBooleanFilterHandler = (key: string) => (
+    (newValue: boolean): void => {
+      updateFilters({
+        ...currentFilters,
+        [key]: newValue,
+      });
     }
-    if (index !== -1 && e.target.checked === false) {
-      newFilters[key].splice(index, 1);
-    }
-    updateFilters(newFilters);
-  }
+  );
 
-  setBooleanFilter(key, e) {
-    const { currentFilters, updateFilters } = this.props;
+  const { t } = useTranslation();
 
-    updateFilters({
-      ...currentFilters,
-      [key]: e.target.checked,
-    });
-  }
+  return (
+    <div style={{ fontSize: '0.8em' }}>
+      <h4>{t('Type')}</h4>
+      <Checkbox
+        id="checkbox-type-oval"
+        checked={currentFilters.type.indexOf('Oval') !== -1}
+        onChange={getCheckboxFilterHandler('type', 'Oval')}
+      >
+        {t('Oval')}
+      </Checkbox>
+      <Checkbox
+        id="checkbox-type-road"
+        checked={currentFilters.type.indexOf('Road') !== -1}
+        onChange={getCheckboxFilterHandler('type', 'Road')}
+      >
+        {t('Road')}
+      </Checkbox>
+      <Checkbox
+        id="checkbox-type-dirt"
+        checked={currentFilters.type.indexOf('Dirt') !== -1}
+        onChange={getCheckboxFilterHandler('type', 'Dirt')}
+      >
+        {t('Dirt')}
+      </Checkbox>
+      <Checkbox
+        id="checkbox-type-rx"
+        checked={currentFilters.type.indexOf('RX') !== -1}
+        onChange={getCheckboxFilterHandler('type', 'RX')}
+      >
+        {t('RX')}
+      </Checkbox>
 
-  render() {
-    const { currentFilters, resetSettings, resetFilters, t, user, firebaseSynced } = this.props;
-    return (
-      <div className='filters-component' style={{ fontSize: '0.8em' }}>
-        <h4>{t('Type')}</h4>
-        <Checkbox
-          checked={currentFilters.type.indexOf('Oval') !== -1}
-          onChange={this.setCheckboxFilter.bind(this, 'type', 'Oval')}
-        >
-          {t('Oval')}
-        </Checkbox>
-        <Checkbox
-          checked={currentFilters.type.indexOf('Road') !== -1}
-          onChange={this.setCheckboxFilter.bind(this, 'type', 'Road')}
-        >
-          {t('Road')}
-        </Checkbox>
-        <Checkbox
-          checked={currentFilters.type.indexOf('Dirt') !== -1}
-          onChange={this.setCheckboxFilter.bind(this, 'type', 'Dirt')}
-        >
-          {t('Dirt')}
-        </Checkbox>
-        <Checkbox
-          checked={currentFilters.type.indexOf('RX') !== -1}
-          onChange={this.setCheckboxFilter.bind(this, 'type', 'RX')}
-        >
-          {t('RX')}
-        </Checkbox>
+      <h4>{t('Licence')}</h4>
+      <Checkbox
+        id="checkbox-licence-r"
+        checked={currentFilters.licence.indexOf('R') !== -1}
+        onChange={getCheckboxFilterHandler('licence', 'R')}
+      >
+        {t('R')}
+      </Checkbox>
+      <Checkbox
+        id="checkbox-licence-d"
+        checked={currentFilters.licence.indexOf('D') !== -1}
+        onChange={getCheckboxFilterHandler('licence', 'D')}
+      >
+        {t('D')}
+      </Checkbox>
+      <Checkbox
+        id="checkbox-licence-c"
+        checked={currentFilters.licence.indexOf('C') !== -1}
+        onChange={getCheckboxFilterHandler('licence', 'C')}
+      >
+        {t('C')}
+      </Checkbox>
+      <Checkbox
+        id="checkbox-licence-b"
+        checked={currentFilters.licence.indexOf('B') !== -1}
+        onChange={getCheckboxFilterHandler('licence', 'B')}
+      >
+        {t('B')}
+      </Checkbox>
+      <Checkbox
+        id="checkbox-licence-a"
+        checked={currentFilters.licence.indexOf('A') !== -1}
+        onChange={getCheckboxFilterHandler('licence', 'A')}
+      >
+        {t('A')}
+      </Checkbox>
+      <Checkbox
+        id="checkbox-licence-p"
+        checked={currentFilters.licence.indexOf('P') !== -1}
+        onChange={getCheckboxFilterHandler('licence', 'P')}
+      >
+        {t('P')}
+      </Checkbox>
 
-        <h4>{t('Licence')}</h4>
-        <Checkbox
-          checked={currentFilters.licence.indexOf('R') !== -1}
-          onChange={this.setCheckboxFilter.bind(this, 'licence', 'R')}
-        >
-          {t('R')}
-        </Checkbox>
-        <Checkbox
-          checked={currentFilters.licence.indexOf('D') !== -1}
-          onChange={this.setCheckboxFilter.bind(this, 'licence', 'D')}
-        >
-          {t('D')}
-        </Checkbox>
-        <Checkbox
-          checked={currentFilters.licence.indexOf('C') !== -1}
-          onChange={this.setCheckboxFilter.bind(this, 'licence', 'C')}
-        >
-          {t('C')}
-        </Checkbox>
-        <Checkbox
-          checked={currentFilters.licence.indexOf('B') !== -1}
-          onChange={this.setCheckboxFilter.bind(this, 'licence', 'B')}
-        >
-          {t('B')}
-        </Checkbox>
-        <Checkbox
-          checked={currentFilters.licence.indexOf('A') !== -1}
-          onChange={this.setCheckboxFilter.bind(this, 'licence', 'A')}
-        >
-          {t('A')}
-        </Checkbox>
-        <Checkbox
-          checked={currentFilters.licence.indexOf('P') !== -1}
-          onChange={this.setCheckboxFilter.bind(this, 'licence', 'P')}
-        >
-          {t('P')}
-        </Checkbox>
+      <h4>{t('Official/Fixed')}</h4>
+      <Checkbox
+        id="checkbox-official-false"
+        checked={currentFilters.official.indexOf(false) !== -1}
+        onChange={getCheckboxFilterHandler('official', false)}
+      >
+        {t('Unofficial')}
+      </Checkbox>
+      <Checkbox
+        id="checkbox-official-true"
+        checked={currentFilters.official.indexOf(true) !== -1}
+        onChange={getCheckboxFilterHandler('official', true)}
+      >
+        {t('Official')}
+      </Checkbox>
+      <Checkbox
+        id="checkbox-fixed-false"
+        checked={currentFilters.fixed.indexOf(false) !== -1}
+        onChange={getCheckboxFilterHandler('fixed', false)}
+      >
+        {t('Open setup')}
+      </Checkbox>
+      <Checkbox
+        id="checkbox-fixed-true"
+        checked={currentFilters.fixed.indexOf(true) !== -1}
+        onChange={getCheckboxFilterHandler('fixed', true)}
+      >
+        {t('Fixed setup')}
+      </Checkbox>
 
-        <h4>{t('Official/Fixed')}</h4>
-        <Checkbox
-          checked={currentFilters.official.indexOf(false) !== -1}
-          onChange={this.setCheckboxFilter.bind(this, 'official', false)}
-        >
-          {t('Unofficial')}
-        </Checkbox>
-        <Checkbox
-          checked={currentFilters.official.indexOf(true) !== -1}
-          onChange={this.setCheckboxFilter.bind(this, 'official', true)}
-        >
-          {t('Official')}
-        </Checkbox>
-        <Checkbox
-          checked={currentFilters.fixed.indexOf(false) !== -1}
-          onChange={this.setCheckboxFilter.bind(this, 'fixed', false)}
-        >
-          {t('Open setup')}
-        </Checkbox>
-        <Checkbox
-          checked={currentFilters.fixed.indexOf(true) !== -1}
-          onChange={this.setCheckboxFilter.bind(this, 'fixed', true)}
-        >
-          {t('Fixed setup')}
-        </Checkbox>
+      <h4>{t('Content')}</h4>
+      <Checkbox
+        id="checkbox-ownedCars"
+        checked={currentFilters.ownedCars === true}
+        onChange={getBooleanFilterHandler('ownedCars')}
+      >
+        {t('Owned cars only')}
+      </Checkbox>
+      <Checkbox
+        id="checkbox-ownedTracks"
+        checked={currentFilters.ownedTracks === true}
+        onChange={getBooleanFilterHandler('ownedTracks')}
+      >
+        {t('Owned tracks only')}
+      </Checkbox>
+      <Checkbox
+        id="checkbox-favouriteSeries"
+        checked={currentFilters.favouriteSeries === true}
+        onChange={getBooleanFilterHandler('favouriteSeries')}
+      >
+        {t('Favorite series only')}
+      </Checkbox>
+      <Checkbox
+        id="checkbox-favouriteCarsOnly"
+        checked={currentFilters.favouriteCarsOnly === true}
+        onChange={getBooleanFilterHandler('favouriteCarsOnly')}
+      >
+        {t('Favorite cars only')}
+      </Checkbox>
+      <Checkbox
+        id="checkbox-favouriteTracksOnly"
+        checked={currentFilters.favouriteTracksOnly === true}
+        onChange={getBooleanFilterHandler('favouriteTracksOnly')}
+      >
+        {t('Favorite tracks only')}
+      </Checkbox>
 
-        <h4>{t('Content')}</h4>
-        <Checkbox
-          checked={currentFilters.ownedCars === true}
-          onChange={this.setBooleanFilter.bind(this, 'ownedCars')}
+      <p>
+        <button
+          id="filters-reset-filters-button"
+          type="button"
+          className={`${styles.btn} ${styles['btn-primary']}`}
+          onClick={resetFilters}
         >
-          {t('Owned cars only')}
-        </Checkbox>
-        <Checkbox
-          checked={currentFilters.ownedTracks === true}
-          onChange={this.setBooleanFilter.bind(this, 'ownedTracks')}
-        >
-          {t('Owned tracks only')}
-        </Checkbox>
-        <Checkbox
-          checked={currentFilters.favouriteSeries === true}
-          onChange={this.setBooleanFilter.bind(this, 'favouriteSeries')}
-        >
-          {t('Favorite series only')}
-        </Checkbox>
-        <Checkbox
-          checked={currentFilters.favouriteCarsOnly === true}
-          onChange={this.setBooleanFilter.bind(this, 'favouriteCarsOnly')}
-        >
-          {t('Favorite cars only')}
-        </Checkbox>
-        <Checkbox
-          checked={currentFilters.favouriteTracksOnly === true}
-          onChange={this.setBooleanFilter.bind(this, 'favouriteTracksOnly')}
-        >
-          {t('Favorite tracks only')}
-        </Checkbox>
+          {t('Reset filters')}
+        </button>
+      </p>
 
+      <p>
+        <button
+          id="filters-reset-settings-button"
+          type="button"
+          className={`${styles.btn} ${styles['btn-primary']}`}
+          onClick={resetSettings}
+        >
+          {t('Reset all settings')}
+        </button>
+      </p>
+
+      {user ? (
         <p>
-          <button type='button' className='btn btn-primary' onClick={resetFilters}>
-            {t('Reset filters')}
-          </button>
+          <span
+            id="filters-synced-status"
+          >
+            {firebaseSynced ? t('Synced') : t('Awaiting sync')}
+            {t('(refresh browser to download latest)')}
+          </span>
         </p>
-
-        <p>
-          <button type='button' className='btn btn-primary' onClick={resetSettings}>
-            {t('Reset all settings')}
-          </button>
-        </p>
-
-        {user ? (<p>
-          <span>{firebaseSynced ? t('Synced') : t('Awaiting sync')} {t('(refresh browser to download latest)')}</span>
-        </p>) : null}
-      </div>
-    );
-  }
+      ) : null}
+    </div>
+  );
 }
+
+Filters.defaultProps = defaultProps;
 
 const mapStateToProps = (state) => ({
   currentFilters: state.settings.filters,
@@ -197,10 +246,9 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
-  updateFilters,
-  resetFilters,
-  resetSettings,
+  updateFilters: updateFiltersAction,
+  resetFilters: resetFiltersAction,
+  resetSettings: resetSettingsAction,
 }, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)(withTranslation()(Filters));
-
+export default connect(mapStateToProps, mapDispatchToProps)(Filters);

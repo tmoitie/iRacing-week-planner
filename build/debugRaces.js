@@ -2,7 +2,7 @@ import Table from 'cli-table';
 import uniqBy from 'lodash.uniqby';
 import moment from 'moment';
 
-import races from '../src/lib/races';
+import races, { getNextRace } from '../src/lib/races';
 import raceTimes from '../src/data/raceTimes';
 
 const seriesIds = process.argv.slice(2).map(id => parseInt(id, 10));
@@ -39,17 +39,22 @@ seriess.sort((a, b) => {
 
 });
 
-table.push(...seriess.map(series => [
-  series.seriesId,
-  series.type,
-  series.licenceClass,
-  series.series,
-  series.weekLength.asDays(),
-  moment(series.startTime).local().format('ddd'),
-  moment(series.seriesStart).local().format('YYYY-MM-DD'),
-  moment(series.seriesEnd).local().format('YYYY-MM-DD'),
-  series.nextTime !== null ? moment(series.nextTime).local().format('ddd h:mma') : 'NO DATA'
-]));
+const now = moment().utc();
+
+table.push(...seriess.map(series => {
+  const nextTime = getNextRace(now, series);
+  return [
+    series.seriesId,
+    series.type,
+    series.licenceClass,
+    series.series,
+    series.weekLength.asDays(),
+    moment(series.startTime).local().format('ddd'),
+    moment(series.seriesStart).local().format('YYYY-MM-DD'),
+    moment(series.seriesEnd).local().format('YYYY-MM-DD'),
+    nextTime !== null ? nextTime.local().format('ddd h:mma') : 'NO DATA'
+  ];
+}));
 
 console.log(table.toString());
 
@@ -63,7 +68,10 @@ const notInSeriesIds = allRaceTimesIds.filter(
   raceTime => !allSeriesIds.find(seriesId => raceTime === seriesId)
 );
 const noRaceTimes = seriess.filter(
-  series => series.nextTime === null && ![328].includes(series.seriesId)
+  series => {
+    const nextTime = getNextRace(now, series);
+    nextTime === null && ![328].includes(series.seriesId)
+  }
 ).map(series => series.seriesId);
 
 console.log(`The following IDS are not in Race Times: ${notInRaceTimes.join(',')}`);

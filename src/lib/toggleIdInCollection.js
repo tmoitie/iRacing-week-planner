@@ -1,5 +1,5 @@
 export default function toggleIdInCollection(collection, id, newState) {
-  const newCollection = [ ...collection ];
+  const newCollection = [...collection];
   const index = newCollection.indexOf(id);
 
   if (index === -1 && newState) {

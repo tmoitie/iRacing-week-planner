@@ -1,0 +1,18 @@
+.clickableCell {
+  padding: 0 !important;
+
+  .cellButton {
+    padding: 8px;
+    width: 100%;
+    text-align: left;
+    appearance: none;
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+    transition: background .3s;
+
+    &:hover {
+      background: rgba(0, 0, 0, .1);
+    }
+  }
+}

@@ -1,16 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// @flow
 
-export default function Fixed({ race }) {
+import * as React from 'react';
+import TickIcon from '../icon/TickIcon';
+
+type Props = {
+  race: {
+    fixed: boolean,
+  }
+};
+
+export default function Fixed({ race }: Props) {
   return (
     <td>
       <div>
-        {race.fixed && <span className='glyphicon glyphicon-ok' />}
+        {race.fixed && <TickIcon />}
       </div>
     </td>
   );
 }
-
-Fixed.propTypes = {
-  race: PropTypes.object.isRequired
-};

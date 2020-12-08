@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/columns/Fixed renders correctly 1`] = `
+<td>
+  <div>
+    <TickIcon />
+  </div>
+</td>
+`;
+
+exports[`components/columns/Fixed renders correctly 2`] = `
+<td>
+  <div />
+</td>
+`;

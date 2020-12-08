@@ -1,25 +1,29 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// @flow
+
+import * as React from 'react';
 import classnames from 'classnames';
 
-export default function FavouriteStarButton({ enabled, onClick }) {
+import styles from '../styles/main.module.scss';
+
+type Props = {
+  onClick?: (newValue: boolean) => void,
+  enabled?: boolean,
+};
+
+export default function FavouriteStarButton({ enabled, onClick }: Props): React.Node {
   return (
     <span
-      onClick={onClick.bind(null, !enabled)} className={classnames({
-        glyphicon: true,
-        'glyphicon-star': enabled,
-        'glyphicon-star-empty': !enabled
+      onClick={() => onClick(!enabled)}
+      className={classnames({
+        [styles.glyphicon]: true,
+        [styles['glyphicon-star']]: enabled,
+        [styles['glyphicon-star-empty']]: !enabled
       })}
     />
   );
 }
 
-FavouriteStarButton.propTypes = {
-  enabled: PropTypes.bool,
-  onClick: PropTypes.func
-};
-
 FavouriteStarButton.defaultProps = {
   enabled: false,
-  onClick: () => {}
+  onClick: () => {},
 };

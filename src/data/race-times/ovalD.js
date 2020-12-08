@@ -5,7 +5,7 @@ export default [
     // Late model
     seriesId: 33,
     everyTime: duration(2, 'hours'),
-    offset: duration(15, 'minutes')
+    offset: duration(15, 'minutes'),
   },
   {
     // ARCA

@@ -23,7 +23,7 @@ export default [
     // RUF GT3
     seriesId: 277,
     everyTime: duration(2, 'hours'),
-    offset: duration(0, 'minutes')
+    offset: duration(0, 'minutes'),
   },
   {
     // Skippy
@@ -37,7 +37,7 @@ export default [
     // weekStartOffset: duration({ days: 7 }),
     // weekEndOffset: duration({ days: 7 }),
     offWeeks: [
-      1.1, 2.1, 2.1, 3.1, 3.1, 3.1, 3.1, 3.1, 4.1, 4.1, 4.1, 4.1, 6.1, 6.1, 6.1, 7.1, 7.1, 8.1, 8.1, 8.1, 8.1, 8.1, 8.1
+      1.1, 2.1, 2.1, 3.1, 3.1, 3.1, 3.1, 3.1, 4.1, 4.1, 4.1, 4.1, 6.1, 6.1, 6.1, 7.1, 7.1, 8.1, 8.1, 8.1, 8.1, 8.1, 8.1,
     ],
     setTimes: [
       duration({ days: 5, hours: 1, minutes: 0 }), // Sat, 01:00 GMT
@@ -48,25 +48,25 @@ export default [
     // Ferrari GT3 Challenge
     seriesId: 353,
     everyTime: duration(1, 'hours'),
-    offset: duration(15, 'minutes')
+    offset: duration(15, 'minutes'),
   },
   {
     // BMW
     seriesId: 397,
     everyTime: duration(1, 'hours'),
-    offset: duration(30, 'minutes')
+    offset: duration(30, 'minutes'),
   },
   {
     // Formula Renault 2.0
     seriesId: 269,
     everyTime: duration(2, 'hours'),
-    offset: duration(45, 'minutes')
+    offset: duration(45, 'minutes'),
   },
   {
     // F2000
     seriesId: 384,
     everyTime: duration(1, 'hours'),
-    offset: duration(0, 'minutes')
+    offset: duration(0, 'minutes'),
   },
   {
     // Production Car Challenge

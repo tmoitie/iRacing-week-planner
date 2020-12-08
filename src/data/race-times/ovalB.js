@@ -24,5 +24,5 @@ export default [
     seriesId: 103,
     everyTime: duration(2, 'hours'),
     offset: duration(60, 'minutes'),
-  }
+  },
 ];

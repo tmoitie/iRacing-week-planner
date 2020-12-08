@@ -1,11 +1,24 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// @flow
+
+import * as React from 'react';
 import moment from 'moment';
 import { useTranslation } from 'react-i18next';
 
-export default function EndDate({ race }) {
+type Props = {
+  race: {
+    startTime: moment.Moment,
+    weekLength: moment.Duration,
+  }
+};
+
+export default function EndDate({ race }: Props) {
   const { t } = useTranslation();
-  const date = moment(race.startTime).local().add(race.weekLength).subtract(1, 'days').toDate();
+  const date = moment(race.startTime)
+    .local()
+    .add(race.weekLength)
+    .subtract(1, 'days')
+    .toDate();
+
   return (
     <td>
       <div>
@@ -14,7 +27,3 @@ export default function EndDate({ race }) {
     </td>
   );
 }
-
-EndDate.propTypes = {
-  race: PropTypes.object.isRequired
-};

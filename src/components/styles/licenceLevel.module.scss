@@ -7,38 +7,38 @@ $color-p: #000;
 $white: #fff;
 $black: #000;
 
-.licence-level-component {
+.licenceLevelComponent {
   display: inline-block;
   font-size: .85em;
   font-weight: 600;
   padding: 2px 4px;
 
-  &.licence-r {
+  &.licenceR {
     background: $color-r;
     color: $white;
   }
 
-  &.licence-d {
+  &.licenceD {
     background: $color-d;
     color: $black;
   }
 
-  &.licence-c {
+  &.licenceC {
     background: $color-c;
     color: $black;
   }
 
-  &.licence-b {
+  &.licenceB {
     background: $color-b;
     color: $white;
   }
 
-  &.licence-a {
+  &.licenceA {
     background: $color-a;
     color: $white;
   }
 
-  &.licence-p {
+  &.licenceP {
     background: $color-p;
     color: $white;
   }

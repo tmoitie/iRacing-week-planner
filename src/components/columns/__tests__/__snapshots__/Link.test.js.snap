@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/columns/Link renders correctly 1`] = `
+<td>
+  <a
+    href="http://members.iracing.com/membersite/member/SeriesSessions.do?season=4234"
+    rel="noreferrer"
+    target="_blank"
+  >
+    <LinkIcon />
+  </a>
+</td>
+`;

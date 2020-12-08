@@ -7,6 +7,28 @@ export const UPDATE_SETTING = 'SETTINGS/UPDATE_SETTING';
 export const LOAD_SETTINGS_FROM_FIREBASE = 'SETTINGS/LOAD_SETTINGS_FROM_FIREBASE';
 export const FIREBASE_SYNCED = 'SETTINGS/FIREBASE_SYNCED';
 
+export function saveSettingsToFirebase() {
+  return async (dispatch, getState) => {
+    const { user, firebaseApp } = getState().auth;
+    const { settings } = getState();
+
+    if (!user) {
+      return;
+    }
+
+    const db = firebaseApp.firestore();
+    const docRef = db.collection('settings').doc(user.uid);
+    await docRef.set(settings);
+    dispatch({ type: FIREBASE_SYNCED });
+  };
+}
+
+const dispatchSaveSettingsToFirebase = (dispatch) => {
+  dispatch(saveSettingsToFirebase());
+};
+
+export const debouncedDispatcherSaveSettings = debounce(dispatchSaveSettingsToFirebase, 10000);
+
 export function updateFilters(newFilters) {
   return async (dispatch) => {
     await dispatch({ type: UPDATE_FILTERS, payload: { filters: newFilters } });
@@ -54,26 +76,3 @@ export function getSettingsFromFirebase() {
     dispatch({ type: LOAD_SETTINGS_FROM_FIREBASE, payload: doc.data() });
   };
 }
-
-export function saveSettingsToFirebase() {
-  return async (dispatch, getState) => {
-    const { user, firebaseApp } = getState().auth;
-    const { settings } = getState();
-
-    if (!user) {
-      return;
-    }
-
-    const db = firebaseApp.firestore();
-    const docRef = db.collection('settings').doc(user.uid);
-    await docRef.set(settings);
-    dispatch({ type: FIREBASE_SYNCED });
-  };
-}
-
-const dispatchSaveSettingsToFirebase = (dispatch) => {
-  dispatch(saveSettingsToFirebase());
-}
-
-export const debouncedDispatcherSaveSettings = debounce(dispatchSaveSettingsToFirebase, 10000);
-

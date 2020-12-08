@@ -5,7 +5,7 @@ export default [
     // Global Mazda
     seriesId: 139,
     everyTime: duration(60, 'minutes'),
-    offset: duration(0, 'minutes')
+    offset: duration(0, 'minutes'),
   },
   // {
   //   // Nurbergring Fun

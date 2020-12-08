@@ -1,20 +1,22 @@
 const path = require('path');
 const webpack = require('webpack');
 const cp = require('child_process');
+const autoprefixer = require('autoprefixer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+// const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const port = process.env.PORT || 3000;
 const env = process.env.NODE_ENV || 'development';
+const isDevelopment = env === 'development';
 
 let version;
 
 try {
   version = cp.execSync('git rev-parse HEAD', {
     cwd: __dirname,
-    encoding: 'utf8'
+    encoding: 'utf8',
   });
 } catch (err) {
   console.log('Error getting revision', err); // eslint-disable-line no-console
@@ -24,9 +26,7 @@ try {
 const postcssLoader = {
   loader: 'postcss-loader',
   options: {
-    plugins: [
-      require('autoprefixer'),
-    ],
+    plugins: [autoprefixer],
   },
 };
 
@@ -48,27 +48,70 @@ module.exports = {
         test: /\.jsx?$/,
         include: [path.resolve(__dirname, 'src')],
         use: [
-          'babel-loader'
+          'babel-loader',
         ],
       },
       {
         test: /\.scss$/,
         use: [
-          { loader: MiniCssExtractPlugin.loader },
-          'css-modules-flow-types-loader',
-          'css-loader',
+          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: isDevelopment,
+            },
+          },
           postcssLoader,
           'sass-loader',
         ],
+        exclude: /\.module\.css$/
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+          'css-modules-flow-types-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              sourceMap: isDevelopment,
+            },
+          },
+          postcssLoader,
+          'sass-loader',
+        ],
+        include: /\.module\.css$/
       },
       {
         test: /\.css$/,
         use: [
-          { loader: MiniCssExtractPlugin.loader },
+          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-modules-flow-types-loader',
-          'css-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              sourceMap: isDevelopment,
+            },
+          },
           postcssLoader,
         ],
+        include: /\.module\.css$/
+      },
+      {
+        test: /\.css$/,
+        use: [
+          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: isDevelopment,
+            },
+          },
+          postcssLoader,
+        ],
+        exclude: /\.module\.css$/
       },
       {
         test: /\.(png|gif)$/,
@@ -137,16 +180,16 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, 'public'),
     compress: true,
-    port: port,
+    port,
     hot: true,
   },
   optimization: {
     minimizer: [
       new TerserPlugin({
         parallel: true,
-        test: /\.m?jso?n?(\?.*)?$/i
+        test: /\.m?jso?n?(\?.*)?$/i,
       }),
-      new OptimizeCSSAssetsPlugin({})
+      new OptimizeCSSAssetsPlugin({}),
     ],
   },
 };

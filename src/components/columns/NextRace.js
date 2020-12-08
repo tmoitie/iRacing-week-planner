@@ -1,16 +1,30 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// @flow
+
+import * as React from 'react';
 import moment from 'moment';
 import { useTranslation } from 'react-i18next';
+import type { TimeableRace } from '../../lib/races';
+import { getNextRace } from '../../lib/races';
 
-export default function NextRace({ race }) {
+type Props = {
+  race: TimeableRace,
+};
+
+export default function NextRace({ race }: Props) {
   const { t } = useTranslation();
 
-  if (race.nextTime === null) {
+  const now = moment().utc();
+
+  // Only update at most every minute
+  const nowMemoizer = now.format('YYYY-MM-DD HH-mm');
+
+  const nextTime = React.useMemo(() => getNextRace(now, race), [race, nowMemoizer]);
+
+  if (nextTime === null) {
     return <td>{t('No time data')}</td>;
   }
 
-  const date = moment(race.nextTime).local().toDate();
+  const date = moment(nextTime).local().toDate();
 
   return (
     <td>
@@ -20,7 +34,3 @@ export default function NextRace({ race }) {
     </td>
   );
 }
-
-NextRace.propTypes = {
-  race: PropTypes.object.isRequired
-};

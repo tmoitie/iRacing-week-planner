@@ -1,35 +1,38 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// @flow
+
+import * as React from 'react';
 import Modal from 'react-modal';
 import classNames from 'classnames';
 
+import styles from '../../styles/main.module.scss';
+
 Modal.setAppElement(document.getElementById('root'));
 
-export default class BaseModal extends React.Component {
-  static propTypes = {
-    children: PropTypes.node,
-    style: PropTypes.object.isRequired,
-    className: PropTypes.string,
-    isOpen: PropTypes.bool,
-    onRequestClose: PropTypes.func,
-    closeTimeoutMS: PropTypes.number
-  };
+type Props = {
+  isOpen: boolean,
+  onRequestClose: () => void,
+  closeTimeoutMS?: ?number,
+  children: ?React.Node,
+  className?: ?string,
+};
 
-  static defaultProps = {
-    style: {}
-  };
+const defaultProps = {
+  className: null,
+  closeTimeoutMS: null,
+};
 
-  render() {
-    const { isOpen, onRequestClose, closeTimeoutMS, children, className } = this.props;
-
-    return (
-      <Modal
-        onRequestClose={onRequestClose} closeTimeoutMS={closeTimeoutMS} isOpen={isOpen}
-        className={classNames('Modal__Bootstrap', 'modal-dialog', 'modal-lg', className)}
-        ariaHideApp={false}
-      >
-        {children}
-      </Modal>
-    );
-  }
+export default function BaseModal({ isOpen, onRequestClose, closeTimeoutMS, children, className }: Props) {
+  return (
+    <Modal
+      onRequestClose={onRequestClose}
+      closeTimeoutMS={closeTimeoutMS}
+      isOpen={isOpen}
+      className={classNames('Modal__Bootstrap', styles['modal-dialog'], styles['modal-lg'], className)}
+      ariaHideApp={false}
+    >
+      {children}
+    </Modal>
+  );
 }
+
+BaseModal.defaultProps = defaultProps;

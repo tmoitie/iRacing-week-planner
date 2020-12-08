@@ -8,7 +8,7 @@ import filter from 'redux-localstorage-filter';
 import rootReducer from './reducers';
 
 const reducer = compose(
-  mergePersistedState()
+  mergePersistedState(),
 )(rootReducer);
 
 const storage = compose(filter('settings'))(adapter(window.localStorage));
@@ -20,6 +20,7 @@ let enhancer = compose(
 );
 
 if (process.env.NODE_ENV === 'development') {
+  // eslint-disable-next-line global-require
   const { createLogger } = require('redux-logger');
   const logger = createLogger({
     level: 'info',

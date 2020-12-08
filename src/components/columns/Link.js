@@ -1,18 +1,24 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// @flow
 
-export default function Link({ race }) {
+import * as React from 'react';
+import LinkIcon from '../icon/LinkIcon';
+
+type Props = {
+  race: {
+    seasonId: number,
+  }
+};
+
+export default function Link({ race }: Props) {
   return (
     <td>
       <a
         href={`http://members.iracing.com/membersite/member/SeriesSessions.do?season=${race.seasonId}`}
-        target='_blank'>
-        <span className='glyphicon glyphicon-link' />
+        target="_blank"
+        rel="noreferrer"
+      >
+        <LinkIcon />
       </a>
     </td>
   );
 }
-
-Link.propTypes = {
-  race: PropTypes.object.isRequired
-};

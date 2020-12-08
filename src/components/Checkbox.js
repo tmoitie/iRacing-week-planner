@@ -1,27 +1,37 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// @flow
+
+import * as React from 'react';
 import classnames from 'classnames';
 
-export default function Checkbox({ onChange, checked, disabled, children }) {
+import styles from '../styles/main.module.scss';
+
+type Props = {
+  id: string,
+  onChange?: (newValue: boolean) => void,
+  checked?: boolean,
+  disabled?: boolean,
+  children: ?React.Node,
+};
+
+export default function Checkbox({ id, onChange, checked, disabled, children }: Props): React.Node {
   return (
-    <div className={classnames({ checkbox: true, disabled })}>
-      <label>
-        <input type='checkbox' onChange={onChange} checked={checked} disabled={disabled} />
+    <div className={classnames({ [styles.checkbox]: true, [styles.disabled]: disabled })}>
+      <label htmlFor={id}>
+        <input
+          id={id}
+          type="checkbox"
+          onChange={(e) => (onChange(e.target.checked))}
+          checked={checked}
+          disabled={disabled}
+        />
         {children}
       </label>
     </div>
   );
 }
 
-Checkbox.propTypes = {
-  checked: PropTypes.bool,
-  children: PropTypes.node,
-  onChange: PropTypes.func,
-  disabled: PropTypes.bool
-};
-
 Checkbox.defaultProps = {
   checked: false,
   disabled: false,
-  onChange: () => {}
+  onChange: () => {},
 };

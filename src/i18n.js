@@ -8,9 +8,10 @@ import enGB from '../translations/en-GB';
 import es from '../translations/es';
 import ptBR from '../translations/pt-BR';
 import de from '../translations/de';
+import fr from '../translations/fr';
 
 export const languages = {
-  'de': {
+  de: {
     flag: '🇩🇪',
     name: 'Deutsch (DE)',
   },
@@ -22,9 +23,13 @@ export const languages = {
     flag: '🇬🇧',
     name: 'English (UK)',
   },
-  'es': {
+  es: {
     flag: '🇪🇸',
     name: 'Español (ES)',
+  },
+  fr: {
+    flag: '🇫🇷',
+    name: 'Français (FR)',
   },
   'pt-BR': {
     flag: '🇧🇷',
@@ -35,14 +40,15 @@ export const languages = {
 const resources = {
   en,
   'en-GB': enGB,
-  'es': es,
+  es,
   'pt-BR': ptBR,
-  'de': de,
+  de,
+  fr,
 };
 
 if (process.env.NODE_ENV === 'development') {
   languages.test = { flag: '👀', name: 'Test' };
-  resources.test = require('../translations/test').default;
+  resources.test = require('../translations/fake').default;
 }
 
 i18n

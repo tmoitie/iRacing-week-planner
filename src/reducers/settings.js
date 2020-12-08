@@ -1,5 +1,7 @@
+// @flow
+
 import uniq from 'lodash.uniq';
-import { actionTypes as localStorageActionTypes } from 'redux-localstorage'
+import { actionTypes as localStorageActionTypes } from 'redux-localstorage';
 import { SIGNED_OUT } from '../actions/auth';
 import {
   FIREBASE_SYNCED,
@@ -7,13 +9,30 @@ import {
   RESET_FILTERS,
   RESET_SETTINGS,
   UPDATE_FILTERS,
-  UPDATE_SETTING
+  UPDATE_SETTING,
 } from '../actions/settings';
 
 import availableColumns from '../data/availableColumns';
 import { tracks, cars } from '../data';
 
-export const defaultFilters = {
+export type sort = {
+  key: string,
+  order: string,
+};
+
+export type filters = {
+  type: Array<string>,
+  licence: Array<string>,
+  official: Array<boolean>,
+  fixed: boolean[],
+  ownedCars: boolean,
+  ownedTracks: boolean,
+  favouriteSeries: boolean,
+  favouriteCarsOnly: boolean,
+  favouriteTracksOnly: boolean,
+};
+
+export const defaultFilters: filters = {
   type: ['Road', 'Oval', 'Dirt', 'RX'],
   licence: ['R', 'D', 'C', 'B', 'A', 'P'],
   official: [false, true],

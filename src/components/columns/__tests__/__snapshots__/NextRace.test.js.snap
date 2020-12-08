@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/columns/NextRace renders correctly 1`] = `
+<td>
+  <div>
+    Wed 13:45
+  </div>
+</td>
+`;
+
+exports[`components/columns/NextRace renders no time data 1`] = `
+<td>
+  No time data
+</td>
+`;

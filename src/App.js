@@ -5,6 +5,7 @@ import { bindActionCreators } from 'redux';
 import { Slider } from '@blueprintjs/core';
 import { withTranslation } from 'react-i18next';
 import 'firebase/auth';
+import classNames from 'classnames';
 import { updateSetting } from './actions/settings';
 import BuyACoffee from './components/BuyACoffee';
 
@@ -23,15 +24,15 @@ import AboutModal from './components/modal/AboutModal';
 
 import { seasonStart, seasonEnd } from './config';
 
-import './components/styles/preBootstrap.scss';
-import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
-import '@blueprintjs/core/lib/css/blueprint.css';
 import PurchaseGuideModal from './components/modal/PurchaseGuideModal';
 
-import 'bootstrap-sass';
+import styles from './styles/main.module.scss';
+
 import { languages } from './i18n';
 
 const seasonLengthDays = seasonEnd.diff(seasonStart, 'days');
+
+import '@blueprintjs/core/lib/css/blueprint.css';
 
 export class App extends Component {
   static propTypes = {
@@ -53,6 +54,15 @@ export class App extends Component {
     currentModal: null,
     user: null,
   };
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      languageDropdown: false,
+    };
+    this.dropdownRef = React.createRef();
+  }
 
   componentDidMount() {
     this.props.startListener();
@@ -76,6 +86,7 @@ export class App extends Component {
   getSwitchLanguageHandler(language) {
     return (e) => {
       e.preventDefault();
+      this.setState({ languageDropdown: false });
       this.props.i18n.changeLanguage(language);
     }
   }
@@ -105,6 +116,7 @@ export class App extends Component {
     const { t } = this.props;
     return (
       <ContentModal
+        id="content-modal-tracks"
         isOpen={currentModal === 'my-tracks'}
         onClose={this.getCloseModalHandler()}
         title={t('Set my tracks')}
@@ -126,6 +138,7 @@ export class App extends Component {
     const { t } = this.props;
     return (
       <ContentModal
+        id="content-modal-cars"
         isOpen={currentModal === 'my-cars'}
         onClose={this.getCloseModalHandler()}
         title={t('Set my cars')}
@@ -133,7 +146,7 @@ export class App extends Component {
         content={cars}
         idField='sku'
         defaultContent={[...defaultSettings.ownedCars]}
-        typeFilter={{ key: 'discountGroupNames', oval: ['oval+car'], road: ['road+car'] }}
+        typeFilter={{ key: 'discountGroupNames', oval: ['oval car'], road: ['road car'] }}
         save={this.getSettingUpdater('ownedCars')}
         favourites={favouriteCars}
         saveFavourites={this.getSettingUpdater('favouriteCars')}
@@ -182,6 +195,22 @@ export class App extends Component {
     );
   }
 
+  getToggleLangDropdownHandler() {
+    return (e) => {
+      e.preventDefault();
+      this.setState((prevState) => ({ languageDropdown: !prevState.languageDropdown }));
+    };
+  }
+
+  getClickEventHandler() {
+    return (e) => {
+      const { languageDropdown } = this.state;
+      if (!this.dropdownRef.current.contains(e.target) && languageDropdown === true) {
+        this.setState({ languageDropdown: false });
+      }
+    };
+  }
+
   render() {
     const {
       date, dateDays, week, t, i18n, user, signOut,
@@ -192,15 +221,17 @@ export class App extends Component {
       columns, sort, ownedCars, ownedTracks,
     } = this.props.settings;
 
+    const { languageDropdown } = this.state;
+
     return (
-      <div>
-        <nav className='navbar navbar-inverse'>
-          <div className='container-fluid'>
-            <div className='navbar-header'>
-              <a className='navbar-brand' href=''>{t('iRacing Week Planner')}</a>
+      <div onMouseDown={this.getClickEventHandler()}>
+        <nav className={`${styles.navbar} ${styles['navbar-inverse']}`}>
+          <div className={styles['container-fluid']}>
+            <div className={styles['navbar-header']}>
+              <a className={styles['navbar-brand']} href=''>{t('iRacing Week Planner')}</a>
             </div>
 
-            <ul className='nav navbar-nav navbar-left'>
+            <ul className={`${styles.nav} ${styles['navbar-nav']} ${styles['navbar-left']}`}>
               <li>
                 <a href='' onClick={this.getOpenModalHandler('purchase-guide')}>
                   {t('Purchase guide')}
@@ -208,7 +239,7 @@ export class App extends Component {
               </li>
             </ul>
 
-            <ul className='nav navbar-nav navbar-right'>
+            <ul className={`${styles.nav} ${styles['navbar-nav']} ${styles['navbar-right']}`}>
               <li><a href='' onClick={this.getOpenModalHandler('my-tracks')}>
                 {t('Set my tracks')}
               </a></li>
@@ -236,20 +267,28 @@ export class App extends Component {
                   {t('Sign in')}
                 </a></li>
               )}
-              <li className="dropdown">
-                <a href="" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                   aria-expanded="false">{languages[i18n.language].flag} <span className="caret" /></a>
-                <ul className="dropdown-menu">
+              <li className={classNames({ [styles.dropdown]: true, [styles.open]: languageDropdown })}>
+                <a
+                  href=""
+                  onClick={this.getToggleLangDropdownHandler()}
+                >
+                  {languages[i18n.language].flag}
+                  <span className={styles.caret} />
+                </a>
+                <ul className={styles['dropdown-menu']} ref={this.dropdownRef}>
                   {Object.entries(languages).map(([code, language]) => (
                     <li key={code}>
                       <a href="" onClick={this.getSwitchLanguageHandler(code)}>
-                        {language.flag} {language.name}
+                        {language.flag}
+                        {language.name}
                       </a>
                     </li>
                   ))}
                   <li>
                     <a
                       href="https://github.com/tmoitie/iRacing-week-planner/blob/master/Translate.md"
+                      target="_blank"
+                      rel="noreferrer"
                     >
                       Help me translate!
                     </a>
@@ -259,21 +298,21 @@ export class App extends Component {
             </ul>
           </div>
         </nav>
-        <div className='container-fluid'>
-          <div className='row'>
-            <div className='col-md-2'>
+        <div className={styles['container-fluid']}>
+          <div className={styles.row}>
+            <div className={styles['col-md-2']}>
               <div>
                 <BuyACoffee />
               </div>
               <h3>{t('Filters')}</h3>
               <Filters />
             </div>
-            <div className='col-md-10'>
-              <div className='row'>
-                <h3 className='col-xs-8'>
+            <div className={styles['col-md-10']}>
+              <div className={styles.row}>
+                <h3 className={styles['col-xs-8']}>
                   {t('Races for date: {{date, YYYY MMM DD}}', { date: date.local().toDate() })}
                 </h3>
-                <h3 className='col-xs-4' style={{ textAlign: 'right' }}>
+                <h3 className={styles['col-xs-4']} style={{ textAlign: 'right' }}>
                   {t('Week {{week}}', { week })}
                 </h3>
               </div>

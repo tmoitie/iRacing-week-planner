@@ -1,20 +1,28 @@
 {
   "parser": "babel-eslint",
-  "extends": "airbnb",
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended",
+    "plugin:jest/recommended"
+  ],
   "env": {
     "browser": true,
     "mocha": true,
     "node": true
   },
   "rules": {
-    "react/jsx-no-bind": 0,
-    "jsx-quotes": [2,  "prefer-single"],
-    "comma-dangle": 0,
-    "no-use-before-define": 0,
-    "consistent-return": 0,
-    "max-len": [1, 120]
+    "react/jsx-filename-extension": [0],
+    "max-len": [1, 120],
+    "object-curly-newline": ["error", {
+      "ObjectExpression": { "minProperties": 12, "multiline": true, "consistent": true },
+      "ObjectPattern": { "minProperties": 12, "multiline": true, "consistent": true },
+      "ImportDeclaration": { "minProperties": 12, "multiline": true, "consistent": true },
+      "ExportDeclaration": { "minProperties": 12, "multiline": true, "consistent": true }
+    }],
+    "react/jsx-props-no-spreading": [0]
   },
   "plugins": [
-    "react"
+    "react",
+    "flowtype"
   ]
 }

@@ -24,8 +24,8 @@ export default [
     seriesId: 331,
     setTimes: [
       duration({ days: 4, hours: 7 }), // Sat 7am
-      duration({ days: 4, hours: 18 }),  // Sat 6pm
-      duration({ days: 5, hours: 14 })  // Sun 2pm
+      duration({ days: 4, hours: 18 }), // Sat 6pm
+      duration({ days: 5, hours: 14 }), // Sun 2pm
     ],
     offWeeks: [1.1, 2.1, 3.1, 4.1, 5.1],
   },
@@ -33,7 +33,7 @@ export default [
     // Formula Renault 3.5
     seriesId: 359,
     everyTime: duration(2, 'hours'),
-    offset: duration(0, 'minutes')
+    offset: duration(0, 'minutes'),
   },
   {
     // GTE Endurance
@@ -41,8 +41,8 @@ export default [
     offWeeks: [1.1, 2.1, 3.1, 4.1, 5.1],
     setTimes: [
       duration({ days: 4, hours: 7 }), // Sat 7am
-      duration({ days: 4, hours: 18 }),  // Sat 6pm
-      duration({ days: 5, hours: 14 }),  // Sun 2pm
+      duration({ days: 4, hours: 18 }), // Sat 6pm
+      duration({ days: 5, hours: 14 }), // Sun 2pm
     ],
   },
   {

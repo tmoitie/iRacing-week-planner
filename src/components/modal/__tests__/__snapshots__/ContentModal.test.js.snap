@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/modal/ContentModal renders correctly 1`] = `
+<Modal
+  doneAction={[Function]}
+  doneButtonText="Close"
+  isOpen={true}
+  onClose={[Function]}
+  showFooter={true}
+  title="Cars Modal"
+>
+  <div
+    className="container-fluid"
+  >
+    <p>
+      Use the checkbox to set the content you own, and use the star to set your favourite content.
+    </p>
+    <div
+      className="row"
+    >
+      <div
+        className="checkboxContainer col-sm-4"
+      >
+        <div>
+          <Checkbox
+            checked={false}
+            disabled={false}
+            id="cars-select-all"
+            onChange={[Function]}
+          >
+            Select all
+          </Checkbox>
+        </div>
+        <div
+          className="favourite"
+        >
+          <FavouriteStarButton
+            enabled={false}
+            id="cars-favourite-all"
+            onClick={[Function]}
+          />
+        </div>
+      </div>
+      <div
+        className="checkboxContainer col-sm-4"
+      >
+        <div>
+          <Checkbox
+            checked={false}
+            disabled={false}
+            id="cars-select-oval"
+            onChange={[Function]}
+          >
+            Select all oval
+          </Checkbox>
+        </div>
+        <div
+          className="favourite"
+        >
+          <FavouriteStarButton
+            enabled={false}
+            id="cars-favourite-oval"
+            onClick={[Function]}
+          />
+        </div>
+      </div>
+      <div
+        className="checkboxContainer col-sm-4"
+      >
+        <div>
+          <Checkbox
+            checked={true}
+            disabled={false}
+            id="cars-select-road"
+            onChange={[Function]}
+          >
+            Select all road
+          </Checkbox>
+        </div>
+        <div
+          className="favourite"
+        >
+          <FavouriteStarButton
+            enabled={false}
+            id="cars-favourite-road"
+            onClick={[Function]}
+          />
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div
+      className="row"
+    >
+      <div
+        className="checkboxContainer col-md-6"
+        key="123"
+      >
+        <div>
+          <Checkbox
+            checked={true}
+            disabled={false}
+            id="cars-select-item-123"
+            onChange={[Function]}
+          >
+            Ford
+          </Checkbox>
+        </div>
+        <div
+          className="favourite"
+        >
+          <FavouriteStarButton
+            enabled={false}
+            id="cars-favourite-item-123"
+            onClick={[Function]}
+          />
+        </div>
+      </div>
+      <div
+        className="checkboxContainer col-md-6"
+        key="234"
+      >
+        <div>
+          <Checkbox
+            checked={false}
+            disabled={false}
+            id="cars-select-item-234"
+            onChange={[Function]}
+          >
+            Toyota
+          </Checkbox>
+        </div>
+        <div
+          className="favourite"
+        >
+          <FavouriteStarButton
+            enabled={false}
+            id="cars-favourite-item-234"
+            onClick={[Function]}
+          />
+        </div>
+      </div>
+      <div
+        className="checkboxContainer col-md-6"
+        key="456"
+      >
+        <div>
+          <Checkbox
+            checked={true}
+            disabled={true}
+            id="cars-select-item-456"
+            onChange={[Function]}
+          >
+            Mazda
+          </Checkbox>
+        </div>
+        <div
+          className="favourite"
+        >
+          <FavouriteStarButton
+            enabled={true}
+            id="cars-favourite-item-456"
+            onClick={[Function]}
+          />
+        </div>
+      </div>
+      <div
+        className="checkboxContainer col-md-6"
+        key="645"
+      >
+        <div>
+          <Checkbox
+            checked={true}
+            disabled={false}
+            id="cars-select-item-645"
+            onChange={[Function]}
+          >
+            McLaren
+          </Checkbox>
+        </div>
+        <div
+          className="favourite"
+        >
+          <FavouriteStarButton
+            enabled={false}
+            id="cars-favourite-item-645"
+            onClick={[Function]}
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</Modal>
+`;

@@ -1,8 +1,11 @@
+// @flow
+
+import moment from 'moment';
 import {
   Id, Car, Class, EndDate, Fixed, Licence, Link, NextRace, Official,
-  RaceTimes, Series, SeasonEnd, StartDate, Track, Type
-} from '../components/columns/';
-import moment from 'moment';
+  RaceTimes, Series, SeasonEnd, StartDate, Track, Type,
+} from '../components/columns';
+import { getNextRace } from '../lib/races';
 
 /* eslint react/no-multi-comp: 0 */
 
@@ -13,24 +16,29 @@ const defaultSort = (a, b) => {
   return a.licenceClassNumber < b.licenceClassNumber ? -1 : 1;
 };
 
-const sortByDate = (key, order, a, b) => {
-  if (a[key] === b[key]) {
-    return defaultSort(a, b);
+const sortByDate = (order: string, a?: moment.Moment, b?: moment.Moment) => {
+  if (a === b) {
+    return 0;
   }
-  if (a[key] === null) {
+  if (a === null) {
     return 1;
   }
-  if (b[key] === null) {
+  if (b === null) {
     return -1;
   }
-  if (a[key].isSame(b[key])) {
-    return defaultSort(a, b);
+  if (a.isSame(b)) {
+    return 0;
   }
   if (order === 'asc') {
-    return a[key].isBefore(b[key]) ? -1 : 1;
+    return a.isBefore(b) ? -1 : 1;
   }
 
-  return a[key].isAfter(b[key]) ? -1 : 1;
+  return a.isAfter(b) ? -1 : 1;
+};
+
+const getSortByDate = (key) => (order, a, b) => {
+  const sort = sortByDate(order, a[key], b[key]);
+  return sort !== 0 ? sort : defaultSort(a, b);
 };
 
 export default [{
@@ -43,7 +51,7 @@ export default [{
       return (a.id < b.id ? -1 : 1);
     }
     return (a.id > b.id ? -1 : 1);
-  }
+  },
 }, {
   id: 'class',
   header: 'Class',
@@ -57,7 +65,7 @@ export default [{
       return (a.licenceClassNumber < b.licenceClassNumber ? -1 : 1);
     }
     return (a.licenceClassNumber > b.licenceClassNumber ? -1 : 1);
-  }
+  },
 }, {
   id: 'licence',
   header: 'Licence',
@@ -71,7 +79,7 @@ export default [{
       return a.licenceLevel < b.licenceLevel ? -1 : 1;
     }
     return a.licenceLevel > b.licenceLevel ? -1 : 1;
-  }
+  },
 }, {
   id: 'type',
   header: 'Type',
@@ -85,7 +93,7 @@ export default [{
       return (a.type < b.type ? -1 : 1);
     }
     return (a.type > b.type ? -1 : 1);
-  }
+  },
 }, {
   id: 'series',
   header: 'Series',
@@ -100,7 +108,7 @@ export default [{
       return (a.series.toLowerCase() < b.series.toLowerCase() ? -1 : 1);
     }
     return (a.series.toLowerCase() > b.series.toLowerCase() ? -1 : 1);
-  }
+  },
 }, {
   id: 'track',
   header: 'Track',
@@ -114,7 +122,7 @@ export default [{
       return (a.track.toLowerCase() < b.track.toLowerCase() ? -1 : 1);
     }
     return (a.track.toLowerCase() > b.track.toLowerCase() ? -1 : 1);
-  }
+  },
 }, {
   id: 'car',
   header: 'Car',
@@ -130,13 +138,13 @@ export default [{
       return (carA.toLowerCase() < carB.toLowerCase() ? -1 : 1);
     }
     return (carA.toLowerCase() > carB.toLowerCase() ? -1 : 1);
-  }
+  },
 }, {
   id: 'start',
   header: 'Start',
   component: StartDate,
   default: true,
-  sort: sortByDate.bind(null, 'startTime')
+  sort: getSortByDate('startTime'),
 }, {
   id: 'end',
   header: 'End',
@@ -151,7 +159,7 @@ export default [{
       return (timeA < timeB ? -1 : 1);
     }
     return (timeA > timeB ? -1 : 1);
-  }
+  },
 }, {
   id: 'official',
   header: 'Official',
@@ -165,7 +173,7 @@ export default [{
       return (a.official === false ? -1 : 1);
     }
     return (a.official === true ? -1 : 1);
-  }
+  },
 }, {
   id: 'fixed',
   header: 'Fixed',
@@ -178,26 +186,32 @@ export default [{
       return (a.fixed === false ? -1 : 1);
     }
     return (a.fixed === true ? -1 : 1);
-  }
+  },
 }, {
   id: 'raceTimes',
   header: 'Race times',
-  component: RaceTimes
+  component: RaceTimes,
 }, {
   id: 'nextRace',
   header: 'Next race',
   component: NextRace,
   default: true,
-  sort: sortByDate.bind(null, 'nextTime')
+  sort: (order, a, b) => {
+    const now = moment().utc();
+    const aNextDate = getNextRace(now, a);
+    const bNextDate = getNextRace(now, b);
+    const sort = sortByDate(order, aNextDate, bNextDate);
+    return sort !== 0 ? sort : defaultSort(a, b);
+  },
 }, {
   id: 'seriesEnd',
   header: 'Season end',
   component: SeasonEnd,
   default: false,
-  sort: sortByDate.bind(null, 'seriesEnd')
+  sort: getSortByDate('seriesEnd'),
 }, {
   id: 'seriesLink',
   header: 'Link',
   component: Link,
-  default: true
+  default: true,
 }];

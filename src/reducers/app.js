@@ -1,5 +1,5 @@
-import { CHANGE_MODAL, UPDATE_DAYS } from '../actions/app';
 import moment, { duration } from 'moment';
+import { CHANGE_MODAL, UPDATE_DAYS } from '../actions/app';
 import { SIGNED_IN } from '../actions/auth';
 import { seasonStart, weekSeasonStart } from '../config';
 
@@ -14,7 +14,7 @@ export default function app(
     week: getWeek(currentDate),
     currentModal: null,
   },
-  { type, days, modalName }
+  { type, days, modalName },
 ) {
   if (type === UPDATE_DAYS) {
     const date = moment(seasonStart).add(days, 'days');
@@ -22,7 +22,7 @@ export default function app(
       ...state,
       date,
       daysSinceSeasonStart: days,
-      week: getWeek(date)
+      week: getWeek(date),
     };
   }
 

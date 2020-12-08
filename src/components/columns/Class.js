@@ -1,13 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// @flow
+
+import * as React from 'react';
 import LicenceLevel from '../LicenceLevel';
 
-export default function Class({ race }) {
+type Props = {
+  race: {
+    licenceLevel: number,
+  }
+};
+
+export default function Class({ race }: Props) {
   return (
     <td><LicenceLevel effective licence={race.licenceLevel} /></td>
   );
 }
-
-Class.propTypes = {
-  race: PropTypes.object.isRequired
-};
