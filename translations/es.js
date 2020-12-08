@@ -60,8 +60,8 @@ export default {
     'Close': 'Cerrar',
     'Contributors': 'Contribuciones',
     'Changelog': 'Changelog',
-    'This tool was created by <1>tmoitie</1> (<3>Tom Moitié</3> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on <5>Github</5>. Thanks!':
-      'Esta herramienta ha sido creada por <1>tmoitie</1> (<3>Tom Moitié</3> en iRacing). Puedes contactarme por twitter o iRacing si tienes cualquier duda o sugerencia. El codigo está público en <5>Github</5>. ¡Gracias!',
+    'This tool was created by <2>tmoitie</2> (<5>Tom Moitié</5> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on <9>Github</9>. Thanks!':
+      'Esta herramienta ha sido creada por <2>tmoitie</2> (<5>Tom Moitié</5> en iRacing). Puedes contactarme por twitter o iRacing si tienes cualquier duda o sugerencia. El codigo está público en <9>Github</9>. ¡Gracias!',
     'Loading': 'Cargando',
     'Cars for {{series}}': 'Coches para {{series}}',
     'Tracks for {{series}}': 'Circuitos para {{series}}',
@@ -77,8 +77,8 @@ export default {
     
     'Set times': 'Establecer tiempos',
     'Purchase Guide': 'Guía de compras',
-    'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <1>buy me a coffee</1>.':
-      'El funcionamiento de esta herramienta me cuesta unos dólares al mes. Si te gusta usarla por favor <1>invitame un café<1>.',
+    'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <2>buy me a coffee</2>.':
+      'El funcionamiento de esta herramienta me cuesta unos dólares al mes. Si te gusta usarla por favor <2>invitame un café<2>.',
     'Buy me a coffee': 'Invitame un café',
     'Synced': 'Sincronizado',
     'Awaiting sync': 'Esperando sincronizacion',

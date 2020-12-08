@@ -61,8 +61,8 @@ export default {
     'Contributors': 'Contributeurs',
     'Changelog': 'Journal des modifications',
     'Purchase Guide': 'Guide d\'achat',
-    'This tool was created by <1>tmoitie</1> (<3>Tom Moitié</3> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on <5>Github</5>. Thanks!':
-      'Cet outil a été créé par <1>tmoitie</1> (<3>Tom Moitié</3> sur iRacing). N\'hésitez pas à me contacter sur Twitter ou iRacing si vous avez un retour à faire ou des questions à poser. Le code source est hébergé publiquement sur <5>Github</5>. Merci !',
+    'This tool was created by <2>tmoitie</2> (<5>Tom Moitié</5> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on <9>Github</9>. Thanks!':
+      'Cet outil a été créé par <2>tmoitie</2> (<5>Tom Moitié</5> sur iRacing). N\'hésitez pas à me contacter sur Twitter ou iRacing si vous avez un retour à faire ou des questions à poser. Le code source est hébergé publiquement sur <9>Github</9>. Merci !',
     'Loading': 'Chargement',
     'Cars for {{series}}': 'Véhicules pour {{series}}',
     'Tracks for {{series}}': 'Circuits pour {{series}}',
@@ -77,8 +77,8 @@ export default {
 
     // New Auth strings
     'Set times': 'Date fixe',
-    'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <1>buy me a coffee</1>.':
-      'Ce projet me coûte désormais quelques euros par mois pour fonctionner, donc si vous aimer utiliser cet outil, n\'hésitez pas à <1>m\'offrir un café</1>.',
+    'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <2>buy me a coffee</2>.':
+      'Ce projet me coûte désormais quelques euros par mois pour fonctionner, donc si vous aimer utiliser cet outil, n\'hésitez pas à <2>m\'offrir un café</2>.',
     'Buy me a coffee': 'Offrez-moi un café',
     'Synced': 'Synchronisé',
     'Awaiting sync': 'En attente de synchronisation',
