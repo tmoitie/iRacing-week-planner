@@ -6,7 +6,7 @@ import Modal from './Modal';
 import Checkbox from '../Checkbox';
 import availableColumns from '../../data/availableColumns';
 
-import styles from '../../styles/main.scss';
+import styles from '../../styles/main.module.scss';
 
 export default function OptionsModal({ onClose, isOpen, columnIds, saveOptions }) {
   const getColumnToggler = (id) => (newValue) => {

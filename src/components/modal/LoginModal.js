@@ -12,7 +12,7 @@ import {
 import ForgottenPasswordModal from './ForgottenPasswordModal';
 import RemoveIcon from '../icon/RemoveIcon';
 import Modal from './Modal';
-import styles from '../../styles/main.scss';
+import styles from '../../styles/main.module.scss';
 
 function LoginModal({ isOpen, onClose, error, loading, signIn, createAccount, acknowledgeAuthError }) {
   const { t } = useTranslation();

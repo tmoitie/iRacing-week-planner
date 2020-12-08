@@ -5,9 +5,9 @@ import classnames from 'classnames';
 import intersection from 'lodash.intersection';
 import StarIcon from '../icon/StarIcon';
 import CarModal from '../modal/CarModal';
-import raceListingStyles from '../styles/raceListing.scss';
+import raceListingStyles from '../styles/raceListing.module.scss';
 
-import styles from '../../styles/main.scss';
+import styles from '../../styles/main.module.scss';
 
 type Props = {
   race: {

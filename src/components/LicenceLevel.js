@@ -4,7 +4,7 @@ import * as React from 'react';
 import classnames from 'classnames';
 
 import levelToClass from '../lib/levelToClass';
-import styles from './styles/licenceLevel.scss';
+import styles from './styles/licenceLevel.module.scss';
 
 type Props = {
   licence: number,

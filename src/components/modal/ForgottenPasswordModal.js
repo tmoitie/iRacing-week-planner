@@ -9,7 +9,7 @@ import {
   forgottenPassword as forgottenPasswordAction,
 } from '../../actions/auth';
 import Modal from './Modal';
-import styles from '../../styles/main.scss';
+import styles from '../../styles/main.module.scss';
 
 function ForgottenPasswordModal({ isOpen, onClose, error, loading, forgottenPassword, acknowledgeAuthError }) {
   const { t } = useTranslation();

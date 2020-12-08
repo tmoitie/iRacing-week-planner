@@ -4,7 +4,7 @@ import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import StarIcon from '../icon/StarIcon';
 import SeriesModal from '../modal/SeriesModal';
-import raceListingStyles from '../styles/raceListing.scss';
+import raceListingStyles from '../styles/raceListing.module.scss';
 
 type Props = {
   race: {

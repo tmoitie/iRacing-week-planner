@@ -8,7 +8,7 @@ import toggleIdInCollection from '../../lib/toggleIdInCollection';
 import Modal from './Modal';
 import Checkbox from '../Checkbox';
 import FavouriteStarButton from '../FavouriteStarButton';
-import styles from '../../styles/main.scss';
+import styles from '../../styles/main.module.scss';
 
 type Props = {
   id: string,

@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import styles from '../../styles/main.scss';
+import styles from '../../styles/main.module.scss';
 
 type Props = {
 

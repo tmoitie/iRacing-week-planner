@@ -12,7 +12,7 @@ import {
 } from '../actions/settings';
 import Checkbox from './Checkbox';
 
-import styles from '../styles/main.scss';
+import styles from '../styles/main.module.scss';
 
 type Props = {
   currentFilters: filters,

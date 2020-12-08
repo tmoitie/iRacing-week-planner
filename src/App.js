@@ -26,11 +26,13 @@ import { seasonStart, seasonEnd } from './config';
 
 import PurchaseGuideModal from './components/modal/PurchaseGuideModal';
 
-import styles from './styles/main.scss';
+import styles from './styles/main.module.scss';
 
 import { languages } from './i18n';
 
 const seasonLengthDays = seasonEnd.diff(seasonStart, 'days');
+
+import '@blueprintjs/core/lib/css/blueprint.css';
 
 export class App extends Component {
   static propTypes = {

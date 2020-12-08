@@ -7,7 +7,7 @@ import Modal from './Modal';
 import changelog from '../../data/changelog';
 import contributors from '../../data/contributors.json';
 
-import styles from '../../styles/main.scss';
+import styles from '../../styles/main.module.scss';
 
 type Props = {
   onClose: () => void,
