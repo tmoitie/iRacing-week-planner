@@ -237,7 +237,7 @@ export class App extends Component {
               </li>
             </ul>
 
-            <ul className={`nav ${styles['navbar-nav']} ${styles['navbar-right']}`}>
+            <ul className={`${styles.nav} ${styles['navbar-nav']} ${styles['navbar-right']}`}>
               <li><a href='' onClick={this.getOpenModalHandler('my-tracks')}>
                 {t('Set my tracks')}
               </a></li>

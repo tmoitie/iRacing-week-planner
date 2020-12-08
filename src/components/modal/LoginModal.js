@@ -10,6 +10,7 @@ import {
   signIn as signInAction,
 } from '../../actions/auth';
 import ForgottenPasswordModal from './ForgottenPasswordModal';
+import RemoveIcon from '../icon/RemoveIcon';
 import Modal from './Modal';
 import styles from '../../styles/main.scss';
 
@@ -57,11 +58,7 @@ function LoginModal({ isOpen, onClose, error, loading, signIn, createAccount, ac
             {error && (
               <div className={`${styles.alert} ${styles['alert-warning']} ${styles['alert-dismissible']}`} role="alert">
                 <button type="button" aria-label="Close" onClick={acknowledgeAuthError} className={styles.close}>
-                  <span
-                    aria-hidden="true"
-                  >
-                    &times;
-                  </span>
+                  <RemoveIcon />
                 </button>
                 {t(error.message)}
               </div>
