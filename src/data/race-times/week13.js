@@ -85,4 +85,40 @@ export default [
     everyTime: duration(30, 'minutes'),
     offset: duration(15, 'minutes'),
   },
+  {
+    // Beach Vacay 
+    seriesId: 433,
+    everyTime: duration(60, 'minutes'),
+    offset: duration(30, 'minutes'),
+  },
+  {
+    // Ridiculousness 
+    seriesId: 379,
+    everyTime: duration(60, 'minutes'),
+    offset: duration(30, 'minutes'),
+  },
+  {
+    // Muddy Mess 
+    seriesId: 435,
+    everyTime: duration(60, 'minutes'),
+    offset: duration(30, 'minutes'),
+  },
+  {
+    // Shakedown 
+    seriesId: 421,
+    everyTime: duration(60, 'minutes'),
+    offset: duration(30, 'minutes'),
+  },
+  {
+    // Send it 
+    seriesId: 434,
+    everyTime: duration(60, 'minutes'),
+    offset: duration(30, 'minutes'),
+  },
+  {
+    // Tussie 
+    seriesId: 436,
+    everyTime: duration(60, 'minutes'),
+    offset: duration(30, 'minutes'),
+  },
 ];
