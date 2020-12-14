@@ -69,7 +69,7 @@ export default function GlobalModals() {
         content={cars}
         idField="sku"
         defaultContent={[...defaultSettings.ownedCars]}
-        typeFilter={{ key: 'discountGroupNames', oval: ['oval+car'], road: ['road+car'] }}
+        typeFilter={{ key: 'discountGroupNames', oval: ['oval car'], road: ['road car'] }}
         save={getSettingUpdater('ownedCars')}
         favourites={favouriteCars}
         saveFavourites={getSettingUpdater('favouriteCars')}
