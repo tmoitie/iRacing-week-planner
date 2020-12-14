@@ -5,8 +5,8 @@ import { useTranslation } from 'react-i18next';
 import ShoppingCartIcon from '../icon/ShoppingCartIcon';
 import Modal from './Modal';
 import purchaseOptimization from '../../lib/purchaseOptimization';
-import styles from './styles/purchaseGuide.scss';
-import bootstrapStyles from '../../styles/main.scss';
+import styles from './styles/purchaseGuide.module.scss';
+import bootstrapStyles from '../../styles/main.module.scss';
 
 type Props = {
   isOpen: boolean,

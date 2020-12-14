@@ -13,8 +13,8 @@ import sortRaces from '../lib/sortRaces';
 
 import availableColumns from '../data/availableColumns';
 
-import styles from '../styles/main.scss';
-import raceListingStyles from './styles/raceListing.scss';
+import styles from '../styles/main.module.scss';
+import raceListingStyles from './styles/raceListing.module.scss';
 
 const settingsSelector = (state) => state.settings;
 const dateSelector = (state) => state.app.date;

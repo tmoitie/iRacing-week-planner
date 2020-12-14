@@ -6,10 +6,10 @@ import classnames from 'classnames';
 import StarIcon from '../icon/StarIcon';
 import Modal from './Modal';
 
-import raceListingStyles from '../styles/raceListing.scss';
+import raceListingStyles from '../styles/raceListing.module.scss';
 
 import allCars from '../../data/cars.json';
-import styles from '../../styles/main.scss';
+import styles from '../../styles/main.module.scss';
 
 type Props = {
   onClose: () => void,

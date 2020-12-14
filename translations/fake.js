@@ -61,7 +61,7 @@ export default {
     'Contributors': 'abc',
     'Changelog': 'abc',
     'Purchase Guide': 'abc',
-    'This tool was created by <1>tmoitie</1> (<3>Tom Moitié</3> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on <5>Github</5>. Thanks!':
+    'This tool was created by <2>tmoitie</2> (<5>Tom Moitié</5> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on <9>Github</9>. Thanks!':
       'abc',
     'Loading': 'abc',
     'Cars for {{series}}': 'abc',
@@ -77,7 +77,7 @@ export default {
     '{{date, ddd k:mm}}': 'abc',
 
     //New Auth strings
-    'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <1>buy me a coffee</1>.':
+    'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <2>buy me a coffee</2>.':
       'abc',
     'Buy me a coffee': 'abc',
     'Synced': 'abc',

@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import type { sort as sortType } from '../reducers/settings';
 
-import styles from '../styles/main.scss';
+import styles from '../styles/main.module.scss';
 
 type Props = {
   sort: sortType,

@@ -6,7 +6,7 @@ import Modal from './Modal';
 import Checkbox from '../Checkbox';
 import series from '../../data/season.json';
 
-import styles from '../../styles/main.scss';
+import styles from '../../styles/main.module.scss';
 
 const groupedSeries = series.reduce((grouped, single) => {
   if (single.catid === 1) {

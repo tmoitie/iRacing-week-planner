@@ -24,6 +24,7 @@ exports[`components/App renders correctly 1`] = `
         <li>
           <a
             href=""
+            id="navbar-link-purchase-guide"
             onClick={[Function]}
           >
             Purchase guide
@@ -36,6 +37,7 @@ exports[`components/App renders correctly 1`] = `
         <li>
           <a
             href=""
+            id="navbar-link-my-tracks"
             onClick={[Function]}
           >
             Set my tracks
@@ -44,6 +46,7 @@ exports[`components/App renders correctly 1`] = `
         <li>
           <a
             href=""
+            id="navbar-link-my-cars"
             onClick={[Function]}
           >
             Set my cars
@@ -52,6 +55,7 @@ exports[`components/App renders correctly 1`] = `
         <li>
           <a
             href=""
+            id="navbar-link-favourite-series"
             onClick={[Function]}
           >
             Set favorite series
@@ -60,6 +64,7 @@ exports[`components/App renders correctly 1`] = `
         <li>
           <a
             href=""
+            id="navbar-link-options"
             onClick={[Function]}
           >
             Options
@@ -68,6 +73,7 @@ exports[`components/App renders correctly 1`] = `
         <li>
           <a
             href=""
+            id="navbar-link-about"
             onClick={[Function]}
           >
             About
@@ -76,6 +82,7 @@ exports[`components/App renders correctly 1`] = `
         <li>
           <a
             href=""
+            id="navbar-link-sign-in"
             onClick={[Function]}
           >
             Sign in
@@ -83,9 +90,11 @@ exports[`components/App renders correctly 1`] = `
         </li>
         <li
           className="dropdown"
+          id="navbar-language-dropdown"
         >
           <a
             href=""
+            id="navbar-link-open-language-dropdown"
             onClick={[Function]}
           >
             🇺🇸
@@ -99,6 +108,7 @@ exports[`components/App renders correctly 1`] = `
             <li>
               <a
                 href=""
+                id="navbar-link-language-de"
                 onClick={[Function]}
               >
                 🇩🇪
@@ -108,6 +118,7 @@ exports[`components/App renders correctly 1`] = `
             <li>
               <a
                 href=""
+                id="navbar-link-language-en"
                 onClick={[Function]}
               >
                 🇺🇸
@@ -117,6 +128,7 @@ exports[`components/App renders correctly 1`] = `
             <li>
               <a
                 href=""
+                id="navbar-link-language-en-GB"
                 onClick={[Function]}
               >
                 🇬🇧
@@ -126,6 +138,7 @@ exports[`components/App renders correctly 1`] = `
             <li>
               <a
                 href=""
+                id="navbar-link-language-es"
                 onClick={[Function]}
               >
                 🇪🇸
@@ -135,6 +148,7 @@ exports[`components/App renders correctly 1`] = `
             <li>
               <a
                 href=""
+                id="navbar-link-language-fr"
                 onClick={[Function]}
               >
                 🇫🇷
@@ -144,6 +158,7 @@ exports[`components/App renders correctly 1`] = `
             <li>
               <a
                 href=""
+                id="navbar-link-language-pt-BR"
                 onClick={[Function]}
               >
                 🇧🇷
@@ -620,11 +635,7 @@ exports[`components/App renders correctly 1`] = `
               onKeyUp={[Function]}
               onMouseDown={[Function]}
               onTouchStart={[Function]}
-              style={
-                Object {
-                  "left": "calc(0.00% - 0px)",
-                }
-              }
+              style={Object {}}
               tabIndex={0}
             />
           </div>

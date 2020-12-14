@@ -9,7 +9,7 @@ import {
   forgottenPassword,
 } from '../../actions/auth';
 import Modal from './Modal';
-import styles from '../../styles/main.scss';
+import styles from '../../styles/main.module.scss';
 
 type Props = {
   isOpen?: boolean,

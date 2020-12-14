@@ -76,11 +76,7 @@ Array [
         onKeyUp={[Function]}
         onMouseDown={[Function]}
         onTouchStart={[Function]}
-        style={
-          Object {
-            "left": "calc(0.00% - 0px)",
-          }
-        }
+        style={Object {}}
         tabIndex={0}
       />
     </div>

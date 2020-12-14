@@ -13,7 +13,9 @@ import { startListener } from './actions/auth';
 import RaceListing from './components/RaceListing';
 import Filters from './components/Filters';
 
-import styles from './styles/main.scss';
+import styles from './styles/main.module.scss';
+
+import '@blueprintjs/core/lib/css/blueprint.css';
 
 export default function App() {
   const { t } = useTranslation();

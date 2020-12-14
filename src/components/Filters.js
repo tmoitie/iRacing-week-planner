@@ -7,7 +7,7 @@ import type { filters as filtersType } from '../reducers/settings';
 import { resetFilters, resetSettings, updateFilters } from '../actions/settings';
 import Checkbox from './Checkbox';
 
-import styles from '../styles/main.scss';
+import styles from '../styles/main.module.scss';
 
 const currentFiltersSelector = (state) => state.settings.filters;
 const userSelector = (state) => state.auth.user;

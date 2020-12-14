@@ -4,7 +4,7 @@ import * as React from 'react';
 import Modal from 'react-modal';
 import classNames from 'classnames';
 
-import styles from '../../styles/main.scss';
+import styles from '../../styles/main.module.scss';
 
 Modal.setAppElement(document.getElementById('root'));
 

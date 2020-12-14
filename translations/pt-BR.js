@@ -61,8 +61,8 @@ export default {
     'Contributors': 'Contribuintes',
     'Changelog': 'Changelog',
     'Purchase Guide': 'Guia de Compra',
-    'This tool was created by <1>tmoitie</1> (<3>Tom Moitié</3> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on <5>Github</5>. Thanks!':
-      'Esta ferramenta foi criada por <1>tmoitie</1> (<3>Tom Moitié</3> no iRacing). Sinta-se à vontade para entrar em contato comigo via twitter ou iRacing se tiver algum comentário ou pergunta. O código está hospedado publicamente no <5>Github</5>. Obrigado!',
+    'This tool was created by <2>tmoitie</2> (<5>Tom Moitié</5> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on <9>Github</9>. Thanks!':
+      'Esta ferramenta foi criada por <2>tmoitie</2> (<5>Tom Moitié</5> no iRacing). Sinta-se à vontade para entrar em contato comigo via twitter ou iRacing se tiver algum comentário ou pergunta. O código está hospedado publicamente no <9>Github</9>. Obrigado!',
     'Loading': 'Carregando',
     'Cars for {{series}}': 'Carros para {{series}}',
     'Tracks for {{series}}': 'Pistas para {{series}}',
@@ -77,8 +77,8 @@ export default {
     '{{date, ddd k:mm}}': '{{date, ddd k:mm}}',
 
     // Needs translation
-    // 'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <1>buy me a coffee</1>.':
-    //   'This is now costing me a few dollars a month to run, so if you like using this tool, please feel free to <1>buy me a coffee</1>.',
+    // 'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <2>buy me a coffee</2>.':
+    //   'This is now costing me a few dollars a month to run, so if you like using this tool, please feel free to <2>buy me a coffee</2>.',
     // 'Buy me a coffee': 'Buy me a coffee',
     // 'Synced': 'Synced',
     // 'Awaiting sync': 'Awaiting sync',

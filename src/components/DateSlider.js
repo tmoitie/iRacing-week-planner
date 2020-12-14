@@ -7,7 +7,7 @@ import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 import { updateDays } from '../actions/app';
 
 import { seasonStart, seasonEnd } from '../config';
-import styles from '../styles/main.scss';
+import styles from '../styles/main.module.scss';
 
 const seasonLengthDays = seasonEnd.diff(seasonStart, 'days');
 

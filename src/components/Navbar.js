@@ -7,14 +7,13 @@ import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 import { changeModal } from '../actions/app';
 import { signOut } from '../actions/auth';
 import languages from '../i18n';
-import styles from '../styles/main.scss';
+import styles from '../styles/main.module.scss';
 
 const userSelector = (state) => state.auth.user;
 
 function useOutsideAlerter(ref, callback) {
   React.useEffect(() => {
     function handleClickOutside(event) {
-      console.log(event.target);
       if (ref.current && !ref.current.contains(event.target)) {
         callback();
       }

@@ -3,7 +3,7 @@
 import * as React from 'react';
 
 import { useTranslation } from 'react-i18next';
-import styles from './styles/buyACoffee.css';
+import styles from './styles/buyACoffee.module.css';
 
 export default function BuyACoffee(): React.Node {
   const { t } = useTranslation();

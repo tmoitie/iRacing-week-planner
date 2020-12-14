@@ -4,6 +4,8 @@ import * as React from 'react';
 import classnames from 'classnames';
 import StarIcon from '../icon/StarIcon';
 
+import styles from '../../styles/main.module.scss';
+
 type Props = {
   race: {
     trackId: number,
@@ -15,7 +17,7 @@ type Props = {
 
 export default function Track({ ownedTracks, race, favouriteTracks }: Props) {
   return (
-    <td className={classnames({ success: ownedTracks.indexOf(race.trackId) !== -1 })}>
+    <td className={classnames({ [styles.success]: ownedTracks.indexOf(race.trackId) !== -1 })}>
       <div>
         {favouriteTracks.indexOf(race.trackId) !== -1 ? (
           <StarIcon />

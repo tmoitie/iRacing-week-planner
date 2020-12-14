@@ -7,7 +7,7 @@ import Modal from './Modal';
 import changelog from '../../data/changelog';
 import contributors from '../../data/contributors.json';
 
-import styles from '../../styles/main.scss';
+import styles from '../../styles/main.module.scss';
 
 type Props = {
   onClose: () => void,
@@ -23,6 +23,7 @@ export default function AboutModal({ onClose, isOpen }: Props) {
         <p>
           <Trans>
             This tool was created by
+            {' '}
             <a href="https://twitter.com/tmoitie" target="_blank" rel="noreferrer">
               tmoitie
             </a>
@@ -39,6 +40,7 @@ export default function AboutModal({ onClose, isOpen }: Props) {
             on iRacing).
             Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted
             publicly on
+            {' '}
             <a href="https://github.com/tmoitie/iRacing-week-planner" target="_blank" rel="noreferrer">Github</a>
             . Thanks!
           </Trans>

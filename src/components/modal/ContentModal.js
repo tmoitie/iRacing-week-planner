@@ -8,7 +8,8 @@ import toggleIdInCollection from '../../lib/toggleIdInCollection';
 import Modal from './Modal';
 import Checkbox from '../Checkbox';
 import FavouriteStarButton from '../FavouriteStarButton';
-import styles from '../../styles/main.scss';
+import styles from '../../styles/main.module.scss';
+import contentModalStyles from './styles/contentModal.module.scss';
 
 type Props = {
   id: string,
@@ -94,56 +95,62 @@ export default function ContentModal({
       <div className={styles['container-fluid']}>
         <p>{t('Use the checkbox to set the content you own, and use the star to set your favourite content.')}</p>
         <div className={styles.row}>
-          <div className={styles['col-sm-4']}>
-            <Checkbox
-              id={`${id}-select-all`}
-              checked={ownedContent.length === content.length}
-              onChange={toggleAllContent}
-            >
-              {t('Select all')}
+          <div className={`${contentModalStyles.checkboxContainer} ${styles['col-sm-4']}`}>
+            <div>
+              <Checkbox
+                id={`${id}-select-all`}
+                checked={ownedContent.length === content.length}
+                onChange={toggleAllContent}
+              >
+                {t('Select all')}
+              </Checkbox>
+            </div> 
 
-              <span> </span>
-
+            <div className={contentModalStyles.favourite}>
               <FavouriteStarButton
                 id={`${id}-favourite-all`}
                 enabled={favourites.length === content.length}
                 onClick={toggleAllFavourites}
               />
-            </Checkbox>
+            </div>
           </div>
-          <div className={styles['col-sm-4']}>
-            <Checkbox
-              id={`${id}-select-oval`}
-              checked={allTypeContentChecked('oval')}
-              onChange={(newValue) => setAllTypeContent('oval', newValue)}
-            >
-              {t('Select all oval')}
+          <div className={`${contentModalStyles.checkboxContainer} ${styles['col-sm-4']}`}>
+            <div>
+              <Checkbox
+                id={`${id}-select-oval`}
+                checked={allTypeContentChecked('oval')}
+                onChange={(newValue) => setAllTypeContent('oval', newValue)}
+              >
+                {t('Select all oval')}
+              </Checkbox>
+            </div> 
 
-              <span> </span>
-
+            <div className={contentModalStyles.favourite}>
               <FavouriteStarButton
                 id={`${id}-favourite-oval`}
                 enabled={allTypeFavouritesChecked('oval')}
                 onClick={(newValue) => setAllTypeFavourites('oval', newValue)}
               />
-            </Checkbox>
+            </div>
           </div>
-          <div className={styles['col-sm-4']}>
-            <Checkbox
-              id={`${id}-select-road`}
-              checked={allTypeContentChecked('road')}
-              onChange={(newValue) => setAllTypeContent('road', newValue)}
-            >
-              {t('Select all road')}
+          <div className={`${contentModalStyles.checkboxContainer} ${styles['col-sm-4']}`}>
+            <div>
+              <Checkbox
+                id={`${id}-select-road`}
+                checked={allTypeContentChecked('road')}
+                onChange={(newValue) => setAllTypeContent('road', newValue)}
+              >
+                {t('Select all road')}
+              </Checkbox>
+            </div> 
 
-              <span> </span>
-
+            <div className={contentModalStyles.favourite}>
               <FavouriteStarButton
                 id={`${id}-favourite-road`}
                 enabled={allTypeFavouritesChecked('road')}
                 onClick={(newValue) => setAllTypeFavourites('road', newValue)}
               />
-            </Checkbox>
+            </div>
           </div>
         </div>
 
@@ -151,25 +158,30 @@ export default function ContentModal({
 
         <div className={styles.row}>
           {content.map((item) => (
-            <div className={styles['col-md-6']} key={item[idField]}>
-              <Checkbox
-                id={`${id}-select-item-${item[idField]}`}
-                disabled={
-                  ownedContent.indexOf(item[idField]) !== -1 && defaultContent.indexOf(item[idField]) !== -1
-                }
-                checked={ownedContent.indexOf(item[idField]) !== -1}
-                onChange={(newValue) => toggleContent(item[idField], newValue)}
-              >
-                {item.skuname ? t(item.skuname) : t(item.name)}
+            <div
+              className={`${contentModalStyles.checkboxContainer} ${styles['col-md-6']}`}
+              key={item[idField]}
+            >
+              <div>
+                <Checkbox
+                  id={`${id}-select-item-${item[idField]}`}
+                  disabled={
+                    ownedContent.indexOf(item[idField]) !== -1 && defaultContent.indexOf(item[idField]) !== -1
+                  }
+                  checked={ownedContent.indexOf(item[idField]) !== -1}
+                  onChange={(newValue) => toggleContent(item[idField], newValue)}
+                >
+                  {item.skuname ? t(item.skuname) : t(item.name)}
+                </Checkbox>
+              </div> 
 
-                <span> </span>
-
+              <div className={contentModalStyles.favourite}>
                 <FavouriteStarButton
                   id={`${id}-favourite-item-${item[idField]}`}
                   enabled={favourites.indexOf(item[idField]) !== -1}
                   onClick={(newValue) => toggleFavourite(item[idField], newValue)}
                 />
-              </Checkbox>
+              </div>
             </div>
           ))}
         </div>

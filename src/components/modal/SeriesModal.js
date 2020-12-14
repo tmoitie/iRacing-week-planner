@@ -8,7 +8,7 @@ import Modal from './Modal';
 
 import allRaces from '../../lib/races';
 
-import styles from '../../styles/main.scss';
+import styles from '../../styles/main.module.scss';
 
 const now = moment().utc();
 

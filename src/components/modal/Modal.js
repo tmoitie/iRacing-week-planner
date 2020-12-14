@@ -8,7 +8,7 @@ import BaseModal from './BaseModal';
 
 import './styles/modal.scss';
 
-import styles from '../../styles/main.scss';
+import styles from '../../styles/main.module.scss';
 
 type Props = {
   children: React.node,

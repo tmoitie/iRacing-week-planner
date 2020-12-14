@@ -7,7 +7,7 @@ import type { TimeableRace } from '../../lib/races';
 import Modal from '../modal/Modal';
 import styles from './columns.scss';
 
-import bootstrapStyles from '../../styles/main.scss';
+import bootstrapStyles from '../../styles/main.module.scss';
 
 type Props = {
   race: {

@@ -55,6 +55,21 @@ module.exports = {
         test: /\.scss$/,
         use: [
           isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: isDevelopment,
+            },
+          },
+          postcssLoader,
+          'sass-loader',
+        ],
+        exclude: /\.module\.css$/
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-modules-flow-types-loader',
           {
             loader: 'css-loader',
@@ -66,6 +81,7 @@ module.exports = {
           postcssLoader,
           'sass-loader',
         ],
+        include: /\.module\.css$/
       },
       {
         test: /\.css$/,
@@ -81,6 +97,21 @@ module.exports = {
           },
           postcssLoader,
         ],
+        include: /\.module\.css$/
+      },
+      {
+        test: /\.css$/,
+        use: [
+          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: isDevelopment,
+            },
+          },
+          postcssLoader,
+        ],
+        exclude: /\.module\.css$/
       },
       {
         test: /\.(png|gif)$/,

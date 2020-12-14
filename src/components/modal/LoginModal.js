@@ -4,8 +4,9 @@ import { useTranslation } from 'react-i18next';
 import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 import { acknowledgeAuthError, createAccount, ERROR_AUTH, signIn } from '../../actions/auth';
 import ForgottenPasswordModal from './ForgottenPasswordModal';
+import RemoveIcon from '../icon/RemoveIcon';
 import Modal from './Modal';
-import styles from '../../styles/main.scss';
+import styles from '../../styles/main.module.scss';
 
 const errorSelector = (state) => state.auth.errorAuth;
 const loadingSelector = (state) => state.auth.loadingAuth;
@@ -78,11 +79,7 @@ export default function LoginModal({ isOpen, onClose }: Props) {
                   onClick={() => dispatch(acknowledgeAuthError())}
                   className={styles.close}
                 >
-                  <span
-                    aria-hidden="true"
-                  >
-                    &times;
-                  </span>
+                  <RemoveIcon />
                 </button>
                 {t(error.message)}
               </div>
