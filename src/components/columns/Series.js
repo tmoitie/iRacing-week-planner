@@ -4,7 +4,7 @@ import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import StarIcon from '../icon/StarIcon';
 import SeriesModal from '../modal/SeriesModal';
-import raceListingStyles from '../styles/raceListing.module.scss';
+import styles from './styles/columns.module.scss';
 
 type Props = {
   race: {
@@ -22,8 +22,8 @@ export default function Series({ race, favouriteSeries, ownedTracks }: Props) {
   const { t } = useTranslation();
 
   return (
-    <td className={raceListingStyles.clickableCell} onClick={openModal}>
-      <div>
+    <td className={styles.clickableCell}>
+      <button type="button" className={styles.cellButton} onClick={openModal} onKeyPress={openModal}>
         {favouriteSeries.indexOf(race.seriesId) !== -1 ? (
           <StarIcon />
         ) : null}
@@ -31,8 +31,7 @@ export default function Series({ race, favouriteSeries, ownedTracks }: Props) {
         <span> </span>
 
         {t(race.series)}
-      </div>
-
+      </button>
       <SeriesModal isOpen={modalOpen} onClose={closeModal} ownedTracks={ownedTracks} seriesId={race.seriesId} />
     </td>
   );

@@ -15,6 +15,7 @@ import availableColumns from '../data/availableColumns';
 
 import styles from '../styles/main.module.scss';
 import raceListingStyles from './styles/raceListing.module.scss';
+import columnStyles from './columns/styles/columns.module.scss';
 
 const settingsSelector = (state) => state.settings;
 const dateSelector = (state) => state.app.date;
@@ -67,18 +68,36 @@ export default function RaceListing(): React.Node {
       <table className={styles.table} style={{ fontSize: '0.8em' }}>
         <thead>
           <tr>
-            {chosenColumns.map((column) => (
-              <th
-                key={column.id}
-                id={`raceListing-th-${column.id}`}
-                onClick={column.sort ? getSortColumnHandler(column.id) : () => {}}
-                className={column.sort ? raceListingStyles.clickableCell : null}
-              >
-                {t(column.header)}
-                <span> </span>
-                {sort.key === column.id ? <SortArrow sort={sort} /> : null}
-              </th>
-            ))}
+            {chosenColumns.map((column) => {
+              const modalOpen = getSortColumnHandler(column.id);
+
+              const content = (
+                <>
+                  {t(column.header)}
+                  <span> </span>
+                  {sort.key === column.id ? <SortArrow sort={sort}/> : null}
+                </>
+              );
+
+              return (
+                <th
+                  key={column.id}
+                  id={`raceListing-th-${column.id}`}
+                  className={column.sort ? columnStyles.clickableCell : null}
+                >
+                  {column.sort ? (
+                    <button
+                      type="button"
+                      className={columnStyles.cellButton}
+                      onClick={modalOpen}
+                      onKeyPress={modalOpen}
+                    >
+                      {content}
+                    </button>
+                  ) : content}
+                </th>
+              );
+            })}
           </tr>
         </thead>
         <tbody>

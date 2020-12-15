@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import moment from 'moment';
 import type { TimeableRace } from '../../lib/races';
 import Modal from '../modal/Modal';
-import styles from './columns.scss';
+import styles from './styles/columns.module.scss';
 
 import bootstrapStyles from '../../styles/main.module.scss';
 
