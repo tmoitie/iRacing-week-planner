@@ -48,172 +48,6 @@ exports[`components/RaceListing changes sort on click 1`] = `
     </thead>
     <tbody>
       <tr
-        key="139"
-      >
-        <Id
-          favouriteCars={Array []}
-          favouriteSeries={Array []}
-          favouriteTracks={Array []}
-          key="id"
-          ownedCars={Array []}
-          ownedTracks={Array []}
-          race={
-            Object {
-              "carClasses": Array [
-                "MX5 Cup 2016",
-              ],
-              "carIds": Array [
-                10394,
-              ],
-              "endTime": "2020-09-29T00:00:00.000Z",
-              "everyTime": "PT1H",
-              "fixed": true,
-              "licenceClass": "R",
-              "licenceClassNumber": 0,
-              "licenceLevel": 1,
-              "official": true,
-              "offset": "P0D",
-              "seasonId": 2915,
-              "series": "Fanatec Global Mazda MX-5 Cup",
-              "seriesEnd": "2020-12-08T00:00:00.000Z",
-              "seriesId": 139,
-              "seriesStart": "2020-09-15T00:00:00.000Z",
-              "setTimes": undefined,
-              "startTime": "2020-09-22T00:00:00.000Z",
-              "track": "Okayama International Circuit - Full Course",
-              "trackId": 109,
-              "type": "Road",
-              "week": 1,
-              "weekLength": "PT168H",
-            }
-          }
-        />
-        <Series
-          favouriteCars={Array []}
-          favouriteSeries={Array []}
-          favouriteTracks={Array []}
-          key="series"
-          ownedCars={Array []}
-          ownedTracks={Array []}
-          race={
-            Object {
-              "carClasses": Array [
-                "MX5 Cup 2016",
-              ],
-              "carIds": Array [
-                10394,
-              ],
-              "endTime": "2020-09-29T00:00:00.000Z",
-              "everyTime": "PT1H",
-              "fixed": true,
-              "licenceClass": "R",
-              "licenceClassNumber": 0,
-              "licenceLevel": 1,
-              "official": true,
-              "offset": "P0D",
-              "seasonId": 2915,
-              "series": "Fanatec Global Mazda MX-5 Cup",
-              "seriesEnd": "2020-12-08T00:00:00.000Z",
-              "seriesId": 139,
-              "seriesStart": "2020-09-15T00:00:00.000Z",
-              "setTimes": undefined,
-              "startTime": "2020-09-22T00:00:00.000Z",
-              "track": "Okayama International Circuit - Full Course",
-              "trackId": 109,
-              "type": "Road",
-              "week": 1,
-              "weekLength": "PT168H",
-            }
-          }
-        />
-      </tr>
-      <tr
-        key="278"
-      >
-        <Id
-          favouriteCars={Array []}
-          favouriteSeries={Array []}
-          favouriteTracks={Array []}
-          key="id"
-          ownedCars={Array []}
-          ownedTracks={Array []}
-          race={
-            Object {
-              "carClasses": Array [
-                "GT1 Class",
-                "Ford GT",
-              ],
-              "carIds": Array [
-                10113,
-                10389,
-                10281,
-              ],
-              "endTime": "2020-09-29T00:00:00.000Z",
-              "everyTime": "PT2H",
-              "fixed": false,
-              "licenceClass": "C",
-              "licenceClassNumber": 2,
-              "licenceLevel": 8,
-              "official": true,
-              "offset": "PT1H45M",
-              "seasonId": 2948,
-              "series": "Fanatec GT Challenge",
-              "seriesEnd": "2020-12-08T00:00:00.000Z",
-              "seriesId": 278,
-              "seriesStart": "2020-09-15T00:00:00.000Z",
-              "setTimes": undefined,
-              "startTime": "2020-09-22T00:00:00.000Z",
-              "track": "Nürburgring Combined - Gesamtstrecke 24h",
-              "trackId": 186,
-              "type": "Road",
-              "week": 1,
-              "weekLength": "PT168H",
-            }
-          }
-        />
-        <Series
-          favouriteCars={Array []}
-          favouriteSeries={Array []}
-          favouriteTracks={Array []}
-          key="series"
-          ownedCars={Array []}
-          ownedTracks={Array []}
-          race={
-            Object {
-              "carClasses": Array [
-                "GT1 Class",
-                "Ford GT",
-              ],
-              "carIds": Array [
-                10113,
-                10389,
-                10281,
-              ],
-              "endTime": "2020-09-29T00:00:00.000Z",
-              "everyTime": "PT2H",
-              "fixed": false,
-              "licenceClass": "C",
-              "licenceClassNumber": 2,
-              "licenceLevel": 8,
-              "official": true,
-              "offset": "PT1H45M",
-              "seasonId": 2948,
-              "series": "Fanatec GT Challenge",
-              "seriesEnd": "2020-12-08T00:00:00.000Z",
-              "seriesId": 278,
-              "seriesStart": "2020-09-15T00:00:00.000Z",
-              "setTimes": undefined,
-              "startTime": "2020-09-22T00:00:00.000Z",
-              "track": "Nürburgring Combined - Gesamtstrecke 24h",
-              "trackId": 186,
-              "type": "Road",
-              "week": 1,
-              "weekLength": "PT168H",
-            }
-          }
-        />
-      </tr>
-      <tr
         key="32"
       >
         <Id
@@ -294,6 +128,86 @@ exports[`components/RaceListing changes sort on click 1`] = `
         />
       </tr>
       <tr
+        key="139"
+      >
+        <Id
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          key="id"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "MX5 Cup 2016",
+              ],
+              "carIds": Array [
+                10394,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "everyTime": "PT1H",
+              "fixed": true,
+              "licenceClass": "R",
+              "licenceClassNumber": 0,
+              "licenceLevel": 1,
+              "official": true,
+              "offset": "P0D",
+              "seasonId": 2915,
+              "series": "Fanatec Global Mazda MX-5 Cup",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 139,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "setTimes": undefined,
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Okayama International Circuit - Full Course",
+              "trackId": 109,
+              "type": "Road",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+        />
+        <Series
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          key="series"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "MX5 Cup 2016",
+              ],
+              "carIds": Array [
+                10394,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "everyTime": "PT1H",
+              "fixed": true,
+              "licenceClass": "R",
+              "licenceClassNumber": 0,
+              "licenceLevel": 1,
+              "official": true,
+              "offset": "P0D",
+              "seasonId": 2915,
+              "series": "Fanatec Global Mazda MX-5 Cup",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 139,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "setTimes": undefined,
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Okayama International Circuit - Full Course",
+              "trackId": 109,
+              "type": "Road",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+        />
+      </tr>
+      <tr
         key="167"
       >
         <Id
@@ -367,6 +281,92 @@ exports[`components/RaceListing changes sort on click 1`] = `
               "track": "Lanier National Speedway - Asphalt",
               "trackId": 8,
               "type": "Oval",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+        />
+      </tr>
+      <tr
+        key="432"
+      >
+        <Id
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          key="id"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "GT1 Class",
+                "Ford GT",
+              ],
+              "carIds": Array [
+                10113,
+                10389,
+                10281,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "everyTime": "PT2H",
+              "fixed": false,
+              "licenceClass": "C",
+              "licenceClassNumber": 2,
+              "licenceLevel": 8,
+              "official": true,
+              "offset": "PT1H45M",
+              "seasonId": 2948,
+              "series": "Fanatec GT Challenge",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 432,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "setTimes": undefined,
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Nürburgring Combined - Gesamtstrecke 24h",
+              "trackId": 186,
+              "type": "Road",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+        />
+        <Series
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          key="series"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "GT1 Class",
+                "Ford GT",
+              ],
+              "carIds": Array [
+                10113,
+                10389,
+                10281,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "everyTime": "PT2H",
+              "fixed": false,
+              "licenceClass": "C",
+              "licenceClassNumber": 2,
+              "licenceLevel": 8,
+              "official": true,
+              "offset": "PT1H45M",
+              "seasonId": 2948,
+              "series": "Fanatec GT Challenge",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 432,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "setTimes": undefined,
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Nürburgring Combined - Gesamtstrecke 24h",
+              "trackId": 186,
+              "type": "Road",
               "week": 1,
               "weekLength": "PT168H",
             }
@@ -673,7 +673,7 @@ exports[`components/RaceListing changes sort on click 2`] = `
         />
       </tr>
       <tr
-        key="278"
+        key="432"
       >
         <Id
           favouriteCars={Array []}
@@ -704,7 +704,7 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "seasonId": 2948,
               "series": "Fanatec GT Challenge",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
-              "seriesId": 278,
+              "seriesId": 432,
               "seriesStart": "2020-09-15T00:00:00.000Z",
               "setTimes": undefined,
               "startTime": "2020-09-22T00:00:00.000Z",
@@ -745,7 +745,7 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "seasonId": 2948,
               "series": "Fanatec GT Challenge",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
-              "seriesId": 278,
+              "seriesId": 432,
               "seriesStart": "2020-09-15T00:00:00.000Z",
               "setTimes": undefined,
               "startTime": "2020-09-22T00:00:00.000Z",
@@ -786,7 +786,7 @@ exports[`components/RaceListing changes sort on click 2`] = `
               "seasonId": 2948,
               "series": "Fanatec GT Challenge",
               "seriesEnd": "2020-12-08T00:00:00.000Z",
-              "seriesId": 278,
+              "seriesId": 432,
               "seriesStart": "2020-09-15T00:00:00.000Z",
               "setTimes": undefined,
               "startTime": "2020-09-22T00:00:00.000Z",
@@ -959,93 +959,6 @@ exports[`components/RaceListing renders correctly 1`] = `
     </thead>
     <tbody>
       <tr
-        key="139"
-      >
-        <Id
-          favouriteCars={Array []}
-          favouriteSeries={Array []}
-          favouriteTracks={Array []}
-          key="id"
-          ownedCars={Array []}
-          ownedTracks={Array []}
-          race={
-            Object {
-              "carClasses": Array [
-                "MX5 Cup 2016",
-              ],
-              "carIds": Array [
-                10394,
-              ],
-              "endTime": "2020-09-29T00:00:00.000Z",
-              "everyTime": "PT1H",
-              "fixed": true,
-              "licenceClass": "R",
-              "licenceClassNumber": 0,
-              "licenceLevel": 1,
-              "official": true,
-              "offset": "P0D",
-              "seasonId": 2915,
-              "series": "Fanatec Global Mazda MX-5 Cup",
-              "seriesEnd": "2020-12-08T00:00:00.000Z",
-              "seriesId": 139,
-              "seriesStart": "2020-09-15T00:00:00.000Z",
-              "setTimes": undefined,
-              "startTime": "2020-09-22T00:00:00.000Z",
-              "track": "Okayama International Circuit - Full Course",
-              "trackId": 109,
-              "type": "Road",
-              "week": 1,
-              "weekLength": "PT168H",
-            }
-          }
-        />
-      </tr>
-      <tr
-        key="278"
-      >
-        <Id
-          favouriteCars={Array []}
-          favouriteSeries={Array []}
-          favouriteTracks={Array []}
-          key="id"
-          ownedCars={Array []}
-          ownedTracks={Array []}
-          race={
-            Object {
-              "carClasses": Array [
-                "GT1 Class",
-                "Ford GT",
-              ],
-              "carIds": Array [
-                10113,
-                10389,
-                10281,
-              ],
-              "endTime": "2020-09-29T00:00:00.000Z",
-              "everyTime": "PT2H",
-              "fixed": false,
-              "licenceClass": "C",
-              "licenceClassNumber": 2,
-              "licenceLevel": 8,
-              "official": true,
-              "offset": "PT1H45M",
-              "seasonId": 2948,
-              "series": "Fanatec GT Challenge",
-              "seriesEnd": "2020-12-08T00:00:00.000Z",
-              "seriesId": 278,
-              "seriesStart": "2020-09-15T00:00:00.000Z",
-              "setTimes": undefined,
-              "startTime": "2020-09-22T00:00:00.000Z",
-              "track": "Nürburgring Combined - Gesamtstrecke 24h",
-              "trackId": 186,
-              "type": "Road",
-              "week": 1,
-              "weekLength": "PT168H",
-            }
-          }
-        />
-      </tr>
-      <tr
         key="32"
       >
         <Id
@@ -1088,6 +1001,48 @@ exports[`components/RaceListing renders correctly 1`] = `
         />
       </tr>
       <tr
+        key="139"
+      >
+        <Id
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          key="id"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "MX5 Cup 2016",
+              ],
+              "carIds": Array [
+                10394,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "everyTime": "PT1H",
+              "fixed": true,
+              "licenceClass": "R",
+              "licenceClassNumber": 0,
+              "licenceLevel": 1,
+              "official": true,
+              "offset": "P0D",
+              "seasonId": 2915,
+              "series": "Fanatec Global Mazda MX-5 Cup",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 139,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "setTimes": undefined,
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Okayama International Circuit - Full Course",
+              "trackId": 109,
+              "type": "Road",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+        />
+      </tr>
+      <tr
         key="167"
       >
         <Id
@@ -1123,6 +1078,51 @@ exports[`components/RaceListing renders correctly 1`] = `
               "track": "Lanier National Speedway - Asphalt",
               "trackId": 8,
               "type": "Oval",
+              "week": 1,
+              "weekLength": "PT168H",
+            }
+          }
+        />
+      </tr>
+      <tr
+        key="432"
+      >
+        <Id
+          favouriteCars={Array []}
+          favouriteSeries={Array []}
+          favouriteTracks={Array []}
+          key="id"
+          ownedCars={Array []}
+          ownedTracks={Array []}
+          race={
+            Object {
+              "carClasses": Array [
+                "GT1 Class",
+                "Ford GT",
+              ],
+              "carIds": Array [
+                10113,
+                10389,
+                10281,
+              ],
+              "endTime": "2020-09-29T00:00:00.000Z",
+              "everyTime": "PT2H",
+              "fixed": false,
+              "licenceClass": "C",
+              "licenceClassNumber": 2,
+              "licenceLevel": 8,
+              "official": true,
+              "offset": "PT1H45M",
+              "seasonId": 2948,
+              "series": "Fanatec GT Challenge",
+              "seriesEnd": "2020-12-08T00:00:00.000Z",
+              "seriesId": 432,
+              "seriesStart": "2020-09-15T00:00:00.000Z",
+              "setTimes": undefined,
+              "startTime": "2020-09-22T00:00:00.000Z",
+              "track": "Nürburgring Combined - Gesamtstrecke 24h",
+              "trackId": 186,
+              "type": "Road",
               "week": 1,
               "weekLength": "PT168H",
             }
