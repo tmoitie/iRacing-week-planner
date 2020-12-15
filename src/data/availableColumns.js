@@ -48,9 +48,9 @@ export default [{
   default: false,
   sort: (order, a, b) => {
     if (order === 'asc') {
-      return (a.id < b.id ? -1 : 1);
+      return (a.seriesId < b.seriesId ? -1 : 1);
     }
-    return (a.id > b.id ? -1 : 1);
+    return (a.seriesId > b.seriesId ? -1 : 1);
   },
 }, {
   id: 'class',
