@@ -164,6 +164,6 @@ export default [
     // Dallara Formula iR
     seriesId: 429,
     everyTime: duration(2, 'hours'),
-    offset: duration(1, 'minutes'),
+    offset: duration(1, 'hours'),
   },
 ];
