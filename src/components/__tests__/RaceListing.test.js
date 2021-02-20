@@ -17,6 +17,14 @@ jest.mock('../../data/season.json');
 
 const mockStore = configureMockStore([thunk]);
 
+const createNodeMock = (element) => {
+  if (element.type === 'td') {
+    return { clientHeight: 50 };
+  }
+
+  return null;
+};
+
 describe('components/RaceListing', () => {
   const defaultStore = {
     settings: {
@@ -74,7 +82,7 @@ describe('components/RaceListing', () => {
       columns: ['id', 'series'],
     });
 
-    const component = renderer.create(<Provider store={store}><RaceListing /></Provider>);
+    const component = renderer.create(<Provider store={store}><RaceListing /></Provider>, { createNodeMock });
 
     expect(component.toJSON()).toMatchSnapshot();
 
@@ -92,7 +100,7 @@ describe('components/RaceListing', () => {
       sort: { key: 'series', order: 'desc' },
       columns: ['id', 'series', 'raceTimes'],
     });
-    const component = renderer.create(<Provider store={store}><RaceListing /></Provider>);
+    const component = renderer.create(<Provider store={store}><RaceListing /></Provider>, { createNodeMock });
     expect(component.toJSON()).toMatchSnapshot();
 
     component.root.findByProps({ id: 'raceListing-th-series' }).children[0].props.onClick();

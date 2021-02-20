@@ -74,6 +74,11 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
             className="cellButton"
             onClick={[Function]}
             onKeyPress={[Function]}
+            style={
+              Object {
+                "minHeight": 50,
+              }
+            }
             type="button"
           >
             <span>
@@ -101,6 +106,11 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
             className="cellButton"
             onClick={[Function]}
             onKeyPress={[Function]}
+            style={
+              Object {
+                "minHeight": 50,
+              }
+            }
             type="button"
           >
             <span>
@@ -128,6 +138,11 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
             className="cellButton"
             onClick={[Function]}
             onKeyPress={[Function]}
+            style={
+              Object {
+                "minHeight": 50,
+              }
+            }
             type="button"
           >
             <span>
@@ -155,6 +170,11 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
             className="cellButton"
             onClick={[Function]}
             onKeyPress={[Function]}
+            style={
+              Object {
+                "minHeight": 50,
+              }
+            }
             type="button"
           >
             <span>
@@ -239,6 +259,11 @@ exports[`components/RaceListing changes sort on click 1`] = `
             className="cellButton"
             onClick={[Function]}
             onKeyPress={[Function]}
+            style={
+              Object {
+                "minHeight": 50,
+              }
+            }
             type="button"
           >
             <span>
@@ -261,6 +286,11 @@ exports[`components/RaceListing changes sort on click 1`] = `
             className="cellButton"
             onClick={[Function]}
             onKeyPress={[Function]}
+            style={
+              Object {
+                "minHeight": 50,
+              }
+            }
             type="button"
           >
             <span>
@@ -283,6 +313,11 @@ exports[`components/RaceListing changes sort on click 1`] = `
             className="cellButton"
             onClick={[Function]}
             onKeyPress={[Function]}
+            style={
+              Object {
+                "minHeight": 50,
+              }
+            }
             type="button"
           >
             <span>
@@ -305,6 +340,11 @@ exports[`components/RaceListing changes sort on click 1`] = `
             className="cellButton"
             onClick={[Function]}
             onKeyPress={[Function]}
+            style={
+              Object {
+                "minHeight": 50,
+              }
+            }
             type="button"
           >
             <span>

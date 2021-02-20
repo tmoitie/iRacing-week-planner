@@ -35,8 +35,6 @@
     "@babel/preset-react": "^7.10.4",
     "@babel/register": "^7.10.5",
     "@blueprintjs/core": "^3.31.0",
-    "@sentry/react": "^5.22.2",
-    "@sentry/tracing": "^5.22.2",
     "autoprefixer": "^9.8.6",
     "axios": "^0.20.0",
     "babel-loader": "^8.1.0",
