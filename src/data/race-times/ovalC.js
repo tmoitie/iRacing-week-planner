@@ -49,29 +49,29 @@ export default [
     everyTime: duration(2, 'hours'),
     offset: duration(60, 'minutes'),
   },
-  // {
-  //   // NIS Fixed
-  //   seriesId: 207,
-  //   offWeeks: [8.1, 12.1, 21.1, 21.1],
-  //   setTimes: [
-  //     duration({ days: 1, hours: 21, minutes: 0 }), // Wed, 21:00 GMT
-  //     duration({ days: 3, hours: 1, minutes: 0 }), // Fri, 01:00 GMT
-  //     duration({ days: 4, hours: 10, minutes: 0 }), // Sat, 10:00 GMT
-  //     duration({ days: 4, hours: 16, minutes: 0 }), // Sat, 16:00 GMT
-  //     duration({ days: 6, hours: 1, minutes: 0 }), // Mon, 01:00 GMT
-  //   ],
-  // },
-  // {
-  //   // NIS Open
-  //   seriesId: 229,
-  //   offWeeks: [8.1, 12.1, 21.1, 21.1],
-  //   setTimes: [
-  //     duration({ days: 2, hours: 1, minutes: 0 }), // Thu, 01:00 GMT
-  //     duration({ days: 2, hours: 19, minutes: 0 }), // Thu, 19:00 GMT
-  //     duration({ days: 4, hours: 1, minutes: 0 }), // Sat, 01:00 GMT
-  //     duration({ days: 5, hours: 14, minutes: 0 }), // Sun, 14:00 GMT
-  //   ],
-  // },
+  {
+    // NIS Fixed
+    seriesId: 207,
+    offWeeks: [7.1, 16.1, 21.1, 21.1],
+    setTimes: [
+      duration({ days: 1, hours: 21, minutes: 0 }), // Wed, 21:00 GMT
+      duration({ days: 3, hours: 2, minutes: 0 }), // Fri, 02:00 GMT
+      duration({ days: 4, hours: 10, minutes: 0 }), // Sat, 10:00 GMT
+      duration({ days: 4, hours: 17, minutes: 0 }), // Sat, 17:00 GMT
+      duration({ days: 6, hours: 2, minutes: 0 }), // Mon, 02:00 GMT
+    ],
+  },
+  {
+    // NIS Open
+    seriesId: 229,
+    offWeeks: [7.1, 16.1, 21.1, 21.1],
+    setTimes: [
+      duration({ days: 2, hours: 2, minutes: 0 }), // Thu, 02:00 GMT
+      duration({ days: 2, hours: 19, minutes: 0 }), // Thu, 19:00 GMT
+      duration({ days: 4, hours: 2, minutes: 0 }), // Sat, 02:00 GMT
+      duration({ days: 5, hours: 15, minutes: 0 }), // Sun, 15:00 GMT
+    ],
+  },
   {
     // Old School NASCAR
     seriesId: 413,
