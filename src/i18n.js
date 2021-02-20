@@ -9,6 +9,7 @@ import es from '../translations/es';
 import ptBR from '../translations/pt-BR';
 import de from '../translations/de';
 import fr from '../translations/fr';
+import tr from '../translations/tr';
 
 const languages = {
   de: {
@@ -35,6 +36,10 @@ const languages = {
     flag: '🇧🇷',
     name: 'Português (BR)',
   },
+  'tr': {
+    flag: '🇹🇷',
+    name: 'Türkçe (TR)',
+  },
 };
 
 export default languages;
@@ -46,6 +51,7 @@ const resources = {
   'pt-BR': ptBR,
   de,
   fr,
+  tr,
 };
 
 if (process.env.NODE_ENV === 'development') {
