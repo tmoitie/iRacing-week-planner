@@ -14,7 +14,7 @@ export default [
     offset: duration(0, 'minutes'),
   },
   {
-    // Dirt 358 Modified
+    // DIRTcar 358 Modified Series
     seriesId: 427,
     everyTime: duration(1, 'hours'),
     offset: duration(30, 'minutes'),

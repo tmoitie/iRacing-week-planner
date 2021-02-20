@@ -21,7 +21,7 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
         >
           ID
           <span>
-             
+
           </span>
         </th>
         <th
@@ -31,7 +31,7 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
         >
           Series
           <span>
-             
+
           </span>
           <span
             className="glyphicon glyphicon-triangle-bottom"
@@ -44,7 +44,7 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
         >
           Race times
           <span>
-             
+
           </span>
         </th>
       </tr>
@@ -62,7 +62,7 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
         >
           <div>
             <span>
-               
+
             </span>
             iRacing ARCA Menards Series
           </div>
@@ -85,7 +85,7 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
         >
           <div>
             <span>
-               
+
             </span>
             iRacing Advanced Legends Cup
           </div>
@@ -108,7 +108,7 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
         >
           <div>
             <span>
-               
+
             </span>
             Fanatec GT Challenge
           </div>
@@ -131,7 +131,7 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
         >
           <div>
             <span>
-               
+
             </span>
             Fanatec Global Mazda MX-5 Cup
           </div>
@@ -168,7 +168,7 @@ exports[`components/RaceListing changes sort on click 1`] = `
         >
           ID
           <span>
-             
+
           </span>
           <span
             className="glyphicon glyphicon-triangle-top"
@@ -181,7 +181,7 @@ exports[`components/RaceListing changes sort on click 1`] = `
         >
           Series
           <span>
-             
+
           </span>
         </th>
       </tr>
@@ -199,7 +199,7 @@ exports[`components/RaceListing changes sort on click 1`] = `
         >
           <div>
             <span>
-               
+
             </span>
             Fanatec Global Mazda MX-5 Cup
           </div>
@@ -217,7 +217,7 @@ exports[`components/RaceListing changes sort on click 1`] = `
         >
           <div>
             <span>
-               
+
             </span>
             Fanatec GT Challenge
           </div>
@@ -235,7 +235,7 @@ exports[`components/RaceListing changes sort on click 1`] = `
         >
           <div>
             <span>
-               
+
             </span>
             iRacing Advanced Legends Cup
           </div>
@@ -253,7 +253,7 @@ exports[`components/RaceListing changes sort on click 1`] = `
         >
           <div>
             <span>
-               
+
             </span>
             iRacing ARCA Menards Series
           </div>
@@ -285,7 +285,7 @@ exports[`components/RaceListing renders correctly 1`] = `
         >
           ID
           <span>
-             
+
           </span>
           <span
             className="glyphicon glyphicon-triangle-top"

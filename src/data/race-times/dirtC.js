@@ -50,7 +50,7 @@ export default [
     ],
   },
   {
-    // Dirt Big Block Modified
+    // SUPER DIRTcar Big Block Modified Series
     seriesId: 428,
     everyTime: duration(2, 'hours'),
     offset: duration(0, 'minutes'),
