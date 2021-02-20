@@ -38,7 +38,7 @@ export default [
     offset: duration(45, 'minutes'),
   },
   {
-    // Chilli Bowl Nationals 
+    // Chilli Bowl Nationals
     seriesId: 426,
     setTimes: [
       duration({ days: 0, hours: 2 }),
@@ -48,5 +48,11 @@ export default [
       duration({ days: 4, hours: 2 }),
       duration({ days: 5, hours: 2 }),
     ],
+  },
+  {
+    // Dirt Big Block Modified
+    seriesId: 428,
+    everyTime: duration(2, 'hours'),
+    offset: duration(0, 'minutes'),
   },
 ];

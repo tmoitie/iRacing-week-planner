@@ -18,6 +18,7 @@ import rxD from './race-times/rxD';
 import rxC from './race-times/rxC';
 import pro from './race-times/pro';
 import week13 from './race-times/week13';
+import special from './race-times/special';
 
 export default [
   ...dirtR,
@@ -40,4 +41,5 @@ export default [
   ...rxC,
   ...pro,
   ...week13,
+  ...special,
 ];

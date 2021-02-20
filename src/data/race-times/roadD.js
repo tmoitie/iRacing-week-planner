@@ -76,7 +76,7 @@ export default [
   },
   {
     // Touring Car Challenge
-    seriesId: 418,
+    seriesId: 430,
     everyTime: duration(1, 'hours'),
     offset: duration(45, 'minutes'),
   },
