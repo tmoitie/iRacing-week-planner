@@ -23,7 +23,7 @@ export default function NextRace({ race }: Props) {
   const { t } = useTranslation();
 
   if (race.setTimes) {
-    const weekStart = moment().utc().startOf('week').add(2, 'days');
+    const weekStart = moment(moment().utc()).subtract(1, 'days').startOf('isoWeek').add(1, 'days');
 
     return (
       <td className={styles.clickableCell}>
