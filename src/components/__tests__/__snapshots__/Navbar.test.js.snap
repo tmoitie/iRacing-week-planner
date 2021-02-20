@@ -197,6 +197,15 @@ exports[`components/Navbar renders correctly and links work 1`] = `
           </li>
           <li>
             <a
+              href=""
+              id="navbar-link-language-tr"
+            >
+              🇹🇷
+              Türkçe (TR)
+            </a>
+          </li>
+          <li>
+            <a
               href="https://github.com/tmoitie/iRacing-week-planner/blob/master/Translate.md"
               rel="noreferrer"
               target="_blank"

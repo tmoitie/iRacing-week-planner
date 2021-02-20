@@ -3,15 +3,19 @@
 exports[`components/columns/Car opens modal 1`] = `
 <td
   className="success clickableCell"
-  onClick={[Function]}
 >
-  <div>
+  <button
+    className="cellButton"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    type="button"
+  >
     <StarIcon />
     <span>
        
     </span>
     Mazda Cup
-  </div>
+  </button>
   <CarModal
     carIds={
       Array [
@@ -24,7 +28,7 @@ exports[`components/columns/Car opens modal 1`] = `
         4,
       ]
     }
-    isOpen={true}
+    isOpen={false}
     onClose={[Function]}
     ownedCars={
       Array [
@@ -39,15 +43,19 @@ exports[`components/columns/Car opens modal 1`] = `
 exports[`components/columns/Car opens modal 2`] = `
 <td
   className="success clickableCell"
-  onClick={[Function]}
 >
-  <div>
+  <button
+    className="cellButton"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    type="button"
+  >
     <StarIcon />
     <span>
        
     </span>
     Mazda Cup
-  </div>
+  </button>
   <CarModal
     carIds={
       Array [
@@ -75,14 +83,18 @@ exports[`components/columns/Car opens modal 2`] = `
 exports[`components/columns/Car renders correctly 1`] = `
 <td
   className="clickableCell"
-  onClick={[Function]}
 >
-  <div>
+  <button
+    className="cellButton"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    type="button"
+  >
     <span>
        
     </span>
     Mazda Cup
-  </div>
+  </button>
   <CarModal
     carIds={
       Array [
@@ -102,15 +114,19 @@ exports[`components/columns/Car renders correctly 1`] = `
 exports[`components/columns/Car renders owned, favourite 1`] = `
 <td
   className="success clickableCell"
-  onClick={[Function]}
 >
-  <div>
+  <button
+    className="cellButton"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    type="button"
+  >
     <StarIcon />
     <span>
        
     </span>
     Mazda Cup
-  </div>
+  </button>
   <CarModal
     carIds={
       Array [

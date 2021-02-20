@@ -3,14 +3,18 @@
 exports[`components/columns/Series renders correctly 1`] = `
 <td
   className="clickableCell"
-  onClick={[Function]}
 >
-  <div>
+  <button
+    className="cellButton"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    type="button"
+  >
     <span>
        
     </span>
     Rallycross
-  </div>
+  </button>
   <SeriesModal
     isOpen={false}
     onClose={[Function]}
@@ -23,16 +27,20 @@ exports[`components/columns/Series renders correctly 1`] = `
 exports[`components/columns/Series renders correctly 2`] = `
 <td
   className="clickableCell"
-  onClick={[Function]}
 >
-  <div>
+  <button
+    className="cellButton"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    type="button"
+  >
     <span>
        
     </span>
     Rallycross
-  </div>
+  </button>
   <SeriesModal
-    isOpen={true}
+    isOpen={false}
     onClose={[Function]}
     ownedTracks={Array []}
     seriesId={345}
@@ -43,14 +51,18 @@ exports[`components/columns/Series renders correctly 2`] = `
 exports[`components/columns/Series renders correctly 3`] = `
 <td
   className="clickableCell"
-  onClick={[Function]}
 >
-  <div>
+  <button
+    className="cellButton"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    type="button"
+  >
     <span>
        
     </span>
     Rallycross
-  </div>
+  </button>
   <SeriesModal
     isOpen={false}
     onClose={[Function]}
@@ -63,15 +75,19 @@ exports[`components/columns/Series renders correctly 3`] = `
 exports[`components/columns/Series renders favourite series 1`] = `
 <td
   className="clickableCell"
-  onClick={[Function]}
 >
-  <div>
+  <button
+    className="cellButton"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    type="button"
+  >
     <StarIcon />
     <span>
        
     </span>
     Rallycross
-  </div>
+  </button>
   <SeriesModal
     isOpen={false}
     onClose={[Function]}

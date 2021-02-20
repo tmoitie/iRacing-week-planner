@@ -17,34 +17,45 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
         <th
           className="clickableCell"
           id="raceListing-th-id"
-          onClick={[Function]}
         >
-          ID
-          <span>
-
-          </span>
+          <button
+            className="cellButton"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            type="button"
+          >
+            ID
+            <span>
+               
+            </span>
+          </button>
         </th>
         <th
           className="clickableCell"
           id="raceListing-th-series"
-          onClick={[Function]}
         >
-          Series
-          <span>
-
-          </span>
-          <span
-            className="glyphicon glyphicon-triangle-bottom"
-          />
+          <button
+            className="cellButton"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            type="button"
+          >
+            Series
+            <span>
+               
+            </span>
+            <span
+              className="glyphicon glyphicon-triangle-bottom"
+            />
+          </button>
         </th>
         <th
           className={null}
           id="raceListing-th-raceTimes"
-          onClick={[Function]}
         >
           Race times
           <span>
-
+             
           </span>
         </th>
       </tr>
@@ -58,14 +69,18 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
         </td>
         <td
           className="clickableCell"
-          onClick={[Function]}
         >
-          <div>
+          <button
+            className="cellButton"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            type="button"
+          >
             <span>
-
+               
             </span>
             iRacing ARCA Menards Series
-          </div>
+          </button>
         </td>
         <td>
           <div>
@@ -81,14 +96,18 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
         </td>
         <td
           className="clickableCell"
-          onClick={[Function]}
         >
-          <div>
+          <button
+            className="cellButton"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            type="button"
+          >
             <span>
-
+               
             </span>
             iRacing Advanced Legends Cup
-          </div>
+          </button>
         </td>
         <td>
           <div>
@@ -99,19 +118,23 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
       <tr>
         <td>
           <div>
-            278
+            432
           </div>
         </td>
         <td
           className="clickableCell"
-          onClick={[Function]}
         >
-          <div>
+          <button
+            className="cellButton"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            type="button"
+          >
             <span>
-
+               
             </span>
             Fanatec GT Challenge
-          </div>
+          </button>
         </td>
         <td>
           <div>
@@ -127,14 +150,18 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
         </td>
         <td
           className="clickableCell"
-          onClick={[Function]}
         >
-          <div>
+          <button
+            className="cellButton"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            type="button"
+          >
             <span>
-
+               
             </span>
             Fanatec Global Mazda MX-5 Cup
-          </div>
+          </button>
         </td>
         <td>
           <div>
@@ -164,65 +191,41 @@ exports[`components/RaceListing changes sort on click 1`] = `
         <th
           className="clickableCell"
           id="raceListing-th-id"
-          onClick={[Function]}
         >
-          ID
-          <span>
-
-          </span>
-          <span
-            className="glyphicon glyphicon-triangle-top"
-          />
+          <button
+            className="cellButton"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            type="button"
+          >
+            ID
+            <span>
+               
+            </span>
+            <span
+              className="glyphicon glyphicon-triangle-top"
+            />
+          </button>
         </th>
         <th
           className="clickableCell"
           id="raceListing-th-series"
-          onClick={[Function]}
         >
-          Series
-          <span>
-
-          </span>
+          <button
+            className="cellButton"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            type="button"
+          >
+            Series
+            <span>
+               
+            </span>
+          </button>
         </th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>
-          <div>
-            139
-          </div>
-        </td>
-        <td
-          className="clickableCell"
-          onClick={[Function]}
-        >
-          <div>
-            <span>
-
-            </span>
-            Fanatec Global Mazda MX-5 Cup
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div>
-            278
-          </div>
-        </td>
-        <td
-          className="clickableCell"
-          onClick={[Function]}
-        >
-          <div>
-            <span>
-
-            </span>
-            Fanatec GT Challenge
-          </div>
-        </td>
-      </tr>
       <tr>
         <td>
           <div>
@@ -231,14 +234,40 @@ exports[`components/RaceListing changes sort on click 1`] = `
         </td>
         <td
           className="clickableCell"
-          onClick={[Function]}
         >
-          <div>
+          <button
+            className="cellButton"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            type="button"
+          >
             <span>
-
+               
             </span>
             iRacing Advanced Legends Cup
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            139
           </div>
+        </td>
+        <td
+          className="clickableCell"
+        >
+          <button
+            className="cellButton"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            type="button"
+          >
+            <span>
+               
+            </span>
+            Fanatec Global Mazda MX-5 Cup
+          </button>
         </td>
       </tr>
       <tr>
@@ -249,14 +278,40 @@ exports[`components/RaceListing changes sort on click 1`] = `
         </td>
         <td
           className="clickableCell"
-          onClick={[Function]}
         >
-          <div>
+          <button
+            className="cellButton"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            type="button"
+          >
             <span>
-
+               
             </span>
             iRacing ARCA Menards Series
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            432
           </div>
+        </td>
+        <td
+          className="clickableCell"
+        >
+          <button
+            className="cellButton"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            type="button"
+          >
+            <span>
+               
+            </span>
+            Fanatec GT Challenge
+          </button>
         </td>
       </tr>
     </tbody>
@@ -281,33 +336,25 @@ exports[`components/RaceListing renders correctly 1`] = `
         <th
           className="clickableCell"
           id="raceListing-th-id"
-          onClick={[Function]}
         >
-          ID
-          <span>
-
-          </span>
-          <span
-            className="glyphicon glyphicon-triangle-top"
-          />
+          <button
+            className="cellButton"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            type="button"
+          >
+            ID
+            <span>
+               
+            </span>
+            <span
+              className="glyphicon glyphicon-triangle-top"
+            />
+          </button>
         </th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>
-          <div>
-            139
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div>
-            278
-          </div>
-        </td>
-      </tr>
       <tr>
         <td>
           <div>
@@ -318,7 +365,21 @@ exports[`components/RaceListing renders correctly 1`] = `
       <tr>
         <td>
           <div>
+            139
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
             167
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            432
           </div>
         </td>
       </tr>

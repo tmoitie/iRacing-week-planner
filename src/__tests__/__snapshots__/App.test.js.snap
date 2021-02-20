@@ -167,6 +167,16 @@ exports[`components/App renders correctly 1`] = `
             </li>
             <li>
               <a
+                href=""
+                id="navbar-link-language-tr"
+                onClick={[Function]}
+              >
+                🇹🇷
+                Türkçe (TR)
+              </a>
+            </li>
+            <li>
+              <a
                 href="https://github.com/tmoitie/iRacing-week-planner/blob/master/Translate.md"
                 rel="noreferrer"
                 target="_blank"
@@ -656,33 +666,25 @@ exports[`components/App renders correctly 1`] = `
                 <th
                   className="clickableCell"
                   id="raceListing-th-id"
-                  onClick={[Function]}
                 >
-                  ID
-                  <span>
-                     
-                  </span>
-                  <span
-                    className="glyphicon glyphicon-triangle-top"
-                  />
+                  <button
+                    className="cellButton"
+                    onClick={[Function]}
+                    onKeyPress={[Function]}
+                    type="button"
+                  >
+                    ID
+                    <span>
+                       
+                    </span>
+                    <span
+                      className="glyphicon glyphicon-triangle-top"
+                    />
+                  </button>
                 </th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>
-                  <div>
-                    139
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div>
-                    278
-                  </div>
-                </td>
-              </tr>
               <tr>
                 <td>
                   <div>
@@ -693,7 +695,21 @@ exports[`components/App renders correctly 1`] = `
               <tr>
                 <td>
                   <div>
+                    139
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div>
                     167
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div>
+                    432
                   </div>
                 </td>
               </tr>

@@ -78,11 +78,11 @@ describe('components/RaceListing', () => {
 
     expect(component.toJSON()).toMatchSnapshot();
 
-    component.root.findByProps({ id: 'raceListing-th-id' }).props.onClick();
+    component.root.findByProps({ id: 'raceListing-th-id' }).children[0].props.onClick();
 
     expect(store.getActions()[0]).toEqual(getSortExpectation({ key: 'id', order: 'desc' }));
 
-    component.root.findByProps({ id: 'raceListing-th-series' }).props.onClick();
+    component.root.findByProps({ id: 'raceListing-th-series' }).children[0].props.onClick();
 
     expect(store.getActions()[1]).toEqual(getSortExpectation({ key: 'series', order: 'asc' }));
   });
@@ -95,13 +95,11 @@ describe('components/RaceListing', () => {
     const component = renderer.create(<Provider store={store}><RaceListing /></Provider>);
     expect(component.toJSON()).toMatchSnapshot();
 
-    component.root.findByProps({ id: 'raceListing-th-series' }).props.onClick();
+    component.root.findByProps({ id: 'raceListing-th-series' }).children[0].props.onClick();
 
     expect(store.getActions()[0]).toEqual(getSortExpectation({ key: 'series', order: 'asc' }));
 
-    component.root.findByProps({ id: 'raceListing-th-raceTimes' }).props.onClick();
-
-    expect(store.getActions()[1]).toBeUndefined();
+    expect(component.root.findByProps({ id: 'raceListing-th-raceTimes' }).children[0]).toBeString();
   });
 
   test('renders not found favourite series', () => {
