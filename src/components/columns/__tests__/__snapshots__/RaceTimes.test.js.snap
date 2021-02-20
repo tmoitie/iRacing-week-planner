@@ -15,17 +15,12 @@ exports[`components/columns/RaceTimes renders no time data 1`] = `
 `;
 
 exports[`components/columns/RaceTimes renders settimes 1`] = `
-<td
-  className="clickableCell"
->
-  <button
-    className="cellButton"
+<Fragment>
+  <ClickableCell
     onClick={[Function]}
-    onKeyPress={[Function]}
-    type="button"
   >
     Set Times
-  </button>
+  </ClickableCell>
   <Modal
     doneAction={[Function]}
     doneButtonText="Close"
@@ -51,21 +46,16 @@ exports[`components/columns/RaceTimes renders settimes 1`] = `
       </ul>
     </div>
   </Modal>
-</td>
+</Fragment>
 `;
 
 exports[`components/columns/RaceTimes renders settimes 2`] = `
-<td
-  className="clickableCell"
->
-  <button
-    className="cellButton"
+<Fragment>
+  <ClickableCell
     onClick={[Function]}
-    onKeyPress={[Function]}
-    type="button"
   >
     Set Times
-  </button>
+  </ClickableCell>
   <Modal
     doneAction={[Function]}
     doneButtonText="Close"
@@ -91,21 +81,16 @@ exports[`components/columns/RaceTimes renders settimes 2`] = `
       </ul>
     </div>
   </Modal>
-</td>
+</Fragment>
 `;
 
 exports[`components/columns/RaceTimes renders settimes 3`] = `
-<td
-  className="clickableCell"
->
-  <button
-    className="cellButton"
+<Fragment>
+  <ClickableCell
     onClick={[Function]}
-    onKeyPress={[Function]}
-    type="button"
   >
     Set Times
-  </button>
+  </ClickableCell>
   <Modal
     doneAction={[Function]}
     doneButtonText="Close"
@@ -131,5 +116,5 @@ exports[`components/columns/RaceTimes renders settimes 3`] = `
       </ul>
     </div>
   </Modal>
-</td>
+</Fragment>
 `;

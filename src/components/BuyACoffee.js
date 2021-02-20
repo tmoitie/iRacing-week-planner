@@ -46,7 +46,7 @@ export default function BuyACoffee(): React.Node {
   };
 
   return (
-    <button type="button" className={styles.bmcButton} onClick={clickBuyCoffee}>
+    <button type="button" className={styles.bmcButton} onClick={clickBuyCoffee} onKeyPress={clickBuyCoffee}>
       <img
         src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
         alt={t('Buy me a coffee')}

@@ -199,11 +199,11 @@ exports[`components/App renders correctly 1`] = `
         className="col-md-2"
       >
         <div>
-          <a
+          <button
             className="bmcButton"
-            href="https://www.buymeacoffee.com/tmoitie"
-            rel="noreferrer"
-            target="_blank"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            type="button"
           >
             <img
               alt="Buy me a coffee"
@@ -218,7 +218,7 @@ exports[`components/App renders correctly 1`] = `
             >
               Buy me a coffee
             </span>
-          </a>
+          </button>
         </div>
         <h3>
           Filters

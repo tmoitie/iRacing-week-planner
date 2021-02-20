@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import moment from 'moment';
 import type { TimeableRace } from '../../lib/races';
 import Modal from '../modal/Modal';
-import styles from './styles/columns.module.scss';
+import ClickableCell from './ClickableCell';
 
 import bootstrapStyles from '../../styles/main.module.scss';
 
@@ -26,10 +26,10 @@ export default function NextRace({ race }: Props) {
     const weekStart = moment(moment().utc()).subtract(1, 'days').startOf('isoWeek').add(1, 'days');
 
     return (
-      <td className={styles.clickableCell}>
-        <button type="button" className={styles.cellButton} onClick={openModal} onKeyPress={openModal}>
+      <>
+        <ClickableCell onClick={openModal}>
           {t('Set Times')}
-        </button>
+        </ClickableCell>
         <Modal
           isOpen={modalOpen}
           onClose={closeModal}
@@ -51,7 +51,7 @@ export default function NextRace({ race }: Props) {
             </ul>
           </div>
         </Modal>
-      </td>
+      </>
     );
   }
 

@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/BuyACoffee renders correctly 1`] = `
-<a
+<button
   className="bmcButton"
-  href="https://www.buymeacoffee.com/tmoitie"
-  rel="noreferrer"
-  target="_blank"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+  type="button"
 >
   <img
     alt="Buy me a coffee"
@@ -20,5 +20,5 @@ exports[`components/BuyACoffee renders correctly 1`] = `
   >
     Buy me a coffee
   </span>
-</a>
+</button>
 `;

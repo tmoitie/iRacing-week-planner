@@ -7,7 +7,7 @@ import StarIcon from '../icon/StarIcon';
 import CarModal from '../modal/CarModal';
 
 import styles from '../../styles/main.module.scss';
-import columnStyles from './styles/columns.module.scss';
+import ClickableCell from './ClickableCell';
 
 type Props = {
   race: {
@@ -27,19 +27,19 @@ export default function Car({ race, favouriteCars, ownedCars }: Props) {
   };
 
   return (
-    <td
-      className={classnames({
-        [styles.success]: intersection(ownedCars, race.carIds).length !== 0,
-        [columnStyles.clickableCell]: true,
-      })}
-    >
-      <button type="button" className={columnStyles.cellButton} onClick={openModal} onKeyPress={openModal}>
+    <>
+      <ClickableCell
+        className={classnames({
+          [styles.success]: intersection(ownedCars, race.carIds).length !== 0,
+        })}
+        onClick={openModal}
+      >
         {intersection(favouriteCars, race.carIds).length !== 0 ? (
           <StarIcon />
         ) : null}
         <span> </span>
         {race.carClasses.join(', ')}
-      </button>
+      </ClickableCell>
       <CarModal
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
@@ -48,6 +48,6 @@ export default function Car({ race, favouriteCars, ownedCars }: Props) {
         carIds={race.carIds}
         seriesName={race.series}
       />
-    </td>
+    </>
   );
 }

@@ -1,93 +1,73 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/columns/Series renders correctly 1`] = `
-<td
-  className="clickableCell"
->
-  <button
-    className="cellButton"
+<Fragment>
+  <ClickableCell
     onClick={[Function]}
-    onKeyPress={[Function]}
-    type="button"
   >
     <span>
        
     </span>
     Rallycross
-  </button>
+  </ClickableCell>
   <SeriesModal
     isOpen={false}
     onClose={[Function]}
     ownedTracks={Array []}
     seriesId={345}
   />
-</td>
+</Fragment>
 `;
 
 exports[`components/columns/Series renders correctly 2`] = `
-<td
-  className="clickableCell"
->
-  <button
-    className="cellButton"
+<Fragment>
+  <ClickableCell
     onClick={[Function]}
-    onKeyPress={[Function]}
-    type="button"
   >
     <span>
        
     </span>
     Rallycross
-  </button>
+  </ClickableCell>
   <SeriesModal
     isOpen={false}
     onClose={[Function]}
     ownedTracks={Array []}
     seriesId={345}
   />
-</td>
+</Fragment>
 `;
 
 exports[`components/columns/Series renders correctly 3`] = `
-<td
-  className="clickableCell"
->
-  <button
-    className="cellButton"
+<Fragment>
+  <ClickableCell
     onClick={[Function]}
-    onKeyPress={[Function]}
-    type="button"
   >
     <span>
        
     </span>
     Rallycross
-  </button>
+  </ClickableCell>
   <SeriesModal
     isOpen={false}
     onClose={[Function]}
     ownedTracks={Array []}
     seriesId={345}
   />
-</td>
+</Fragment>
 `;
 
 exports[`components/columns/Series renders favourite series 1`] = `
-<td
-  className="clickableCell"
->
-  <button
-    className="cellButton"
+<Fragment>
+  <ClickableCell
     onClick={[Function]}
-    onKeyPress={[Function]}
-    type="button"
   >
     <StarIcon />
     <span>
        
     </span>
     Rallycross
-  </button>
+  </ClickableCell>
   <SeriesModal
     isOpen={false}
     onClose={[Function]}
@@ -98,5 +78,5 @@ exports[`components/columns/Series renders favourite series 1`] = `
     }
     seriesId={345}
   />
-</td>
+</Fragment>
 `;
