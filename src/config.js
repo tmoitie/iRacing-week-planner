@@ -11,5 +11,5 @@ export const firebaseConfig = {
   projectId: 'iracing-week-planner',
   storageBucket: 'iracing-week-planner.appspot.com',
   messagingSenderId: '933939666088',
-  appId: '1:933939666088:web:479c8445f2c521044ab69d'
+  appId: '1:933939666088:web:479c8445f2c521044ab69d',
 };

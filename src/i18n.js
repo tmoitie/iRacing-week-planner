@@ -9,8 +9,9 @@ import es from '../translations/es';
 import ptBR from '../translations/pt-BR';
 import de from '../translations/de';
 import fr from '../translations/fr';
+import tr from '../translations/tr';
 
-export const languages = {
+const languages = {
   de: {
     flag: '🇩🇪',
     name: 'Deutsch (DE)',
@@ -35,7 +36,13 @@ export const languages = {
     flag: '🇧🇷',
     name: 'Português (BR)',
   },
+  'tr': {
+    flag: '🇹🇷',
+    name: 'Türkçe (TR)',
+  },
 };
+
+export default languages;
 
 const resources = {
   en,
@@ -44,10 +51,12 @@ const resources = {
   'pt-BR': ptBR,
   de,
   fr,
+  tr,
 };
 
 if (process.env.NODE_ENV === 'development') {
   languages.test = { flag: '👀', name: 'Test' };
+  // eslint-disable-next-line global-require
   resources.test = require('../translations/fake').default;
 }
 

@@ -2,35 +2,24 @@
 
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import type { filters } from '../reducers/settings';
-import {
-  resetFilters as resetFiltersAction,
-  resetSettings as resetSettingsAction,
-  updateFilters as updateFiltersAction,
-} from '../actions/settings';
+import { useDispatch, useSelector, shallowEqual } from 'react-redux';
+import type { filters as filtersType } from '../reducers/settings';
+import { resetFilters, resetSettings, updateFilters } from '../actions/settings';
 import Checkbox from './Checkbox';
 
 import styles from '../styles/main.module.scss';
 
-type Props = {
-  currentFilters: filters,
-  updateFilters: (filters) => void,
-  resetSettings: () => void,
-  resetFilters: () => void,
-  user?: {},
-  firebaseSynced?: boolean,
-};
+const currentFiltersSelector = (state) => state.settings.filters;
+const userSelector = (state) => state.auth.user;
+const firebaseSyncedSelector = (state) => state.settings.firebaseSynced;
 
-const defaultProps = {
-  user: null,
-  firebaseSynced: false,
-};
+export default function Filters(): React.Node {
+  const currentFilters: filtersType = useSelector(currentFiltersSelector, shallowEqual);
+  const user = useSelector(userSelector, shallowEqual);
+  const firebaseSynced = useSelector(firebaseSyncedSelector);
+  const dispatch = useDispatch();
+  const { t } = useTranslation();
 
-export function Filters({
-  currentFilters, updateFilters, resetSettings, resetFilters, user, firebaseSynced,
-}: Props = defaultProps): React.Node {
   const getCheckboxFilterHandler = (key: string, value: any) => (
     (newValue: boolean): void => {
       const newFilters = { ...currentFilters };
@@ -43,20 +32,18 @@ export function Filters({
       if (index !== -1 && newValue === false) {
         newFilters[key] = newFilters[key].filter((_, i) => i !== index);
       }
-      updateFilters(newFilters);
+      dispatch(updateFilters(newFilters));
     }
   );
 
   const getBooleanFilterHandler = (key: string) => (
     (newValue: boolean): void => {
-      updateFilters({
+      dispatch(updateFilters({
         ...currentFilters,
         [key]: newValue,
-      });
+      }));
     }
   );
-
-  const { t } = useTranslation();
 
   return (
     <div style={{ fontSize: '0.8em' }}>
@@ -206,7 +193,7 @@ export function Filters({
           id="filters-reset-filters-button"
           type="button"
           className={`${styles.btn} ${styles['btn-primary']}`}
-          onClick={resetFilters}
+          onClick={() => dispatch(resetFilters())}
         >
           {t('Reset filters')}
         </button>
@@ -217,7 +204,7 @@ export function Filters({
           id="filters-reset-settings-button"
           type="button"
           className={`${styles.btn} ${styles['btn-primary']}`}
-          onClick={resetSettings}
+          onClick={() => dispatch(resetSettings())}
         >
           {t('Reset all settings')}
         </button>
@@ -236,19 +223,3 @@ export function Filters({
     </div>
   );
 }
-
-Filters.defaultProps = defaultProps;
-
-const mapStateToProps = (state) => ({
-  currentFilters: state.settings.filters,
-  user: state.auth.user,
-  firebaseSynced: state.settings.firebaseSynced,
-});
-
-const mapDispatchToProps = (dispatch) => bindActionCreators({
-  updateFilters: updateFiltersAction,
-  resetFilters: resetFiltersAction,
-  resetSettings: resetSettingsAction,
-}, dispatch);
-
-export default connect(mapStateToProps, mapDispatchToProps)(Filters);

@@ -1,5 +1,6 @@
 import * as firebase from 'firebase/app';
 import 'firebase/firestore';
+import 'firebase/auth';
 
 import {
   LOADING_AUTH, SIGNED_OUT, SIGNED_IN, LOADING_RESET, RESET_SENT, ERROR_AUTH, ERROR_ACKNOWLEDGE, ERROR_RESET,

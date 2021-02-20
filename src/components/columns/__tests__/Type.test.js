@@ -11,7 +11,7 @@ describe('components/columns/Type', () => {
         race={{
           type: 'RX',
         }}
-      />
+      />,
     );
 
     expect(component).toMatchSnapshot();

@@ -14,4 +14,3 @@ export default function Licence({ race }: Props) {
     <td><LicenceLevel licence={race.licenceLevel} /></td>
   );
 }
-

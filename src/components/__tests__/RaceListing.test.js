@@ -1,8 +1,12 @@
 import { describe, test, beforeEach, afterEach } from '@jest/globals';
 import moment from 'moment';
 import React from 'react';
-import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
+import { Provider } from 'react-redux';
+import configureMockStore from 'redux-mock-store';
+import thunk from 'redux-thunk';
 import MockDate from 'mockdate';
+import { UPDATE_SETTING } from '../../actions/settings';
 
 import RaceListing from '../RaceListing';
 import { defaultFilters } from '../../reducers/settings';
@@ -11,18 +15,31 @@ import '../../data/season.json';
 
 jest.mock('../../data/season.json');
 
+const mockStore = configureMockStore([thunk]);
+
+const createNodeMock = (element) => {
+  if (element.type === 'td') {
+    return { clientHeight: 50 };
+  }
+
+  return null;
+};
+
 describe('components/RaceListing', () => {
-  const defaultProps = {
-    date: moment('2020-09-23T01:00:00.000Z'),
-    sort: { key: 'id', order: 'asc' },
-    filters: defaultFilters,
-    favouriteSeries: [],
-    ownedTracks: [],
-    ownedCars: [],
-    favouriteCars: [],
-    favouriteTracks: [],
-    columnIds: ['id'],
-    updateSort: () => {},
+  const defaultStore = {
+    settings: {
+      sort: { key: 'id', order: 'asc' },
+      filters: defaultFilters,
+      favouriteSeries: [],
+      ownedTracks: [],
+      ownedCars: [],
+      favouriteCars: [],
+      favouriteTracks: [],
+      columns: ['id'],
+    },
+    app: {
+      date: moment('2020-09-23T01:00:00.000Z'),
+    },
   };
 
   beforeEach(() => {
@@ -33,84 +50,90 @@ describe('components/RaceListing', () => {
     MockDate.reset();
   });
 
+  const getMockStore = (settingsOverrides = {}, filtersOverrides = {}) => mockStore({
+    ...defaultStore,
+    settings: {
+      ...defaultStore.settings,
+      ...settingsOverrides,
+      filters: {
+        ...defaultStore.settings.filters,
+        ...filtersOverrides,
+      },
+    },
+  });
+
+  const getSortExpectation = (sortVars) => expect.objectContaining({
+    type: UPDATE_SETTING,
+    payload: expect.objectContaining({
+      key: 'sort',
+      value: expect.objectContaining(sortVars),
+    }),
+  });
+
   test('renders correctly', () => {
-    const component = shallow(<RaceListing
-      {...defaultProps}
-    />);
+    const component = renderer.create(<Provider store={getMockStore()}><RaceListing /></Provider>);
 
-    expect(component).toMatchSnapshot();
-
-    component.find({ id: 'raceListing-th-id' }).first().simulate('click');
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('changes sort on click', () => {
-    const sort = jest.fn();
-    const component = shallow(<RaceListing
-      {...defaultProps}
-      sort={{ key: 'id', order: 'asc' }}
-      columnIds={['id', 'series']}
-      updateSort={sort}
-    />);
+    const store = getMockStore({
+      sort: { key: 'id', order: 'asc' },
+      columns: ['id', 'series'],
+    });
 
-    expect(component).toMatchSnapshot();
+    const component = renderer.create(<Provider store={store}><RaceListing /></Provider>, { createNodeMock });
 
-    component.find({ id: 'raceListing-th-id' }).first().simulate('click');
-    expect(sort).toBeCalledWith({ key: 'id', order: 'desc' });
+    expect(component.toJSON()).toMatchSnapshot();
 
-    sort.mockClear();
+    component.root.findByProps({ id: 'raceListing-th-id' }).children[0].props.onClick();
 
-    component.find({ id: 'raceListing-th-series' }).first().simulate('click');
-    expect(sort).toBeCalledWith({ key: 'series', order: 'asc' });
+    expect(store.getActions()[0]).toEqual(getSortExpectation({ key: 'id', order: 'desc' }));
 
-    const newSort = jest.fn();
-    const componentDesc = shallow(<RaceListing
-      {...defaultProps}
-      sort={{ key: 'series', order: 'desc' }}
-      columnIds={['id', 'series', 'raceTimes']}
-      updateSort={newSort}
-    />);
+    component.root.findByProps({ id: 'raceListing-th-series' }).children[0].props.onClick();
 
-    expect(componentDesc).toMatchSnapshot();
+    expect(store.getActions()[1]).toEqual(getSortExpectation({ key: 'series', order: 'asc' }));
+  });
 
-    componentDesc.find({ id: 'raceListing-th-series' }).first().simulate('click');
-    expect(newSort).toBeCalledWith({ key: 'series', order: 'asc' });
+  test('changes descending sort on click', () => {
+    const store = getMockStore({
+      sort: { key: 'series', order: 'desc' },
+      columns: ['id', 'series', 'raceTimes'],
+    });
+    const component = renderer.create(<Provider store={store}><RaceListing /></Provider>, { createNodeMock });
+    expect(component.toJSON()).toMatchSnapshot();
 
-    newSort.mockClear();
+    component.root.findByProps({ id: 'raceListing-th-series' }).children[0].props.onClick();
 
-    componentDesc.find({ id: 'raceListing-th-raceTimes' }).first().simulate('click');
-    expect(newSort).not.toBeCalled();
+    expect(store.getActions()[0]).toEqual(getSortExpectation({ key: 'series', order: 'asc' }));
+
+    expect(component.root.findByProps({ id: 'raceListing-th-raceTimes' }).children[0]).toBeString();
   });
 
   test('renders not found favourite series', () => {
-    const component = shallow(<RaceListing
-      {...defaultProps}
-      filters={{ ...defaultFilters, favouriteSeries: true }}
-      favouriteSeries={[543]}
-    />);
+    const store = getMockStore({ favouriteSeries: [543] }, { favouriteSeries: true });
 
-    expect(component).toMatchSnapshot();
-    expect(component.find('table').length).toBe(0);
+    const component = renderer.create(<Provider store={store}><RaceListing /></Provider>);
+
+    expect(component.toJSON()).toMatchSnapshot();
+    expect(component.root.findAllByType('table')).toEqual([]);
   });
 
   test('renders not found favourite cars', () => {
-    const component = shallow(<RaceListing
-      {...defaultProps}
-      filters={{ ...defaultFilters, favouriteCarsOnly: true }}
-      favouriteCars={[9999]}
-    />);
+    const store = getMockStore({ favouriteCars: [9999] }, { favouriteCarsOnly: true });
 
-    expect(component).toMatchSnapshot();
-    expect(component.find('table').length).toBe(0);
+    const component = renderer.create(<Provider store={store}><RaceListing /></Provider>);
+
+    expect(component.toJSON()).toMatchSnapshot();
+    expect(component.root.findAllByType('table')).toEqual([]);
   });
 
   test('renders not found favourite tracks', () => {
-    const component = shallow(<RaceListing
-      {...defaultProps}
-      filters={{ ...defaultFilters, favouriteTracksOnly: true }}
-      favouriteTracks={[9999]}
-    />);
+    const store = getMockStore({ favouriteTracks: [9999] }, { favouriteTracksOnly: true });
 
-    expect(component).toMatchSnapshot();
-    expect(component.find('table').length).toBe(0);
+    const component = renderer.create(<Provider store={store}><RaceListing /></Provider>);
+
+    expect(component.toJSON()).toMatchSnapshot();
+    expect(component.root.findAllByType('table')).toEqual([]);
   });
 });

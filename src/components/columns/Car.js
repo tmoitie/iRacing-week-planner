@@ -5,9 +5,9 @@ import classnames from 'classnames';
 import intersection from 'lodash.intersection';
 import StarIcon from '../icon/StarIcon';
 import CarModal from '../modal/CarModal';
-import raceListingStyles from '../styles/raceListing.module.scss';
 
 import styles from '../../styles/main.module.scss';
+import ClickableCell from './ClickableCell';
 
 type Props = {
   race: {
@@ -22,21 +22,24 @@ type Props = {
 export default function Car({ race, favouriteCars, ownedCars }: Props) {
   const [modalOpen, setModalOpen] = React.useState(false);
 
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
   return (
-    <td
-      className={classnames({
-        [styles.success]: intersection(ownedCars, race.carIds).length !== 0,
-        [raceListingStyles.clickableCell]: true,
-      })}
-      onClick={() => setModalOpen(true)}
-    >
-      <div>
+    <>
+      <ClickableCell
+        className={classnames({
+          [styles.success]: intersection(ownedCars, race.carIds).length !== 0,
+        })}
+        onClick={openModal}
+      >
         {intersection(favouriteCars, race.carIds).length !== 0 ? (
           <StarIcon />
         ) : null}
         <span> </span>
         {race.carClasses.join(', ')}
-      </div>
+      </ClickableCell>
       <CarModal
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
@@ -45,6 +48,6 @@ export default function Car({ race, favouriteCars, ownedCars }: Props) {
         carIds={race.carIds}
         seriesName={race.series}
       />
-    </td>
+    </>
   );
 }

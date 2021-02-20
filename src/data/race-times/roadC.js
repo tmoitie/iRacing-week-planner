@@ -160,10 +160,23 @@ export default [
     everyTime: duration(2, 'hours'),
     offset: duration(0, 'minutes'),
   },
+
+  {
+    // Apex F3
+    seriesId: 431,
+    everyTime: duration(2, 'hours'),
+    offset: duration(75, 'minutes'),
+  },
   {
     // Dallara Formula iR
     seriesId: 429,
     everyTime: duration(2, 'hours'),
-    offset: duration(1, 'hours'),
+    offset: duration(60, 'minutes'),
+  },
+  {
+    // GT Challenge
+    seriesId: 432,
+    everyTime: duration(2, 'hours'),
+    offset: duration(105, 'minutes'),
   },
 ];

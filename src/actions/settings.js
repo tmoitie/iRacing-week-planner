@@ -38,7 +38,7 @@ export function updateFilters(newFilters) {
 
 export function resetFilters() {
   return async (dispatch) => {
-    await dispatch({ type: RESET_FILTERS });
+    await dispatch({ type: RESET_FILTERS, payload: {} });
     debouncedDispatcherSaveSettings(dispatch);
   };
 }

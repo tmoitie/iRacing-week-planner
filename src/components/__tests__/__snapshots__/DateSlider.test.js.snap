@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/DateSlider renders correctly 1`] = `
+Array [
+  <div
+    className="row"
+  >
+    <h3
+      className="col-xs-8"
+    >
+      Races for date: 2020 Sep 23
+    </h3>
+    <h3
+      className="col-xs-4"
+      style={
+        Object {
+          "textAlign": "right",
+        }
+      }
+    >
+      Week 3
+    </h3>
+  </div>,
+  <div
+    style={
+      Object {
+        "marginBottom": 10,
+      }
+    }
+  >
+    <div
+      className="bp3-slider bp3-slider-unlabeled"
+      onMouseDown={[Function]}
+      onTouchStart={[Function]}
+    >
+      <div
+        className="bp3-slider-track"
+      >
+        <div
+          className="bp3-slider-progress"
+          style={
+            Object {
+              "left": "0.00%",
+              "right": "100.00%",
+              "top": 0,
+            }
+          }
+        />
+        <div
+          className="bp3-slider-progress bp3-intent-primary"
+          style={
+            Object {
+              "left": "0.00%",
+              "right": "100.00%",
+              "top": 0,
+            }
+          }
+        />
+        <div
+          className="bp3-slider-progress"
+          style={
+            Object {
+              "left": "0.00%",
+              "right": "100.00%",
+              "top": 0,
+            }
+          }
+        />
+      </div>
+      <div
+        className="bp3-slider-axis"
+      />
+      <span
+        className="bp3-slider-handle"
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={Object {}}
+        tabIndex={0}
+      />
+    </div>
+  </div>,
+]
+`;

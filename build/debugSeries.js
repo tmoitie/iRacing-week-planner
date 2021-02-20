@@ -1,23 +1,34 @@
+/* eslint-disable no-console */
+
 import Table from 'cli-table';
 import moment from 'moment';
 
 import allRaces from '../src/lib/races';
 
 const seriesId = parseInt(process.argv[2], 10);
-const races = allRaces.filter(race => race.seriesId === seriesId);
+const races = allRaces.filter((race) => race.seriesId === seriesId);
 
 const table = new Table({
   head: [
-    'Week', 'ID', 'Name', 'Week Length', 'Start', 'End', 'Season Start', 'Season End'
+    'Week', 'ID', 'Name', 'Week Length', 'Start', 'End', 'Season Start', 'Season End',
   ],
   chars: {
-    top: '═', 'top-mid': '╤', 'top-left': '╔', 'top-right': '╗',
-    bottom: '═', 'bottom-mid': '╧', 'bottom-left': '╚', 'bottom-right': '╝',
-    left: '║', 'left-mid': '╟',
-    mid: '─', 'mid-mid': '┼',
-    right: '║', 'right-mid': '╢',
-    middle: '│'
-  }
+    top: '═',
+    'top-mid': '╤',
+    'top-left': '╔',
+    'top-right': '╗',
+    bottom: '═',
+    'bottom-mid': '╧',
+    'bottom-left': '╚',
+    'bottom-right': '╝',
+    left: '║',
+    'left-mid': '╟',
+    mid: '─',
+    'mid-mid': '┼',
+    right: '║',
+    'right-mid': '╢',
+    middle: '│',
+  },
 });
 
 table.push(...races.map((race, index) => [

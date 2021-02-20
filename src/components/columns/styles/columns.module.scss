@@ -1,13 +1,16 @@
 .clickableCell {
   padding: 0 !important;
+  position: relative;
 
   .cellButton {
     padding: 8px;
-    width: 100%;
     text-align: left;
     appearance: none;
+    display: inline-flex;
+    align-items: flex-start;
     cursor: pointer;
     border: 0;
+    width: 100%;
     background: transparent;
     transition: background .3s;
 

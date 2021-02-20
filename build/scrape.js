@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import axios from 'axios';
 import fs from 'fs';
 import path from 'path';
@@ -72,7 +73,7 @@ const password = process.env.IWP_PASSWORD || 'test';
 
   const contribResponse = await axios.get(
     'https://api.github.com/repos/tmoitie/iRacing-week-planner/contributors',
-    githubOptions
+    githubOptions,
   );
   const filteredContributors = contributorsFilter(contribResponse.data);
   await writeFile(

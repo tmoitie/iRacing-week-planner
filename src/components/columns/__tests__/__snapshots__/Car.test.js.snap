@@ -1,53 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/columns/Car opens modal 1`] = `
-<td
-  className="success clickableCell"
-  onClick={[Function]}
->
-  <div>
+<Fragment>
+  <ClickableCell
+    className="success"
+    onClick={[Function]}
+  >
     <StarIcon />
     <span>
        
     </span>
     Mazda Cup
-  </div>
-  <CarModal
-    carIds={
-      Array [
-        4,
-        5,
-      ]
-    }
-    favouriteCars={
-      Array [
-        4,
-      ]
-    }
-    isOpen={true}
-    onClose={[Function]}
-    ownedCars={
-      Array [
-        5,
-      ]
-    }
-    seriesName="Mazda Cup"
-  />
-</td>
-`;
-
-exports[`components/columns/Car opens modal 2`] = `
-<td
-  className="success clickableCell"
-  onClick={[Function]}
->
-  <div>
-    <StarIcon />
-    <span>
-       
-    </span>
-    Mazda Cup
-  </div>
+  </ClickableCell>
   <CarModal
     carIds={
       Array [
@@ -69,20 +33,56 @@ exports[`components/columns/Car opens modal 2`] = `
     }
     seriesName="Mazda Cup"
   />
-</td>
+</Fragment>
 `;
 
-exports[`components/columns/Car renders correctly 1`] = `
-<td
-  className="clickableCell"
-  onClick={[Function]}
->
-  <div>
+exports[`components/columns/Car opens modal 2`] = `
+<Fragment>
+  <ClickableCell
+    className="success"
+    onClick={[Function]}
+  >
+    <StarIcon />
     <span>
        
     </span>
     Mazda Cup
-  </div>
+  </ClickableCell>
+  <CarModal
+    carIds={
+      Array [
+        4,
+        5,
+      ]
+    }
+    favouriteCars={
+      Array [
+        4,
+      ]
+    }
+    isOpen={false}
+    onClose={[Function]}
+    ownedCars={
+      Array [
+        5,
+      ]
+    }
+    seriesName="Mazda Cup"
+  />
+</Fragment>
+`;
+
+exports[`components/columns/Car renders correctly 1`] = `
+<Fragment>
+  <ClickableCell
+    className=""
+    onClick={[Function]}
+  >
+    <span>
+       
+    </span>
+    Mazda Cup
+  </ClickableCell>
   <CarModal
     carIds={
       Array [
@@ -96,21 +96,21 @@ exports[`components/columns/Car renders correctly 1`] = `
     ownedCars={Array []}
     seriesName="Mazda Cup"
   />
-</td>
+</Fragment>
 `;
 
 exports[`components/columns/Car renders owned, favourite 1`] = `
-<td
-  className="success clickableCell"
-  onClick={[Function]}
->
-  <div>
+<Fragment>
+  <ClickableCell
+    className="success"
+    onClick={[Function]}
+  >
     <StarIcon />
     <span>
        
     </span>
     Mazda Cup
-  </div>
+  </ClickableCell>
   <CarModal
     carIds={
       Array [
@@ -132,5 +132,5 @@ exports[`components/columns/Car renders owned, favourite 1`] = `
     }
     seriesName="Mazda Cup"
   />
-</td>
+</Fragment>
 `;

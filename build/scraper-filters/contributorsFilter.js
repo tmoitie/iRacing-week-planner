@@ -3,7 +3,7 @@ export default function contributorsFilter(contributors) {
     return contributor.login !== 'dependabot[bot]';
   });
 
-  return contributorsFiltered.map(contributor => ({
+  return contributorsFiltered.map((contributor) => ({
     id: contributor.id,
     html_url: contributor.html_url,
     login: contributor.login,

@@ -7,7 +7,7 @@ module.exports = {
   // collectCoverage: false,
   collectCoverageFrom: [
     'src/**/*.js',
-    "!src/**/*.{css,scss,test.js}",
+    '!src/**/*.{css,scss,test.js}',
   ],
   coverageDirectory: 'coverage',
   // coverageProvider: "babel",
@@ -37,7 +37,8 @@ module.exports = {
   //   "node"
   // ],
   moduleNameMapper: {
-    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': '<rootDir>/__mocks__/fileMock.js',
+    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
+      '<rootDir>/__mocks__/fileMock.js',
     '\\.(css|scss)$': 'identity-obj-proxy',
   },
   // modulePathIgnorePatterns: [],
@@ -56,7 +57,7 @@ module.exports = {
   // ],
   // runner: "jest-runner",
   // setupFiles: [],
-  setupFilesAfterEnv: ['jest-extended', '<rootDir>/test/setup.js'],
+  setupFilesAfterEnv: ['./__mocks__/client.js', 'jest-extended', '<rootDir>/test/setup.js'],
   // slowTestThreshold: 5,
   snapshotSerializers: ['enzyme-to-json/serializer'],
   testEnvironment: 'jsdom',
@@ -72,11 +73,11 @@ module.exports = {
   // testRegex: [],
   // testResultsProcessor: undefined,
   // testRunner: "jasmine2",
-  testURL: "http://localhost",
+  testURL: 'http://localhost',
   // timers: "real",
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
-    '.+\\.(css|styl|less|sass|scss)$': 'jest-css-modules-transform'
+    '.+\\.(css|styl|less|sass|scss)$': 'jest-css-modules-transform',
   },
   // transformIgnorePatterns: [
   //   "/node_modules/",

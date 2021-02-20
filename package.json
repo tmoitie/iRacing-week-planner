@@ -35,10 +35,8 @@
     "@babel/preset-react": "^7.10.4",
     "@babel/register": "^7.10.5",
     "@blueprintjs/core": "^3.31.0",
-    "@sentry/react": "^5.22.2",
-    "@sentry/tracing": "^5.22.2",
     "autoprefixer": "^9.8.6",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "babel-loader": "^8.1.0",
     "babel-plugin-jest-hoist": "^26.6.2",
     "bluebird": "^3.7.2",
@@ -92,6 +90,8 @@
   },
   "devDependencies": {
     "@jest/globals": "^26.4.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.4",
     "babel-eslint": "^10.1.0",
     "enzyme-to-json": "^3.5.0",
     "eslint": "^7.10.0",
@@ -109,8 +109,11 @@
     "jest-extended": "^0.11.5",
     "jsdom": "^16.4.0",
     "mockdate": "^3.0.2",
+    "react-test-renderer": "^16.13.1",
     "redux-logger": "^3.0.6",
     "redux-mock-store": "^1.5.4",
+    "regenerator-runtime": "^0.13.7",
+    "snapshot-diff": "^0.8.1",
     "webpack-dev-server": "^3.11.0"
   }
 }
