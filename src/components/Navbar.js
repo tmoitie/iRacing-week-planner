@@ -60,7 +60,7 @@ export default function Navbar() {
           </li>
         </ul>
 
-        <ul className={`nav ${styles['navbar-nav']} ${styles['navbar-right']}`}>
+        <ul className={`${styles.nav} ${styles['navbar-nav']} ${styles['navbar-right']}`}>
           <li>
             <a
               id="navbar-link-my-tracks"
