@@ -23,7 +23,7 @@ export default [
     // RUF GT3
     seriesId: 277,
     everyTime: duration(2, 'hours'),
-    offset: duration(0, 'minutes'),
+    offset: duration(60, 'minutes'),
   },
   {
     // Skippy
