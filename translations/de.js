@@ -8,7 +8,7 @@ export default {
     'Options': 'Optionen',
     'About': 'Über uns',
     'Week {{week}}': 'Woche {{week}}',
-    'Races for date: {{date, YYYY MMM DD}}': 'Rennen für Datum: {{date, YYYY MMM DD}}',
+    'Races for date: {{date, YYYY MMM DD}}': 'Rennen für Datum: {{date, DD MM YYYY}}',
     'No time data': 'Keine Zeitangaben',
 
     // Filters
