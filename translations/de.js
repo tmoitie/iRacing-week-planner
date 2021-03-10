@@ -60,7 +60,7 @@ export default {
     'Close': 'Schließen',
     'Contributors': 'Beitragende',
     'Changelog': 'Änderungsprotokoll',
-    'Purchase Guide': 'Kaufplaner',
+    'Purchase Guide': 'Einkaufsplaner',
     'This tool was created by <2>tmoitie</2> (<5>Tom Moitié</5> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on <9>Github</9>. Thanks!':
       'Dieses Tool wurde erstellt von <2>tmoitie</2> (<5>Tom Moitié</5> auf iRacing). Erreichen könnt ihr mich jederzeit via Twitter oder iRacing wenn ihr Feedback oder Fragen habt. Dieser Code ist öffentlich bereitgestellt auf <9>Github</9>. Danke!',
     'Loading': 'Laden',
