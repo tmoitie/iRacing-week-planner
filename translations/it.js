@@ -7,8 +7,8 @@ export default {
     'Set favorite series': 'Le mie serie preferite',
     'Options': 'Opzioni',
     'About': 'Informazioni',
-    'Week {{week}}': 'Settimana {{settimana}}',
-    'Races for date: {{date, YYYY MMM DD}}': 'Gara per Data: {{Data, DD MMM YYYY}}',
+    'Week {{week}}': 'Settimana {{week}}',
+    'Races for date: {{date, YYYY MMM DD}}': 'Gara per Data: {{Data, YYYY MMM DD}}',
     'No time data': 'Nessuna data disponibile',
 
     // Filters
@@ -64,14 +64,14 @@ export default {
     'This tool was created by <2>tmoitie</2> (<5>Tom Moitié</5> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on <9>Github</9>. Thanks!':
       'Questo tool è stato creato da <2>tmoitie</2> (<5>Tom Moitié</5> su iRacing). Sentiti libero di conttatarmi tramite Twitter o iRacing per qualsiasi suggerimento o domanda. Il codice è pubblicato su <9>Github</9>. Grazie!',
     'Loading': 'Caricamento',
-    'Cars for {{series}}': 'Auto per {{serie}}',
-    'Tracks for {{series}}': 'Traccciati per {{serie}}',
+    'Cars for {{series}}': 'Auto per {{series}}',
+    'Tracks for {{series}}': 'Traccciati per {{series}}',
     'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'Questi tracciati che non possiedi sono presenti più volte nelle tue serie preferite di questa stagione. Se vuoi puoi acquistare questi tracciati tramite il seguente link.',
 
     // Dates
-    '{{date, YYYY MMMM DD}}': '{{data, DD MMMM YYYY}}',
-    '{{date, YYYY-MM-DD}}': '{{data, DD-MM-YYYY}}',
-    'Every {{every}} starting at {{time, H:mm}} UTC': 'Ogni {{ogni}} partenza è alle {{orario, H:mm z}}',
+    '{{date, YYYY MMMM DD}}': '{{data, YYYY MMMM DD}}',
+    '{{date, YYYY-MM-DD}}': '{{data, YYYY-MM-DD}}',
+    'Every {{every}} starting at {{time, H:mm}} UTC': 'Ogni {{every}} partenza è alle {{time, H:mm}}',
     '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})': '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})',
     'Set times': 'Imposta orario',
     '{{date, ddd k:mm}}': '{{date, ddd k:mm}}',
