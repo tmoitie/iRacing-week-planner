@@ -9,6 +9,7 @@ import es from '../translations/es';
 import ptBR from '../translations/pt-BR';
 import de from '../translations/de';
 import fr from '../translations/fr';
+import it from '../translations/it';
 import tr from '../translations/tr';
 
 const languages = {
@@ -32,6 +33,10 @@ const languages = {
     flag: '🇫🇷',
     name: 'Français (FR)',
   },
+  it: {
+    flag: '🇮🇹',
+    name: 'Italiano (IT)',
+  },
   'pt-BR': {
     flag: '🇧🇷',
     name: 'Português (BR)',
@@ -51,6 +56,7 @@ const resources = {
   'pt-BR': ptBR,
   de,
   fr,
+  it,
   tr,
 };
 
