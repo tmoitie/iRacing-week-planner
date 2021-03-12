@@ -121,4 +121,16 @@ export default [
     everyTime: duration(60, 'minutes'),
     offset: duration(30, 'minutes'),
   },
+  {
+    // Super Slide
+    seriesId: 450,
+    everyTime: duration(30, 'minutes'),
+    offset: duration(0, 'minutes'),
+  },
+  {
+    // GT3 Challenge
+    seriesId: 449,
+    everyTime: duration(30, 'minutes'),
+    offset: duration(15, 'minutes'),
+  },
 ];
