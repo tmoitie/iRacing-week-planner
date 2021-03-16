@@ -40,6 +40,6 @@ export default [
   ...rxD,
   ...rxC,
   ...pro,
-  ...week13,
+  // ...week13,
   ...special,
 ];

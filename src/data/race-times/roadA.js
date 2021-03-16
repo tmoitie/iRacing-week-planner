@@ -7,6 +7,22 @@ export default [
     everyTime: duration(2, 'hours'),
     offset: duration(0, 'minutes'),
   },
+  {
+    // European Sprint
+    seriesId: 448,
+    everyTime: duration(2, 'hours'),
+    offset: duration(60, 'minutes'),
+  },
+  {
+    // Le Mans Enduro
+    seriesId: 331,
+    setTimes: [
+      duration({ days: 4, hours: 7 }), // Sat 7am
+      duration({ days: 4, hours: 18 }), // Sat 6pm
+      duration({ days: 5, hours: 14 }), // Sun 2pm
+    ],
+    offWeeks: [1.1, 1.1, 2.1, 3.1, 4.1, 5.1],
+  },
   // {
   //   // Road Pro Series
   //   seriesId: 67,

@@ -9,7 +9,7 @@ export default [
   },
   {
     // DIRTcar UMP Modified
-    seriesId: 316,
+    seriesId: 442,
     everyTime: duration(2, 'hours'),
     offset: duration(75, 'minutes'),
   },

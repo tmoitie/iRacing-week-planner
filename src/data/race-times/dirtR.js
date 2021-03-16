@@ -3,7 +3,7 @@ import { duration } from 'moment';
 export default [
   {
     // Dirt Street Stock
-    seriesId: 290,
+    seriesId: 446,
     everyTime: duration(1, 'hours'),
     offset: duration(30, 'minutes'),
   },

@@ -63,8 +63,8 @@ export default [
     offset: duration(45, 'minutes'),
   },
   {
-    // F2000
-    seriesId: 384,
+    // Formula Sprint
+    seriesId: 443,
     everyTime: duration(1, 'hours'),
     offset: duration(0, 'minutes'),
   },
