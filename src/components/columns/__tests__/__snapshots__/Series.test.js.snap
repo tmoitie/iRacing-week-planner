@@ -10,12 +10,6 @@ exports[`components/columns/Series renders correctly 1`] = `
     </span>
     Rallycross
   </ClickableCell>
-  <SeriesModal
-    isOpen={false}
-    onClose={[Function]}
-    ownedTracks={Array []}
-    seriesId={345}
-  />
 </Fragment>
 `;
 
@@ -30,7 +24,7 @@ exports[`components/columns/Series renders correctly 2`] = `
     Rallycross
   </ClickableCell>
   <SeriesModal
-    isOpen={false}
+    isOpen={true}
     onClose={[Function]}
     ownedTracks={Array []}
     seriesId={345}
@@ -48,12 +42,6 @@ exports[`components/columns/Series renders correctly 3`] = `
     </span>
     Rallycross
   </ClickableCell>
-  <SeriesModal
-    isOpen={false}
-    onClose={[Function]}
-    ownedTracks={Array []}
-    seriesId={345}
-  />
 </Fragment>
 `;
 
@@ -68,15 +56,5 @@ exports[`components/columns/Series renders favourite series 1`] = `
     </span>
     Rallycross
   </ClickableCell>
-  <SeriesModal
-    isOpen={false}
-    onClose={[Function]}
-    ownedTracks={
-      Array [
-        123,
-      ]
-    }
-    seriesId={345}
-  />
 </Fragment>
 `;

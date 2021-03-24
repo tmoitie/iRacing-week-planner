@@ -4,6 +4,7 @@ import { shallow } from 'enzyme';
 import SeriesModal from '../../modal/SeriesModal';
 
 import Series from '../Series';
+import ClickableCell from '../ClickableCell';
 
 describe('components/columns/Series', () => {
   test('renders correctly', () => {
@@ -20,7 +21,7 @@ describe('components/columns/Series', () => {
 
     expect(component).toMatchSnapshot();
 
-    component.first().simulate('click');
+    component.find(ClickableCell).first().props().onClick();
 
     expect(component).toMatchSnapshot();
 
