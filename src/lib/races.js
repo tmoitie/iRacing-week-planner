@@ -135,7 +135,7 @@ export default season.reduce((carry, series) => {
       everyTime: raceTimes.everyTime,
       offset: raceTimes.offset,
       setTimes: raceTimes.setTimes,
-      raceLength: raceLengthSeries ? raceLengthSeries.lengths[track.raceweek] : null,
+      raceLength: raceLengthSeries ? raceLengthSeries[track.raceweek] : null,
     };
   }));
 }, []);

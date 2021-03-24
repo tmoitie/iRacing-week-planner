@@ -66,16 +66,22 @@ const password = process.env.IWP_PASSWORD || 'test';
 
     const weeksFiltered = weeks.filter((week) => week !== null);
 
-    const mapOfWeeks = weeksFiltered.reduce((output, week) => ({ ...output, [week.raceweek]: week }), {});
+    const mapOfWeeks = weeksFiltered.reduce(
+      (output, week) => ({
+        ...output,
+        [week.raceweek]: {
+          laps: week.laps,
+          minutes: week.minutes,
+        },
+      }),
+      {},
+    );
 
-    seriesRaceLengths[series.seasonId] = {
-      seasonId: series.seasonId,
-      lengths: mapOfWeeks,
-    };
+    seriesRaceLengths[series.seasonId] = mapOfWeeks;
 
     await writeFile(
       path.join(__dirname, '../src/data/racelengths.json'),
-      JSON.stringify(seriesRaceLengths, null, 2),
+      JSON.stringify(seriesRaceLengths, null, 0),
     );
   }
 

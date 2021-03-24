@@ -8,7 +8,6 @@
 /src/data/season.json
 /src/data/tracks.json
 /src/data/contributors.json
-/src/data/racelengths.json
 .idea
 *.css.flow
 *.scss.flow

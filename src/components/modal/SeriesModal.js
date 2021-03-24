@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import moment from 'moment';
 import classnames from 'classnames';
 import Modal from './Modal';
+import RaceLength from '../columns/RaceLength';
 
 import allRaces from '../../lib/races';
 
@@ -41,6 +42,7 @@ export default function SeriesModal({ onClose, ownedTracks, isOpen, seriesId }: 
                 <th>{t('Track')}</th>
                 <th>{t('Start')}</th>
                 <th>{t('End')}</th>
+                <th>{t('Length')}</th>
               </tr>
             </thead>
             <tbody>
@@ -67,6 +69,7 @@ export default function SeriesModal({ onClose, ownedTracks, isOpen, seriesId }: 
                     <td>
                       {t('{{date, YYYY-MM-DD}}', { date: endDate })}
                     </td>
+                    <RaceLength race={race} />
                   </tr>
                 );
               })}

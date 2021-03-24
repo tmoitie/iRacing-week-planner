@@ -35,7 +35,9 @@ export default function Series({ race, favouriteSeries, ownedTracks }: Props) {
 
         {t(race.series)}
       </ClickableCell>
-      <SeriesModal isOpen={modalOpen} onClose={closeModal} ownedTracks={ownedTracks} seriesId={race.seriesId} />
+      {modalOpen ? (
+        <SeriesModal isOpen={modalOpen} onClose={closeModal} ownedTracks={ownedTracks} seriesId={race.seriesId} />
+      ) : null}
     </>
   );
 }
