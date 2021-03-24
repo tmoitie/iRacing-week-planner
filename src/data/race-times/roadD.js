@@ -48,7 +48,7 @@ export default [
     // Ferrari GT3 Challenge
     seriesId: 353,
     everyTime: duration(1, 'hours'),
-    offset: duration(15, 'minutes'),
+    offset: duration(45, 'minutes'),
   },
   {
     // BMW

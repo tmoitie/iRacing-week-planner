@@ -45,7 +45,7 @@ export default [
     // GT3 Challenge
     seriesId: 444,
     everyTime: duration(2, 'hours'),
-    offset: duration(105, 'minutes'),
+    offset: duration(75, 'minutes'),
   },
   {
     // Hagerty
