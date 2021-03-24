@@ -5,6 +5,7 @@ import {
   Id, Car, Class, EndDate, Fixed, Licence, LinkColumn, NextRace, Official,
   RaceTimes, Series, SeasonEnd, StartDate, Track, Type,
 } from '../components/columns';
+import RaceLength from '../components/columns/RaceLength';
 import { getNextRace } from '../lib/races';
 
 /* eslint react/no-multi-comp: 0 */
@@ -160,6 +161,11 @@ export default [{
     }
     return (timeA > timeB ? -1 : 1);
   },
+}, {
+  id: 'racelength',
+  header: 'Length',
+  component: RaceLength,
+  default: true,
 }, {
   id: 'official',
   header: 'Official',

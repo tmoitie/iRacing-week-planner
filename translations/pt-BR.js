@@ -49,6 +49,13 @@ export default {
     'Link': 'Link',
     'Week': 'Semana',
     'Count': 'Quantidade',
+    'Length': 'Duração',
+
+    // Race length
+    'No data': 'Sem informação',
+    '{{laps}}L': '{{laps}}L',
+    '{{minutes}}m': '{{minutes}}m',
+    '{{hours}}h': '{{hours}}h',
 
     // Modals
     'Use the checkbox to set the content you own, and use the star to set your favourite content.':

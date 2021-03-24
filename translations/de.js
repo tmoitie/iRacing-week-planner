@@ -49,6 +49,14 @@ export default {
     'Link': 'Link',
     'Week': 'Woche',
     'Count': 'Anzahl',
+    'Length': 'Rennlänge',
+
+    // Race length
+    'No data': 'Keine angaben',
+    '{{laps}}L': '{{laps}}L',
+    '{{minutes}}m': '{{minutes}}m',
+    '{{hours}}h': '{{hours}}h',
+
 
     // Modals
     'Use the checkbox to set the content you own, and use the star to set your favourite content.':

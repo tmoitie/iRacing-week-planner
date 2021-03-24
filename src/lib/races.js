@@ -3,6 +3,7 @@
 import moment, { duration } from 'moment';
 
 import season from '../data/season.json';
+import raceLengths from '../data/racelengths.json';
 import levelToClass, { levelToClassNumber } from './levelToClass';
 import raceTimesArray from '../data/raceTimes';
 
@@ -101,6 +102,8 @@ export default season.reduce((carry, series) => {
 
   allRaceWeeks.sort((a, b) => a - b);
 
+  const raceLengthSeries = raceLengths[series.seasonid];
+
   return carry.concat(series.tracks.map((track) => {
     const realRaceWeek = allRaceWeeks.indexOf(track.raceweek);
 
@@ -132,6 +135,7 @@ export default season.reduce((carry, series) => {
       everyTime: raceTimes.everyTime,
       offset: raceTimes.offset,
       setTimes: raceTimes.setTimes,
+      raceLength: raceLengthSeries ? raceLengthSeries.lengths[track.raceweek] : null,
     };
   }));
 }, []);

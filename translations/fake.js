@@ -49,6 +49,13 @@ export default {
     'Link': 'abc',
     'Week': 'abc',
     'Count': 'abc',
+    'Length': 'abc',
+
+    // Race length
+    'No data': 'abc',
+    '{{laps}}L': 'abc',
+    '{{minutes}}m': 'abc',
+    '{{hours}}h': 'abc',
 
     // Modals
     'Use the checkbox to set the content you own, and use the star to set your favourite content.':
