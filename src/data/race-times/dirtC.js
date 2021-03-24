@@ -37,18 +37,18 @@ export default [
     everyTime: duration(2, 'hours'),
     offset: duration(45, 'minutes'),
   },
-  {
-    // Chilli Bowl Nationals
-    seriesId: 426,
-    setTimes: [
-      duration({ days: 0, hours: 2 }),
-      duration({ days: 1, hours: 2 }),
-      duration({ days: 2, hours: 2 }),
-      duration({ days: 3, hours: 2 }),
-      duration({ days: 4, hours: 2 }),
-      duration({ days: 5, hours: 2 }),
-    ],
-  },
+  // {
+  //   // Chilli Bowl Nationals
+  //   seriesId: 426,
+  //   setTimes: [
+  //     duration({ days: 0, hours: 2 }),
+  //     duration({ days: 1, hours: 2 }),
+  //     duration({ days: 2, hours: 2 }),
+  //     duration({ days: 3, hours: 2 }),
+  //     duration({ days: 4, hours: 2 }),
+  //     duration({ days: 5, hours: 2 }),
+  //   ],
+  // },
   {
     // SUPER DIRTcar Big Block Modified Series
     seriesId: 428,

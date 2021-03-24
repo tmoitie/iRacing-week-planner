@@ -83,19 +83,18 @@ export default [
     everyTime: duration(120, 'minutes'),
     offset: duration(75, 'minutes'),
   },
-  // {
-  //   // IndyCar iRacing Series
-  //   seriesId: 374,
-  //   offWeeks: [1.1, 2.1, 5.1, 7.1, 9.1, 9.2, 10.1, 13.1, 14.1],
-  //   setTimes: [
-  //     duration({ days: 2, hours: 1 }), // Thu 01:00 GMT
-  //     duration({ days: 3, hours: 20 }), // Fri 20:00 GMT
-  //     duration({ days: 4, hours: 13 }), // Sat 13:00 GMT
-  //     duration({ days: 4, hours: 18 }), // Sat 18:00 GMT
-  //     duration({ days: 5, hours: 18 }), // Sun 18:00 GMT
-  //     duration({ days: 6, hours: 1 }), // Mon 01:00 GMT
-  //   ],
-  // },
+  {
+    // IndyCar iRacing Series
+    seriesId: 374,
+    offWeeks: [3.1, 4.1, 5.1, 7.1, 9.1, 9.1, 9.1, 12.1, 12.1],
+    setTimes: [
+      duration({ days: 2, hours: 1 }), // Thu 01:00 GMT
+      duration({ days: 3, hours: 20 }), // Fri 20:00 GMT
+      duration({ days: 4, hours: 13 }), // Sat 13:00 GMT
+      duration({ days: 5, hours: 18 }), // Sun 18:00 GMT
+      duration({ days: 6, hours: 1 }), // Mon 01:00 GMT
+    ],
+  },
   // {
   //   // iRacing Endurance Series
   //   seriesId: 408,
@@ -148,12 +147,12 @@ export default [
     everyTime: duration(120, 'minutes'),
     offset: duration(15, 'minutes'),
   },
-  {
-    // IMSA
-    seriesId: 227,
-    everyTime: duration(2, 'hours'),
-    offset: duration(45, 'minutes'),
-  },
+  // {
+  //   // IMSA
+  //   seriesId: 227,
+  //   everyTime: duration(2, 'hours'),
+  //   offset: duration(45, 'minutes'),
+  // },
   {
     // Pro 2000
     seriesId: 414,

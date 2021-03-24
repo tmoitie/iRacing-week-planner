@@ -13,12 +13,12 @@ export default [
     everyTime: duration(2, 'hours'),
     offset: duration(30, 'minutes'),
   },
-  {
-    // Le Mans
-    seriesId: 330,
-    everyTime: duration(2, 'hours'),
-    offset: duration(60, 'minutes'),
-  },
+  // {
+  //   // Le Mans
+  //   seriesId: 330,
+  //   everyTime: duration(2, 'hours'),
+  //   offset: duration(60, 'minutes'),
+  // },
   {
     // Formula Renault 3.5
     seriesId: 359,
