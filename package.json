@@ -13,6 +13,7 @@
     "debugSeries": "babel-node ./build/debugSeries.js",
     "scrapeData": "babel-node ./build/scrape.js",
     "scrapeRaceLengths": "babel-node ./build/scrapeRaceLengths.js",
+    "scrapeRaceTimes": "babel-node ./build/scrapeRaceTimes.js",
     "test": "jest"
   },
   "repository": {

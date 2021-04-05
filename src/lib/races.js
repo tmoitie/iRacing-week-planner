@@ -5,7 +5,8 @@ import moment, { duration } from 'moment';
 import season from '../data/season.json';
 import raceLengths from '../data/racelengths.json';
 import levelToClass, { levelToClassNumber } from './levelToClass';
-import raceTimesArray from '../data/raceTimes';
+import raceTimesArray from '../data/racetimes.json';
+import offWeeksById from '../data/offWeeks';
 
 const raceTimesById = raceTimesArray.reduce((races, race) => ({ ...races, [race.seriesId]: race }), {});
 
@@ -80,21 +81,22 @@ const getType = (catId) => {
 
 export default season.reduce((carry, series) => {
   const raceTimes = raceTimesById[series.seriesid] || {};
+  const raceOffWeekData = offWeeksById[series.seriesid] || {};
 
   const seriesName = series.seriesname;
   const seriesStart = moment(series.start, 'x').utc().startOf('day');
 
-  if (raceTimes.weekStartOffset) {
-    seriesStart.add(raceTimes.weekStartOffset);
+  if (raceOffWeekData.weekStartOffset) {
+    seriesStart.add(raceOffWeekData.weekStartOffset);
   }
 
   const seriesEnd = moment(series.end, 'x').utc().startOf('isoWeek').add({ days: 1 });
 
-  if (raceTimes.weekEndOffset) {
-    seriesEnd.add(raceTimes.weekEndOffset);
+  if (raceOffWeekData.weekEndOffset) {
+    seriesEnd.add(raceOffWeekData.weekEndOffset);
   }
 
-  const offWeeks = raceTimes.offWeeks || [];
+  const offWeeks = raceOffWeekData.offWeeks || [];
   const raceWeekLength = Math.round(moment(seriesEnd).diff(seriesStart) / (series.tracks.length + offWeeks.length));
 
   const allRaceWeeks = series.tracks.map((track) => track.raceweek)
@@ -132,9 +134,9 @@ export default season.reduce((carry, series) => {
       seriesStart,
       seriesEnd,
       seasonId: series.seasonid,
-      everyTime: raceTimes.everyTime,
-      offset: raceTimes.offset,
-      setTimes: raceTimes.setTimes,
+      everyTime: raceTimes.everytime ? moment.duration(raceTimes.everytime) : null,
+      offset: raceTimes.offset ? moment.duration(raceTimes.offset) : null,
+      setTimes: raceTimes.setTimes ? raceTimes.setTimes.map((setTime) => moment.duration(setTime)) : null,
       raceLength: raceLengthSeries ? raceLengthSeries[track.raceweek] : null,
     };
   }));

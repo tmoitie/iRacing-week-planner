@@ -38,18 +38,39 @@ const password = process.env.IWP_PASSWORD || 'test';
   const seriesTimes = [];
 
   for await (const series of seriess) {
-    const seriesStart = moment(series.seriesStart);
-    const seriesEnd = moment(series.seriesEnd);
-    const numberFourHourSlots = seriesEnd.diff(seriesStart, 'days') * 6;
+    const now = moment().utc();
+    const nextFullRaceWeek = races.find((race) => race.seriesId === series.seriesId && race.startTime.isAfter(now));
+
+    if (nextFullRaceWeek === undefined) {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+    const weekStart = moment(nextFullRaceWeek.startTime);
+    const weekEnd = moment(nextFullRaceWeek.endTime);
+    const numberFourHourSlots = weekEnd.diff(weekStart, 'days') * 6;
+
+    console.log(
+      series.seriesId,
+      weekStart.toISOString(),
+      weekEnd.toISOString(),
+      numberFourHourSlots,
+    );
 
     const fourHourSlots = range(0, numberFourHourSlots);
 
     try {
       const times = [];
+      let numberOfTimes = 0;
+      let repeator = false;
       for await (const fourHourSlotNumber of fourHourSlots) {
-        console.log(fourHourSlotNumber);
-        const startTime = moment(seriesStart).add(fourHourSlotNumber * 4, 'hours').minutes(0).seconds(0);
-        const endTime = moment(startTime).add(4, 'hours');
+        console.log(fourHourSlotNumber, numberOfTimes);
+        if (fourHourSlotNumber === 4 && numberOfTimes >= 8) {
+          // is repeated at least every 2 hours, easy to figure out now
+          repeator = true;
+          break;
+        }
+        const startTime = moment(weekStart).add(fourHourSlotNumber * 4, 'hours').minutes(0).seconds(0);
+        const endTime = moment(startTime).add({ hours: 3, minutes: 59, seconds: 59 });
 
         // eslint-disable-next-line max-len
         const url = `https://members.iracing.com/membersite/member/GetSessionTimes?start=${startTime.format('YYYY-MM-DD+HH:mm:ss')}&end=${endTime.format('YYYY-MM-DD+HH:mm:ss')}&season=${series.seasonId}&max=10`;
@@ -79,6 +100,7 @@ const password = process.env.IWP_PASSWORD || 'test';
           raceweek: race.raceweek,
           startTime: moment(race.starttime).format('YYYY-MM-DDTHH:mm:ss'),
         })));
+        numberOfTimes += sessionRaces.length;
       }
 
       const timesByRaceweek = flatten(times).reduce((output, { raceweek, startTime }) => {
@@ -89,17 +111,38 @@ const password = process.env.IWP_PASSWORD || 'test';
         };
       }, {});
 
+      const weekTimes = timesByRaceweek[nextFullRaceWeek.week];
+
+      if (repeator) {
+        seriesTimes.push({
+          seriesId: series.seriesId,
+          everytime: {
+            minutes: moment.duration(moment(weekTimes[1]).diff(moment(weekTimes[0]))).as('minutes'),
+          },
+          offset: {
+            minutes: moment.duration(moment(weekTimes[0]).diff(nextFullRaceWeek.startTime)).as('minutes'),
+          },
+        });
+        // eslint-disable-next-line no-continue
+        continue;
+      }
+
       seriesTimes.push({
         seriesId: series.seriesId,
-        timesByRaceweek,
+        setTimes: weekTimes.map(
+          (weekTime) => ({
+            minutes: moment.duration(moment(weekTime).diff(nextFullRaceWeek.startTime)).asMinutes(),
+          }),
+        ),
       });
-      await writeFile(
-        path.join(__dirname, '../src/data/racetimes.json'),
-        JSON.stringify(seriesTimes, null, 2),
-      );
     } catch (error) {
       console.error('Error', error.isAxiosError ? error.response : error);
       return [];
     }
   }
+
+  await writeFile(
+    path.join(__dirname, '../src/data/racetimes.json'),
+    JSON.stringify(seriesTimes, null, 2),
+  );
 })();
