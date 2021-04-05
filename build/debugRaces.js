@@ -5,7 +5,6 @@ import uniqBy from 'lodash.uniqby';
 import moment from 'moment';
 
 import races, { getNextRace } from '../src/lib/races';
-import raceTimes from '../src/data/raceTimes';
 
 const seriesIds = process.argv.slice(2).map((id) => parseInt(id, 10));
 
