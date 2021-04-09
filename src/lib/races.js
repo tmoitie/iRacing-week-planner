@@ -105,7 +105,6 @@ export default season.reduce((carry, series) => {
   allRaceWeeks.sort((a, b) => a - b);
 
   const raceLengthSeries = raceLengths[series.seasonid];
-
   return carry.concat(series.tracks.map((track) => {
     const realRaceWeek = allRaceWeeks.indexOf(track.raceweek);
 
@@ -117,8 +116,10 @@ export default season.reduce((carry, series) => {
     return {
       series: seriesName,
       seriesId: series.seriesid,
+      seriesuniq: series.seriesid + "" + track.raceweek,
       track: track.name,
       trackId: track.pkgid,
+      trackNumber: track.id,
       week: track.raceweek,
       startTime,
       weekLength,
