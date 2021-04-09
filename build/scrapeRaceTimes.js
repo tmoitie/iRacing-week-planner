@@ -13,7 +13,7 @@ import axios from 'axios';
 import races from '../src/lib/races';
 import login from './helpers/login';
 import sleep from './helpers/sleep';
-
+import {username, password} from './credentials';
 const writeFile = Promise.promisify(fs.writeFile);
 
 const seriesIds = process.argv.slice(2).map((id) => parseInt(id, 10));
@@ -24,8 +24,6 @@ if (seriesIds.length > 0) {
   seriess = seriess.filter((series) => seriesIds.includes(series.seriesId));
 }
 
-const username = process.env.IWP_USERNAME || 'test';
-const password = process.env.IWP_PASSWORD || 'test';
 
 (async () => {
   const browser = await puppeteer.launch();

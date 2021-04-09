@@ -5,6 +5,7 @@ import path from 'path';
 import Promise from 'bluebird';
 import puppeteer from 'puppeteer';
 import contributorsFilter from './scraper-filters/contributorsFilter';
+import {username, password} from './credentials';
 
 import seasonFilter from './scraper-filters/seasonFilter';
 import tracksFilter from './scraper-filters/tracksFilter';
@@ -12,8 +13,6 @@ import carsFilter from './scraper-filters/carsFilter';
 
 const writeFile = Promise.promisify(fs.writeFile);
 
-const username = process.env.IWP_USERNAME || 'test';
-const password = process.env.IWP_PASSWORD || 'test';
 
 (async () => {
   const browser = await puppeteer.launch();

@@ -8,6 +8,7 @@ export default function seasonFilter(listing) {
     end: series.end,
     tracks: series.tracks.map((track) => ({
       raceweek: track.raceweek,
+      id: track.id,
       config: track.config,
       name: fixText(track.config ? `${track.name} - ${track.config}` : track.name),
       pkgid: track.pkgid,
