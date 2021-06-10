@@ -39,15 +39,25 @@ const password = process.env.IWP_PASSWORD || 'test';
 
   for await (const series of seriess) {
     const now = moment().utc();
-    const nextFullRaceWeek = races.find((race) => race.seriesId === series.seriesId && race.startTime.isAfter(now));
+    let nextFullRaceWeek = races.find((race) => race.seriesId === series.seriesId && race.startTime.isAfter(now));
+
+    if (nextFullRaceWeek === undefined) {
+      const lastWeek = moment(now).subtract({ weeks: 1 });
+      nextFullRaceWeek = races.find((race) => race.seriesId === series.seriesId && race.startTime.isAfter(lastWeek));
+    }
 
     if (nextFullRaceWeek === undefined) {
       // eslint-disable-next-line no-continue
       continue;
     }
-    const weekStart = moment(nextFullRaceWeek.startTime);
+
+    let weekStart = moment(nextFullRaceWeek.startTime);
+
+    if (weekStart.isBefore(now)) {
+      weekStart = now;
+    }
     const weekEnd = moment(nextFullRaceWeek.endTime);
-    const numberFourHourSlots = weekEnd.diff(weekStart, 'days') * 6;
+    const numberFourHourSlots = Math.floor(weekEnd.diff(weekStart, 'days') * 6);
 
     console.log(
       series.seriesId,
@@ -64,7 +74,7 @@ const password = process.env.IWP_PASSWORD || 'test';
       let repeator = false;
       for await (const fourHourSlotNumber of fourHourSlots) {
         console.log(fourHourSlotNumber, numberOfTimes);
-        if (fourHourSlotNumber === 4 && numberOfTimes >= 8) {
+        if (fourHourSlotNumber === 4 && numberOfTimes >= 7) {
           // is repeated at least every 2 hours, easy to figure out now
           repeator = true;
           break;
@@ -111,7 +121,13 @@ const password = process.env.IWP_PASSWORD || 'test';
         };
       }, {});
 
-      const weekTimes = timesByRaceweek[nextFullRaceWeek.week];
+      let weekNumber = nextFullRaceWeek.week;
+
+      if (nextFullRaceWeek.seasonId === 3342) {
+        weekNumber = nextFullRaceWeek.week - 1;
+      }
+
+      const weekTimes = timesByRaceweek[weekNumber];
 
       if (repeator) {
         seriesTimes.push({

@@ -49,4 +49,7 @@ export default {
     seriesId: 271,
     weekEndOffset: { days: 7 },
   },
+  420: {
+    weekStartOffset: { days: -1 },
+  },
 };
