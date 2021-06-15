@@ -11,7 +11,7 @@ const seriesIds = process.argv.slice(2).map((id) => parseInt(id, 10));
 let seriess = uniqBy(races, (race) => race.seriesId);
 const table = new Table({
   head: [
-    'ID', 'Type', 'Class', 'Name', 'Week Length', 'Week Day', 'Start', 'End', 'Next time',
+    'ID', 'Season', 'Type', 'Class', 'Name', 'Week Length', 'Week Day', 'Start', 'End', 'Next time',
   ],
   chars: {
     top: '═',
@@ -54,6 +54,7 @@ table.push(...seriess.map((series) => {
   const nextTime = getNextRace(now, series);
   return [
     series.seriesId,
+    series.seasonId,
     series.type,
     series.licenceClass,
     series.series,

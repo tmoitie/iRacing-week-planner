@@ -81,7 +81,7 @@ const getType = (catId) => {
 
 export default season.reduce((carry, series) => {
   const raceTimes = raceTimesById[series.seriesid] || {};
-  const raceOffWeekData = offWeeksById[series.seriesid] || {};
+  const raceOffWeekData = offWeeksById[series.seasonid] || {};
 
   const seriesName = series.seriesname;
   const seriesStart = moment(series.start, 'x').utc().startOf('day');
