@@ -1,6 +1,6 @@
 export default {
   translation: {
-    'iRacing Week Planner': 'iRacing Week Planner',
+    'iRacing Week Planner': 'iRacing ウィークプランナー',
     'Purchase guide': '購入ガイド',
     'Set my tracks': 'トラック設定',
     'Set my cars': '車種設定',
