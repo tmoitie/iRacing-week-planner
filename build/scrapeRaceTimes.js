@@ -59,6 +59,10 @@ const password = process.env.IWP_PASSWORD || 'test';
     const weekEnd = moment(nextFullRaceWeek.endTime);
     const numberFourHourSlots = Math.floor(weekEnd.diff(weekStart, 'days') * 6);
 
+    if (weekEnd.isBefore(now)) {
+      continue;
+    }
+
     console.log(
       series.seriesId,
       weekStart.toISOString(),

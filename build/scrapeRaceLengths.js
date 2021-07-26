@@ -81,7 +81,7 @@ const password = process.env.IWP_PASSWORD || 'test';
 
     await writeFile(
       path.join(__dirname, '../src/data/racelengths.json'),
-      JSON.stringify(seriesRaceLengths, null, 0),
+      JSON.stringify(seriesRaceLengths, null, 2),
     );
   }
 
