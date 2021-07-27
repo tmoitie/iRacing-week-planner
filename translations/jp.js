@@ -8,7 +8,7 @@ export default {
     'Options': '設定',
     'About': 'このツールとは',
     'Week {{week}}': '週 {{week}}',
-    'Races for date: {{date, YYYY MMM DD}}': '年月日のレース: {{date, YYYY MMM DD}}',
+    'Races for date: {{date, YYYY MMM DD}}': '{{date, YYYY MMM DD}} のレース',
     'No time data': '時間データがない',
 
     // Filters
@@ -54,8 +54,8 @@ export default {
     // Race length
     'No data': 'データがない',
     '{{laps}}L': '{{laps}}周',
-    '{{minutes}}m': '{{minutes}}m',
-    '{{hours}}h': '{{hours}}h',
+    '{{minutes}}m': '{{minutes}}分',
+    '{{hours}}h': '{{hours}}時間',
 
     // Modals
     'Use the checkbox to set the content you own, and use the star to set your favourite content.':
