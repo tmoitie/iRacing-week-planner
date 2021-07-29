@@ -7,8 +7,8 @@ export default {
     'Set favorite series': '気に入りのシリーズ設定',
     'Options': '設定',
     'About': 'このツールとは',
-    'Week {{week}}': '週 {{week}}',
-    'Races for date: {{date, YYYY MMM DD}}': '年月日のレース: {{date, YYYY MMM DD}}',
+    'Week {{week}}': '{{week}}週',
+    'Races for date: {{date, YYYY MMM DD}}': '{{date, YYYY MMM DD}} のレース',
     'No time data': '時間データがない',
 
     // Filters
@@ -19,7 +19,7 @@ export default {
     'Road': 'Road (ロード)',
     'RX': 'RX (ラリークロス)', // Rally Cross/Road Dirt
     'Licence': 'ライセンス',
-    'Official/Fixed': '公式/一定',
+    'Official/Fixed': '公式／一定',
     'Unofficial': '非公式',
     'Official': 'オフィシャル',
     'Open setup': '不定セットアップ',
@@ -54,8 +54,8 @@ export default {
     // Race length
     'No data': 'データがない',
     '{{laps}}L': '{{laps}}周',
-    '{{minutes}}m': '{{minutes}}m',
-    '{{hours}}h': '{{hours}}h',
+    '{{minutes}}m': '{{minutes}}分',
+    '{{hours}}h': '{{hours}}時間',
 
     // Modals
     'Use the checkbox to set the content you own, and use the star to set your favourite content.':
@@ -71,22 +71,22 @@ export default {
     'This tool was created by <2>tmoitie</2> (<5>Tom Moitié</5> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on <9>Github</9>. Thanks!':
       'このツールは<2>tmoitie</2>（iRacingの<5>Tom Moitié</5>）によって作成されました。 フィードバックや質問がある場合、TwitterまたはiRacingでお気軽に聞いてください。コードは<9>Github</9>で公開されています。ありがとうございます。',
     'Loading': 'ロード中',
-    'Cars for {{series}}': '{{series}}で使用されている車種',
-    'Tracks for {{series}}': '{{series}}で使用されているトラック',
+    'Cars for {{series}}': '{{series}} で使用されている車種',
+    'Tracks for {{series}}': '{{series}} で使用されているトラック',
     'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'お気に入りのシリーズの中で、これらの未所有のトラックは今のシーズン中複数回出られます。これらのトラックはリンクで購入できます。',
 
     // Dates
     '{{date, YYYY MMMM DD}}': '{{date, YYYY MMMM DD}}',
     '{{date, YYYY-MM-DD}}': '{{date, YYYY-MM-DD}}',
-    'Every {{every}} starting at {{time, H:mm}} UTC': '{{every}}ごと {{time, H:mm}} UTC に開始',
+    'Every {{every}} starting at {{time, H:mm}} UTC': '{{every}} ごと {{time, H:mm}} UTC に開始',
     '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})': '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})',
-    'Set times': 'セット時間',
+    'Set times': '特定の時間',
     '{{date, ddd k:mm}}': '{{date, ddd k:mm}}',
 
     //New Auth strings
     'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <2>buy me a coffee</2>.':
-      'このツールを実行するのはちょっとの費用がかかっているので、使用のが好きなら<2>僕にコーヒーを買うことができます</2>。',
-    'Buy me a coffee': '僕にコーヒーを買う',
+      'このツールを実行するのはちょっとの費用がかかっているので、使用のが好きなら<2>僕にコーヒーをおごることができます</2>。',
+    'Buy me a coffee': '僕にコーヒーをおごる',
     'Synced': '同期されました',
     'Awaiting sync': '同期を待っています',
     '(refresh browser to download latest)': '(ブラウザを更新して最新のバージョンをダウンロードしてください)',
