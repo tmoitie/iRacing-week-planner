@@ -88,9 +88,7 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
           </button>
         </td>
         <td>
-          <div>
-            Every hour starting at 0:45 UTC
-          </div>
+          No time data
         </td>
       </tr>
       <tr>
@@ -120,9 +118,7 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
           </button>
         </td>
         <td>
-          <div>
-            Every hour starting at 0:30 UTC
-          </div>
+          No time data
         </td>
       </tr>
       <tr>
@@ -152,9 +148,7 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
           </button>
         </td>
         <td>
-          <div>
-            Every 2 hours starting at 1:45 UTC
-          </div>
+          No time data
         </td>
       </tr>
       <tr>
@@ -184,9 +178,7 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
           </button>
         </td>
         <td>
-          <div>
-            Every hour starting at 0:00 UTC
-          </div>
+          No time data
         </td>
       </tr>
     </tbody>
