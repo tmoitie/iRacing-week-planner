@@ -77,4 +77,18 @@ export default {
   3348: {
     weekEndOffset: { days: 7 },
   },
+  3458: {
+    weekEndOffset: { days: 7 },
+  },
+  3402: {
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+  3401: {
+    weekStartOffset: { days: 7 },
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
 };

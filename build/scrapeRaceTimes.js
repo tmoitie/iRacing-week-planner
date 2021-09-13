@@ -133,6 +133,11 @@ const password = process.env.IWP_PASSWORD || 'test';
 
       const weekTimes = timesByRaceweek[weekNumber];
 
+      if (!weekTimes) {
+        console.log(weekNumber);
+        continue;
+      }
+
       if (repeator) {
         seriesTimes.push({
           seriesId: series.seriesId,
