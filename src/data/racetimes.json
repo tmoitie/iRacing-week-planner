@@ -36,6 +36,28 @@
     }
   },
   {
+    "seriesId": 423,
+    "setTimes": [
+      {
+        "minutes": 5640
+      }
+    ]
+  },
+  {
+    "seriesId": 422,
+    "setTimes": [
+      {
+        "minutes": 6180
+      },
+      {
+        "minutes": 6480
+      },
+      {
+        "minutes": 6720
+      }
+    ]
+  },
+  {
     "seriesId": 397,
     "everytime": {
       "minutes": 60

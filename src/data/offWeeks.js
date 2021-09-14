@@ -91,4 +91,12 @@ export default {
       1.1, 2.1, 3.1, 4.1, 5.1,
     ],
   },
+  3461: {
+    weekStartOffset: { days: 1 },
+    weekEndOffset: { days: 7 },
+  },
+  3462: {
+    weekStartOffset: { days: 1 },
+    weekEndOffset: { days: 7 },
+  },
 };
