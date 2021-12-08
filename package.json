@@ -98,9 +98,9 @@
     "webpack-cli": "^4.9.1"
   },
   "devDependencies": {
-    "@jest/globals": "^26.4.2",
+    "@jest/globals": "^27.4.2",
     "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.0.4",
+    "@testing-library/react": "^12.1.2",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
     "babel-eslint": "^10.1.0",
     "enzyme-to-json": "^3.5.0",
@@ -114,16 +114,16 @@
     "eslint-plugin-react-hooks": "^4.1.2",
     "flow-bin": "^0.132.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^26.4.2",
+    "jest": "^27.4.3",
     "jest-css-modules-transform": "^4.0.1",
-    "jest-extended": "^0.11.5",
-    "jsdom": "^16.4.0",
+    "jest-extended": "^1.2.0",
+    "jsdom": "^19.0.0",
     "mockdate": "^3.0.2",
     "react-test-renderer": "^17.0.2",
     "redux-logger": "^3.0.6",
     "redux-mock-store": "^1.5.4",
     "regenerator-runtime": "^0.13.7",
-    "snapshot-diff": "^0.8.1",
+    "snapshot-diff": "^0.9.0",
     "webpack-dev-server": "^4.6.0"
   }
 }
