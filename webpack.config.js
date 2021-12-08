@@ -5,7 +5,7 @@ const autoprefixer = require('autoprefixer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 // const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 const port = process.env.PORT || 3000;
 const env = process.env.NODE_ENV || 'development';
@@ -26,7 +26,9 @@ try {
 const postcssLoader = {
   loader: 'postcss-loader',
   options: {
-    plugins: [autoprefixer],
+    postcssOptions: {
+      plugins: [autoprefixer],
+    },
   },
 };
 
@@ -39,7 +41,6 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'public/dist'),
-    filename: '[name].js',
     publicPath: '/dist/',
   },
   module: {
@@ -54,7 +55,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+          isDevelopment ? 'style-loader' : CssMinimizerPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -69,7 +70,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+          isDevelopment ? 'style-loader' : CssMinimizerPlugin.loader,
           'css-modules-flow-types-loader',
           {
             loader: 'css-loader',
@@ -86,7 +87,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+          isDevelopment ? 'style-loader' : CssMinimizerPlugin.loader,
           'css-modules-flow-types-loader',
           {
             loader: 'css-loader',
@@ -102,7 +103,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+          isDevelopment ? 'style-loader' : CssMinimizerPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -115,41 +116,23 @@ module.exports = {
       },
       {
         test: /\.(png|gif)$/,
-        use: ['file-loader'],
+        type: 'asset/resource',
       },
       {
         test: /\.woff2?(\?v=\d+\.\d+\.\d+)?$/,
-        loader: {
-          loader: 'url-loader',
-          options: {
-            limit: 10000,
-            mimetype: 'application/font-woff',
-          },
-        },
+        type: 'asset/inline',
       },
       {
         test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-        loader: {
-          loader: 'url-loader',
-          options: {
-            limit: 10000,
-            mimetype: 'application/octet-stream',
-          },
-        },
+        type: 'asset/inline',
       },
       {
         test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'file-loader',
+        type: 'asset/resource',
       },
       {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-        loader: {
-          loader: 'url-loader',
-          options: {
-            limit: 10000,
-            mimetype: 'image/svg+xml',
-          },
-        },
+        type: 'asset/inline',
       },
     ],
   },
@@ -178,10 +161,15 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: path.resolve(__dirname, 'public'),
+    static: {
+      directory: path.resolve(__dirname, 'public'),
+      staticOptions: {},
+      // publicPath: "/static-public-path/",
+      serveIndex: true,
+      watch: true,
+    },
     compress: true,
     port,
-    hot: true,
   },
   optimization: {
     minimizer: [
@@ -189,7 +177,7 @@ module.exports = {
         parallel: true,
         test: /\.m?jso?n?(\?.*)?$/i,
       }),
-      new OptimizeCSSAssetsPlugin({}),
+      new CssMinimizerPlugin(),
     ],
   },
 };
