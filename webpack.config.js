@@ -4,7 +4,6 @@ const cp = require('child_process');
 const autoprefixer = require('autoprefixer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-// const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 const port = process.env.PORT || 3000;
