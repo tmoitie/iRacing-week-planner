@@ -99,4 +99,14 @@ export default {
     weekStartOffset: { days: 1 },
     weekEndOffset: { days: 7 },
   },
+  // eNASCAR RTP Contender Series
+  3465: {
+    weekStartOffset: { days: 6 },
+    weekEndOffset: { days: 7 },
+    offWeeks: [ 3.1 ],
+  },
+  // 13th Week iRacing RX Lite
+  3572: {
+    weekEndOffset: { days: -1 },
+  },
 };
