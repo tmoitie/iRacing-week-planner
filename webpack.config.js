@@ -5,6 +5,7 @@ const autoprefixer = require('autoprefixer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const port = process.env.PORT || 3000;
 const env = process.env.NODE_ENV || 'development';
@@ -31,16 +32,24 @@ const postcssLoader = {
   },
 };
 
+const plugins = [
+  new HtmlWebpackPlugin({
+    hash: true,
+    template: 'src/index.html'
+  }),
+  new MiniCssExtractPlugin({
+    filename: '[name].css',
+    // chunkFilename: '[id].css',
+  }),
+];
+
 module.exports = {
   mode: env,
   devtool: env === 'development' ? 'inline-source-map' : false,
-  entry: {
-    main: './src/index',
-    ie8: './src/ie8',
-  },
+  entry: './src/index',
   output: {
-    path: path.resolve(__dirname, 'public/dist'),
-    publicPath: '/dist/',
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -136,26 +145,19 @@ module.exports = {
     ],
   },
   plugins: env === 'production' ? [
+    ...plugins,
     new webpack.DefinePlugin({
       __DEV__: false,
       'process.env.NODE_ENV': JSON.stringify('production'),
       'process.env.CODE_VERSION': JSON.stringify(version),
     }),
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css',
-    }),
     new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /en|de|es|fr|nl|pt|pl|da|it|sv|cs|fi|hu|ca/),
-    // new BundleAnalyzerPlugin(),
   ] : [
+    ...plugins,
     new webpack.DefinePlugin({
       __DEV__: true,
       'process.env.NODE_ENV': JSON.stringify('development'),
       'process.env.CODE_VERSION': JSON.stringify(version),
-    }),
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css',
     }),
   ],
   devServer: {

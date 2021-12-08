@@ -5,7 +5,7 @@ s3_bucket: iracing-week-planner
 # Below are examples of all the available configurations.
 # See README for more detailed info on each of them.
 
-site: public
+site: dist
 
 index_document: index.html
 # error_document: error.html

@@ -2,7 +2,6 @@
 /node_modules
 /npm-debug.log
 /.DS_Store
-/public/dist
 /src/data/car-class.json
 /src/data/cars.json
 /src/data/season.json
@@ -14,3 +13,8 @@
 .nyc_output
 coverage
 .DS_Store
+
+dist/*
+# !.gitignore
+!dist/static/
+!dist/favicon.ico

@@ -57,6 +57,7 @@
     "file-loader": "^6.0.0",
     "firebase": "^9.6.0",
     "flow-typed": "^3.2.1",
+    "html-webpack-plugin": "^5.5.0",
     "html5shiv": "^3.7.3",
     "i18next": "^21.6.0",
     "i18next-browser-languagedetector": "^6.0.1",
