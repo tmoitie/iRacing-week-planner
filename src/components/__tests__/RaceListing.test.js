@@ -12,8 +12,12 @@ import RaceListing from '../RaceListing';
 import { defaultFilters } from '../../reducers/settings';
 
 import '../../data/season.json';
+import '../../data/racelengths.json';
+import '../../data/racetimes.json';
 
 jest.mock('../../data/season.json');
+jest.mock('../../data/racelengths.json');
+jest.mock('../../data/racetimes.json');
 
 const mockStore = configureMockStore([thunk]);
 

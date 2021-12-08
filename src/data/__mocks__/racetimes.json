@@ -1,0 +1,46 @@
+[
+  {
+    "seriesId": 139,
+    "everytime": {
+      "minutes": 60
+    },
+    "offset": {
+      "minutes": 30
+    }
+  },
+  {
+    "seriesId": 432,
+    "setTimes": [
+      {
+        "minutes": 3000
+      },
+      {
+        "minutes": 4020
+      },
+      {
+        "minutes": 5880
+      },
+      {
+        "minutes": 8100
+      }
+    ]
+  },
+  {
+    "seriesId": 32,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 115
+    }
+  },
+  {
+    "seriesId": 167,
+    "everytime": {
+      "minutes": 30
+    },
+    "offset": {
+      "minutes": 0
+    }
+  }
+]
