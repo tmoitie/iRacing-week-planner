@@ -1,6 +1,8 @@
-import { getAuth, signOut as fbSignOut, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged, sendPasswordResetEmail } from 'firebase/auth';
+import {
+  getAuth, signOut as fbSignOut, signInWithEmailAndPassword, createUserWithEmailAndPassword,
+  onAuthStateChanged, sendPasswordResetEmail,
+} from 'firebase/auth';
 import { debouncedDispatcherSaveSettings, getSettingsFromFirebase, saveSettingsToFirebase } from './settings';
-
 
 export const LOADING_AUTH = 'AUTH/LOADING_SIGN_IN';
 export const ERROR_AUTH = 'AUTH/ERROR_AUTH';
