@@ -148,7 +148,6 @@ module.exports = {
     new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /en|de|es|fr|nl|pt|pl|da|it|sv|cs|fi|hu|ca/),
     // new BundleAnalyzerPlugin(),
   ] : [
-    new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({
       __DEV__: true,
       'process.env.NODE_ENV': JSON.stringify('development'),
