@@ -55,7 +55,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          isDevelopment ? 'style-loader' : CssMinimizerPlugin.loader,
+          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -70,7 +70,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          isDevelopment ? 'style-loader' : CssMinimizerPlugin.loader,
+          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-modules-flow-types-loader',
           {
             loader: 'css-loader',
@@ -87,7 +87,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          isDevelopment ? 'style-loader' : CssMinimizerPlugin.loader,
+          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-modules-flow-types-loader',
           {
             loader: 'css-loader',
@@ -103,7 +103,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          isDevelopment ? 'style-loader' : CssMinimizerPlugin.loader,
+          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
