@@ -98,6 +98,7 @@ exports[`components/App renders correctly 1`] = `
             onClick={[Function]}
           >
             🇺🇸
+             
             <span
               className="caret"
             />
@@ -112,6 +113,7 @@ exports[`components/App renders correctly 1`] = `
                 onClick={[Function]}
               >
                 🇩🇪
+                 
                 Deutsch (DE)
               </a>
             </li>
@@ -122,6 +124,7 @@ exports[`components/App renders correctly 1`] = `
                 onClick={[Function]}
               >
                 🇺🇸
+                 
                 English (US)
               </a>
             </li>
@@ -132,6 +135,7 @@ exports[`components/App renders correctly 1`] = `
                 onClick={[Function]}
               >
                 🇬🇧
+                 
                 English (UK)
               </a>
             </li>
@@ -142,6 +146,7 @@ exports[`components/App renders correctly 1`] = `
                 onClick={[Function]}
               >
                 🇪🇸
+                 
                 Español (ES)
               </a>
             </li>
@@ -152,6 +157,7 @@ exports[`components/App renders correctly 1`] = `
                 onClick={[Function]}
               >
                 🇫🇷
+                 
                 Français (FR)
               </a>
             </li>
@@ -162,6 +168,7 @@ exports[`components/App renders correctly 1`] = `
                 onClick={[Function]}
               >
                 🇮🇹
+                 
                 Italiano (IT)
               </a>
             </li>
@@ -172,6 +179,7 @@ exports[`components/App renders correctly 1`] = `
                 onClick={[Function]}
               >
                 🇯🇵
+                 
                 日本語 (JP)
               </a>
             </li>
@@ -182,6 +190,7 @@ exports[`components/App renders correctly 1`] = `
                 onClick={[Function]}
               >
                 🇧🇷
+                 
                 Português (BR)
               </a>
             </li>
@@ -192,6 +201,7 @@ exports[`components/App renders correctly 1`] = `
                 onClick={[Function]}
               >
                 🇹🇷
+                 
                 Türkçe (TR)
               </a>
             </li>

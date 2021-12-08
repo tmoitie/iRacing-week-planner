@@ -134,6 +134,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
           id="navbar-link-open-language-dropdown"
         >
           🇺🇸
+           
           <span
             class="caret"
           />
@@ -147,6 +148,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
               id="navbar-link-language-de"
             >
               🇩🇪
+               
               Deutsch (DE)
             </a>
           </li>
@@ -156,6 +158,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
               id="navbar-link-language-en"
             >
               🇺🇸
+               
               English (US)
             </a>
           </li>
@@ -165,6 +168,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
               id="navbar-link-language-en-GB"
             >
               🇬🇧
+               
               English (UK)
             </a>
           </li>
@@ -174,6 +178,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
               id="navbar-link-language-es"
             >
               🇪🇸
+               
               Español (ES)
             </a>
           </li>
@@ -183,6 +188,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
               id="navbar-link-language-fr"
             >
               🇫🇷
+               
               Français (FR)
             </a>
           </li>
@@ -192,6 +198,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
               id="navbar-link-language-it"
             >
               🇮🇹
+               
               Italiano (IT)
             </a>
           </li>
@@ -201,6 +208,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
               id="navbar-link-language-jp"
             >
               🇯🇵
+               
               日本語 (JP)
             </a>
           </li>
@@ -210,6 +218,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
               id="navbar-link-language-pt-BR"
             >
               🇧🇷
+               
               Português (BR)
             </a>
           </li>
@@ -219,6 +228,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
               id="navbar-link-language-tr"
             >
               🇹🇷
+               
               Türkçe (TR)
             </a>
           </li>
