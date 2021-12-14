@@ -1,78 +1,6 @@
 [
   {
-    "seriesId": 295,
-    "everytime": {
-      "minutes": 60
-    },
-    "offset": {
-      "minutes": 30
-    }
-  },
-  {
-    "seriesId": 341,
-    "everytime": {
-      "minutes": 30
-    },
-    "offset": {
-      "minutes": 0
-    }
-  },
-  {
-    "seriesId": 317,
-    "everytime": {
-      "minutes": 30
-    },
-    "offset": {
-      "minutes": 15
-    }
-  },
-  {
-    "seriesId": 355,
-    "everytime": {
-      "minutes": 30
-    },
-    "offset": {
-      "minutes": 15
-    }
-  },
-  {
-    "seriesId": 240,
-    "everytime": {
-      "minutes": 60
-    },
-    "offset": {
-      "minutes": 30
-    }
-  },
-  {
-    "seriesId": 245,
-    "everytime": {
-      "minutes": 30
-    },
-    "offset": {
-      "minutes": 2145
-    }
-  },
-  {
-    "seriesId": 244,
-    "everytime": {
-      "minutes": 30
-    },
-    "offset": {
-      "minutes": 0
-    }
-  },
-  {
-    "seriesId": 320,
-    "everytime": {
-      "minutes": 30
-    },
-    "offset": {
-      "minutes": 15
-    }
-  },
-  {
-    "seriesId": 323,
+    "seriesId": 32,
     "everytime": {
       "minutes": 60
     },
@@ -81,79 +9,34 @@
     }
   },
   {
-    "seriesId": 470,
+    "seriesId": 231,
     "everytime": {
-      "minutes": 30
+      "minutes": 120
     },
     "offset": {
       "minutes": 15
     }
   },
   {
-    "seriesId": 135,
+    "seriesId": 309,
     "everytime": {
-      "minutes": 30
+      "minutes": 120
     },
     "offset": {
-      "minutes": 0
+      "minutes": 105
     }
   },
   {
-    "seriesId": 379,
+    "seriesId": 167,
     "everytime": {
       "minutes": 60
     },
     "offset": {
-      "minutes": 30
+      "minutes": 45
     }
   },
   {
-    "seriesId": 485,
-    "everytime": {
-      "minutes": 30
-    },
-    "offset": {
-      "minutes": 0
-    }
-  },
-  {
-    "seriesId": 421,
-    "everytime": {
-      "minutes": 30
-    },
-    "offset": {
-      "minutes": 15
-    }
-  },
-  {
-    "seriesId": 134,
-    "everytime": {
-      "minutes": 30
-    },
-    "offset": {
-      "minutes": 0
-    }
-  },
-  {
-    "seriesId": 450,
-    "everytime": {
-      "minutes": 30
-    },
-    "offset": {
-      "minutes": 0
-    }
-  },
-  {
-    "seriesId": 436,
-    "everytime": {
-      "minutes": 30
-    },
-    "offset": {
-      "minutes": 0
-    }
-  },
-  {
-    "seriesId": 392,
+    "seriesId": 397,
     "everytime": {
       "minutes": 60
     },
@@ -167,7 +50,16 @@
       "minutes": 60
     },
     "offset": {
-      "minutes": 2145
+      "minutes": 45
+    }
+  },
+  {
+    "seriesId": 65,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 30
     }
   },
   {
@@ -176,7 +68,106 @@
       "minutes": 60
     },
     "offset": {
-      "minutes": 2160
+      "minutes": 0
+    }
+  },
+  {
+    "seriesId": 429,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 0
+    }
+  },
+  {
+    "seriesId": 315,
+    "everytime": {
+      "minutes": 60
+    },
+    "offset": {
+      "minutes": 45
+    }
+  },
+  {
+    "seriesId": 327,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 75
+    }
+  },
+  {
+    "seriesId": 292,
+    "everytime": {
+      "minutes": 60
+    },
+    "offset": {
+      "minutes": 0
+    }
+  },
+  {
+    "seriesId": 466,
+    "everytime": {
+      "minutes": 60
+    },
+    "offset": {
+      "minutes": 30
+    }
+  },
+  {
+    "seriesId": 305,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 90
+    }
+  },
+  {
+    "seriesId": 311,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 0
+    }
+  },
+  {
+    "seriesId": 291,
+    "everytime": {
+      "minutes": 60
+    },
+    "offset": {
+      "minutes": 0
+    }
+  },
+  {
+    "seriesId": 306,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 30
+    }
+  },
+  {
+    "seriesId": 446,
+    "everytime": {
+      "minutes": 60
+    },
+    "offset": {
+      "minutes": 30
+    }
+  },
+  {
+    "seriesId": 442,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 75
     }
   },
   {
@@ -188,12 +179,551 @@
     ]
   },
   {
+    "seriesId": 331,
+    "setTimes": [
+      {
+        "minutes": 16260
+      },
+      {
+        "minutes": 16920
+      },
+      {
+        "minutes": 18120
+      }
+    ]
+  },
+  {
+    "seriesId": 448,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 60
+    }
+  },
+  {
+    "seriesId": 431,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 75
+    }
+  },
+  {
+    "seriesId": 456,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 15
+    }
+  },
+  {
+    "seriesId": 353,
+    "everytime": {
+      "minutes": 60
+    },
+    "offset": {
+      "minutes": 45
+    }
+  },
+  {
+    "seriesId": 359,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 105
+    }
+  },
+  {
+    "seriesId": 269,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 45
+    }
+  },
+  {
+    "seriesId": 455,
+    "everytime": {
+      "minutes": 60
+    },
+    "offset": {
+      "minutes": 30
+    }
+  },
+  {
+    "seriesId": 210,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 90
+    }
+  },
+  {
+    "seriesId": 139,
+    "everytime": {
+      "minutes": 60
+    },
+    "offset": {
+      "minutes": 0
+    }
+  },
+  {
+    "seriesId": 201,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 90
+    }
+  },
+  {
+    "seriesId": 260,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 0
+    }
+  },
+  {
+    "seriesId": 484,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 60
+    }
+  },
+  {
+    "seriesId": 237,
+    "setTimes": [
+      {
+        "minutes": 6300
+      },
+      {
+        "minutes": 6900
+      },
+      {
+        "minutes": 8220
+      }
+    ]
+  },
+  {
+    "seriesId": 432,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 105
+    }
+  },
+  {
+    "seriesId": 228,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 0
+    }
+  },
+  {
+    "seriesId": 444,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 75
+    }
+  },
+  {
+    "seriesId": 419,
+    "setTimes": [
+      {
+        "minutes": 8760
+      },
+      {
+        "minutes": 9060
+      },
+      {
+        "minutes": 9720
+      },
+      {
+        "minutes": 10920
+      }
+    ]
+  },
+  {
+    "seriesId": 447,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 45
+    }
+  },
+  {
+    "seriesId": 386,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 15
+    }
+  },
+  {
+    "seriesId": 414,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 15
+    }
+  },
+  {
+    "seriesId": 165,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 15
+    }
+  },
+  {
+    "seriesId": 133,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 0
+    }
+  },
+  {
+    "seriesId": 426,
+    "setTimes": [
+      {
+        "minutes": 900
+      },
+      {
+        "minutes": 1560
+      },
+      {
+        "minutes": 2340
+      },
+      {
+        "minutes": 3000
+      },
+      {
+        "minutes": 3780
+      },
+      {
+        "minutes": 4440
+      },
+      {
+        "minutes": 5220
+      },
+      {
+        "minutes": 5880
+      },
+      {
+        "minutes": 6660
+      },
+      {
+        "minutes": 7320
+      }
+    ]
+  },
+  {
+    "seriesId": 460,
+    "everytime": {
+      "minutes": 60
+    },
+    "offset": {
+      "minutes": 45
+    }
+  },
+  {
+    "seriesId": 285,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 60
+    }
+  },
+  {
+    "seriesId": 33,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 15
+    }
+  },
+  {
+    "seriesId": 440,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 75
+    }
+  },
+  {
+    "seriesId": 457,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 15
+    }
+  },
+  {
+    "seriesId": 58,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 30
+    }
+  },
+  {
+    "seriesId": 191,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 0
+    }
+  },
+  {
+    "seriesId": 103,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 60
+    }
+  },
+  {
+    "seriesId": 164,
+    "everytime": {
+      "minutes": 60
+    },
+    "offset": {
+      "minutes": 15
+    }
+  },
+  {
+    "seriesId": 62,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 0
+    }
+  },
+  {
+    "seriesId": 47,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 45
+    }
+  },
+  {
+    "seriesId": 413,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 90
+    }
+  },
+  {
+    "seriesId": 102,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 0
+    }
+  },
+  {
+    "seriesId": 417,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 60
+    }
+  },
+  {
     "seriesId": 259,
     "everytime": {
       "minutes": 60
     },
     "offset": {
-      "minutes": 2190
+      "minutes": 30
+    }
+  },
+  {
+    "seriesId": 299,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 105
+    }
+  },
+  {
+    "seriesId": 476,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 45
+    }
+  },
+  {
+    "seriesId": 465,
+    "everytime": {
+      "minutes": 60
+    },
+    "offset": {
+      "minutes": 0
+    }
+  },
+  {
+    "seriesId": 464,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 30
+    }
+  },
+  {
+    "seriesId": 463,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 90
+    }
+  },
+  {
+    "seriesId": 112,
+    "everytime": {
+      "minutes": 60
+    },
+    "offset": {
+      "minutes": 30
+    }
+  },
+  {
+    "seriesId": 74,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 60
+    }
+  },
+  {
+    "seriesId": 325,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 60
+    }
+  },
+  {
+    "seriesId": 461,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 0
+    }
+  },
+  {
+    "seriesId": 459,
+    "everytime": {
+      "minutes": 60
+    },
+    "offset": {
+      "minutes": 15
+    }
+  },
+  {
+    "seriesId": 483,
+    "everytime": {
+      "minutes": 60
+    },
+    "offset": {
+      "minutes": 30
+    }
+  },
+  {
+    "seriesId": 462,
+    "everytime": {
+      "minutes": 30
+    },
+    "offset": {
+      "minutes": 0
+    }
+  },
+  {
+    "seriesId": 277,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 60
+    }
+  },
+  {
+    "seriesId": 53,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 105
+    }
+  },
+  {
+    "seriesId": 45,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 60
+    }
+  },
+  {
+    "seriesId": 441,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 0
+    }
+  },
+  {
+    "seriesId": 34,
+    "everytime": {
+      "minutes": 60
+    },
+    "offset": {
+      "minutes": 15
     }
   },
   {
@@ -202,7 +732,359 @@
       "minutes": 60
     },
     "offset": {
-      "minutes": 2160
+      "minutes": 0
+    }
+  },
+  {
+    "seriesId": 63,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 45
+    }
+  },
+  {
+    "seriesId": 131,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 60
+    }
+  },
+  {
+    "seriesId": 182,
+    "everytime": {
+      "minutes": 60
+    },
+    "offset": {
+      "minutes": 0
+    }
+  },
+  {
+    "seriesId": 190,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 60
+    }
+  },
+  {
+    "seriesId": 428,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 0
+    }
+  },
+  {
+    "seriesId": 223,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 75
+    }
+  },
+  {
+    "seriesId": 416,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 15
+    }
+  },
+  {
+    "seriesId": 399,
+    "setTimes": [
+      {
+        "minutes": 15
+      },
+      {
+        "minutes": 135
+      },
+      {
+        "minutes": 735
+      },
+      {
+        "minutes": 855
+      },
+      {
+        "minutes": 975
+      },
+      {
+        "minutes": 1095
+      },
+      {
+        "minutes": 1215
+      },
+      {
+        "minutes": 1335
+      },
+      {
+        "minutes": 1455
+      },
+      {
+        "minutes": 1575
+      },
+      {
+        "minutes": 2175
+      },
+      {
+        "minutes": 2295
+      },
+      {
+        "minutes": 2415
+      },
+      {
+        "minutes": 2535
+      },
+      {
+        "minutes": 2655
+      },
+      {
+        "minutes": 2775
+      },
+      {
+        "minutes": 2895
+      },
+      {
+        "minutes": 3015
+      },
+      {
+        "minutes": 3615
+      },
+      {
+        "minutes": 3735
+      },
+      {
+        "minutes": 3855
+      },
+      {
+        "minutes": 3975
+      },
+      {
+        "minutes": 4095
+      },
+      {
+        "minutes": 4215
+      },
+      {
+        "minutes": 4335
+      },
+      {
+        "minutes": 4455
+      },
+      {
+        "minutes": 5055
+      },
+      {
+        "minutes": 5175
+      },
+      {
+        "minutes": 5295
+      },
+      {
+        "minutes": 5415
+      },
+      {
+        "minutes": 5535
+      },
+      {
+        "minutes": 5655
+      },
+      {
+        "minutes": 5775
+      },
+      {
+        "minutes": 5895
+      },
+      {
+        "minutes": 6495
+      },
+      {
+        "minutes": 6615
+      },
+      {
+        "minutes": 6735
+      },
+      {
+        "minutes": 6855
+      },
+      {
+        "minutes": 6975
+      },
+      {
+        "minutes": 7095
+      },
+      {
+        "minutes": 7215
+      },
+      {
+        "minutes": 7335
+      },
+      {
+        "minutes": 7935
+      },
+      {
+        "minutes": 8055
+      },
+      {
+        "minutes": 8175
+      },
+      {
+        "minutes": 8295
+      },
+      {
+        "minutes": 8415
+      },
+      {
+        "minutes": 8535
+      },
+      {
+        "minutes": 8655
+      },
+      {
+        "minutes": 8775
+      },
+      {
+        "minutes": 9375
+      },
+      {
+        "minutes": 9495
+      },
+      {
+        "minutes": 9615
+      },
+      {
+        "minutes": 9735
+      },
+      {
+        "minutes": 9855
+      },
+      {
+        "minutes": 9975
+      }
+    ]
+  },
+  {
+    "seriesId": 405,
+    "setTimes": [
+      {
+        "minutes": 255
+      },
+      {
+        "minutes": 375
+      },
+      {
+        "minutes": 495
+      },
+      {
+        "minutes": 615
+      },
+      {
+        "minutes": 1695
+      },
+      {
+        "minutes": 1815
+      },
+      {
+        "minutes": 1935
+      },
+      {
+        "minutes": 2055
+      },
+      {
+        "minutes": 3135
+      },
+      {
+        "minutes": 3255
+      },
+      {
+        "minutes": 3375
+      },
+      {
+        "minutes": 3495
+      },
+      {
+        "minutes": 4575
+      },
+      {
+        "minutes": 4695
+      },
+      {
+        "minutes": 4815
+      },
+      {
+        "minutes": 4935
+      },
+      {
+        "minutes": 6015
+      },
+      {
+        "minutes": 6135
+      },
+      {
+        "minutes": 6255
+      },
+      {
+        "minutes": 6375
+      },
+      {
+        "minutes": 7455
+      },
+      {
+        "minutes": 7575
+      },
+      {
+        "minutes": 7695
+      },
+      {
+        "minutes": 7815
+      },
+      {
+        "minutes": 8895
+      },
+      {
+        "minutes": 9015
+      },
+      {
+        "minutes": 9135
+      },
+      {
+        "minutes": 9255
+      }
+    ]
+  },
+  {
+    "seriesId": 430,
+    "everytime": {
+      "minutes": 60
+    },
+    "offset": {
+      "minutes": 45
+    }
+  },
+  {
+    "seriesId": 310,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 45
+    }
+  },
+  {
+    "seriesId": 443,
+    "everytime": {
+      "minutes": 60
+    },
+    "offset": {
+      "minutes": 0
     }
   },
   {
@@ -241,5 +1123,41 @@
         "minutes": 8760
       }
     ]
+  },
+  {
+    "seriesId": 308,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 105
+    }
+  },
+  {
+    "seriesId": 369,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 45
+    }
+  },
+  {
+    "seriesId": 307,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 30
+    }
+  },
+  {
+    "seriesId": 458,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 90
+    }
   }
 ]
