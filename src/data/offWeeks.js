@@ -109,4 +109,10 @@ export default {
   3572: {
     weekEndOffset: { days: -1 },
   },
+  // IMSA
+  3524: {
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
 };
