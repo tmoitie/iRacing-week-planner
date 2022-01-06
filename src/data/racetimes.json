@@ -45,6 +45,14 @@
     }
   },
   {
+    "seriesId": 437,
+    "setTimes": [
+      {
+        "minutes": 7980
+      }
+    ]
+  },
+  {
     "seriesId": 116,
     "everytime": {
       "minutes": 60
@@ -171,24 +179,16 @@
     }
   },
   {
-    "seriesId": 478,
-    "setTimes": [
-      {
-        "minutes": 1560
-      }
-    ]
-  },
-  {
     "seriesId": 331,
     "setTimes": [
       {
-        "minutes": 16260
+        "minutes": 6180
       },
       {
-        "minutes": 16920
+        "minutes": 6840
       },
       {
-        "minutes": 18120
+        "minutes": 8040
       }
     ]
   },
@@ -345,16 +345,16 @@
     "seriesId": 419,
     "setTimes": [
       {
-        "minutes": 8760
+        "minutes": 5880
       },
       {
-        "minutes": 9060
+        "minutes": 6180
       },
       {
-        "minutes": 9720
+        "minutes": 6840
       },
       {
-        "minutes": 10920
+        "minutes": 8040
       }
     ]
   },
@@ -402,41 +402,6 @@
     "offset": {
       "minutes": 0
     }
-  },
-  {
-    "seriesId": 426,
-    "setTimes": [
-      {
-        "minutes": 900
-      },
-      {
-        "minutes": 1560
-      },
-      {
-        "minutes": 2340
-      },
-      {
-        "minutes": 3000
-      },
-      {
-        "minutes": 3780
-      },
-      {
-        "minutes": 4440
-      },
-      {
-        "minutes": 5220
-      },
-      {
-        "minutes": 5880
-      },
-      {
-        "minutes": 6660
-      },
-      {
-        "minutes": 7320
-      }
-    ]
   },
   {
     "seriesId": 460,
