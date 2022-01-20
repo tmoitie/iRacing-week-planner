@@ -44,9 +44,9 @@ export default function CarModal({ onClose, ownedCars, favouriteCars, isOpen, ca
             <tbody>
               {cars.map((car) => (
                 <tr
-                  key={car}
+                  key={car.name}
                   className={classnames({
-                    success: ownedCars.includes(car.sku),
+                    [styles['success']]: ownedCars.includes(car.sku),
                     [raceListingStyles.clickableCell]: true,
                   })}
                 >

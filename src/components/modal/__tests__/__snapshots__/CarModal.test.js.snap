@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/modal/CarModal renders correctly 1`] = `
+<div
+  className="ReactModal__Overlay"
+  onClick={[Function]}
+  onMouseDown={[Function]}
+  style={
+    Object {
+      "backgroundColor": "rgba(255, 255, 255, 0.75)",
+      "bottom": 0,
+      "left": 0,
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    aria-modal={true}
+    className="ReactModal__Content Modal__Bootstrap modal-dialog modal-lg"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    role="dialog"
+    style={Object {}}
+    tabIndex="-1"
+  >
+    <div
+      className="modal-content"
+    >
+      <div
+        className="modal-header"
+      >
+        <button
+          className="close"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="glyphicon glyphicon-remove"
+          />
+        </button>
+        <h4
+          className="modal-title"
+        >
+          Cars for Audi Spectacular
+        </h4>
+      </div>
+      <div
+        className="modal-body"
+        style={
+          Object {
+            "maxHeight": "55vh",
+            "overflowY": "auto",
+          }
+        }
+      >
+        <div
+          className="container-fluid"
+        >
+          <div
+            className="table-responsive"
+          >
+            <table
+              className="table"
+              style={
+                Object {
+                  "fontSize": "0.8em",
+                }
+              }
+            >
+              <thead>
+                <tr>
+                  <th>
+                    Car
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  className="success clickableCell"
+                >
+                  <td>
+                    <span
+                      className="glyphicon glyphicon-star"
+                    />
+                    <span>
+                       
+                    </span>
+                    Audi 90 GTO
+                  </td>
+                </tr>
+                <tr
+                  className="clickableCell"
+                >
+                  <td>
+                    <span>
+                       
+                    </span>
+                    Audi R8 LMS
+                  </td>
+                </tr>
+                <tr
+                  className="clickableCell"
+                >
+                  <td>
+                    <span
+                      className="glyphicon glyphicon-star"
+                    />
+                    <span>
+                       
+                    </span>
+                    Audi RS 3 LMS
+                  </td>
+                </tr>
+                <tr
+                  className="success clickableCell"
+                >
+                  <td>
+                    <span>
+                       
+                    </span>
+                    BMW M4 GT3
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div
+        className="modal-footer"
+      >
+        <button
+          className="btn btn-primary"
+          onClick={[Function]}
+          type="button"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

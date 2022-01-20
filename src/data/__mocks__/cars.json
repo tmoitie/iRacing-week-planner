@@ -1,0 +1,74 @@
+[
+  {
+    "freeWithSubscription": false,
+    "skuname": "ARCA Menards Chevrolet Impala",
+    "name": "ARCA Menards Chevrolet Impala",
+    "sku": 10088,
+    "discountGroupNames": [
+      "oval car"
+    ]
+  },
+  {
+    "freeWithSubscription": false,
+    "skuname": "Aston Martin DBR9 GT1",
+    "name": "Aston Martin DBR9 GT1",
+    "sku": 10389,
+    "discountGroupNames": [
+      "road car"
+    ]
+  },
+  {
+    "freeWithSubscription": false,
+    "skuname": "Audi 90 GTO",
+    "name": "Audi 90 GTO",
+    "sku": 10410,
+    "discountGroupNames": [
+      "road car"
+    ]
+  },
+  {
+    "freeWithSubscription": false,
+    "skuname": "Audi R18",
+    "name": "Audi R18",
+    "sku": 10439,
+    "discountGroupNames": [
+      "road car"
+    ]
+  },
+  {
+    "freeWithSubscription": false,
+    "skuname": "Audi R8 LMS",
+    "name": "Audi R8 LMS",
+    "sku": 10405,
+    "discountGroupNames": [
+      "road car"
+    ]
+  },
+  {
+    "freeWithSubscription": false,
+    "skuname": "Audi RS 3 LMS",
+    "name": "Audi RS 3 LMS",
+    "sku": 10461,
+    "discountGroupNames": [
+      "road car"
+    ]
+  },
+  {
+    "freeWithSubscription": false,
+    "skuname": "BMW M4 GT3",
+    "name": "BMW M4 GT3",
+    "sku": 10494,
+    "discountGroupNames": [
+      "road car"
+    ]
+  },
+  {
+    "freeWithSubscription": false,
+    "skuname": "BMW M4 GT4",
+    "name": "BMW M4 GT4",
+    "sku": 10479,
+    "discountGroupNames": [
+      "road car"
+    ]
+  }
+]
