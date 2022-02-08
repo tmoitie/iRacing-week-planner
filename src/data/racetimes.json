@@ -36,6 +36,23 @@
     }
   },
   {
+    "seriesId": 329,
+    "setTimes": [
+      {
+        "minutes": 5640
+      },
+      {
+        "minutes": 6180
+      },
+      {
+        "minutes": 6480
+      },
+      {
+        "minutes": 6720
+      }
+    ]
+  },
+  {
     "seriesId": 397,
     "everytime": {
       "minutes": 60
@@ -177,6 +194,14 @@
     "offset": {
       "minutes": 75
     }
+  },
+  {
+    "seriesId": 438,
+    "setTimes": [
+      {
+        "minutes": 4440
+      }
+    ]
   },
   {
     "seriesId": 331,
@@ -501,6 +526,43 @@
     "offset": {
       "minutes": 45
     }
+  },
+  {
+    "seriesId": 207,
+    "setTimes": [
+      {
+        "minutes": 2700
+      },
+      {
+        "minutes": 4440
+      },
+      {
+        "minutes": 6360
+      },
+      {
+        "minutes": 6780
+      },
+      {
+        "minutes": 8760
+      }
+    ]
+  },
+  {
+    "seriesId": 229,
+    "setTimes": [
+      {
+        "minutes": 3000
+      },
+      {
+        "minutes": 4020
+      },
+      {
+        "minutes": 5880
+      },
+      {
+        "minutes": 8100
+      }
+    ]
   },
   {
     "seriesId": 413,
@@ -1051,43 +1113,6 @@
     "offset": {
       "minutes": 0
     }
-  },
-  {
-    "seriesId": 482,
-    "setTimes": [
-      {
-        "minutes": 3000
-      },
-      {
-        "minutes": 4020
-      },
-      {
-        "minutes": 5880
-      },
-      {
-        "minutes": 8100
-      }
-    ]
-  },
-  {
-    "seriesId": 481,
-    "setTimes": [
-      {
-        "minutes": 2700
-      },
-      {
-        "minutes": 4440
-      },
-      {
-        "minutes": 6360
-      },
-      {
-        "minutes": 6780
-      },
-      {
-        "minutes": 8760
-      }
-    ]
   },
   {
     "seriesId": 308,
