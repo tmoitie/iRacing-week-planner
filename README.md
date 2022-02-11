@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/tmoitie/iRacing-week-planner/branch/master/graph/badge.svg?token=LZCUjPa0PU)](https://codecov.io/gh/tmoitie/iRacing-week-planner)
+
 ### Scrape
 
 It needs live iRacing data to work - this can be downloaded with your iRacing credentials
