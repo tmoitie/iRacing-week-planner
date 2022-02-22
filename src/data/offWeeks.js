@@ -12,10 +12,6 @@ export default {
     // NIS Open
     offWeeks: [7.1, 16.1, 21.1, 21.1],
   },
-  // 331: {
-  //   // Le Mans Enduro
-  //   offWeeks: [1.1, 1.1, 2.1, 3.1, 4.1, 5.1],
-  // },
   3284: {
     // GTE Endurance
     offWeeks: [1.1, 2.1, 3.1, 4.1, 5.1],
@@ -148,5 +144,11 @@ export default {
   // Bathurst
   3597: {
     weekEndOffset: { days: 7 },
-  }
+  },
+  // IndyCar iRacing Series
+  3598: {
+    offWeeks: [
+      1.1, 1.1, 2.1, 2.1, 3.1, 3.1, 4.1, 5.1, 8.1, 8.1, 9.1, 13.1, 14.1,
+    ],
+  },
 };

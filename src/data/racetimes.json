@@ -36,23 +36,6 @@
     }
   },
   {
-    "seriesId": 329,
-    "setTimes": [
-      {
-        "minutes": 5640
-      },
-      {
-        "minutes": 6180
-      },
-      {
-        "minutes": 6480
-      },
-      {
-        "minutes": 6720
-      }
-    ]
-  },
-  {
     "seriesId": 397,
     "everytime": {
       "minutes": 60
@@ -409,6 +392,26 @@
     "offset": {
       "minutes": 15
     }
+  },
+  {
+    "seriesId": 374,
+    "setTimes": [
+      {
+        "minutes": 2940
+      },
+      {
+        "minutes": 5400
+      },
+      {
+        "minutes": 6540
+      },
+      {
+        "minutes": 8280
+      },
+      {
+        "minutes": 8700
+      }
+    ]
   },
   {
     "seriesId": 165,

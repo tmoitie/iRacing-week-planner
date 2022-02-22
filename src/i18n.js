@@ -12,6 +12,7 @@ import fr from '../translations/fr';
 import it from '../translations/it';
 import tr from '../translations/tr';
 import jp from '../translations/jp';
+import nl from '../translations/nl';
 
 const languages = {
   de: {
@@ -42,6 +43,10 @@ const languages = {
     flag: '🇯🇵',
     name: '日本語 (JP)',
   },
+  nl: {
+    flag: '🇳🇱',
+    name: 'Nederlands (NL)',
+  },
   'pt-BR': {
     flag: '🇧🇷',
     name: 'Português (BR)',
@@ -63,6 +68,7 @@ const resources = {
   fr,
   it,
   jp,
+  nl,
   tr,
 };
 
