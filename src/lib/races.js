@@ -1,6 +1,6 @@
 // @flow
 
-import moment, { duration } from 'moment';
+import moment from 'moment';
 
 import season from '../data/season.json';
 import raceLengths from '../data/racelengths.json';
@@ -8,23 +8,55 @@ import levelToClass, { levelToClassNumber } from './levelToClass';
 import raceTimesArray from '../data/racetimes.json';
 import offWeeksById from '../data/offWeeks';
 
+const { duration } = moment;
+
 const raceTimesById = raceTimesArray.reduce((races, race) => ({ ...races, [race.seriesId]: race }), {});
 
-function getStartOfWeek(date) {
+function getStartOfWeek(date: moment$Moment) {
   return moment(date).subtract(1, 'days').startOf('isoWeek').add(1, 'days');
 }
 
+export type SeriesRace = {
+  series: string,
+  seriesId: number,
+  track: string,
+  trackId: number,
+  week: number,
+  startTime: moment,
+  weekLength: moment,
+  endTime: moment,
+  official: boolean,
+  licenceLevel: number,
+  licenceClassNumber: number,
+  licenceClass: string,
+  type: string,
+  fixed: boolean,
+  carClasses: Array<string>,
+  carIds: Array<number>,
+  seriesStart: moment$MomentDuration,
+  seriesEnd: moment,
+  seasonId: number,
+  everyTime: moment$MomentDuration | null,
+  offset: moment$MomentDuration | null,
+  setTimes: Array<moment$MomentDuration> | null,
+  raceLength: { laps: string } | { minutes: string },
+};
+
 export type TimeableRace = {
   seriesId: number,
-  everyTime?: moment.Duration,
-  offset?: moment.Duration,
-  setTimes?: Array<moment.Duration>,
+  everyTime: moment$MomentDuration | null,
+  offset: moment$MomentDuration | null,
+  setTimes: Array<moment$MomentDuration> | null,
 }
 
-function getNextRaceFromRecur(now, everyTime, offset) {
+function getNextRaceFromRecur(
+  now: moment$Moment,
+  everyTime: moment$MomentDuration,
+  offset: moment$MomentDuration | null
+): moment$Moment | null {
   const startOfWeek = getStartOfWeek(now);
 
-  const nextDate = startOfWeek.clone().add(offset);
+  const nextDate = offset ? startOfWeek.clone().add(offset) : startOfWeek.clone();
   const endDate = startOfWeek.clone().add({ weeks: 1, days: 1 });
 
   while (nextDate.isBefore(now) && nextDate.isBefore(endDate)) {
@@ -38,7 +70,7 @@ function getNextRaceFromRecur(now, everyTime, offset) {
   return nextDate;
 }
 
-function getNextRaceSetTimes(now, setTimes) {
+function getNextRaceSetTimes(now: moment$Moment, setTimes: Array<moment$MomentDuration>): moment$Moment | null {
   const startOfWeek = getStartOfWeek(now);
 
   const nextTime = setTimes.find((time) => startOfWeek.clone().add(time).isAfter(now));
@@ -56,7 +88,7 @@ function getNextRaceSetTimes(now, setTimes) {
   return null;
 }
 
-export function getNextRace(date: moment.Moment, race: TimeableRace): ?moment.Moment {
+export function getNextRace(date: moment$Moment, race: TimeableRace): moment$Moment|null {
   if (race.everyTime) {
     return getNextRaceFromRecur(date, race.everyTime, race.offset);
   }
@@ -68,15 +100,14 @@ export function getNextRace(date: moment.Moment, race: TimeableRace): ?moment.Mo
   return null;
 }
 
-const getType = (catId) => {
-  const categories = {
-    1: 'Oval',
-    2: 'Road',
-    3: 'Dirt',
-    4: 'RX',
-  };
+const categoryMap = new Map();
+categoryMap.set(1, 'Oval');
+categoryMap.set(2, 'Road');
+categoryMap.set(3, 'Dirt');
+categoryMap.set(4, 'RX');
 
-  return categories[catId];
+const getType = (catId: number): ?string => {
+  return categoryMap.get(catId);
 };
 
 export default season.reduce((carry, series) => {

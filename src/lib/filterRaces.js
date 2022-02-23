@@ -1,9 +1,24 @@
+// @flow
+
 import intersection from 'lodash.intersection';
+import type { SeriesRace } from './races';
+import type { filters } from '../reducers/settings';
+
+
+type FilterArguments = {
+  races: Array<SeriesRace>,
+  filters: filters,
+  ownedTracks: Array<number>,
+  ownedCars: Array<number>,
+  favouriteSeries: Array<number>,
+  favouriteCars: Array<number>,
+  favouriteTracks: Array<number>,
+};
 
 export default function filterRaces({
   races, filters, ownedTracks, ownedCars, favouriteSeries, favouriteCars, favouriteTracks,
-}) {
-  let filteredRaces = [...races];
+}: FilterArguments) {
+  let filteredRaces: Array<SeriesRace> = [...races];
 
   filteredRaces = filteredRaces.filter((race) => filters.type.indexOf(race.type) !== -1);
 

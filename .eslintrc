@@ -1,5 +1,9 @@
 {
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "requireConfigFile": false
+  },
   "extends": [
     "airbnb",
     "plugin:flowtype/recommended",
