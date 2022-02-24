@@ -1,5 +1,6 @@
 // @flow
 
+import type { ElementType } from 'react';
 import moment from 'moment';
 import {
   Id, Car, Class, EndDate, Fixed, Licence, LinkColumn, NextRace, Official,
@@ -7,24 +8,38 @@ import {
 } from '../components/columns';
 import RaceLength from '../components/columns/RaceLength';
 import { getNextRace } from '../lib/races';
+import type { SeriesRace } from '../lib/races';
 
 /* eslint react/no-multi-comp: 0 */
 
-const defaultSort = (a, b) => {
+const defaultSort = (order: 'asc' | 'desc', a: SeriesRace, b: SeriesRace) => {
   if (a.licenceClassNumber === b.licenceClassNumber) {
-    return a.series.toLowerCase() < b.series.toLowerCase() ? -1 : 1;
+    if (a.series === b.series) {
+      return 0;
+    }
+
+    if (order === 'asc') {
+      return a.series.toLowerCase() < b.series.toLowerCase() ? -1 : 1;
+    }
+
+    return a.series.toLowerCase() < b.series.toLowerCase() ? 1 : -1;
   }
-  return a.licenceClassNumber < b.licenceClassNumber ? -1 : 1;
+
+  if (order === 'asc') {
+    return a.licenceClassNumber < b.licenceClassNumber ? -1 : 1;
+  }
+
+  return a.licenceClassNumber < b.licenceClassNumber ? 1 : -1;
 };
 
-const sortByDate = (order: string, a?: moment.Moment, b?: moment.Moment) => {
+const sortByDate = (order: 'asc' | 'desc', a?: moment$Moment, b?: moment$Moment) => {
   if (a === b) {
     return 0;
   }
-  if (a === null) {
+  if (a === undefined) {
     return 1;
   }
-  if (b === null) {
+  if (b === undefined) {
     return -1;
   }
   if (a.isSame(b)) {
@@ -37,17 +52,28 @@ const sortByDate = (order: string, a?: moment.Moment, b?: moment.Moment) => {
   return a.isAfter(b) ? -1 : 1;
 };
 
-const getSortByDate = (key) => (order, a, b) => {
+const getSortByDate = (key) => (order: 'asc' | 'desc', a: SeriesRace, b: SeriesRace) => {
   const sort = sortByDate(order, a[key], b[key]);
-  return sort !== 0 ? sort : defaultSort(a, b);
+  return sort !== 0 ? sort : defaultSort(order, a, b);
 };
 
-export default [{
+export type ColumnType = {
+  id: string,
+  header: string,
+  component: ElementType,
+  default?: boolean,
+  sort?: (order: 'asc' | 'desc', a: SeriesRace, b: SeriesRace) => number,
+};
+
+const availableColumns: Array<ColumnType> = [{
   id: 'id',
   header: 'ID',
   component: Id,
   default: false,
   sort: (order, a, b) => {
+    if (a.seriesId === b.seriesId) {
+      return defaultSort(order, a, b);
+    }
     if (order === 'asc') {
       return (a.seriesId < b.seriesId ? -1 : 1);
     }
@@ -59,13 +85,7 @@ export default [{
   component: Class,
   default: true,
   sort: (order, a, b) => {
-    if (a.licenceClassNumber === b.licenceClassNumber) {
-      return a.series.toLowerCase() < b.series.toLowerCase() ? -1 : 1;
-    }
-    if (order === 'asc') {
-      return (a.licenceClassNumber < b.licenceClassNumber ? -1 : 1);
-    }
-    return (a.licenceClassNumber > b.licenceClassNumber ? -1 : 1);
+    return defaultSort(order, a, b);
   },
 }, {
   id: 'licence',
@@ -74,7 +94,7 @@ export default [{
   default: true,
   sort: (order, a, b) => {
     if (a.licenceLevel === b.licenceLevel) {
-      return a.series.toLowerCase() < b.series.toLowerCase() ? -1 : 1;
+      return defaultSort(order, a, b);
     }
     if (order === 'asc') {
       return a.licenceLevel < b.licenceLevel ? -1 : 1;
@@ -88,7 +108,7 @@ export default [{
   default: true,
   sort: (order, a, b) => {
     if (a.type === b.type) {
-      return defaultSort(a, b);
+      return defaultSort(order, a, b);
     }
     if (order === 'asc') {
       return (a.type < b.type ? -1 : 1);
@@ -117,7 +137,7 @@ export default [{
   default: true,
   sort: (order, a, b) => {
     if (a.track === b.track) {
-      return a.series.toLowerCase() < b.series.toLowerCase() ? -1 : 1;
+      return defaultSort(order, a, b);
     }
     if (order === 'asc') {
       return (a.track.toLowerCase() < b.track.toLowerCase() ? -1 : 1);
@@ -133,7 +153,7 @@ export default [{
     const carA = a.carClasses.join('');
     const carB = b.carClasses.join('');
     if (carA === carB) {
-      return a.series.toLowerCase() < b.series.toLowerCase() ? -1 : 1;
+      return defaultSort(order, a, b);
     }
     if (order === 'asc') {
       return (carA.toLowerCase() < carB.toLowerCase() ? -1 : 1);
@@ -153,13 +173,14 @@ export default [{
   sort: (order, a, b) => {
     const timeA = moment(a.startTime).add(a.weekLength);
     const timeB = moment(b.startTime).add(b.weekLength);
-    if (timeA === timeB) {
-      return defaultSort(a, b);
+    if (timeA.isSame(timeB)) {
+      return defaultSort(order, a, b);
     }
     if (order === 'asc') {
-      return (timeA < timeB ? -1 : 1);
+      return timeA.isBefore(timeB) ? -1 : 1;
     }
-    return (timeA > timeB ? -1 : 1);
+
+    return timeA.isAfter(timeB) ? -1 : 1;
   },
 }, {
   id: 'racelength',
@@ -173,7 +194,7 @@ export default [{
   default: true,
   sort: (order, a, b) => {
     if (a.official === b.official) {
-      return defaultSort(a, b);
+      return defaultSort(order, a, b);
     }
     if (order === 'asc') {
       return (a.official === false ? -1 : 1);
@@ -186,7 +207,7 @@ export default [{
   component: Fixed,
   sort: (order, a, b) => {
     if (a.fixed === b.fixed) {
-      return defaultSort(a, b);
+      return defaultSort(order, a, b);
     }
     if (order === 'asc') {
       return (a.fixed === false ? -1 : 1);
@@ -206,8 +227,18 @@ export default [{
     const now = moment().utc();
     const aNextDate = getNextRace(now, a);
     const bNextDate = getNextRace(now, b);
+    if (aNextDate === null && bNextDate === null) {
+      return defaultSort(order, a, b);
+    }
+    if (aNextDate === null) {
+      return order === 'asc' ? 1 : -1;
+    }
+    if (bNextDate === null) {
+      return order === 'asc' ? -1 : 1;
+    }
     const sort = sortByDate(order, aNextDate, bNextDate);
-    return sort !== 0 ? sort : defaultSort(a, b);
+    
+    return sort !== 0 ? sort : defaultSort(order, a, b);
   },
 }, {
   id: 'seriesEnd',
@@ -221,3 +252,5 @@ export default [{
   component: LinkColumn,
   default: true,
 }];
+
+export default availableColumns;
