@@ -33,7 +33,7 @@ jobs:
     - run: yarn build
       env:
         NODE_ENV: production
-    - run: s3_website push
+    - run: bundle exec s3_website push
       env:
         S3_ID: ${{ secrets.S3_ID }}
         S3_SECRET: ${{ secrets.S3_SECRET }}
