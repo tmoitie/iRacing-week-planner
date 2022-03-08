@@ -1,0 +1,42 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Deploy
+
+on:
+  push:
+    branches: [ release ]
+
+jobs:
+  deploy:
+    environment: Deploy
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: 14
+        cache: 'yarn'
+    - uses: actions/setup-ruby@v1
+      with:
+        ruby-version: '2.7'
+    - run: gem install s3_website
+
+    - run: yarn install
+    - run: rm -f src/data/tracks.json src/data/car-class.json src/data/cars.json src/data/season.json
+    - run: yarn scrapeData
+      env:
+        IWP_USERNAME: ${{ secrets.IWP_USERNAME }}
+        IWP_PASSWORD: ${{ secrets.IWP_PASSWORD }}
+    - run: yarn test
+    - run: yarn debugRaces
+    - run: yarn build
+      env:
+        NODE_ENV: production
+    - run: s3_website push
+      env:
+        S3_ID: ${{ secrets.S3_ID }}
+        S3_SECRET: ${{ secrets.S3_SECRET }}
+    
