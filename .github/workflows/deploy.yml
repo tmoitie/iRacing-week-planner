@@ -9,7 +9,7 @@ on:
 
 jobs:
   deploy:
-    environment: Deploy
+    environment: Deployment
 
     runs-on: ubuntu-latest
 
