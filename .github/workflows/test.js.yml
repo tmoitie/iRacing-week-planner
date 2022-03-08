@@ -20,6 +20,11 @@ jobs:
         node-version: 14
         cache: 'yarn'
     - run: yarn install
-    - run: touch src/data/tracks.json src/data/car-class.json src/data/cars.json src/data/season.json
+    - run: printf '[]' > src/data/tracks.json
+    - run: printf '[]' > src/data/car-class.json
+    - run: printf '[]' > src/data/cars.json
+    - run: printf '[]' > src/data/season.json
+    - run: printf '[]' > src/data/contributors.json
+    - run: printf '[]' > src/data/season.json
     - run: yarn test --coverage
     - uses: codecov/codecov-action@v2
