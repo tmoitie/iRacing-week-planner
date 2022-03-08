@@ -1,6 +1,11 @@
 import moment from 'moment';
 
 export default [{
+  date: moment('2022-03-08 00:00:00').utc(),
+  items: [
+    'Update to 2022S1W13',
+  ],
+}, {
   date: moment('2021-12-13 00:00:00').utc(),
   items: [
     'Updated to 2022S1',
