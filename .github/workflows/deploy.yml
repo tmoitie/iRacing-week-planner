@@ -19,11 +19,9 @@ jobs:
       with:
         node-version: 14
         cache: 'yarn'
-    - uses: actions/setup-ruby@v1
+    - uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '2.7'
-    - run: gem install s3_website
-
+        bundler-cache: true
     - run: yarn install
     - run: rm -f src/data/tracks.json src/data/car-class.json src/data/cars.json src/data/season.json
     - run: yarn scrapeData
@@ -39,4 +37,3 @@ jobs:
       env:
         S3_ID: ${{ secrets.S3_ID }}
         S3_SECRET: ${{ secrets.S3_SECRET }}
-    
