@@ -10,9 +10,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
-    environment: Test
-
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,12 +20,5 @@ jobs:
         node-version: 14
         cache: 'yarn'
     - run: yarn install
-    - run: rm -f src/data/tracks.json src/data/car-class.json src/data/cars.json src/data/season.json
-    - run: yarn scrapeData
-      env:
-        IWP_USERNAME: ${{ secrets.IWP_USERNAME }}
-        IWP_PASSWORD: ${{ secrets.IWP_PASSWORD }}
     - run: yarn test --coverage
     - uses: codecov/codecov-action@v2
-    - run: yarn debugRaces
-    - run: yarn build
