@@ -22,6 +22,10 @@ jobs:
     - uses: ruby/setup-ruby@v1
       with:
         bundler-cache: true
+    - uses: actions/setup-java@v2
+      with:
+        distribution: 'zulu'
+        java-version: '8'
     - run: yarn install
     - run: rm -f src/data/tracks.json src/data/car-class.json src/data/cars.json src/data/season.json
     - run: yarn scrapeData
