@@ -15,7 +15,9 @@ export default function ClickableCell({ className = '', onClick, children }: Pro
   const tdRef = React.useRef(null);
 
   React.useLayoutEffect(() => {
-    setHeight(tdRef.current.clientHeight);
+    if (tdRef.current) {
+      setHeight(tdRef.current.clientHeight);
+    }
   }, [tdRef]);
 
   return (

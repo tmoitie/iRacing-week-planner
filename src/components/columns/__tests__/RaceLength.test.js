@@ -58,4 +58,16 @@ describe('components/columns/RaceLength', () => {
 
     expect(component.toJSON()).toMatchSnapshot();
   });
+
+  test('renders empty object mistake', () => {
+    const component = renderer.create(
+      <RaceLength
+        race={{
+          raceLength: {}
+        }}
+      />
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
 });

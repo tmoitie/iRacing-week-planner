@@ -1,136 +1,200 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/columns/Car opens modal 1`] = `
-<Fragment>
-  <ClickableCell
-    className="success"
-    onClick={[Function]}
+Array [
+  <td
+    className="success clickableCell"
   >
-    <StarIcon />
-    <span>
-       
-    </span>
-    Mazda Cup
-  </ClickableCell>
-  <CarModal
-    carIds={
-      Array [
-        4,
-        5,
-      ]
+    <button
+      className="cellButton"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      style={
+        Object {
+          "minHeight": 0,
+        }
+      }
+      type="button"
+    >
+      <span
+        className="glyphicon glyphicon-star"
+      />
+      <span>
+         
+      </span>
+      Mazda Cup
+    </button>
+  </td>,
+  <div
+    className="ReactModal__Overlay"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
     }
-    favouriteCars={
-      Array [
-        4,
-      ]
-    }
-    isOpen={false}
-    onClose={[Function]}
-    ownedCars={
-      Array [
-        5,
-      ]
-    }
-    seriesName="Mazda Cup"
-  />
-</Fragment>
+  >
+    <div
+      aria-modal={true}
+      className="ReactModal__Content Modal__Bootstrap modal-dialog modal-lg"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      role="dialog"
+      style={Object {}}
+      tabIndex="-1"
+    >
+      <div
+        className="modal-content"
+      >
+        <div
+          className="modal-header"
+        >
+          <button
+            className="close"
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="glyphicon glyphicon-remove"
+            />
+          </button>
+          <h4
+            className="modal-title"
+          >
+            Cars for Mazda Cup
+          </h4>
+        </div>
+        <div
+          className="modal-body"
+          style={
+            Object {
+              "maxHeight": "55vh",
+              "overflowY": "auto",
+            }
+          }
+        >
+          <div
+            className="container-fluid"
+          >
+            <div
+              className="table-responsive"
+            >
+              <table
+                className="table"
+                style={
+                  Object {
+                    "fontSize": "0.8em",
+                  }
+                }
+              >
+                <thead>
+                  <tr>
+                    <th>
+                      Car
+                    </th>
+                  </tr>
+                </thead>
+                <tbody />
+              </table>
+            </div>
+          </div>
+        </div>
+        <div
+          className="modal-footer"
+        >
+          <button
+            className="btn btn-primary"
+            onClick={[Function]}
+            type="button"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
 `;
 
 exports[`components/columns/Car opens modal 2`] = `
-<Fragment>
-  <ClickableCell
-    className="success"
+<td
+  className="success clickableCell"
+>
+  <button
+    className="cellButton"
     onClick={[Function]}
+    onKeyPress={[Function]}
+    style={
+      Object {
+        "minHeight": 0,
+      }
+    }
+    type="button"
   >
-    <StarIcon />
+    <span
+      className="glyphicon glyphicon-star"
+    />
     <span>
        
     </span>
     Mazda Cup
-  </ClickableCell>
-  <CarModal
-    carIds={
-      Array [
-        4,
-        5,
-      ]
-    }
-    favouriteCars={
-      Array [
-        4,
-      ]
-    }
-    isOpen={false}
-    onClose={[Function]}
-    ownedCars={
-      Array [
-        5,
-      ]
-    }
-    seriesName="Mazda Cup"
-  />
-</Fragment>
+  </button>
+</td>
 `;
 
 exports[`components/columns/Car renders correctly 1`] = `
-<Fragment>
-  <ClickableCell
-    className=""
+<td
+  className="clickableCell"
+>
+  <button
+    className="cellButton"
     onClick={[Function]}
+    onKeyPress={[Function]}
+    style={
+      Object {
+        "minHeight": 0,
+      }
+    }
+    type="button"
   >
     <span>
        
     </span>
     Mazda Cup
-  </ClickableCell>
-  <CarModal
-    carIds={
-      Array [
-        4,
-        5,
-      ]
-    }
-    favouriteCars={Array []}
-    isOpen={false}
-    onClose={[Function]}
-    ownedCars={Array []}
-    seriesName="Mazda Cup"
-  />
-</Fragment>
+  </button>
+</td>
 `;
 
 exports[`components/columns/Car renders owned, favourite 1`] = `
-<Fragment>
-  <ClickableCell
-    className="success"
+<td
+  className="success clickableCell"
+>
+  <button
+    className="cellButton"
     onClick={[Function]}
+    onKeyPress={[Function]}
+    style={
+      Object {
+        "minHeight": 0,
+      }
+    }
+    type="button"
   >
-    <StarIcon />
+    <span
+      className="glyphicon glyphicon-star"
+    />
     <span>
        
     </span>
     Mazda Cup
-  </ClickableCell>
-  <CarModal
-    carIds={
-      Array [
-        4,
-        5,
-      ]
-    }
-    favouriteCars={
-      Array [
-        4,
-      ]
-    }
-    isOpen={false}
-    onClose={[Function]}
-    ownedCars={
-      Array [
-        5,
-      ]
-    }
-    seriesName="Mazda Cup"
-  />
-</Fragment>
+  </button>
+</td>
 `;

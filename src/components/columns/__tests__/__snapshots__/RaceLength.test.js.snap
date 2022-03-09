@@ -1,5 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`components/columns/RaceLength renders empty object mistake 1`] = `
+<td>
+  <div>
+    No data
+  </div>
+</td>
+`;
+
 exports[`components/columns/RaceLength renders hours 1`] = `
 <td>
   <div>

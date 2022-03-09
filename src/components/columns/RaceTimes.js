@@ -40,7 +40,7 @@ export default function NextRace({ race }: Props) {
             <ul>
               {race.setTimes.map(
                 (time) => (
-                  <li key={time}>
+                  <li key={time.toString()}>
                     {t('{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})', {
                       timeLocal: moment(weekStart).add(time).local().toDate(),
                       timeUtc: moment(weekStart).add(time).utc().toDate(),
@@ -61,7 +61,7 @@ export default function NextRace({ race }: Props) {
         <div>
           {t('Every {{every}} starting at {{time, H:mm}} UTC', {
             every: race.everyTime.humanize().replace(/an?\s/, ''),
-            time: moment().utc().startOf('day').add(race.offset)
+            time: moment().utc().startOf('day').add(race.offset || 0)
               .toDate(),
           })}
         </div>

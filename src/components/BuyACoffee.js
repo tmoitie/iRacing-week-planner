@@ -1,7 +1,6 @@
 // @flow
 
 import axios from 'axios';
-import i18n from 'i18next';
 import * as React from 'react';
 
 import { useTranslation } from 'react-i18next';
@@ -12,7 +11,7 @@ export default function BuyACoffee(): React.Node {
   const getBCUrl = async () => {
     let response;
     try {
-      response = await axios.get(' https://geolocation-db.com/json/09068b10-55fe-11eb-8939-299a0c3ab5e5', {
+      response = await axios.get('https://geolocation-db.com/json/09068b10-55fe-11eb-8939-299a0c3ab5e5', {
         headers: { Accept: '' }, // Avoid OPTION
       });
     } catch (error) {
@@ -42,7 +41,7 @@ export default function BuyACoffee(): React.Node {
   };
 
   const clickBuyCoffee = async () => {
-    window.location = await getBCUrl();
+    window.location.assign(await getBCUrl());
   };
 
   return (

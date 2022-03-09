@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { create, act } from 'react-test-renderer';
 import { describe, test } from '@jest/globals';
 import CarModal from '../../modal/CarModal';
 
@@ -7,7 +7,7 @@ import Car from '../Car';
 
 describe('components/columns/Car', () => {
   test('renders correctly', () => {
-    const component = shallow(<Car
+    const component = create(<Car
       race={{
         carIds: [4, 5],
         carClasses: ['Mazda Cup'],
@@ -17,11 +17,11 @@ describe('components/columns/Car', () => {
       ownedCars={[]}
     />);
 
-    expect(component).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('renders owned, favourite', () => {
-    const component = shallow(<Car
+    const component = create(<Car
       race={{
         carIds: [4, 5],
         carClasses: ['Mazda Cup'],
@@ -31,26 +31,36 @@ describe('components/columns/Car', () => {
       ownedCars={[5]}
     />);
 
-    expect(component).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('opens modal', () => {
-    const component = shallow(<Car
-      race={{
-        carIds: [4, 5],
-        carClasses: ['Mazda Cup'],
-        series: 'Mazda Cup',
-      }}
-      favouriteCars={[4]}
-      ownedCars={[5]}
-    />);
+    let component;
+    act(() => {
+      component = create(<Car
+        race={{
+          carIds: [4, 5],
+          carClasses: ['Mazda Cup'],
+          series: 'Mazda Cup',
+        }}
+        favouriteCars={[4]}
+        ownedCars={[5]}
+      />);
+    });
 
-    component.first().simulate('click');
+    act(() => {
+      component.root.findByType('button').props.onClick();
+    });
 
-    expect(component).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
 
-    component.find(CarModal).first().props().onClose();
+    act(() => {
+      component.root.findByProps({ className: 'glyphicon glyphicon-remove' }).parent.parent.props.onClick({
+        preventDefault: () => {},
+        stopPropagation: () => {},
+      });
+    });
 
-    expect(component).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });
