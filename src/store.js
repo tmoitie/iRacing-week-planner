@@ -1,4 +1,4 @@
-import { compose, createStore, applyMiddleware } from 'redux';
+import { applyMiddleware, compose, createStore } from 'redux';
 import thunk from 'redux-thunk';
 
 import persistState, { mergePersistedState } from 'redux-localstorage';
@@ -19,8 +19,9 @@ let enhancer = compose(
   persistState(storage, STORAGE_KEY),
 );
 
+/* istanbul ignore next */
 if (process.env.NODE_ENV === 'development') {
-  // eslint-disable-next-line global-require
+  // eslint-disable-next-line global-require,import/no-extraneous-dependencies
   const { createLogger } = require('redux-logger');
   const logger = createLogger({
     level: 'info',

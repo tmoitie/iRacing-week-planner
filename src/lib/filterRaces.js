@@ -2,12 +2,11 @@
 
 import intersection from 'lodash.intersection';
 import type { SeriesRace } from './races';
-import type { filters } from '../reducers/settings';
-
+import type { FilterOptions } from '../reducers/settings';
 
 type FilterArguments = {
   races: Array<SeriesRace>,
-  filters: filters,
+  filters: FilterOptions,
   ownedTracks: Array<number>,
   ownedCars: Array<number>,
   favouriteSeries: Array<number>,

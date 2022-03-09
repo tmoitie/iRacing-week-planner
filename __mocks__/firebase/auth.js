@@ -4,7 +4,7 @@ export function getAuth() {
 
 export async function signOut() { }
 
-export async function signInWithEmailAndPassword() { }
+export const signInWithEmailAndPassword = jest.fn(async () => {});
 
 export async function createUserWithEmailAndPassword() { }
 

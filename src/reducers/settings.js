@@ -15,12 +15,12 @@ import {
 import availableColumns from '../data/availableColumns';
 import { tracks, cars } from '../data';
 
-export type sort = {
+export type SortOptions = {
   key: string,
   order: string,
 };
 
-export type filters = {
+export type FilterOptions = {
   type: Array<string>,
   licence: Array<string>,
   official: Array<boolean>,
@@ -32,7 +32,7 @@ export type filters = {
   favouriteTracksOnly: boolean,
 };
 
-export const defaultFilters: filters = {
+export const defaultFilters: FilterOptions = {
   type: ['Road', 'Oval', 'Dirt', 'RX'],
   licence: ['R', 'D', 'C', 'B', 'A', 'P'],
   official: [false, true],
@@ -44,7 +44,19 @@ export const defaultFilters: filters = {
   favouriteCarsOnly: false,
 };
 
-export const defaultSettings = {
+export type SettingOptions = {
+  filters: FilterOptions,
+  ownedCars: Array<number>,
+  ownedTracks: Array<number>,
+  favouriteSeries: Array<number>,
+  favouriteCars: Array<number>,
+  favouriteTracks: Array<number>,
+  sort: SortOptions,
+  columns: Array<number>,
+  firebaseSynced: boolean,
+};
+
+export const defaultSettings: SettingOptions = {
   filters: defaultFilters,
   ownedCars: cars.filter((car) => car.freeWithSubscription === true).map((car) => car.sku),
   ownedTracks: tracks.filter((track) => track.default).map((track) => track.pkgid),
