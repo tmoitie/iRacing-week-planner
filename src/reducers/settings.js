@@ -70,10 +70,18 @@ export const defaultSettings: SettingOptions = {
 
 const LEGACY_STORAGE_KEY = 'iracing-state';
 
-const legacyStored = window.localStorage.getItem(LEGACY_STORAGE_KEY);
-const startupSettings = legacyStored ? JSON.parse(legacyStored) : defaultSettings;
+export default function settings(initState: SettingOptions, { type, payload }): SettingOptions {
+  let state = initState;
+  if (initState === undefined) {
+    const legacyStored = window.localStorage.getItem(LEGACY_STORAGE_KEY);
 
-export default function settings(state = startupSettings, { type, payload }) {
+    if (legacyStored) {
+      window.localStorage.removeItem(LEGACY_STORAGE_KEY);
+    }
+
+    state = legacyStored ? JSON.parse(legacyStored) : defaultSettings;
+  }
+
   if (type === localStorageActionTypes.INIT) {
     if (!payload) {
       return state;
@@ -90,8 +98,6 @@ export default function settings(state = startupSettings, { type, payload }) {
       ...persistedStateSettings.ownedTracks,
       ...defaultSettings.ownedTracks,
     ]);
-
-    window.localStorage.removeItem(LEGACY_STORAGE_KEY);
 
     return { ...state, ...persistedStateSettings };
   }
