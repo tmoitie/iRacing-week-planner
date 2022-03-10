@@ -18,6 +18,7 @@ type Props = {
   doneButtonText?: string,
   showFooter?: boolean,
   doneAction?: () => void,
+  id?: ?string,
 };
 
 const defaultProps = {
@@ -26,6 +27,7 @@ const defaultProps = {
   doneAction: () => {},
   doneButtonText: 'Close',
   showFooter: true,
+  id: undefined,
 };
 
 export default function Modal({
@@ -36,6 +38,7 @@ export default function Modal({
   doneButtonText,
   showFooter,
   doneAction,
+  id,
 }: Props): React.Node {
   const { t } = useTranslation();
 
@@ -68,10 +71,10 @@ export default function Modal({
   }, []);
 
   return (
-    <BaseModal isOpen={isOpen} onRequestClose={onClose}>
+    <BaseModal isOpen={isOpen} onRequestClose={onClose} id={id}>
       <div className={styles['modal-content']}>
         <div className={styles['modal-header']}>
-          <button type="button" className={styles.close} onClick={close}>
+          <button type="button" className={styles.close} onClick={close} aria-label="Close">
             <RemoveIcon />
           </button>
           <h4 className={styles['modal-title']}>{title}</h4>

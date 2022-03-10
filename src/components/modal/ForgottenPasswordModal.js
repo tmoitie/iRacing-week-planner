@@ -46,7 +46,14 @@ export default function ForgottenPasswordModal({ isOpen, onClose }: Props) {
   };
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose} title={t('Reset Password')} doneAction={onClose} showFooter={false}>
+    <Modal
+      id="forgottenPasswordModal"
+      isOpen={isOpen}
+      onClose={onClose}
+      title={t('Reset Password')}
+      doneAction={onClose}
+      showFooter={false}
+    >
       <div className={styles['container-fluid']}>
         <p>{t('Enter your email address to reset your password.')}</p>
         {loading ? (
@@ -94,6 +101,7 @@ export default function ForgottenPasswordModal({ isOpen, onClose }: Props) {
         onClose={closeThanks}
         title={t('Reset Password')}
         doneAction={closeThanks}
+        id="forgottenPasswordThanks"
       >
         <div className={styles['container-fluid']}>
           <p>{t('Thanks, please check your email for further details.')}</p>

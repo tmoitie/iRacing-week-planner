@@ -12,6 +12,7 @@ module.exports = {
     '!src/i18n.js',
     '!src/store.js',
     '!src/index.js',
+    '!src/config.js',
   ],
   coverageDirectory: 'coverage',
   // coverageProvider: "babel",

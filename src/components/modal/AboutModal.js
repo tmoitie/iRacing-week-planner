@@ -67,17 +67,15 @@ export default function AboutModal({ onClose, isOpen }: Props) {
         </p>
 
         <h3>{t('Contributors')}</h3>
-        {contributors ? (
-          <ul className={styles.row}>
-            {contributors.map((contributor) => (
-              <li className={`${styles['col-md-3']} ${styles['col-sm-4']} ${styles['col-xs-6']}`} key={contributor.id}>
-                <a href={contributor.html_url} target="_blank" rel="noreferrer">
-                  {contributor.login}
-                </a>
-              </li>
-            ))}
-          </ul>
-        ) : null}
+        <ul className={styles.row}>
+          {contributors.map((contributor) => (
+            <li className={`${styles['col-md-3']} ${styles['col-sm-4']} ${styles['col-xs-6']}`} key={contributor.id}>
+              <a href={contributor.html_url} target="_blank" rel="noreferrer">
+                {contributor.login}
+              </a>
+            </li>
+          ))}
+        </ul>
 
         <h3>{t('Changelog')}</h3>
         {changelog.map((dayItem) => (

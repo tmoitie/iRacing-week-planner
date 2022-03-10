@@ -58,6 +58,7 @@ Array [
           className="modal-header"
         >
           <button
+            aria-label="Close"
             className="close"
             onClick={[Function]}
             type="button"
