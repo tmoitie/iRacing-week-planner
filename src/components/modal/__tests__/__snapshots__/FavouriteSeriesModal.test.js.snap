@@ -21,6 +21,7 @@ exports[`components/modal/FavouriteSeriesModal renders with checkbox saving 1`] 
   <div
     aria-modal={true}
     className="ReactModal__Content Modal__Bootstrap modal-dialog modal-lg"
+    id="favouriteSeriesModal"
     onClick={[Function]}
     onKeyDown={[Function]}
     onMouseDown={[Function]}

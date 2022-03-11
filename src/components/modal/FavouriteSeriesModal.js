@@ -88,7 +88,13 @@ export default function FavouriteSeriesModal({ onClose, isOpen, favouriteSeries,
   );
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose} title={t('Choose favorite series')} doneAction={onClose}>
+    <Modal
+      id="favouriteSeriesModal"
+      isOpen={isOpen}
+      onClose={onClose}
+      title={t('Choose favorite series')}
+      doneAction={onClose}
+    >
       <div className={styles['container-fluid']}>
         <h3>{t('Oval')}</h3>
         <div className={styles.row}>

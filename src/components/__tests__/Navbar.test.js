@@ -11,21 +11,19 @@ import { CHANGE_MODAL } from '../../actions/app';
 import Navbar from '../Navbar';
 
 jest.mock('../../actions/auth');
-jest.mock('react-i18next', () => {
-  return {
-    __esModule: true,
-    useTranslation: jest.fn(() => ({
-      t: (v) => v,
-      i18n: {
-        changeLanguage: () => {},
-        language: 'en',
-      },
-    })),
-    initReactI18next: {
-      type: '3rdParty', init: () => {}
+jest.mock('react-i18next', () => ({
+  __esModule: true,
+  useTranslation: jest.fn(() => ({
+    t: (v) => v,
+    i18n: {
+      changeLanguage: () => {},
+      language: 'en',
     },
-  };
-});
+  })),
+  initReactI18next: {
+    type: '3rdParty', init: () => {},
+  },
+}));
 
 const mockStore = configureMockStore([thunk]);
 
@@ -93,16 +91,23 @@ describe('components/Navbar', () => {
       },
     }));
     const store = mockStore({ auth: { user: { id: 1 } } });
-    const component = render(<Provider store={store}><Navbar /></Provider>);
+    let component;
+    act(() => {
+      component = render(<Provider store={store}><Navbar /></Provider>);
+    });
     const firstRender = component.asFragment();
 
-    fireEvent.click(await component.findByText(/^🇺🇸$/));
+    await act(async () => {
+      fireEvent.click(await component.findByText(/^🇺🇸$/));
+    });
 
     const secondRender = component.asFragment();
 
     expect(firstRender).toMatchDiffSnapshot(secondRender);
 
-    fireEvent.click(await component.findByText(/Deutsch \(DE\)/));
+    await act(async () => {
+      fireEvent.click(await component.findByText(/Deutsch \(DE\)/));
+    });
 
     expect(secondRender).toMatchDiffSnapshot(component.asFragment());
     expect(changeLanguage).toHaveBeenCalledWith('de');
@@ -110,15 +115,27 @@ describe('components/Navbar', () => {
 
   test('closes dropdown', async () => {
     const store = mockStore({ auth: { user: { id: 1 } } });
-    const component = render(<Provider store={store}><Navbar /></Provider>);
+    let component;
+
+    act(() => {
+      component = render(<Provider store={store}><Navbar /></Provider>);
+    });
 
     await act(async () => {
       fireEvent.click(await component.findByText(/^🇺🇸$/));
     });
     const firstRender = component.asFragment();
 
-    fireEvent.click(global.document);
+    act(() => {
+      document.dispatchEvent(new MouseEvent('mousedown'));
+    });
 
-    expect(firstRender).toMatchDiffSnapshot(component.asFragment());
+    const secondRender = component.asFragment();
+
+    expect(firstRender).toMatchDiffSnapshot(secondRender);
+
+    component.unmount();
+
+    document.dispatchEvent(new MouseEvent('mousedown'));
   });
 });

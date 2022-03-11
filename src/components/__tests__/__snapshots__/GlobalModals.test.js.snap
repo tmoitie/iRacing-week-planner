@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/modal/OptionsModal renders closed 1`] = `null`;
+exports[`components/GlobalModals renders all closed 1`] = `null`;
 
-exports[`components/modal/OptionsModal renders with checkbox saving 1`] = `
+exports[`components/GlobalModals renders open options, closing and saving 1`] = `
 <div
   className="ReactModal__Overlay"
   onClick={[Function]}
@@ -80,7 +80,7 @@ exports[`components/modal/OptionsModal renders with checkbox saving 1`] = `
                   htmlFor="options-columns-id"
                 >
                   <input
-                    checked={true}
+                    checked={false}
                     disabled={false}
                     id="options-columns-id"
                     onChange={[Function]}
@@ -100,7 +100,7 @@ exports[`components/modal/OptionsModal renders with checkbox saving 1`] = `
                   htmlFor="options-columns-class"
                 >
                   <input
-                    checked={true}
+                    checked={false}
                     disabled={false}
                     id="options-columns-class"
                     onChange={[Function]}

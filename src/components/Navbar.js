@@ -23,18 +23,18 @@ function useOutsideAlerter(ref, callback) {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [ref]);
+  }, [ref, callback]);
 }
 
 export default function Navbar() {
   const { t, i18n } = useTranslation();
   const [languageDropdown, setLanguageDropdown] = React.useState(false);
   const dropdownRef = React.useRef(null);
-  useOutsideAlerter(dropdownRef, () => {
+  useOutsideAlerter(dropdownRef, React.useCallback(() => {
     if (languageDropdown === true) {
       setLanguageDropdown(false);
     }
-  });
+  }, [languageDropdown, setLanguageDropdown]));
   const user = useSelector(userSelector, shallowEqual);
   const dispatch = useDispatch();
   const getModalChangeClick = (modalName) => (e) => {
@@ -138,7 +138,8 @@ export default function Navbar() {
                 setLanguageDropdown(!languageDropdown);
               }}
             >
-              {languages[i18n.language].flag}{' '}
+              {languages[i18n.language].flag}
+              {' '}
               <span className={styles.caret} />
             </a>
             <ul className={styles['dropdown-menu']} ref={dropdownRef}>
