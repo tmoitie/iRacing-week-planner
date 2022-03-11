@@ -13,11 +13,10 @@ const loadingSelector = (state) => state.auth.loadingAuth;
 
 type Props = {
   isOpen?: boolean,
-  onClose?: () => void,
+  onClose: () => void,
 };
 
 const defaultProps = {
-  onClose: () => {},
   isOpen: false,
 };
 

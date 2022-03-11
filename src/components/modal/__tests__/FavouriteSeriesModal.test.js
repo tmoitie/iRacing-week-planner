@@ -3,8 +3,6 @@ import React from 'react';
 import renderer, { act } from 'react-test-renderer';
 import FavouriteSeriesModal from '../FavouriteSeriesModal';
 
-jest.mock('firebase/auth');
-
 describe('components/modal/FavouriteSeriesModal', () => {
   test('renders closed', async () => {
     const onClose = jest.fn(() => {});

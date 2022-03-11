@@ -164,7 +164,11 @@ exports[`components/modal/SeriesModal renders open 1`] = `
                   </td>
                 </tr>
                 <tr
-                  style={Object {}}
+                  style={
+                    Object {
+                      "fontWeight": 700,
+                    }
+                  }
                 >
                   <td>
                     4

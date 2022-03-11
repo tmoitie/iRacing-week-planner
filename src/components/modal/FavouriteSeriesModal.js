@@ -46,16 +46,14 @@ const groupedSeries = series.reduce((grouped, single) => {
 }, { oval: [], road: [], dirtOval: [], rx: [] });
 
 type Props = {
-  onClose?: () => void,
+  onClose: () => void,
   isOpen?: boolean,
   favouriteSeries?: Array<number>,
-  save?: (Array<number>) => void,
+  save: (Array<number>) => void,
 };
 
 const defaultProps = {
-  onClose: () => {},
   isOpen: false,
-  save: () => {},
   favouriteSeries: [],
 };
 

@@ -1,6 +1,7 @@
 import { describe, test } from '@jest/globals';
 import React from 'react';
 import renderer, { act } from 'react-test-renderer';
+import MockDate from 'mockdate';
 import SeriesModal from '../SeriesModal';
 
 jest.mock('firebase/auth');
@@ -15,6 +16,7 @@ describe('components/modal/SeriesModal', () => {
   });
 
   test('renders open', async () => {
+    MockDate.set('2020-10-12T11:30:00.000Z');
     const onClose = jest.fn(() => {});
     let component;
     act(() => {

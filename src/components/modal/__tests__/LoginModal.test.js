@@ -29,7 +29,7 @@ describe('components/modal/LoginModal', () => {
     let component;
 
     await act(async () => {
-      component = renderer.create(<Provider store={store}><LoginModal isOpen /></Provider>);
+      component = renderer.create(<Provider store={store}><LoginModal isOpen onClose={() => {}} /></Provider>);
     });
 
     expect(component.toJSON()).toMatchSnapshot();
@@ -56,7 +56,7 @@ describe('components/modal/LoginModal', () => {
     let component;
 
     await act(async () => {
-      component = renderer.create(<Provider store={store}><LoginModal isOpen /></Provider>);
+      component = renderer.create(<Provider store={store}><LoginModal isOpen onClose={() => {}} /></Provider>);
     });
 
     await act(async () => {
@@ -73,7 +73,7 @@ describe('components/modal/LoginModal', () => {
     let component;
 
     await act(async () => {
-      component = renderer.create(<Provider store={store}><LoginModal isOpen /></Provider>);
+      component = renderer.create(<Provider store={store}><LoginModal isOpen onClose={() => {}} /></Provider>);
     });
 
     expect(component.toJSON()).toMatchSnapshot();
@@ -102,7 +102,7 @@ describe('components/modal/LoginModal', () => {
     let component;
 
     await act(async () => {
-      component = renderer.create(<Provider store={store}><LoginModal isOpen /></Provider>);
+      component = renderer.create(<Provider store={store}><LoginModal isOpen onClose={() => {}} /></Provider>);
     });
 
     await act(async () => {
@@ -120,7 +120,7 @@ describe('components/modal/LoginModal', () => {
     let component;
 
     await act(async () => {
-      component = renderer.create(<Provider store={store}><LoginModal isOpen /></Provider>);
+      component = renderer.create(<Provider store={store}><LoginModal isOpen onClose={() => {}} /></Provider>);
     });
 
     expect(component.toJSON()).toMatchSnapshot();
@@ -136,7 +136,7 @@ describe('components/modal/LoginModal', () => {
 
   test('renders loading', async () => {
     const store = mockStore({ auth: { errorAuth: null, loadingAuth: true } });
-    const component = renderer.create(<Provider store={store}><LoginModal /></Provider>);
+    const component = renderer.create(<Provider store={store}><LoginModal onClose={() => {}} /></Provider>);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
@@ -146,7 +146,7 @@ describe('components/modal/LoginModal', () => {
     let component;
 
     await act(async () => {
-      component = renderer.create(<Provider store={store}><LoginModal isOpen /></Provider>);
+      component = renderer.create(<Provider store={store}><LoginModal isOpen onClose={() => {}} /></Provider>);
     });
 
     await act(async () => {
