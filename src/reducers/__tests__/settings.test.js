@@ -38,7 +38,7 @@ describe('reducers/settings', () => {
         },
       },
     );
-    expect(state.ownedCars.length).toBe(1);
+    expect(state.ownedCars.length).toBe(3);
     expect(state.ownedTracks.length).toBe(17);
     const stateNoPayload = settingsReducer(
       undefined,
@@ -46,7 +46,7 @@ describe('reducers/settings', () => {
         type: localStorageActionTypes.INIT,
       },
     );
-    expect(stateNoPayload.ownedCars.length).toBe(0);
+    expect(stateNoPayload.ownedCars.length).toBe(2);
     expect(stateNoPayload.ownedTracks.length).toBe(16);
   });
 

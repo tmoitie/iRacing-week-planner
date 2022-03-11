@@ -162,13 +162,55 @@ exports[`components/modal/FavouriteSeriesModal renders with checkbox saving 1`] 
           </h3>
           <div
             className="row"
-          />
+          >
+            <div
+              className="col-md-6"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="favourite-series-341"
+                >
+                  <input
+                    checked={false}
+                    disabled={false}
+                    id="favourite-series-341"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  Example Dirt Oval
+                </label>
+              </div>
+            </div>
+          </div>
           <h3>
             RX
           </h3>
           <div
             className="row"
-          />
+          >
+            <div
+              className="col-md-6"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="favourite-series-323"
+                >
+                  <input
+                    checked={false}
+                    disabled={false}
+                    id="favourite-series-323"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  Example Rallycross
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div

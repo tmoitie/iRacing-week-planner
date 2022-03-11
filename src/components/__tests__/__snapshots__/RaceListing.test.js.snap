@@ -201,6 +201,66 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
           </div>
         </td>
       </tr>
+      <tr>
+        <td>
+          <div>
+            323
+          </div>
+        </td>
+        <td
+          className="clickableCell"
+        >
+          <button
+            className="cellButton"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            style={
+              Object {
+                "minHeight": 50,
+              }
+            }
+            type="button"
+          >
+            <span>
+               
+            </span>
+            Example Rallycross
+          </button>
+        </td>
+        <td>
+          No time data
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            341
+          </div>
+        </td>
+        <td
+          className="clickableCell"
+        >
+          <button
+            className="cellButton"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            style={
+              Object {
+                "minHeight": 50,
+              }
+            }
+            type="button"
+          >
+            <span>
+               
+            </span>
+            Example Dirt Oval
+          </button>
+        </td>
+        <td>
+          No time data
+        </td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -342,6 +402,60 @@ exports[`components/RaceListing changes sort on click 1`] = `
       <tr>
         <td>
           <div>
+            323
+          </div>
+        </td>
+        <td
+          className="clickableCell"
+        >
+          <button
+            className="cellButton"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            style={
+              Object {
+                "minHeight": 50,
+              }
+            }
+            type="button"
+          >
+            <span>
+               
+            </span>
+            Example Rallycross
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            341
+          </div>
+        </td>
+        <td
+          className="clickableCell"
+        >
+          <button
+            className="cellButton"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            style={
+              Object {
+                "minHeight": 50,
+              }
+            }
+            type="button"
+          >
+            <span>
+               
+            </span>
+            Example Dirt Oval
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
             432
           </div>
         </td>
@@ -425,6 +539,20 @@ exports[`components/RaceListing renders correctly 1`] = `
         <td>
           <div>
             167
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            323
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            341
           </div>
         </td>
       </tr>

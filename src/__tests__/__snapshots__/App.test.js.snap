@@ -750,6 +750,20 @@ exports[`components/App renders correctly 1`] = `
               <tr>
                 <td>
                   <div>
+                    323
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div>
+                    341
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div>
                     432
                   </div>
                 </td>

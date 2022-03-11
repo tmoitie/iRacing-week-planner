@@ -70,5 +70,41 @@
     "discountGroupNames": [
       "road car"
     ]
+  },
+  {
+    "freeWithSubscription": true,
+    "skuname": "Dirt Car",
+    "name": "Dirt Car",
+    "sku": 10417,
+    "discountGroupNames": [
+      "oval car"
+    ]
+  },
+  {
+    "freeWithSubscription": false,
+    "skuname": "RX 1",
+    "name": "RX 1",
+    "sku": 10419,
+    "discountGroupNames": [
+      "road car"
+    ]
+  },
+  {
+    "freeWithSubscription": true,
+    "skuname": "RX 2",
+    "name": "RX 2",
+    "sku": 10428,
+    "discountGroupNames": [
+      "road car"
+    ]
+  },
+  {
+    "freeWithSubscription": false,
+    "skuname": "RX 3",
+    "name": "RX 3",
+    "sku": 10444,
+    "discountGroupNames": [
+      "road car"
+    ]
   }
 ]

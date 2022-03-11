@@ -58,15 +58,21 @@ export default function Modal({
 
   React.useEffect(() => {
     const escapeModal = (e) => {
-      if (e.keyCode === 27) {
+      if (e.code !== undefined && e.code === 'Escape') {
         onClose();
+        e.preventDefault();
+        return;
+      }
+      if (e.keyCode !== undefined && e.keyCode === 27) {
+        onClose();
+        e.preventDefault();
       }
     };
 
-    document.addEventListener('keydown', escapeModal);
+    document.addEventListener('keypress', escapeModal);
 
     return () => {
-      document.removeEventListener('keydown', escapeModal);
+      document.removeEventListener('keypress', escapeModal);
     };
   }, []);
 
