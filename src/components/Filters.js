@@ -3,7 +3,7 @@
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector, shallowEqual } from 'react-redux';
-import type { filters as filtersType } from '../reducers/settings';
+import type { FilterOptions as filtersType } from '../reducers/settings';
 import { resetFilters, resetSettings, updateFilters } from '../actions/settings';
 import Checkbox from './Checkbox';
 

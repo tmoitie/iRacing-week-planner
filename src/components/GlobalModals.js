@@ -32,10 +32,8 @@ export default function GlobalModals() {
     dispatch(changeModal(null));
   };
 
-  const getSettingUpdater = (key) => {
-    return (value) => {
-      dispatch(updateSetting(key, value));
-    };
+  const getSettingUpdater = (key) => (value) => {
+    dispatch(updateSetting(key, value));
   };
 
   return (

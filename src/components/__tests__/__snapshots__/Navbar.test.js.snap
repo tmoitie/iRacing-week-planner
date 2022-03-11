@@ -42,7 +42,22 @@ exports[`components/Navbar changes language 2`] = `
 
 exports[`components/Navbar closes dropdown 1`] = `
 "Snapshot Diff:
-Compared values have no visual difference."
+- First value
++ Second value
+
+@@ -77,11 +77,11 @@
+            >
+              Sign out
+            </a>
+          </li>
+          <li
+-           class=\\"dropdown open\\"
++           class=\\"dropdown\\"
+            id=\\"navbar-language-dropdown\\"
+          >
+            <a
+              href=\\"\\"
+              id=\\"navbar-link-open-language-dropdown\\""
 `;
 
 exports[`components/Navbar renders correctly and links work 1`] = `

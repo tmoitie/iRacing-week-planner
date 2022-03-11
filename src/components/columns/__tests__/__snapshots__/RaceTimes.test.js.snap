@@ -1,9 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/columns/RaceTimes renders everytime 1`] = `
+exports[`components/columns/RaceTimes renders everytime 1`] = `[Function]`;
+
+exports[`components/columns/RaceTimes renders everytime no offset 1`] = `
 <td>
   <div>
-    Every 3 hours starting at 1:30 UTC
+    Every 3 hours starting at 0:00 UTC
   </div>
 </td>
 `;
@@ -15,106 +17,147 @@ exports[`components/columns/RaceTimes renders no time data 1`] = `
 `;
 
 exports[`components/columns/RaceTimes renders settimes 1`] = `
-<Fragment>
-  <ClickableCell
+<td
+  className="clickableCell"
+>
+  <button
+    className="cellButton"
     onClick={[Function]}
+    onKeyPress={[Function]}
+    style={
+      Object {
+        "minHeight": 0,
+      }
+    }
+    type="button"
   >
     Set Times
-  </ClickableCell>
-  <Modal
-    doneAction={[Function]}
-    doneButtonText="Close"
-    isOpen={false}
-    onClose={[Function]}
-    showFooter={true}
-    title="Set times for Mazda Cup"
-  >
-    <div
-      className="container-fluid"
-    >
-      <ul>
-        <li
-          key="266400000"
-        >
-          Fri 2:00am (Fri 2:00am )
-        </li>
-        <li
-          key="392400000"
-        >
-          Sat 1:00pm (Sat 1:00pm )
-        </li>
-      </ul>
-    </div>
-  </Modal>
-</Fragment>
+  </button>
+</td>
 `;
 
 exports[`components/columns/RaceTimes renders settimes 2`] = `
-<Fragment>
-  <ClickableCell
-    onClick={[Function]}
+Array [
+  <td
+    className="clickableCell"
   >
-    Set Times
-  </ClickableCell>
-  <Modal
-    doneAction={[Function]}
-    doneButtonText="Close"
-    isOpen={false}
-    onClose={[Function]}
-    showFooter={true}
-    title="Set times for Mazda Cup"
+    <button
+      className="cellButton"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      style={
+        Object {
+          "minHeight": 0,
+        }
+      }
+      type="button"
+    >
+      Set Times
+    </button>
+  </td>,
+  <div
+    className="ReactModal__Overlay"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
   >
     <div
-      className="container-fluid"
+      aria-modal={true}
+      className="ReactModal__Content Modal__Bootstrap modal-dialog modal-lg"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      role="dialog"
+      style={Object {}}
+      tabIndex="-1"
     >
-      <ul>
-        <li
-          key="266400000"
+      <div
+        className="modal-content"
+      >
+        <div
+          className="modal-header"
         >
-          Fri 2:00am (Fri 2:00am )
-        </li>
-        <li
-          key="392400000"
+          <button
+            aria-label="Close"
+            className="close"
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="glyphicon glyphicon-remove"
+            />
+          </button>
+          <h4
+            className="modal-title"
+          >
+            Set times for Mazda Cup
+          </h4>
+        </div>
+        <div
+          className="modal-body"
+          style={
+            Object {
+              "maxHeight": "55vh",
+              "overflowY": "auto",
+            }
+          }
         >
-          Sat 1:00pm (Sat 1:00pm )
-        </li>
-      </ul>
+          <div
+            className="container-fluid"
+          >
+            <ul>
+              <li>
+                Fri 2:00am (Fri 2:00am )
+              </li>
+              <li>
+                Sat 1:00pm (Sat 1:00pm )
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          className="modal-footer"
+        >
+          <button
+            className="btn btn-primary"
+            onClick={[Function]}
+            type="button"
+          >
+            Close
+          </button>
+        </div>
+      </div>
     </div>
-  </Modal>
-</Fragment>
+  </div>,
+]
 `;
 
 exports[`components/columns/RaceTimes renders settimes 3`] = `
-<Fragment>
-  <ClickableCell
+<td
+  className="clickableCell"
+>
+  <button
+    className="cellButton"
     onClick={[Function]}
+    onKeyPress={[Function]}
+    style={
+      Object {
+        "minHeight": 0,
+      }
+    }
+    type="button"
   >
     Set Times
-  </ClickableCell>
-  <Modal
-    doneAction={[Function]}
-    doneButtonText="Close"
-    isOpen={false}
-    onClose={[Function]}
-    showFooter={true}
-    title="Set times for Mazda Cup"
-  >
-    <div
-      className="container-fluid"
-    >
-      <ul>
-        <li
-          key="266400000"
-        >
-          Fri 2:00am (Fri 2:00am )
-        </li>
-        <li
-          key="392400000"
-        >
-          Sat 1:00pm (Sat 1:00pm )
-        </li>
-      </ul>
-    </div>
-  </Modal>
-</Fragment>
+  </button>
+</td>
 `;

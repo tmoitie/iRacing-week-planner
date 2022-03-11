@@ -1,3 +1,5 @@
+// @flow
+
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
@@ -8,7 +10,14 @@ import availableColumns from '../../data/availableColumns';
 
 import styles from '../../styles/main.module.scss';
 
-export default function OptionsModal({ onClose, isOpen, columnIds, saveOptions }) {
+type Props = {
+  onClose: () => void,
+  isOpen?: boolean,
+  columnIds?: Array<string>,
+  saveOptions: (string, Array<string>) => void,
+};
+
+export default function OptionsModal({ onClose, isOpen, columnIds, saveOptions }: Props) {
   const getColumnToggler = (id) => (newValue) => {
     const newColumns = toggleIdInCollection(columnIds, id, newValue);
     saveOptions('columns', newColumns);
@@ -17,7 +26,7 @@ export default function OptionsModal({ onClose, isOpen, columnIds, saveOptions }
   const { t } = useTranslation();
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose} title={t('Options')} doneAction={onClose}>
+    <Modal id="optionsModal" isOpen={isOpen} onClose={onClose} title={t('Options')} doneAction={onClose}>
       <div className={styles['container-fluid']}>
         <h5>{t('Columns')}</h5>
         <div className={styles.row}>
@@ -39,16 +48,7 @@ export default function OptionsModal({ onClose, isOpen, columnIds, saveOptions }
   );
 }
 
-OptionsModal.propTypes = {
-  onClose: PropTypes.func,
-  isOpen: PropTypes.bool.isRequired,
-  columnIds: PropTypes.array,
-  saveOptions: PropTypes.func,
-};
-
 OptionsModal.defaultProps = {
-  onClose: () => {},
   isOpen: false,
   columnIds: [],
-  saveOptions: () => {},
 };

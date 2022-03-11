@@ -14,14 +14,16 @@ type Props = {
   closeTimeoutMS?: ?number,
   children: ?React.Node,
   className?: ?string,
+  id?: ?string,
 };
 
 const defaultProps = {
   className: null,
   closeTimeoutMS: null,
+  id: undefined,
 };
 
-export default function BaseModal({ isOpen, onRequestClose, closeTimeoutMS, children, className }: Props) {
+export default function BaseModal({ isOpen, onRequestClose, closeTimeoutMS, children, className, id }: Props) {
   return (
     <Modal
       onRequestClose={onRequestClose}
@@ -29,6 +31,7 @@ export default function BaseModal({ isOpen, onRequestClose, closeTimeoutMS, chil
       isOpen={isOpen}
       className={classNames('Modal__Bootstrap', styles['modal-dialog'], styles['modal-lg'], className)}
       ariaHideApp={false}
+      id={id}
     >
       {children}
     </Modal>

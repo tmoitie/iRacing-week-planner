@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/modal/Modal renders closed 1`] = `null`;
+
+exports[`components/modal/Modal renders no footer 1`] = `
+<div
+  className="ReactModal__Overlay"
+  onClick={[Function]}
+  onMouseDown={[Function]}
+  style={
+    Object {
+      "backgroundColor": "rgba(255, 255, 255, 0.75)",
+      "bottom": 0,
+      "left": 0,
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    aria-modal={true}
+    className="ReactModal__Content Modal__Bootstrap modal-dialog modal-lg"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    role="dialog"
+    style={Object {}}
+    tabIndex="-1"
+  >
+    <div
+      className="modal-content"
+    >
+      <div
+        className="modal-header"
+      >
+        <button
+          aria-label="Close"
+          className="close"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="glyphicon glyphicon-remove"
+          />
+        </button>
+        <h4
+          className="modal-title"
+        >
+          Test No Footer
+        </h4>
+      </div>
+      <div
+        className="modal-body"
+        style={
+          Object {
+            "maxHeight": "55vh",
+            "overflowY": "auto",
+          }
+        }
+      >
+        <div>
+          No Footer!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`components/modal/Modal renders open 1`] = `
+<div
+  className="ReactModal__Overlay"
+  onClick={[Function]}
+  onMouseDown={[Function]}
+  style={
+    Object {
+      "backgroundColor": "rgba(255, 255, 255, 0.75)",
+      "bottom": 0,
+      "left": 0,
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    aria-modal={true}
+    className="ReactModal__Content Modal__Bootstrap modal-dialog modal-lg"
+    id="testOpen"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    role="dialog"
+    style={Object {}}
+    tabIndex="-1"
+  >
+    <div
+      className="modal-content"
+    >
+      <div
+        className="modal-header"
+      >
+        <button
+          aria-label="Close"
+          className="close"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="glyphicon glyphicon-remove"
+          />
+        </button>
+        <h4
+          className="modal-title"
+        >
+          Test Open
+        </h4>
+      </div>
+      <div
+        className="modal-body"
+        style={
+          Object {
+            "maxHeight": "55vh",
+            "overflowY": "auto",
+          }
+        }
+      >
+        <div>
+          Hello Open!
+        </div>
+      </div>
+      <div
+        className="modal-footer"
+      >
+        <button
+          className="btn btn-primary"
+          onClick={[Function]}
+          type="button"
+        >
+          Is Done
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

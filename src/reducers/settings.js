@@ -15,12 +15,12 @@ import {
 import availableColumns from '../data/availableColumns';
 import { tracks, cars } from '../data';
 
-export type sort = {
+export type SortOptions = {
   key: string,
   order: string,
 };
 
-export type filters = {
+export type FilterOptions = {
   type: Array<string>,
   licence: Array<string>,
   official: Array<boolean>,
@@ -32,7 +32,7 @@ export type filters = {
   favouriteTracksOnly: boolean,
 };
 
-export const defaultFilters: filters = {
+export const defaultFilters: FilterOptions = {
   type: ['Road', 'Oval', 'Dirt', 'RX'],
   licence: ['R', 'D', 'C', 'B', 'A', 'P'],
   official: [false, true],
@@ -44,7 +44,19 @@ export const defaultFilters: filters = {
   favouriteCarsOnly: false,
 };
 
-export const defaultSettings = {
+export type SettingOptions = {
+  filters: FilterOptions,
+  ownedCars: Array<number>,
+  ownedTracks: Array<number>,
+  favouriteSeries: Array<number>,
+  favouriteCars: Array<number>,
+  favouriteTracks: Array<number>,
+  sort: SortOptions,
+  columns: Array<number>,
+  firebaseSynced: boolean,
+};
+
+export const defaultSettings: SettingOptions = {
   filters: defaultFilters,
   ownedCars: cars.filter((car) => car.freeWithSubscription === true).map((car) => car.sku),
   ownedTracks: tracks.filter((track) => track.default).map((track) => track.pkgid),
@@ -58,10 +70,18 @@ export const defaultSettings = {
 
 const LEGACY_STORAGE_KEY = 'iracing-state';
 
-const legacyStored = window.localStorage.getItem(LEGACY_STORAGE_KEY);
-const startupSettings = legacyStored ? JSON.parse(legacyStored) : defaultSettings;
+export default function settings(initState: SettingOptions, { type, payload }): SettingOptions {
+  let state = initState;
+  if (initState === undefined) {
+    const legacyStored = window.localStorage.getItem(LEGACY_STORAGE_KEY);
 
-export default function settings(state = startupSettings, { type, payload }) {
+    if (legacyStored) {
+      window.localStorage.removeItem(LEGACY_STORAGE_KEY);
+    }
+
+    state = legacyStored ? JSON.parse(legacyStored) : defaultSettings;
+  }
+
   if (type === localStorageActionTypes.INIT) {
     if (!payload) {
       return state;
@@ -78,8 +98,6 @@ export default function settings(state = startupSettings, { type, payload }) {
       ...persistedStateSettings.ownedTracks,
       ...defaultSettings.ownedTracks,
     ]);
-
-    window.localStorage.removeItem(LEGACY_STORAGE_KEY);
 
     return { ...state, ...persistedStateSettings };
   }

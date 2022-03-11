@@ -64,7 +64,7 @@ export function signedIn(user) {
     await dispatch({ type: SIGNED_IN, user });
 
     if (user) {
-      dispatch(getSettingsFromFirebase());
+      await dispatch(getSettingsFromFirebase());
     }
   };
 }

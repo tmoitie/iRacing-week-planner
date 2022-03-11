@@ -1,0 +1,396 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/modal/SeriesModal renders closed 1`] = `null`;
+
+exports[`components/modal/SeriesModal renders open 1`] = `
+<div
+  className="ReactModal__Overlay"
+  onClick={[Function]}
+  onMouseDown={[Function]}
+  style={
+    Object {
+      "backgroundColor": "rgba(255, 255, 255, 0.75)",
+      "bottom": 0,
+      "left": 0,
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    aria-modal={true}
+    className="ReactModal__Content Modal__Bootstrap modal-dialog modal-lg"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    role="dialog"
+    style={Object {}}
+    tabIndex="-1"
+  >
+    <div
+      className="modal-content"
+    >
+      <div
+        className="modal-header"
+      >
+        <button
+          aria-label="Close"
+          className="close"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="glyphicon glyphicon-remove"
+          />
+        </button>
+        <h4
+          className="modal-title"
+        >
+          Tracks for Fanatec Global Mazda MX-5 Cup
+        </h4>
+      </div>
+      <div
+        className="modal-body"
+        style={
+          Object {
+            "maxHeight": "55vh",
+            "overflowY": "auto",
+          }
+        }
+      >
+        <div
+          className="container-fluid"
+        >
+          <div
+            className="table-responsive"
+          >
+            <table
+              className="table"
+              style={
+                Object {
+                  "fontSize": "0.8em",
+                }
+              }
+            >
+              <thead>
+                <tr>
+                  <th>
+                    Week
+                  </th>
+                  <th>
+                    Track
+                  </th>
+                  <th>
+                    Start
+                  </th>
+                  <th>
+                    End
+                  </th>
+                  <th>
+                    Length
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  style={Object {}}
+                >
+                  <td>
+                    1
+                  </td>
+                  <td
+                    className=""
+                  >
+                    Tsukuba Circuit - 2000 Full
+                  </td>
+                  <td>
+                    2020-09-15
+                  </td>
+                  <td>
+                    2020-09-21
+                  </td>
+                  <td>
+                    <div>
+                      15L
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  style={Object {}}
+                >
+                  <td>
+                    2
+                  </td>
+                  <td
+                    className=""
+                  >
+                    Okayama International Circuit - Full Course
+                  </td>
+                  <td>
+                    2020-09-22
+                  </td>
+                  <td>
+                    2020-09-28
+                  </td>
+                  <td>
+                    <div>
+                      25L
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  style={Object {}}
+                >
+                  <td>
+                    3
+                  </td>
+                  <td
+                    className="success"
+                  >
+                    Lime Rock Park - Grand Prix
+                  </td>
+                  <td>
+                    2020-09-29
+                  </td>
+                  <td>
+                    2020-10-05
+                  </td>
+                  <td>
+                    <div>
+                      15L
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  style={
+                    Object {
+                      "fontWeight": 700,
+                    }
+                  }
+                >
+                  <td>
+                    4
+                  </td>
+                  <td
+                    className="success"
+                  >
+                    Summit Point Raceway - Summit Point Raceway
+                  </td>
+                  <td>
+                    2020-10-06
+                  </td>
+                  <td>
+                    2020-10-12
+                  </td>
+                  <td>
+                    <div>
+                      15L
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  style={Object {}}
+                >
+                  <td>
+                    5
+                  </td>
+                  <td
+                    className=""
+                  >
+                    Oulton Park Circuit - International
+                  </td>
+                  <td>
+                    2020-10-13
+                  </td>
+                  <td>
+                    2020-10-19
+                  </td>
+                  <td>
+                    <div>
+                      15L
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  style={Object {}}
+                >
+                  <td>
+                    6
+                  </td>
+                  <td
+                    className=""
+                  >
+                    Charlotte Motor Speedway - Roval
+                  </td>
+                  <td>
+                    2020-10-20
+                  </td>
+                  <td>
+                    2020-10-26
+                  </td>
+                  <td>
+                    <div>
+                      20L
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  style={Object {}}
+                >
+                  <td>
+                    7
+                  </td>
+                  <td
+                    className=""
+                  >
+                    Oran Park Raceway - Grand Prix
+                  </td>
+                  <td>
+                    2020-10-27
+                  </td>
+                  <td>
+                    2020-11-02
+                  </td>
+                  <td>
+                    <div>
+                      15L
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  style={Object {}}
+                >
+                  <td>
+                    8
+                  </td>
+                  <td
+                    className=""
+                  >
+                    Okayama International Circuit - Short
+                  </td>
+                  <td>
+                    2020-11-03
+                  </td>
+                  <td>
+                    2020-11-09
+                  </td>
+                  <td>
+                    <div>
+                      15L
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  style={Object {}}
+                >
+                  <td>
+                    9
+                  </td>
+                  <td
+                    className="success"
+                  >
+                    Summit Point Raceway - Jefferson Circuit
+                  </td>
+                  <td>
+                    2020-11-10
+                  </td>
+                  <td>
+                    2020-11-16
+                  </td>
+                  <td>
+                    <div>
+                      15L
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  style={Object {}}
+                >
+                  <td>
+                    10
+                  </td>
+                  <td
+                    className=""
+                  >
+                    Oulton Park Circuit - Fosters
+                  </td>
+                  <td>
+                    2020-11-17
+                  </td>
+                  <td>
+                    2020-11-23
+                  </td>
+                  <td>
+                    <div>
+                      25L
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  style={Object {}}
+                >
+                  <td>
+                    11
+                  </td>
+                  <td
+                    className=""
+                  >
+                    Oran Park Raceway - South
+                  </td>
+                  <td>
+                    2020-11-24
+                  </td>
+                  <td>
+                    2020-11-30
+                  </td>
+                  <td>
+                    <div>
+                      20L
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  style={Object {}}
+                >
+                  <td>
+                    12
+                  </td>
+                  <td
+                    className=""
+                  >
+                    WeatherTech Raceway at Laguna Seca - Full Course
+                  </td>
+                  <td>
+                    2020-12-01
+                  </td>
+                  <td>
+                    2020-12-07
+                  </td>
+                  <td>
+                    <div>
+                      15L
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div
+        className="modal-footer"
+      >
+        <button
+          className="btn btn-primary"
+          onClick={[Function]}
+          type="button"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

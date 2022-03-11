@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 
-import type { sort as sortType } from '../reducers/settings';
+import type { SortOptions as sortType } from '../reducers/settings';
 
 import styles from '../styles/main.module.scss';
 

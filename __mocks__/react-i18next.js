@@ -23,12 +23,13 @@ i18n
     },
   });
 
-export function useTranslation() {
-  return {
+export const useTranslation = jest.fn(() => (
+  {
     t: i18n.t.bind(i18n),
     i18n,
-  };
-}
+  }
+));
+
 export const initReactI18next = { type: '3rdParty', init: () => {} };
 export function Trans({ children }: { children: React.Node }) {
   return <>{children}</>;

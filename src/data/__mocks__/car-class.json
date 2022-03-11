@@ -1,0 +1,112 @@
+[
+  {
+    "relspeed": 35,
+    "lowername": "mazda mx-5 cup 2016",
+    "custid": 0,
+    "name": "Mazda MX-5 Cup 2016",
+    "carsinclass": [
+      {
+        "name": "Global Mazda MX-5 Cup",
+        "id": 67
+      }
+    ],
+    "id": 74,
+    "shortname": "MX5 Cup 2016"
+  },
+  {
+    "relspeed": 85,
+    "lowername": "gt1 class",
+    "custid": 0,
+    "name": "GT1 Class",
+    "carsinclass": [
+      {
+        "name": "Chevrolet Corvette C6.R GT1",
+        "id": 26
+      },
+      {
+        "name": "Aston Martin DBR9 GT1",
+        "id": 64
+      }
+    ],
+    "id": 73,
+    "shortname": "GT1 Class"
+  },
+  {
+    "relspeed": 51,
+    "lowername": "ford gt",
+    "custid": 0,
+    "name": "Ford GT",
+    "carsinclass": [
+      {
+        "name": "Ford GT GT2/GT3",
+        "id": 40
+      }
+    ],
+    "id": 41,
+    "shortname": "Ford GT"
+  },
+  {
+    "relspeed": 38,
+    "lowername": "legends",
+    "custid": 0,
+    "name": "Legends",
+    "carsinclass": [
+      {
+        "name": "Legends Ford '34 Coupe",
+        "id": 5
+      }
+    ],
+    "id": 5,
+    "shortname": "Legends"
+  },
+  {
+    "relspeed": 53,
+    "lowername": "k&n series",
+    "custid": 0,
+    "name": "K&N Series",
+    "carsinclass": [
+      {
+        "name": "ARCA Menards Chevrolet Impala",
+        "id": 24
+      }
+    ],
+    "id": 21,
+    "shortname": "K&N Series"
+  },
+  {
+    "relspeed": 30,
+    "lowername": "dirt car",
+    "custid": 0,
+    "name": "Dirt Car",
+    "carsinclass": [
+      {
+        "name": "Dirt Car",
+        "id": 79
+      }
+    ],
+    "id": 86,
+    "shortname": "Dirt Car"
+  },
+  {
+    "relspeed": 45,
+    "lowername": "rallycross",
+    "custid": 0,
+    "name": "Rallycross",
+    "carsinclass": [
+      {
+        "name": "RX 1",
+        "id": 81
+      },
+      {
+        "name": "RX 2",
+        "id": 91
+      },
+      {
+        "name": "RX 3",
+        "id": 101
+      }
+    ],
+    "id": 105,
+    "shortname": "Rallycross"
+  }
+]

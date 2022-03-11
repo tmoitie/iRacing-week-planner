@@ -1,4 +1,4 @@
-import { describe, test, beforeEach, afterEach } from '@jest/globals';
+import { afterEach, beforeEach, describe, test } from '@jest/globals';
 import moment from 'moment';
 import React from 'react';
 import renderer from 'react-test-renderer';

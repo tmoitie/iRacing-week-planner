@@ -1,0 +1,410 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/modal/OptionsModal renders closed 1`] = `null`;
+
+exports[`components/modal/OptionsModal renders with checkbox saving 1`] = `
+<div
+  className="ReactModal__Overlay"
+  onClick={[Function]}
+  onMouseDown={[Function]}
+  style={
+    Object {
+      "backgroundColor": "rgba(255, 255, 255, 0.75)",
+      "bottom": 0,
+      "left": 0,
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    aria-modal={true}
+    className="ReactModal__Content Modal__Bootstrap modal-dialog modal-lg"
+    id="optionsModal"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    role="dialog"
+    style={Object {}}
+    tabIndex="-1"
+  >
+    <div
+      className="modal-content"
+    >
+      <div
+        className="modal-header"
+      >
+        <button
+          aria-label="Close"
+          className="close"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="glyphicon glyphicon-remove"
+          />
+        </button>
+        <h4
+          className="modal-title"
+        >
+          Options
+        </h4>
+      </div>
+      <div
+        className="modal-body"
+        style={
+          Object {
+            "maxHeight": "55vh",
+            "overflowY": "auto",
+          }
+        }
+      >
+        <div
+          className="container-fluid"
+        >
+          <h5>
+            Columns
+          </h5>
+          <div
+            className="row"
+          >
+            <div
+              className="col-xs-3 col-md-2"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="options-columns-id"
+                >
+                  <input
+                    checked={true}
+                    disabled={false}
+                    id="options-columns-id"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  ID
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-xs-3 col-md-2"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="options-columns-class"
+                >
+                  <input
+                    checked={true}
+                    disabled={false}
+                    id="options-columns-class"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  Class
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-xs-3 col-md-2"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="options-columns-licence"
+                >
+                  <input
+                    checked={false}
+                    disabled={false}
+                    id="options-columns-licence"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  Licence
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-xs-3 col-md-2"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="options-columns-type"
+                >
+                  <input
+                    checked={false}
+                    disabled={false}
+                    id="options-columns-type"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  Type
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-xs-3 col-md-2"
+            >
+              <div
+                className="checkbox disabled"
+              >
+                <label
+                  htmlFor="options-columns-series"
+                >
+                  <input
+                    checked={false}
+                    disabled={true}
+                    id="options-columns-series"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  Series
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-xs-3 col-md-2"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="options-columns-track"
+                >
+                  <input
+                    checked={false}
+                    disabled={false}
+                    id="options-columns-track"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  Track
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-xs-3 col-md-2"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="options-columns-car"
+                >
+                  <input
+                    checked={false}
+                    disabled={false}
+                    id="options-columns-car"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  Car
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-xs-3 col-md-2"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="options-columns-start"
+                >
+                  <input
+                    checked={false}
+                    disabled={false}
+                    id="options-columns-start"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  Start
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-xs-3 col-md-2"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="options-columns-end"
+                >
+                  <input
+                    checked={false}
+                    disabled={false}
+                    id="options-columns-end"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  End
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-xs-3 col-md-2"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="options-columns-racelength"
+                >
+                  <input
+                    checked={false}
+                    disabled={false}
+                    id="options-columns-racelength"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  Length
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-xs-3 col-md-2"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="options-columns-official"
+                >
+                  <input
+                    checked={false}
+                    disabled={false}
+                    id="options-columns-official"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  Official
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-xs-3 col-md-2"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="options-columns-fixed"
+                >
+                  <input
+                    checked={false}
+                    disabled={false}
+                    id="options-columns-fixed"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  Fixed
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-xs-3 col-md-2"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="options-columns-raceTimes"
+                >
+                  <input
+                    checked={false}
+                    disabled={false}
+                    id="options-columns-raceTimes"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  Race times
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-xs-3 col-md-2"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="options-columns-nextRace"
+                >
+                  <input
+                    checked={false}
+                    disabled={false}
+                    id="options-columns-nextRace"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  Next race
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-xs-3 col-md-2"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="options-columns-seriesEnd"
+                >
+                  <input
+                    checked={false}
+                    disabled={false}
+                    id="options-columns-seriesEnd"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  Season end
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-xs-3 col-md-2"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="options-columns-seriesLink"
+                >
+                  <input
+                    checked={false}
+                    disabled={false}
+                    id="options-columns-seriesLink"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  Link
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="modal-footer"
+      >
+        <button
+          className="btn btn-primary"
+          onClick={[Function]}
+          type="button"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

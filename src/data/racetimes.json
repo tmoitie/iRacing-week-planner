@@ -36,6 +36,15 @@
     }
   },
   {
+    "seriesId": 494,
+    "everytime": {
+      "minutes": 60
+    },
+    "offset": {
+      "minutes": 30
+    }
+  },
+  {
     "seriesId": 449,
     "everytime": {
       "minutes": 30
@@ -50,7 +59,7 @@
       "minutes": 60
     },
     "offset": {
-      "minutes": 660
+      "minutes": 4980
     }
   },
   {
@@ -108,6 +117,33 @@
     }
   },
   {
+    "seriesId": 435,
+    "everytime": {
+      "minutes": 30
+    },
+    "offset": {
+      "minutes": 0
+    }
+  },
+  {
+    "seriesId": 415,
+    "everytime": {
+      "minutes": 30
+    },
+    "offset": {
+      "minutes": 0
+    }
+  },
+  {
+    "seriesId": 421,
+    "everytime": {
+      "minutes": 30
+    },
+    "offset": {
+      "minutes": 15
+    }
+  },
+  {
     "seriesId": 134,
     "everytime": {
       "minutes": 30
@@ -135,6 +171,15 @@
     }
   },
   {
+    "seriesId": 436,
+    "everytime": {
+      "minutes": 30
+    },
+    "offset": {
+      "minutes": 15
+    }
+  },
+  {
     "seriesId": 437,
     "setTimes": [
       {
@@ -148,7 +193,7 @@
       "minutes": 60
     },
     "offset": {
-      "minutes": 645
+      "minutes": 4965
     }
   },
   {
@@ -157,7 +202,7 @@
       "minutes": 60
     },
     "offset": {
-      "minutes": 660
+      "minutes": 4980
     }
   },
   {
@@ -249,7 +294,7 @@
       "minutes": 60
     },
     "offset": {
-      "minutes": 690
+      "minutes": 4950
     }
   },
   {
@@ -258,7 +303,7 @@
       "minutes": 60
     },
     "offset": {
-      "minutes": 660
+      "minutes": 4980
     }
   }
 ]

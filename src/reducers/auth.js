@@ -1,4 +1,7 @@
+// @flow
+
 import { initializeApp } from 'firebase/app';
+import type { FirebaseApp } from 'firebase/app';
 
 import {
   LOADING_AUTH, SIGNED_OUT, SIGNED_IN, LOADING_RESET, RESET_SENT, ERROR_AUTH, ERROR_ACKNOWLEDGE, ERROR_RESET,
@@ -7,8 +10,27 @@ import { firebaseConfig } from '../config';
 
 const firebaseApp = initializeApp(firebaseConfig);
 
-export default function auth(
-  state = {
+type AuthUser = {
+
+};
+
+type AuthState = {
+  user: AuthUser,
+  firebaseApp: FirebaseApp,
+  loadingAuth: boolean,
+  loadingReset: boolean,
+  errorAuth: { message: string } | null,
+  errorReset: { message: string } | null,
+};
+
+type AuthReducerArgs = {
+  type: string,
+  user?: AuthUser,
+  error?: { message: string },
+};
+
+export default function authReducer(
+  state: AuthState = {
     user: null,
     firebaseApp,
     loadingAuth: true,
@@ -16,8 +38,8 @@ export default function auth(
     errorAuth: null,
     errorReset: null,
   },
-  { type, user, error },
-) {
+  { type, user, error }: AuthReducerArgs,
+): AuthState {
   if (type === SIGNED_OUT) {
     return { ...state, user: null };
   }

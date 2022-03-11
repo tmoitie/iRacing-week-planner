@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/modal/FavouriteSeriesModal renders closed 1`] = `null`;
+
+exports[`components/modal/FavouriteSeriesModal renders with checkbox saving 1`] = `
+<div
+  className="ReactModal__Overlay"
+  onClick={[Function]}
+  onMouseDown={[Function]}
+  style={
+    Object {
+      "backgroundColor": "rgba(255, 255, 255, 0.75)",
+      "bottom": 0,
+      "left": 0,
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    aria-modal={true}
+    className="ReactModal__Content Modal__Bootstrap modal-dialog modal-lg"
+    id="favouriteSeriesModal"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    role="dialog"
+    style={Object {}}
+    tabIndex="-1"
+  >
+    <div
+      className="modal-content"
+    >
+      <div
+        className="modal-header"
+      >
+        <button
+          aria-label="Close"
+          className="close"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="glyphicon glyphicon-remove"
+          />
+        </button>
+        <h4
+          className="modal-title"
+        >
+          Choose favorite series
+        </h4>
+      </div>
+      <div
+        className="modal-body"
+        style={
+          Object {
+            "maxHeight": "55vh",
+            "overflowY": "auto",
+          }
+        }
+      >
+        <div
+          className="container-fluid"
+        >
+          <h3>
+            Oval
+          </h3>
+          <div
+            className="row"
+          >
+            <div
+              className="col-md-6"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="favourite-series-32"
+                >
+                  <input
+                    checked={false}
+                    disabled={false}
+                    id="favourite-series-32"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  iRacing Advanced Legends Cup
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-md-6"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="favourite-series-167"
+                >
+                  <input
+                    checked={false}
+                    disabled={false}
+                    id="favourite-series-167"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  iRacing ARCA Menards Series
+                </label>
+              </div>
+            </div>
+          </div>
+          <h3>
+            Road
+          </h3>
+          <div
+            className="row"
+          >
+            <div
+              className="col-md-6"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="favourite-series-139"
+                >
+                  <input
+                    checked={true}
+                    disabled={false}
+                    id="favourite-series-139"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  Fanatec Global Mazda MX-5 Cup
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-md-6"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="favourite-series-432"
+                >
+                  <input
+                    checked={false}
+                    disabled={false}
+                    id="favourite-series-432"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  Fanatec GT Challenge
+                </label>
+              </div>
+            </div>
+          </div>
+          <h3>
+            Dirt Oval
+          </h3>
+          <div
+            className="row"
+          >
+            <div
+              className="col-md-6"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="favourite-series-341"
+                >
+                  <input
+                    checked={false}
+                    disabled={false}
+                    id="favourite-series-341"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  Example Dirt Oval
+                </label>
+              </div>
+            </div>
+          </div>
+          <h3>
+            RX
+          </h3>
+          <div
+            className="row"
+          >
+            <div
+              className="col-md-6"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
+                  htmlFor="favourite-series-323"
+                >
+                  <input
+                    checked={false}
+                    disabled={false}
+                    id="favourite-series-323"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  Example Rallycross
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="modal-footer"
+      >
+        <button
+          className="btn btn-primary"
+          onClick={[Function]}
+          type="button"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

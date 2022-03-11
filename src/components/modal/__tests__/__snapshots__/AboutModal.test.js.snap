@@ -1,0 +1,769 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/modal/AboutModal renders closed 1`] = `null`;
+
+exports[`components/modal/AboutModal renders open 1`] = `
+<div
+  className="ReactModal__Overlay"
+  onClick={[Function]}
+  onMouseDown={[Function]}
+  style={
+    Object {
+      "backgroundColor": "rgba(255, 255, 255, 0.75)",
+      "bottom": 0,
+      "left": 0,
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    aria-modal={true}
+    className="ReactModal__Content Modal__Bootstrap modal-dialog modal-lg"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    role="dialog"
+    style={Object {}}
+    tabIndex="-1"
+  >
+    <div
+      className="modal-content"
+    >
+      <div
+        className="modal-header"
+      >
+        <button
+          aria-label="Close"
+          className="close"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="glyphicon glyphicon-remove"
+          />
+        </button>
+        <h4
+          className="modal-title"
+        >
+          About
+        </h4>
+      </div>
+      <div
+        className="modal-body"
+        style={
+          Object {
+            "maxHeight": "55vh",
+            "overflowY": "auto",
+          }
+        }
+      >
+        <div
+          className="container-fluid"
+        >
+          <p>
+            This tool was created by
+             
+            <a
+              href="https://twitter.com/tmoitie"
+              rel="noreferrer"
+              target="_blank"
+            >
+              tmoitie
+            </a>
+             
+            (
+            <a
+              href="http://members.iracing.com/membersite/member/CareerStats.do?custid=69636"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Tom Moitié
+            </a>
+             
+            on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on
+             
+            <a
+              href="https://github.com/tmoitie/iRacing-week-planner"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Github
+            </a>
+            . Thanks!
+          </p>
+          <p>
+            This is now costing me a few quid a month to run, so if you like using this tool, please feel free to
+             
+            <a
+              href="https://www.buymeacoffee.com/tmoitie"
+              rel="noreferrer"
+              target="_blank"
+            >
+              buy me a coffee
+            </a>
+            .
+          </p>
+          <p>
+            <button
+              className="bmcButton"
+              onClick={[Function]}
+              onKeyPress={[Function]}
+              type="button"
+            >
+              <img
+                alt="Buy me a coffee"
+                src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
+              />
+              <span
+                style={
+                  Object {
+                    "marginLeft": "5px",
+                  }
+                }
+              >
+                Buy me a coffee
+              </span>
+            </button>
+          </p>
+          <h3>
+            Contributors
+          </h3>
+          <ul
+            className="row"
+          >
+            <li
+              className="col-md-3 col-sm-4 col-xs-6"
+            >
+              <a
+                href="https://github.com/tmoitie"
+                rel="noreferrer"
+                target="_blank"
+              >
+                tmoitie
+              </a>
+            </li>
+            <li
+              className="col-md-3 col-sm-4 col-xs-6"
+            >
+              <a
+                href="https://github.com/flomarin88"
+                rel="noreferrer"
+                target="_blank"
+              >
+                flomarin88
+              </a>
+            </li>
+          </ul>
+          <h3>
+            Changelog
+          </h3>
+          <div>
+            <h4>
+              2022 March 08
+            </h4>
+            <ul>
+              <li>
+                Update to 2022S1W13
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2021 December 13
+            </h4>
+            <ul>
+              <li>
+                Updated to 2022S1
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2021 December 08
+            </h4>
+            <ul>
+              <li>
+                Updated to 2021S4W13
+              </li>
+              <li>
+                Fix purchase guide links
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2021 September 14
+            </h4>
+            <ul>
+              <li>
+                Updated to 2021S4
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2021 September 09
+            </h4>
+            <ul>
+              <li>
+                Updated to 2021S3W13
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2021 June 15
+            </h4>
+            <ul>
+              <li>
+                Updated to 2021S3
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2021 March 16
+            </h4>
+            <ul>
+              <li>
+                Updated to 2021S2
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2020 December 15
+            </h4>
+            <ul>
+              <li>
+                Updated to 2021S1
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2020 September 15
+            </h4>
+            <ul>
+              <li>
+                Updated to 2020S4
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2020 August 24
+            </h4>
+            <ul>
+              <li>
+                Added login!
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2020 June 09
+            </h4>
+            <ul>
+              <li>
+                Updated to 2020S3
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2020 June 04
+            </h4>
+            <ul>
+              <li>
+                Add Spanish translation, (thanks Sergi @sergidome!)
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2020 June 02
+            </h4>
+            <ul>
+              <li>
+                Updated to 2020S2 W13
+              </li>
+              <li>
+                Add translation capability
+              </li>
+              <li>
+                Add purchase guide, (thanks Florian Marin)
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2020 March 10
+            </h4>
+            <ul>
+              <li>
+                Updated to 2020S2
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2019 March 12
+            </h4>
+            <ul>
+              <li>
+                Updated to 2019S2
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2018 December 27
+            </h4>
+            <ul>
+              <li>
+                Added races times for Dallara F3
+              </li>
+              <li>
+                Added races times for Formula Renault 3.5
+              </li>
+              <li>
+                Added races times for Ferrari GT3 Challenge
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2018 December 11
+            </h4>
+            <ul>
+              <li>
+                Update to 2019S1
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2018 September 11
+            </h4>
+            <ul>
+              <li>
+                Update to S4
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2018 June 06
+            </h4>
+            <ul>
+              <li>
+                Add W13
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2018 March 07
+            </h4>
+            <ul>
+              <li>
+                Add W13 and update WC
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2018 January 10
+            </h4>
+            <ul>
+              <li>
+                Added ROAR before the 24
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2017 December 12
+            </h4>
+            <ul>
+              <li>
+                Updated to new season
+              </li>
+              <li>
+                Added RX Category
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2017 September 12
+            </h4>
+            <ul>
+              <li>
+                Updated to new season
+              </li>
+              <li>
+                Added car view modal
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2017 September 06
+            </h4>
+            <ul>
+              <li>
+                Updated to S2 Week 13
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2017 April 29
+            </h4>
+            <ul>
+              <li>
+                Add new Dirt Series
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2017 April 01
+            </h4>
+            <ul>
+              <li>
+                Add Dirt times and fix Endurance times
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2017 March 29
+            </h4>
+            <ul>
+              <li>
+                Add Dirt content and Dirt type
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2017 March 14
+            </h4>
+            <ul>
+              <li>
+                Added 2017 S2. Will update race times soon
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2017 March 07
+            </h4>
+            <ul>
+              <li>
+                Added Week 13.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2017 February 08
+            </h4>
+            <ul>
+              <li>
+                Added Porsche cup
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2016 December 13
+            </h4>
+            <ul>
+              <li>
+                Added 2017 S1
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2016 December 06
+            </h4>
+            <ul>
+              <li>
+                Added Week 13
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2016 September 20
+            </h4>
+            <ul>
+              <li>
+                Add some extra transient series
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2016 September 13
+            </h4>
+            <ul>
+              <li>
+                Update to S4
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2016 September 08
+            </h4>
+            <ul>
+              <li>
+                Add W13 Le Mans Series
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2016 September 06
+            </h4>
+            <ul>
+              <li>
+                Add Le Mans and new W13 series
+              </li>
+              <li>
+                Update season listing
+              </li>
+              <li>
+                Fix NASCAR Peak timings
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2016 September 03
+            </h4>
+            <ul>
+              <li>
+                Add week 13
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2016 July 31
+            </h4>
+            <ul>
+              <li>
+                Fixed some issues with race timing
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2016 June 07
+            </h4>
+            <ul>
+              <li>
+                Add week 13
+              </li>
+              <li>
+                Fixed issue with date.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2016 June 01
+            </h4>
+            <ul>
+              <li>
+                Added contributors list
+              </li>
+              <li>
+                Fixed various issues and cleaned up code.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2016 May 23
+            </h4>
+            <ul>
+              <li>
+                Added season link
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2016 May 17
+            </h4>
+            <ul>
+              <li>
+                Fixed week number accuracy
+              </li>
+              <li>
+                Added Indy 500 + VLN series
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2016 May 02
+            </h4>
+            <ul>
+              <li>
+                Added week number to top of UI
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2016 March 14
+            </h4>
+            <ul>
+              <li>
+                Add 2015 Season 2 data. Happy racing!
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2016 March 08
+            </h4>
+            <ul>
+              <li>
+                Add Week 13 series and 12 hours of Sebring.
+              </li>
+              <li>
+                Fix 'Set my content' repeated.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2016 February 22
+            </h4>
+            <ul>
+              <li>
+                Add NIS, new Class-A/B series and the Pro series, and track 'off weeks' so the schedule works.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2016 February 09
+            </h4>
+            <ul>
+              <li>
+                Change changelog to about and add contact info.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2015 December 30
+            </h4>
+            <ul>
+              <li>
+                Add mode so you can completely ignore one aspect of iRacing (oval/road)
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2015 December 20
+            </h4>
+            <ul>
+              <li>
+                Add sortable columns
+              </li>
+              <li>
+                Add race times column
+              </li>
+              <li>
+                Add next race time column
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2015 December 19
+            </h4>
+            <ul>
+              <li>
+                Make columns selectable
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2015 December 17
+            </h4>
+            <ul>
+              <li>
+                Remove P Class series as they have irregular schedules that aren't displaying right.
+              </li>
+              <li>
+                Added this changelog!
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2015 December 16
+            </h4>
+            <ul>
+              <li>
+                Add ability to 'favorite' content with the star icon.
+              </li>
+              <li>
+                Fix bug with disabled default content.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              2015 December 15
+            </h4>
+            <ul>
+              <li>
+                Add "Select All Oval/Road" to content choosers.
+              </li>
+              <li>
+                Made free content un-unselectable.
+              </li>
+              <li>
+                Made series clickable with popup showing all race weeks.
+              </li>
+              <li>
+                Add licence class column to table.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        className="modal-footer"
+      >
+        <button
+          className="btn btn-primary"
+          onClick={[Function]}
+          type="button"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

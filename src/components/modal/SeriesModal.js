@@ -11,8 +11,6 @@ import allRaces from '../../lib/races';
 
 import styles from '../../styles/main.module.scss';
 
-const now = moment().utc();
-
 type Props = {
   onClose: () => void,
   isOpen: boolean,
@@ -23,6 +21,8 @@ type Props = {
 export default function SeriesModal({ onClose, ownedTracks, isOpen, seriesId }: Props) {
   const races = allRaces.filter((race) => race.seriesId === seriesId);
   const { t } = useTranslation();
+
+  const now = moment().utc();
 
   return (
     <Modal

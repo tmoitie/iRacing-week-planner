@@ -34,6 +34,7 @@ exports[`components/modal/CarModal renders correctly 1`] = `
         className="modal-header"
       >
         <button
+          aria-label="Close"
           className="close"
           onClick={[Function]}
           type="button"

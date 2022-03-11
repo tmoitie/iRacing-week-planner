@@ -35,11 +35,11 @@
     <!-- End Google Tag Manager -->
     <div id='root' class='padbox'></div>
     <noscript>Sorry, looks like you don't have JavaScript turned on. We kinda need it!</noscript>
-    
+
     <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
       <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
       <% } %>
-      
+
       <% if (htmlWebpackPlugin.options.devServer) { %>
       <script src="<%= htmlWebpackPlugin.options.devServer%>/webpack-dev-server.js"></script>
     <% } %>

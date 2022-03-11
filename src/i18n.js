@@ -51,7 +51,7 @@ const languages = {
     flag: '🇧🇷',
     name: 'Português (BR)',
   },
-  'tr': {
+  tr: {
     flag: '🇹🇷',
     name: 'Türkçe (TR)',
   },
@@ -72,6 +72,7 @@ const resources = {
   tr,
 };
 
+/* istanbul ignore next */
 if (process.env.NODE_ENV === 'development') {
   languages.test = { flag: '👀', name: 'Test' };
   // eslint-disable-next-line global-require

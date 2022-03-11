@@ -1,0 +1,308 @@
+[
+  {
+    "id": 324,
+    "name": "Tsukuba Circuit",
+    "hasOval": false,
+    "hasRoad": true,
+    "primaryType": "road",
+    "default": true,
+    "pkgid": 267
+  },
+  {
+    "id": 166,
+    "name": "Okayama International Circuit",
+    "hasOval": false,
+    "hasRoad": true,
+    "primaryType": "road",
+    "default": true,
+    "pkgid": 109
+  },
+  {
+    "id": 353,
+    "name": "Lime Rock Park",
+    "hasOval": false,
+    "hasRoad": true,
+    "primaryType": "road",
+    "default": true,
+    "pkgid": 304
+  },
+  {
+    "id": 9,
+    "name": "Summit Point Raceway",
+    "hasOval": false,
+    "hasRoad": true,
+    "primaryType": "road",
+    "default": true,
+    "pkgid": 13
+  },
+  {
+    "id": 180,
+    "name": "Oulton Park Circuit",
+    "hasOval": false,
+    "hasRoad": true,
+    "primaryType": "road",
+    "default": true,
+    "pkgid": 117
+  },
+  {
+    "id": 350,
+    "name": "Charlotte Motor Speedway",
+    "hasOval": true,
+    "hasRoad": true,
+    "primaryType": "road",
+    "default": true,
+    "pkgid": 268
+  },
+  {
+    "id": 202,
+    "name": "Oran Park Raceway",
+    "hasOval": false,
+    "hasRoad": true,
+    "primaryType": "road",
+    "default": true,
+    "pkgid": 126
+  },
+  {
+    "id": 47,
+    "name": "WeatherTech Raceway at Laguna Seca",
+    "hasOval": false,
+    "hasRoad": true,
+    "primaryType": "road",
+    "default": true,
+    "pkgid": 34
+  },
+  {
+    "id": 218,
+    "name": "Circuit Gilles Villeneuve",
+    "hasOval": false,
+    "hasRoad": true,
+    "primaryType": "road",
+    "default": false,
+    "pkgid": 145
+  },
+  {
+    "id": 263,
+    "name": "Nürburgring Combined",
+    "hasOval": false,
+    "hasRoad": true,
+    "primaryType": "road",
+    "default": false,
+    "pkgid": 186
+  },
+  {
+    "id": 178,
+    "name": "Indianapolis Motor Speedway",
+    "hasOval": true,
+    "hasRoad": true,
+    "primaryType": "oval",
+    "default": false,
+    "pkgid": 73
+  },
+  {
+    "id": 121,
+    "name": "[Legacy] Texas Motor Speedway - 2009",
+    "hasOval": true,
+    "hasRoad": true,
+    "primaryType": "oval",
+    "default": false,
+    "pkgid": 61
+  },
+  {
+    "id": 168,
+    "name": "Suzuka International Racing Course",
+    "hasOval": false,
+    "hasRoad": true,
+    "primaryType": "road",
+    "default": false,
+    "pkgid": 114
+  },
+  {
+    "id": 165,
+    "name": "Circuit de Spa-Francorchamps",
+    "hasOval": false,
+    "hasRoad": true,
+    "primaryType": "road",
+    "default": false,
+    "pkgid": 103
+  },
+  {
+    "id": 152,
+    "name": "Phillip Island Circuit",
+    "hasOval": false,
+    "hasRoad": true,
+    "primaryType": "road",
+    "default": false,
+    "pkgid": 93
+  },
+  {
+    "id": 191,
+    "name": "Daytona International Speedway",
+    "hasOval": true,
+    "hasRoad": true,
+    "primaryType": "oval",
+    "default": false,
+    "pkgid": 120
+  },
+  {
+    "id": 239,
+    "name": "Autodromo Nazionale Monza",
+    "hasOval": true,
+    "hasRoad": true,
+    "primaryType": "road",
+    "default": false,
+    "pkgid": 172
+  },
+  {
+    "id": 12,
+    "name": "Oxford Plains Speedway",
+    "hasOval": true,
+    "hasRoad": false,
+    "primaryType": "oval",
+    "default": true,
+    "pkgid": 10
+  },
+  {
+    "id": 16,
+    "name": "USA International Speedway",
+    "hasOval": true,
+    "hasRoad": false,
+    "primaryType": "oval",
+    "default": true,
+    "pkgid": 7
+  },
+  {
+    "id": 14,
+    "name": "South Boston Speedway",
+    "hasOval": true,
+    "hasRoad": false,
+    "primaryType": "oval",
+    "default": true,
+    "pkgid": 19
+  },
+  {
+    "id": 256,
+    "name": "Southern National Motorsports Park",
+    "hasOval": true,
+    "hasRoad": false,
+    "primaryType": "oval",
+    "default": true,
+    "pkgid": 194
+  },
+  {
+    "id": 17,
+    "name": "Lanier National Speedway",
+    "hasOval": true,
+    "hasRoad": false,
+    "primaryType": "oval",
+    "default": true,
+    "pkgid": 8
+  },
+  {
+    "id": 161,
+    "name": "Thompson Speedway Motorsports Park",
+    "hasOval": true,
+    "hasRoad": false,
+    "primaryType": "oval",
+    "default": true,
+    "pkgid": 97
+  },
+  {
+    "id": 201,
+    "name": "Langley Speedway",
+    "hasOval": true,
+    "hasRoad": false,
+    "primaryType": "oval",
+    "default": true,
+    "pkgid": 125
+  },
+  {
+    "id": 115,
+    "name": "Darlington Raceway",
+    "hasOval": true,
+    "hasRoad": false,
+    "primaryType": "oval",
+    "default": false,
+    "pkgid": 59
+  },
+  {
+    "id": 101,
+    "name": "Bristol MotorSpeedway",
+    "hasOval": true,
+    "hasRoad": false,
+    "primaryType": "oval",
+    "default": false,
+    "pkgid": 43
+  },
+  {
+    "id": 374,
+    "name": "Nashville Fairgrounds Speedway",
+    "hasOval": true,
+    "hasRoad": false,
+    "primaryType": "oval",
+    "default": false,
+    "pkgid": 331
+  },
+  {
+    "id": 188,
+    "name": "[Legacy] Kentucky Speedway - 2011",
+    "hasOval": true,
+    "hasRoad": false,
+    "primaryType": "oval",
+    "default": false,
+    "pkgid": 118
+  },
+  {
+    "id": 248,
+    "name": "Five Flags Speedway",
+    "hasOval": true,
+    "hasRoad": false,
+    "primaryType": "oval",
+    "default": false,
+    "pkgid": 180
+  },
+  {
+    "id": 357,
+    "name": "Texas Motor Speedway",
+    "hasOval": true,
+    "hasRoad": false,
+    "primaryType": "oval",
+    "default": false,
+    "pkgid": 310
+  },
+  {
+    "id": 33,
+    "name": "Martinsville Speedway",
+    "hasOval": true,
+    "hasRoad": false,
+    "primaryType": "oval",
+    "default": false,
+    "pkgid": 26
+  },
+  {
+    "id": 104,
+    "name": "[Legacy] Phoenix Raceway - 2008",
+    "hasOval": true,
+    "hasRoad": true,
+    "primaryType": "oval",
+    "default": true,
+    "pkgid": 55
+  },
+  {
+    "id": 169,
+    "name": "Iowa Speedway",
+    "hasOval": true,
+    "hasRoad": true,
+    "primaryType": "oval",
+    "default": false,
+    "pkgid": 115
+  },
+  {
+    "id": 124,
+    "name": "[Legacy] Michigan International Speedway - 2009",
+    "hasOval": true,
+    "hasRoad": false,
+    "primaryType": "oval",
+    "default": false,
+    "pkgid": 66
+  }
+]

@@ -1,12 +1,10 @@
-export function getAuth() {
-  return {};
-}
+export const getAuth = jest.fn(() => ({}));
 
-export async function signOut() { }
+export const signOut = jest.fn(async () => {});
 
-export async function signInWithEmailAndPassword() { }
+export const signInWithEmailAndPassword = jest.fn(async () => {});
 
-export async function createUserWithEmailAndPassword() { }
+export const createUserWithEmailAndPassword = jest.fn(async () => {});
 
 const authStateListeners = [];
 
@@ -14,10 +12,8 @@ export function onAuthStateChanged(auth, listener) {
   authStateListeners.push(listener);
 }
 
-export function testDispatchOnAuthStateChanged(user) {
-  authStateListeners.forEach((listener) => {
-    listener(user);
-  });
+export async function testDispatchOnAuthStateChanged(user) {
+  await Promise.all(authStateListeners.map((listener) => listener(user)));
 }
 
-export async function sendPasswordResetEmail() { }
+export const sendPasswordResetEmail = jest.fn(async () => {});

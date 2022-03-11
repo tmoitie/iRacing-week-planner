@@ -13,11 +13,10 @@ const loadingSelector = (state) => state.auth.loadingAuth;
 
 type Props = {
   isOpen?: boolean,
-  onClose?: () => void,
+  onClose: () => void,
 };
 
 const defaultProps = {
-  onClose: () => {},
   isOpen: false,
 };
 
@@ -107,7 +106,11 @@ export default function LoginModal({ isOpen, onClose }: Props) {
               />
             </div>
             <div className={styles['form-group']}>
-              <a href="" onClick={(e) => { e.preventDefault(); setFPModalOpen(true); }}>
+              <a
+                id="buttonOpenForgottenPassword"
+                href=""
+                onClick={(e) => { e.preventDefault(); setFPModalOpen(true); }}
+              >
                 {t('Forgotten password?')}
               </a>
             </div>
@@ -116,6 +119,7 @@ export default function LoginModal({ isOpen, onClose }: Props) {
             <button
               type="button"
               className={styles.btn}
+              id="createAccountButton"
               onClick={(e) => {
                 e.preventDefault();
                 createAccountClick();

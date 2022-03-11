@@ -387,5 +387,201 @@
       }
     ],
     "seasonid": 2923
+  },
+  {
+    "seriesid": 341,
+    "seriesname": "Example Dirt Oval",
+    "start": 1600128000000,
+    "end": 1607385600000,
+    "tracks": [
+      {
+        "raceweek": 0,
+        "config": "",
+        "name": "Track 8 - Dirt",
+        "pkgid": 8
+      },
+      {
+        "raceweek": 1,
+        "config": "Dirt",
+        "name": "Track 8 - Dirt",
+        "pkgid": 8
+      },
+      {
+        "raceweek": 2,
+        "config": "Dirt",
+        "name": "Track 8 - Dirt",
+        "pkgid": 8
+      },
+      {
+        "raceweek": 3,
+        "config": "Dirt",
+        "name": "Track 8 - Dirt",
+        "pkgid": 8
+      },
+      {
+        "raceweek": 4,
+        "config": "",
+        "name": "Track 8 - Dirt",
+        "pkgid": 8
+      },
+      {
+        "raceweek": 5,
+        "config": "Dirt",
+        "name": "Track 8 - Dirt",
+        "pkgid": 8
+      },
+      {
+        "raceweek": 6,
+        "config": "Dirt",
+        "name": "Track 7 - Dirt",
+        "pkgid": 7
+      },
+      {
+        "raceweek": 7,
+        "config": "Dirt",
+        "name": "Track 8 - Dirt",
+        "pkgid": 8
+      },
+      {
+        "raceweek": 8,
+        "config": "",
+        "name": "Track 43 - Dirt",
+        "pkgid": 43
+      },
+      {
+        "raceweek": 9,
+        "config": "Dirt",
+        "name": "Track 43 - Dirt",
+        "pkgid": 43
+      },
+      {
+        "raceweek": 10,
+        "config": "Dirt",
+        "name": "Track 43 - Dirt",
+        "pkgid": 43
+      },
+      {
+        "raceweek": 11,
+        "config": "Dirt",
+        "name": "Track 43 - Dirt",
+        "pkgid": 43
+      }
+    ],
+    "catid": 3,
+    "isOfficial": true,
+    "minlicenselevel": 1,
+    "isFixedSetup": true,
+    "carclasses": [
+      {
+        "shortname": "Dirt StreetStock"
+      }
+    ],
+    "cars": [
+      {
+        "sku": 10417
+      }
+    ],
+    "seasonid": 3698
+  },
+  {
+    "seriesid": 323,
+    "seriesname": "Example Rallycross",
+    "start": 1600128000000,
+    "end": 1607385600000,
+    "tracks": [
+      {
+        "raceweek": 0,
+        "config": "Rallycross",
+        "name": "Track 120",
+        "pkgid": 120
+      },
+      {
+        "raceweek": 1,
+        "config": "Rallycross",
+        "name": "Track 120",
+        "pkgid": 120
+      },
+      {
+        "raceweek": 2,
+        "config": "Rallycross",
+        "name": "Track 268",
+        "pkgid": 268
+      },
+      {
+        "raceweek": 3,
+        "config": "Rallycross",
+        "name": "Track 268",
+        "pkgid": 268
+      },
+      {
+        "raceweek": 4,
+        "config": "Rallycross",
+        "name": "Track 268",
+        "pkgid": 268
+      },
+      {
+        "raceweek": 5,
+        "config": "Rallycross",
+        "name": "Track 120",
+        "pkgid": 120
+      },
+      {
+        "raceweek": 6,
+        "config": "Rallycross",
+        "name": "Track 120",
+        "pkgid": 120
+      },
+      {
+        "raceweek": 7,
+        "config": "Rallycross",
+        "name": "Track 268",
+        "pkgid": 268
+      },
+      {
+        "raceweek": 8,
+        "config": "Rallycross",
+        "name": "Track 268",
+        "pkgid": 268
+      },
+      {
+        "raceweek": 9,
+        "config": "Rallycross",
+        "name": "Track 268",
+        "pkgid": 268
+      },
+      {
+        "raceweek": 10,
+        "config": "Rallycross",
+        "name": "Track 120",
+        "pkgid": 120
+      },
+      {
+        "raceweek": 11,
+        "config": "Rallycross",
+        "name": "Track 120",
+        "pkgid": 120
+      }
+    ],
+    "catid": 4,
+    "isOfficial": true,
+    "minlicenselevel": 1,
+    "isFixedSetup": false,
+    "carclasses": [
+      {
+        "shortname": "Rallycross"
+      }
+    ],
+    "cars": [
+      {
+        "sku": 10419
+      },
+      {
+        "sku": 10428
+      },
+      {
+        "sku": 10444
+      }
+    ],
+    "seasonid": 3700
   }
 ]

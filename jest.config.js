@@ -8,6 +8,11 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.js',
     '!src/**/*.{css,scss,test.js}',
+    '!src/entry.js',
+    '!src/i18n.js',
+    '!src/store.js',
+    '!src/index.js',
+    '!src/config.js',
   ],
   coverageDirectory: 'coverage',
   // coverageProvider: "babel",
@@ -67,9 +72,7 @@ module.exports = {
   //   "**/__tests__/**/*.[jt]s?(x)",
   //   "**/?(*.)+(spec|test).[tj]s?(x)"
   // ],
-  // testPathIgnorePatterns: [
-  //   "/node_modules/"
-  // ],
+  testPathIgnorePatterns: [],
   // testRegex: [],
   // testResultsProcessor: undefined,
   // testRunner: "jasmine2",

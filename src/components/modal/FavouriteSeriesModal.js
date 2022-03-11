@@ -46,16 +46,14 @@ const groupedSeries = series.reduce((grouped, single) => {
 }, { oval: [], road: [], dirtOval: [], rx: [] });
 
 type Props = {
-  onClose?: () => void,
+  onClose: () => void,
   isOpen?: boolean,
   favouriteSeries?: Array<number>,
-  save?: (Array<number>) => void,
+  save: (Array<number>) => void,
 };
 
 const defaultProps = {
-  onClose: () => {},
   isOpen: false,
-  save: () => {},
   favouriteSeries: [],
 };
 
@@ -90,7 +88,13 @@ export default function FavouriteSeriesModal({ onClose, isOpen, favouriteSeries,
   );
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose} title={t('Choose favorite series')} doneAction={onClose}>
+    <Modal
+      id="favouriteSeriesModal"
+      isOpen={isOpen}
+      onClose={onClose}
+      title={t('Choose favorite series')}
+      doneAction={onClose}
+    >
       <div className={styles['container-fluid']}>
         <h3>{t('Oval')}</h3>
         <div className={styles.row}>
