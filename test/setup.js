@@ -13,6 +13,7 @@ import '../src/data/cars.json';
 import '../src/data/car-class.json';
 import '../src/data/tracks.json';
 import '../src/data/contributors.json';
+import '../src/data/changelog';
 import '../src/config';
 
 const { JSDOM } = jsdom;
@@ -29,6 +30,7 @@ jest.mock('../src/data/cars.json');
 jest.mock('../src/data/car-class.json');
 jest.mock('../src/data/tracks.json');
 jest.mock('../src/data/contributors.json');
+jest.mock('../src/data/changelog');
 jest.mock('../src/config');
 
 const oldWindowLocation = window.location;
