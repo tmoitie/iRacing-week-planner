@@ -151,4 +151,29 @@ export default {
       1.1, 1.1, 2.1, 2.1, 3.1, 3.1, 4.1, 5.1, 8.1, 8.1, 9.1, 13.1, 14.1,
     ],
   },
+  // iRacing Grand Prix Tour 495
+  3691: {
+    offWeeks: [
+      2.1, 3.1, 4.1, 5.1, 7.1, 9.1, 11.1, 13.1, 13.2, 13.3, 16.1, 19.1, 21.1,
+    ],
+  },
+  // iRacing Grand Prix Tour - Fixed 496
+  3692: {
+    offWeeks: [
+      2.1, 3.1, 4.1, 5.1, 7.1, 9.1, 11.1, 13.1, 13.2, 13.3, 16.1, 19.1, 21.1,
+    ],
+  },
+  // IMSA Endurance Series 419
+  3651: {
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+  // European Endurance Pure Driving School Series 331
+  3650: {
+    weekStartOffset: { days: 7 },
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
 };
