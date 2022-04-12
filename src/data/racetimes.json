@@ -62,6 +62,17 @@
     }
   },
   {
+    "seriesId": 451,
+    "setTimes": [
+      {
+        "minutes": 5820
+      },
+      {
+        "minutes": 6540
+      }
+    ]
+  },
+  {
     "seriesId": 471,
     "everytime": {
       "minutes": 60
@@ -432,6 +443,15 @@
     }
   },
   {
+    "seriesId": 498,
+    "everytime": {
+      "minutes": 120
+    },
+    "offset": {
+      "minutes": 45
+    }
+  },
+  {
     "seriesId": 495,
     "setTimes": [
       {
@@ -538,13 +558,13 @@
     "seriesId": 492,
     "setTimes": [
       {
-        "minutes": 16740
+        "minutes": 6660
       },
       {
-        "minutes": 17280
+        "minutes": 7200
       },
       {
-        "minutes": 18480
+        "minutes": 8400
       }
     ]
   },
