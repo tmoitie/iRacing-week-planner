@@ -37,7 +37,7 @@ export default {
       // Column Headers
       'Columns': 'Столбцы',
       'ID': 'ID',
-      'Class': 'Тип',
+      'Class': 'Класс',
       'Series': 'Серии',
       'Track': 'Трасса',
       'Car': 'Автомобиль',
@@ -102,7 +102,7 @@ export default {
       'Signing in will sync your settings across multiple browsers or devices.': 
        'Вход даст вам синх на своих устройствах.',
       'When you first sign in it will use your current settings to set up the account, but once an account is set-up logging in will overwrite any settings you stored as a guest.':
-        'Когда сделаешь логин будет использованы текущие настройки. Вход тогда будет перерисовать настройки гостя',
+        'Когда сделаешь логин будут использованы текущие настройки. Вход тогда будет перерисовать настройки гостя',
       'Password': 'Пароль',
       'Forgotten password?': 'Забыл пароль?',
       'Sign in': 'Вход',
