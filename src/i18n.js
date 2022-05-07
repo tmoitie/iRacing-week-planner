@@ -15,8 +15,6 @@ import jp from '../translations/jp';
 import nl from '../translations/nl';
 import ru from '../translations/ru';
 
-// test
-
 const languages = {
   de: {
     flag: '🇩🇪',
