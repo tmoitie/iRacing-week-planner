@@ -162,7 +162,7 @@ exports[`components/modal/AboutModal renders open 1`] = `
           </h3>
           <div>
             <h4>
-              2015 December 16
+              December 16, 2015
             </h4>
             <ul>
               <li>
@@ -175,7 +175,7 @@ exports[`components/modal/AboutModal renders open 1`] = `
           </div>
           <div>
             <h4>
-              2015 December 15
+              December 15, 2015
             </h4>
             <ul>
               <li>

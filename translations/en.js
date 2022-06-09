@@ -8,7 +8,7 @@ export default {
     'Options': 'Options',
     'About': 'About',
     'Week {{week}}': 'Week {{week}}',
-    'Races for date: {{date, YYYY MMM DD}}': 'Races for date: {{date, YYYY MMM DD}}',
+    'Races for date: {{date, datetime}}': 'Races for date: {{date, datetime}}',
     'No time data': 'No time data',
 
     // Filters
@@ -76,12 +76,10 @@ export default {
     'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.',
 
     // Dates
-    '{{date, YYYY MMMM DD}}': '{{date, YYYY MMMM DD}}',
-    '{{date, YYYY-MM-DD}}': '{{date, YYYY-MM-DD}}',
-    'Every {{every}} starting at {{time, H:mm}} UTC': 'Every {{every}} starting at {{time, H:mm z}}',
-    '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})': '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})',
+    '{{date, datetime}}': '{{date, datetime}}',
+    'Every {{every}} starting at {{time, datetime}}': 'Every {{every}} starting at {{time, datetime}}',
+    '{{timeLocal, datetime}} ({{timeUtc, datetime}})': '{{timeLocal, datetime}} ({{timeUtc, datetime}})',
     'Set times': 'Set times',
-    '{{date, ddd k:mm}}': '{{date, ddd k:mm}}',
 
     //New Auth strings
     'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <2>buy me a coffee</2>.':

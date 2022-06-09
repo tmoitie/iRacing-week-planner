@@ -42,6 +42,7 @@
     "@babel/preset-react": "^7.10.4",
     "@babel/register": "^7.10.5",
     "@blueprintjs/core": "^3.31.0",
+    "@formatjs/intl-datetimeformat": "^6.0.2",
     "autoprefixer": "^10.4.0",
     "axios": "^0.24.0",
     "babel-loader": "^8.1.0",

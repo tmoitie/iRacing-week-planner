@@ -26,7 +26,12 @@ export default function DateSlider() {
     <>
       <div className={styles.row}>
         <h3 className={styles['col-xs-8']}>
-          {t('Races for date: {{date, YYYY MMM DD}}', { date: date.local().toDate() })}
+          {t('Races for date: {{date, datetime}}', {
+            date: date.local().toDate(),
+            formatParams: {
+              date: { dateStyle: 'long' },
+            },
+          })}
         </h3>
         <h3 className={styles['col-xs-4']} style={{ textAlign: 'right' }}>
           {t('Week {{week}}', { week })}

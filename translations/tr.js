@@ -8,7 +8,7 @@ export default {
     'Options': 'Ayarlar',
     'About': 'Hakkında',
     'Week {{week}}': 'Hafta {{week}}',
-    'Races for date: {{date, YYYY MMM DD}}': 'Yarışların Tarihi: {{date, YYYY MMM DD}}',
+    'Races for date: {{date, datetime}}': 'Yarışların Tarihi: {{date, datetime}}',
     'No time data': 'Uygun zaman bulunmuyor',
 
     // Filters
@@ -75,11 +75,7 @@ export default {
     'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'Favori serilerinizde yer alan sahip olmadığınız pistler bu sezon için bir fazla kere görüntülenebilir. Bu parçaları doğrudan bu link ile satın alabilirsiniz.',
 
     // Dates
-    '{{date, YYYY MMMM DD}}': '{{date, DD MMMM YYYY}}',
-    '{{date, YYYY-MM-DD}}': '{{date, DD-MM-YYYY}}',
-    'Every {{every}} starting at {{time, H:mm}} UTC': 'Her {{every}} tarihinde başlar {{time, H:mm z}}',
-    '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})': '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})',
-    '{{date, ddd k:mm}}': '{{date, ddd k:mm}}',
+    'Every {{every}} starting at {{time, datetime}}': 'Her {{every}} tarihinde başlar {{time, datetime}}',
 
     'Set times': 'Zamanları belirle',
     'Purchase Guide': 'Satın Alma Rehberi',

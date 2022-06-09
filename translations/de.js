@@ -8,7 +8,7 @@ export default {
     'Options': 'Optionen',
     'About': 'Über uns',
     'Week {{week}}': 'Woche {{week}}',
-    'Races for date: {{date, YYYY MMM DD}}': 'Rennen für Datum: {{date, DD MM YYYY}}',
+    'Races for date: {{date, datetime}}': 'Rennen für Datum: {{date, datetime}}',
     'No time data': 'Keine Zeitangaben',
 
     // Filters
@@ -77,12 +77,8 @@ export default {
     'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'Diese Strecken, die du nicht bestzt, kommen in deinen bevorzugten Serien öfters in dieser Seaison vor. Du kannst diese über einen Direktlink kaufen',
 
     // Dates
-    '{{date, YYYY MMMM DD}}': '{{date, DD MMMM YYYY}}',
-    '{{date, YYYY-MM-DD}}': '{{date, DD-MM-YYYY}}',
-    'Every {{every}} starting at {{time, H:mm}} UTC': 'Jede {{every}} ab {{time, HH:mm z}}',
-    '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})': '{{timeLocal, ddd HH:mm}} ({{timeUtc, ddd HH:mm z}})',
+    'Every {{every}} starting at {{time, datetime}}': 'Jede {{every}} ab {{time, datetime}}',
     'Set times': 'Zeiten setzten',
-    '{{date, ddd k:mm}}': '{{date, ddd k:mm}}',
 
     'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <2>buy me a coffee</2>.':
       'Die Seite zu betreiben kostet mich jeden Monat ein bisschen Geld, wenn du dieses Tool also gerne benutzt kannst du mir <2>einen Kaffee spendieren</2>.',

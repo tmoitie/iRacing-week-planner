@@ -15,6 +15,7 @@ import '../src/data/tracks.json';
 import '../src/data/contributors.json';
 import '../src/data/changelog';
 import '../src/config';
+import '../src/i18n';
 
 const { JSDOM } = jsdom;
 const dom = new JSDOM('<!DOCTYPE html><html></html>');

@@ -22,7 +22,7 @@ export default function EndDate({ race }: Props) {
   return (
     <td>
       <div>
-        {t('{{date, YYYY-MM-DD}}', { date })}
+        {t('{{date, datetime}}', { date })}
       </div>
     </td>
   );

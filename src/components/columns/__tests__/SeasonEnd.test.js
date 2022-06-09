@@ -16,6 +16,6 @@ describe('components/columns/SeasonEnd', () => {
     );
 
     expect(component).toMatchSnapshot();
-    expect(component.text()).toBe('2020-09-26');
+    expect(component.text()).toBe('9/26/2020'); // Node uses US I18n DateFormat
   });
 });

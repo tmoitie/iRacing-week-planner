@@ -5,7 +5,7 @@ exports[`components/columns/RaceTimes renders everytime 1`] = `[Function]`;
 exports[`components/columns/RaceTimes renders everytime no offset 1`] = `
 <td>
   <div>
-    Every 3 hours starting at 0:00 UTC
+    Every 3 hours starting at 12:00 AM UTC
   </div>
 </td>
 `;
@@ -31,7 +31,7 @@ exports[`components/columns/RaceTimes renders settimes 1`] = `
     }
     type="button"
   >
-    Set Times
+    Set times
   </button>
 </td>
 `;
@@ -52,7 +52,7 @@ Array [
       }
       type="button"
     >
-      Set Times
+      Set times
     </button>
   </td>,
   <div
@@ -117,10 +117,10 @@ Array [
           >
             <ul>
               <li>
-                Fri 2:00am (Fri 2:00am )
+                Friday, 2:00 AM UTC (Friday, 2:00 AM UTC)
               </li>
               <li>
-                Sat 1:00pm (Sat 1:00pm )
+                Saturday, 1:00 PM UTC (Saturday, 1:00 PM UTC)
               </li>
             </ul>
           </div>
@@ -157,7 +157,7 @@ exports[`components/columns/RaceTimes renders settimes 3`] = `
     }
     type="button"
   >
-    Set Times
+    Set times
   </button>
 </td>
 `;
