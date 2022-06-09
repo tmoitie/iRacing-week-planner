@@ -3,6 +3,19 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 import moment from 'moment';
 
+import '@formatjs/intl-datetimeformat/polyfill';
+import '@formatjs/intl-datetimeformat/locale-data/en';
+import '@formatjs/intl-datetimeformat/locale-data/en-GB';
+import '@formatjs/intl-datetimeformat/locale-data/es';
+import '@formatjs/intl-datetimeformat/locale-data/pt';
+import '@formatjs/intl-datetimeformat/locale-data/de';
+import '@formatjs/intl-datetimeformat/locale-data/fr';
+import '@formatjs/intl-datetimeformat/locale-data/it';
+import '@formatjs/intl-datetimeformat/locale-data/tr';
+import '@formatjs/intl-datetimeformat/locale-data/ja';
+import '@formatjs/intl-datetimeformat/locale-data/nl';
+import '@formatjs/intl-datetimeformat/add-all-tz';
+
 import en from '../translations/en';
 import enGB from '../translations/en-GB';
 import es from '../translations/es';
@@ -11,7 +24,7 @@ import de from '../translations/de';
 import fr from '../translations/fr';
 import it from '../translations/it';
 import tr from '../translations/tr';
-import jp from '../translations/jp';
+import ja from '../translations/jp';
 import nl from '../translations/nl';
 
 const languages = {
@@ -39,9 +52,9 @@ const languages = {
     flag: '🇮🇹',
     name: 'Italiano (IT)',
   },
-  jp: {
+  ja: {
     flag: '🇯🇵',
-    name: '日本語 (JP)',
+    name: '日本語 (JA)',
   },
   nl: {
     flag: '🇳🇱',
@@ -67,7 +80,7 @@ const resources = {
   de,
   fr,
   it,
-  jp,
+  ja,
   nl,
   tr,
 };
@@ -91,13 +104,13 @@ i18n
     supportedLngs: Object.keys(languages),
     interpolation: {
       escapeValue: false,
-      format: (value, format) => {
-        if (value instanceof Date) {
-          return moment(value).format(format);
-        }
+      // format: (value, format) => {
+      //   if (value instanceof Date) {
+      //     return moment(value).format(format);
+      //   }
 
-        return value;
-      },
+      //   return value;
+      // },
     },
     react: {
       wait: true,

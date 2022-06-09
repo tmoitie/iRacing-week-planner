@@ -175,12 +175,12 @@ exports[`components/App renders correctly 1`] = `
             <li>
               <a
                 href=""
-                id="navbar-link-language-jp"
+                id="navbar-link-language-ja"
                 onClick={[Function]}
               >
                 🇯🇵
                  
-                日本語 (JP)
+                日本語 (JA)
               </a>
             </li>
             <li>
@@ -618,7 +618,7 @@ exports[`components/App renders correctly 1`] = `
           <h3
             className="col-xs-8"
           >
-            Races for date: 2020 Sep 23
+            Races for date: September 23, 2020
           </h3>
           <h3
             className="col-xs-4"

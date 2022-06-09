@@ -24,6 +24,13 @@ export default function SeriesModal({ onClose, ownedTracks, isOpen, seriesId }: 
 
   const now = moment().utc();
 
+  const dateParams = {
+    date: {
+      dateStyle: 'long',
+      timeZone: 'UTC',
+    }
+  };
+
   return (
     <Modal
       isOpen={isOpen}
@@ -50,8 +57,8 @@ export default function SeriesModal({ onClose, ownedTracks, isOpen, seriesId }: 
                 const raceWeekEnd = moment(race.startTime).add(race.weekLength);
                 const current = now.isBetween(race.startTime, raceWeekEnd);
 
-                const startDate = moment(race.startTime).local().toDate();
-                const endDate = moment(race.startTime).local().add(race.weekLength)
+                const startDate = moment(race.startTime).toDate();
+                const endDate = moment(race.startTime).add(race.weekLength)
                   .subtract(1, 'days')
                   .toDate();
 
@@ -64,10 +71,10 @@ export default function SeriesModal({ onClose, ownedTracks, isOpen, seriesId }: 
                       {t(race.track)}
                     </td>
                     <td>
-                      {t('{{date, YYYY-MM-DD}}', { date: startDate })}
+                      {t('{{date, datetime}}', { date: startDate, formatParams: dateParams })}
                     </td>
                     <td>
-                      {t('{{date, YYYY-MM-DD}}', { date: endDate })}
+                      {t('{{date, datetime}}', { date: endDate, formatParams: dateParams })}
                     </td>
                     <RaceLength race={race} />
                   </tr>

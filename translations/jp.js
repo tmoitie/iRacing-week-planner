@@ -8,7 +8,7 @@ export default {
     'Options': '設定',
     'About': 'このツールとは',
     'Week {{week}}': '{{week}}週',
-    'Races for date: {{date, YYYY MMM DD}}': '{{date, YYYY MMM DD}} のレース',
+    'Races for date: {{date, datetime}}': '{{date, datetime}} のレース',
     'No time data': '時間データがない',
 
     // Filters
@@ -76,12 +76,8 @@ export default {
     'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'お気に入りのシリーズの中で、これらの未所有のトラックは今のシーズン中複数回出られます。これらのトラックはリンクで購入できます。',
 
     // Dates
-    '{{date, YYYY MMMM DD}}': '{{date, YYYY MMMM DD}}',
-    '{{date, YYYY-MM-DD}}': '{{date, YYYY-MM-DD}}',
-    'Every {{every}} starting at {{time, H:mm}} UTC': '{{every}} ごと {{time, H:mm}} UTC に開始',
-    '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})': '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})',
+    'Every {{every}} starting at {{time, datetime}}': '{{every}} ごと {{time, datetime}} に開始',
     'Set times': '特定の時間',
-    '{{date, ddd k:mm}}': '{{date, ddd k:mm}}',
 
     //New Auth strings
     'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <2>buy me a coffee</2>.':

@@ -3,7 +3,7 @@
 exports[`components/columns/StartDate renders correctly 1`] = `
 <td>
   <div>
-    2020-09-22
+    9/22/2020
   </div>
 </td>
 `;

@@ -220,11 +220,11 @@ exports[`components/Navbar renders correctly and links work 1`] = `
           <li>
             <a
               href=""
-              id="navbar-link-language-jp"
+              id="navbar-link-language-ja"
             >
               🇯🇵
                
-              日本語 (JP)
+              日本語 (JA)
             </a>
           </li>
           <li>

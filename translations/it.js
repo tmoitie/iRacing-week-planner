@@ -8,7 +8,7 @@ export default {
     'Options': 'Opzioni',
     'About': 'Informazioni',
     'Week {{week}}': 'Settimana {{week}}',
-    'Races for date: {{date, YYYY MMM DD}}': 'Gara per Data: {{date, YYYY MMM DD}}',
+    'Races for date: {{date, datetime}}': 'Gara per Data: {{date, datetime}}',
     'No time data': 'Nessuna data disponibile',
 
     // Filters
@@ -76,12 +76,8 @@ export default {
     'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'Questi tracciati che non possiedi sono presenti più volte nelle tue serie preferite di questa stagione. Se vuoi puoi acquistare questi tracciati tramite il seguente link.',
 
     // Dates
-    '{{date, YYYY MMMM DD}}': '{{date, YYYY MMMM DD}}',
-    '{{date, YYYY-MM-DD}}': '{{date, YYYY-MM-DD}}',
-    'Every {{every}} starting at {{time, H:mm}} UTC': 'Ogni {{every}} partenza è alle {{time, H:mm}}',
-    '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})': '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})',
+    'Every {{every}} starting at {{time, datetime}}': 'Ogni {{every}} partenza è alle {{time, datetime}}',
     'Set times': 'Imposta orario',
-    '{{date, ddd k:mm}}': '{{date, ddd k:mm}}',
 
     //New Auth strings
     'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <2>buy me a coffee</2>.':

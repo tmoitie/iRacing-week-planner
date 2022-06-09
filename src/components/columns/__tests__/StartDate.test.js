@@ -16,6 +16,6 @@ describe('components/columns/StartDate', () => {
     );
 
     expect(component).toMatchSnapshot();
-    expect(component.text()).toBe('2020-09-22');
+    expect(component.text()).toBe('9/22/2020'); // Node uses US I18n DateFormat
   });
 });

@@ -24,12 +24,19 @@ export default function NextRace({ race }: Props) {
     return <td>{t('No time data')}</td>;
   }
 
-  const date = moment(nextTime).local().toDate();
+  const date = moment(nextTime).utc().toDate();
 
   return (
     <td>
       <div>
-        {t('{{date, ddd k:mm}}', { date })}
+        {t('{{date, datetime}}', {
+          date,
+          formatParams: {
+            date: {
+              weekday: 'short', hour: 'numeric', minute: 'numeric', hour12: true, timeZoneName: 'short',
+            },
+          },
+        })}
       </div>
     </td>
   );

@@ -80,7 +80,17 @@ export default function AboutModal({ onClose, isOpen }: Props) {
         <h3>{t('Changelog')}</h3>
         {changelog.map((dayItem) => (
           <div key={dayItem.date}>
-            <h4>{t('{{date, YYYY MMMM DD}}', { date: dayItem.date.local().toDate() })}</h4>
+            <h4>
+              {t(
+                '{{date, datetime}}',
+                {
+                  date: dayItem.date.local().toDate(),
+                  formatParams: {
+                    date: { dateStyle: 'long' },
+                  },
+                },
+              )}
+            </h4>
             <ul>
               {dayItem.items.map((changeItem) => <li key={changeItem}>{changeItem}</li>)}
             </ul>

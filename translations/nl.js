@@ -8,7 +8,7 @@ export default {
     'Options': 'Opties',
     'About': 'Over',
     'Week {{week}}': 'Week {{week}}',
-    'Races for date: {{date, YYYY MMM DD}}': 'Races voor datum: {{date, DD MM YYYY}}',
+    'Races for date: {{date, datetime}}': 'Races voor datum: {{date, datetime}}',
     'No time data': 'Geen tijdinformatie',
 
     // Filters
@@ -76,12 +76,8 @@ export default {
     'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'Deze komen meerdere malen voor in favoriete series dit seizoen. Deze zijn aan te schaffen via de directe link.',
 
     // Dates
-    '{{date, YYYY MMMM DD}}': '{{date, DD MMMM YYYY}}',
-    '{{date, YYYY-MM-DD}}': '{{date, DD-MM-YYYY}}',
-    'Every {{every}} starting at {{time, H:mm}} UTC': 'Iedere {{every}} om {{time, HH:mm z}}',
-    '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})': '{{timeLocal, ddd HH:mm}} ({{timeUtc, ddd HH:mm z}})',
+    'Every {{every}} starting at {{time, datetime}}': 'Iedere {{every}} om {{time, datetime}}',
     'Set times': 'Tijden instellen',
-    '{{date, ddd k:mm}}': '{{date, ddd k:mm}}',
 
     //New Auth strings
     'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <2>buy me a coffee</2>.':

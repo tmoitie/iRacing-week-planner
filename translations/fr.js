@@ -8,7 +8,7 @@ export default {
     'Options': 'Options',
     'About': 'A propos',
     'Week {{week}}': 'Semaine {{week}}',
-    'Races for date: {{date, YYYY MMM DD}}': 'Courses du {{date, DD MMM YYYY}}',
+    'Races for date: {{date, datetime}}': 'Courses du {{date, datetime}}',
     'No time data': 'Aucune information',
 
     // Filters
@@ -76,11 +76,7 @@ export default {
     'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'Ces circuits non possédés apparaissent plusieurs fois dans vos séries favorites cette saison. Vous pouvez les acheter via le lien direct.',
 
     // Dates
-    '{{date, YYYY MMMM DD}}': '{{date, DD MMMM YYYY}}',
-    '{{date, YYYY-MM-DD}}': '{{date, DD-MM-YYYY}}',
-    'Every {{every}} starting at {{time, H:mm}} UTC': 'Toutes les {{every}} à partir de {{time, H:mm z}}',
-    '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})': '{{timeLocal, ddd h:mma}} ({{timeUtc, ddd h:mma z}})',
-    '{{date, ddd h:mma}}': '{{date, ddd h:mma}}',
+    'Every {{every}} starting at {{time, datetime}}': 'Toutes les {{every}} à partir de {{time, datetime}}',
 
     // New Auth strings
     'Set times': 'Date fixe',

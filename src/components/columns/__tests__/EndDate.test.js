@@ -13,10 +13,10 @@ describe('components/columns/EndDate', () => {
           startTime: moment('2020-09-22T01:00:00.000Z'),
           weekLength: duration({ days: 7 }),
         }}
-      />
+      />,
     );
 
     expect(component).toMatchSnapshot();
-    expect(component.text()).toBe("2020-09-28");
+    expect(component.text()).toBe('9/28/2020'); // Node uses US I18n DateFormat
   });
 });
