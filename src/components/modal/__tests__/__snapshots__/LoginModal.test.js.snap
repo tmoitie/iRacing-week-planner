@@ -79,6 +79,7 @@ exports[`components/modal/LoginModal create account error 1`] = `
                 Email address
               </label>
               <input
+                autoComplete="username"
                 className="form-control"
                 id="loginEmail"
                 onChange={[Function]}
@@ -96,6 +97,7 @@ exports[`components/modal/LoginModal create account error 1`] = `
                 Password
               </label>
               <input
+                autoComplete="current-password"
                 className="form-control"
                 id="loginPassword"
                 onChange={[Function]}
@@ -216,6 +218,7 @@ exports[`components/modal/LoginModal forgotten password modal control 1`] = `
                 Email address
               </label>
               <input
+                autoComplete="username"
                 className="form-control"
                 id="loginEmail"
                 onChange={[Function]}
@@ -233,6 +236,7 @@ exports[`components/modal/LoginModal forgotten password modal control 1`] = `
                 Password
               </label>
               <input
+                autoComplete="current-password"
                 className="form-control"
                 id="loginPassword"
                 onChange={[Function]}
@@ -449,6 +453,7 @@ exports[`components/modal/LoginModal forgotten password modal control 2`] = `
                 Email address
               </label>
               <input
+                autoComplete="username"
                 className="form-control"
                 id="loginEmail"
                 onChange={[Function]}
@@ -466,6 +471,7 @@ exports[`components/modal/LoginModal forgotten password modal control 2`] = `
                 Password
               </label>
               <input
+                autoComplete="current-password"
                 className="form-control"
                 id="loginPassword"
                 onChange={[Function]}
@@ -586,6 +592,7 @@ exports[`components/modal/LoginModal happy path create account 1`] = `
                 Email address
               </label>
               <input
+                autoComplete="username"
                 className="form-control"
                 id="loginEmail"
                 onChange={[Function]}
@@ -603,6 +610,7 @@ exports[`components/modal/LoginModal happy path create account 1`] = `
                 Password
               </label>
               <input
+                autoComplete="current-password"
                 className="form-control"
                 id="loginPassword"
                 onChange={[Function]}
@@ -723,6 +731,7 @@ exports[`components/modal/LoginModal happy path create account 2`] = `
                 Email address
               </label>
               <input
+                autoComplete="username"
                 className="form-control"
                 id="loginEmail"
                 onChange={[Function]}
@@ -740,6 +749,7 @@ exports[`components/modal/LoginModal happy path create account 2`] = `
                 Password
               </label>
               <input
+                autoComplete="current-password"
                 className="form-control"
                 id="loginPassword"
                 onChange={[Function]}
@@ -860,6 +870,7 @@ exports[`components/modal/LoginModal happy path login 1`] = `
                 Email address
               </label>
               <input
+                autoComplete="username"
                 className="form-control"
                 id="loginEmail"
                 onChange={[Function]}
@@ -877,6 +888,7 @@ exports[`components/modal/LoginModal happy path login 1`] = `
                 Password
               </label>
               <input
+                autoComplete="current-password"
                 className="form-control"
                 id="loginPassword"
                 onChange={[Function]}
@@ -997,6 +1009,7 @@ exports[`components/modal/LoginModal happy path login 2`] = `
                 Email address
               </label>
               <input
+                autoComplete="username"
                 className="form-control"
                 id="loginEmail"
                 onChange={[Function]}
@@ -1014,6 +1027,7 @@ exports[`components/modal/LoginModal happy path login 2`] = `
                 Password
               </label>
               <input
+                autoComplete="current-password"
                 className="form-control"
                 id="loginPassword"
                 onChange={[Function]}
@@ -1134,6 +1148,7 @@ exports[`components/modal/LoginModal login error 1`] = `
                 Email address
               </label>
               <input
+                autoComplete="username"
                 className="form-control"
                 id="loginEmail"
                 onChange={[Function]}
@@ -1151,6 +1166,7 @@ exports[`components/modal/LoginModal login error 1`] = `
                 Password
               </label>
               <input
+                autoComplete="current-password"
                 className="form-control"
                 id="loginPassword"
                 onChange={[Function]}
@@ -1289,6 +1305,7 @@ exports[`components/modal/LoginModal renders error 1`] = `
                 Email address
               </label>
               <input
+                autoComplete="username"
                 className="form-control"
                 id="loginEmail"
                 onChange={[Function]}
@@ -1306,6 +1323,7 @@ exports[`components/modal/LoginModal renders error 1`] = `
                 Password
               </label>
               <input
+                autoComplete="current-password"
                 className="form-control"
                 id="loginPassword"
                 onChange={[Function]}

@@ -91,6 +91,7 @@ export default function LoginModal({ isOpen, onClose }: Props) {
                 id="loginEmail"
                 placeholder={t('Email address')}
                 onChange={(e) => setEmail(e.target.value)}
+                autoComplete="username"
                 value={email}
               />
             </div>
@@ -102,6 +103,7 @@ export default function LoginModal({ isOpen, onClose }: Props) {
                 id="loginPassword"
                 placeholder={t('Password')}
                 onChange={(e) => setPassword(e.target.value)}
+                autoComplete="current-password"
                 value={password}
               />
             </div>
