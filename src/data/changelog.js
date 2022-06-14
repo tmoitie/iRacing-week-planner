@@ -1,6 +1,11 @@
 import moment from 'moment';
 
 export default [{
+  date: moment('2022-06-14 00:00:00').utc(),
+  items: [
+    'Update to 2022S3',
+  ],
+}, {
   date: moment('2022-06-09 00:00:00').utc(),
   items: [
     'Fix date display modes for timezones',
@@ -8,7 +13,7 @@ export default [{
 }, {
   date: moment('2022-06-07 00:00:00').utc(),
   items: [
-    'Update to 2022S3W13',
+    'Update to 2022S2W13',
   ],
 }, {
   date: moment('2022-03-15 00:00:00').utc(),

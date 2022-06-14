@@ -17,7 +17,7 @@ import styles from './styles/main.module.scss';
 
 import '@blueprintjs/core/lib/css/blueprint.css';
 
-export default function App() {
+export default function App(): React.Node {
   const { t } = useTranslation();
   const dispatch = useDispatch();
 

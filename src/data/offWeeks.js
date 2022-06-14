@@ -201,4 +201,34 @@ export default {
   3719: {
     weekEndOffset: { days: 7 },
   },
+
+  // 6 Hours of the Glen 280 │ 3842
+  3842: {
+    weekEndOffset: { days: 7 },
+  },
+
+  // Global Endurance Pure Driving School Series 469 │ 3779
+  3779: {
+    weekStartOffset: { days: 7 },
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+
+  // IMSA Michelin Pilot Challenge Series 492 │ 3750
+  3750: {
+    weekStartOffset: { days: 7 },
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+
+  // IMSA Endurance Series 419 │ 3780
+  3780: {
+    // weekStartOffset: { days: 7 },
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+
 };
