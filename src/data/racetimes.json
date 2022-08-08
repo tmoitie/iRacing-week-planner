@@ -765,6 +765,14 @@
     }
   },
   {
+    "seriesId": 472,
+    "setTimes": [
+      {
+        "minutes": 6885
+      }
+    ]
+  },
+  {
     "seriesId": 490,
     "everytime": {
       "minutes": 120
