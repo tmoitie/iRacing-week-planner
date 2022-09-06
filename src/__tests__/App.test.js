@@ -16,8 +16,6 @@ import { defaultFilters } from '../reducers/settings';
 
 jest.mock('firebase/auth');
 jest.mock('../data/season.json');
-jest.mock('../data/racelengths.json');
-jest.mock('../data/racetimes.json');
 
 const mockStore = configureMockStore([thunk]);
 
@@ -34,7 +32,7 @@ describe('components/App', () => {
       columns: ['id'],
     },
     app: {
-      date: moment('2020-09-23T01:00:00.000Z'),
+      date: moment('2022-09-10T00:00:00.000Z'),
       daysSinceSeasonStart: 4,
       week: 1,
       currentModal: null,
@@ -46,7 +44,7 @@ describe('components/App', () => {
   };
 
   beforeEach(() => {
-    MockDate.set('2020-09-23T13:30:00.000Z');
+    MockDate.set('2022-09-07T13:30:00.000Z');
   });
 
   afterEach(() => {

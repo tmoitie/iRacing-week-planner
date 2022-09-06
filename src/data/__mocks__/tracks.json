@@ -1,308 +1,2219 @@
 [
   {
-    "id": 324,
-    "name": "Tsukuba Circuit",
-    "hasOval": false,
-    "hasRoad": true,
-    "primaryType": "road",
-    "default": true,
-    "pkgid": 267
-  },
-  {
-    "id": 166,
-    "name": "Okayama International Circuit",
-    "hasOval": false,
-    "hasRoad": true,
-    "primaryType": "road",
-    "default": true,
-    "pkgid": 109
-  },
-  {
-    "id": 353,
-    "name": "Lime Rock Park",
-    "hasOval": false,
-    "hasRoad": true,
-    "primaryType": "road",
-    "default": true,
-    "pkgid": 304
-  },
-  {
-    "id": 9,
-    "name": "Summit Point Raceway",
-    "hasOval": false,
-    "hasRoad": true,
-    "primaryType": "road",
-    "default": true,
-    "pkgid": 13
-  },
-  {
-    "id": 180,
-    "name": "Oulton Park Circuit",
-    "hasOval": false,
-    "hasRoad": true,
-    "primaryType": "road",
-    "default": true,
-    "pkgid": 117
-  },
-  {
-    "id": 350,
-    "name": "Charlotte Motor Speedway",
-    "hasOval": true,
-    "hasRoad": true,
-    "primaryType": "road",
-    "default": true,
-    "pkgid": 268
-  },
-  {
-    "id": 202,
-    "name": "Oran Park Raceway",
-    "hasOval": false,
-    "hasRoad": true,
-    "primaryType": "road",
-    "default": true,
-    "pkgid": 126
-  },
-  {
-    "id": 47,
-    "name": "WeatherTech Raceway at Laguna Seca",
-    "hasOval": false,
-    "hasRoad": true,
-    "primaryType": "road",
-    "default": true,
-    "pkgid": 34
-  },
-  {
-    "id": 218,
-    "name": "Circuit Gilles Villeneuve",
-    "hasOval": false,
-    "hasRoad": true,
-    "primaryType": "road",
+    "id": 11,
+    "ids": [
+      11
+    ],
+    "name": "Stafford Motor Speedway",
     "default": false,
-    "pkgid": 145
-  },
-  {
-    "id": 263,
-    "name": "Nürburgring Combined",
-    "hasOval": false,
-    "hasRoad": true,
-    "primaryType": "road",
-    "default": false,
-    "pkgid": 186
-  },
-  {
-    "id": 178,
-    "name": "Indianapolis Motor Speedway",
-    "hasOval": true,
-    "hasRoad": true,
+    "pkgid": 12,
     "primaryType": "oval",
-    "default": false,
-    "pkgid": 73
-  },
-  {
-    "id": 121,
-    "name": "[Legacy] Texas Motor Speedway - 2009",
-    "hasOval": true,
-    "hasRoad": true,
-    "primaryType": "oval",
-    "default": false,
-    "pkgid": 61
-  },
-  {
-    "id": 168,
-    "name": "Suzuka International Racing Course",
     "hasOval": false,
-    "hasRoad": true,
-    "primaryType": "road",
-    "default": false,
-    "pkgid": 114
-  },
-  {
-    "id": 165,
-    "name": "Circuit de Spa-Francorchamps",
-    "hasOval": false,
-    "hasRoad": true,
-    "primaryType": "road",
-    "default": false,
-    "pkgid": 103
-  },
-  {
-    "id": 152,
-    "name": "Phillip Island Circuit",
-    "hasOval": false,
-    "hasRoad": true,
-    "primaryType": "road",
-    "default": false,
-    "pkgid": 93
-  },
-  {
-    "id": 191,
-    "name": "Daytona International Speedway",
-    "hasOval": true,
-    "hasRoad": true,
-    "primaryType": "oval",
-    "default": false,
-    "pkgid": 120
-  },
-  {
-    "id": 239,
-    "name": "Autodromo Nazionale Monza",
-    "hasOval": true,
-    "hasRoad": true,
-    "primaryType": "road",
-    "default": false,
-    "pkgid": 172
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_stafford/11-stafford-oval/inactive.svg"
   },
   {
     "id": 12,
+    "ids": [
+      12
+    ],
     "name": "Oxford Plains Speedway",
-    "hasOval": true,
-    "hasRoad": false,
-    "primaryType": "oval",
     "default": true,
-    "pkgid": 10
-  },
-  {
-    "id": 16,
-    "name": "USA International Speedway",
-    "hasOval": true,
-    "hasRoad": false,
+    "pkgid": 10,
     "primaryType": "oval",
-    "default": true,
-    "pkgid": 7
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_oxford/12-oxford-oval/inactive.svg"
   },
   {
     "id": 14,
+    "ids": [
+      14
+    ],
     "name": "South Boston Speedway",
-    "hasOval": true,
-    "hasRoad": false,
-    "primaryType": "oval",
     "default": true,
-    "pkgid": 19
+    "pkgid": 19,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_southboston/14-southboston/inactive.svg"
   },
   {
-    "id": 256,
-    "name": "Southern National Motorsports Park",
-    "hasOval": true,
-    "hasRoad": false,
-    "primaryType": "oval",
+    "id": 15,
+    "ids": [
+      15
+    ],
+    "name": "Concord Speedway",
     "default": true,
-    "pkgid": 194
+    "pkgid": 3,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_concordhalf/15-concordhalf/inactive.svg"
+  },
+  {
+    "id": 16,
+    "ids": [
+      16,
+      275
+    ],
+    "name": "USA International Speedway",
+    "default": true,
+    "pkgid": 7,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_lakeland/16-lakeland/inactive.svg"
   },
   {
     "id": 17,
+    "ids": [
+      17,
+      288
+    ],
     "name": "Lanier National Speedway",
-    "hasOval": true,
-    "hasRoad": false,
-    "primaryType": "oval",
     "default": true,
-    "pkgid": 8
+    "pkgid": 8,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_lanier/17-lanier/inactive.svg"
   },
   {
-    "id": 161,
-    "name": "Thompson Speedway Motorsports Park",
-    "hasOval": true,
-    "hasRoad": false,
-    "primaryType": "oval",
-    "default": true,
-    "pkgid": 97
-  },
-  {
-    "id": 201,
-    "name": "Langley Speedway",
-    "hasOval": true,
-    "hasRoad": false,
-    "primaryType": "oval",
-    "default": true,
-    "pkgid": 125
-  },
-  {
-    "id": 115,
-    "name": "Darlington Raceway",
-    "hasOval": true,
-    "hasRoad": false,
-    "primaryType": "oval",
+    "id": 31,
+    "ids": [
+      31
+    ],
+    "name": "Richmond Raceway",
     "default": false,
-    "pkgid": 59
-  },
-  {
-    "id": 101,
-    "name": "Bristol MotorSpeedway",
-    "hasOval": true,
-    "hasRoad": false,
+    "pkgid": 23,
     "primaryType": "oval",
-    "default": false,
-    "pkgid": 43
-  },
-  {
-    "id": 374,
-    "name": "Nashville Fairgrounds Speedway",
-    "hasOval": true,
+    "hasOval": false,
     "hasRoad": false,
-    "primaryType": "oval",
-    "default": false,
-    "pkgid": 331
-  },
-  {
-    "id": 188,
-    "name": "[Legacy] Kentucky Speedway - 2011",
-    "hasOval": true,
-    "hasRoad": false,
-    "primaryType": "oval",
-    "default": false,
-    "pkgid": 118
-  },
-  {
-    "id": 248,
-    "name": "Five Flags Speedway",
-    "hasOval": true,
-    "hasRoad": false,
-    "primaryType": "oval",
-    "default": false,
-    "pkgid": 180
-  },
-  {
-    "id": 357,
-    "name": "Texas Motor Speedway",
-    "hasOval": true,
-    "hasRoad": false,
-    "primaryType": "oval",
-    "default": false,
-    "pkgid": 310
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_richmond/31-richmond/inactive.svg"
   },
   {
     "id": 33,
+    "ids": [
+      33
+    ],
     "name": "Martinsville Speedway",
-    "hasOval": true,
+    "default": false,
+    "pkgid": 26,
+    "primaryType": "oval",
+    "hasOval": false,
     "hasRoad": false,
-    "primaryType": "oval",
-    "default": false,
-    "pkgid": 26
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_martinsville/33-martinsville/inactive.svg"
   },
   {
-    "id": 104,
-    "name": "[Legacy] Phoenix Raceway - 2008",
-    "hasOval": true,
-    "hasRoad": true,
+    "id": 94,
+    "ids": [
+      94
+    ],
+    "name": "The Milwaukee Mile",
+    "default": false,
+    "pkgid": 41,
     "primaryType": "oval",
-    "default": true,
-    "pkgid": 55
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_milwaukee/94-milwaukee/inactive.svg"
   },
   {
-    "id": 169,
-    "name": "Iowa Speedway",
-    "hasOval": true,
-    "hasRoad": true,
-    "primaryType": "oval",
+    "id": 115,
+    "ids": [
+      115
+    ],
+    "name": "Darlington Raceway",
     "default": false,
-    "pkgid": 115
+    "pkgid": 59,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_darlington/115-darlington/inactive.svg"
+  },
+  {
+    "id": 116,
+    "ids": [
+      116
+    ],
+    "name": "Talladega Superspeedway",
+    "default": false,
+    "pkgid": 60,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_talladega/116-talladega/inactive.svg"
+  },
+  {
+    "id": 123,
+    "ids": [
+      123
+    ],
+    "name": "Chicagoland Speedway",
+    "default": false,
+    "pkgid": 65,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_chicagoland/123-chicagoland/inactive.svg"
   },
   {
     "id": 124,
+    "ids": [
+      124
+    ],
     "name": "[Legacy] Michigan International Speedway - 2009",
-    "hasOval": true,
-    "hasRoad": false,
-    "primaryType": "oval",
     "default": false,
-    "pkgid": 66
+    "pkgid": 66,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 4.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_michigan/124-michigan/inactive.svg"
+  },
+  {
+    "id": 143,
+    "ids": [
+      143
+    ],
+    "name": "Centripetal Circuit",
+    "default": true,
+    "pkgid": 79,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_skidpad/143-skidpad/inactive.svg"
+  },
+  {
+    "id": 144,
+    "ids": [
+      144
+    ],
+    "name": "Canadian Tire Motorsports Park",
+    "default": false,
+    "pkgid": 90,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_mosport/144-mosport/inactive.svg"
+  },
+  {
+    "id": 152,
+    "ids": [
+      152
+    ],
+    "name": "Phillip Island Circuit",
+    "default": false,
+    "pkgid": 93,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_phillipisland/152-phillipisland/inactive.svg"
+  },
+  {
+    "id": 161,
+    "ids": [
+      161
+    ],
+    "name": "Thompson Speedway Motorsports Park",
+    "default": true,
+    "pkgid": 97,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_thompson/161-thompson/inactive.svg"
+  },
+  {
+    "id": 162,
+    "ids": [
+      162
+    ],
+    "name": "Dover Motor Speedway",
+    "default": false,
+    "pkgid": 100,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_dover/162-dover/inactive.svg"
+  },
+  {
+    "id": 165,
+    "ids": [
+      163,
+      164,
+      165
+    ],
+    "name": "Circuit de Spa-Francorchamps",
+    "default": false,
+    "pkgid": 103,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_spa/165-spa-combined/inactive.svg"
+  },
+  {
+    "id": 166,
+    "ids": [
+      166,
+      167
+    ],
+    "name": "Okayama International Circuit",
+    "default": true,
+    "pkgid": 109,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_okayama/166-okayama-full/inactive.svg"
+  },
+  {
+    "id": 168,
+    "ids": [
+      168,
+      173,
+      174,
+      175,
+      176
+    ],
+    "name": "Suzuka International Racing Course",
+    "default": false,
+    "pkgid": 114,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_suzuka/168-suzuka-grandprix/inactive.svg"
+  },
+  {
+    "id": 169,
+    "ids": [
+      169,
+      170,
+      171,
+      172,
+      295
+    ],
+    "name": "Iowa Speedway",
+    "default": false,
+    "pkgid": 115,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_iowa/169-iowa-oval/inactive.svg"
+  },
+  {
+    "id": 179,
+    "ids": [
+      179
+    ],
+    "name": "Long Beach Street Circuit",
+    "default": false,
+    "pkgid": 116,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_longbeach/179-longbeach/inactive.svg"
+  },
+  {
+    "id": 180,
+    "ids": [
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187
+    ],
+    "name": "Oulton Park Circuit",
+    "default": true,
+    "pkgid": 117,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_oulton/180-oulton-international/inactive.svg"
+  },
+  {
+    "id": 188,
+    "ids": [
+      188,
+      189
+    ],
+    "name": "[Legacy] Kentucky Speedway - 2011",
+    "default": false,
+    "pkgid": 118,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 4.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_kentucky/188-kentucky-oval/inactive.svg"
+  },
+  {
+    "id": 190,
+    "ids": [
+      190
+    ],
+    "name": "New Smyrna Speedway",
+    "default": false,
+    "pkgid": 119,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_newsmyrna/190-newsmyrna/inactive.svg"
+  },
+  {
+    "id": 191,
+    "ids": [
+      191,
+      192,
+      193,
+      194,
+      381
+    ],
+    "name": "Daytona International Speedway",
+    "default": false,
+    "pkgid": 120,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_daytona_2011/191-daytona-2011-oval/inactive.svg"
+  },
+  {
+    "id": 195,
+    "ids": [
+      195,
+      196,
+      197,
+      198
+    ],
+    "name": "Twin Ring Motegi",
+    "default": false,
+    "pkgid": 123,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_twinring/195-twinring-fullrc/inactive.svg"
+  },
+  {
+    "id": 199,
+    "ids": [
+      199,
+      200
+    ],
+    "name": "Circuit Zolder",
+    "default": false,
+    "pkgid": 124,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_zolder/199-zolder-gp/inactive.svg"
+  },
+  {
+    "id": 201,
+    "ids": [
+      201
+    ],
+    "name": "Langley Speedway",
+    "default": true,
+    "pkgid": 125,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_langley/201-langley/inactive.svg"
+  },
+  {
+    "id": 214,
+    "ids": [
+      214,
+      215,
+      216
+    ],
+    "name": "Kansas Speedway",
+    "default": false,
+    "pkgid": 142,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_kansas/214-kansas-oval/inactive.svg"
+  },
+  {
+    "id": 218,
+    "ids": [
+      218
+    ],
+    "name": "Circuit Gilles Villeneuve",
+    "default": false,
+    "pkgid": 145,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_montreal/218-montreal/inactive.svg"
+  },
+  {
+    "id": 219,
+    "ids": [
+      219
+    ],
+    "name": "Mount Panorama Circuit",
+    "default": false,
+    "pkgid": 146,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_bathurst/219-bathurst/inactive.svg"
+  },
+  {
+    "id": 220,
+    "ids": [
+      220,
+      221,
+      223,
+      224
+    ],
+    "name": "New Jersey Motorsports Park",
+    "default": false,
+    "pkgid": 147,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 4.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_newjersey/220-newjersey-full/inactive.svg"
+  },
+  {
+    "id": 225,
+    "ids": [
+      225,
+      226,
+      227,
+      228
+    ],
+    "name": "Auto Club Speedway",
+    "default": false,
+    "pkgid": 151,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_california/225-california-oval/inactive.svg"
+  },
+  {
+    "id": 229,
+    "ids": [
+      229,
+      230,
+      231
+    ],
+    "name": "Circuit of the Americas",
+    "default": false,
+    "pkgid": 154,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_cota/229-cota-gp/inactive.svg"
+  },
+  {
+    "id": 232,
+    "ids": [
+      232,
+      304
+    ],
+    "name": "Lucas Oil Raceway (IRP)",
+    "default": false,
+    "pkgid": 159,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_irp/232-irp/inactive.svg"
+  },
+  {
+    "id": 248,
+    "ids": [
+      248
+    ],
+    "name": "Five Flags Speedway",
+    "default": false,
+    "pkgid": 180,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_fiveflags/248-fiveflags/inactive.svg"
+  },
+  {
+    "id": 256,
+    "ids": [
+      256
+    ],
+    "name": "Southern National Motorsports Park",
+    "default": true,
+    "pkgid": 194,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_southernnational/256-southernnational/inactive.svg"
+  },
+  {
+    "id": 257,
+    "ids": [
+      250,
+      255,
+      257,
+      259,
+      260,
+      261
+    ],
+    "name": "Nürburgring Grand-Prix-Strecke",
+    "default": false,
+    "pkgid": 185,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_nurburgring_gp/257-nurburgring-gpshort/inactive.svg"
+  },
+  {
+    "id": 263,
+    "ids": [
+      252,
+      262,
+      263,
+      264
+    ],
+    "name": "Nürburgring Combined",
+    "default": false,
+    "pkgid": 186,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_nurburgring_combined/263-nurburgring-combinedshorta/inactive.svg"
+  },
+  {
+    "id": 266,
+    "ids": [
+      266,
+      267
+    ],
+    "name": "Autodromo Internazionale Enzo e Dino Ferrari",
+    "default": false,
+    "pkgid": 197,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_imola/266-imola-gp/inactive.svg"
+  },
+  {
+    "id": 271,
+    "ids": [
+      271
+    ],
+    "name": "The Bullring",
+    "default": false,
+    "pkgid": 211,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_bullring/271-bullring/inactive.svg"
+  },
+  {
+    "id": 273,
+    "ids": [
+      273
+    ],
+    "name": "Eldora Speedway",
+    "default": false,
+    "pkgid": 213,
+    "primaryType": "dirt_oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_eldora/273-eldora/inactive.svg"
+  },
+  {
+    "id": 274,
+    "ids": [
+      274
+    ],
+    "name": "Williams Grove Speedway",
+    "default": false,
+    "pkgid": 214,
+    "primaryType": "dirt_oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_williamsgrove/274-williamsgrove/inactive.svg"
+  },
+  {
+    "id": 276,
+    "ids": [
+      276
+    ],
+    "name": "Michigan International Speedway",
+    "default": false,
+    "pkgid": 224,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_michigan_2018/276-michigan-2018/inactive.svg"
+  },
+  {
+    "id": 277,
+    "ids": [
+      277
+    ],
+    "name": "Pocono Raceway",
+    "default": false,
+    "pkgid": 225,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_pocono_2016/277-pocono-2016/inactive.svg"
+  },
+  {
+    "id": 279,
+    "ids": [
+      279
+    ],
+    "name": "Volusia Speedway Park",
+    "default": false,
+    "pkgid": 233,
+    "primaryType": "dirt_oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_volusia/279-volusia/inactive.svg"
+  },
+  {
+    "id": 286,
+    "ids": [
+      286
+    ],
+    "name": "Myrtle Beach Speedway",
+    "default": false,
+    "pkgid": 240,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_myrtlebeach/286-myrtlebeach/inactive.svg"
+  },
+  {
+    "id": 297,
+    "ids": [
+      297,
+      298,
+      299
+    ],
+    "name": "Snetterton Circuit",
+    "default": false,
+    "pkgid": 247,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_snetterton/297-snetterton-300/inactive.svg"
+  },
+  {
+    "id": 303,
+    "ids": [
+      303
+    ],
+    "name": "Limaland Motorsports Park",
+    "default": true,
+    "pkgid": 248,
+    "primaryType": "dirt_oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_limaland/303-limaland/inactive.svg"
+  },
+  {
+    "id": 305,
+    "ids": [
+      305
+    ],
+    "name": "Knoxville Raceway",
+    "default": false,
+    "pkgid": 251,
+    "primaryType": "dirt_oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_knoxville/305-knoxville/inactive.svg"
+  },
+  {
+    "id": 314,
+    "ids": [
+      314
+    ],
+    "name": "The Dirt Track at Charlotte",
+    "default": false,
+    "pkgid": 256,
+    "primaryType": "dirt_oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_charlottedirt/314-charlottedirt/inactive.svg"
+  },
+  {
+    "id": 319,
+    "ids": [
+      319
+    ],
+    "name": "Detroit Grand Prix at Belle Isle",
+    "default": false,
+    "pkgid": 259,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_belleisle/319-belleisle/inactive.svg"
+  },
+  {
+    "id": 320,
+    "ids": [
+      320
+    ],
+    "name": "Kokomo Speedway",
+    "default": false,
+    "pkgid": 264,
+    "primaryType": "dirt_oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_kokomo/320-kokomo/inactive.svg"
+  },
+  {
+    "id": 331,
+    "ids": [
+      331
+    ],
+    "name": "Chili Bowl",
+    "default": false,
+    "pkgid": 275,
+    "primaryType": "dirt_oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_chilibowl/331-chilibowl/inactive.svg"
+  },
+  {
+    "id": 332,
+    "ids": [
+      332
+    ],
+    "name": "Wild West Motorsports Park",
+    "default": false,
+    "pkgid": 276,
+    "primaryType": "dirt_road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_wildwest/332-wildwest-full/inactive.svg"
+  },
+  {
+    "id": 334,
+    "ids": [
+      334
+    ],
+    "name": "Wild Horse Pass Motorsports Park",
+    "default": false,
+    "pkgid": 279,
+    "primaryType": "dirt_road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_wildhorse/334-wildhorse/inactive.svg"
+  },
+  {
+    "id": 344,
+    "ids": [
+      344
+    ],
+    "name": "Fairbury Speedway",
+    "default": false,
+    "pkgid": 289,
+    "primaryType": "dirt_oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_fairbury/344-fairbury/inactive.svg"
+  },
+  {
+    "id": 345,
+    "ids": [
+      345,
+      346,
+      347,
+      348,
+      349,
+      386
+    ],
+    "name": "Circuit de Barcelona Catalunya",
+    "default": false,
+    "pkgid": 292,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_barcelona/345-barcelona-gp/inactive.svg"
+  },
+  {
+    "id": 350,
+    "ids": [
+      330,
+      335,
+      336,
+      337,
+      338,
+      339,
+      340,
+      350,
+      385
+    ],
+    "name": "Charlotte Motor Speedway",
+    "default": true,
+    "pkgid": 268,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_charlotte_2018/350-charlotte-2018-2019-roval/inactive.svg"
+  },
+  {
+    "id": 351,
+    "ids": [
+      351
+    ],
+    "name": "Lernerville Speedway",
+    "default": false,
+    "pkgid": 303,
+    "primaryType": "dirt_oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_lernerville/351-lernerville/inactive.svg"
+  },
+  {
+    "id": 357,
+    "ids": [
+      357,
+      364
+    ],
+    "name": "Texas Motor Speedway",
+    "default": false,
+    "pkgid": 310,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_texas_2020/357-texas-2020-oval/inactive.svg"
+  },
+  {
+    "id": 366,
+    "ids": [
+      366
+    ],
+    "name": "North Wilkesboro Speedway",
+    "default": false,
+    "pkgid": 312,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_northwilkesboro/366-northwilkesboro/inactive.svg"
+  },
+  {
+    "id": 371,
+    "ids": [
+      371
+    ],
+    "name": "Kentucky Speedway",
+    "default": false,
+    "pkgid": 319,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_kentucky_2020/371-kentucky-2020-oval/inactive.svg"
+  },
+  {
+    "id": 373,
+    "ids": [
+      373
+    ],
+    "name": "Weedsport Speedway",
+    "default": false,
+    "pkgid": 330,
+    "primaryType": "dirt_oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_weedsport/373-weedsport/inactive.svg"
+  },
+  {
+    "id": 384,
+    "ids": [
+      384
+    ],
+    "name": "iRacing Superspeedway",
+    "default": false,
+    "pkgid": 341,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_iracingss/384-iracingss/inactive.svg"
+  },
+  {
+    "id": 387,
+    "ids": [
+      387
+    ],
+    "name": "Cedar Lake Speedway",
+    "default": false,
+    "pkgid": 346,
+    "primaryType": "dirt_oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_cedarlake/387-cedarlake/inactive.svg"
+  },
+  {
+    "id": 388,
+    "ids": [
+      19,
+      23,
+      30,
+      217,
+      388
+    ],
+    "name": "Irwindale Speedway",
+    "default": false,
+    "pkgid": 6,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_irwindale/388-irwindale-figureeightjump/inactive.svg"
+  },
+  {
+    "id": 390,
+    "ids": [
+      390,
+      391,
+      392,
+      393,
+      394,
+      395,
+      428,
+      429,
+      430,
+      431
+    ],
+    "name": "Hockenheimring Baden-Württemberg",
+    "default": false,
+    "pkgid": 350,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_hockenheim/390-hockenheim-gp/inactive.svg"
+  },
+  {
+    "id": 396,
+    "ids": [
+      396
+    ],
+    "name": "Bark River International Raceway",
+    "default": false,
+    "pkgid": 351,
+    "primaryType": "dirt_road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_barkriver/396-barkriver/inactive.svg"
+  },
+  {
+    "id": 397,
+    "ids": [
+      48,
+      49,
+      98,
+      102,
+      312,
+      397
+    ],
+    "name": "Sonoma Raceway",
+    "default": false,
+    "pkgid": 35,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_sonoma/397-sonoma-indycar/inactive.svg"
+  },
+  {
+    "id": 398,
+    "ids": [
+      398,
+      399
+    ],
+    "name": "Mt. Washington Auto Road",
+    "default": false,
+    "pkgid": 352,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_mtwashington/398-mtwashington-climb/inactive.svg"
+  },
+  {
+    "id": 400,
+    "ids": [
+      400
+    ],
+    "name": "Nashville Superspeedway",
+    "default": false,
+    "pkgid": 353,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_nashvilless/400-nashvilless/inactive.svg"
+  },
+  {
+    "id": 403,
+    "ids": [
+      403,
+      404,
+      407
+    ],
+    "name": "Red Bull Ring",
+    "default": false,
+    "pkgid": 362,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_spielberg/403-spielberg-gp/inactive.svg"
+  },
+  {
+    "id": 405,
+    "ids": [
+      405
+    ],
+    "name": "Chicago Street Circuit",
+    "default": false,
+    "pkgid": 365,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_chicago/405-chicago/inactive.svg"
+  },
+  {
+    "id": 413,
+    "ids": [
+      413
+    ],
+    "name": "Hungaroring",
+    "default": false,
+    "pkgid": 370,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_hungaroring/413-hungaroring/inactive.svg"
+  },
+  {
+    "id": 414,
+    "ids": [
+      414
+    ],
+    "name": "Hickory Motor Speedway",
+    "default": false,
+    "pkgid": 371,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_hickory/414-hickory/inactive.svg"
+  },
+  {
+    "id": 419,
+    "ids": [
+      418,
+      419
+    ],
+    "name": "Phoenix Raceway",
+    "default": false,
+    "pkgid": 380,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_phoenix_2021/419-phoenix-2021-ovalopen/inactive.svg"
+  },
+  {
+    "id": 423,
+    "ids": [
+      423,
+      424,
+      425,
+      426,
+      427,
+      436
+    ],
+    "name": "Knockhill Racing Circuit",
+    "default": false,
+    "pkgid": 381,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_knockhill/423-knockhill-international/inactive.svg"
+  },
+  {
+    "id": 437,
+    "ids": [
+      437
+    ],
+    "name": "LA Coliseum Raceway",
+    "default": false,
+    "pkgid": 382,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_lacoliseum/437-lacoliseum/inactive.svg"
+  },
+  {
+    "id": 438,
+    "ids": [
+      438
+    ],
+    "name": "Federated Auto Parts Raceway at I-55",
+    "default": false,
+    "pkgid": 396,
+    "primaryType": "dirt_oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_pevely/438-pevely/inactive.svg"
+  },
+  {
+    "id": 439,
+    "ids": [
+      439,
+      440
+    ],
+    "name": "Winton Motor Raceway",
+    "default": false,
+    "pkgid": 397,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_winton/439-winton-national/inactive.svg"
+  },
+  {
+    "id": 443,
+    "ids": [
+      443
+    ],
+    "name": "Sandown International Motor Raceway",
+    "default": false,
+    "pkgid": 405,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_sandown/443-sandown/inactive.svg"
+  },
+  {
+    "id": 444,
+    "ids": [
+      444,
+      445
+    ],
+    "name": "Fuji International Speedway",
+    "default": false,
+    "pkgid": 406,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_fuji/444-fuji-gp/inactive.svg"
+  },
+  {
+    "id": 446,
+    "ids": [
+      446
+    ],
+    "name": "Port Royal Speedway",
+    "default": false,
+    "pkgid": 407,
+    "primaryType": "dirt_oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_portroyal/446-portroyal/inactive.svg"
+  },
+  {
+    "id": 1,
+    "ids": [
+      1,
+      34,
+      160
+    ],
+    "name": "[Legacy] Lime Rock Park - 2008",
+    "default": true,
+    "pkgid": 9,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_limerock/1-limerock-full/inactive.svg"
+  },
+  {
+    "id": 2,
+    "ids": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      141
+    ],
+    "name": "Virginia International Raceway",
+    "default": false,
+    "pkgid": 14,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_virginia/2-virginia-full/inactive.svg"
+  },
+  {
+    "id": 9,
+    "ids": [
+      8,
+      9,
+      24,
+      142,
+      159
+    ],
+    "name": "Summit Point Raceway",
+    "default": true,
+    "pkgid": 13,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_summit/9-summit-summit-raceway/inactive.svg"
+  },
+  {
+    "id": 18,
+    "ids": [
+      18,
+      50
+    ],
+    "name": "Road America",
+    "default": false,
+    "pkgid": 11,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_roadamerica/18-roadamerica-full/inactive.svg"
+  },
+  {
+    "id": 20,
+    "ids": [
+      20,
+      21,
+      22,
+      362
+    ],
+    "name": "Homestead Miami Speedway",
+    "default": false,
+    "pkgid": 5,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_homestead/20-homestead-oval/inactive.svg"
+  },
+  {
+    "id": 27,
+    "ids": [
+      26,
+      27,
+      28,
+      29,
+      293,
+      296
+    ],
+    "name": "[Legacy] Daytona International Speedway - 2008",
+    "default": true,
+    "pkgid": 4,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_daytona/27-daytona-oval/inactive.svg"
+  },
+  {
+    "id": 40,
+    "ids": [
+      37,
+      38,
+      39,
+      40
+    ],
+    "name": "[Legacy] Charlotte Motor Speedway - 2008",
+    "default": true,
+    "pkgid": 31,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_charlotte/40-charlotte-quadoval/inactive.svg"
+  },
+  {
+    "id": 41,
+    "ids": [
+      41,
+      42,
+      43,
+      44,
+      45
+    ],
+    "name": "[Legacy] Silverstone Circuit - 2008",
+    "default": false,
+    "pkgid": 32,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 4.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_silverstone/41-silverstone-gp/inactive.svg"
+  },
+  {
+    "id": 46,
+    "ids": [
+      46,
+      99,
+      100
+    ],
+    "name": "Barber Motorsports Park",
+    "default": false,
+    "pkgid": 33,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_barber/46-barber-full/inactive.svg"
+  },
+  {
+    "id": 47,
+    "ids": [
+      47,
+      158
+    ],
+    "name": "WeatherTech Raceway at Laguna Seca",
+    "default": true,
+    "pkgid": 34,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_lagunaseca/47-lagunaseca/inactive.svg"
+  },
+  {
+    "id": 95,
+    "ids": [
+      95,
+      96,
+      97
+    ],
+    "name": "Sebring International Raceway",
+    "default": false,
+    "pkgid": 40,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_sebring/95-sebring-international/inactive.svg"
+  },
+  {
+    "id": 101,
+    "ids": [
+      101,
+      287,
+      365,
+      442
+    ],
+    "name": "Bristol Motor Speedway",
+    "default": false,
+    "pkgid": 43,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_bristol/101-bristol/inactive.svg"
+  },
+  {
+    "id": 103,
+    "ids": [
+      103,
+      110,
+      111,
+      112,
+      113,
+      114
+    ],
+    "name": "Las Vegas Motor Speedway",
+    "default": false,
+    "pkgid": 54,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_vegas/103-vegas-oval/inactive.svg"
+  },
+  {
+    "id": 104,
+    "ids": [
+      104,
+      105,
+      306
+    ],
+    "name": "[Legacy] Phoenix Raceway - 2008",
+    "default": true,
+    "pkgid": 55,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_phoenix/104-phoenix-oval/inactive.svg"
+  },
+  {
+    "id": 106,
+    "ids": [
+      106,
+      107,
+      108,
+      109,
+      432,
+      433,
+      434,
+      435
+    ],
+    "name": "[Retired] Watkins Glen International",
+    "default": false,
+    "pkgid": 56,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_watkinsglen/106-watkinsglen-cupcircuit/inactive.svg"
+  },
+  {
+    "id": 121,
+    "ids": [
+      117,
+      118,
+      119,
+      120,
+      121,
+      122
+    ],
+    "name": "[Legacy] Texas Motor Speedway - 2009",
+    "default": false,
+    "pkgid": 61,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 4.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_texas/121-texas-oval/inactive.svg"
+  },
+  {
+    "id": 127,
+    "ids": [
+      126,
+      127,
+      128
+    ],
+    "name": "Road Atlanta",
+    "default": false,
+    "pkgid": 67,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_roadatlanta/127-roadatlanta-full/inactive.svg"
+  },
+  {
+    "id": 131,
+    "ids": [
+      129,
+      130,
+      131,
+      132,
+      222
+    ],
+    "name": "New Hampshire Motor Speedway",
+    "default": false,
+    "pkgid": 72,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_newhampshire/131-newhampshire-oval/inactive.svg"
+  },
+  {
+    "id": 133,
+    "ids": [
+      133,
+      134,
+      135,
+      178,
+      448
+    ],
+    "name": "Indianapolis Motor Speedway",
+    "default": false,
+    "pkgid": 73,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_indianapolis/133-indianapolis-oval/inactive.svg"
+  },
+  {
+    "id": 136,
+    "ids": [
+      136,
+      137,
+      138,
+      139,
+      140
+    ],
+    "name": "[Legacy] Pocono Raceway - 2009",
+    "default": false,
+    "pkgid": 74,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 4.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_pocono/136-pocono-oval/inactive.svg"
+  },
+  {
+    "id": 145,
+    "ids": [
+      145,
+      146,
+      290
+    ],
+    "name": "Brands Hatch Circuit",
+    "default": false,
+    "pkgid": 91,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_brandshatch/145-brandshatch-grandprix/inactive.svg"
+  },
+  {
+    "id": 149,
+    "ids": [
+      147,
+      148,
+      149,
+      150,
+      151
+    ],
+    "name": "Circuit Park Zandvoort",
+    "default": false,
+    "pkgid": 92,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_zandvoort/149-zandvoort-grandprix/inactive.svg"
+  },
+  {
+    "id": 153,
+    "ids": [
+      153,
+      154,
+      155,
+      156,
+      157
+    ],
+    "name": "Mid-Ohio Sports Car Course",
+    "default": false,
+    "pkgid": 96,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_midohio/153-midohio-full/inactive.svg"
+  },
+  {
+    "id": 202,
+    "ids": [
+      202,
+      207,
+      208,
+      209,
+      210,
+      211
+    ],
+    "name": "Oran Park Raceway",
+    "default": true,
+    "pkgid": 126,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_oran/202-oran-gp/inactive.svg"
+  },
+  {
+    "id": 203,
+    "ids": [
+      203,
+      204,
+      205,
+      206
+    ],
+    "name": "Rockingham Speedway",
+    "default": false,
+    "pkgid": 129,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_rockingham/203-rockingham-oval/inactive.svg"
+  },
+  {
+    "id": 212,
+    "ids": [
+      212,
+      213
+    ],
+    "name": "Autódromo José Carlos Pace",
+    "default": false,
+    "pkgid": 134,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_interlagos/212-interlagos-gp/inactive.svg"
+  },
+  {
+    "id": 233,
+    "ids": [
+      233,
+      234
+    ],
+    "name": "Donington Park Racing Circuit",
+    "default": false,
+    "pkgid": 162,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_donington/233-donington-gp/inactive.svg"
+  },
+  {
+    "id": 236,
+    "ids": [
+      235,
+      236
+    ],
+    "name": "[Retired] Phoenix Raceway",
+    "default": false,
+    "pkgid": 163,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_phoenix_2012/236-phoenix-2012-ovalopen/inactive.svg"
+  },
+  {
+    "id": 237,
+    "ids": [
+      237,
+      238
+    ],
+    "name": "World Wide Technology Raceway (Gateway)",
+    "default": false,
+    "pkgid": 169,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_gateway/237-gateway-oval/inactive.svg"
+  },
+  {
+    "id": 239,
+    "ids": [
+      239,
+      240,
+      241,
+      242,
+      243,
+      244,
+      245,
+      246,
+      247
+    ],
+    "name": "Autodromo Nazionale Monza",
+    "default": false,
+    "pkgid": 172,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_monza/239-monza-full/inactive.svg"
+  },
+  {
+    "id": 249,
+    "ids": [
+      249,
+      253
+    ],
+    "name": "Nürburgring Nordschleife",
+    "default": false,
+    "pkgid": 184,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_nurburgring_nordschleife/249-nurburgring-nordschleife/inactive.svg"
+  },
+  {
+    "id": 268,
+    "ids": [
+      268,
+      269
+    ],
+    "name": "Circuit des 24 Heures du Mans",
+    "default": false,
+    "pkgid": 204,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_lemans/268-lemans-full/inactive.svg"
+  },
+  {
+    "id": 324,
+    "ids": [
+      324,
+      325,
+      326,
+      327,
+      328,
+      329,
+      333
+    ],
+    "name": "Tsukuba Circuit",
+    "default": true,
+    "pkgid": 267,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_tsukuba/324-tsukuba-2kfull/inactive.svg"
+  },
+  {
+    "id": 341,
+    "ids": [
+      341,
+      342,
+      343
+    ],
+    "name": "Silverstone Circuit",
+    "default": false,
+    "pkgid": 282,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_silverstone_2019/341-silverstone-2019-gp/inactive.svg"
+  },
+  {
+    "id": 353,
+    "ids": [
+      352,
+      353,
+      354,
+      355
+    ],
+    "name": "Lime Rock Park",
+    "default": true,
+    "pkgid": 304,
+    "primaryType": "road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 0,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_limerock_2019/353-limerock-2019-gp/inactive.svg"
+  },
+  {
+    "id": 358,
+    "ids": [
+      358,
+      359,
+      360,
+      361,
+      363
+    ],
+    "name": "Lånkebanen (Hell RX)",
+    "default": false,
+    "pkgid": 311,
+    "primaryType": "dirt_road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 11.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_lankebanen/358-lankebanen-hellrx/inactive.svg"
+  },
+  {
+    "id": 374,
+    "ids": [
+      374,
+      380
+    ],
+    "name": "Nashville Fairgrounds Speedway",
+    "default": false,
+    "pkgid": 331,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_nashville/374-nashville-oval/inactive.svg"
+  },
+  {
+    "id": 382,
+    "ids": [
+      382,
+      383
+    ],
+    "name": "Crandon International Raceway",
+    "default": false,
+    "pkgid": 338,
+    "primaryType": "dirt_road",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_crandon/382-crandon-full/inactive.svg"
+  },
+  {
+    "id": 447,
+    "ids": [
+      51,
+      52,
+      53,
+      322,
+      323,
+      447
+    ],
+    "name": "Atlanta Motor Speedway",
+    "default": false,
+    "pkgid": 36,
+    "primaryType": "oval",
+    "hasOval": false,
+    "hasRoad": false,
+    "hasDirtOval": false,
+    "hasDirtRoad": false,
+    "price": 14.95,
+    "map": "https://dqfp1ltauszrc.cloudfront.net/public/track-maps/tracks_atlanta/447-atlanta-2022-oval/inactive.svg"
   }
 ]

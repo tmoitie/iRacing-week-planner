@@ -8,22 +8,22 @@ import { SIGNED_IN } from '../../actions/auth';
 
 describe('reducers/app', () => {
   beforeEach(() => {
-    MockDate.set('2020-09-23T13:30:00.000Z');
+    MockDate.set('2022-09-07T13:30:00.000Z');
   });
 
   test('set up default state', () => {
     const state = appReducer(undefined, {});
-    expect(state.date.isSame(moment('2020-09-23T00:00:00.000Z'))).toBe(true);
-    expect(state.daysSinceSeasonStart).toBe(8);
-    expect(state.week).toBe(2);
+    expect(state.date.isSame(moment('2022-09-07T00:00:00.000Z'))).toBe(true);
+    expect(state.daysSinceSeasonStart).toBe(1);
+    expect(state.week).toBe(1);
     expect(state.currentModal).toBe(null);
   });
 
   test('APP/UPDATE_DAYS', () => {
-    const state = appReducer(undefined, updateDays(17));
-    expect(state.date.isSame(moment('2020-10-02T00:00:00.000Z'))).toBe(true);
-    expect(state.daysSinceSeasonStart).toBe(17);
-    expect(state.week).toBe(3);
+    const state = appReducer(undefined, updateDays(10));
+    expect(state.date.isSame(moment('2022-09-16T00:00:00.000Z'))).toBe(true);
+    expect(state.daysSinceSeasonStart).toBe(10);
+    expect(state.week).toBe(2);
   });
 
   test('APP/CHANGE_MODAL', () => {

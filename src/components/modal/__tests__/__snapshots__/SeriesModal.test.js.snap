@@ -48,7 +48,7 @@ exports[`components/modal/SeriesModal renders open 1`] = `
         <h4
           className="modal-title"
         >
-          Tracks for Fanatec Global Mazda MX-5 Cup
+          Tracks for 13th Week iRacing Figure GR8
         </h4>
       </div>
       <div
@@ -101,38 +101,42 @@ exports[`components/modal/SeriesModal renders open 1`] = `
                     1
                   </td>
                   <td
-                    className=""
+                    className="success"
                   >
-                    Tsukuba Circuit - 2000 Full
+                    Irwindale Speedway - Figure Eight
                   </td>
                   <td>
-                    September 15, 2020
+                    September 6, 2022
                   </td>
                   <td>
-                    September 21, 2020
+                    September 6, 2022
                   </td>
                   <td>
                     <div>
-                      15L
+                      25L
                     </div>
                   </td>
                 </tr>
                 <tr
-                  style={Object {}}
+                  style={
+                    Object {
+                      "fontWeight": 700,
+                    }
+                  }
                 >
                   <td>
                     2
                   </td>
                   <td
-                    className=""
+                    className="success"
                   >
-                    Okayama International Circuit - Full Course
+                    Irwindale Speedway - Figure Eight Jump
                   </td>
                   <td>
-                    September 22, 2020
+                    September 7, 2022
                   </td>
                   <td>
-                    September 28, 2020
+                    September 7, 2022
                   </td>
                   <td>
                     <div>
@@ -149,178 +153,13 @@ exports[`components/modal/SeriesModal renders open 1`] = `
                   <td
                     className="success"
                   >
-                    Lime Rock Park - Grand Prix
+                    Irwindale Speedway - Figure Eight
                   </td>
                   <td>
-                    September 29, 2020
+                    September 8, 2022
                   </td>
                   <td>
-                    October 5, 2020
-                  </td>
-                  <td>
-                    <div>
-                      15L
-                    </div>
-                  </td>
-                </tr>
-                <tr
-                  style={
-                    Object {
-                      "fontWeight": 700,
-                    }
-                  }
-                >
-                  <td>
-                    4
-                  </td>
-                  <td
-                    className="success"
-                  >
-                    Summit Point Raceway - Summit Point Raceway
-                  </td>
-                  <td>
-                    October 6, 2020
-                  </td>
-                  <td>
-                    October 12, 2020
-                  </td>
-                  <td>
-                    <div>
-                      15L
-                    </div>
-                  </td>
-                </tr>
-                <tr
-                  style={Object {}}
-                >
-                  <td>
-                    5
-                  </td>
-                  <td
-                    className=""
-                  >
-                    Oulton Park Circuit - International
-                  </td>
-                  <td>
-                    October 13, 2020
-                  </td>
-                  <td>
-                    October 19, 2020
-                  </td>
-                  <td>
-                    <div>
-                      15L
-                    </div>
-                  </td>
-                </tr>
-                <tr
-                  style={Object {}}
-                >
-                  <td>
-                    6
-                  </td>
-                  <td
-                    className=""
-                  >
-                    Charlotte Motor Speedway - Roval
-                  </td>
-                  <td>
-                    October 20, 2020
-                  </td>
-                  <td>
-                    October 26, 2020
-                  </td>
-                  <td>
-                    <div>
-                      20L
-                    </div>
-                  </td>
-                </tr>
-                <tr
-                  style={Object {}}
-                >
-                  <td>
-                    7
-                  </td>
-                  <td
-                    className=""
-                  >
-                    Oran Park Raceway - Grand Prix
-                  </td>
-                  <td>
-                    October 27, 2020
-                  </td>
-                  <td>
-                    November 2, 2020
-                  </td>
-                  <td>
-                    <div>
-                      15L
-                    </div>
-                  </td>
-                </tr>
-                <tr
-                  style={Object {}}
-                >
-                  <td>
-                    8
-                  </td>
-                  <td
-                    className=""
-                  >
-                    Okayama International Circuit - Short
-                  </td>
-                  <td>
-                    November 3, 2020
-                  </td>
-                  <td>
-                    November 9, 2020
-                  </td>
-                  <td>
-                    <div>
-                      15L
-                    </div>
-                  </td>
-                </tr>
-                <tr
-                  style={Object {}}
-                >
-                  <td>
-                    9
-                  </td>
-                  <td
-                    className="success"
-                  >
-                    Summit Point Raceway - Jefferson Circuit
-                  </td>
-                  <td>
-                    November 10, 2020
-                  </td>
-                  <td>
-                    November 16, 2020
-                  </td>
-                  <td>
-                    <div>
-                      15L
-                    </div>
-                  </td>
-                </tr>
-                <tr
-                  style={Object {}}
-                >
-                  <td>
-                    10
-                  </td>
-                  <td
-                    className=""
-                  >
-                    Oulton Park Circuit - Fosters
-                  </td>
-                  <td>
-                    November 17, 2020
-                  </td>
-                  <td>
-                    November 23, 2020
+                    September 8, 2022
                   </td>
                   <td>
                     <div>
@@ -332,22 +171,22 @@ exports[`components/modal/SeriesModal renders open 1`] = `
                   style={Object {}}
                 >
                   <td>
-                    11
+                    4
                   </td>
                   <td
-                    className=""
+                    className="success"
                   >
-                    Oran Park Raceway - South
+                    Irwindale Speedway - Figure Eight Jump
                   </td>
                   <td>
-                    November 24, 2020
+                    September 9, 2022
                   </td>
                   <td>
-                    November 30, 2020
+                    September 9, 2022
                   </td>
                   <td>
                     <div>
-                      20L
+                      25L
                     </div>
                   </td>
                 </tr>
@@ -355,22 +194,68 @@ exports[`components/modal/SeriesModal renders open 1`] = `
                   style={Object {}}
                 >
                   <td>
-                    12
+                    5
                   </td>
                   <td
-                    className=""
+                    className="success"
                   >
-                    WeatherTech Raceway at Laguna Seca - Full Course
+                    Irwindale Speedway - Figure Eight
                   </td>
                   <td>
-                    December 1, 2020
+                    September 10, 2022
                   </td>
                   <td>
-                    December 7, 2020
+                    September 10, 2022
                   </td>
                   <td>
                     <div>
-                      15L
+                      25L
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  style={Object {}}
+                >
+                  <td>
+                    6
+                  </td>
+                  <td
+                    className="success"
+                  >
+                    Irwindale Speedway - Figure Eight Jump
+                  </td>
+                  <td>
+                    September 11, 2022
+                  </td>
+                  <td>
+                    September 11, 2022
+                  </td>
+                  <td>
+                    <div>
+                      25L
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  style={Object {}}
+                >
+                  <td>
+                    7
+                  </td>
+                  <td
+                    className="success"
+                  >
+                    Irwindale Speedway - Figure Eight
+                  </td>
+                  <td>
+                    September 12, 2022
+                  </td>
+                  <td>
+                    September 12, 2022
+                  </td>
+                  <td>
+                    <div>
+                      25L
                     </div>
                   </td>
                 </tr>

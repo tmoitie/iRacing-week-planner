@@ -64,7 +64,7 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
       <tr>
         <td>
           <div>
-            167
+            374
           </div>
         </td>
         <td
@@ -84,71 +84,7 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
             <span>
                
             </span>
-            iRacing ARCA Menards Series
-          </button>
-        </td>
-        <td>
-          <div>
-            Every 30 minutes starting at 12:00 AM UTC
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div>
-            32
-          </div>
-        </td>
-        <td
-          className="clickableCell"
-        >
-          <button
-            className="cellButton"
-            onClick={[Function]}
-            onKeyPress={[Function]}
-            style={
-              Object {
-                "minHeight": 50,
-              }
-            }
-            type="button"
-          >
-            <span>
-               
-            </span>
-            iRacing Advanced Legends Cup
-          </button>
-        </td>
-        <td>
-          <div>
-            Every 2 hours starting at 1:55 AM UTC
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div>
-            432
-          </div>
-        </td>
-        <td
-          className="clickableCell"
-        >
-          <button
-            className="cellButton"
-            onClick={[Function]}
-            onKeyPress={[Function]}
-            style={
-              Object {
-                "minHeight": 50,
-              }
-            }
-            type="button"
-          >
-            <span>
-               
-            </span>
-            Fanatec GT Challenge
+            IndyCar iRacing Series
           </button>
         </td>
         <td
@@ -172,7 +108,7 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
       <tr>
         <td>
           <div>
-            139
+            245
           </div>
         </td>
         <td
@@ -192,73 +128,13 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
             <span>
                
             </span>
-            Fanatec Global Mazda MX-5 Cup
+            13th Week iRacing Figure GR8
           </button>
         </td>
         <td>
           <div>
-            Every hour starting at 12:30 AM UTC
+            Every 30 minutes starting at 12:15 AM UTC
           </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div>
-            323
-          </div>
-        </td>
-        <td
-          className="clickableCell"
-        >
-          <button
-            className="cellButton"
-            onClick={[Function]}
-            onKeyPress={[Function]}
-            style={
-              Object {
-                "minHeight": 50,
-              }
-            }
-            type="button"
-          >
-            <span>
-               
-            </span>
-            Example Rallycross
-          </button>
-        </td>
-        <td>
-          No time data
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div>
-            341
-          </div>
-        </td>
-        <td
-          className="clickableCell"
-        >
-          <button
-            className="cellButton"
-            onClick={[Function]}
-            onKeyPress={[Function]}
-            style={
-              Object {
-                "minHeight": 50,
-              }
-            }
-            type="button"
-          >
-            <span>
-               
-            </span>
-            Example Dirt Oval
-          </button>
-        </td>
-        <td>
-          No time data
         </td>
       </tr>
     </tbody>
@@ -321,7 +197,7 @@ exports[`components/RaceListing changes sort on click 1`] = `
       <tr>
         <td>
           <div>
-            32
+            245
           </div>
         </td>
         <td
@@ -341,14 +217,14 @@ exports[`components/RaceListing changes sort on click 1`] = `
             <span>
                
             </span>
-            iRacing Advanced Legends Cup
+            13th Week iRacing Figure GR8
           </button>
         </td>
       </tr>
       <tr>
         <td>
           <div>
-            139
+            374
           </div>
         </td>
         <td
@@ -368,115 +244,7 @@ exports[`components/RaceListing changes sort on click 1`] = `
             <span>
                
             </span>
-            Fanatec Global Mazda MX-5 Cup
-          </button>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div>
-            167
-          </div>
-        </td>
-        <td
-          className="clickableCell"
-        >
-          <button
-            className="cellButton"
-            onClick={[Function]}
-            onKeyPress={[Function]}
-            style={
-              Object {
-                "minHeight": 50,
-              }
-            }
-            type="button"
-          >
-            <span>
-               
-            </span>
-            iRacing ARCA Menards Series
-          </button>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div>
-            323
-          </div>
-        </td>
-        <td
-          className="clickableCell"
-        >
-          <button
-            className="cellButton"
-            onClick={[Function]}
-            onKeyPress={[Function]}
-            style={
-              Object {
-                "minHeight": 50,
-              }
-            }
-            type="button"
-          >
-            <span>
-               
-            </span>
-            Example Rallycross
-          </button>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div>
-            341
-          </div>
-        </td>
-        <td
-          className="clickableCell"
-        >
-          <button
-            className="cellButton"
-            onClick={[Function]}
-            onKeyPress={[Function]}
-            style={
-              Object {
-                "minHeight": 50,
-              }
-            }
-            type="button"
-          >
-            <span>
-               
-            </span>
-            Example Dirt Oval
-          </button>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div>
-            432
-          </div>
-        </td>
-        <td
-          className="clickableCell"
-        >
-          <button
-            className="cellButton"
-            onClick={[Function]}
-            onKeyPress={[Function]}
-            style={
-              Object {
-                "minHeight": 50,
-              }
-            }
-            type="button"
-          >
-            <span>
-               
-            </span>
-            Fanatec GT Challenge
+            IndyCar iRacing Series
           </button>
         </td>
       </tr>
@@ -524,42 +292,14 @@ exports[`components/RaceListing renders correctly 1`] = `
       <tr>
         <td>
           <div>
-            32
+            245
           </div>
         </td>
       </tr>
       <tr>
         <td>
           <div>
-            139
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div>
-            167
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div>
-            323
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div>
-            341
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div>
-            432
+            374
           </div>
         </td>
       </tr>

@@ -16,8 +16,8 @@ jest.mock(
 
 describe('components/columns/NextRace', () => {
   test('renders correctly', () => {
-    MockDate.set('2020-09-23T13:30:00.000Z');
-    getNextRace.mockReturnValue(moment('2020-09-23T13:45:00.000Z'));
+    MockDate.set('2022-09-07T13:30:00.000Z');
+    getNextRace.mockReturnValue(moment('2022-09-07T13:45:00.000Z'));
     const component = shallow(<NextRace race={{}} />);
 
     expect(component).toMatchSnapshot();
@@ -25,7 +25,7 @@ describe('components/columns/NextRace', () => {
   });
 
   test('renders no time data', () => {
-    MockDate.set('2020-09-23T13:30:00.000Z');
+    MockDate.set('2022-09-07T13:30:00.000Z');
     getNextRace.mockReturnValue(null);
     const component = shallow(<NextRace race={{}} />);
 

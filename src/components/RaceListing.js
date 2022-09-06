@@ -75,7 +75,7 @@ export default function RaceListing(): React.Node {
                 <>
                   {t(column.header)}
                   <span> </span>
-                  {sort.key === column.id ? <SortArrow sort={sort}/> : null}
+                  {sort.key === column.id ? <SortArrow sort={sort} /> : null}
                 </>
               );
 

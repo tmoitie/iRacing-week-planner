@@ -1,574 +1,574 @@
 [
   {
-    "seriesid": 139,
-    "seriesname": "Fanatec Global Mazda MX-5 Cup",
-    "start": 1600128000000,
-    "end": 1607385600000,
+    "seriesid": 374,
+    "seriesname": "IndyCar iRacing Series",
+    "start": "2022-02-22T00:00:00Z",
+    "end": "2022-09-14T23:00:00.000Z",
     "tracks": [
       {
         "raceweek": 0,
-        "config": "2000 Full",
-        "name": "Tsukuba Circuit - 2000 Full",
-        "pkgid": 267
-      },
-      {
-        "raceweek": 1,
-        "config": "Full Course",
-        "name": "Okayama International Circuit - Full Course",
-        "pkgid": 109
-      },
-      {
-        "raceweek": 2,
-        "config": "Grand Prix",
-        "name": "Lime Rock Park - Grand Prix",
-        "pkgid": 304
-      },
-      {
-        "raceweek": 3,
-        "config": "Summit Point Raceway",
-        "name": "Summit Point Raceway - Summit Point Raceway",
-        "pkgid": 13
-      },
-      {
-        "raceweek": 4,
         "config": "International",
-        "name": "Oulton Park Circuit - International",
-        "pkgid": 117
-      },
-      {
-        "raceweek": 5,
-        "config": "Roval",
-        "name": "Charlotte Motor Speedway - Roval",
-        "pkgid": 268
-      },
-      {
-        "raceweek": 6,
-        "config": "Grand Prix",
-        "name": "Oran Park Raceway - Grand Prix",
-        "pkgid": 126
-      },
-      {
-        "raceweek": 7,
-        "config": "Short",
-        "name": "Okayama International Circuit - Short",
-        "pkgid": 109
-      },
-      {
-        "raceweek": 8,
-        "config": "Jefferson Circuit",
-        "name": "Summit Point Raceway - Jefferson Circuit",
-        "pkgid": 13
-      },
-      {
-        "raceweek": 9,
-        "config": "Fosters",
-        "name": "Oulton Park Circuit - Fosters",
-        "pkgid": 117
-      },
-      {
-        "raceweek": 10,
-        "config": "South",
-        "name": "Oran Park Raceway - South",
-        "pkgid": 126
-      },
-      {
-        "raceweek": 11,
-        "config": "Full Course",
-        "name": "WeatherTech Raceway at Laguna Seca - Full Course",
-        "pkgid": 34
-      }
-    ],
-    "catid": 2,
-    "isOfficial": true,
-    "minlicenselevel": 1,
-    "isFixedSetup": true,
-    "carclasses": [
-      {
-        "shortname": "MX5 Cup 2016"
-      }
-    ],
-    "cars": [
-      {
-        "sku": 10394
-      }
-    ],
-    "seasonid": 2915
-  },
-  {
-    "seriesid": 432,
-    "seriesname": "Fanatec GT Challenge",
-    "start": 1600128000000,
-    "end": 1607385600000,
-    "tracks": [
-      {
-        "raceweek": 0,
-        "config": "",
-        "name": "Circuit Gilles Villeneuve",
-        "pkgid": 145
+        "name": "Sebring International Raceway - International",
+        "pkgid": 40,
+        "start": "2022-02-24",
+        "race_time_descriptors": [
+          {
+            "repeating": false,
+            "super_session": false,
+            "session_minutes": 99,
+            "session_times": [
+              "2022-02-24T01:00:00Z",
+              "2022-02-25T18:00:00Z",
+              "2022-02-26T13:00:00Z",
+              "2022-02-27T18:00:00Z",
+              "2022-02-28T01:00:00Z"
+            ]
+          }
+        ],
+        "race_lap_limit": 41,
+        "race_time_limit": null
       },
       {
         "raceweek": 1,
-        "config": "Gesamtstrecke 24h",
-        "name": "Nürburgring Combined - Gesamtstrecke 24h",
-        "pkgid": 186
-      },
-      {
-        "raceweek": 2,
-        "config": "Road Course",
-        "name": "Indianapolis Motor Speedway - Road Course",
-        "pkgid": 73
-      },
-      {
-        "raceweek": 3,
-        "config": "Road Course Combined",
-        "name": "[Legacy] Texas Motor Speedway - 2009 - Road Course Combined",
-        "pkgid": 61
-      },
-      {
-        "raceweek": 4,
-        "config": "Grand Prix",
-        "name": "Suzuka International Racing Course - Grand Prix",
-        "pkgid": 114
-      },
-      {
-        "raceweek": 5,
-        "config": "Grand Prix Pits",
-        "name": "Circuit de Spa-Francorchamps - Grand Prix Pits",
-        "pkgid": 103
-      },
-      {
-        "raceweek": 6,
-        "config": "Full Course",
-        "name": "Okayama International Circuit - Full Course",
-        "pkgid": 109
-      },
-      {
-        "raceweek": 7,
-        "config": "",
-        "name": "Phillip Island Circuit",
-        "pkgid": 93
-      },
-      {
-        "raceweek": 8,
-        "config": "Full Course",
-        "name": "WeatherTech Raceway at Laguna Seca - Full Course",
-        "pkgid": 34
-      },
-      {
-        "raceweek": 9,
-        "config": "Road Course",
-        "name": "Daytona International Speedway - Road Course",
-        "pkgid": 120
-      },
-      {
-        "raceweek": 10,
-        "config": "Grand Prix",
-        "name": "Lime Rock Park - Grand Prix",
-        "pkgid": 304
-      },
-      {
-        "raceweek": 11,
-        "config": "Grand Prix",
-        "name": "Autodromo Nazionale Monza - Grand Prix",
-        "pkgid": 172
-      }
-    ],
-    "catid": 2,
-    "isOfficial": true,
-    "minlicenselevel": 8,
-    "isFixedSetup": false,
-    "carclasses": [
-      {
-        "shortname": "GT1 Class"
-      },
-      {
-        "shortname": "Ford GT"
-      }
-    ],
-    "cars": [
-      {
-        "sku": 10113
-      },
-      {
-        "sku": 10389
-      },
-      {
-        "sku": 10281
-      }
-    ],
-    "seasonid": 2948
-  },
-  {
-    "seriesid": 32,
-    "seriesname": "iRacing Advanced Legends Cup",
-    "start": 1600128000000,
-    "end": 1607385600000,
-    "tracks": [
-      {
-        "raceweek": 0,
-        "config": "Legends Oval - 2018",
-        "name": "Charlotte Motor Speedway - Legends Oval - 2018",
-        "pkgid": 268
-      },
-      {
-        "raceweek": 1,
-        "config": "",
-        "name": "Oxford Plains Speedway",
-        "pkgid": 10
-      },
-      {
-        "raceweek": 2,
-        "config": "Asphalt",
-        "name": "USA International Speedway - Asphalt",
-        "pkgid": 7
-      },
-      {
-        "raceweek": 3,
-        "config": "",
-        "name": "South Boston Speedway",
-        "pkgid": 19
-      },
-      {
-        "raceweek": 4,
-        "config": "",
-        "name": "Southern National Motorsports Park",
-        "pkgid": 194
-      },
-      {
-        "raceweek": 5,
-        "config": "Asphalt",
-        "name": "Lanier National Speedway - Asphalt",
-        "pkgid": 8
-      },
-      {
-        "raceweek": 6,
-        "config": "Legends Oval - 2018",
-        "name": "Charlotte Motor Speedway - Legends Oval - 2018",
-        "pkgid": 268
-      },
-      {
-        "raceweek": 7,
-        "config": "",
-        "name": "Concord Speedway",
-        "pkgid": 3
-      },
-      {
-        "raceweek": 8,
-        "config": "Asphalt",
-        "name": "USA International Speedway - Asphalt",
-        "pkgid": 7
-      },
-      {
-        "raceweek": 9,
-        "config": "",
-        "name": "South Boston Speedway",
-        "pkgid": 19
-      },
-      {
-        "raceweek": 10,
-        "config": "Oval",
-        "name": "Thompson Speedway Motorsports Park - Oval",
-        "pkgid": 97
-      },
-      {
-        "raceweek": 11,
-        "config": "",
-        "name": "Langley Speedway",
-        "pkgid": 125
-      }
-    ],
-    "catid": 1,
-    "isOfficial": true,
-    "minlicenselevel": 1,
-    "isFixedSetup": false,
-    "carclasses": [
-      {
-        "shortname": "Legends"
-      }
-    ],
-    "cars": [
-      {
-        "sku": 10008
-      }
-    ],
-    "seasonid": 2917
-  },
-  {
-    "seriesid": 167,
-    "seriesname": "iRacing ARCA Menards Series",
-    "start": 1600128000000,
-    "end": 1607385600000,
-    "tracks": [
-      {
-        "raceweek": 0,
-        "config": "",
-        "name": "Darlington Raceway",
-        "pkgid": 59
-      },
-      {
-        "raceweek": 1,
-        "config": "Asphalt",
-        "name": "Lanier National Speedway - Asphalt",
-        "pkgid": 8
-      },
-      {
-        "raceweek": 2,
-        "config": "Dual Pit Roads",
-        "name": "Bristol Motor Speedway - Dual Pit Roads",
-        "pkgid": 43
-      },
-      {
-        "raceweek": 3,
-        "config": "Oval",
-        "name": "Nashville Fairgrounds Speedway - Oval",
-        "pkgid": 331
-      },
-      {
-        "raceweek": 4,
-        "config": "Oval",
-        "name": "[Legacy] Kentucky Speedway - 2011 - Oval",
-        "pkgid": 118
-      },
-      {
-        "raceweek": 5,
-        "config": "Roval",
-        "name": "Charlotte Motor Speedway - Roval",
-        "pkgid": 268
-      },
-      {
-        "raceweek": 6,
-        "config": "",
-        "name": "Five Flags Speedway",
-        "pkgid": 180
-      },
-      {
-        "raceweek": 7,
         "config": "Oval",
         "name": "Texas Motor Speedway - Oval",
-        "pkgid": 310
+        "pkgid": 310,
+        "start": "2022-03-17",
+        "race_time_descriptors": [
+          {
+            "repeating": false,
+            "super_session": false,
+            "session_minutes": 138,
+            "session_times": [
+              "2022-03-17T01:00:00Z",
+              "2022-03-18T18:00:00Z",
+              "2022-03-19T13:00:00Z",
+              "2022-03-20T18:00:00Z",
+              "2022-03-21T01:00:00Z"
+            ]
+          }
+        ],
+        "race_lap_limit": 150,
+        "race_time_limit": null
+      },
+      {
+        "raceweek": 2,
+        "name": "Long Beach Street Circuit",
+        "pkgid": 116,
+        "start": "2022-04-07",
+        "race_time_descriptors": [
+          {
+            "repeating": false,
+            "super_session": false,
+            "session_minutes": 98,
+            "session_times": [
+              "2022-04-07T01:00:00Z",
+              "2022-04-08T18:00:00Z",
+              "2022-04-09T13:00:00Z",
+              "2022-04-10T18:00:00Z",
+              "2022-04-11T01:00:00Z"
+            ]
+          }
+        ],
+        "race_lap_limit": 65,
+        "race_time_limit": null
+      },
+      {
+        "raceweek": 3,
+        "config": "Full Course",
+        "name": "Barber Motorsports Park - Full Course",
+        "pkgid": 33,
+        "start": "2022-04-28",
+        "race_time_descriptors": [
+          {
+            "repeating": false,
+            "super_session": false,
+            "session_minutes": 113,
+            "session_times": [
+              "2022-04-28T01:00:00Z",
+              "2022-04-29T18:00:00Z",
+              "2022-04-30T13:00:00Z",
+              "2022-05-01T18:00:00Z",
+              "2022-05-02T01:00:00Z"
+            ]
+          }
+        ],
+        "race_lap_limit": 68,
+        "race_time_limit": null
+      },
+      {
+        "raceweek": 4,
+        "config": "Road Course - 2009",
+        "name": "Indianapolis Motor Speedway - Road Course - 2009",
+        "pkgid": 73,
+        "start": "2022-05-12",
+        "race_time_descriptors": [
+          {
+            "repeating": false,
+            "super_session": false,
+            "session_minutes": 114,
+            "session_times": [
+              "2022-05-12T01:00:00Z",
+              "2022-05-13T18:00:00Z",
+              "2022-05-14T13:00:00Z",
+              "2022-05-15T18:00:00Z",
+              "2022-05-16T01:00:00Z"
+            ]
+          }
+        ],
+        "race_lap_limit": 65,
+        "race_time_limit": null
+      },
+      {
+        "raceweek": 5,
+        "config": "IndyCar Oval",
+        "name": "Indianapolis Motor Speedway - IndyCar Oval",
+        "pkgid": 73,
+        "start": "2022-05-26",
+        "race_time_descriptors": [
+          {
+            "repeating": false,
+            "super_session": false,
+            "session_minutes": 228,
+            "session_times": [
+              "2022-05-26T01:00:00Z",
+              "2022-05-27T18:00:00Z",
+              "2022-05-28T13:00:00Z",
+              "2022-05-29T18:00:00Z",
+              "2022-05-30T01:00:00Z"
+            ]
+          }
+        ],
+        "race_lap_limit": 150,
+        "race_time_limit": null
+      },
+      {
+        "raceweek": 6,
+        "config": "Belle Isle",
+        "name": "Detroit Grand Prix at Belle Isle - Belle Isle",
+        "pkgid": 259,
+        "start": "2022-06-02",
+        "race_time_descriptors": [
+          {
+            "repeating": false,
+            "super_session": false,
+            "session_minutes": 96,
+            "session_times": [
+              "2022-06-02T01:00:00Z",
+              "2022-06-03T18:00:00Z",
+              "2022-06-04T13:00:00Z",
+              "2022-06-05T18:00:00Z",
+              "2022-06-06T01:00:00Z"
+            ]
+          }
+        ],
+        "race_lap_limit": 53,
+        "race_time_limit": null
+      },
+      {
+        "raceweek": 7,
+        "config": "Full Course",
+        "name": "Road America - Full Course",
+        "pkgid": 11,
+        "start": "2022-06-09",
+        "race_time_descriptors": [
+          {
+            "repeating": false,
+            "super_session": false,
+            "session_minutes": 106,
+            "session_times": [
+              "2022-06-09T01:00:00Z",
+              "2022-06-10T18:00:00Z",
+              "2022-06-11T13:00:00Z",
+              "2022-06-12T18:00:00Z",
+              "2022-06-13T01:00:00Z"
+            ]
+          }
+        ],
+        "race_lap_limit": 42,
+        "race_time_limit": null
       },
       {
         "raceweek": 8,
-        "config": "",
-        "name": "Martinsville Speedway",
-        "pkgid": 26
+        "config": "Full Course",
+        "name": "Mid-Ohio Sports Car Course - Full Course",
+        "pkgid": 96,
+        "start": "2022-06-30",
+        "race_time_descriptors": [
+          {
+            "repeating": false,
+            "super_session": false,
+            "session_minutes": 111,
+            "session_times": [
+              "2022-06-30T01:00:00Z",
+              "2022-07-01T18:00:00Z",
+              "2022-07-02T13:00:00Z",
+              "2022-07-03T18:00:00Z",
+              "2022-07-04T01:00:00Z"
+            ]
+          }
+        ],
+        "race_lap_limit": 68,
+        "race_time_limit": null
       },
       {
         "raceweek": 9,
-        "config": "Oval",
-        "name": "[Legacy] Phoenix Raceway - 2008 - Oval",
-        "pkgid": 55
+        "name": "Circuit Gilles Villeneuve",
+        "pkgid": 145,
+        "start": "2022-07-14",
+        "race_time_descriptors": [
+          {
+            "repeating": false,
+            "super_session": false,
+            "session_minutes": 113,
+            "session_times": [
+              "2022-07-14T01:00:00Z",
+              "2022-07-15T18:00:00Z",
+              "2022-07-16T13:00:00Z",
+              "2022-07-17T18:00:00Z",
+              "2022-07-18T01:00:00Z"
+            ]
+          }
+        ],
+        "race_lap_limit": 60,
+        "race_time_limit": null
       },
       {
         "raceweek": 10,
         "config": "Oval",
         "name": "Iowa Speedway - Oval",
-        "pkgid": 115
+        "pkgid": 115,
+        "start": "2022-07-21",
+        "race_time_descriptors": [
+          {
+            "repeating": false,
+            "super_session": false,
+            "session_minutes": 130,
+            "session_times": [
+              "2022-07-21T01:00:00Z",
+              "2022-07-22T18:00:00Z",
+              "2022-07-23T13:00:00Z",
+              "2022-07-24T18:00:00Z",
+              "2022-07-25T01:00:00Z"
+            ]
+          }
+        ],
+        "race_lap_limit": 188,
+        "race_time_limit": null
       },
       {
         "raceweek": 11,
-        "config": "",
-        "name": "[Legacy] Michigan International Speedway - 2009",
-        "pkgid": 66
+        "config": "Road Course",
+        "name": "Indianapolis Motor Speedway - Road Course",
+        "pkgid": 73,
+        "start": "2022-07-28",
+        "race_time_descriptors": [
+          {
+            "repeating": false,
+            "super_session": false,
+            "session_minutes": 109,
+            "session_times": [
+              "2022-07-28T01:00:00Z",
+              "2022-07-29T18:00:00Z",
+              "2022-07-30T13:00:00Z",
+              "2022-07-31T18:00:00Z",
+              "2022-08-01T01:00:00Z"
+            ]
+          }
+        ],
+        "race_lap_limit": 65,
+        "race_time_limit": null
+      },
+      {
+        "raceweek": 12,
+        "name": "Chicago Street Circuit",
+        "pkgid": 365,
+        "start": "2022-08-02",
+        "race_time_descriptors": [
+          {
+            "repeating": false,
+            "super_session": false,
+            "session_minutes": 30,
+            "session_times": [
+              "2022-08-04T01:00:00Z",
+              "2022-08-05T18:00:00Z",
+              "2022-08-06T13:00:00Z",
+              "2022-08-07T18:00:00Z",
+              "2022-08-08T01:00:00Z"
+            ]
+          }
+        ],
+        "race_lap_limit": 60,
+        "race_time_limit": null
+      },
+      {
+        "raceweek": 13,
+        "config": "Oval",
+        "name": "World Wide Technology Raceway (Gateway) - Oval",
+        "pkgid": 169,
+        "start": "2022-08-16",
+        "race_time_descriptors": [
+          {
+            "repeating": false,
+            "super_session": false,
+            "session_minutes": 30,
+            "session_times": [
+              "2022-08-18T01:00:00Z",
+              "2022-08-19T18:00:00Z",
+              "2022-08-20T13:00:00Z",
+              "2022-08-21T18:00:00Z",
+              "2022-08-22T01:00:00Z"
+            ]
+          }
+        ],
+        "race_lap_limit": 195,
+        "race_time_limit": null
+      },
+      {
+        "raceweek": 14,
+        "config": "Boot",
+        "name": "Watkins Glen International - Boot",
+        "pkgid": 56,
+        "start": "2022-09-01",
+        "race_time_descriptors": [
+          {
+            "repeating": false,
+            "super_session": false,
+            "session_minutes": 97,
+            "session_times": [
+              "2022-09-01T01:00:00Z",
+              "2022-09-02T18:00:00Z",
+              "2022-09-03T13:00:00Z",
+              "2022-09-04T18:00:00Z",
+              "2022-09-05T01:00:00Z"
+            ]
+          }
+        ],
+        "race_lap_limit": 45,
+        "race_time_limit": null
+      },
+      {
+        "raceweek": 15,
+        "config": "Full Course",
+        "name": "WeatherTech Raceway at Laguna Seca - Full Course",
+        "pkgid": 34,
+        "start": "2022-09-08",
+        "race_time_descriptors": [
+          {
+            "repeating": false,
+            "super_session": false,
+            "session_minutes": 120,
+            "session_times": [
+              "2022-09-08T01:00:00Z",
+              "2022-09-09T18:00:00Z",
+              "2022-09-10T13:00:00Z",
+              "2022-09-11T18:00:00Z",
+              "2022-09-12T01:00:00Z"
+            ]
+          }
+        ],
+        "race_lap_limit": 72,
+        "race_time_limit": null
       }
     ],
-    "catid": 1,
+    "catid": 2,
     "isOfficial": true,
-    "minlicenselevel": 4,
-    "isFixedSetup": true,
+    "licnceGroup": 3,
+    "licnceGroupName": "Class C",
+    "minlicenselevel": 8,
+    "isFixedSetup": false,
     "carclasses": [
       {
-        "shortname": "K&N Series"
+        "shortname": "Dallara IR18"
       }
     ],
     "cars": [
       {
-        "sku": 10088
+        "sku": 10440
       }
     ],
-    "seasonid": 2923
+    "seasonid": 3598
   },
   {
-    "seriesid": 341,
-    "seriesname": "Example Dirt Oval",
-    "start": 1600128000000,
-    "end": 1607385600000,
+    "seriesid": 245,
+    "seriesname": "13th Week iRacing Figure GR8",
+    "start": "2022-09-06T00:00:00Z",
+    "end": "2022-09-12T23:00:00.000Z",
     "tracks": [
       {
         "raceweek": 0,
-        "config": "",
-        "name": "Track 8 - Dirt",
-        "pkgid": 8
+        "config": "Figure Eight",
+        "name": "Irwindale Speedway - Figure Eight",
+        "pkgid": 6,
+        "start": "2022-09-06",
+        "weekLength": 1,
+        "race_time_descriptors": [
+          {
+            "repeating": true,
+            "super_session": false,
+            "session_minutes": 17,
+            "start_date": "2022-09-06",
+            "day_offset": [
+              0
+            ],
+            "first_session_time": "00:15:00",
+            "repeat_minutes": 30
+          }
+        ],
+        "race_lap_limit": 25,
+        "race_time_limit": null
       },
       {
         "raceweek": 1,
-        "config": "Dirt",
-        "name": "Track 8 - Dirt",
-        "pkgid": 8
+        "config": "Figure Eight Jump",
+        "name": "Irwindale Speedway - Figure Eight Jump",
+        "pkgid": 6,
+        "start": "2022-09-07",
+        "weekLength": 1,
+        "race_time_descriptors": [
+          {
+            "repeating": true,
+            "super_session": false,
+            "session_minutes": 17,
+            "start_date": "2022-09-07",
+            "day_offset": [
+              0
+            ],
+            "first_session_time": "00:15:00",
+            "repeat_minutes": 30
+          }
+        ],
+        "race_lap_limit": 25,
+        "race_time_limit": null
       },
       {
         "raceweek": 2,
-        "config": "Dirt",
-        "name": "Track 8 - Dirt",
-        "pkgid": 8
+        "config": "Figure Eight",
+        "name": "Irwindale Speedway - Figure Eight",
+        "pkgid": 6,
+        "start": "2022-09-08",
+        "weekLength": 1,
+        "race_time_descriptors": [
+          {
+            "repeating": true,
+            "super_session": false,
+            "session_minutes": 17,
+            "start_date": "2022-09-08",
+            "day_offset": [
+              0
+            ],
+            "first_session_time": "00:15:00",
+            "repeat_minutes": 30
+          }
+        ],
+        "race_lap_limit": 25,
+        "race_time_limit": null
       },
       {
         "raceweek": 3,
-        "config": "Dirt",
-        "name": "Track 8 - Dirt",
-        "pkgid": 8
+        "config": "Figure Eight Jump",
+        "name": "Irwindale Speedway - Figure Eight Jump",
+        "pkgid": 6,
+        "start": "2022-09-09",
+        "weekLength": 1,
+        "race_time_descriptors": [
+          {
+            "repeating": true,
+            "super_session": false,
+            "session_minutes": 17,
+            "start_date": "2022-09-09",
+            "day_offset": [
+              0
+            ],
+            "first_session_time": "00:15:00",
+            "repeat_minutes": 30
+          }
+        ],
+        "race_lap_limit": 25,
+        "race_time_limit": null
       },
       {
         "raceweek": 4,
-        "config": "",
-        "name": "Track 8 - Dirt",
-        "pkgid": 8
+        "config": "Figure Eight",
+        "name": "Irwindale Speedway - Figure Eight",
+        "pkgid": 6,
+        "start": "2022-09-10",
+        "weekLength": 1,
+        "race_time_descriptors": [
+          {
+            "repeating": true,
+            "super_session": false,
+            "session_minutes": 17,
+            "start_date": "2022-09-10",
+            "day_offset": [
+              0
+            ],
+            "first_session_time": "00:15:00",
+            "repeat_minutes": 30
+          }
+        ],
+        "race_lap_limit": 25,
+        "race_time_limit": null
       },
       {
         "raceweek": 5,
-        "config": "Dirt",
-        "name": "Track 8 - Dirt",
-        "pkgid": 8
+        "config": "Figure Eight Jump",
+        "name": "Irwindale Speedway - Figure Eight Jump",
+        "pkgid": 6,
+        "start": "2022-09-11",
+        "weekLength": 1,
+        "race_time_descriptors": [
+          {
+            "repeating": true,
+            "super_session": false,
+            "session_minutes": 17,
+            "start_date": "2022-09-11",
+            "day_offset": [
+              0
+            ],
+            "first_session_time": "00:15:00",
+            "repeat_minutes": 30
+          }
+        ],
+        "race_lap_limit": 25,
+        "race_time_limit": null
       },
       {
         "raceweek": 6,
-        "config": "Dirt",
-        "name": "Track 7 - Dirt",
-        "pkgid": 7
-      },
-      {
-        "raceweek": 7,
-        "config": "Dirt",
-        "name": "Track 8 - Dirt",
-        "pkgid": 8
-      },
-      {
-        "raceweek": 8,
-        "config": "",
-        "name": "Track 43 - Dirt",
-        "pkgid": 43
-      },
-      {
-        "raceweek": 9,
-        "config": "Dirt",
-        "name": "Track 43 - Dirt",
-        "pkgid": 43
-      },
-      {
-        "raceweek": 10,
-        "config": "Dirt",
-        "name": "Track 43 - Dirt",
-        "pkgid": 43
-      },
-      {
-        "raceweek": 11,
-        "config": "Dirt",
-        "name": "Track 43 - Dirt",
-        "pkgid": 43
+        "config": "Figure Eight",
+        "name": "Irwindale Speedway - Figure Eight",
+        "pkgid": 6,
+        "start": "2022-09-12",
+        "weekLength": 1,
+        "race_time_descriptors": [
+          {
+            "repeating": true,
+            "super_session": false,
+            "session_minutes": 17,
+            "start_date": "2022-09-12",
+            "day_offset": [
+              0
+            ],
+            "first_session_time": "00:15:00",
+            "repeat_minutes": 30
+          }
+        ],
+        "race_lap_limit": 25,
+        "race_time_limit": null
       }
     ],
-    "catid": 3,
-    "isOfficial": true,
-    "minlicenselevel": 1,
-    "isFixedSetup": true,
-    "carclasses": [
-      {
-        "shortname": "Dirt StreetStock"
-      }
-    ],
-    "cars": [
-      {
-        "sku": 10417
-      }
-    ],
-    "seasonid": 3698
-  },
-  {
-    "seriesid": 323,
-    "seriesname": "Example Rallycross",
-    "start": 1600128000000,
-    "end": 1607385600000,
-    "tracks": [
-      {
-        "raceweek": 0,
-        "config": "Rallycross",
-        "name": "Track 120",
-        "pkgid": 120
-      },
-      {
-        "raceweek": 1,
-        "config": "Rallycross",
-        "name": "Track 120",
-        "pkgid": 120
-      },
-      {
-        "raceweek": 2,
-        "config": "Rallycross",
-        "name": "Track 268",
-        "pkgid": 268
-      },
-      {
-        "raceweek": 3,
-        "config": "Rallycross",
-        "name": "Track 268",
-        "pkgid": 268
-      },
-      {
-        "raceweek": 4,
-        "config": "Rallycross",
-        "name": "Track 268",
-        "pkgid": 268
-      },
-      {
-        "raceweek": 5,
-        "config": "Rallycross",
-        "name": "Track 120",
-        "pkgid": 120
-      },
-      {
-        "raceweek": 6,
-        "config": "Rallycross",
-        "name": "Track 120",
-        "pkgid": 120
-      },
-      {
-        "raceweek": 7,
-        "config": "Rallycross",
-        "name": "Track 268",
-        "pkgid": 268
-      },
-      {
-        "raceweek": 8,
-        "config": "Rallycross",
-        "name": "Track 268",
-        "pkgid": 268
-      },
-      {
-        "raceweek": 9,
-        "config": "Rallycross",
-        "name": "Track 268",
-        "pkgid": 268
-      },
-      {
-        "raceweek": 10,
-        "config": "Rallycross",
-        "name": "Track 120",
-        "pkgid": 120
-      },
-      {
-        "raceweek": 11,
-        "config": "Rallycross",
-        "name": "Track 120",
-        "pkgid": 120
-      }
-    ],
-    "catid": 4,
-    "isOfficial": true,
+    "catid": 2,
+    "isOfficial": false,
+    "licnceGroup": 1,
+    "licnceGroupName": "Rookie",
     "minlicenselevel": 1,
     "isFixedSetup": false,
     "carclasses": [
       {
         "shortname": "Rallycross"
+      },
+      {
+        "shortname": "Pro 2 Truck"
       }
     ],
     "cars": [
@@ -576,12 +576,15 @@
         "sku": 10419
       },
       {
+        "sku": 10444
+      },
+      {
         "sku": 10428
       },
       {
-        "sku": 10444
+        "sku": 10450
       }
     ],
-    "seasonid": 3700
+    "seasonid": 3955
   }
 ]
