@@ -21,10 +21,8 @@ jobs:
         cache: 'yarn'
     - run: yarn install
     - run: printf '[]' > src/data/tracks.json
-    - run: printf '[]' > src/data/car-class.json
     - run: printf '[]' > src/data/cars.json
     - run: printf '[]' > src/data/season.json
     - run: printf '[]' > src/data/contributors.json
-    - run: printf '[]' > src/data/season.json
     - run: yarn test --coverage
     - uses: codecov/codecov-action@v2

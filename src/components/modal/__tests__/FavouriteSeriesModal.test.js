@@ -18,23 +18,23 @@ describe('components/modal/FavouriteSeriesModal', () => {
     let component;
     act(() => {
       component = renderer.create(
-        <FavouriteSeriesModal isOpen onClose={onClose} favouriteSeries={[139]} save={save} />,
+        <FavouriteSeriesModal isOpen onClose={onClose} favouriteSeries={[245]} save={save} />,
       );
     });
 
     expect(component.toJSON()).toMatchSnapshot();
 
     await act(async () => {
-      await component.root.findByProps({ id: 'favourite-series-139' }).props.onChange(false);
+      await component.root.findByProps({ id: 'favourite-series-245' }).props.onChange(false);
     });
 
     expect(save).toHaveBeenCalledWith([]);
 
     await act(async () => {
-      await component.root.findByProps({ id: 'favourite-series-432' }).props.onChange(true);
+      await component.root.findByProps({ id: 'favourite-series-374' }).props.onChange(true);
     });
 
-    expect(save).toHaveBeenCalledWith([139, 432]);
+    expect(save).toHaveBeenCalledWith([245, 374]);
 
     await act(async () => {
       await component.root.findByProps({ 'aria-label': 'Close' }).props.onClick({

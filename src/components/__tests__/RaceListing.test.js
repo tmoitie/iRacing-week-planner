@@ -12,12 +12,8 @@ import RaceListing from '../RaceListing';
 import { defaultFilters } from '../../reducers/settings';
 
 import '../../data/season.json';
-import '../../data/racelengths.json';
-import '../../data/racetimes.json';
 
 jest.mock('../../data/season.json');
-jest.mock('../../data/racelengths.json');
-jest.mock('../../data/racetimes.json');
 
 const mockStore = configureMockStore([thunk]);
 
@@ -42,12 +38,12 @@ describe('components/RaceListing', () => {
       columns: ['id'],
     },
     app: {
-      date: moment('2020-09-23T01:00:00.000Z'),
+      date: moment('2022-09-07T01:00:00.000Z'),
     },
   };
 
   beforeEach(() => {
-    MockDate.set('2020-09-23T13:30:00.000Z');
+    MockDate.set('2022-09-07T13:30:00.000Z');
   });
 
   afterEach(() => {

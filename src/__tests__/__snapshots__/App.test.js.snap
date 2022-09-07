@@ -618,7 +618,7 @@ exports[`components/App renders correctly 1`] = `
           <h3
             className="col-xs-8"
           >
-            Races for date: September 23, 2020
+            Races for date: September 10, 2022
           </h3>
           <h3
             className="col-xs-4"
@@ -729,42 +729,14 @@ exports[`components/App renders correctly 1`] = `
               <tr>
                 <td>
                   <div>
-                    32
+                    245
                   </div>
                 </td>
               </tr>
               <tr>
                 <td>
                   <div>
-                    139
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div>
-                    167
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div>
-                    323
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div>
-                    341
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div>
-                    432
+                    374
                   </div>
                 </td>
               </tr>

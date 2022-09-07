@@ -189,7 +189,6 @@ export default {
       1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 3.1, 3.1, 3.1,
       3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1,
     ],
-    weekEndOffset: { days: 7 },
   },
   // Nurburgring Endurance Championship
   3720: {
@@ -232,7 +231,6 @@ export default {
   },
   // eNASCAR Road to Pro Qual Series - Round 2 439 │ 3816
   3816: {
-    weekEndOffset: { days: 7 },
     offWeeks: [
       1.1, 2.1, 3.1, 4.1, 5.1, 6.1,
     ],

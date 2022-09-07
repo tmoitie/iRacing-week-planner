@@ -74,13 +74,13 @@ describe('components/GlobalModals', () => {
     await act(async () => {
       await component.root
         .findByProps({ id: 'favouriteSeriesModal' })
-        .findByProps({ id: 'favourite-series-139' })
+        .findByProps({ id: 'favourite-series-245' })
         .props.onChange(true);
     });
 
     expect(store.getActions()).toContainEqual({
       type: UPDATE_SETTING,
-      payload: { key: 'favouriteSeries', value: [139] },
+      payload: { key: 'favouriteSeries', value: [245] },
     });
 
     await act(async () => {

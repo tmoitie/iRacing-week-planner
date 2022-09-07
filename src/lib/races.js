@@ -3,14 +3,10 @@
 import moment from 'moment';
 
 import season from '../data/season.json';
-import raceLengths from '../data/racelengths.json';
 import levelToClass, { levelToClassNumber } from './levelToClass';
-import raceTimesArray from '../data/racetimes.json';
 import offWeeksById from '../data/offWeeks';
 
 const { duration } = moment;
-
-const raceTimesById = raceTimesArray.reduce((races, race) => ({ ...races, [race.seriesId]: race }), {});
 
 function getStartOfWeek(date: moment$Moment) {
   return moment(date).subtract(1, 'days').startOf('isoWeek').add(1, 'days');
@@ -52,7 +48,7 @@ export type TimeableRace = {
 function getNextRaceFromRecur(
   now: moment$Moment,
   everyTime: moment$MomentDuration,
-  offset: moment$MomentDuration | null
+  offset: moment$MomentDuration | null,
 ): moment$Moment | null {
   const startOfWeek = getStartOfWeek(now);
 
@@ -88,7 +84,7 @@ function getNextRaceSetTimes(now: moment$Moment, setTimes: Array<moment$MomentDu
   return null;
 }
 
-export function getNextRace(date: moment$Moment, race: TimeableRace): moment$Moment|null {
+export function getNextRace(date: moment$Moment, race: TimeableRace): moment$Moment | null {
   if (race.everyTime) {
     return getNextRaceFromRecur(date, race.everyTime, race.offset);
   }
@@ -106,22 +102,19 @@ categoryMap.set(2, 'Road');
 categoryMap.set(3, 'Dirt');
 categoryMap.set(4, 'RX');
 
-const getType = (catId: number): ?string => {
-  return categoryMap.get(catId);
-};
+const getType = (catId: number): ?string => categoryMap.get(catId);
 
 export default season.reduce((carry, series) => {
-  const raceTimes = raceTimesById[series.seriesid] || {};
   const raceOffWeekData = offWeeksById[series.seasonid] || {};
 
   const seriesName = series.seriesname;
-  const seriesStart = moment(series.start, 'x').utc().startOf('day');
+  const seriesStart = moment(series.start).utc().startOf('day');
 
   if (raceOffWeekData.weekStartOffset) {
     seriesStart.add(raceOffWeekData.weekStartOffset);
   }
 
-  const seriesEnd = moment(series.end, 'x').utc().startOf('isoWeek').add({ days: 1 });
+  const seriesEnd = moment(series.end).utc().startOf('isoWeek').add({ days: 1 });
 
   if (raceOffWeekData.weekEndOffset) {
     seriesEnd.add(raceOffWeekData.weekEndOffset);
@@ -135,8 +128,6 @@ export default season.reduce((carry, series) => {
 
   allRaceWeeks.sort((a, b) => a - b);
 
-  const raceLengthSeries = raceLengths[series.seasonid];
-
   return carry.concat(series.tracks.map((track) => {
     const realRaceWeek = allRaceWeeks.indexOf(track.raceweek);
 
@@ -144,6 +135,8 @@ export default season.reduce((carry, series) => {
     const weekLength = duration(raceWeekLength);
 
     const type = getType(series.catid);
+
+    const raceTimes = track.race_time_descriptors[0];
 
     return {
       series: seriesName,
@@ -165,10 +158,15 @@ export default season.reduce((carry, series) => {
       seriesStart,
       seriesEnd,
       seasonId: series.seasonid,
-      everyTime: raceTimes.everytime ? moment.duration(raceTimes.everytime) : null,
-      offset: raceTimes.offset ? moment.duration(raceTimes.offset) : null,
-      setTimes: raceTimes.setTimes ? raceTimes.setTimes.map((setTime) => moment.duration(setTime)) : null,
-      raceLength: raceLengthSeries ? raceLengthSeries[track.raceweek] : null,
+      everyTime: raceTimes.repeating ? moment.duration({ minutes: raceTimes.repeat_minutes }) : null,
+      offset: raceTimes.repeating ? moment.duration(raceTimes.first_session_time) : null,
+      setTimes: raceTimes.repeating === false ? raceTimes.session_times.map(
+        (sessionTime) => moment(sessionTime).diff(startTime),
+      ).sort().map((setTimeDuration) => moment.duration(setTimeDuration)) : null,
+      raceLength: {
+        laps: track.race_lap_limit,
+        minutes: track.race_time_limit,
+      },
     };
   }));
 }, []);

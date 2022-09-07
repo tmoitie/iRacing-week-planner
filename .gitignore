@@ -18,3 +18,5 @@ dist/*
 # !.gitignore
 !dist/static/
 !dist/favicon.ico
+
+cookie.txt

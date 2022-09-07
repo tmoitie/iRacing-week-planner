@@ -15,7 +15,7 @@ import {
 describe('reducers/settings', () => {
   test('set up default state', () => {
     const state = settingsReducer(undefined, {});
-    expect(state.ownedTracks.length).toBe(16);
+    expect(state.ownedTracks.length).toBe(22);
   });
 
   test('set up legacy state', () => {
@@ -38,16 +38,16 @@ describe('reducers/settings', () => {
         },
       },
     );
-    expect(state.ownedCars.length).toBe(3);
-    expect(state.ownedTracks.length).toBe(17);
+    expect(state.ownedCars.length).toBe(17);
+    expect(state.ownedTracks.length).toBe(23);
     const stateNoPayload = settingsReducer(
       undefined,
       {
         type: localStorageActionTypes.INIT,
       },
     );
-    expect(stateNoPayload.ownedCars.length).toBe(2);
-    expect(stateNoPayload.ownedTracks.length).toBe(16);
+    expect(stateNoPayload.ownedCars.length).toBe(16);
+    expect(stateNoPayload.ownedTracks.length).toBe(22);
   });
 
   test('settings/UPDATE_FILTERS', async () => {
