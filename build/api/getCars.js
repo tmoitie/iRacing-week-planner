@@ -1,4 +1,4 @@
-import { clientGet } from '../helpers/iracing-client';
+import { clientGet } from './iracingClient';
 
 const catsToDiscountGroupNames = {
   oval: 'oval car',

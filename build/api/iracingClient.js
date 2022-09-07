@@ -22,7 +22,12 @@ export const clientGet = async (url, queryParams = {}) => {
   });
 
   const response = await client.get(`${url}?${params.toString()}`);
-  return client.get(response.data.link);
+
+  if (response.headers['content-type'] && !response.headers['content-type'].includes('application/json')) {
+    throw new Error(`Bad response from iRacing: ${response.headers['content-type']}`);
+  }
+
+  return axios.get(response.data.link);
 };
 
 export async function auth(username, password) {

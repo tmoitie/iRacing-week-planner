@@ -43,7 +43,7 @@
     "@formatjs/intl-datetimeformat": "^6.0.2",
     "@root/file-cookie-store": "^1.0.1",
     "autoprefixer": "^10.4.0",
-    "axios": "^0.24.0",
+    "axios": "^0.27.2",
     "babel-loader": "^8.1.0",
     "babel-plugin-jest-hoist": "^29.0.2",
     "bluebird": "^3.7.2",

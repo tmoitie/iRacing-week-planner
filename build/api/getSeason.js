@@ -1,7 +1,7 @@
 // @flow
 
 import moment from 'moment';
-import { clientGet } from '../helpers/iracing-client';
+import { clientGet } from './iracingClient';
 
 const trackTypeToCatId = {
   oval: 1,

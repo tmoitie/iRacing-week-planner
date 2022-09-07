@@ -1,6 +1,6 @@
 import uniqBy from 'lodash.uniqby';
 import sortBy from 'lodash.sortby';
-import { clientGet } from '../helpers/iracing-client';
+import { clientGet } from './iracingClient';
 
 export default async function getTracks() {
   const tracksResponse = await clientGet('/data/track/get');
