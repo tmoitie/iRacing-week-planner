@@ -1,9 +1,4 @@
 export default {
-  // // eNASCAR Road to Pro
-  3122: {
-    weekEndOffset: { days: 7 },
-    offWeeks: [1.1, 2.1, 2.1, 3.1, 4.1, 5.1, 6.1, 7.1],
-  },
   3119: {
     // NIS Fixed
     offWeeks: [7.1, 16.1, 21.1, 21.1],
@@ -35,19 +30,6 @@ export default {
       1.1, 2.1, 2.1, 2.1, 3.1, 3.1, 3.1, 3.1, 4.1, 5.1, 6.1, 6.1, 6.1, 6.1, 7.1, 7.1, 8.1,
     ],
   },
-  // 437: {
-  //   // BMW Sim GT Cup
-  //   seriesId: 437,
-  //   weekEndOffset: { days: 4 },
-  // },
-  // 271: {
-  //   // 12 H Sebring
-  //   seriesId: 271,
-  //   weekEndOffset: { days: 7 },
-  // },
-  // 420: {
-  //   weekStartOffset: { days: -1 },
-  // },
   3283: {
     offWeeks: [
       1.1, 3.1, 3.1, 4.1, 5.1,
@@ -163,26 +145,6 @@ export default {
       2.1, 3.1, 4.1, 5.1, 7.1, 9.1, 11.1, 13.1, 13.2, 13.3, 16.1, 19.1, 21.1,
     ],
   },
-  // IMSA Endurance Series 419
-  3651: {
-    offWeeks: [
-      1.1, 2.1, 3.1, 4.1, 5.1,
-    ],
-  },
-  // European Endurance Pure Driving School Series 331
-  3650: {
-    weekStartOffset: { days: 7 },
-    offWeeks: [
-      1.1, 2.1, 3.1, 4.1, 5.1,
-    ],
-  },
-  // MOAR 492
-  3689: {
-    weekStartOffset: { days: 7 },
-    offWeeks: [
-      1.1, 2.1, 3.1, 4.1, 5.1,
-    ],
-  },
   // Creventic Endurance
   3715: {
     offWeeks: [
@@ -214,25 +176,27 @@ export default {
     ],
   },
 
-  // IMSA Michelin Pilot Challenge Series 492 │ 3750
-  3750: {
+  // eNASCAR Road to Pro Qual Series - Round 2 439 │ 3816
+  3816: {
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1, 6.1,
+    ],
+  },
+  3874: { // 492 IMSA Michelin Pilot Challenge Series
     weekStartOffset: { days: 7 },
     offWeeks: [
       1.1, 2.1, 3.1, 4.1, 5.1,
     ],
   },
-
-  // IMSA Endurance Series 419 │ 3780
-  3780: {
-    // weekStartOffset: { days: 7 },
+  3905: { // 419 │ 3905 IMSA Endurance Series
     offWeeks: [
       1.1, 2.1, 3.1, 4.1, 5.1,
     ],
   },
-  // eNASCAR Road to Pro Qual Series - Round 2 439 │ 3816
-  3816: {
+  3904: { // 331 │ 3904 European Endurance Pure Driving School Series
+    weekStartOffset: { days: 7 },
     offWeeks: [
-      1.1, 2.1, 3.1, 4.1, 5.1, 6.1,
+      1.1, 2.1, 3.1, 4.1, 5.1,
     ],
   },
 };

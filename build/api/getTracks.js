@@ -5,7 +5,10 @@ import { clientGet } from './iracingClient';
 export default async function getTracks() {
   const tracksResponse = await clientGet('/data/track/get');
   const trackAssetsResponse = await clientGet('/data/track/assets');
-  const tracksUniquePkgId = uniqBy(sortBy(tracksResponse.data, 'priority'), (track) => track.package_id);
+  const tracksSortedRetired = sortBy(tracksResponse.data, 'retired');
+  const tracksSortedPriority = sortBy(tracksSortedRetired, 'priority');
+
+  const tracksUniquePkgId = uniqBy(tracksSortedPriority, (track) => track.package_id);
   return tracksUniquePkgId.map((track) => {
     const assets = trackAssetsResponse.data[track.track_id];
     return {
