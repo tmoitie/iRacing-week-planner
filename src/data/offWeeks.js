@@ -114,4 +114,11 @@ export default {
   3972: {
     weekEndOffset: { days: 7 },
   },
+  // 478 │ 3965 │ eNASCAR RTP Contender Series
+  3965: {
+    weekStartOffset: { days: 6 },
+    offWeeks: [
+      3.1,
+    ],
+  },
 };
