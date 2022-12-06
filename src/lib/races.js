@@ -3,7 +3,7 @@
 import moment from 'moment';
 
 import season from '../data/season.json';
-import levelToClass, { levelToClassNumber } from './levelToClass';
+import levelToClass, { levelToClassNumber, classToClassNumber, classToLevel } from './levelToClass';
 import offWeeksById from '../data/offWeeks';
 
 const { duration } = moment;
@@ -138,6 +138,8 @@ export default season.reduce((carry, series) => {
 
     const raceTimes = track.race_time_descriptors[0];
 
+    const licenceGroupLetter = series.licenceGroupName.slice(0, 1);
+
     return {
       series: seriesName,
       seriesId: series.seriesid,
@@ -148,9 +150,9 @@ export default season.reduce((carry, series) => {
       weekLength,
       endTime: moment(startTime).add(weekLength),
       official: series.isOfficial,
-      licenceLevel: series.minlicenselevel,
-      licenceClassNumber: series.minlicenselevel ? levelToClassNumber(series.minlicenselevel) : series.licenceGroup,
-      licenceClass: series.minlicenselevel ? levelToClass(series.minlicenselevel, true) : series.licenceGroupName.slice(0, 1),
+      licenceLevel: series.minlicenselevel ? series.minlicenselevel : classToLevel(licenceGroupLetter),
+      licenceClassNumber: series.minlicenselevel ? levelToClassNumber(series.minlicenselevel) : classToClassNumber(licenceGroupLetter),
+      licenceClass: series.minlicenselevel ? levelToClass(series.minlicenselevel, true) : licenceGroupLetter,
       type,
       fixed: series.isFixedSetup,
       carClasses: series.carclasses.map(({ shortname }) => shortname),

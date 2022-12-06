@@ -21,3 +21,18 @@ export default function levelToClass(level: number, effective: boolean = false):
 export function levelToClassNumber(level: number): number {
   return Math.floor((level) / 4);
 }
+
+export function classToLevel(className: string): number {
+  const index = levels.findIndex((item) => item === className);
+
+  if (index === -1) {
+    return 0;
+  }
+
+  return (index * 4) + 1;
+}
+
+export function classToClassNumber(className: string): number {
+  const level = classToLevel(className);
+  return levelToClassNumber(level);
+}
