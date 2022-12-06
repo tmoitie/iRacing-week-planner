@@ -61,7 +61,7 @@ export default async function getSeason(cars: Array<carType>, tracks: Array<trac
 
     return {
       seriesid: series.series_id,
-      seriesname: series.schedules.length ? series.schedules[0].series_name : series.season_name,
+      seriesname: series.schedules.length ? series.schedules[0].series_name.trim() : series.season_name.trim(),
       start: series.start_date,
       end: end.toISOString(),
       tracks: series.schedules.map((week) => ({
@@ -77,8 +77,8 @@ export default async function getSeason(cars: Array<carType>, tracks: Array<trac
       })),
       catid: trackTypeToCatId[series.track_types[0].track_type],
       isOfficial: series.official,
-      licnceGroup: series.license_group,
-      licnceGroupName: licenseMap[series.license_group].group_name,
+      licenceGroup: series.license_group,
+      licenceGroupName: licenseMap[series.license_group].group_name,
       minlicenselevel: licenceGroupToMinlicenselevel[series.license_group],
       isFixedSetup: series.fixed_setup,
       carclasses: carClasses.map((carClass) => ({ shortname: carClass.short_name })),

@@ -1,35 +1,42 @@
-import { shallow } from 'enzyme';
+import { create, act } from 'react-test-renderer';
 import React from 'react';
 import { describe, test } from '@jest/globals';
 
 import Checkbox from '../Checkbox';
 
 describe('components/Checkbox', () => {
-  test('renders', () => {
+  test('renders', async () => {
+    let component;
+
     const onChange = jest.fn();
-    const render = shallow(<Checkbox id="test-renders" onChange={onChange}>Test</Checkbox>);
 
-    expect(render).toMatchSnapshot();
+    act(() => {
+      component = create(<Checkbox id="test-renders" onChange={onChange}>Test</Checkbox>);
+    });
 
-    render.find('input').at(0).simulate('change', { target: { checked: true } });
-    expect(onChange).toHaveBeenCalled();
+    expect(component.toJSON()).toMatchSnapshot();
+
+    await component.root.findByType('input').props.onChange({ target: { checked: true } });
+    expect(onChange).toHaveBeenCalledWith(true);
   });
 
   test('renders disabled', () => {
-    const onChange = jest.fn();
-    const render = shallow(<Checkbox id="test-disabled" disabled onChange={onChange} />);
+    let component;
 
-    expect(render).toMatchSnapshot();
+    act(() => {
+      component = create(<Checkbox id="test-disabled" disabled />);
+    });
 
-    render.find('input').at(0).simulate('click');
-    expect(onChange).not.toHaveBeenCalled();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('renders checked', () => {
-    const render = shallow(<Checkbox id="test-checked" checked />);
+    let component;
 
-    render.find('input').at(0).simulate('change', { target: { checked: true } });
+    act(() => {
+      component = create(<Checkbox id="test-checked" checked />);
+    });
 
-    expect(render).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });
