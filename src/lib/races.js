@@ -138,7 +138,7 @@ export default season.reduce((carry, series) => {
 
     const raceTimes = track.race_time_descriptors[0];
 
-    const licenceGroupLetter = series.licenceGroupName.slice(0, 1);
+    const licenceGroupLetter = series.licenceGroupName ? series.licenceGroupName.slice(0, 1) : 'R';
 
     return {
       series: seriesName,
