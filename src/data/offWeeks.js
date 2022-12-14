@@ -62,26 +62,6 @@ export default {
       1.1, 2.1, 3.1, 4.1, 5.1, 6.1,
     ],
   },
-  // 492 │ 3874 │ IMSA Michelin Pilot Challenge Series
-  3874: {
-    weekStartOffset: { days: 7 },
-    offWeeks: [
-      1.1, 2.1, 3.1, 4.1, 5.1,
-    ],
-  },
-  // 419 │ 3905 IMSA Endurance Series
-  3905: {
-    offWeeks: [
-      1.1, 2.1, 3.1, 4.1, 5.1,
-    ],
-  },
-  // 331 │ 3904 European Endurance Pure Driving School Series
-  3904: {
-    weekStartOffset: { days: 7 },
-    offWeeks: [
-      1.1, 2.1, 3.1, 4.1, 5.1,
-    ],
-  },
   // 512 │ 3974 | SCCA Runoffs - FR500
   3974: {
     weekEndOffset: { days: 7 },
@@ -119,6 +99,26 @@ export default {
     weekStartOffset: { days: 6 },
     offWeeks: [
       3.1,
+    ],
+  },
+  // 492 │ 4007 │ IMSA Michelin Pilot Challenge Series
+  4007: {
+    weekStartOffset: { days: 7 },
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+  // 419 │ 4037 │ IMSA Endurance Series
+  4037: {
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+  // 331 │ 4036 │ European Endurance Pure Driving School Series
+  4036: {
+    weekStartOffset: { days: 7 },
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
     ],
   },
 };
