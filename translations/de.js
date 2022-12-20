@@ -30,7 +30,7 @@ export default {
     'Favorite series only': 'Nur bevorzugte Serien',
     'Favorite cars only': 'Nur bevorzugte Fahrzeuge',
     'Favorite tracks only': 'Nur bevorzugte Strecken',
-    'Reset filters': 'Filter zurücksetzten',
+    'Reset filters': 'Filter zurücksetzen',
     'Reset all settings': 'Alle Einstellungen zurücksetzen',
 
     // Column Headers
@@ -52,7 +52,7 @@ export default {
     'Length': 'Rennlänge',
 
     // Race length
-    'No data': 'Keine angaben',
+    'No data': 'Keine Angaben',
     '{{laps}}L': '{{laps}}L',
     '{{minutes}}m': '{{minutes}}m',
     '{{hours}}h': '{{hours}}h',
