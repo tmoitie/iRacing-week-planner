@@ -26,6 +26,7 @@ import it from '../translations/it';
 import tr from '../translations/tr';
 import ja from '../translations/jp';
 import nl from '../translations/nl';
+import ru from '../translations/ru';
 
 const languages = {
   de: {
@@ -68,6 +69,10 @@ const languages = {
     flag: '🇹🇷',
     name: 'Türkçe (TR)',
   },
+  ru: {
+    flag: '🇷🇺',
+    name: 'Русский (RU)',
+  },
 };
 
 export default languages;
@@ -83,6 +88,7 @@ const resources = {
   ja,
   nl,
   tr,
+  ru,
 };
 
 /* istanbul ignore next */

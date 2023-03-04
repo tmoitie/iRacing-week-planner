@@ -18,7 +18,7 @@ export default {
     'Dirt': 'Dirt',
     'Road': 'Road',
     'RX': 'RX', // Rally Cross/Road Dirt
-    'Licence': 'Licence',
+    'Licence': 'License',
     'Official/Fixed': 'Official/Fixed',
     'Unofficial': 'Unofficial',
     'Official': 'Official',
