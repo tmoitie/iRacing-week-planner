@@ -197,6 +197,17 @@ exports[`components/App renders correctly 1`] = `
             <li>
               <a
                 href=""
+                id="navbar-link-language-pl"
+                onClick={[Function]}
+              >
+                🇵🇱
+                 
+                Polski (PL)
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
                 id="navbar-link-language-pt-BR"
                 onClick={[Function]}
               >
