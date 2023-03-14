@@ -75,6 +75,15 @@ export default function AboutModal({ onClose, isOpen }: Props) {
               </a>
             </li>
           ))}
+          <li className={`${styles['col-md-3']} ${styles['col-sm-4']} ${styles['col-xs-6']}`}>
+            Yigit Aydin
+          </li>
+          <li className={`${styles['col-md-3']} ${styles['col-sm-4']} ${styles['col-xs-6']}`}>
+            Rafał Noskowicz
+          </li>
+          <li className={`${styles['col-md-3']} ${styles['col-sm-4']} ${styles['col-xs-6']}`}>
+            Rafał Znany
+          </li>
         </ul>
 
         <h3>{t('Changelog')}</h3>
