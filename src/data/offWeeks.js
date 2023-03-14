@@ -64,26 +64,6 @@ export default {
   //     3.1,
   //   ],
   // },
-  // 492 │ 4007 │ IMSA Michelin Pilot Challenge Series
-  // 4007: {
-  //   weekStartOffset: { days: 7 },
-  //   offWeeks: [
-  //     1.1, 2.1, 3.1, 4.1, 5.1,
-  //   ],
-  // },
-  // 419 │ 4037 │ IMSA Endurance Series
-  // 4037: {
-  //   offWeeks: [
-  //     1.1, 2.1, 3.1, 4.1, 5.1,
-  //   ],
-  // },
-  // 331 │ 4036 │ European Endurance Pure Driving School Series
-  // 4036: {
-  //   weekStartOffset: { days: 7 },
-  //   offWeeks: [
-  //     1.1, 2.1, 3.1, 4.1, 5.1,
-  //   ],
-  // },
   // 207 │ 4114 │ NASCAR iRacing Series - Fixed
   4114: {
     offWeeks: [
@@ -126,6 +106,26 @@ export default {
   4223: {
     offWeeks: [
       1.1, 2.1, 3.1, 3.1, 3.1, 5.1, 8.1, 9.1, 11.1, 13.1, 13.1, 13.1, 15.1, 17.1, 18.1, 21.1,
+    ],
+  },
+  // 419 │ 4178 │ IMSA Endurance Series
+  4178: {
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+  // 492 │ 4148 │ IMSA Michelin Pilot Challenge Series
+  4148: {
+    weekStartOffset: { days: 7 },
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+  // 331 │ 4177 │ European Endurance Pure Driving School Series
+  4177: {
+    weekStartOffset: { days: 7 },
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
     ],
   },
 };
