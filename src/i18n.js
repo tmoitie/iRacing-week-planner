@@ -14,6 +14,7 @@ import '@formatjs/intl-datetimeformat/locale-data/it';
 import '@formatjs/intl-datetimeformat/locale-data/tr';
 import '@formatjs/intl-datetimeformat/locale-data/ja';
 import '@formatjs/intl-datetimeformat/locale-data/nl';
+import '@formatjs/intl-datetimeformat/locale-data/pl';
 import '@formatjs/intl-datetimeformat/add-all-tz';
 
 import en from '../translations/en';
@@ -26,6 +27,7 @@ import it from '../translations/it';
 import tr from '../translations/tr';
 import ja from '../translations/jp';
 import nl from '../translations/nl';
+import pl from '../translations/pl';
 
 const languages = {
   de: {
@@ -60,6 +62,10 @@ const languages = {
     flag: '🇳🇱',
     name: 'Nederlands (NL)',
   },
+  pl: {
+    flag: '🇵🇱',
+    name: 'Polski (PL)',
+  },
   'pt-BR': {
     flag: '🇧🇷',
     name: 'Português (BR)',
@@ -83,6 +89,7 @@ const resources = {
   ja,
   nl,
   tr,
+  pl,
 };
 
 /* istanbul ignore next */
