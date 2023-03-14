@@ -156,6 +156,21 @@ exports[`components/modal/AboutModal renders open 1`] = `
                 flomarin88
               </a>
             </li>
+            <li
+              className="col-md-3 col-sm-4 col-xs-6"
+            >
+              Yigit Aydin
+            </li>
+            <li
+              className="col-md-3 col-sm-4 col-xs-6"
+            >
+              Rafał Noskowicz
+            </li>
+            <li
+              className="col-md-3 col-sm-4 col-xs-6"
+            >
+              Rafał Znany
+            </li>
           </ul>
           <h3>
             Changelog
