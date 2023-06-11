@@ -105,5 +105,11 @@ export default {
     'The password must be 6 characters long or more.': 'La contraseña debe tener 6 o más caracteres.',
     'The email address is already in use by another account.': 'La dirección de correo ya está siendo utilizada por otra cuenta.',
     'Password should be at least 6 characters': 'La contraseña debe tener al menos 6 caracteres',
+
+    // No Results - DeepL ML translated @todo human translations
+    'No races this week match your favourite series. Try turning the filter off or adding some.': 'Esta semana no hay carreras que coincidan con tu serie favorita. Intenta desactivar el filtro o añadir algo.',
+    'No races this week match your favourite cars. Try turning the filter off or adding some.': 'Esta semana no hay carreras que coincidan con tus coches favoritos. Trate de desactivar el filtro o añadir algo.',
+    'No races this week match your favourite tracks. Try turning the filter off or adding some.': 'Esta semana no hay carreras que coincidan con tus pistas favoritas. Trate de desactivar el filtro o añadir algo.'
+  
   },
 };

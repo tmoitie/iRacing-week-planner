@@ -108,5 +108,10 @@ export default {
     'The password must be 6 characters long or more.': 'The password must be 6 characters long or more.',
     'The email address is already in use by another account.': 'The email address is already in use by another account.',
     'Password should be at least 6 characters': 'Password should be at least 6 characters',
+
+    // No Results
+    'No races this week match your favourite series. Try turning the filter off or adding some.': 'No races this week match your favourite series. Try turning the filter off or adding some.',
+    'No races this week match your favourite cars. Try turning the filter off or adding some.': 'No races this week match your favourite cars. Try turning the filter off or adding some.',
+    'No races this week match your favourite tracks. Try turning the filter off or adding some.': 'No races this week match your favourite tracks. Try turning the filter off or adding some.'
   },
 };

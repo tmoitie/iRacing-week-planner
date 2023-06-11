@@ -106,5 +106,11 @@ export default {
     'The password must be 6 characters long or more.': 'Het wachtwoord moet minstens 6 tekens lang zijn.',
     'The email address is already in use by another account.': 'Het emailadres is al in gebruik door een ander account.',
     'Password should be at least 6 characters': 'Het wachtwoord moet minstens 6 tekens lang zijn.',
+
+    // No Results - DeepL ML translated @todo human translations
+    'No races this week match your favourite series. Try turning the filter off or adding some.': 'Deze week zijn er geen races die overeenkomen met je favoriete serie. Probeer het filter uit te schakelen of iets toe te voegen.',
+    'No races this week match your favourite cars. Try turning the filter off or adding some.': 'Deze week zijn er geen races die overeenkomen met je favoriete auto\'s. Probeer het filter uit te schakelen of iets toe te voegen.',
+    'No races this week match your favourite tracks. Try turning the filter off or adding some.': 'Deze week zijn er geen races die overeenkomen met je favoriete nummers. Probeer het filter uit te schakelen of iets toe te voegen.'
+    
   },
 };
