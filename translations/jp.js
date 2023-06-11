@@ -106,5 +106,11 @@ export default {
     'The password must be 6 characters long or more.': 'パスワードは６文字以上にする必要があります。',
     'The email address is already in use by another account.': 'メールアドレスは別のアカウントで使用されています。',
     'Password should be at least 6 characters': 'パスワードは６文字以上にする必要があります。',
+
+    
+    // No Results - DeepL ML translated @todo human translations
+    'No races this week match your favourite series. Try turning the filter off or adding some.': '今週は、あなたの好きなシリーズに合うレースがありません。フィルターをオフにするか、何かを追加してみてください。',
+    'No races this week match your favourite cars. Try turning the filter off or adding some.': '今週は好きなクルマに合うレースがない。フィルターをオフにするか、何かを追加してみてください。',
+    'No races this week match your favourite tracks. Try turning the filter off or adding some.': '今週は好きなコースに合うレースがない。フィルターをオフにするか、何かを追加してみてください。'
   },
 };
