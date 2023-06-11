@@ -20,3 +20,5 @@ dist/*
 !dist/favicon.ico
 
 cookie.txt
+
+/.yarn
