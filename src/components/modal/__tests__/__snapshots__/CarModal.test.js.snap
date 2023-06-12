@@ -81,16 +81,6 @@ exports[`components/modal/CarModal renders correctly 1`] = `
               </thead>
               <tbody>
                 <tr
-                  className="clickableCell"
-                >
-                  <td>
-                    <span>
-                       
-                    </span>
-                    Audi R8 LMS GT3
-                  </td>
-                </tr>
-                <tr
                   className="success clickableCell"
                 >
                   <td>
@@ -101,6 +91,16 @@ exports[`components/modal/CarModal renders correctly 1`] = `
                        
                     </span>
                     Audi 90 GTO
+                  </td>
+                </tr>
+                <tr
+                  className="clickableCell"
+                >
+                  <td>
+                    <span>
+                       
+                    </span>
+                    Audi R8 LMS GT3
                   </td>
                 </tr>
                 <tr
