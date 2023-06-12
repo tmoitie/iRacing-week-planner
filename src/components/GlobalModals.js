@@ -16,6 +16,17 @@ import PurchaseGuideModal from './modal/PurchaseGuideModal';
 
 const currentModalSelector = (state) => state.app.currentModal;
 const settingsSelector = (state) => state.settings;
+const sortedActiveCars = [...cars.filter((c) => !c.name.startsWith('['))].sort((a, b) => a.name.localeCompare(b.name));
+const sortedLegacyCars = [...cars.filter((c) => c.name.startsWith('['))].sort((a, b) => a.name.localeCompare(b.name));
+const sortedCars = [...sortedActiveCars, ...sortedLegacyCars];
+
+const sortedActiveTracks = [
+  ...tracks.filter((t) => !t.name.startsWith('['))
+].sort((a, b) => a.name.localeCompare(b.name));
+const sortedLegacyTracks = [
+  ...tracks.filter((t) => t.name.startsWith('['))
+].sort((a, b) => a.name.localeCompare(b.name));
+const sortedTracks = [...sortedActiveTracks, ...sortedLegacyTracks];
 
 export default function GlobalModals() {
   const { t } = useTranslation();
@@ -50,7 +61,7 @@ export default function GlobalModals() {
         onClose={closeModal}
         title={t('Set my tracks')}
         ownedContent={ownedTracks}
-        content={tracks}
+        content={sortedTracks}
         idField="pkgid"
         defaultContent={[...defaultSettings.ownedTracks]}
         typeFilter={{ key: 'primaryType', oval: 'oval', road: 'road' }}
@@ -64,7 +75,7 @@ export default function GlobalModals() {
         onClose={closeModal}
         title={t('Set my cars')}
         ownedContent={ownedCars}
-        content={cars}
+        content={sortedCars}
         idField="sku"
         defaultContent={[...defaultSettings.ownedCars]}
         typeFilter={{ key: 'discountGroupNames', oval: ['oval car'], road: ['road car'] }}
