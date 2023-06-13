@@ -105,5 +105,10 @@ export default {
     'The password must be 6 characters long or more.': 'Parola 6 karakter veya daha uzun olmalıdır.',
     'The email address is already in use by another account.': 'E-posta adresi zaten başka bir hesap tarafından kullanılıyor.',
     'Password should be at least 6 characters': 'Parola en az 6 karakter olmalıdır',
+
+    // No Results - DeepL ML translated @todo human translations
+    'No races this week match your favourite series. Try turning the filter off or adding some.': 'Bu hafta hiçbir yarış favori serinizle eşleşmiyor. Filtreyi kapatmayı veya bir şeyler eklemeyi deneyin.',
+    'No races this week match your favourite cars. Try turning the filter off or adding some.': 'Bu hafta hiçbir yarış favori araçlarınızla eşleşmiyor. Filtreyi kapatmayı veya bir şey eklemeyi deneyin.',
+    'No races this week match your favourite tracks. Try turning the filter off or adding some.': 'Bu hafta hiçbir yarış favori pistlerinize uymuyor. Filtreyi kapatmayı veya bir şeyler eklemeyi deneyin.'
   },
 };
