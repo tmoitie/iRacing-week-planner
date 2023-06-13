@@ -21,7 +21,7 @@ type Props = {
 };
 
 export default function CarModal({ onClose, ownedCars, favouriteCars, isOpen, carIds, seriesName }: Props) {
-  const cars = allCars.filter((car) => carIds.includes(car.sku));
+  const cars = [...allCars].sort((a, b) => a.name.localeCompare(b.name)).filter((car) => carIds.includes(car.sku));
   const { t } = useTranslation();
 
   return (
