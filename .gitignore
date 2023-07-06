@@ -22,3 +22,6 @@ dist/*
 cookie.txt
 
 /.yarn
+
+# Local Netlify folder
+.netlify

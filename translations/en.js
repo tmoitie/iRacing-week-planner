@@ -112,6 +112,13 @@ export default {
     // No Results
     'No races this week match your favourite series. Try turning the filter off or adding some.': 'No races this week match your favourite series. Try turning the filter off or adding some.',
     'No races this week match your favourite cars. Try turning the filter off or adding some.': 'No races this week match your favourite cars. Try turning the filter off or adding some.',
-    'No races this week match your favourite tracks. Try turning the filter off or adding some.': 'No races this week match your favourite tracks. Try turning the filter off or adding some.'
+    'No races this week match your favourite tracks. Try turning the filter off or adding some.': 'No races this week match your favourite tracks. Try turning the filter off or adding some.',
+  
+    // Coach Dave Sponsorship
+    'Sponsored': 'Sponsored',
+    'Looking for iRacing Setups?': 'Looking for iRacing Setups?',
+    'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.': 'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.',
+    'Browse Setups': 'Browse Setups'
+
   },
 };

@@ -16,6 +16,7 @@ import Filters from './components/Filters';
 import styles from './styles/main.module.scss';
 
 import '@blueprintjs/core/lib/css/blueprint.css';
+import CoachDaveSponsor from "./components/CoachDaveSponsor";
 
 export default function App(): React.Node {
   const { t } = useTranslation();
@@ -34,6 +35,7 @@ export default function App(): React.Node {
           <div className={styles['col-md-2']}>
             <div>
               <BuyACoffee />
+              <CoachDaveSponsor />
             </div>
             <h3>{t('Filters')}</h3>
             <Filters />
