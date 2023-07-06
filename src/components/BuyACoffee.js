@@ -42,12 +42,9 @@ export default function BuyACoffee(): React.Node {
 
   const clickBuyCoffee = async () => {
     window.dataLayer.push({
-      event: 'event',
-      eventProps: {
-        category: 'Sponsor button',
-        action: 'click',
-        label: 'Buy a Coffee',
-      },
+      event: 'select_content',
+      contentType: 'sponsor',
+      contentID: 'Buy A Coffee',
     });
 
     window.location.assign(await getBCUrl());

@@ -12,12 +12,9 @@ export default function CoachDaveSponsor(): React.Node {
   const { t } = useTranslation();
   const clickSponsor = () => {
     window.dataLayer.push({
-      event: 'event',
-      eventProps: {
-        category: 'Sponsor button',
-        action: 'click',
-        label: 'Coach Dave',
-      },
+      event: 'select_content',
+      contentType: 'sponsor',
+      contentID: 'Coach Dave Setups',
     });
   };
 
