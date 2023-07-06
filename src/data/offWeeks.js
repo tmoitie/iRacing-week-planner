@@ -6,12 +6,6 @@ export default {
   //     1.1, 1.1, 2.1, 2.1, 3.1, 3.1, 4.1, 5.1, 8.1, 8.1, 9.1, 13.1, 14.1,
   //   ],
   // },
-  // 439 │ 3816 │ eNASCAR Road to Pro Qual Series - Round 2
-  // 3816: {
-  //   offWeeks: [
-  //     1.1, 2.1, 3.1, 4.1, 5.1, 6.1,
-  //   ],
-  // },
   // 512 │ 3974 | SCCA Runoffs - FR500
   // 3974: {
   //   weekEndOffset: { days: 7 },
@@ -127,6 +121,12 @@ export default {
   4316: {
     offWeeks: [
       1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+  // 439 │ 4384 │ eNASCAR Road to Pro Qual Series - Round 2
+  4384: {
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1, 6.1,
     ],
   },
 };

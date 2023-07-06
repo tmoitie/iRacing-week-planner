@@ -10,7 +10,16 @@ import '@blueprintjs/core/lib/css/blueprint.css';
 
 export default function CoachDaveSponsor(): React.Node {
   const { t } = useTranslation();
-  const clickSponsor = (e) => {};
+  const clickSponsor = () => {
+    window.dataLayer.push({
+      event: 'event',
+      eventProps: {
+        category: 'Sponsor button',
+        action: 'click',
+        label: 'Coach Dave',
+      },
+    });
+  };
 
   return (
     <div className={styles.sponsoredContainer}>
