@@ -17,6 +17,9 @@ import '../src/i18n';
 const { JSDOM } = jsdom;
 const dom = new JSDOM('<!DOCTYPE html><html></html>');
 global.window = dom.window;
+global.window.dataLayer = {
+  push: jest.fn(),
+};
 global.document = dom.window.document;
 
 configure({ adapter: new Adapter() });
