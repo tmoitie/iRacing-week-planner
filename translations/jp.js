@@ -113,10 +113,10 @@ export default {
     'No races this week match your favourite cars. Try turning the filter off or adding some.': '今週は好きなクルマに合うレースがない。フィルターをオフにするか、何かを追加してみてください。',
     'No races this week match your favourite tracks. Try turning the filter off or adding some.': '今週は好きなコースに合うレースがない。フィルターをオフにするか、何かを追加してみてください。',
 
-    // Coach Dave Sponsorship
-    'Sponsored': 'Sponsored',
-    'Looking for iRacing Setups?': 'Looking for iRacing Setups?',
-    'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.': 'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.',
-    'Browse Setups': 'Browse Setups',
+    // Coach Dave Sponsorship - DeepL ML translated @todo human translations
+    'Sponsored': 'スポンサードリンク',
+    'Looking for iRacing Setups?': 'iRacingのセットアップをお探しですか？',
+    'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.': 'プロのシムレーサーやエンジニアが開発したCoach Dave Academyのセットアップを手に入れよう。',
+    'Browse Setups': 'セットアップを見る',
   },
 };

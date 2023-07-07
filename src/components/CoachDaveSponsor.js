@@ -22,7 +22,7 @@ export default function CoachDaveSponsor(): React.Node {
     <div className={styles.sponsoredContainer}>
       <a
         onClick={clickSponsor}
-        href="https://coachdaveacademy.com/product-category/iracing-setups/?ref=iracing-week-planner.tmo.lol"
+        href="https://coachdaveacademy.com/product/iracing-setup-subscription/?ref=weekly_planner"
         rel="sponsored"
         className={styles.sponsoredLink}
       >

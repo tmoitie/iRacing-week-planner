@@ -110,11 +110,11 @@ export default {
     'No races this week match your favourite series. Try turning the filter off or adding some.': 'Esta semana no hay carreras que coincidan con tu serie favorita. Intenta desactivar el filtro o añadir algo.',
     'No races this week match your favourite cars. Try turning the filter off or adding some.': 'Esta semana no hay carreras que coincidan con tus coches favoritos. Trate de desactivar el filtro o añadir algo.',
     'No races this week match your favourite tracks. Try turning the filter off or adding some.': 'Esta semana no hay carreras que coincidan con tus pistas favoritas. Trate de desactivar el filtro o añadir algo.',
-      
-    // Coach Dave Sponsorship
-    'Sponsored': 'Sponsored',
-    'Looking for iRacing Setups?': 'Looking for iRacing Setups?',
-    'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.': 'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.',
-    'Browse Setups': 'Browse Setups',
+
+    // Coach Dave Sponsorship - DeepL ML translated @todo human translations
+    'Sponsored': 'Patrocinado',
+    'Looking for iRacing Setups?': '¿Buscas setups para iRacing?',
+    'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.': 'Consigue un setup de Coach Dave Academy, desarrollada por ingenieros y pilotos de simulación profesionales.',
+    'Browse Setups': 'Examinar Setups',
   },
 };
