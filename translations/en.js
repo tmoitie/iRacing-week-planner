@@ -118,7 +118,6 @@ export default {
     'Sponsored': 'Sponsored',
     'Looking for iRacing Setups?': 'Looking for iRacing Setups?',
     'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.': 'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.',
-    'Browse Setups': 'Browse Setups'
-
+    'Browse Setups': 'Browse Setups',
   },
 };

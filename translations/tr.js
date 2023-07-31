@@ -111,7 +111,7 @@ export default {
     'No races this week match your favourite cars. Try turning the filter off or adding some.': 'Bu hafta hiçbir yarış favori araçlarınızla eşleşmiyor. Filtreyi kapatmayı veya bir şey eklemeyi deneyin.',
     'No races this week match your favourite tracks. Try turning the filter off or adding some.': 'Bu hafta hiçbir yarış favori pistlerinize uymuyor. Filtreyi kapatmayı veya bir şeyler eklemeyi deneyin.',
 
-    // Coach Dave Sponsorship - @todo
+    // Coach Dave Sponsorship - DeepL ML translated @todo human translations
     'Sponsored': 'Sponsorlu',
     'Looking for iRacing Setups?': 'iRacing setuplar mı arıyorsunuz?',
     'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.': 'Profesyonel simülasyon setup ve mühendisleri tarafından geliştirilen Coach Dave Academy\'den bir kurulum alın.',
