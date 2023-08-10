@@ -59,7 +59,7 @@ export default {
 
     // Modals
     'Use the checkbox to set the content you own, and use the star to set your favourite content.':
-      'Utiliza el checkbox para marcar el contenido que tienes, y usa la estrella para marcar tu contenido favorito.',
+      'Use las casillas para marcar el contenido que tienes, y use la estrella para marcar su contenido favorito.',
     'Select all': 'Seleccionar todo',
     'Select all oval': 'Seleccionar todo oval',
     'Select all road': 'Seleccionar todo road',
@@ -68,11 +68,11 @@ export default {
     'Contributors': 'Contribuciones',
     'Changelog': 'Changelog',
     'This tool was created by <2>tmoitie</2> (<5>Tom Moitié</5> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on <9>Github</9>. Thanks!':
-      'Esta herramienta ha sido creada por <2>tmoitie</2> (<5>Tom Moitié</5> en iRacing). Puedes contactarme por twitter o iRacing si tienes cualquier duda o sugerencia. El codigo está público en <9>Github</9>. ¡Gracias!',
+      'Esta herramienta ha sido creada por <2>tmoitie</2> (<5>Tom Moitié</5> en iRacing). Puede contactarme por twitter o iRacing si tiene cualquier duda o sugerencia. El codigo está público en <9>Github</9>. ¡Gracias!',
     'Loading': 'Cargando',
     'Cars for {{series}}': 'Coches para {{series}}',
     'Tracks for {{series}}': 'Circuitos para {{series}}',
-    'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'Estos circuitos que no tienes, aparecen varias veces para esta temporada. Puedes comprarlas a través del enlace directo.',
+    'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'Estos circuitos que no tiene, aparecen varias veces para esta temporada. Puede comprarlos a través del enlace directo.',
 
     // Dates
     'Every {{every}} starting at {{time, datetime}}': 'Cada {{every}} empezando a las {{time, datetime}}',
