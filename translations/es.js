@@ -59,7 +59,7 @@ export default {
 
     // Modals
     'Use the checkbox to set the content you own, and use the star to set your favourite content.':
-      'Utiliza el checkbox para marcar el contenido que tienes, y usa la estrella para marcar tu contenido favorito.',
+      'Use las casillas para marcar el contenido que tienes, y use la estrella para marcar su contenido favorito.',
     'Select all': 'Seleccionar todo',
     'Select all oval': 'Seleccionar todo oval',
     'Select all road': 'Seleccionar todo road',
@@ -68,11 +68,11 @@ export default {
     'Contributors': 'Contribuciones',
     'Changelog': 'Changelog',
     'This tool was created by <2>tmoitie</2> (<5>Tom Moitié</5> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on <9>Github</9>. Thanks!':
-      'Esta herramienta ha sido creada por <2>tmoitie</2> (<5>Tom Moitié</5> en iRacing). Puedes contactarme por twitter o iRacing si tienes cualquier duda o sugerencia. El codigo está público en <9>Github</9>. ¡Gracias!',
+      'Esta herramienta ha sido creada por <2>tmoitie</2> (<5>Tom Moitié</5> en iRacing). Puede contactarme por twitter o iRacing si tiene cualquier duda o sugerencia. El codigo está público en <9>Github</9>. ¡Gracias!',
     'Loading': 'Cargando',
     'Cars for {{series}}': 'Coches para {{series}}',
     'Tracks for {{series}}': 'Circuitos para {{series}}',
-    'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'Estos circuitos que no tienes, aparecen varias veces para esta temporada. Puedes comprarlas a través del enlace directo.',
+    'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'Estos circuitos que no tiene, aparecen varias veces para esta temporada. Puede comprarlos a través del enlace directo.',
 
     // Dates
     'Every {{every}} starting at {{time, datetime}}': 'Cada {{every}} empezando a las {{time, datetime}}',
@@ -93,28 +93,28 @@ export default {
     'Sign in/Create account': 'Iniciar sesión/Registrarse',
     'Signing in will sync your settings across multiple browsers or devices.': 'Iniciar sesión sincronizará su configuración en varios navegadores o dispositivos.',
     'When you first sign in it will use your current settings to set up the account, but once an account is set-up logging in will overwrite any settings you stored as a guest.':
-      'Cuando inicias sesión por primera vez se utilizará la configuración actual para setear la cuenta, pero una vez configurada, el inicio de sesión sobrescribirá cualquier configuración que haya almacenado como invitado.',
+      'Cuando inicie sesión por primera vez, se usará la configuración actual para establecer la cuenta, pero una vez configurada, el inicio de sesión sobrescribirá cualquier configuración que se haya almacenado como invitado.',
     'Password': 'Contraseña',
-    'Forgotten password?': '¿Olvido la contraseña?',
+    'Forgotten password?': '¿Olvidó su contraseña?',
     'Sign in': 'Iniciar sesión',
     'Sign out': 'Salir',
     'Create account': 'Registrarse',
-    'There is no user record corresponding to this identifier. The user may have been deleted.': 'No hay ningún registro de usuario que corresponda a este identificador. El usuario puede haber sido eliminado.',
-    'The password is invalid or the user does not have a password.': 'La contraseña es incorrecta o el usuario no posee una.',
+    'There is no user record corresponding to this identifier. The user may have been deleted.': 'No hay ningún registro de usuario con estas credenciales. El usuario puede haber sido eliminado.',
+    'The password is invalid or the user does not have a password.': 'La contraseña es incorrecta o el usuario no la estableció.',
     'The email address is badly formatted.': 'La dirección de correo electrónico está mal formateada.',
     'The password must be 6 characters long or more.': 'La contraseña debe tener 6 o más caracteres.',
-    'The email address is already in use by another account.': 'La dirección de correo ya está siendo utilizada por otra cuenta.',
+    'The email address is already in use by another account.': 'La dirección de correo ya está siendo usada por otra cuenta.',
     'Password should be at least 6 characters': 'La contraseña debe tener al menos 6 caracteres',
 
     // No Results - DeepL ML translated @todo human translations
-    'No races this week match your favourite series. Try turning the filter off or adding some.': 'Esta semana no hay carreras que coincidan con tu serie favorita. Intenta desactivar el filtro o añadir algo.',
-    'No races this week match your favourite cars. Try turning the filter off or adding some.': 'Esta semana no hay carreras que coincidan con tus coches favoritos. Trate de desactivar el filtro o añadir algo.',
-    'No races this week match your favourite tracks. Try turning the filter off or adding some.': 'Esta semana no hay carreras que coincidan con tus pistas favoritas. Trate de desactivar el filtro o añadir algo.',
+    'No races this week match your favourite series. Try turning the filter off or adding some.': 'Esta semana no hay carreras que coincidan con su serie favorita. Intente desactivar el filtro o añadir algo.',
+    'No races this week match your favourite cars. Try turning the filter off or adding some.': 'Esta semana no hay carreras que coincidan con sus coches favoritos. Trate de desactivar el filtro o añadir algo.',
+    'No races this week match your favourite tracks. Try turning the filter off or adding some.': 'Esta semana no hay carreras que coincidan con sus pistas favoritas. Trate de desactivar el filtro o añadir algo.',
 
     // Coach Dave Sponsorship - DeepL ML translated @todo human translations
     'Sponsored': 'Patrocinado',
     'Looking for iRacing Setups?': '¿Buscas setups para iRacing?',
     'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.': 'Consigue un setup de Coach Dave Academy, desarrollada por ingenieros y pilotos de simulación profesionales.',
-    'Browse Setups': 'Examinar Setups',
+    'Browse Setups': 'Buscar Setups',
   },
 };
