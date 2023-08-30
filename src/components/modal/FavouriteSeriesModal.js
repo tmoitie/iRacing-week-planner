@@ -111,7 +111,7 @@ export default function FavouriteSeriesModal({ onClose, isOpen, favouriteSeries,
       <div>
         <input
           type="text"
-          placeholder="Search series"
+          placeholder={t('Search series')}
           aria-label="search series"
           onChange={handleChange}
           value={searchInput}
