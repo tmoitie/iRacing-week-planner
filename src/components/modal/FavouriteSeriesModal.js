@@ -8,7 +8,7 @@ import series from '../../data/season.json';
 
 import styles from '../../styles/main.module.scss';
 
-const groupedSeries = series.reduce((grouped, single) => {
+const groupedSeries = (filteredSeries) => filteredSeries.reduce((grouped, single) => {
   if (single.catid === 1) {
     return {
       ...grouped,
@@ -58,6 +58,7 @@ const defaultProps = {
 };
 
 export default function FavouriteSeriesModal({ onClose, isOpen, favouriteSeries, save }: Props) {
+  const [searchInput, setSearchInput] = React.useState('');
   const { t } = useTranslation();
 
   const setCheckboxFavourite = (seriesId, newValue) => {
@@ -71,6 +72,18 @@ export default function FavouriteSeriesModal({ onClose, isOpen, favouriteSeries,
       newFavorites.splice(index, 1);
     }
     save(newFavorites);
+  };
+
+  const handleChange = (e) => {
+    e.preventDefault();
+    setSearchInput(e.target.value);
+  };
+
+  const getFilteredSeries = () => {
+    if (searchInput.length > 0) {
+      return series.filter((serie) => serie.seriesname.toUpperCase().includes(searchInput.toUpperCase()));
+    }
+    return series;
   };
 
   const renderCheckboxes = (cbSeries) => (
@@ -95,23 +108,48 @@ export default function FavouriteSeriesModal({ onClose, isOpen, favouriteSeries,
       title={t('Choose favorite series')}
       doneAction={onClose}
     >
+      <div>
+        <input
+          type="text"
+          placeholder="Search series"
+          aria-label="search series"
+          onChange={handleChange}
+          value={searchInput}
+        />
+      </div>
       <div className={styles['container-fluid']}>
-        <h3>{t('Oval')}</h3>
-        <div className={styles.row}>
-          {groupedSeries.oval.map(renderCheckboxes)}
-        </div>
-        <h3>{t('Road')}</h3>
-        <div className={styles.row}>
-          {groupedSeries.road.map(renderCheckboxes)}
-        </div>
-        <h3>{t('Dirt Oval')}</h3>
-        <div className={styles.row}>
-          {groupedSeries.dirtOval.map(renderCheckboxes)}
-        </div>
-        <h3>{t('RX')}</h3>
-        <div className={styles.row}>
-          {groupedSeries.rx.map(renderCheckboxes)}
-        </div>
+        {groupedSeries(getFilteredSeries()).oval.length > 0 && (
+          <>
+            <h3>{t('Oval')}</h3>
+            <div className={styles.row}>
+              {groupedSeries(getFilteredSeries()).oval.map(renderCheckboxes)}
+            </div>
+          </>
+        )}
+        {groupedSeries(getFilteredSeries()).road.length > 0 && (
+          <>
+            <h3>{t('Road')}</h3>
+            <div className={styles.row}>
+              {groupedSeries(getFilteredSeries()).road.map(renderCheckboxes)}
+            </div>
+          </>
+        )}
+        {groupedSeries(getFilteredSeries()).dirtOval.length > 0 && (
+          <>
+            <h3>{t('Dirt Oval')}</h3>
+            <div className={styles.row}>
+              {groupedSeries(getFilteredSeries()).dirtOval.map(renderCheckboxes)}
+            </div>
+          </>
+        )}
+        {groupedSeries(getFilteredSeries()).rx.length > 0 && (
+          <>
+            <h3>{t('RX')}</h3>
+            <div className={styles.row}>
+              {groupedSeries(getFilteredSeries()).rx.map(renderCheckboxes)}
+            </div>
+          </>
+        )}
       </div>
     </Modal>
   );
