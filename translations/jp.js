@@ -78,6 +78,7 @@ export default {
     // Dates
     'Every {{every}} starting at {{time, datetime}}': '{{every}} ごと {{time, datetime}} に開始',
     'Set times': '特定の時間',
+    'Search series': '検索シリーズ',
 
     //New Auth strings
     'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <2>buy me a coffee</2>.':

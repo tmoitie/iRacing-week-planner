@@ -74,6 +74,7 @@ export default {
     'Cars for {{series}}': 'Auto per {{series}}',
     'Tracks for {{series}}': 'Traccciati per {{series}}',
     'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'Questi tracciati che non possiedi sono presenti più volte nelle tue serie preferite di questa stagione. Se vuoi puoi acquistare questi tracciati tramite il seguente link.',
+    'Search series': 'Serie di ricerca',
 
     // Dates
     'Every {{every}} starting at {{time, datetime}}': 'Ogni {{every}} partenza è alle {{time, datetime}}',
