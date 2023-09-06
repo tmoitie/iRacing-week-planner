@@ -3,7 +3,7 @@
 exports[`components/columns/NextRace renders correctly 1`] = `
 <td>
   <div>
-    Wed, 1:45 PM UTC
+    Wed, 1:45 PM GMT
   </div>
 </td>
 `;
