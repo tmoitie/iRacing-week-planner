@@ -61,8 +61,8 @@ export default {
     'Use the checkbox to set the content you own, and use the star to set your favourite content.':
       'Use a caixa de seleção para definir o conteúdo que você possui e use a estrela para definir seu conteúdo favorito.',
     'Select all': 'Selecionar tudo',
-    'Select all oval': 'Selecionar tudo oval',
-    'Select all road': 'Selecionar tudo road',
+    'Select all oval': 'Selecionar apenas oval',
+    'Select all road': 'Selecionar apenas road',
     'Choose favorite series': 'Escolha séries favoritas',
     'Close': 'Fechar',
     'Contributors': 'Contribuintes',
@@ -74,6 +74,7 @@ export default {
     'Cars for {{series}}': 'Carros para {{series}}',
     'Tracks for {{series}}': 'Pistas para {{series}}',
     'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'Essas são as pistas você não tem, as quais aparecem aparecem várias vezes para esta temporada. Você pode comprar essas pistas com o link.',
+    'Search series': 'Pesquisar séries',
 
     // Dates
     'Every {{every}} starting at {{time, datetime}}': 'Cada {{every}} começando às {{time, datetime}}',
@@ -117,6 +118,6 @@ export default {
     'Looking for iRacing Setups?': 'Procurando por setups do iRacing?',
     'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.': 'Obtenha um setup da Coach Dave Academy, desenvolvida por engenheiros e pilotos profissionais de simuladores.',
     'Browse Setups': 'Procurar setups',
-    
+
   },
 };
