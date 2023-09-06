@@ -74,6 +74,7 @@ export default {
     'Cars for {{series}}': 'Cars for {{series}}',
     'Tracks for {{series}}': 'Tracks for {{series}}',
     'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.',
+    'Search series': 'Search series',
 
     // Dates
     '{{date, datetime}}': '{{date, datetime}}',
@@ -113,7 +114,7 @@ export default {
     'No races this week match your favourite series. Try turning the filter off or adding some.': 'No races this week match your favourite series. Try turning the filter off or adding some.',
     'No races this week match your favourite cars. Try turning the filter off or adding some.': 'No races this week match your favourite cars. Try turning the filter off or adding some.',
     'No races this week match your favourite tracks. Try turning the filter off or adding some.': 'No races this week match your favourite tracks. Try turning the filter off or adding some.',
-  
+
     // Coach Dave Sponsorship
     'Sponsored': 'Sponsored',
     'Looking for iRacing Setups?': 'Looking for iRacing Setups?',
