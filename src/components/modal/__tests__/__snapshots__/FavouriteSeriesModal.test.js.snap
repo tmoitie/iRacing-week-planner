@@ -61,15 +61,18 @@ exports[`components/modal/FavouriteSeriesModal renders with checkbox saving 1`] 
           }
         }
       >
+        <div>
+          <input
+            aria-label="search series"
+            onChange={[Function]}
+            placeholder="Search series"
+            type="text"
+            value=""
+          />
+        </div>
         <div
           className="container-fluid"
         >
-          <h3>
-            Oval
-          </h3>
-          <div
-            className="row"
-          />
           <h3>
             Road
           </h3>
@@ -117,18 +120,6 @@ exports[`components/modal/FavouriteSeriesModal renders with checkbox saving 1`] 
               </div>
             </div>
           </div>
-          <h3>
-            Dirt Oval
-          </h3>
-          <div
-            className="row"
-          />
-          <h3>
-            RX
-          </h3>
-          <div
-            className="row"
-          />
         </div>
       </div>
       <div
