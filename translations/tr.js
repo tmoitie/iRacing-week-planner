@@ -73,6 +73,7 @@ export default {
     'Cars for {{series}}': '{{series}} arabaları',
     'Tracks for {{series}}': '{{series}} pistleri',
     'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'Favori serilerinizde yer alan sahip olmadığınız pistler bu sezon için bir fazla kere görüntülenebilir. Bu parçaları doğrudan bu link ile satın alabilirsiniz.',
+    'Search series': 'Arama serisi',
 
     // Dates
     'Every {{every}} starting at {{time, datetime}}': 'Her {{every}} tarihinde başlar {{time, datetime}}',

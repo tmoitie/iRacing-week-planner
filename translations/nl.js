@@ -74,6 +74,7 @@ export default {
     'Cars for {{series}}': 'Auto`s voor {{series}}',
     'Tracks for {{series}}': 'Banen voor {{series}}',
     'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'Deze komen meerdere malen voor in favoriete series dit seizoen. Deze zijn aan te schaffen via de directe link.',
+    'Search series': 'Serie zoeken',
 
     // Dates
     'Every {{every}} starting at {{time, datetime}}': 'Iedere {{every}} om {{time, datetime}}',

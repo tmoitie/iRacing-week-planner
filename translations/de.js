@@ -75,6 +75,7 @@ export default {
     'Cars for {{series}}': 'Fahrzeuge für {{series}}',
     'Tracks for {{series}}': 'Strecken für {{series}}',
     'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'Diese Strecken, die du nicht bestzt, kommen in deinen bevorzugten Serien öfters in dieser Seaison vor. Du kannst diese über einen Direktlink kaufen',
+    'Search series': 'Serien suchen',
 
     // Dates
     'Every {{every}} starting at {{time, datetime}}': 'Jede {{every}} ab {{time, datetime}}',

@@ -73,6 +73,7 @@ export default {
     'Cars for {{series}}': 'Coches para {{series}}',
     'Tracks for {{series}}': 'Circuitos para {{series}}',
     'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': 'Estos circuitos que no tiene, aparecen varias veces para esta temporada. Puede comprarlos a través del enlace directo.',
+    'Search series': 'Buscar series',
 
     // Dates
     'Every {{every}} starting at {{time, datetime}}': 'Cada {{every}} empezando a las {{time, datetime}}',
