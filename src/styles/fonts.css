@@ -1,0 +1,15 @@
+html body,
+html input::placeholder,
+html button,
+html input {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+html[lang="ja"] body,
+html[lang="ja"] input::placeholder,
+html[lang="ja"] button,
+html[lang="ja"] input {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
