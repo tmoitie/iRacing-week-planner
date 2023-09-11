@@ -89,13 +89,6 @@ export default {
       1.1, 2.1, 3.1, 3.1, 3.1, 5.1, 8.1, 9.1, 11.1, 13.1, 13.1, 13.1, 15.1, 17.1, 18.1, 21.1,
     ],
   },
-  // 331 │ 4177 │ European Endurance Pure Driving School Series
-  // 4177: {
-  //   weekStartOffset: { days: 7 },
-  //   offWeeks: [
-  //     1.1, 2.1, 3.1, 4.1, 5.1,
-  //   ],
-  // },
   // 275 │ 4251 │ Nurburgring Endurance Championship | 2023-10-31
   4251: {
     offWeeks: [
@@ -104,29 +97,41 @@ export default {
   },
 
   // 469 │ 4315 | Global Endurance Pure Driving School Series | 2023-09-05
-  4315: {
-    weekStartOffset: { days: 7 },
-    offWeeks: [
-      1.1, 2.1, 3.1, 4.1, 5.1,
-    ],
-  },
-  // 492 │ 4284 | IMSA Michelin Pilot Challenge Series | 2023-09-05
-  4284: {
-    weekStartOffset: { days: 7 },
-    offWeeks: [
-      1.1, 2.1, 3.1, 4.1, 5.1,
-    ],
-  },
-  // 419 │ 4316 | IMSA Endurance Series | 2023-08-29
-  4316: {
-    offWeeks: [
-      1.1, 2.1, 3.1, 4.1, 5.1,
-    ],
-  },
-  // 439 │ 4384 │ eNASCAR Road to Pro Qual Series - Round 2
+  // 4315: {
+  //   weekStartOffset: { days: 7 },
+  //   offWeeks: [
+  //     1.1, 2.1, 3.1, 4.1, 5.1,
+  //   ],
+  // },
+  // 439 │ 4384 │ eNASCAR Road to Pro Qual Series - Round 2 | 2023-10-03
   4384: {
     offWeeks: [
       1.1, 2.1, 3.1, 4.1, 5.1, 6.1,
+    ],
+  },
+  // 307 │ 4485 │ Dirt │ World of Outlaws Sprint Car Series | 2023-12-05
+  4485: {
+    weekStartOffset: { days: -1 },
+  },
+  // 492 │ 4427 │ Road │ IMSA Michelin Pilot Challenge Series | 2023-12-05
+  4427: {
+    weekStartOffset: { days: 7 },
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+  // 331 │ 4458 │ Road │ European Endurance Pure Driving School Series | 2023-12-05
+  4458: {
+    weekStartOffset: { days: 7 },
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+
+  // 419 │ 4459 │ Road │ IMSA Endurance Series | 2023-11-28
+  4459: {
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
     ],
   },
 };
