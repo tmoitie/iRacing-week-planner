@@ -99,6 +99,8 @@ export default {
     'Password': 'パスワード',
     'Forgotten password?': 'パスワードを忘れたら',
     'Sign in': 'ログイン',
+    'Sign in with Google': 'Googleでログイン',
+    'Sign in with email': 'メールアドレスでログイン',
     'Sign out': 'ログアウト',
     'Create account': '新規会員登録',
     'There is no user record corresponding to this identifier. The user may have been deleted.': 'このメールアドレスに対応するユーザーレコードはありません。このユーザーが削除された可能性があります。',

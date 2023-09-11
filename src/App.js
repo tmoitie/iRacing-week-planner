@@ -16,15 +16,26 @@ import Filters from './components/Filters';
 import styles from './styles/main.module.scss';
 
 import '@blueprintjs/core/lib/css/blueprint.css';
-import CoachDaveSponsor from "./components/CoachDaveSponsor";
+import CoachDaveSponsor from './components/CoachDaveSponsor';
+
+import './styles/fonts.css';
 
 export default function App(): React.Node {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const dispatch = useDispatch();
 
   React.useEffect(() => {
     dispatch(startListener());
+
+    return () => {};
   }, []);
+
+  React.useEffect(() => {
+    document.body.dir = i18n.dir();
+    document.documentElement.setAttribute('lang', i18n.language);
+
+    return () => {};
+  }, [i18n.language]);
 
   return (
     <div>

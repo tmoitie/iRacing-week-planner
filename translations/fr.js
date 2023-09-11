@@ -99,6 +99,8 @@ export default {
     'Password': 'Mot de passe',
     'Forgotten password?': 'Mot de passe oublié?',
     'Sign in': 'Se connecter',
+    'Sign in with Google': 'Se connecter avec Google',
+    'Sign in with email': 'Se connecter avec l\'adresse e-mail',
     'Sign out': 'Se déconnecter',
     'Create account': 'Créer un compte',
     'There is no user record corresponding to this identifier. The user may have been deleted.': 'Il n\'y a pas de données concernant cet utilisateur. Cet utilisateur pourrait avoir été supprimé.',

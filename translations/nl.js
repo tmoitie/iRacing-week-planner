@@ -99,6 +99,8 @@ export default {
     'Password': 'Wachtwoord',
     'Forgotten password?': 'Wachtwoord vergeten?',
     'Sign in': 'Inloggen',
+    'Sign in with Google': 'Inloggen met Google',
+    'Sign in with email': 'Inloggen met emailadres',
     'Sign out': 'Uitloggen',
     'Create account': 'Account maken',
     'There is no user record corresponding to this identifier. The user may have been deleted.': 'Er is geen gebruikersdata aanwezig voor deze identifier. De gebruiker kan zijn verwijderd.',

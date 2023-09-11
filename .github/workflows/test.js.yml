@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v3
       with:
-        node-version: 14
+        node-version: 18
         cache: 'yarn'
     - run: yarn install
     - run: printf '[]' > src/data/tracks.json
@@ -25,4 +25,4 @@ jobs:
     - run: printf '[]' > src/data/season.json
     - run: printf '[]' > src/data/contributors.json
     - run: yarn test --coverage
-    - uses: codecov/codecov-action@v2
+    - uses: codecov/codecov-action@v3

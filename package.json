@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Weekly planner for iRacing.com races",
   "engines": {
-    "node": "14.*",
+    "node": "18.*",
     "yarn": ">=1.22.5"
   },
   "scripts": {

@@ -70,6 +70,28 @@ exports[`components/modal/LoginModal create account error 1`] = `
           <form
             onSubmit={[Function]}
           >
+            <div>
+              <button
+                className="btn"
+                id="googleSignIn"
+                onClick={[Function]}
+                type="button"
+              >
+                <img
+                  alt="Google logo"
+                  src="test-file-stub"
+                  style={
+                    Object {
+                      "marginInlineEnd": 6,
+                    }
+                  }
+                />
+                Sign in with Google
+              </button>
+            </div>
+            <h3>
+              Sign in with email
+            </h3>
             <div
               className="form-group"
             >
@@ -117,20 +139,27 @@ exports[`components/modal/LoginModal create account error 1`] = `
                 Forgotten password?
               </a>
             </div>
-            <button
-              className="btn btn-default"
-              type="submit"
-            >
-              Sign in
-            </button>
-            <button
-              className="btn"
-              id="createAccountButton"
-              onClick={[Function]}
-              type="button"
-            >
-              Create account
-            </button>
+            <div>
+              <button
+                className="btn btn-default"
+                type="submit"
+              >
+                Sign in
+              </button>
+              <button
+                className="btn"
+                id="createAccountButton"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "marginInlineStart": 6,
+                  }
+                }
+                type="button"
+              >
+                Create account
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -209,6 +238,28 @@ exports[`components/modal/LoginModal forgotten password modal control 1`] = `
           <form
             onSubmit={[Function]}
           >
+            <div>
+              <button
+                className="btn"
+                id="googleSignIn"
+                onClick={[Function]}
+                type="button"
+              >
+                <img
+                  alt="Google logo"
+                  src="test-file-stub"
+                  style={
+                    Object {
+                      "marginInlineEnd": 6,
+                    }
+                  }
+                />
+                Sign in with Google
+              </button>
+            </div>
+            <h3>
+              Sign in with email
+            </h3>
             <div
               className="form-group"
             >
@@ -256,20 +307,27 @@ exports[`components/modal/LoginModal forgotten password modal control 1`] = `
                 Forgotten password?
               </a>
             </div>
-            <button
-              className="btn btn-default"
-              type="submit"
-            >
-              Sign in
-            </button>
-            <button
-              className="btn"
-              id="createAccountButton"
-              onClick={[Function]}
-              type="button"
-            >
-              Create account
-            </button>
+            <div>
+              <button
+                className="btn btn-default"
+                type="submit"
+              >
+                Sign in
+              </button>
+              <button
+                className="btn"
+                id="createAccountButton"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "marginInlineStart": 6,
+                  }
+                }
+                type="button"
+              >
+                Create account
+              </button>
+            </div>
           </form>
         </div>
         <div
@@ -444,6 +502,28 @@ exports[`components/modal/LoginModal forgotten password modal control 2`] = `
           <form
             onSubmit={[Function]}
           >
+            <div>
+              <button
+                className="btn"
+                id="googleSignIn"
+                onClick={[Function]}
+                type="button"
+              >
+                <img
+                  alt="Google logo"
+                  src="test-file-stub"
+                  style={
+                    Object {
+                      "marginInlineEnd": 6,
+                    }
+                  }
+                />
+                Sign in with Google
+              </button>
+            </div>
+            <h3>
+              Sign in with email
+            </h3>
             <div
               className="form-group"
             >
@@ -491,20 +571,27 @@ exports[`components/modal/LoginModal forgotten password modal control 2`] = `
                 Forgotten password?
               </a>
             </div>
-            <button
-              className="btn btn-default"
-              type="submit"
-            >
-              Sign in
-            </button>
-            <button
-              className="btn"
-              id="createAccountButton"
-              onClick={[Function]}
-              type="button"
-            >
-              Create account
-            </button>
+            <div>
+              <button
+                className="btn btn-default"
+                type="submit"
+              >
+                Sign in
+              </button>
+              <button
+                className="btn"
+                id="createAccountButton"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "marginInlineStart": 6,
+                  }
+                }
+                type="button"
+              >
+                Create account
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -583,6 +670,28 @@ exports[`components/modal/LoginModal happy path create account 1`] = `
           <form
             onSubmit={[Function]}
           >
+            <div>
+              <button
+                className="btn"
+                id="googleSignIn"
+                onClick={[Function]}
+                type="button"
+              >
+                <img
+                  alt="Google logo"
+                  src="test-file-stub"
+                  style={
+                    Object {
+                      "marginInlineEnd": 6,
+                    }
+                  }
+                />
+                Sign in with Google
+              </button>
+            </div>
+            <h3>
+              Sign in with email
+            </h3>
             <div
               className="form-group"
             >
@@ -630,20 +739,27 @@ exports[`components/modal/LoginModal happy path create account 1`] = `
                 Forgotten password?
               </a>
             </div>
-            <button
-              className="btn btn-default"
-              type="submit"
-            >
-              Sign in
-            </button>
-            <button
-              className="btn"
-              id="createAccountButton"
-              onClick={[Function]}
-              type="button"
-            >
-              Create account
-            </button>
+            <div>
+              <button
+                className="btn btn-default"
+                type="submit"
+              >
+                Sign in
+              </button>
+              <button
+                className="btn"
+                id="createAccountButton"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "marginInlineStart": 6,
+                  }
+                }
+                type="button"
+              >
+                Create account
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -722,6 +838,28 @@ exports[`components/modal/LoginModal happy path create account 2`] = `
           <form
             onSubmit={[Function]}
           >
+            <div>
+              <button
+                className="btn"
+                id="googleSignIn"
+                onClick={[Function]}
+                type="button"
+              >
+                <img
+                  alt="Google logo"
+                  src="test-file-stub"
+                  style={
+                    Object {
+                      "marginInlineEnd": 6,
+                    }
+                  }
+                />
+                Sign in with Google
+              </button>
+            </div>
+            <h3>
+              Sign in with email
+            </h3>
             <div
               className="form-group"
             >
@@ -769,20 +907,27 @@ exports[`components/modal/LoginModal happy path create account 2`] = `
                 Forgotten password?
               </a>
             </div>
-            <button
-              className="btn btn-default"
-              type="submit"
-            >
-              Sign in
-            </button>
-            <button
-              className="btn"
-              id="createAccountButton"
-              onClick={[Function]}
-              type="button"
-            >
-              Create account
-            </button>
+            <div>
+              <button
+                className="btn btn-default"
+                type="submit"
+              >
+                Sign in
+              </button>
+              <button
+                className="btn"
+                id="createAccountButton"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "marginInlineStart": 6,
+                  }
+                }
+                type="button"
+              >
+                Create account
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -861,6 +1006,28 @@ exports[`components/modal/LoginModal happy path login 1`] = `
           <form
             onSubmit={[Function]}
           >
+            <div>
+              <button
+                className="btn"
+                id="googleSignIn"
+                onClick={[Function]}
+                type="button"
+              >
+                <img
+                  alt="Google logo"
+                  src="test-file-stub"
+                  style={
+                    Object {
+                      "marginInlineEnd": 6,
+                    }
+                  }
+                />
+                Sign in with Google
+              </button>
+            </div>
+            <h3>
+              Sign in with email
+            </h3>
             <div
               className="form-group"
             >
@@ -908,20 +1075,27 @@ exports[`components/modal/LoginModal happy path login 1`] = `
                 Forgotten password?
               </a>
             </div>
-            <button
-              className="btn btn-default"
-              type="submit"
-            >
-              Sign in
-            </button>
-            <button
-              className="btn"
-              id="createAccountButton"
-              onClick={[Function]}
-              type="button"
-            >
-              Create account
-            </button>
+            <div>
+              <button
+                className="btn btn-default"
+                type="submit"
+              >
+                Sign in
+              </button>
+              <button
+                className="btn"
+                id="createAccountButton"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "marginInlineStart": 6,
+                  }
+                }
+                type="button"
+              >
+                Create account
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -1000,6 +1174,28 @@ exports[`components/modal/LoginModal happy path login 2`] = `
           <form
             onSubmit={[Function]}
           >
+            <div>
+              <button
+                className="btn"
+                id="googleSignIn"
+                onClick={[Function]}
+                type="button"
+              >
+                <img
+                  alt="Google logo"
+                  src="test-file-stub"
+                  style={
+                    Object {
+                      "marginInlineEnd": 6,
+                    }
+                  }
+                />
+                Sign in with Google
+              </button>
+            </div>
+            <h3>
+              Sign in with email
+            </h3>
             <div
               className="form-group"
             >
@@ -1047,20 +1243,27 @@ exports[`components/modal/LoginModal happy path login 2`] = `
                 Forgotten password?
               </a>
             </div>
-            <button
-              className="btn btn-default"
-              type="submit"
-            >
-              Sign in
-            </button>
-            <button
-              className="btn"
-              id="createAccountButton"
-              onClick={[Function]}
-              type="button"
-            >
-              Create account
-            </button>
+            <div>
+              <button
+                className="btn btn-default"
+                type="submit"
+              >
+                Sign in
+              </button>
+              <button
+                className="btn"
+                id="createAccountButton"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "marginInlineStart": 6,
+                  }
+                }
+                type="button"
+              >
+                Create account
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -1139,6 +1342,28 @@ exports[`components/modal/LoginModal login error 1`] = `
           <form
             onSubmit={[Function]}
           >
+            <div>
+              <button
+                className="btn"
+                id="googleSignIn"
+                onClick={[Function]}
+                type="button"
+              >
+                <img
+                  alt="Google logo"
+                  src="test-file-stub"
+                  style={
+                    Object {
+                      "marginInlineEnd": 6,
+                    }
+                  }
+                />
+                Sign in with Google
+              </button>
+            </div>
+            <h3>
+              Sign in with email
+            </h3>
             <div
               className="form-group"
             >
@@ -1186,20 +1411,27 @@ exports[`components/modal/LoginModal login error 1`] = `
                 Forgotten password?
               </a>
             </div>
-            <button
-              className="btn btn-default"
-              type="submit"
-            >
-              Sign in
-            </button>
-            <button
-              className="btn"
-              id="createAccountButton"
-              onClick={[Function]}
-              type="button"
-            >
-              Create account
-            </button>
+            <div>
+              <button
+                className="btn btn-default"
+                type="submit"
+              >
+                Sign in
+              </button>
+              <button
+                className="btn"
+                id="createAccountButton"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "marginInlineStart": 6,
+                  }
+                }
+                type="button"
+              >
+                Create account
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -1296,6 +1528,28 @@ exports[`components/modal/LoginModal renders error 1`] = `
               </button>
               Error message
             </div>
+            <div>
+              <button
+                className="btn"
+                id="googleSignIn"
+                onClick={[Function]}
+                type="button"
+              >
+                <img
+                  alt="Google logo"
+                  src="test-file-stub"
+                  style={
+                    Object {
+                      "marginInlineEnd": 6,
+                    }
+                  }
+                />
+                Sign in with Google
+              </button>
+            </div>
+            <h3>
+              Sign in with email
+            </h3>
             <div
               className="form-group"
             >
@@ -1343,20 +1597,27 @@ exports[`components/modal/LoginModal renders error 1`] = `
                 Forgotten password?
               </a>
             </div>
-            <button
-              className="btn btn-default"
-              type="submit"
-            >
-              Sign in
-            </button>
-            <button
-              className="btn"
-              id="createAccountButton"
-              onClick={[Function]}
-              type="button"
-            >
-              Create account
-            </button>
+            <div>
+              <button
+                className="btn btn-default"
+                type="submit"
+              >
+                Sign in
+              </button>
+              <button
+                className="btn"
+                id="createAccountButton"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "marginInlineStart": 6,
+                  }
+                }
+                type="button"
+              >
+                Create account
+              </button>
+            </div>
           </form>
         </div>
       </div>

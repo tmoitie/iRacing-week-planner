@@ -1,6 +1,6 @@
 import {
   getAuth, signOut as fbSignOut, signInWithEmailAndPassword, createUserWithEmailAndPassword,
-  onAuthStateChanged, sendPasswordResetEmail,
+  onAuthStateChanged, sendPasswordResetEmail, GoogleAuthProvider, signInWithPopup,
 } from 'firebase/auth';
 import { debouncedDispatcherSaveSettings, getSettingsFromFirebase, saveSettingsToFirebase } from './settings';
 
@@ -33,6 +33,26 @@ export function signIn(email, password) {
     try {
       const auth = getAuth(getState().auth.firebaseApp);
       await signInWithEmailAndPassword(auth, email, password);
+      return {};
+    } catch (error) {
+      dispatch({ type: ERROR_AUTH, error });
+      return { type: ERROR_AUTH };
+    }
+  };
+}
+
+export function signInWithGoogle() {
+  return async (dispatch, getState) => {
+    dispatch({ type: LOADING_AUTH });
+    try {
+      const auth = getAuth(getState().auth.firebaseApp);
+
+      const provider = new GoogleAuthProvider();
+      provider.providerId;
+      provider.addScope('profile');
+      provider.addScope('email');
+
+      await signInWithPopup(auth, provider);
       return {};
     } catch (error) {
       dispatch({ type: ERROR_AUTH, error });

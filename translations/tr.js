@@ -98,6 +98,8 @@ export default {
     'Password': 'Şifre',
     'Forgotten password?': 'Şifremi unuttum?',
     'Sign in': 'Giriş yap',
+    'Sign in with Google': 'Google ile giriş yap',
+    'Sign in with email': 'E-posta ile giriş yap',
     'Sign out': 'Çıkış',
     'Create account': 'Kaydol',
     'There is no user record corresponding to this identifier. The user may have been deleted.': 'Bu tanımlayıcıya karşılık gelen bir kullanıcı kaydı yok. Kullanıcı silinmiş olabilir.',

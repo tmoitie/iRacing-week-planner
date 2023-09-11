@@ -101,6 +101,8 @@ export default {
     'Password': 'Password',
     'Forgotten password?': 'Forgotten password?',
     'Sign in': 'Sign in',
+    'Sign in with Google': 'Sign in with Google',
+    'Sign in with email': 'Sign in with email',
     'Sign out': 'Sign out',
     'Create account': 'Create account',
     'There is no user record corresponding to this identifier. The user may have been deleted.': 'There is no user record corresponding to this identifier. The user may have been deleted.',

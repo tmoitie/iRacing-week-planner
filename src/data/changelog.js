@@ -1,6 +1,12 @@
 import moment from 'moment';
 
 export default [{
+  date: moment('2023-09-12 00:00:00').utc(),
+  items: [
+    'Update to 2023S4',
+    'Add Google Sign in - Existing logins will work with Google sign in',
+  ],
+}, {
   date: moment('2023-06-13 00:00:00').utc(),
   items: [
     'Update to 2023S3',
