@@ -6,6 +6,8 @@ export const signInWithEmailAndPassword = jest.fn(async () => {});
 
 export const createUserWithEmailAndPassword = jest.fn(async () => {});
 
+export const signInWithPopup = jest.fn(async () => {});
+
 const authStateListeners = [];
 
 export function onAuthStateChanged(auth, listener) {
@@ -17,3 +19,5 @@ export async function testDispatchOnAuthStateChanged(user) {
 }
 
 export const sendPasswordResetEmail = jest.fn(async () => {});
+
+export const GoogleAuthProvider = jest.requireActual('@firebase/auth').GoogleAuthProvider;

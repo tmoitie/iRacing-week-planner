@@ -4,7 +4,9 @@ import {
   getAuth,
   sendPasswordResetEmail,
   signInWithEmailAndPassword,
+  signInWithPopup,
   signOut as fbSignOut,
+  GoogleAuthProvider,
 } from 'firebase/auth';
 
 import '../settings';
@@ -17,6 +19,7 @@ import {
   forgottenPassword,
   LOADING_AUTH, LOADING_RESET, RESET_SENT, SIGNED_IN, SIGNED_OUT,
   signIn, signOut, startListener,
+  signInWithGoogle,
 } from '../auth';
 
 // eslint-disable-next-line jest/no-mocks-import
@@ -74,6 +77,31 @@ describe('authActions', () => {
       signInWithEmailAndPassword.mockRejectedValueOnce({ message: 'Sign in Error' });
 
       const action = await signInThunk(dispatch, getState);
+
+      expect(dispatch).toHaveBeenCalledWith({ type: LOADING_AUTH });
+      expect(dispatch).toHaveBeenCalledWith({ type: ERROR_AUTH, error: { message: 'Sign in Error' } });
+      expect(action.type).toEqual(ERROR_AUTH);
+    });
+  });
+
+  describe('signInWithGoogle', () => {
+    const signInWithGoogleThunk = signInWithGoogle();
+
+    test('success', async () => {
+      const dispatch = jest.fn(async () => {});
+
+      const action = await signInWithGoogleThunk(dispatch, getState);
+
+      expect(dispatch).toHaveBeenCalledWith({ type: LOADING_AUTH });
+      expect(signInWithPopup).toHaveBeenCalledWith(firebaseAuth, expect.any(GoogleAuthProvider));
+      expect(action).toEqual({});
+    });
+
+    test('error', async () => {
+      const dispatch = jest.fn(async () => {});
+      signInWithPopup.mockRejectedValueOnce({ message: 'Sign in Error' });
+
+      const action = await signInWithGoogleThunk(dispatch, getState);
 
       expect(dispatch).toHaveBeenCalledWith({ type: LOADING_AUTH });
       expect(dispatch).toHaveBeenCalledWith({ type: ERROR_AUTH, error: { message: 'Sign in Error' } });

@@ -3,7 +3,7 @@
 import moment, { duration } from 'moment';
 import { CHANGE_MODAL, UPDATE_DAYS } from '../actions/app';
 import { SIGNED_IN } from '../actions/auth';
-import { seasonStart, weekSeasonStart } from '../config';
+import { seasonStart, weekSeasonStart, seasonEnd } from '../config';
 
 const getWeek = (date) => Math.ceil(duration(moment(date).add({ second: 1 }).diff(weekSeasonStart)).asWeeks());
 
@@ -27,7 +27,16 @@ export default function app(
   let state = initState;
 
   if (state === undefined) {
-    const currentDate = moment(new Date()).utc().startOf('day');
+    let currentDate = moment(new Date()).utc().startOf('day');
+
+    if (currentDate.isBefore(seasonStart)) {
+      currentDate = moment(seasonStart).utc().startOf('day');
+    }
+    
+    if (currentDate.isAfter(seasonEnd)) {
+      currentDate = moment(seasonEnd).utc().startOf('day').subtract({ days: 1 });
+    }
+
     const currentDays = currentDate.diff(seasonStart, 'days');
 
     state = {
