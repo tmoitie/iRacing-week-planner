@@ -101,6 +101,8 @@ export default {
     Password: 'Hasło',
     'Forgotten password?': 'Nie pamiętasz hasła?',
     'Sign in': 'Zaloguj',
+    'Sign in with Google': 'Kontynuuj przez Google',
+    'Sign in with email': 'Kontynuuj przez adresu email',
     'Sign out': 'Wyloguj',
     'Create account': 'Utwórz nowe konto',
     'There is no user record corresponding to this identifier. The user may have been deleted.': 'Nie odnaleziono takiego użytkownika. Konto mogło zostać usunięte.',

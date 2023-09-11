@@ -98,6 +98,8 @@ export default {
     'Password': 'Contraseña',
     'Forgotten password?': '¿Olvidó su contraseña?',
     'Sign in': 'Iniciar sesión',
+    'Sign in with Google': 'Iniciar sesión con Google',
+    'Sign in with email': 'Iniciar sesión con la dirección de correo',
     'Sign out': 'Salir',
     'Create account': 'Registrarse',
     'There is no user record corresponding to this identifier. The user may have been deleted.': 'No hay ningún registro de usuario con estas credenciales. El usuario puede haber sido eliminado.',

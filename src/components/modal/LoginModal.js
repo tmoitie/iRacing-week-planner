@@ -2,11 +2,12 @@
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import { shallowEqual, useDispatch, useSelector } from 'react-redux';
-import { acknowledgeAuthError, createAccount, ERROR_AUTH, signIn } from '../../actions/auth';
+import { acknowledgeAuthError, createAccount, ERROR_AUTH, signIn, signInWithGoogle } from '../../actions/auth';
 import ForgottenPasswordModal from './ForgottenPasswordModal';
 import RemoveIcon from '../icon/RemoveIcon';
 import Modal from './Modal';
 import styles from '../../styles/main.module.scss';
+import GoogleIcon from './assets/google.svg';
 
 const errorSelector = (state) => state.auth.errorAuth;
 const loadingSelector = (state) => state.auth.loadingAuth;
@@ -48,6 +49,13 @@ export default function LoginModal({ isOpen, onClose }: Props) {
     }
   };
 
+  const googleClick = async () => {
+    const output = await dispatch(signInWithGoogle());
+    if (output.type !== ERROR_AUTH) {
+      resetForm();
+    }
+  };
+
   return (
     <Modal
       isOpen={isOpen}
@@ -83,6 +91,21 @@ export default function LoginModal({ isOpen, onClose }: Props) {
                 {t(error.message)}
               </div>
             )}
+            <div>
+              <button
+                type="button"
+                className={styles.btn}
+                id="googleSignIn"
+                onClick={(e) => {
+                  e.preventDefault();
+                  googleClick();
+                }}
+              >
+                <img src={GoogleIcon} alt="Google logo" style={{ marginInlineEnd: 6 }} />
+                {t('Sign in with Google')}
+              </button>
+            </div>
+            <h3>{t('Sign in with email')}</h3>
             <div className={styles['form-group']}>
               <label htmlFor="loginEmail">{t('Email address')}</label>
               <input
@@ -117,18 +140,21 @@ export default function LoginModal({ isOpen, onClose }: Props) {
               </a>
             </div>
 
-            <button type="submit" className={`${styles.btn} ${styles['btn-default']}`}>{t('Sign in')}</button>
-            <button
-              type="button"
-              className={styles.btn}
-              id="createAccountButton"
-              onClick={(e) => {
-                e.preventDefault();
-                createAccountClick();
-              }}
-            >
-              {t('Create account')}
-            </button>
+            <div>
+              <button type="submit" className={`${styles.btn} ${styles['btn-default']}`}>{t('Sign in')}</button>
+              <button
+                type="button"
+                className={styles.btn}
+                id="createAccountButton"
+                onClick={(e) => {
+                  e.preventDefault();
+                  createAccountClick();
+                }}
+                style={{ marginInlineStart: 6 }}
+              >
+                {t('Create account')}
+              </button>
+            </div>
           </form>
         )}
 
