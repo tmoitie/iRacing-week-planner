@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/CoachDaveSponsor renders 1`] = `
+<div
+  className="sponsoredContainer"
+>
+  <a
+    className="sponsoredLink"
+    href="https://coachdaveacademy.com/product/iracing-setup-subscription/?ref=weekly_planner"
+    onClick={[Function]}
+    rel="sponsored"
+  >
+    <h4
+      className="sponsoredHeader"
+    >
+      Sponsored
+    </h4>
+    <h3
+      className="sponsoredTitle"
+    >
+      Looking for iRacing Setups?
+    </h3>
+    <p
+      className="sponsoredBody"
+    >
+      Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.
+    </p>
+    <p
+      className="btn btn-primary button"
+    >
+      Browse Setups
+    </p>
+  </a>
+</div>
+`;
