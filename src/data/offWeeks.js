@@ -111,7 +111,7 @@ export default {
   },
   // 307 │ 4485 │ Dirt │ World of Outlaws Sprint Car Series | 2023-12-05
   4485: {
-    weekStartOffset: { days: -1 },
+  //  weekStartOffset: { days: -1 },
   },
   // 492 │ 4427 │ Road │ IMSA Michelin Pilot Challenge Series | 2023-12-05
   4427: {
