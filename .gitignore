@@ -2,11 +2,14 @@
 /node_modules
 /npm-debug.log
 /.DS_Store
+
+# Scraped data
 /src/data/car-class.json
 /src/data/cars.json
 /src/data/season.json
 /src/data/tracks.json
 /src/data/contributors.json
+
 .idea
 *.css.flow
 *.scss.flow
@@ -15,7 +18,6 @@ coverage
 .DS_Store
 
 dist/*
-# !.gitignore
 !dist/static/
 !dist/favicon.ico
 
@@ -25,3 +27,6 @@ cookie.txt
 
 # Local Netlify folder
 .netlify
+
+# Webpack stats
+stats.json

@@ -111,16 +111,9 @@ i18n
     supportedLngs: Object.keys(languages),
     interpolation: {
       escapeValue: false,
-      // format: (value, format) => {
-      //   if (value instanceof Date) {
-      //     return moment(value).format(format);
-      //   }
-
-      //   return value;
-      // },
     },
     react: {
-      wait: true,
+      useSuspense: true,
     },
   });
 
