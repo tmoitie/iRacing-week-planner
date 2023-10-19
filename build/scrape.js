@@ -1,13 +1,10 @@
-import Promise from 'bluebird';
-import fs from 'fs';
+import { writeFile } from 'fs/promises';
 import path from 'path';
 import { auth } from './api/iracingClient';
 import getContributors from './api/getContributors';
 import getCars from './api/getCars';
 import getTracks from './api/getTracks';
 import getSeason from './api/getSeason';
-
-const writeFile = Promise.promisify(fs.writeFile);
 
 (async () => {
   const username = process.env.IWP_USERNAME || 'test';
@@ -16,10 +13,8 @@ const writeFile = Promise.promisify(fs.writeFile);
   await auth(username, password);
 
   const tracks = await getTracks();
-  await writeFile(
-    path.join(__dirname, '../src/data/tracks.json'),
-    JSON.stringify(tracks, null, 2),
-  );
+
+  await writeFile(path.join(__dirname, '../src/data/tracks.json'), JSON.stringify(tracks, null, 2));
 
   const cars = await getCars();
   await writeFile(
