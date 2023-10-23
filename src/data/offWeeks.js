@@ -134,4 +134,11 @@ export default {
       1.1, 2.1, 3.1, 4.1, 5.1,
     ],
   },
+  // 478 │ 4538   │ Oval │ eNASCAR RTP Contender Series
+  4538: {
+    weekStartOffset: { days: 6 },
+    offWeeks: [
+      6.1,
+    ],
+  },
 };
