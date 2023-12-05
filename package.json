@@ -42,7 +42,7 @@
     "@formatjs/intl-datetimeformat": "^6.0.2",
     "@root/file-cookie-store": "^1.0.1",
     "autoprefixer": "^10.4.0",
-    "axios": "^0.27.2",
+    "axios": "^1.6.2",
     "babel-loader": "^8.1.0",
     "babel-plugin-jest-hoist": "^29.0.2",
     "bootstrap-sass": "^3.3.6",
@@ -102,7 +102,7 @@
   },
   "devDependencies": {
     "@jest/globals": "^27.4.2",
-    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^12.1.2",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
     "babel-eslint": "^10.1.0",

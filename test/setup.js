@@ -1,7 +1,7 @@
 import 'regenerator-runtime/runtime';
 import { configure } from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
-import '@testing-library/jest-dom/extend-expect';
+import '@testing-library/jest-dom';
 import 'snapshot-diff/extend-expect';
 import jsdom from 'jsdom';
 import ReactDOM from 'react-dom';
