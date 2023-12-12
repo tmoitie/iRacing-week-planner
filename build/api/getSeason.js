@@ -10,18 +10,48 @@ const trackTypeToCatId = {
   dirt_road: 4,
 };
 
-const licenceGroupToMinlicenselevel = {
-  5: 18,
-  4: 12,
-  3: 8,
-  2: 4,
-  1: 1,
+const licenceGroupToMinlicenselevel: {[key: string]: number} = {
+  '5': 18,
+  '4': 12,
+  '3': 8,
+  '2': 4,
+  '1': 1,
 };
 
 type carType = { id: number, sku: number };
-type trackType = { ids: number, pkgid: number };
+type trackType = { ids: Array<number>, pkgid: number };
 
-export default async function getSeason(cars: Array<carType>, tracks: Array<trackType>) {
+type TrackInfo = {
+  raceweek: number,
+  config: string,
+  name: string,
+  pkgid: number,
+  start: string,
+  weekLength: number,
+  race_time_descriptors: string,
+  race_lap_limit: number | null,
+  race_time_limit: number | null,
+};
+
+type SeasonInfo = {
+  seriesid: number,
+  seriesname: string,
+  start: string,
+  end: string,
+  tracks: Array<TrackInfo>,
+  catid: number,
+  isOfficial: boolean,
+  licenceGroup: 1 | 2 | 3 | 4 | 5,
+  licenceGroupName: string,
+  minlicenselevel: number,
+  isFixedSetup: boolean,
+  carclasses: Array<{shortname: string}>,
+  cars: Array<{sku: number}>,
+  carByWeek: boolean,
+  seasonid: number,
+};
+
+export default async function getSeason(cars: Array<carType>, tracks: Array<trackType>): Promise<Array<SeasonInfo>> {
   const carMap = cars.reduce((carry, car) => ({
     ...carry,
     [car.id]: car,
@@ -83,6 +113,7 @@ export default async function getSeason(cars: Array<carType>, tracks: Array<trac
       isFixedSetup: series.fixed_setup,
       carclasses: carClasses.map((carClass) => ({ shortname: carClass.short_name })),
       cars: seriesCars.map(({ sku }) => ({ sku })),
+      carByWeek: false,
       seasonid: series.season_id,
     };
   });

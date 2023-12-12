@@ -46,17 +46,17 @@ export default {
   //   ],
   // },
   // 207 │ 4114 │ NASCAR iRacing Series - Fixed | 2023-11-07
-  4114: {
-    offWeeks: [
-      13.1, 16.1,
-    ],
-  },
+  // 4114: {
+  //   offWeeks: [
+  //     13.1, 16.1,
+  //   ],
+  // },
   // 229 │ 4113 │ NASCAR iRacing Series - Open | 2023-11-07
-  4113: {
-    offWeeks: [
-      13.1, 16.1,
-    ],
-  },
+  // 4113: {
+  //   offWeeks: [
+  //     13.1, 16.1,
+  //   ],
+  // },
   // 438 │ 4118 │ eNASCAR Road to Pro Qual Series - Round 1
   // 4118: {
   //   offWeeks: [
@@ -71,30 +71,30 @@ export default {
     ],
   },
   // 451 │ 4227 │ Creventic Endurance Series | 2023-12-05
-  4227: {
-    offWeeks: [
-      1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 3.1, 3.1, 3.1,
-      3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1,
-    ],
-  },
+  // 4227: {
+  //   offWeeks: [
+  //     1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 3.1, 3.1, 3.1,
+  //     3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1,
+  //   ],
+  // },
   // 495 │ 4222 │ Formula A - Grand Prix Tour | 2023-11-28
-  4222: {
-    offWeeks: [
-      1.1, 2.1, 3.1, 3.1, 3.1, 5.1, 8.1, 9.1, 11.1, 13.1, 13.1, 13.1, 15.1, 17.1, 18.1, 21.1,
-    ],
-  },
+  // 4222: {
+  //   offWeeks: [
+  //     1.1, 2.1, 3.1, 3.1, 3.1, 5.1, 8.1, 9.1, 11.1, 13.1, 13.1, 13.1, 15.1, 17.1, 18.1, 21.1,
+  //   ],
+  // },
   // 496 │ 4223 │ Formula A - Grand Prix Tour - Fixed | 2023-11-28
-  4223: {
-    offWeeks: [
-      1.1, 2.1, 3.1, 3.1, 3.1, 5.1, 8.1, 9.1, 11.1, 13.1, 13.1, 13.1, 15.1, 17.1, 18.1, 21.1,
-    ],
-  },
+  // 4223: {
+  //   offWeeks: [
+  //     1.1, 2.1, 3.1, 3.1, 3.1, 5.1, 8.1, 9.1, 11.1, 13.1, 13.1, 13.1, 15.1, 17.1, 18.1, 21.1,
+  //   ],
+  // },
   // 275 │ 4251 │ Nurburgring Endurance Championship | 2023-10-31
-  4251: {
-    offWeeks: [
-      1.1, 2.1, 2.1, 2.1, 2.1, 2.1, 3.1, 3.1, 4.1, 4.1, 5.1, 5.1, 6.1, 6.1, 7.1, 7.1, 7.1, 7.1, 8.1, 8.1, 8.1,
-    ],
-  },
+  // 4251: {
+  //   offWeeks: [
+  //     1.1, 2.1, 2.1, 2.1, 2.1, 2.1, 3.1, 3.1, 4.1, 4.1, 5.1, 5.1, 6.1, 6.1, 7.1, 7.1, 7.1, 7.1, 8.1, 8.1, 8.1,
+  //   ],
+  // },
 
   // 469 │ 4315 | Global Endurance Pure Driving School Series | 2023-09-05
   // 4315: {
@@ -104,41 +104,61 @@ export default {
   //   ],
   // },
   // 439 │ 4384 │ eNASCAR Road to Pro Qual Series - Round 2 | 2023-10-03
-  4384: {
-    offWeeks: [
-      1.1, 2.1, 3.1, 4.1, 5.1, 6.1,
-    ],
-  },
+  // 4384: {
+  //   offWeeks: [
+  //     1.1, 2.1, 3.1, 4.1, 5.1, 6.1,
+  //   ],
+  // },
   // 307 │ 4485 │ Dirt │ World of Outlaws Sprint Car Series | 2023-12-05
-  4485: {
+  // 4485: {
   //  weekStartOffset: { days: -1 },
-  },
+  // },
   // 492 │ 4427 │ Road │ IMSA Michelin Pilot Challenge Series | 2023-12-05
-  4427: {
-    weekStartOffset: { days: 7 },
-    offWeeks: [
-      1.1, 2.1, 3.1, 4.1, 5.1,
-    ],
-  },
+  // 4427: {
+  //   weekStartOffset: { days: 7 },
+  //   offWeeks: [
+  //     1.1, 2.1, 3.1, 4.1, 5.1,
+  //   ],
+  // },
   // 331 │ 4458 │ Road │ European Endurance Pure Driving School Series | 2023-12-05
-  4458: {
-    weekStartOffset: { days: 7 },
-    offWeeks: [
-      1.1, 2.1, 3.1, 4.1, 5.1,
-    ],
-  },
+  // 4458: {
+  //   weekStartOffset: { days: 7 },
+  //   offWeeks: [
+  //     1.1, 2.1, 3.1, 4.1, 5.1,
+  //   ],
+  // },
 
   // 419 │ 4459 │ Road │ IMSA Endurance Series | 2023-11-28
-  4459: {
-    offWeeks: [
-      1.1, 2.1, 3.1, 4.1, 5.1,
-    ],
-  },
+  // 4459: {
+  //   offWeeks: [
+  //     1.1, 2.1, 3.1, 4.1, 5.1,
+  //   ],
+  // },
   // 478 │ 4538   │ Oval │ eNASCAR RTP Contender Series
   4538: {
     weekStartOffset: { days: 6 },
     offWeeks: [
       6.1,
+    ],
+  },
+  // 492 │ 4589   │ Road │ C     │ IMSA Michelin Pilot Challenge Series | 2024-03-05
+  4589: {
+    weekStartOffset: { days: 7 },
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+  // 331 │ 4622   │ Road │ B     │ Global Endurance Pure Driving School Tour | 2024-03-05
+  4622: {
+    weekStartOffset: { days: 7 },
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+  // 419 │ 4623   │ Road │ B     │ IMSA Endurance Series | 2024-03-05
+  4623: {
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
     ],
   },
 };
