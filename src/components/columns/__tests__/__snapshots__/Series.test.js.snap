@@ -26,7 +26,9 @@ exports[`components/columns/Series renders correctly 2`] = `
   <SeriesModal
     isOpen={true}
     onClose={[Function]}
+    ownedCars={Array []}
     ownedTracks={Array []}
+    seasonId={3450}
     seriesId={345}
   />
 </Fragment>

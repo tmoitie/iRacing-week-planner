@@ -12,10 +12,12 @@ describe('components/columns/Series', () => {
       <Series
         race={{
           seriesId: 345,
+          seasonId: 3450,
           series: 'Rallycross',
         }}
         favouriteSeries={[123, 763]}
         ownedTracks={[]}
+        ownedCars={[]}
       />,
     );
 
@@ -35,10 +37,12 @@ describe('components/columns/Series', () => {
       <Series
         race={{
           seriesId: 345,
+          seasonId: 3450,
           series: 'Rallycross',
         }}
         favouriteSeries={[345, 567]}
         ownedTracks={[123]}
+        ownedCars={[]}
       />,
     );
 

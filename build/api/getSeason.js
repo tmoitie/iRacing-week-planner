@@ -47,7 +47,6 @@ type SeasonInfo = {
   isFixedSetup: boolean,
   carclasses: Array<{shortname: string}>,
   cars: Array<{sku: number}>,
-  carByWeek: boolean,
   seasonid: number,
 };
 
@@ -113,7 +112,6 @@ export default async function getSeason(cars: Array<carType>, tracks: Array<trac
       isFixedSetup: series.fixed_setup,
       carclasses: carClasses.map((carClass) => ({ shortname: carClass.short_name })),
       cars: seriesCars.map(({ sku }) => ({ sku })),
-      carByWeek: false,
       seasonid: series.season_id,
     };
   });

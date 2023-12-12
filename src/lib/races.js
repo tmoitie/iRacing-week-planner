@@ -140,6 +140,16 @@ export default season.reduce((carry, series) => {
 
     const licenceGroupLetter = series.licenceGroupName ? series.licenceGroupName.slice(0, 1) : 'R';
 
+    let carClasses = series.carclasses.map(({ shortname }) => shortname);
+    let carIds = series.cars.map(({ sku }) => sku);
+    if (raceOffWeekData.carByWeek) {
+      carIds = raceOffWeekData.carByWeek[track.raceweek] || carIds;
+    }
+
+    if (raceOffWeekData.carClassShortNameByWeek) {
+      carClasses = raceOffWeekData.carClassShortNameByWeek[track.raceweek] || carClasses;
+    }
+
     return {
       series: seriesName,
       seriesId: series.seriesid,
@@ -155,8 +165,8 @@ export default season.reduce((carry, series) => {
       licenceClass: series.minlicenselevel ? levelToClass(series.minlicenselevel, true) : licenceGroupLetter,
       type,
       fixed: series.isFixedSetup,
-      carClasses: series.carclasses.map(({ shortname }) => shortname),
-      carIds: series.cars.map(({ sku }) => sku),
+      carClasses,
+      carIds,
       seriesStart,
       seriesEnd,
       seasonId: series.seasonid,

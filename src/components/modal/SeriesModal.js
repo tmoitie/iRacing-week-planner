@@ -4,10 +4,12 @@ import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import moment from 'moment';
 import classnames from 'classnames';
+import intersection from 'lodash.intersection';
 import Modal from './Modal';
 import RaceLength from '../columns/RaceLength';
 
 import allRaces from '../../lib/races';
+import offWeekData from '../../data/offWeeks';
 
 import styles from '../../styles/main.module.scss';
 
@@ -15,10 +17,12 @@ type Props = {
   onClose: () => void,
   isOpen: boolean,
   ownedTracks: Array<number>,
+  ownedCars: Array<number>,
   seriesId: number,
+  seasonId: number,
 };
 
-export default function SeriesModal({ onClose, ownedTracks, isOpen, seriesId }: Props) {
+export default function SeriesModal({ onClose, ownedTracks, ownedCars, isOpen, seriesId, seasonId }: Props) {
   const races = allRaces.filter((race) => race.seriesId === seriesId);
   const { t } = useTranslation();
 
@@ -28,8 +32,10 @@ export default function SeriesModal({ onClose, ownedTracks, isOpen, seriesId }: 
     date: {
       dateStyle: 'long',
       timeZone: 'UTC',
-    }
+    },
   };
+
+  const showCar = !!(offWeekData[seasonId]?.carByWeek);
 
   return (
     <Modal
@@ -47,6 +53,7 @@ export default function SeriesModal({ onClose, ownedTracks, isOpen, seriesId }: 
               <tr>
                 <th>{t('Week')}</th>
                 <th>{t('Track')}</th>
+                {showCar ? <th>{t('Car')}</th> : null}
                 <th>{t('Start')}</th>
                 <th>{t('End')}</th>
                 <th>{t('Length')}</th>
@@ -70,6 +77,15 @@ export default function SeriesModal({ onClose, ownedTracks, isOpen, seriesId }: 
                     <td className={classnames({ [styles.success]: ownedTracks.indexOf(race.trackId) !== -1 })}>
                       {t(race.track)}
                     </td>
+                    {showCar ? (
+                      <td
+                        className={classnames({
+                          [styles.success]: intersection(ownedCars, race.carIds).length !== 0,
+                        })}
+                      >
+                        {race.carClasses.join(', ')}
+                      </td>
+                    ) : null}
                     <td>
                       {t('{{date, datetime}}', { date: startDate, formatParams: dateParams })}
                     </td>

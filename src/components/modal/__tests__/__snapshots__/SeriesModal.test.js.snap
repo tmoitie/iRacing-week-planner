@@ -279,3 +279,319 @@ exports[`components/modal/SeriesModal renders open 1`] = `
   </div>
 </div>
 `;
+
+exports[`components/modal/SeriesModal renders with cars 1`] = `
+<div
+  className="ReactModal__Overlay"
+  onClick={[Function]}
+  onMouseDown={[Function]}
+  style={
+    Object {
+      "backgroundColor": "rgba(255, 255, 255, 0.75)",
+      "bottom": 0,
+      "left": 0,
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    aria-modal={true}
+    className="ReactModal__Content Modal__Bootstrap modal-dialog modal-lg"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    role="dialog"
+    style={Object {}}
+    tabIndex="-1"
+  >
+    <div
+      className="modal-content"
+    >
+      <div
+        className="modal-header"
+      >
+        <button
+          aria-label="Close"
+          className="close"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="glyphicon glyphicon-remove"
+          />
+        </button>
+        <h4
+          className="modal-title"
+        >
+          Tracks for 13th Week iRacing Figure GR8
+        </h4>
+      </div>
+      <div
+        className="modal-body"
+        style={
+          Object {
+            "maxHeight": "55vh",
+            "overflowY": "auto",
+          }
+        }
+      >
+        <div
+          className="container-fluid"
+        >
+          <div
+            className="table-responsive"
+          >
+            <table
+              className="table"
+              style={
+                Object {
+                  "fontSize": "0.8em",
+                }
+              }
+            >
+              <thead>
+                <tr>
+                  <th>
+                    Week
+                  </th>
+                  <th>
+                    Track
+                  </th>
+                  <th>
+                    Car
+                  </th>
+                  <th>
+                    Start
+                  </th>
+                  <th>
+                    End
+                  </th>
+                  <th>
+                    Length
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  style={Object {}}
+                >
+                  <td>
+                    1
+                  </td>
+                  <td
+                    className="success"
+                  >
+                    Irwindale Speedway - Figure Eight
+                  </td>
+                  <td
+                    className=""
+                  >
+                    Rallycross, Pro 2 Truck
+                  </td>
+                  <td>
+                    September 6, 2022
+                  </td>
+                  <td>
+                    September 6, 2022
+                  </td>
+                  <td>
+                    <div>
+                      25L
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  style={
+                    Object {
+                      "fontWeight": 700,
+                    }
+                  }
+                >
+                  <td>
+                    2
+                  </td>
+                  <td
+                    className="success"
+                  >
+                    Irwindale Speedway - Figure Eight Jump
+                  </td>
+                  <td
+                    className=""
+                  >
+                    Rallycross, Pro 2 Truck
+                  </td>
+                  <td>
+                    September 7, 2022
+                  </td>
+                  <td>
+                    September 7, 2022
+                  </td>
+                  <td>
+                    <div>
+                      25L
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  style={Object {}}
+                >
+                  <td>
+                    3
+                  </td>
+                  <td
+                    className="success"
+                  >
+                    Irwindale Speedway - Figure Eight
+                  </td>
+                  <td
+                    className=""
+                  >
+                    Rallycross, Pro 2 Truck
+                  </td>
+                  <td>
+                    September 8, 2022
+                  </td>
+                  <td>
+                    September 8, 2022
+                  </td>
+                  <td>
+                    <div>
+                      25L
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  style={Object {}}
+                >
+                  <td>
+                    4
+                  </td>
+                  <td
+                    className="success"
+                  >
+                    Irwindale Speedway - Figure Eight Jump
+                  </td>
+                  <td
+                    className=""
+                  >
+                    Rallycross, Pro 2 Truck
+                  </td>
+                  <td>
+                    September 9, 2022
+                  </td>
+                  <td>
+                    September 9, 2022
+                  </td>
+                  <td>
+                    <div>
+                      25L
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  style={Object {}}
+                >
+                  <td>
+                    5
+                  </td>
+                  <td
+                    className="success"
+                  >
+                    Irwindale Speedway - Figure Eight
+                  </td>
+                  <td
+                    className=""
+                  >
+                    Rallycross, Pro 2 Truck
+                  </td>
+                  <td>
+                    September 10, 2022
+                  </td>
+                  <td>
+                    September 10, 2022
+                  </td>
+                  <td>
+                    <div>
+                      25L
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  style={Object {}}
+                >
+                  <td>
+                    6
+                  </td>
+                  <td
+                    className="success"
+                  >
+                    Irwindale Speedway - Figure Eight Jump
+                  </td>
+                  <td
+                    className=""
+                  >
+                    Rallycross, Pro 2 Truck
+                  </td>
+                  <td>
+                    September 11, 2022
+                  </td>
+                  <td>
+                    September 11, 2022
+                  </td>
+                  <td>
+                    <div>
+                      25L
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  style={Object {}}
+                >
+                  <td>
+                    7
+                  </td>
+                  <td
+                    className="success"
+                  >
+                    Irwindale Speedway - Figure Eight
+                  </td>
+                  <td
+                    className=""
+                  >
+                    Rallycross, Pro 2 Truck
+                  </td>
+                  <td>
+                    September 12, 2022
+                  </td>
+                  <td>
+                    September 12, 2022
+                  </td>
+                  <td>
+                    <div>
+                      25L
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div
+        className="modal-footer"
+      >
+        <button
+          className="btn btn-primary"
+          onClick={[Function]}
+          type="button"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
