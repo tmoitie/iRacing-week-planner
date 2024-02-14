@@ -38,6 +38,6 @@ export default function calulatePurchaseOptimization({
   }, {}));
 
   return countById
-    .filter((item) => item.count > 1)
+    .filter((item) => item.count >= 1)
     .sort((a, b) => b.count - a.count);
 }

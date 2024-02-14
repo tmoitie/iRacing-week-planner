@@ -45,31 +45,19 @@ export default {
   //     3.1,
   //   ],
   // },
-  // 207 │ 4114 │ NASCAR iRacing Series - Fixed | 2023-11-07
-  // 4114: {
-  //   offWeeks: [
-  //     13.1, 16.1,
-  //   ],
-  // },
   // 229 │ 4113 │ NASCAR iRacing Series - Open | 2023-11-07
   // 4113: {
   //   offWeeks: [
   //     13.1, 16.1,
   //   ],
   // },
-  // 438 │ 4118 │ eNASCAR Road to Pro Qual Series - Round 1
-  // 4118: {
+  // 437 │ 4119 │ BMW M Sim Cup | 2023-11-21
+  // 4119: {
   //   offWeeks: [
-  //     1.1, 2.1, 3.1, 4.1, 5.1, 6.1, 7.1,
+  //     1.1, 1.1, 1.1, 1.1, 1.1, 2.1, 2.1, 2.1, 2.1, 3.1, 4.1, 4.1, 4.1, 5.1, 5.1, 5.1, 6.1, 6.1, 6.1, 6.1, 6.1, 6.1, 7.1,
+  //     7.1, 7.1, 7.1, 7.1, 7.1, 7.1, 8.1, 8.1, 9.1,
   //   ],
   // },
-  // 437 │ 4119 │ BMW M Sim Cup | 2023-11-21
-  4119: {
-    offWeeks: [
-      1.1, 1.1, 1.1, 1.1, 1.1, 2.1, 2.1, 2.1, 2.1, 3.1, 4.1, 4.1, 4.1, 5.1, 5.1, 5.1, 6.1, 6.1, 6.1, 6.1, 6.1, 6.1, 7.1,
-      7.1, 7.1, 7.1, 7.1, 7.1, 7.1, 8.1, 8.1, 9.1,
-    ],
-  },
   // 451 │ 4227 │ Creventic Endurance Series | 2023-12-05
   // 4227: {
   //   offWeeks: [
@@ -135,12 +123,12 @@ export default {
   //   ],
   // },
   // 478 │ 4538   │ Oval │ eNASCAR RTP Contender Series
-  4538: {
-    weekStartOffset: { days: 6 },
-    offWeeks: [
-      6.1,
-    ],
-  },
+  // 4538: {
+  //   weekStartOffset: { days: 6 },
+  //   offWeeks: [
+  //     6.1,
+  //   ],
+  // },
   // 492 │ 4589   │ Road │ C     │ IMSA Michelin Pilot Challenge Series | 2024-03-05
   4589: {
     weekStartOffset: { days: 7 },
@@ -161,7 +149,7 @@ export default {
       1.1, 2.1, 3.1, 4.1, 5.1,
     ],
   },
-  // Ring Meister
+  // 526 │ 4666   │ Road │ C     │ Ring Meister Ricmotech Series - Fixed | 2024-03-05
   4666: {
     carByWeek: [
       [10009], // 1 Skip Barber Formula 2000
@@ -190,6 +178,55 @@ export default {
       ['Pro Mazda'], // 10 [Legacy] Pro Mazda
       ['Porsche 718'], // 11 Porsche 718 Cayman GT4 Clubsport MR
       ['Lambo Huracán'], // 12 Lamborghini Huracán GT3 EVO
+    ],
+  },
+  // 538 │ 4667   │ Oval │ D     │ Draft Master - Fixed | 2024-03-05
+  4667: {
+    carByWeek: [
+      [10481, 10530, 10459], // 1 NASCAR Trucks
+      [10068], // 2 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+      [10464, 10465, 10466], // 3 NASCAR Xfinity Cars
+      [10527, 10482, 10483, 10566], // 4 NASCAR Classic 1987
+      [10088], // 5 Gen 4 Cup
+      [10503, 10504, 10505], // 6 NASCAR Next Gen
+      [10481, 10530, 10459], // 7 NASCAR Trucks
+      [10068], // 8 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+      [10464, 10465, 10466], // 9 NASCAR Xfinity Cars
+      [10527, 10482, 10483, 10566], // 10 NASCAR Classic 1987
+      [10088], // 11 Gen 4 Cup
+      [10503, 10504, 10505], // 12 NASCAR Next Gen
+    ],
+    carClassShortNameByWeek: [
+      ['NASCAR Trucks'], // 1 NASCAR Trucks
+      ['[Legacy] NASCAR Cup Chevrolet Impala COT - 2009'], // 2 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+      ['XFINITY Series'], // 3 NASCAR Xfinity Cars
+      ['NASCAR 1987'], // 4 NASCAR Classic 1987
+      ['Gen 4 Cup'], // 5 Gen 4 Cup
+      ['NASCAR 2022 NG'], // 6 NASCAR Next Gen
+      ['NASCAR Trucks'], // 7 NASCAR Trucks
+      ['[Legacy] NASCAR Cup Chevrolet Impala COT - 2009'], // 8 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+      ['XFINITY Series'], // 9 NASCAR Xfinity Cars
+      ['NASCAR 1987'], // 10 NASCAR Classic 1987
+      ['Gen 4 Cup'], // 11 Gen 4 Cup
+      ['NASCAR 2022 NG'], // 12 NASCAR Next Gen
+    ],
+  },
+  // 207 │ 4703 │ NASCAR iRacing Series - Fixed | 2024-11-12
+  4703: {
+    offWeeks: [
+      13.1, 22.1, 22.1,
+    ],
+  },
+  // 229 │ 4699 │ NASCAR iRacing Series - Open | 2024-11-12
+  4699: {
+    offWeeks: [
+      13.1, 22.1, 22.1,
+    ],
+  },
+  // 438 │ 4704   │ Oval │ A     │ eNASCAR Road to Pro Qual Series - Round 1 | 2024-05-28
+  4704: {
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1, 6.1, 7.1,
     ],
   },
 };
