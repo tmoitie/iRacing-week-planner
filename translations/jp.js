@@ -17,6 +17,8 @@ export default {
     'Oval': 'Oval (オーバル)',
     'Dirt': 'Dirt (ダート)',
     'Road': 'Road (ロード)',
+    'Sports Car': 'Sports Car (スポーツカー)',
+    'Formula Car': 'Formula Car (フォーミュラカー)',
     'RX': 'RX (ラリークロス)', // Rally Cross/Road Dirt
     'Licence': 'ライセンス',
     'Official/Fixed': '公式／一定',

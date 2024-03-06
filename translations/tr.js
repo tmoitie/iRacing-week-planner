@@ -17,6 +17,8 @@ export default {
     'Oval': 'Oval',
     'Dirt': 'Dirt',
     'Road': 'Road',
+    'Sports Car': 'Spor Araba',
+    'Formula Car': 'Formula Arabası',
     'RX': 'RX', // Rally Cross/Road Dirt
     'Licence': 'Lisans',
     'Official/Fixed': 'Resmi/Sabit',

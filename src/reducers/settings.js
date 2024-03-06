@@ -33,7 +33,7 @@ export type FilterOptions = {
 };
 
 export const defaultFilters: FilterOptions = {
-  type: ['Road', 'Oval', 'Dirt', 'RX'],
+  type: ['Sports Car', 'Formula Car', 'Oval', 'Dirt', 'RX'],
   licence: ['R', 'D', 'C', 'B', 'A', 'P'],
   official: [false, true],
   fixed: [false, true],
@@ -68,18 +68,10 @@ export const defaultSettings: SettingOptions = {
   firebaseSynced: false,
 };
 
-const LEGACY_STORAGE_KEY = 'iracing-state';
-
 export default function settings(initState: SettingOptions, { type, payload }): SettingOptions {
   let state = initState;
   if (initState === undefined) {
-    const legacyStored = window.localStorage.getItem(LEGACY_STORAGE_KEY);
-
-    if (legacyStored) {
-      window.localStorage.removeItem(LEGACY_STORAGE_KEY);
-    }
-
-    state = legacyStored ? JSON.parse(legacyStored) : defaultSettings;
+    state = defaultSettings;
   }
 
   if (type === localStorageActionTypes.INIT) {
@@ -98,6 +90,13 @@ export default function settings(initState: SettingOptions, { type, payload }): 
       ...persistedStateSettings.ownedTracks,
       ...defaultSettings.ownedTracks,
     ]);
+    
+    const hasRoadFilter = payload.settings.filters.type.includes('Road');
+
+    if (hasRoadFilter) {
+      persistedStateSettings.filters.type = [...persistedStateSettings.filters.type, 'Sports Car', 'Formula Car'];
+      persistedStateSettings.filters.type = persistedStateSettings.filters.type.filter((t) => t !== 'Road');
+    }
 
     return { ...state, ...persistedStateSettings };
   }

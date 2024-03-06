@@ -8,6 +8,8 @@ const trackTypeToCatId = {
   road: 2,
   dirt_oval: 3,
   dirt_road: 4,
+  sports_car: 5,
+  formula_car: 6,
 };
 
 const licenceGroupToMinlicenselevel: {[key: string]: number} = {

@@ -371,7 +371,7 @@
         "race_time_limit": null
       }
     ],
-    "catid": 2,
+    "catid": 5,
     "isOfficial": true,
     "licnceGroup": 3,
     "licnceGroupName": "Class C",
@@ -557,7 +557,7 @@
         "race_time_limit": null
       }
     ],
-    "catid": 2,
+    "catid": 1,
     "isOfficial": false,
     "licnceGroup": 1,
     "licnceGroupName": "Rookie",
