@@ -88,7 +88,7 @@ export default {
     'Buy me a coffee': '僕にコーヒーをおごる',
     'Synced': '同期されました',
     'Awaiting sync': '同期を待っています',
-    '(refresh browser to download latest)': '(ブラウザを更新して最新のバージョンをダウンロードしてください)',
+    'Refresh browser to download latest': 'ブラウザを更新して最新のバージョンをダウンロードしてください',
     'Reset Password': 'パスワードをリセットする',
     'Enter your email address to reset your password.': 'メールアドレスを入力すると、パスワードをリセットするリンクを送信します。',
     'Email address': 'メールアドレス',

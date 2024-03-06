@@ -88,7 +88,7 @@ export default {
     'Buy me a coffee': 'Trakteer me op een kop koffie',
     'Synced': 'Gesychroniseerd',
     'Awaiting sync': 'Synchronisatie afwachten',
-    '(refresh browser to download latest)': '(ververs browser om de laatste op te halen)',
+    'Refresh browser to download latest': 'Ververs browser om de laatste op te halen',
     'Reset Password': 'Reset wachtwoord',
     'Enter your email address to reset your password.': 'Vul je emailadres in om je wachtwoord te resetten.',
     'Email address': 'Emailadres',

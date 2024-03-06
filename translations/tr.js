@@ -87,7 +87,7 @@ export default {
     'Buy me a coffee': 'Bana kahve ısmarla',
     'Synced': 'Eşitlendi',
     'Awaiting sync': 'Eşitlenme bekleniyor',
-    '(refresh browser to download latest)': '(Son güncellemeyi almak için tarayıcıyı yenileyin)',
+    'Refresh browser to download latest': 'Son güncellemeyi almak için tarayıcıyı yenileyin',
     'Reset Password': 'Şifreyi yenile',
     'Enter your email address to reset your password.': 'Şifreni yenilemek için eposta adresini gir.',
     'Email address': 'Eposta',

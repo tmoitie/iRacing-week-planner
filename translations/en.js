@@ -94,7 +94,7 @@ export default {
     'Buy me a coffee': 'Buy me a coffee',
     'Synced': 'Synced',
     'Awaiting sync': 'Awaiting sync',
-    '(refresh browser to download latest)': '(refresh browser to download latest)',
+    'Refresh browser to download latest': 'Refresh browser to download latest',
     'Reset Password': 'Reset Password',
     'Enter your email address to reset your password.': 'Enter your email address to reset your password.',
     'Email address': 'Email address',
