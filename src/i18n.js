@@ -92,13 +92,6 @@ const resources = {
   pl,
 };
 
-/* istanbul ignore next */
-if (process.env.NODE_ENV === 'development') {
-  languages.test = { flag: '👀', name: 'Test' };
-  // eslint-disable-next-line global-require
-  resources.test = require('../translations/fake').default;
-}
-
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)

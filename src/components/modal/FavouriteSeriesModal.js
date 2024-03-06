@@ -36,14 +36,23 @@ const groupedSeries = (filteredSeries) => filteredSeries.reduce((grouped, single
       ],
     };
   }
+  if (single.catid === 5) {
+    return {
+      ...grouped,
+      sportsCar: [
+        ...grouped.sportsCar,
+        single,
+      ],
+    };
+  }
   return {
     ...grouped,
-    road: [
-      ...grouped.road,
+    formulaCar: [
+      ...grouped.formulaCar,
       single,
     ],
   };
-}, { oval: [], road: [], dirtOval: [], rx: [] });
+}, { oval: [], road: [], dirtOval: [], rx: [], sportsCar: [], formulaCar: [] });
 
 type Props = {
   onClose: () => void,
@@ -126,11 +135,19 @@ export default function FavouriteSeriesModal({ onClose, isOpen, favouriteSeries,
             </div>
           </>
         )}
-        {groupedSeries(getFilteredSeries()).road.length > 0 && (
+        {groupedSeries(getFilteredSeries()).sportsCar.length > 0 && (
           <>
-            <h3>{t('Road')}</h3>
+            <h3>{t('Sports Car')}</h3>
             <div className={styles.row}>
-              {groupedSeries(getFilteredSeries()).road.map(renderCheckboxes)}
+              {groupedSeries(getFilteredSeries()).sportsCar.map(renderCheckboxes)}
+            </div>
+          </>
+        )}
+        {groupedSeries(getFilteredSeries()).formulaCar.length > 0 && (
+          <>
+            <h3>{t('Formula Car')}</h3>
+            <div className={styles.row}>
+              {groupedSeries(getFilteredSeries()).formulaCar.map(renderCheckboxes)}
             </div>
           </>
         )}

@@ -101,7 +101,7 @@ exports[`components/modal/FavouriteSeriesModal renders with checkbox saving 1`] 
             </div>
           </div>
           <h3>
-            Road
+            Sports Car
           </h3>
           <div
             className="row"

@@ -64,7 +64,13 @@ export default function GlobalModals() {
         content={sortedTracks}
         idField="pkgid"
         defaultContent={[...defaultSettings.ownedTracks]}
-        typeFilter={{ key: 'primaryType', oval: 'oval', road: 'road' }}
+        typeFilter={{
+          key: 'primaryType',
+          oval: 'oval',
+          road: 'road',
+          dirtRoad: 'dirt_road',
+          dirtOval: 'dirt_oval',
+        }}
         save={getSettingUpdater('ownedTracks')}
         favourites={favouriteTracks}
         saveFavourites={getSettingUpdater('favouriteTracks')}
@@ -78,7 +84,14 @@ export default function GlobalModals() {
         content={sortedCars}
         idField="sku"
         defaultContent={[...defaultSettings.ownedCars]}
-        typeFilter={{ key: 'discountGroupNames', oval: ['oval car'], road: ['road car'] }}
+        typeFilter={{
+          key: 'categories',
+          oval: ['oval'],
+          sportsCar: ['sports_car'],
+          formulaCar: ['formula_car'],
+          dirtRoad: ['dirt_road'],
+          dirtOval: ['dirt_oval'],
+        }}
         save={getSettingUpdater('ownedCars')}
         favourites={favouriteCars}
         saveFavourites={getSettingUpdater('favouriteCars')}

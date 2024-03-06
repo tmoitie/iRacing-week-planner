@@ -19,7 +19,7 @@ exports[`components/modal/ContentModal renders correctly 1`] = `
       className="row"
     >
       <div
-        className="checkboxContainer col-sm-4"
+        className="checkboxContainer col-sm-3"
       >
         <div>
           <Checkbox
@@ -42,7 +42,7 @@ exports[`components/modal/ContentModal renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="checkboxContainer col-sm-4"
+        className="checkboxContainer col-sm-3"
       >
         <div>
           <Checkbox
@@ -65,7 +65,7 @@ exports[`components/modal/ContentModal renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="checkboxContainer col-sm-4"
+        className="checkboxContainer col-sm-3"
       >
         <div>
           <Checkbox
@@ -83,6 +83,52 @@ exports[`components/modal/ContentModal renders correctly 1`] = `
           <FavouriteStarButton
             enabled={false}
             id="cars-favourite-road"
+            onClick={[Function]}
+          />
+        </div>
+      </div>
+      <div
+        className="checkboxContainer col-sm-3"
+      >
+        <div>
+          <Checkbox
+            checked={true}
+            disabled={false}
+            id="cars-select-dirt-road"
+            onChange={[Function]}
+          >
+            Select all dirt road
+          </Checkbox>
+        </div>
+        <div
+          className="favourite"
+        >
+          <FavouriteStarButton
+            enabled={true}
+            id="cars-favourite-dirt-road"
+            onClick={[Function]}
+          />
+        </div>
+      </div>
+      <div
+        className="checkboxContainer col-sm-3"
+      >
+        <div>
+          <Checkbox
+            checked={true}
+            disabled={false}
+            id="cars-select-dirt-oval"
+            onChange={[Function]}
+          >
+            Select all dirt oval
+          </Checkbox>
+        </div>
+        <div
+          className="favourite"
+        >
+          <FavouriteStarButton
+            enabled={true}
+            id="cars-favourite-dirt-oval"
             onClick={[Function]}
           />
         </div>
