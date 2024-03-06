@@ -101,6 +101,8 @@ categoryMap.set(1, 'Oval');
 categoryMap.set(2, 'Road');
 categoryMap.set(3, 'Dirt');
 categoryMap.set(4, 'RX');
+categoryMap.set(5, 'Sports Car');
+categoryMap.set(6, 'Formula Car');
 
 const getType = (catId: number): ?string => categoryMap.get(catId);
 

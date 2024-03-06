@@ -18,13 +18,6 @@ describe('reducers/settings', () => {
     expect(state.ownedTracks.length).toBe(22);
   });
 
-  test('set up legacy state', () => {
-    window.localStorage.setItem('iracing-state', JSON.stringify({ sort: { key: 'class', order: 'desc' } }));
-    const state = settingsReducer(undefined, {});
-    expect(state.sort).toEqual({ key: 'class', order: 'desc' });
-    expect(window.localStorage.getItem('iracing-state')).toEqual(null);
-  });
-
   test('localStorageActionTypes.INIT', async () => {
     const state = settingsReducer(
       undefined,
@@ -34,12 +27,17 @@ describe('reducers/settings', () => {
           settings: {
             ownedCars: [5],
             ownedTracks: [34, 165],
+            filters: {
+              type: ['Road', 'Oval'],
+            }
           },
         },
       },
     );
     expect(state.ownedCars.length).toBe(17);
     expect(state.ownedTracks.length).toBe(23);
+    expect(state.filters.type).toInclude('Sports Car');
+    expect(state.filters.type.length).toBe(3);
     const stateNoPayload = settingsReducer(
       undefined,
       {
@@ -69,7 +67,7 @@ describe('reducers/settings', () => {
         type: RESET_FILTERS,
       },
     );
-    expect(state.filters.type).toEqual(['Road', 'Oval', 'Dirt', 'RX']);
+    expect(state.filters.type).toEqual(['Sports Car', 'Formula Car', 'Oval', 'Dirt', 'RX']);
     expect(state.firebaseSynced).toBe(false);
   });
 

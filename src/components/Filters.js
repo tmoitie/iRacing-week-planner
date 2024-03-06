@@ -56,11 +56,18 @@ export default function Filters(): React.Node {
         {t('Oval')}
       </Checkbox>
       <Checkbox
-        id="checkbox-type-road"
-        checked={currentFilters.type.indexOf('Road') !== -1}
-        onChange={getCheckboxFilterHandler('type', 'Road')}
+        id="checkbox-type-road-sports"
+        checked={currentFilters.type.indexOf('Sports Car') !== -1}
+        onChange={getCheckboxFilterHandler('type', 'Sports Car')}
       >
-        {t('Road')}
+        {t('Sports Car')}
+      </Checkbox>
+      <Checkbox
+        id="checkbox-type-road-formula"
+        checked={currentFilters.type.indexOf('Formula Car') !== -1}
+        onChange={getCheckboxFilterHandler('type', 'Formula Car')}
+      >
+        {t('Formula Car')}
       </Checkbox>
       <Checkbox
         id="checkbox-type-dirt"

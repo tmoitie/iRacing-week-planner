@@ -17,6 +17,8 @@ export default {
     Oval: 'Owale',
     Dirt: 'Szutry',
     Road: 'Torowe',
+    'Sports Car': 'Samochód sportowy',
+    'Formula Car': 'Samochód Formuły',
     RX: 'RX', // Rally Cross/Road Dirt
     Licence: 'Licencja',
     'Official/Fixed': 'Oficialne/Zamknięty setup',

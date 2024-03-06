@@ -336,16 +336,32 @@ exports[`components/App renders correctly 1`] = `
             className="checkbox"
           >
             <label
-              htmlFor="checkbox-type-road"
+              htmlFor="checkbox-type-road-sports"
             >
               <input
                 checked={true}
                 disabled={false}
-                id="checkbox-type-road"
+                id="checkbox-type-road-sports"
                 onChange={[Function]}
                 type="checkbox"
               />
-              Road
+              Sports Car
+            </label>
+          </div>
+          <div
+            className="checkbox"
+          >
+            <label
+              htmlFor="checkbox-type-road-formula"
+            >
+              <input
+                checked={true}
+                disabled={false}
+                id="checkbox-type-road-formula"
+                onChange={[Function]}
+                type="checkbox"
+              />
+              Formula Car
             </label>
           </div>
           <div
