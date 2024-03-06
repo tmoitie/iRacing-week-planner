@@ -68,6 +68,29 @@ export const defaultSettings: SettingOptions = {
   firebaseSynced: false,
 };
 
+function synchroniseLegacyChanges(state) {
+  const newState = { ...state };
+  
+  newState.ownedCars = uniq([
+    ...newState.ownedCars,
+    ...defaultSettings.ownedCars,
+  ]);
+
+  newState.ownedTracks = uniq([
+    ...newState.ownedTracks,
+    ...defaultSettings.ownedTracks,
+  ]);
+  
+  const hasRoadFilter = newState.filters.type.includes('Road');
+
+  if (hasRoadFilter) {
+    newState.filters.type = [...newState.filters.type, 'Sports Car', 'Formula Car'];
+    newState.filters.type = newState.filters.type.filter((t) => t !== 'Road');
+  }
+
+  return newState
+}
+
 export default function settings(initState: SettingOptions, { type, payload }): SettingOptions {
   let state = initState;
   if (initState === undefined) {
@@ -79,26 +102,9 @@ export default function settings(initState: SettingOptions, { type, payload }): 
       return state;
     }
 
-    const persistedStateSettings = { ...payload.settings };
+    const newState = synchroniseLegacyChanges(payload.settings);
 
-    persistedStateSettings.ownedCars = uniq([
-      ...persistedStateSettings.ownedCars,
-      ...defaultSettings.ownedCars,
-    ]);
-
-    persistedStateSettings.ownedTracks = uniq([
-      ...persistedStateSettings.ownedTracks,
-      ...defaultSettings.ownedTracks,
-    ]);
-    
-    const hasRoadFilter = payload.settings.filters.type.includes('Road');
-
-    if (hasRoadFilter) {
-      persistedStateSettings.filters.type = [...persistedStateSettings.filters.type, 'Sports Car', 'Formula Car'];
-      persistedStateSettings.filters.type = persistedStateSettings.filters.type.filter((t) => t !== 'Road');
-    }
-
-    return { ...state, ...persistedStateSettings };
+    return { ...state, ...newState };
   }
 
   if (type === UPDATE_FILTERS) {
@@ -118,7 +124,12 @@ export default function settings(initState: SettingOptions, { type, payload }): 
   }
 
   if (type === LOAD_SETTINGS_FROM_FIREBASE) {
-    return { ...state, ...defaultSettings, ...payload, firebaseSynced: true };
+    return synchroniseLegacyChanges({
+      ...state,
+      ...defaultSettings,
+      ...payload,
+      firebaseSynced: true,
+    });
   }
 
   if (type === FIREBASE_SYNCED) {
