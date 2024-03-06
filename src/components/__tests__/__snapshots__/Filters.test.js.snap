@@ -1091,7 +1091,8 @@ exports[`components/Filters not synced user 1`] = `
       id="filters-synced-status"
     >
       Awaiting sync
-      (refresh browser to download latest)
+      <br />
+      Refresh browser to download latest
     </span>
   </p>
 </div>
@@ -1825,7 +1826,8 @@ exports[`components/Filters synced user 1`] = `
       id="filters-synced-status"
     >
       Synced
-      (refresh browser to download latest)
+      <br />
+      Refresh browser to download latest
     </span>
   </p>
 </div>
