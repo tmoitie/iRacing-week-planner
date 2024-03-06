@@ -88,7 +88,7 @@ export default {
     'Buy me a coffee': 'Compre-me um café',
     'Synced': 'Sincronizado',
     'Awaiting sync': 'Aguardando sincronização',
-    '(refresh browser to download latest)': '(atualize o navegador para fazer o download da versão mais recente)',
+    'Refresh browser to download latest': 'Atualize o navegador para fazer o download da versão mais recente',
     'Reset Password': 'Redefinir senha',
     'Enter your email address to reset your password.': 'Digite seu endereço de e-mail para redefinir sua senha.',
     'Email address': 'Endereço eletrônico',

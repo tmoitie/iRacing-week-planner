@@ -223,7 +223,8 @@ export default function Filters(): React.Node {
             id="filters-synced-status"
           >
             {firebaseSynced ? t('Synced') : t('Awaiting sync')}
-            {t('(refresh browser to download latest)')}
+            <br />
+            {t('Refresh browser to download latest')}
           </span>
         </p>
       ) : null}
