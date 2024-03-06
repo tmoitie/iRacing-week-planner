@@ -27,12 +27,21 @@ type Props = {
     key: string,
     oval: string,
     road: string,
+    dirtOval: string,
+    dirtRoad: string,
+  }|{
+    key: string,
+    oval: string,
+    formulaCar: string,
+    sportsCar: string,
+    dirtOval: string,
+    dirtRoad: string,
   }
 };
 
 export default function ContentModal({
   id, isOpen, onClose, title, save, content, idField, defaultContent, ownedContent, favourites,
-  saveFavourites, typeFilter,
+  saveFavourites, typeFilter, 
 }: Props) {
   const { t } = useTranslation();
 
@@ -95,7 +104,7 @@ export default function ContentModal({
       <div className={styles['container-fluid']}>
         <p>{t('Use the checkbox to set the content you own, and use the star to set your favourite content.')}</p>
         <div className={styles.row}>
-          <div className={`${contentModalStyles.checkboxContainer} ${styles['col-sm-4']}`}>
+          <div className={`${contentModalStyles.checkboxContainer} ${styles['col-sm-3']}`}>
             <div>
               <Checkbox
                 id={`${id}-select-all`}
@@ -114,7 +123,7 @@ export default function ContentModal({
               />
             </div>
           </div>
-          <div className={`${contentModalStyles.checkboxContainer} ${styles['col-sm-4']}`}>
+          <div className={`${contentModalStyles.checkboxContainer} ${styles['col-sm-3']}`}>
             <div>
               <Checkbox
                 id={`${id}-select-oval`}
@@ -133,22 +142,107 @@ export default function ContentModal({
               />
             </div>
           </div>
-          <div className={`${contentModalStyles.checkboxContainer} ${styles['col-sm-4']}`}>
+
+          {typeFilter.road ? (
+            <div className={`${contentModalStyles.checkboxContainer} ${styles['col-sm-3']}`}>
+              <div>
+                <Checkbox
+                  id={`${id}-select-road`}
+                  checked={allTypeContentChecked('road')}
+                  onChange={(newValue) => setAllTypeContent('road', newValue)}
+                >
+                  {t('Select all road')}
+                </Checkbox>
+              </div> 
+
+              <div className={contentModalStyles.favourite}>
+                <FavouriteStarButton
+                  id={`${id}-favourite-road`}
+                  enabled={allTypeFavouritesChecked('road')}
+                  onClick={(newValue) => setAllTypeFavourites('road', newValue)}
+                />
+              </div>
+            </div>
+          ) : (
+            <>
+              <div className={`${contentModalStyles.checkboxContainer} ${styles['col-sm-3']}`}>
+                <div>
+                  <Checkbox
+                    id={`${id}-select-sports-cars`}
+                    checked={allTypeContentChecked('sportsCar')}
+                    onChange={(newValue) => setAllTypeContent('sportsCar', newValue)}
+                  >
+                    {t('Select all sports cars')}
+                  </Checkbox>
+                </div> 
+
+                <div className={contentModalStyles.favourite}>
+                  <FavouriteStarButton
+                    id={`${id}-favourite-sports-cars`}
+                    enabled={allTypeFavouritesChecked('sportsCar')}
+                    onClick={(newValue) => setAllTypeFavourites('sportsCar', newValue)}
+                  />
+                </div>
+              </div>
+              <div className={`${contentModalStyles.checkboxContainer} ${styles['col-sm-3']}`}>
+                <div>
+                  <Checkbox
+                    id={`${id}-select-formula-cars`}
+                    checked={allTypeContentChecked('formulaCar')}
+                    onChange={(newValue) => setAllTypeContent('formulaCar', newValue)}
+                  >
+                    {t('Select all formula cars')}
+                  </Checkbox>
+                </div> 
+
+                <div className={contentModalStyles.favourite}>
+                  <FavouriteStarButton
+                    id={`${id}-favourite-formula-cars`}
+                    enabled={allTypeFavouritesChecked('formulaCar')}
+                    onClick={(newValue) => setAllTypeFavourites('formulaCar', newValue)}
+                  />
+                </div>
+              </div>
+            </>
+          )}
+
+          
+          <div className={`${contentModalStyles.checkboxContainer} ${styles['col-sm-3']}`}>
             <div>
               <Checkbox
-                id={`${id}-select-road`}
-                checked={allTypeContentChecked('road')}
-                onChange={(newValue) => setAllTypeContent('road', newValue)}
+                id={`${id}-select-dirt-road`}
+                checked={allTypeContentChecked('dirtRoad')}
+                onChange={(newValue) => setAllTypeContent('dirtRoad', newValue)}
               >
-                {t('Select all road')}
+                {t('Select all dirt road')}
               </Checkbox>
             </div> 
 
             <div className={contentModalStyles.favourite}>
               <FavouriteStarButton
-                id={`${id}-favourite-road`}
-                enabled={allTypeFavouritesChecked('road')}
-                onClick={(newValue) => setAllTypeFavourites('road', newValue)}
+                id={`${id}-favourite-dirt-road`}
+                enabled={allTypeFavouritesChecked('dirtRoad')}
+                onClick={(newValue) => setAllTypeFavourites('dirtRoad', newValue)}
+              />
+            </div>
+          </div>
+          
+          <div className={`${contentModalStyles.checkboxContainer} ${styles['col-sm-3']}`}>
+            <div>
+              <Checkbox
+                id={`${id}-select-dirt-oval`}
+                checked={allTypeContentChecked('dirtOval')}
+                onChange={(newValue) => setAllTypeContent('dirtOval', newValue)}
+              >
+                {t('Select all dirt oval')}
+              </Checkbox>
+            </div> 
+
+            <div className={contentModalStyles.favourite}>
+              <FavouriteStarButton
+                id={`${id}-favourite-dirt-oval`}
+                enabled={allTypeFavouritesChecked('dirtOval')}
+                onClick={(newValue) => setAllTypeFavourites('dirtOval', newValue)}
               />
             </div>
           </div>
