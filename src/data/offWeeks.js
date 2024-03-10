@@ -229,4 +229,66 @@ export default {
       1.1, 2.1, 2.1, 2.1, 4.1, 5.1, 8.1, 9.1, 12.1, 12.1, 12.1, 15.1,
     ],
   },
+  // Prelim Draft Master - Fixed
+  99998: {
+    carByWeek: [
+      [10068], // 1 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+      [10481, 10530, 10459], // 2 NASCAR Trucks
+      [10527, 10482, 10483, 10566], // 3 NASCAR Classic 1987
+      [10503, 10504, 10505], // 4 NASCAR Next Gen
+      [10068], // 5 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+      [10481, 10530, 10459], // 6 NASCAR Trucks
+      [10527, 10482, 10483, 10566], // 7 NASCAR Classic 1987
+      [10503, 10504, 10505], // 8 NASCAR Next Gen
+      [10068], // 9 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+      [10481, 10530, 10459], // 10 NASCAR Trucks
+      [10527, 10482, 10483, 10566], // 11 NASCAR Classic 1987
+      [10503, 10504, 10505], // 12 NASCAR Next Gen
+    ],
+    carClassShortNameByWeek: [
+      ['[Legacy] NASCAR Cup Chevrolet Impala COT - 2009'], // 1 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+      ['NASCAR Trucks'], // 2 NASCAR Trucks
+      ['NASCAR 1987'], // 3 NASCAR Classic 1987
+      ['NASCAR 2022 NG'], // 4 NASCAR Next Gen
+      ['[Legacy] NASCAR Cup Chevrolet Impala COT - 2009'], // 5 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+      ['NASCAR Trucks'], // 6 NASCAR Trucks
+      ['NASCAR 1987'], // 7 NASCAR Classic 1987
+      ['NASCAR 2022 NG'], // 8 NASCAR Next Gen
+      ['[Legacy] NASCAR Cup Chevrolet Impala COT - 2009'], // 9 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+      ['NASCAR Trucks'], // 10 NASCAR Trucks
+      ['NASCAR 1987'], // 11 NASCAR Classic 1987
+      ['NASCAR 2022 NG'], // 12 NASCAR Next Gen
+    ],
+  },
+  // Prelim Ring Meister
+  99999: {
+    carByWeek: [
+      [10306], // 1 Cadillac CTS-V Racecar
+      [10548], // 2 Renault Clio
+      [10552], // 3 Ligier JS P320
+      [10110], // 4 Lotus 79
+      [10517], // 5 Honda Civic Type R TCR
+      [10457], // 6 BMW M8 GTE
+      [10524], // 7 Stock Car Brasil Chevrolet Cruze
+      [10394], // 8 Global Mazda MX-5 Cup
+      [10113], // 9 Chevrolet Corvette C6.R GT
+      [10563], // 10 Ferrari 296 GT3
+      [10040], // 11 Radical SR8
+      [999999], // 12 ??????
+    ],
+    carClassShortNameByWeek: [
+      ['Cadillac CTS-VR'], // 1 Cadillac CTS-V Racecar
+      ['Renault Clio'], // 2 Renault Clio
+      ['Ligier JS P320'], // 3 Ligier JS P320
+      ['Lotus 79'], // 4 Lotus 79
+      ['Civic Type R'], // 5 Honda Civic Type R TCR
+      ['BMW M8 GTE'], // 6 BMW M8 GTE
+      ['Stock Car Brasil'], // 7 Stock Car Brasil Chevrolet Cruze
+      ['MX5 Cup 2016'], // 8 Global Mazda MX-5 Cup
+      ['C6R GT1'], // 9 Chevrolet Corvette C6.R GT
+      ['Ferrari 296 GT3'], // 10 Ferrari 296 GT3
+      ['SR8'], // 11 Radical SR8
+      [999999], // 12 ?????
+    ],
+  },
 };

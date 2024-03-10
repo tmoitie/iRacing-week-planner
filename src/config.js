@@ -1,8 +1,8 @@
 import moment from 'moment';
 
-export const seasonStart = moment('2023-12-12T00:00:00+00:00').utc();
-export const seasonEnd = moment('2024-03-11T00:00:00+00:00').utc();
-export const weekSeasonStart = moment('2023-12-12T00:00:00+00:00').utc();
+export const seasonStart = moment('2024-03-12T00:00:00+00:00').utc();
+export const seasonEnd = moment('2024-06-10T00:00:00+00:00').utc();
+export const weekSeasonStart = moment('2024-03-12T00:00:00+00:00').utc();
 
 export const firebaseConfig = {
   apiKey: 'AIzaSyAWNRqHLhhvhzKl0gkKybocd0nAk2eTlVg',

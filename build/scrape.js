@@ -5,6 +5,7 @@ import getContributors from './api/getContributors';
 import getCars from './api/getCars';
 import getTracks from './api/getTracks';
 import getSeason from './api/getSeason';
+import getCarClasses from './api/getCarClasses';
 
 (async () => {
   const username = process.env.IWP_USERNAME || 'test';
@@ -32,5 +33,11 @@ import getSeason from './api/getSeason';
   await writeFile(
     path.join(__dirname, '../src/data/contributors.json'),
     JSON.stringify(contributors, null, 2),
+  );
+
+  const carClasses = await getCarClasses();
+  await writeFile(
+    path.join(__dirname, '../src/data/car-class.json'),
+    JSON.stringify(carClasses, null, 2),
   );
 })();
