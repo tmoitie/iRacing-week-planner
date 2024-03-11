@@ -69,6 +69,8 @@ export default function SeriesModal({ onClose, ownedTracks, ownedCars, isOpen, s
                   .subtract(1, 'days')
                   .toDate();
 
+                const knownCar = race.carIds[0] !== null;
+
                 return (
                   <tr key={race.week} style={current ? { fontWeight: 700 } : {}}>
                     <td>
@@ -80,10 +82,10 @@ export default function SeriesModal({ onClose, ownedTracks, ownedCars, isOpen, s
                     {showCar ? (
                       <td
                         className={classnames({
-                          [styles.success]: intersection(ownedCars, race.carIds).length !== 0,
+                          [styles.success]: knownCar ? intersection(ownedCars, race.carIds).length !== 0 : null,
                         })}
                       >
-                        {race.carClasses.join(', ')}
+                        {knownCar ? race.carClasses.join(', ') : t('Unknown')}
                       </td>
                     ) : null}
                     <td>
