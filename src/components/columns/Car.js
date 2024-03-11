@@ -3,6 +3,7 @@
 import * as React from 'react';
 import classnames from 'classnames';
 import intersection from 'lodash.intersection';
+import { useTranslation } from 'react-i18next';
 import StarIcon from '../icon/StarIcon';
 import CarModal from '../modal/CarModal';
 
@@ -21,33 +22,38 @@ type Props = {
 
 export default function Car({ race, favouriteCars, ownedCars }: Props) {
   const [modalOpen, setModalOpen] = React.useState(false);
+  const { t } = useTranslation();
 
   const openModal = () => {
     setModalOpen(true);
   };
 
+  const knownCar = race.carIds[0] !== null;
+
   return (
     <>
       <ClickableCell
         className={classnames({
-          [styles.success]: intersection(ownedCars, race.carIds).length !== 0,
+          [styles.success]: knownCar ? intersection(ownedCars, race.carIds).length !== 0 : false,
         })}
         onClick={openModal}
       >
-        {intersection(favouriteCars, race.carIds).length !== 0 ? (
+        {knownCar && intersection(favouriteCars, race.carIds).length !== 0 ? (
           <StarIcon />
         ) : null}
         <span> </span>
-        {race.carClasses.join(', ')}
+        {knownCar ? race.carClasses.join(', ') : t('Unknown')}
       </ClickableCell>
-      <CarModal
-        isOpen={modalOpen}
-        onClose={() => setModalOpen(false)}
-        ownedCars={ownedCars}
-        favouriteCars={favouriteCars}
-        carIds={race.carIds}
-        seriesName={race.series}
-      />
+      {knownCar ? (
+        <CarModal
+          isOpen={modalOpen}
+          onClose={() => setModalOpen(false)}
+          ownedCars={ownedCars}
+          favouriteCars={favouriteCars}
+          carIds={race.carIds}
+          seriesName={race.series}
+        />
+      ) : null}
     </>
   );
 }
