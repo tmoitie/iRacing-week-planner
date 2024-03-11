@@ -82,6 +82,9 @@ export default async function getSeason(cars: Array<carType>, tracks: Array<trac
   return seasonResponse.data.map((series) => {
     const carClasses = series.car_class_ids.map((carClassId) => carClassMap[carClassId]);
     const seriesCars = carClasses.reduce((carry, carClass) => {
+      if (carClass === undefined || carry[0] === null) {
+        return [null];
+      }
       const carsInClass = carClass.cars_in_class.map((carInClass) => carMap[carInClass.car_id]);
       return [...carry, ...carsInClass];
     }, []);
@@ -112,7 +115,7 @@ export default async function getSeason(cars: Array<carType>, tracks: Array<trac
       licenceGroupName: licenseMap[series.license_group].group_name,
       minlicenselevel: licenceGroupToMinlicenselevel[series.license_group],
       isFixedSetup: series.fixed_setup,
-      carclasses: carClasses.map((carClass) => ({ shortname: carClass.short_name })),
+      carclasses: carClasses.map((carClass) => ({ shortname: carClass ? carClass.short_name : null })),
       cars: seriesCars.map(({ sku }) => ({ sku })),
       seasonid: series.season_id,
     };

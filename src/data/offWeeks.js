@@ -174,13 +174,13 @@ export default {
   4828: {
     offWeeks: [
       2.1, 3.1, 4.1, 5.1, 6.1, 8.1, 9.1, 12.1, 14.1, 14.1, 14.1, 16.1, 18.1, 18.1, 18.1, 21.1, 21.1, 
-    ]
+    ],
   },
   // 496 │ 4829   │ Road │ C     │ Formula A - Grand Prix Tour - Fixed │ 2024-12-10
   4829: {
     offWeeks: [
       2.1, 3.1, 4.1, 5.1, 6.1, 8.1, 9.1, 12.1, 14.1, 14.1, 14.1, 16.1, 18.1, 18.1, 18.1, 21.1, 21.1, 
-    ]
+    ],
   },
   // 374 │ 4831   │ Road │ C     │ INDYCAR iRacing Series | 2024-09-17
   4831: {
@@ -188,8 +188,8 @@ export default {
       1.1, 2.1, 2.1, 2.1, 4.1, 5.1, 8.1, 9.1, 12.1, 12.1, 12.1, 15.1,
     ],
   },
-  // Prelim Draft Master - Fixed
-  99998: {
+  // 538 │ 4822   │ Oval        │ D     │ Draft Master - Fixed
+  4822: {
     carByWeek: [
       [10068], // 1 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
       [10481, 10530, 10459], // 2 NASCAR Trucks
@@ -219,8 +219,8 @@ export default {
       ['NASCAR 2022 NG'], // 12 NASCAR Next Gen
     ],
   },
-  // Prelim Ring Meister
-  99999: {
+  // 526 │ 4820   │ Sports Car  │ C     │ Ring Meister Ricmotech Series - Fixed
+  4820: {
     carByWeek: [
       [10306], // 1 Cadillac CTS-V Racecar
       [10548], // 2 Renault Clio
