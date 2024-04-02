@@ -52,20 +52,6 @@ export default {
   //     7.1, 7.1, 7.1, 7.1, 7.1, 7.1, 8.1, 8.1, 9.1,
   //   ],
   // },
-  // 451 │ 4227 │ Creventic Endurance Series | 2023-12-05
-  // 4227: {
-  //   offWeeks: [
-  //     1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 3.1, 3.1, 3.1,
-  //     3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1,
-  //   ],
-  // },
-  // 275 │ 4251 │ Nurburgring Endurance Championship | 2023-10-31
-  // 4251: {
-  //   offWeeks: [
-  //     1.1, 2.1, 2.1, 2.1, 2.1, 2.1, 3.1, 3.1, 4.1, 4.1, 5.1, 5.1, 6.1, 6.1, 7.1, 7.1, 7.1, 7.1, 8.1, 8.1, 8.1,
-  //   ],
-  // },
-
   // 469 │ 4315 | Global Endurance Pure Driving School Series | 2023-09-05
   // 4315: {
   //   weekStartOffset: { days: 7 },
@@ -188,7 +174,7 @@ export default {
       1.1, 2.1, 2.1, 2.1, 4.1, 5.1, 8.1, 9.1, 12.1, 12.1, 12.1, 15.1,
     ],
   },
-  // 538 │ 4822   │ Oval        │ D     │ Draft Master - Fixed
+  // 538 │ 4822   │ Oval        │ D     │ Draft Master - Fixed | 2024-06-04
   4822: {
     carByWeek: [
       [10068], // 1 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
@@ -219,7 +205,7 @@ export default {
       ['NASCAR 2022 NG'], // 12 NASCAR Next Gen
     ],
   },
-  // 526 │ 4820   │ Sports Car  │ C     │ Ring Meister Ricmotech Series - Fixed
+  // 526 │ 4820   │ Sports Car  │ C     │ Ring Meister Ricmotech Series - Fixed | 2024-06-04
   4820: {
     carByWeek: [
       [10306], // 1 Cadillac CTS-V Racecar
@@ -233,7 +219,7 @@ export default {
       [10113], // 9 Chevrolet Corvette C6.R GT
       [10563], // 10 Ferrari 296 GT3
       [10040], // 11 Radical SR8
-      [null], // 12 ??????
+      [10507], // 12 Formula Vee
     ],
     carClassShortNameByWeek: [
       ['Cadillac CTS-VR'], // 1 Cadillac CTS-V Racecar
@@ -247,19 +233,12 @@ export default {
       ['C6R GT1'], // 9 Chevrolet Corvette C6.R GT
       ['Ferrari 296 GT3'], // 10 Ferrari 296 GT3
       ['SR8'], // 11 Radical SR8
-      [null], // 12 ?????
+      ['Formula Vee'], // 12 Formula Vee
     ],
   },
   // 557 │ 4825   │ Sports Car  │ D     │ BMW M Power Tour - Fixed | 2024-06-04
   4825: {
     weekEndOffset: { days: 7 },
-  },
-  // 492 │ 4755   │ Sports Car  │ C     │ IMSA Michelin Pilot Challenge Series | 2024-06-04
-  4755: {
-    weekStartOffset: { days: 7 },
-    offWeeks: [
-      1.1, 2.1, 3.1, 4.1, 5.1,
-    ],
   },
   // 331 │ 4778   │ Sports Car  │ B     │ Global Endurance CONSPIT Tour  | 2024-06-04
   4778: {
@@ -272,6 +251,33 @@ export default {
   4782: {
     offWeeks: [
       1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+  // 501 │ 4806   │ Dirt        │ C     │ Dirt 410 Sprint Car Tour - Fixed | 2024-06-04 | recheck - missing weeks
+  4806: {
+    offWeeks: [
+      12.1, 12.1
+    ],
+  },
+  // 275 │ 4862   │ Sports Car  │ D     │ Nurburgring Endurance Championship | 2024-10-29
+  4862: {
+    offWeeks: [
+      1.1, 1.1, 2.1, 2.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 4.1, 5.1, 5.1, 6.1, 7.1, 7.1, 7.1, 8.1, 8.1, 8.1,
+    ],
+  },
+
+  // 451 │ 4861   │ Sports Car  │ C     │ Creventic Endurance Series | 2024-12-17
+  4861: {
+    offWeeks: [
+      1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1,
+      2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 3.1, 3.1, 3.1, 3.1,
+    ],
+  },
+
+  // 492 │ 4755   │ Sports Car  │ C     │ IMSA Michelin Pilot Challenge Series | 2024-06-04 | recheck - missing weeks
+  4755: {
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1, 6.1, 6.1,
     ],
   },
 };
