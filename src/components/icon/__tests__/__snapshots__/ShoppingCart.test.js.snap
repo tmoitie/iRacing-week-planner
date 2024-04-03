@@ -2,6 +2,6 @@
 
 exports[`components/icon/ShoppingCartIcon renders correctly 1`] = `
 <span
-  className="glyphicon glyphicon-shopping-cart"
+  class="glyphicon glyphicon-shopping-cart"
 />
 `;

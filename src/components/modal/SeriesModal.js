@@ -39,6 +39,7 @@ export default function SeriesModal({ onClose, ownedTracks, ownedCars, isOpen, s
 
   return (
     <Modal
+      id={`modal-series-${seriesId}-${seasonId}`}
       isOpen={isOpen}
       onClose={onClose}
       title={t('Tracks for {{series}}', {

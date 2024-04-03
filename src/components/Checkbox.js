@@ -15,7 +15,7 @@ type Props = {
 
 export default function Checkbox({ id, onChange, checked, disabled, children }: Props): React.Node {
   return (
-    <div className={classnames({ [styles.checkbox]: true, [styles.disabled]: disabled })}>
+    <div data-testid={id} className={classnames({ [styles.checkbox]: true, [styles.disabled]: disabled })}>
       <label htmlFor={id}>
         <input
           id={id}

@@ -18,7 +18,7 @@ type Props = {
   doneButtonText?: string,
   showFooter?: boolean,
   doneAction?: () => void,
-  id?: ?string,
+  id: string,
 };
 
 const defaultProps = {
@@ -27,7 +27,6 @@ const defaultProps = {
   doneAction: () => {},
   doneButtonText: 'Close',
   showFooter: true,
-  id: undefined,
 };
 
 export default function Modal({

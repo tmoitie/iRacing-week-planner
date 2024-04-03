@@ -1,56 +1,64 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import { describe, test } from '@jest/globals';
-import StarIcon from '../../icon/StarIcon';
+import { render, screen } from '@testing-library/react';
+import { describe, test, expect } from '@jest/globals';
+import { TableWrapper } from './ColumnUtils';
+
+import '@testing-library/jest-dom';
 
 import { Track } from '../index';
 
 describe('components/columns/Track', () => {
   test('renders no own or fave', () => {
-    const component = shallow(
-      <Track
-        race={{
-          trackId: 125,
-        }}
-        ownedTracks={[]}
-        favouriteTracks={[]}
-      />
+    render(
+      <TableWrapper>
+        <Track
+          race={{
+            trackId: 125,
+          }}
+          ownedTracks={[]}
+          favouriteTracks={[]}
+        />
+      </TableWrapper>,
     );
 
-    expect(component).toMatchSnapshot();
-    expect(component.find('.success').length).toBe(0);
-    expect(component.find(StarIcon).length).toBe(0);
+    expect(screen.getByTestId('table-row').firstChild).toMatchSnapshot();
+    expect(screen.getByTestId('table-row').firstChild).not.toHaveClass('success');
+    expect(screen.queryByTestId('StarIcon')).not.toBeInTheDocument();
   });
 
   test('renders ownership', () => {
-    const component = shallow(
-      <Track
-        race={{
-          trackId: 125,
-        }}
-        ownedTracks={[125]}
-        favouriteTracks={[]}
-      />
+    render(
+      <TableWrapper>
+        <Track
+          race={{
+            trackId: 125,
+          }}
+          ownedTracks={[125]}
+          favouriteTracks={[]}
+        />
+      </TableWrapper>,
     );
 
-    expect(component).toMatchSnapshot();
-    expect(component.find('.success').length).toBe(1);
-    expect(component.find(StarIcon).length).toBe(0);
+    expect(screen.getByTestId('table-row').firstChild).toMatchSnapshot();
+    expect(screen.getByTestId('table-row').firstChild).toHaveClass('success');
+    expect(screen.queryByTestId('StarIcon')).not.toBeInTheDocument();
   });
 
   test('renders favourite', () => {
-    const component = shallow(
-      <Track
-        race={{
-          trackId: 125,
-        }}
-        ownedTracks={[]}
-        favouriteTracks={[125]}
-      />
+    render(
+      <TableWrapper>
+        <Track
+          race={{
+            trackId: 125,
+          }}
+          ownedTracks={[]}
+          favouriteTracks={[125]}
+        />
+      </TableWrapper>,
     );
 
-    expect(component).toMatchSnapshot();
-    expect(component.find('.success').length).toBe(0);
-    expect(component.find(StarIcon).length).toBe(1);
+    expect(screen.getByTestId('table-row').firstChild).toMatchSnapshot();
+    expect(screen.getByTestId('table-row').firstChild).not.toHaveClass('success');
+    expect(screen.queryByTestId('StarIcon')).toBeInTheDocument();
   });
 });

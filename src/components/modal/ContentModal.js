@@ -29,7 +29,7 @@ type Props = {
     road: string,
     dirtOval: string,
     dirtRoad: string,
-  }|{
+  } | {
     key: string,
     oval: string,
     formulaCar: string,
@@ -41,7 +41,7 @@ type Props = {
 
 export default function ContentModal({
   id, isOpen, onClose, title, save, content, idField, defaultContent, ownedContent, favourites,
-  saveFavourites, typeFilter, 
+  saveFavourites, typeFilter,
 }: Props) {
   const { t } = useTranslation();
 
@@ -100,7 +100,7 @@ export default function ContentModal({
   };
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose} title={title} doneAction={onClose}>
+    <Modal isOpen={isOpen} onClose={onClose} title={title} doneAction={onClose} id={id}>
       <div className={styles['container-fluid']}>
         <p>{t('Use the checkbox to set the content you own, and use the star to set your favourite content.')}</p>
         <div className={styles.row}>
@@ -113,7 +113,7 @@ export default function ContentModal({
               >
                 {t('Select all')}
               </Checkbox>
-            </div> 
+            </div>
 
             <div className={contentModalStyles.favourite}>
               <FavouriteStarButton
@@ -132,7 +132,7 @@ export default function ContentModal({
               >
                 {t('Select all oval')}
               </Checkbox>
-            </div> 
+            </div>
 
             <div className={contentModalStyles.favourite}>
               <FavouriteStarButton
@@ -153,7 +153,7 @@ export default function ContentModal({
                 >
                   {t('Select all road')}
                 </Checkbox>
-              </div> 
+              </div>
 
               <div className={contentModalStyles.favourite}>
                 <FavouriteStarButton
@@ -174,7 +174,7 @@ export default function ContentModal({
                   >
                     {t('Select all sports cars')}
                   </Checkbox>
-                </div> 
+                </div>
 
                 <div className={contentModalStyles.favourite}>
                   <FavouriteStarButton
@@ -193,7 +193,7 @@ export default function ContentModal({
                   >
                     {t('Select all formula cars')}
                   </Checkbox>
-                </div> 
+                </div>
 
                 <div className={contentModalStyles.favourite}>
                   <FavouriteStarButton
@@ -206,7 +206,6 @@ export default function ContentModal({
             </>
           )}
 
-          
           <div className={`${contentModalStyles.checkboxContainer} ${styles['col-sm-3']}`}>
             <div>
               <Checkbox
@@ -216,7 +215,7 @@ export default function ContentModal({
               >
                 {t('Select all dirt road')}
               </Checkbox>
-            </div> 
+            </div>
 
             <div className={contentModalStyles.favourite}>
               <FavouriteStarButton
@@ -226,7 +225,7 @@ export default function ContentModal({
               />
             </div>
           </div>
-          
+
           <div className={`${contentModalStyles.checkboxContainer} ${styles['col-sm-3']}`}>
             <div>
               <Checkbox
@@ -236,7 +235,7 @@ export default function ContentModal({
               >
                 {t('Select all dirt oval')}
               </Checkbox>
-            </div> 
+            </div>
 
             <div className={contentModalStyles.favourite}>
               <FavouriteStarButton
@@ -267,7 +266,7 @@ export default function ContentModal({
                 >
                   {item.skuname ? t(item.skuname) : t(item.name)}
                 </Checkbox>
-              </div> 
+              </div>
 
               <div className={contentModalStyles.favourite}>
                 <FavouriteStarButton

@@ -21,10 +21,10 @@ const sortedLegacyCars = [...cars.filter((c) => c.name.startsWith('['))].sort((a
 const sortedCars = [...sortedActiveCars, ...sortedLegacyCars];
 
 const sortedActiveTracks = [
-  ...tracks.filter((t) => !t.name.startsWith('['))
+  ...tracks.filter((t) => !t.name.startsWith('[')),
 ].sort((a, b) => a.name.localeCompare(b.name));
 const sortedLegacyTracks = [
-  ...tracks.filter((t) => t.name.startsWith('['))
+  ...tracks.filter((t) => t.name.startsWith('[')),
 ].sort((a, b) => a.name.localeCompare(b.name));
 const sortedTracks = [...sortedActiveTracks, ...sortedLegacyTracks];
 

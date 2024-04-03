@@ -3,11 +3,14 @@
 exports[`components/columns/LinkColumn renders correctly 1`] = `
 <td>
   <a
+    data-testid="LinkColumn-link"
     href="http://members.iracing.com/membersite/member/SeriesSessions.do?season=4234"
     rel="noreferrer"
     target="_blank"
   >
-    <LinkIcon />
+    <span
+      class="glyphicon glyphicon-link"
+    />
   </a>
 </td>
 `;

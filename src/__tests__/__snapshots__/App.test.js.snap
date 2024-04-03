@@ -3,42 +3,40 @@
 exports[`components/App renders correctly 1`] = `
 <div>
   <nav
-    className="navbar navbar-inverse"
+    class="navbar navbar-inverse"
   >
     <div
-      className="container-fluid"
+      class="container-fluid"
     >
       <div
-        className="navbar-header"
+        class="navbar-header"
       >
         <a
-          className="navbar-brand"
+          class="navbar-brand"
           href="/"
         >
           iRacing Week Planner
         </a>
       </div>
       <ul
-        className="nav navbar-nav navbar-left"
+        class="nav navbar-nav navbar-left"
       >
         <li>
           <a
             href=""
             id="navbar-link-purchase-guide"
-            onClick={[Function]}
           >
             Purchase guide
           </a>
         </li>
       </ul>
       <ul
-        className="nav navbar-nav navbar-right"
+        class="nav navbar-nav navbar-right"
       >
         <li>
           <a
             href=""
             id="navbar-link-my-tracks"
-            onClick={[Function]}
           >
             Set my tracks
           </a>
@@ -47,7 +45,6 @@ exports[`components/App renders correctly 1`] = `
           <a
             href=""
             id="navbar-link-my-cars"
-            onClick={[Function]}
           >
             Set my cars
           </a>
@@ -56,7 +53,6 @@ exports[`components/App renders correctly 1`] = `
           <a
             href=""
             id="navbar-link-favourite-series"
-            onClick={[Function]}
           >
             Set favorite series
           </a>
@@ -65,7 +61,6 @@ exports[`components/App renders correctly 1`] = `
           <a
             href=""
             id="navbar-link-options"
-            onClick={[Function]}
           >
             Options
           </a>
@@ -74,7 +69,6 @@ exports[`components/App renders correctly 1`] = `
           <a
             href=""
             id="navbar-link-about"
-            onClick={[Function]}
           >
             About
           </a>
@@ -83,34 +77,31 @@ exports[`components/App renders correctly 1`] = `
           <a
             href=""
             id="navbar-link-sign-in"
-            onClick={[Function]}
           >
             Sign in
           </a>
         </li>
         <li
-          className="dropdown"
+          class="dropdown"
           id="navbar-language-dropdown"
         >
           <a
             href=""
             id="navbar-link-open-language-dropdown"
-            onClick={[Function]}
           >
             🇺🇸
              
             <span
-              className="caret"
+              class="caret"
             />
           </a>
           <ul
-            className="dropdown-menu"
+            class="dropdown-menu"
           >
             <li>
               <a
                 href=""
                 id="navbar-link-language-de"
-                onClick={[Function]}
               >
                 🇩🇪
                  
@@ -121,7 +112,6 @@ exports[`components/App renders correctly 1`] = `
               <a
                 href=""
                 id="navbar-link-language-en"
-                onClick={[Function]}
               >
                 🇺🇸
                  
@@ -132,7 +122,6 @@ exports[`components/App renders correctly 1`] = `
               <a
                 href=""
                 id="navbar-link-language-en-GB"
-                onClick={[Function]}
               >
                 🇬🇧
                  
@@ -143,7 +132,6 @@ exports[`components/App renders correctly 1`] = `
               <a
                 href=""
                 id="navbar-link-language-es"
-                onClick={[Function]}
               >
                 🇪🇸
                  
@@ -154,7 +142,6 @@ exports[`components/App renders correctly 1`] = `
               <a
                 href=""
                 id="navbar-link-language-fr"
-                onClick={[Function]}
               >
                 🇫🇷
                  
@@ -165,7 +152,6 @@ exports[`components/App renders correctly 1`] = `
               <a
                 href=""
                 id="navbar-link-language-it"
-                onClick={[Function]}
               >
                 🇮🇹
                  
@@ -176,7 +162,6 @@ exports[`components/App renders correctly 1`] = `
               <a
                 href=""
                 id="navbar-link-language-ja"
-                onClick={[Function]}
               >
                 🇯🇵
                  
@@ -187,7 +172,6 @@ exports[`components/App renders correctly 1`] = `
               <a
                 href=""
                 id="navbar-link-language-nl"
-                onClick={[Function]}
               >
                 🇳🇱
                  
@@ -198,7 +182,6 @@ exports[`components/App renders correctly 1`] = `
               <a
                 href=""
                 id="navbar-link-language-pl"
-                onClick={[Function]}
               >
                 🇵🇱
                  
@@ -209,7 +192,6 @@ exports[`components/App renders correctly 1`] = `
               <a
                 href=""
                 id="navbar-link-language-pt-BR"
-                onClick={[Function]}
               >
                 🇧🇷
                  
@@ -220,7 +202,6 @@ exports[`components/App renders correctly 1`] = `
               <a
                 href=""
                 id="navbar-link-language-tr"
-                onClick={[Function]}
               >
                 🇹🇷
                  
@@ -242,19 +223,17 @@ exports[`components/App renders correctly 1`] = `
     </div>
   </nav>
   <div
-    className="container-fluid"
+    class="container-fluid"
   >
     <div
-      className="row"
+      class="row"
     >
       <div
-        className="col-md-2"
+        class="col-md-2"
       >
         <div>
           <button
-            className="bmcButton"
-            onClick={[Function]}
-            onKeyPress={[Function]}
+            class="bmcButton"
             type="button"
           >
             <img
@@ -262,41 +241,36 @@ exports[`components/App renders correctly 1`] = `
               src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
             />
             <span
-              style={
-                Object {
-                  "marginLeft": "5px",
-                }
-              }
+              style="margin-left: 5px;"
             >
               Buy me a coffee
             </span>
           </button>
           <div
-            className="sponsoredContainer"
+            class="sponsoredContainer"
           >
             <a
-              className="sponsoredLink"
+              class="sponsoredLink"
               href="https://coachdaveacademy.com/product/iracing-setup-subscription/?ref=weekly_planner"
-              onClick={[Function]}
               rel="sponsored"
             >
               <h4
-                className="sponsoredHeader"
+                class="sponsoredHeader"
               >
                 Sponsored
               </h4>
               <h3
-                className="sponsoredTitle"
+                class="sponsoredTitle"
               >
                 Looking for iRacing Setups?
               </h3>
               <p
-                className="sponsoredBody"
+                class="sponsoredBody"
               >
                 Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.
               </p>
               <p
-                className="btn btn-primary button"
+                class="btn btn-primary button"
               >
                 Browse Setups
               </p>
@@ -307,90 +281,81 @@ exports[`components/App renders correctly 1`] = `
           Filters
         </h3>
         <div
-          style={
-            Object {
-              "fontSize": "0.8em",
-            }
-          }
+          style="font-size: 0.8em;"
         >
           <h4>
             Type
           </h4>
           <div
-            className="checkbox"
+            class="checkbox"
+            data-testid="checkbox-type-oval"
           >
             <label
-              htmlFor="checkbox-type-oval"
+              for="checkbox-type-oval"
             >
               <input
-                checked={true}
-                disabled={false}
+                checked=""
                 id="checkbox-type-oval"
-                onChange={[Function]}
                 type="checkbox"
               />
               Oval
             </label>
           </div>
           <div
-            className="checkbox"
+            class="checkbox"
+            data-testid="checkbox-type-road-sports"
           >
             <label
-              htmlFor="checkbox-type-road-sports"
+              for="checkbox-type-road-sports"
             >
               <input
-                checked={true}
-                disabled={false}
+                checked=""
                 id="checkbox-type-road-sports"
-                onChange={[Function]}
                 type="checkbox"
               />
               Sports Car
             </label>
           </div>
           <div
-            className="checkbox"
+            class="checkbox"
+            data-testid="checkbox-type-road-formula"
           >
             <label
-              htmlFor="checkbox-type-road-formula"
+              for="checkbox-type-road-formula"
             >
               <input
-                checked={true}
-                disabled={false}
+                checked=""
                 id="checkbox-type-road-formula"
-                onChange={[Function]}
                 type="checkbox"
               />
               Formula Car
             </label>
           </div>
           <div
-            className="checkbox"
+            class="checkbox"
+            data-testid="checkbox-type-dirt"
           >
             <label
-              htmlFor="checkbox-type-dirt"
+              for="checkbox-type-dirt"
             >
               <input
-                checked={true}
-                disabled={false}
+                checked=""
                 id="checkbox-type-dirt"
-                onChange={[Function]}
                 type="checkbox"
               />
               Dirt
             </label>
           </div>
           <div
-            className="checkbox"
+            class="checkbox"
+            data-testid="checkbox-type-rx"
           >
             <label
-              htmlFor="checkbox-type-rx"
+              for="checkbox-type-rx"
             >
               <input
-                checked={true}
-                disabled={false}
+                checked=""
                 id="checkbox-type-rx"
-                onChange={[Function]}
                 type="checkbox"
               />
               RX
@@ -400,96 +365,90 @@ exports[`components/App renders correctly 1`] = `
             Licence
           </h4>
           <div
-            className="checkbox"
+            class="checkbox"
+            data-testid="checkbox-licence-r"
           >
             <label
-              htmlFor="checkbox-licence-r"
+              for="checkbox-licence-r"
             >
               <input
-                checked={true}
-                disabled={false}
+                checked=""
                 id="checkbox-licence-r"
-                onChange={[Function]}
                 type="checkbox"
               />
               R
             </label>
           </div>
           <div
-            className="checkbox"
+            class="checkbox"
+            data-testid="checkbox-licence-d"
           >
             <label
-              htmlFor="checkbox-licence-d"
+              for="checkbox-licence-d"
             >
               <input
-                checked={true}
-                disabled={false}
+                checked=""
                 id="checkbox-licence-d"
-                onChange={[Function]}
                 type="checkbox"
               />
               D
             </label>
           </div>
           <div
-            className="checkbox"
+            class="checkbox"
+            data-testid="checkbox-licence-c"
           >
             <label
-              htmlFor="checkbox-licence-c"
+              for="checkbox-licence-c"
             >
               <input
-                checked={true}
-                disabled={false}
+                checked=""
                 id="checkbox-licence-c"
-                onChange={[Function]}
                 type="checkbox"
               />
               C
             </label>
           </div>
           <div
-            className="checkbox"
+            class="checkbox"
+            data-testid="checkbox-licence-b"
           >
             <label
-              htmlFor="checkbox-licence-b"
+              for="checkbox-licence-b"
             >
               <input
-                checked={true}
-                disabled={false}
+                checked=""
                 id="checkbox-licence-b"
-                onChange={[Function]}
                 type="checkbox"
               />
               B
             </label>
           </div>
           <div
-            className="checkbox"
+            class="checkbox"
+            data-testid="checkbox-licence-a"
           >
             <label
-              htmlFor="checkbox-licence-a"
+              for="checkbox-licence-a"
             >
               <input
-                checked={true}
-                disabled={false}
+                checked=""
                 id="checkbox-licence-a"
-                onChange={[Function]}
                 type="checkbox"
               />
               A
             </label>
           </div>
           <div
-            className="checkbox"
+            class="checkbox"
+            data-testid="checkbox-licence-p"
           >
             <label
-              htmlFor="checkbox-licence-p"
+              for="checkbox-licence-p"
             >
               <input
-                checked={true}
-                disabled={false}
+                checked=""
                 id="checkbox-licence-p"
-                onChange={[Function]}
                 type="checkbox"
               />
               P
@@ -499,64 +458,60 @@ exports[`components/App renders correctly 1`] = `
             Official/Fixed
           </h4>
           <div
-            className="checkbox"
+            class="checkbox"
+            data-testid="checkbox-official-false"
           >
             <label
-              htmlFor="checkbox-official-false"
+              for="checkbox-official-false"
             >
               <input
-                checked={true}
-                disabled={false}
+                checked=""
                 id="checkbox-official-false"
-                onChange={[Function]}
                 type="checkbox"
               />
               Unofficial
             </label>
           </div>
           <div
-            className="checkbox"
+            class="checkbox"
+            data-testid="checkbox-official-true"
           >
             <label
-              htmlFor="checkbox-official-true"
+              for="checkbox-official-true"
             >
               <input
-                checked={true}
-                disabled={false}
+                checked=""
                 id="checkbox-official-true"
-                onChange={[Function]}
                 type="checkbox"
               />
               Official
             </label>
           </div>
           <div
-            className="checkbox"
+            class="checkbox"
+            data-testid="checkbox-fixed-false"
           >
             <label
-              htmlFor="checkbox-fixed-false"
+              for="checkbox-fixed-false"
             >
               <input
-                checked={true}
-                disabled={false}
+                checked=""
                 id="checkbox-fixed-false"
-                onChange={[Function]}
                 type="checkbox"
               />
               Open setup
             </label>
           </div>
           <div
-            className="checkbox"
+            class="checkbox"
+            data-testid="checkbox-fixed-true"
           >
             <label
-              htmlFor="checkbox-fixed-true"
+              for="checkbox-fixed-true"
             >
               <input
-                checked={true}
-                disabled={false}
+                checked=""
                 id="checkbox-fixed-true"
-                onChange={[Function]}
                 type="checkbox"
               />
               Fixed setup
@@ -566,80 +521,70 @@ exports[`components/App renders correctly 1`] = `
             Content
           </h4>
           <div
-            className="checkbox"
+            class="checkbox"
+            data-testid="checkbox-ownedCars"
           >
             <label
-              htmlFor="checkbox-ownedCars"
+              for="checkbox-ownedCars"
             >
               <input
-                checked={false}
-                disabled={false}
                 id="checkbox-ownedCars"
-                onChange={[Function]}
                 type="checkbox"
               />
               Owned cars only
             </label>
           </div>
           <div
-            className="checkbox"
+            class="checkbox"
+            data-testid="checkbox-ownedTracks"
           >
             <label
-              htmlFor="checkbox-ownedTracks"
+              for="checkbox-ownedTracks"
             >
               <input
-                checked={false}
-                disabled={false}
                 id="checkbox-ownedTracks"
-                onChange={[Function]}
                 type="checkbox"
               />
               Owned tracks only
             </label>
           </div>
           <div
-            className="checkbox"
+            class="checkbox"
+            data-testid="checkbox-favouriteSeries"
           >
             <label
-              htmlFor="checkbox-favouriteSeries"
+              for="checkbox-favouriteSeries"
             >
               <input
-                checked={false}
-                disabled={false}
                 id="checkbox-favouriteSeries"
-                onChange={[Function]}
                 type="checkbox"
               />
               Favorite series only
             </label>
           </div>
           <div
-            className="checkbox"
+            class="checkbox"
+            data-testid="checkbox-favouriteCarsOnly"
           >
             <label
-              htmlFor="checkbox-favouriteCarsOnly"
+              for="checkbox-favouriteCarsOnly"
             >
               <input
-                checked={false}
-                disabled={false}
                 id="checkbox-favouriteCarsOnly"
-                onChange={[Function]}
                 type="checkbox"
               />
               Favorite cars only
             </label>
           </div>
           <div
-            className="checkbox"
+            class="checkbox"
+            data-testid="checkbox-favouriteTracksOnly"
           >
             <label
-              htmlFor="checkbox-favouriteTracksOnly"
+              for="checkbox-favouriteTracksOnly"
             >
               <input
-                checked={false}
-                disabled={false}
                 id="checkbox-favouriteTracksOnly"
-                onChange={[Function]}
                 type="checkbox"
               />
               Favorite tracks only
@@ -647,9 +592,8 @@ exports[`components/App renders correctly 1`] = `
           </div>
           <p>
             <button
-              className="btn btn-primary"
+              class="btn btn-primary"
               id="filters-reset-filters-button"
-              onClick={[Function]}
               type="button"
             >
               Reset filters
@@ -657,9 +601,8 @@ exports[`components/App renders correctly 1`] = `
           </p>
           <p>
             <button
-              className="btn btn-primary"
+              class="btn btn-primary"
               id="filters-reset-settings-button"
-              onClick={[Function]}
               type="button"
             >
               Reset all settings
@@ -668,108 +611,76 @@ exports[`components/App renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="col-md-10"
+        class="col-md-10"
       >
         <div
-          className="row"
+          class="row"
         >
           <h3
-            className="col-xs-8"
+            class="col-xs-8"
           >
             Races for date: September 10, 2022
           </h3>
           <h3
-            className="col-xs-4"
-            style={
-              Object {
-                "textAlign": "right",
-              }
-            }
+            class="col-xs-4"
+            style="text-align: right;"
           >
             Week 1
           </h3>
         </div>
         <div
-          style={
-            Object {
-              "marginBottom": 10,
-            }
-          }
+          style="margin-bottom: 10px;"
         >
           <div
-            className="bp3-slider bp3-slider-unlabeled"
-            onMouseDown={[Function]}
-            onTouchStart={[Function]}
+            class="bp5-slider bp5-slider-unlabeled"
           >
             <div
-              className="bp3-slider-track"
+              class="bp5-slider-track"
             >
               <div
-                className="bp3-slider-progress"
-                style={
-                  Object {
-                    "left": "0.00%",
-                    "right": "100.00%",
-                    "top": 0,
-                  }
-                }
+                class="bp5-slider-progress"
+                style="left: 0.00%; right: 100.00%; top: 0px;"
               />
               <div
-                className="bp3-slider-progress bp3-intent-primary"
-                style={
-                  Object {
-                    "left": "0.00%",
-                    "right": "100.00%",
-                    "top": 0,
-                  }
-                }
+                class="bp5-slider-progress bp5-intent-primary"
+                style="left: 0.00%; right: 95.60%; top: 0px;"
               />
               <div
-                className="bp3-slider-progress"
-                style={
-                  Object {
-                    "left": "0.00%",
-                    "right": "100.00%",
-                    "top": 0,
-                  }
-                }
+                class="bp5-slider-progress"
+                style="left: 4.40%; right: 0.00%; top: 0px;"
               />
             </div>
             <div
-              className="bp3-slider-axis"
+              class="bp5-slider-axis"
             />
             <span
-              className="bp3-slider-handle"
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              onMouseDown={[Function]}
-              onTouchStart={[Function]}
-              style={Object {}}
-              tabIndex={0}
+              aria-disabled="false"
+              aria-orientation="horizontal"
+              aria-valuemax="91"
+              aria-valuemin="0"
+              aria-valuenow="4"
+              class="bp5-slider-handle"
+              role="slider"
+              style="left: calc(4.40% - 0px);"
+              tabindex="0"
             />
           </div>
         </div>
         <div
-          className="table-responsive raceListing"
+          class="table-responsive raceListing"
         >
           <table
-            className="table"
-            style={
-              Object {
-                "fontSize": "0.8em",
-              }
-            }
+            class="table"
+            style="font-size: 0.8em;"
           >
             <thead>
               <tr>
                 <th
-                  className="clickableCell"
+                  class="clickableCell"
                   id="raceListing-th-id"
                 >
                   <button
-                    className="cellButton"
-                    onClick={[Function]}
-                    onKeyPress={[Function]}
+                    class="cellButton"
                     type="button"
                   >
                     ID
@@ -777,7 +688,7 @@ exports[`components/App renders correctly 1`] = `
                        
                     </span>
                     <span
-                      className="glyphicon glyphicon-triangle-top"
+                      class="glyphicon glyphicon-triangle-top"
                     />
                   </button>
                 </th>

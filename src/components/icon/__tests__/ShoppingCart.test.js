@@ -1,12 +1,12 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { render } from '@testing-library/react';
 import { describe, test } from '@jest/globals';
 import ShoppingCartIcon from '../ShoppingCartIcon';
 
 describe('components/icon/ShoppingCartIcon', () => {
   test('renders correctly', () => {
-    const component = shallow(<ShoppingCartIcon />);
+    const { container } = render(<ShoppingCartIcon />);
 
-    expect(component).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

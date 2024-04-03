@@ -1,169 +1,153 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/columns/Car opens modal 1`] = `
-Array [
-  <td
-    className="success clickableCell"
-  >
-    <button
-      className="cellButton"
-      onClick={[Function]}
-      onKeyPress={[Function]}
-      style={
-        Object {
-          "minHeight": 0,
-        }
-      }
-      type="button"
-    >
-      <span
-        className="glyphicon glyphicon-star"
-      />
-      <span>
-         
-      </span>
-      Mazda Cup
-    </button>
-  </td>,
+<body>
+  <div>
+    <table>
+      <tbody>
+        <tr
+          data-testid="table-row"
+        >
+          <td
+            class="success clickableCell"
+          >
+            <button
+              class="cellButton"
+              style="min-height: 0;"
+              type="button"
+            >
+              <span
+                class="glyphicon glyphicon-star"
+                data-testid="StarIcon"
+              />
+              <span>
+                 
+              </span>
+              Mazda Cup
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
   <div
-    className="ReactModal__Overlay"
-    onClick={[Function]}
-    onMouseDown={[Function]}
-    style={
-      Object {
-        "backgroundColor": "rgba(255, 255, 255, 0.75)",
-        "bottom": 0,
-        "left": 0,
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
+    id="modal-cars-105"
   >
     <div
-      aria-modal={true}
-      className="ReactModal__Content Modal__Bootstrap modal-dialog modal-lg"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      onMouseDown={[Function]}
-      onMouseUp={[Function]}
-      role="dialog"
-      style={Object {}}
-      tabIndex="-1"
+      class="ReactModal__Overlay"
+      style="position: fixed; display: block; inset: 0; background-color: rgba(255, 255, 255, 0.75);"
     >
       <div
-        className="modal-content"
+        class="Modal__Bootstrap modal-dialog modal-lg"
+        data-testid="modal-cars-105"
       >
         <div
-          className="modal-header"
-        >
-          <button
-            aria-label="Close"
-            className="close"
-            onClick={[Function]}
-            type="button"
-          >
-            <span
-              className="glyphicon glyphicon-remove"
-            />
-          </button>
-          <h4
-            className="modal-title"
-          >
-            Cars for Mazda Cup
-          </h4>
-        </div>
-        <div
-          className="modal-body"
-          style={
-            Object {
-              "maxHeight": "55vh",
-              "overflowY": "auto",
-            }
-          }
+          class="modal-content"
         >
           <div
-            className="container-fluid"
+            class="modal-header"
+          >
+            <button
+              aria-label="Close"
+              class="close"
+              type="button"
+            >
+              <span
+                class="glyphicon glyphicon-remove"
+              />
+            </button>
+            <h4
+              class="modal-title"
+            >
+              Cars for Mazda Cup
+            </h4>
+          </div>
+          <div
+            class="modal-body"
+            style="max-height: 55vh; overflow-y: auto;"
           >
             <div
-              className="table-responsive"
+              class="container-fluid"
             >
-              <table
-                className="table"
-                style={
-                  Object {
-                    "fontSize": "0.8em",
-                  }
-                }
+              <div
+                class="table-responsive"
               >
-                <thead>
-                  <tr>
-                    <th>
-                      Car
-                    </th>
-                  </tr>
-                </thead>
-                <tbody />
-              </table>
+                <table
+                  class="table"
+                  style="font-size: 0.8em;"
+                >
+                  <thead>
+                    <tr>
+                      <th>
+                        Car
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody />
+                </table>
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          className="modal-footer"
-        >
-          <button
-            className="btn btn-primary"
-            onClick={[Function]}
-            type="button"
+          <div
+            class="modal-footer"
           >
-            Close
-          </button>
+            <button
+              class="btn btn-primary"
+              type="button"
+            >
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>,
-]
+  </div>
+</body>
 `;
 
 exports[`components/columns/Car opens modal 2`] = `
-<td
-  className="success clickableCell"
->
-  <button
-    className="cellButton"
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    style={
-      Object {
-        "minHeight": 0,
-      }
-    }
-    type="button"
-  >
-    <span
-      className="glyphicon glyphicon-star"
-    />
-    <span>
-       
-    </span>
-    Mazda Cup
-  </button>
-</td>
+<body>
+  <div>
+    <table>
+      <tbody>
+        <tr
+          data-testid="table-row"
+        >
+          <td
+            class="success clickableCell"
+          >
+            <button
+              class="cellButton"
+              style="min-height: 0;"
+              type="button"
+            >
+              <span
+                class="glyphicon glyphicon-star"
+                data-testid="StarIcon"
+              />
+              <span>
+                 
+              </span>
+              Mazda Cup
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    id="modal-cars-105"
+  />
+</body>
 `;
 
 exports[`components/columns/Car renders correctly 1`] = `
 <td
-  className="clickableCell"
+  class="clickableCell"
 >
   <button
-    className="cellButton"
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    style={
-      Object {
-        "minHeight": 0,
-      }
-    }
+    class="cellButton"
+    style="min-height: 0;"
     type="button"
   >
     <span>
@@ -176,21 +160,16 @@ exports[`components/columns/Car renders correctly 1`] = `
 
 exports[`components/columns/Car renders owned, favourite 1`] = `
 <td
-  className="success clickableCell"
+  class="success clickableCell"
 >
   <button
-    className="cellButton"
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    style={
-      Object {
-        "minHeight": 0,
-      }
-    }
+    class="cellButton"
+    style="min-height: 0;"
     type="button"
   >
     <span
-      className="glyphicon glyphicon-star"
+      class="glyphicon glyphicon-star"
+      data-testid="StarIcon"
     />
     <span>
        

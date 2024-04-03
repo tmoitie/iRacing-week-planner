@@ -1,7 +1,6 @@
 import React from 'react';
 import { create, act } from 'react-test-renderer';
 import { describe, test } from '@jest/globals';
-import { useTranslation } from 'react-i18next';
 
 import CoachDaveSponsor from '../CoachDaveSponsor';
 

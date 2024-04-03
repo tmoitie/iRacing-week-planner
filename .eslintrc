@@ -23,6 +23,7 @@
       "ImportDeclaration": { "minProperties": 12, "multiline": true, "consistent": true },
       "ExportDeclaration": { "minProperties": 12, "multiline": true, "consistent": true }
     }],
+    "react/no-invalid-html-attribute": [0],
     "react/jsx-props-no-spreading": [0],
     "quote-props": [0]
   },

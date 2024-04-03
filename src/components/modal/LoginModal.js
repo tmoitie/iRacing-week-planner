@@ -58,6 +58,7 @@ export default function LoginModal({ isOpen, onClose }: Props) {
 
   return (
     <Modal
+      id="login-modal"
       isOpen={isOpen}
       onClose={onClose}
       title={t('Sign in/Create account')}

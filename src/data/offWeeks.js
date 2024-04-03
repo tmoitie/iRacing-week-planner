@@ -159,13 +159,13 @@ export default {
   // 495 │ 4828   │ Road │ C     │ Formula A - Grand Prix Tour | 2024-12-10
   4828: {
     offWeeks: [
-      2.1, 3.1, 4.1, 5.1, 6.1, 8.1, 9.1, 12.1, 14.1, 14.1, 14.1, 16.1, 18.1, 18.1, 18.1, 21.1, 21.1, 
+      2.1, 3.1, 4.1, 5.1, 6.1, 8.1, 9.1, 12.1, 14.1, 14.1, 14.1, 16.1, 18.1, 18.1, 18.1, 21.1, 21.1,
     ],
   },
   // 496 │ 4829   │ Road │ C     │ Formula A - Grand Prix Tour - Fixed │ 2024-12-10
   4829: {
     offWeeks: [
-      2.1, 3.1, 4.1, 5.1, 6.1, 8.1, 9.1, 12.1, 14.1, 14.1, 14.1, 16.1, 18.1, 18.1, 18.1, 21.1, 21.1, 
+      2.1, 3.1, 4.1, 5.1, 6.1, 8.1, 9.1, 12.1, 14.1, 14.1, 14.1, 16.1, 18.1, 18.1, 18.1, 21.1, 21.1,
     ],
   },
   // 374 │ 4831   │ Road │ C     │ INDYCAR iRacing Series | 2024-09-17
@@ -256,7 +256,7 @@ export default {
   // 501 │ 4806   │ Dirt        │ C     │ Dirt 410 Sprint Car Tour - Fixed | 2024-06-04 | recheck - missing weeks
   4806: {
     offWeeks: [
-      0.1, 0.1
+      0.1, 0.1,
     ],
   },
   // 275 │ 4862   │ Sports Car  │ D     │ Nurburgring Endurance Championship | 2024-10-29
@@ -277,7 +277,7 @@ export default {
   // 492 │ 4755   │ Sports Car  │ C     │ IMSA Michelin Pilot Challenge Series | 2024-06-04 | recheck - missing weeks
   4755: {
     offWeeks: [
-      0.1, 0.1, 1.1, 2.1, 3.1, 4.1, 5.1
+      0.1, 0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
     ],
   },
 };

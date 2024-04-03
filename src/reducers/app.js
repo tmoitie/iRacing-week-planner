@@ -32,7 +32,7 @@ export default function app(
     if (currentDate.isBefore(seasonStart)) {
       currentDate = moment(seasonStart).utc().startOf('day');
     }
-    
+
     if (currentDate.isAfter(seasonEnd)) {
       currentDate = moment(seasonEnd).utc().startOf('day').subtract({ days: 1 });
     }

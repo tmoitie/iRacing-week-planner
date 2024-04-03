@@ -52,6 +52,7 @@ export default function Car({ race, favouriteCars, ownedCars }: Props) {
           favouriteCars={favouriteCars}
           carIds={race.carIds}
           seriesName={race.series}
+          seriesId={race.seriesId}
         />
       ) : null}
     </>

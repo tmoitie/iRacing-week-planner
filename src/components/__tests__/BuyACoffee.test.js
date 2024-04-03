@@ -59,7 +59,7 @@ describe('components/BuyACoffee', () => {
     });
 
     const clickButtonWithCountry = async (countryCode) => {
-      axios.get.mockResolvedValue({ data: { country_code: countryCode }});
+      axios.get.mockResolvedValue({ data: { country_code: countryCode } });
 
       await act(async () => {
         await component.root.findByType('button').props.onClick();
