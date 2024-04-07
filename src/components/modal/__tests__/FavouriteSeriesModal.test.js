@@ -1,48 +1,34 @@
 import { describe, test } from '@jest/globals';
 import React from 'react';
-import renderer, { act } from 'react-test-renderer';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import FavouriteSeriesModal from '../FavouriteSeriesModal';
 
 describe('components/modal/FavouriteSeriesModal', () => {
   test('renders closed', async () => {
     const onClose = jest.fn(() => {});
-    const component = renderer.create(
+    render(
       <FavouriteSeriesModal isOpen={false} onClose={onClose} favouriteSeries={[]} save={() => {}} />,
     );
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(screen.queryByTestId('favouriteSeriesModal')).not.toBeTruthy();
   });
 
   test('renders with checkbox saving', async () => {
+    const user = userEvent.setup();
     const onClose = jest.fn(() => {});
     const save = jest.fn(() => {});
-    let component;
-    act(() => {
-      component = renderer.create(
-        <FavouriteSeriesModal isOpen onClose={onClose} favouriteSeries={[245]} save={save} />,
-      );
-    });
+    render(
+      <FavouriteSeriesModal isOpen onClose={onClose} favouriteSeries={[245]} save={save} />,
+    );
+    expect(await screen.findByTestId('favouriteSeriesModal')).toMatchSnapshot();
 
-    expect(component.toJSON()).toMatchSnapshot();
-
-    await act(async () => {
-      await component.root.findByProps({ id: 'favourite-series-245' }).props.onChange(false);
-    });
-
+    await user.click(screen.getByLabelText('13th Week iRacing Figure GR8'));
     expect(save).toHaveBeenCalledWith([]);
 
-    await act(async () => {
-      await component.root.findByProps({ id: 'favourite-series-374' }).props.onChange(true);
-    });
-
+    await user.click(screen.getByLabelText('IndyCar iRacing Series'));
     expect(save).toHaveBeenCalledWith([245, 374]);
 
-    await act(async () => {
-      await component.root.findByProps({ 'aria-label': 'Close' }).props.onClick({
-        preventDefault: () => {},
-        stopPropagation: () => {},
-      });
-    });
-
+    await user.click(screen.getByText('Close'));
     expect(onClose).toHaveBeenCalled();
   });
 });

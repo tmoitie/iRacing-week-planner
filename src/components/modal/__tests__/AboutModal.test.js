@@ -1,30 +1,28 @@
 import { describe, test } from '@jest/globals';
 import React from 'react';
-import renderer, { act } from 'react-test-renderer';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import AboutModal from '../AboutModal';
 
 describe('components/modal/AboutModal', () => {
   test('renders closed', async () => {
     const onClose = jest.fn(() => {});
-    const component = renderer.create(
+    render(
       <AboutModal isOpen={false} onClose={onClose} />,
     );
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(screen.queryByTestId('about-modal')).not.toBeTruthy();
   });
 
   test('renders open', async () => {
+    const user = userEvent.setup();
     const onClose = jest.fn(() => {});
-    let component;
+    render(
+      <AboutModal isOpen onClose={onClose} />,
+    );
 
-    act(() => { component = renderer.create(<AboutModal isOpen onClose={onClose} />); });
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(await screen.findByTestId('about-modal')).toMatchSnapshot();
 
-    await act(async () => {
-      await component.root
-        .findByProps({ 'aria-label': 'Close' })
-        .props.onClick({ preventDefault: () => {}, stopPropagation: () => {} });
-    });
-
+    await user.click(screen.getByText('Close'));
     expect(onClose).toHaveBeenCalled();
   });
 });

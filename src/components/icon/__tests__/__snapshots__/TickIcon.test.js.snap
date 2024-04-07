@@ -2,6 +2,7 @@
 
 exports[`components/icon/TickIcon renders correctly 1`] = `
 <span
-  className="glyphicon glyphicon-ok"
+  class="glyphicon glyphicon-ok"
+  data-testid="TickIcon"
 />
 `;

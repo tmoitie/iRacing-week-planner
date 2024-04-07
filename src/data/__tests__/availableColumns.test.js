@@ -1,10 +1,15 @@
-import { describe, test } from '@jest/globals';
+/* eslint jest/expect-expect: ["error", { "assertFunctionNames": ["expect", "expectColumnToSortTests"] }] */
+
+// @flow
+
+import { describe, test, expect } from '@jest/globals';
 import moment from 'moment';
 import MockDate from 'mockdate';
 
 import availableColumns from '../availableColumns';
+import type { ColumnType } from '../availableColumns';
 
-const getColumnById = (findId: string) => availableColumns.find(({ id }) => id === findId);
+const getColumnById = (findId: string): ?ColumnType => availableColumns.find(({ id }) => id === findId);
 
 const defaultSeries = {
   seriesId: 6,
@@ -23,7 +28,7 @@ const defaultSeries = {
   fixed: false,
 };
 
-const expectColumnToSortTests = (column, a, b) => {
+const expectColumnToSortTests = (column: ColumnType, a, b) => {
   expect(column.sort('asc', a, b)).toBe(1);
   expect(column.sort('asc', b, a)).toBe(-1);
   expect(column.sort('desc', a, b)).toBe(-1);

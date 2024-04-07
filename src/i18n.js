@@ -15,7 +15,7 @@ import '@formatjs/intl-datetimeformat/locale-data/tr';
 import '@formatjs/intl-datetimeformat/locale-data/ja';
 import '@formatjs/intl-datetimeformat/locale-data/nl';
 import '@formatjs/intl-datetimeformat/locale-data/pl';
-import '@formatjs/intl-datetimeformat/add-all-tz';
+import '@formatjs/intl-datetimeformat/add-golden-tz';
 
 import en from '../translations/en';
 import enGB from '../translations/en-GB';

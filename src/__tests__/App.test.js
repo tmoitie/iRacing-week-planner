@@ -1,7 +1,7 @@
 import { afterEach, beforeEach, describe, test } from '@jest/globals';
 import moment from 'moment';
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
@@ -53,9 +53,9 @@ describe('components/App', () => {
 
   test('renders correctly', () => {
     const store = mockStore(defaultStore);
-    const component = renderer.create(<Provider store={store}><App /></Provider>);
+    const { container } = render(<Provider store={store}><App /></Provider>);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
     expect(store.getActions()[0].type).toEqual(SIGNED_IN);
     expect(store.getActions()[0].user).not.toBeDefined();
 

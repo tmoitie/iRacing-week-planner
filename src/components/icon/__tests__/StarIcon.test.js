@@ -1,12 +1,12 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { render } from '@testing-library/react';
 import { describe, test } from '@jest/globals';
 import StarIcon from '../StarIcon';
 
 describe('components/icon/StarIcon', () => {
   test('renders correctly', () => {
-    const component = shallow(<StarIcon />);
+    const { container } = render(<StarIcon />);
 
-    expect(component).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

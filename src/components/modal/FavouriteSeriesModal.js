@@ -117,9 +117,10 @@ export default function FavouriteSeriesModal({ onClose, isOpen, favouriteSeries,
       title={t('Choose favorite series')}
       doneAction={onClose}
     >
-      <div>
+      <div className={styles['form-group']}>
         <input
           type="text"
+          className={styles['form-control']}
           placeholder={t('Search series')}
           aria-label="search series"
           onChange={handleChange}

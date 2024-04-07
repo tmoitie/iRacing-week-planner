@@ -1,10 +1,6 @@
-import 'regenerator-runtime/runtime';
-import { configure } from 'enzyme';
-import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import '@testing-library/jest-dom';
 import 'snapshot-diff/extend-expect';
 import jsdom from 'jsdom';
-import ReactDOM from 'react-dom';
 
 import '../src/data/season.json';
 import '../src/data/cars.json';
@@ -22,8 +18,6 @@ global.window.dataLayer = {
 };
 global.document = dom.window.document;
 
-configure({ adapter: new Adapter() });
-
 jest.mock('../src/data/season.json');
 jest.mock('../src/data/cars.json');
 jest.mock('../src/data/tracks.json');
@@ -34,8 +28,7 @@ jest.mock('../src/config');
 const oldWindowLocation = window.location;
 
 beforeAll(() => {
-  ReactDOM.createPortal = jest.fn((element) => element);
-
+  document.body.innerHTML = '';
   delete window.location;
   window.location = Object.defineProperties(
     {},
@@ -50,6 +43,6 @@ beforeAll(() => {
 });
 
 afterAll(() => {
-  ReactDOM.createPortal.mockClear();
+  document.body.innerHTML = '';
   window.location = oldWindowLocation;
 });

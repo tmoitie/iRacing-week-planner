@@ -1,35 +1,35 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { render } from '@testing-library/react';
 import { describe, test } from '@jest/globals';
+import userEvent from '@testing-library/user-event';
+import '@testing-library/jest-dom';
 
 import FavouriteStarButton from '../FavouriteStarButton';
 
 describe('components/FavouriteStarButton', () => {
-  test('renders correctly', () => {
-    const component = shallow(<FavouriteStarButton />);
+  test('renders correctly', async () => {
+    const user = userEvent.setup();
+    const { container } = render(<FavouriteStarButton />);
 
-    component.simulate('click');
-
-    expect(component).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
-  test('renders enabled with onClick', () => {
+  test('renders enabled with onClick', async () => {
+    const user = userEvent.setup();
     const onClick = jest.fn();
-    const component = shallow(<FavouriteStarButton enabled onClick={onClick} />);
+    const { container } = render(<FavouriteStarButton enabled onClick={onClick} />);
 
-    component.simulate('click');
-
-    expect(component).toMatchSnapshot();
+    await user.click(container.firstChild);
+    expect(container).toMatchSnapshot();
     expect(onClick).toHaveBeenCalledWith(false);
   });
 
-  test('renders disabled with onClick', () => {
+  test('renders disabled with onClick', async () => {
+    const user = userEvent.setup();
     const onClick = jest.fn();
-    const component = shallow(<FavouriteStarButton onClick={onClick} />);
+    const { container } = render(<FavouriteStarButton onClick={onClick} />);
 
-    component.simulate('click');
-
-    expect(component).toMatchSnapshot();
+    await user.click(container.firstChild);
     expect(onClick).toHaveBeenCalledWith(true);
   });
 });

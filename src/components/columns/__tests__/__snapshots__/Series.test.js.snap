@@ -1,62 +1,533 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/columns/Series renders correctly 1`] = `
-<Fragment>
-  <ClickableCell
-    onClick={[Function]}
-  >
-    <span>
-       
-    </span>
-    Rallycross
-  </ClickableCell>
-</Fragment>
+<body>
+  <div>
+    <table>
+      <tbody>
+        <tr
+          data-testid="table-row"
+        >
+          <td
+            class="clickableCell"
+          >
+            <button
+              class="cellButton"
+              style="min-height: 0;"
+              type="button"
+            >
+              <span>
+                 
+              </span>
+              IndyCar iRacing Series
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
 `;
 
 exports[`components/columns/Series renders correctly 2`] = `
-<Fragment>
-  <ClickableCell
-    onClick={[Function]}
+<body>
+  <div>
+    <table>
+      <tbody>
+        <tr
+          data-testid="table-row"
+        >
+          <td
+            class="clickableCell"
+          >
+            <button
+              class="cellButton"
+              style="min-height: 0;"
+              type="button"
+            >
+              <span>
+                 
+              </span>
+              IndyCar iRacing Series
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    id="modal-series-374-3598"
   >
-    <span>
-       
-    </span>
-    Rallycross
-  </ClickableCell>
-  <SeriesModal
-    isOpen={true}
-    onClose={[Function]}
-    ownedCars={Array []}
-    ownedTracks={Array []}
-    seasonId={3450}
-    seriesId={345}
-  />
-</Fragment>
+    <div
+      class="ReactModal__Overlay"
+      style="position: fixed; display: block; inset: 0; background-color: rgba(255, 255, 255, 0.75);"
+    >
+      <div
+        class="Modal__Bootstrap modal-dialog modal-lg"
+        data-testid="modal-series-374-3598"
+      >
+        <div
+          class="modal-content"
+        >
+          <div
+            class="modal-header"
+          >
+            <button
+              aria-label="Close"
+              class="close"
+              type="button"
+            >
+              <span
+                class="glyphicon glyphicon-remove"
+              />
+            </button>
+            <h4
+              class="modal-title"
+            >
+              Tracks for IndyCar iRacing Series
+            </h4>
+          </div>
+          <div
+            class="modal-body"
+            style="max-height: 55vh; overflow-y: auto;"
+          >
+            <div
+              class="container-fluid"
+            >
+              <div
+                class="table-responsive"
+              >
+                <table
+                  class="table"
+                  style="font-size: 0.8em;"
+                >
+                  <thead>
+                    <tr>
+                      <th>
+                        Week
+                      </th>
+                      <th>
+                        Track
+                      </th>
+                      <th>
+                        Start
+                      </th>
+                      <th>
+                        End
+                      </th>
+                      <th>
+                        Length
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        1
+                      </td>
+                      <td
+                        class=""
+                      >
+                        Sebring International Raceway - International
+                      </td>
+                      <td>
+                        February 22, 2022
+                      </td>
+                      <td>
+                        March 5, 2022
+                      </td>
+                      <td>
+                        <div>
+                          41L
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        2
+                      </td>
+                      <td
+                        class=""
+                      >
+                        Texas Motor Speedway - Oval
+                      </td>
+                      <td>
+                        March 6, 2022
+                      </td>
+                      <td>
+                        March 17, 2022
+                      </td>
+                      <td>
+                        <div>
+                          150L
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        3
+                      </td>
+                      <td
+                        class=""
+                      >
+                        Long Beach Street Circuit
+                      </td>
+                      <td>
+                        March 19, 2022
+                      </td>
+                      <td>
+                        March 30, 2022
+                      </td>
+                      <td>
+                        <div>
+                          65L
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        4
+                      </td>
+                      <td
+                        class=""
+                      >
+                        Barber Motorsports Park - Full Course
+                      </td>
+                      <td>
+                        April 1, 2022
+                      </td>
+                      <td>
+                        April 12, 2022
+                      </td>
+                      <td>
+                        <div>
+                          68L
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        5
+                      </td>
+                      <td
+                        class=""
+                      >
+                        Indianapolis Motor Speedway - Road Course - 2009
+                      </td>
+                      <td>
+                        April 13, 2022
+                      </td>
+                      <td>
+                        April 24, 2022
+                      </td>
+                      <td>
+                        <div>
+                          65L
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        6
+                      </td>
+                      <td
+                        class=""
+                      >
+                        Indianapolis Motor Speedway - IndyCar Oval
+                      </td>
+                      <td>
+                        April 26, 2022
+                      </td>
+                      <td>
+                        May 7, 2022
+                      </td>
+                      <td>
+                        <div>
+                          150L
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        7
+                      </td>
+                      <td
+                        class=""
+                      >
+                        Detroit Grand Prix at Belle Isle - Belle Isle
+                      </td>
+                      <td>
+                        May 9, 2022
+                      </td>
+                      <td>
+                        May 20, 2022
+                      </td>
+                      <td>
+                        <div>
+                          53L
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        8
+                      </td>
+                      <td
+                        class=""
+                      >
+                        Road America - Full Course
+                      </td>
+                      <td>
+                        May 21, 2022
+                      </td>
+                      <td>
+                        June 1, 2022
+                      </td>
+                      <td>
+                        <div>
+                          42L
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        9
+                      </td>
+                      <td
+                        class=""
+                      >
+                        Mid-Ohio Sports Car Course - Full Course
+                      </td>
+                      <td>
+                        June 3, 2022
+                      </td>
+                      <td>
+                        June 14, 2022
+                      </td>
+                      <td>
+                        <div>
+                          68L
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        10
+                      </td>
+                      <td
+                        class=""
+                      >
+                        Circuit Gilles Villeneuve
+                      </td>
+                      <td>
+                        June 16, 2022
+                      </td>
+                      <td>
+                        June 27, 2022
+                      </td>
+                      <td>
+                        <div>
+                          60L
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        11
+                      </td>
+                      <td
+                        class=""
+                      >
+                        Iowa Speedway - Oval
+                      </td>
+                      <td>
+                        June 28, 2022
+                      </td>
+                      <td>
+                        July 9, 2022
+                      </td>
+                      <td>
+                        <div>
+                          188L
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        12
+                      </td>
+                      <td
+                        class=""
+                      >
+                        Indianapolis Motor Speedway - Road Course
+                      </td>
+                      <td>
+                        July 11, 2022
+                      </td>
+                      <td>
+                        July 22, 2022
+                      </td>
+                      <td>
+                        <div>
+                          65L
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        13
+                      </td>
+                      <td
+                        class=""
+                      >
+                        Chicago Street Circuit
+                      </td>
+                      <td>
+                        July 24, 2022
+                      </td>
+                      <td>
+                        August 4, 2022
+                      </td>
+                      <td>
+                        <div>
+                          60L
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        14
+                      </td>
+                      <td
+                        class=""
+                      >
+                        World Wide Technology Raceway (Gateway) - Oval
+                      </td>
+                      <td>
+                        August 5, 2022
+                      </td>
+                      <td>
+                        August 16, 2022
+                      </td>
+                      <td>
+                        <div>
+                          195L
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        15
+                      </td>
+                      <td
+                        class=""
+                      >
+                        Watkins Glen International - Boot
+                      </td>
+                      <td>
+                        August 18, 2022
+                      </td>
+                      <td>
+                        August 29, 2022
+                      </td>
+                      <td>
+                        <div>
+                          45L
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        16
+                      </td>
+                      <td
+                        class=""
+                      >
+                        WeatherTech Raceway at Laguna Seca - Full Course
+                      </td>
+                      <td>
+                        August 31, 2022
+                      </td>
+                      <td>
+                        September 11, 2022
+                      </td>
+                      <td>
+                        <div>
+                          72L
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal-footer"
+          >
+            <button
+              class="btn btn-primary"
+              type="button"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 `;
 
 exports[`components/columns/Series renders correctly 3`] = `
-<Fragment>
-  <ClickableCell
-    onClick={[Function]}
-  >
-    <span>
-       
-    </span>
-    Rallycross
-  </ClickableCell>
-</Fragment>
+<body>
+  <div>
+    <table>
+      <tbody>
+        <tr
+          data-testid="table-row"
+        >
+          <td
+            class="clickableCell"
+          >
+            <button
+              class="cellButton"
+              style="min-height: 0;"
+              type="button"
+            >
+              <span>
+                 
+              </span>
+              IndyCar iRacing Series
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    id="modal-series-374-3598"
+  />
+</body>
 `;
 
 exports[`components/columns/Series renders favourite series 1`] = `
-<Fragment>
-  <ClickableCell
-    onClick={[Function]}
+<td
+  class="clickableCell"
+>
+  <button
+    class="cellButton"
+    style="min-height: 0;"
+    type="button"
   >
-    <StarIcon />
+    <span
+      class="glyphicon glyphicon-star"
+      data-testid="StarIcon"
+    />
     <span>
        
     </span>
     Rallycross
-  </ClickableCell>
-</Fragment>
+  </button>
+</td>
 `;

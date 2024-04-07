@@ -48,7 +48,6 @@ export function signInWithGoogle() {
       const auth = getAuth(getState().auth.firebaseApp);
 
       const provider = new GoogleAuthProvider();
-      provider.providerId;
       provider.addScope('profile');
       provider.addScope('email');
 

@@ -2,10 +2,13 @@
 
 exports[`components/columns/Track renders favourite 1`] = `
 <td
-  className=""
+  class=""
 >
   <div>
-    <StarIcon />
+    <span
+      class="glyphicon glyphicon-star"
+      data-testid="StarIcon"
+    />
     <span>
        
     </span>
@@ -15,7 +18,7 @@ exports[`components/columns/Track renders favourite 1`] = `
 
 exports[`components/columns/Track renders no own or fave 1`] = `
 <td
-  className=""
+  class=""
 >
   <div>
     <span>
@@ -27,7 +30,7 @@ exports[`components/columns/Track renders no own or fave 1`] = `
 
 exports[`components/columns/Track renders ownership 1`] = `
 <td
-  className="success"
+  class="success"
 >
   <div>
     <span>

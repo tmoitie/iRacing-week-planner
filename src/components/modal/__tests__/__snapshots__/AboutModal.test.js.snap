@@ -1,225 +1,187 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/modal/AboutModal renders closed 1`] = `null`;
-
 exports[`components/modal/AboutModal renders open 1`] = `
 <div
-  className="ReactModal__Overlay"
-  onClick={[Function]}
-  onMouseDown={[Function]}
-  style={
-    Object {
-      "backgroundColor": "rgba(255, 255, 255, 0.75)",
-      "bottom": 0,
-      "left": 0,
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-    }
-  }
+  class="Modal__Bootstrap modal-dialog modal-lg"
+  data-testid="about-modal"
 >
   <div
-    aria-modal={true}
-    className="ReactModal__Content Modal__Bootstrap modal-dialog modal-lg"
-    onClick={[Function]}
-    onKeyDown={[Function]}
-    onMouseDown={[Function]}
-    onMouseUp={[Function]}
-    role="dialog"
-    style={Object {}}
-    tabIndex="-1"
+    class="modal-content"
   >
     <div
-      className="modal-content"
+      class="modal-header"
+    >
+      <button
+        aria-label="Close"
+        class="close"
+        type="button"
+      >
+        <span
+          class="glyphicon glyphicon-remove"
+        />
+      </button>
+      <h4
+        class="modal-title"
+      >
+        About
+      </h4>
+    </div>
+    <div
+      class="modal-body"
+      style="max-height: 55vh; overflow-y: auto;"
     >
       <div
-        className="modal-header"
+        class="container-fluid"
       >
-        <button
-          aria-label="Close"
-          className="close"
-          onClick={[Function]}
-          type="button"
+        <p>
+          This tool was created by
+           
+          <a
+            href="https://twitter.com/tmoitie"
+            rel="noreferrer"
+            target="_blank"
+          >
+            tmoitie
+          </a>
+           
+          (
+          <a
+            href="http://members.iracing.com/membersite/member/CareerStats.do?custid=69636"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Tom Moitié
+          </a>
+           
+          on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on
+           
+          <a
+            href="https://github.com/tmoitie/iRacing-week-planner"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Github
+          </a>
+          . Thanks!
+        </p>
+        <p>
+          This is now costing me a few quid a month to run, so if you like using this tool, please feel free to
+           
+          <a
+            href="https://www.buymeacoffee.com/tmoitie"
+            rel="noreferrer"
+            target="_blank"
+          >
+            buy me a coffee
+          </a>
+          .
+        </p>
+        <p>
+          <button
+            class="bmcButton"
+            type="button"
+          >
+            <img
+              alt="Buy me a coffee"
+              src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
+            />
+            <span
+              style="margin-left: 5px;"
+            >
+              Buy me a coffee
+            </span>
+          </button>
+        </p>
+        <h3>
+          Contributors
+        </h3>
+        <ul
+          class="row"
         >
-          <span
-            className="glyphicon glyphicon-remove"
-          />
-        </button>
-        <h4
-          className="modal-title"
-        >
-          About
-        </h4>
-      </div>
-      <div
-        className="modal-body"
-        style={
-          Object {
-            "maxHeight": "55vh",
-            "overflowY": "auto",
-          }
-        }
-      >
-        <div
-          className="container-fluid"
-        >
-          <p>
-            This tool was created by
-             
+          <li
+            class="col-md-3 col-sm-4 col-xs-6"
+          >
             <a
-              href="https://twitter.com/tmoitie"
+              href="https://github.com/tmoitie"
               rel="noreferrer"
               target="_blank"
             >
               tmoitie
             </a>
-             
-            (
-            <a
-              href="http://members.iracing.com/membersite/member/CareerStats.do?custid=69636"
-              rel="noreferrer"
-              target="_blank"
-            >
-              Tom Moitié
-            </a>
-             
-            on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on
-             
-            <a
-              href="https://github.com/tmoitie/iRacing-week-planner"
-              rel="noreferrer"
-              target="_blank"
-            >
-              Github
-            </a>
-            . Thanks!
-          </p>
-          <p>
-            This is now costing me a few quid a month to run, so if you like using this tool, please feel free to
-             
-            <a
-              href="https://www.buymeacoffee.com/tmoitie"
-              rel="noreferrer"
-              target="_blank"
-            >
-              buy me a coffee
-            </a>
-            .
-          </p>
-          <p>
-            <button
-              className="bmcButton"
-              onClick={[Function]}
-              onKeyPress={[Function]}
-              type="button"
-            >
-              <img
-                alt="Buy me a coffee"
-                src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
-              />
-              <span
-                style={
-                  Object {
-                    "marginLeft": "5px",
-                  }
-                }
-              >
-                Buy me a coffee
-              </span>
-            </button>
-          </p>
-          <h3>
-            Contributors
-          </h3>
-          <ul
-            className="row"
+          </li>
+          <li
+            class="col-md-3 col-sm-4 col-xs-6"
           >
-            <li
-              className="col-md-3 col-sm-4 col-xs-6"
+            <a
+              href="https://github.com/flomarin88"
+              rel="noreferrer"
+              target="_blank"
             >
-              <a
-                href="https://github.com/tmoitie"
-                rel="noreferrer"
-                target="_blank"
-              >
-                tmoitie
-              </a>
+              flomarin88
+            </a>
+          </li>
+          <li
+            class="col-md-3 col-sm-4 col-xs-6"
+          >
+            Yigit Aydin
+          </li>
+          <li
+            class="col-md-3 col-sm-4 col-xs-6"
+          >
+            Rafał Noskowicz
+          </li>
+          <li
+            class="col-md-3 col-sm-4 col-xs-6"
+          >
+            Rafał Znany
+          </li>
+        </ul>
+        <h3>
+          Changelog
+        </h3>
+        <div>
+          <h4>
+            December 16, 2015
+          </h4>
+          <ul>
+            <li>
+              Add ability to 'favorite' content with the star icon.
             </li>
-            <li
-              className="col-md-3 col-sm-4 col-xs-6"
-            >
-              <a
-                href="https://github.com/flomarin88"
-                rel="noreferrer"
-                target="_blank"
-              >
-                flomarin88
-              </a>
-            </li>
-            <li
-              className="col-md-3 col-sm-4 col-xs-6"
-            >
-              Yigit Aydin
-            </li>
-            <li
-              className="col-md-3 col-sm-4 col-xs-6"
-            >
-              Rafał Noskowicz
-            </li>
-            <li
-              className="col-md-3 col-sm-4 col-xs-6"
-            >
-              Rafał Znany
+            <li>
+              Fix bug with disabled default content.
             </li>
           </ul>
-          <h3>
-            Changelog
-          </h3>
-          <div>
-            <h4>
-              December 16, 2015
-            </h4>
-            <ul>
-              <li>
-                Add ability to 'favorite' content with the star icon.
-              </li>
-              <li>
-                Fix bug with disabled default content.
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4>
-              December 15, 2015
-            </h4>
-            <ul>
-              <li>
-                Add "Select All Oval/Road" to content choosers.
-              </li>
-              <li>
-                Made free content un-unselectable.
-              </li>
-              <li>
-                Made series clickable with popup showing all race weeks.
-              </li>
-              <li>
-                Add licence class column to table.
-              </li>
-            </ul>
-          </div>
+        </div>
+        <div>
+          <h4>
+            December 15, 2015
+          </h4>
+          <ul>
+            <li>
+              Add "Select All Oval/Road" to content choosers.
+            </li>
+            <li>
+              Made free content un-unselectable.
+            </li>
+            <li>
+              Made series clickable with popup showing all race weeks.
+            </li>
+            <li>
+              Add licence class column to table.
+            </li>
+          </ul>
         </div>
       </div>
-      <div
-        className="modal-footer"
+    </div>
+    <div
+      class="modal-footer"
+    >
+      <button
+        class="btn btn-primary"
+        type="button"
       >
-        <button
-          className="btn btn-primary"
-          onClick={[Function]}
-          type="button"
-        >
-          Close
-        </button>
-      </div>
+        Close
+      </button>
     </div>
   </div>
 </div>

@@ -1,12 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { render, screen } from '@testing-library/react';
 import { describe, test } from '@jest/globals';
+import { TableWrapper } from './ColumnUtils';
+import '@testing-library/jest-dom';
 import { Licence } from '../index';
 
 describe('components/columns/Licence', () => {
   test('renders correctly', () => {
-    const component = shallow(<Licence race={{ licenceLevel: 7 }} />);
+    render(<TableWrapper><Licence race={{ licenceLevel: 7 }} /></TableWrapper>);
 
-    expect(component).toMatchSnapshot();
+    expect(screen.getByTestId('table-row').firstChild).toMatchSnapshot();
   });
 });

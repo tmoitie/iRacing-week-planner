@@ -1,14 +1,16 @@
-import { describe, test } from '@jest/globals';
+import { describe, test, expect } from '@jest/globals';
 import React from 'react';
-import { shallow } from 'enzyme';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 
 import ContentModal from '../ContentModal';
 
 describe('components/modal/ContentModal', () => {
-  test('renders correctly', () => {
+  test('renders positive interactions correctly', async () => {
+    const user = userEvent.setup();
     const save = jest.fn();
     const saveFavourites = jest.fn();
-    const component = shallow(
+    const { container } = render(
       <ContentModal
         id="cars"
         title="Cars Modal"
@@ -20,8 +22,9 @@ describe('components/modal/ContentModal', () => {
           { id: 234, skuname: 'Toyota', type: 'oval' },
           { id: 456, name: 'Mazda', type: 'road' },
           { id: 645, name: 'McLaren', type: 'road' },
+          { id: 999, name: 'Ferrari', type: 'road' },
         ]}
-        ownedContent={[123, 456, 645]}
+        ownedContent={[999]}
         defaultContent={[456]}
         idField="id"
         typeFilter={{
@@ -34,70 +37,104 @@ describe('components/modal/ContentModal', () => {
       />,
     );
 
-    expect(component).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
 
-    component.find({ id: 'cars-select-oval' }).props().onChange(true);
-    expect(save).toBeCalledWith(expect.toIncludeSameMembers([123, 234, 456, 645]));
+    await user.click(screen.getByLabelText('Select all oval'));
+    expect(save).toHaveBeenCalledWith(expect.toIncludeSameMembers([123, 234, 999]));
     save.mockClear();
 
-    component.find({ id: 'cars-select-oval' }).props().onChange(false);
-    expect(save).toBeCalledWith(expect.toIncludeSameMembers([456, 645]));
+    await user.click(screen.getByLabelText('Select all road'));
+    expect(save).toHaveBeenCalledWith(expect.toIncludeSameMembers([456, 645, 999]));
     save.mockClear();
 
-    component.find({ id: 'cars-select-road' }).props().onChange(false);
-    expect(save).toBeCalledWith(expect.toIncludeSameMembers([123, 456])); // 456 is default
+    await user.click(screen.getByLabelText('Select all'));
+    expect(save).toHaveBeenCalledWith(expect.toIncludeSameMembers([123, 234, 456, 645, 999]));
     save.mockClear();
 
-    component.find({ id: 'cars-select-road' }).props().onChange(true);
-    expect(save).toBeCalledWith(expect.toIncludeSameMembers([123, 456, 645]));
+    await user.click(screen.getByLabelText('Toyota'));
+    expect(save).toHaveBeenCalledWith(expect.toIncludeSameMembers([234, 999]));
     save.mockClear();
 
-    component.find({ id: 'cars-select-all' }).props().onChange(true);
-    expect(save).toBeCalledWith(expect.toIncludeSameMembers([123, 234, 456, 645]));
+    await user.click(screen.getByTestId('cars-favourite-oval'));
+    expect(saveFavourites).toHaveBeenCalledWith(expect.toIncludeSameMembers([123, 234, 456]));
     save.mockClear();
 
-    component.find({ id: 'cars-select-all' }).props().onChange(false);
-    expect(save).toBeCalledWith(expect.toIncludeSameMembers([456])); // 456 is default
+    await user.click(screen.getByTestId('cars-favourite-road'));
+    expect(saveFavourites).toHaveBeenCalledWith(expect.toIncludeSameMembers([456, 645, 999]));
     save.mockClear();
 
-    component.find({ id: 'cars-select-item-234' }).props().onChange(true);
-    expect(save).toBeCalledWith(expect.toIncludeSameMembers([123, 234, 456, 645]));
+    await user.click(screen.getByTestId('cars-favourite-all'));
+    expect(saveFavourites).toHaveBeenCalledWith(expect.toIncludeSameMembers([123, 234, 456, 645, 999]));
     save.mockClear();
 
-    component.find({ id: 'cars-select-item-123' }).props().onChange(false);
-    expect(save).toBeCalledWith(expect.toIncludeSameMembers([456, 645]));
+    await user.click(screen.getByTestId('cars-favourite-item-123'));
+    expect(saveFavourites).toHaveBeenCalledWith(expect.toIncludeSameMembers([123, 456]));
+    save.mockClear();
+  });
+
+  test('renders negative interactions correctly', async () => {
+    const user = userEvent.setup();
+    const save = jest.fn();
+    const saveFavourites = jest.fn();
+    const { container } = render(
+      <ContentModal
+        id="cars"
+        title="Cars Modal"
+        isOpen
+        onClose={() => {}}
+        save={save}
+        content={[
+          { id: 123, skuname: 'Ford', type: 'oval' },
+          { id: 234, skuname: 'Toyota', type: 'oval' },
+          { id: 456, name: 'Mazda', type: 'road' },
+          { id: 645, name: 'McLaren', type: 'road' },
+          { id: 999, name: 'Ferrari', type: 'road' },
+        ]}
+        ownedContent={[123, 234, 456, 645, 999]}
+        defaultContent={[456]}
+        idField="id"
+        typeFilter={{
+          key: 'type',
+          oval: 'oval',
+          road: 'road',
+        }}
+        favourites={[123, 234, 456, 645, 999]}
+        saveFavourites={saveFavourites}
+      />,
+    );
+
+    expect(container.firstChild).toMatchSnapshot();
+
+    await user.click(screen.getByLabelText('Select all oval'));
+    expect(save).toHaveBeenCalledWith(expect.toIncludeSameMembers([456, 645, 999]));
     save.mockClear();
 
-    component.find({ id: 'cars-favourite-oval' }).props().onClick(true);
-    expect(saveFavourites).toBeCalledWith(expect.toIncludeSameMembers([123, 234, 456]));
-    saveFavourites.mockClear();
+    await user.click(screen.getByLabelText('Select all road'));
+    expect(save).toHaveBeenCalledWith(expect.toIncludeSameMembers([123, 234, 456]));
+    save.mockClear();
 
-    component.find({ id: 'cars-favourite-oval' }).props().onClick(false);
-    expect(saveFavourites).toBeCalledWith(expect.toIncludeSameMembers([456]));
-    saveFavourites.mockClear();
+    await user.click(screen.getByLabelText('Select all'));
+    expect(save).toHaveBeenCalledWith(expect.toIncludeSameMembers([456]));
+    save.mockClear();
 
-    component.find({ id: 'cars-favourite-road' }).props().onClick(true);
-    expect(saveFavourites).toBeCalledWith(expect.toIncludeSameMembers([456, 645]));
-    saveFavourites.mockClear();
+    await user.click(screen.getByLabelText('Toyota'));
+    expect(save).toHaveBeenCalledWith(expect.toIncludeSameMembers([123, 456, 645, 999]));
+    save.mockClear();
 
-    component.find({ id: 'cars-favourite-road' }).props().onClick(false);
-    expect(saveFavourites).toBeCalledWith(expect.toIncludeSameMembers([]));
-    saveFavourites.mockClear();
+    await user.click(screen.getByTestId('cars-favourite-oval'));
+    expect(saveFavourites).toHaveBeenCalledWith(expect.toIncludeSameMembers([456, 645, 999]));
+    save.mockClear();
 
-    component.find({ id: 'cars-favourite-all' }).props().onClick(true);
-    expect(saveFavourites).toBeCalledWith(expect.toIncludeSameMembers([123, 234, 456, 645]));
-    saveFavourites.mockClear();
+    await user.click(screen.getByTestId('cars-favourite-road'));
+    expect(saveFavourites).toHaveBeenCalledWith(expect.toIncludeSameMembers([123, 234]));
+    save.mockClear();
 
-    component.find({ id: 'cars-favourite-all' }).props().onClick(false);
-    expect(saveFavourites).toBeCalledWith(expect.toIncludeSameMembers([]));
-    saveFavourites.mockClear();
+    await user.click(screen.getByTestId('cars-favourite-all'));
+    expect(saveFavourites).toHaveBeenCalledWith([]);
+    save.mockClear();
 
-    component.find({ id: 'cars-favourite-item-456' }).props().onClick(false);
-    expect(saveFavourites).toBeCalledWith(expect.toIncludeSameMembers([]));
-    saveFavourites.mockClear();
-
-    component.find({ id: 'cars-favourite-item-123' }).props().onClick(true);
-    expect(saveFavourites).toBeCalledWith(expect.toIncludeSameMembers([123, 456]));
-    saveFavourites.mockClear();
+    await user.click(screen.getByTestId('cars-favourite-item-123'));
+    expect(saveFavourites).toHaveBeenCalledWith(expect.toIncludeSameMembers([234, 456, 645, 999]));
+    save.mockClear();
   });
 });

@@ -2,9 +2,17 @@
 
 exports[`components/columns/Class renders correctly 1`] = `
 <td>
-  <LicenceLevel
-    effective={true}
-    licence={5}
-  />
+  <div
+    class="licenceLevelComponent licenceD"
+  >
+    <span
+      class="licenceLetter"
+    >
+      D
+    </span>
+    <span
+      class="licenceText"
+    />
+  </div>
 </td>
 `;

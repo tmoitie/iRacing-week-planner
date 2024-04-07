@@ -13,7 +13,7 @@ exports[`components/BuyACoffee opens link with geolocation 1`] = `
   />
   <span
     style={
-      Object {
+      {
         "marginLeft": "5px",
       }
     }

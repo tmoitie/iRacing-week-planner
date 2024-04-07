@@ -1,51 +1,58 @@
-import { describe, test, expect } from '@jest/globals';
 import React from 'react';
-import { shallow } from 'enzyme';
-import SeriesModal from '../../modal/SeriesModal';
+import { render, screen } from '@testing-library/react';
+import { describe, test, expect } from '@jest/globals';
+import userEvent from '@testing-library/user-event';
+import { TableWrapper } from './ColumnUtils';
 
 import Series from '../Series';
-import ClickableCell from '../ClickableCell';
 
 describe('components/columns/Series', () => {
-  test('renders correctly', () => {
-    const component = shallow(
-      <Series
-        race={{
-          seriesId: 345,
-          seasonId: 3450,
-          series: 'Rallycross',
-        }}
-        favouriteSeries={[123, 763]}
-        ownedTracks={[]}
-        ownedCars={[]}
-      />,
+  test('renders correctly', async () => {
+    const user = userEvent.setup();
+
+    const { container, baseElement, unmount } = render(
+      <TableWrapper>
+        <Series
+          race={{
+            seriesId: 374,
+            seasonId: 3598,
+            series: 'IndyCar iRacing Series',
+          }}
+          favouriteSeries={[123, 763]}
+          ownedTracks={[]}
+          ownedCars={[]}
+        />
+      </TableWrapper>,
     );
 
-    expect(component).toMatchSnapshot();
+    expect(baseElement).toMatchSnapshot();
 
-    component.find(ClickableCell).first().props().onClick();
+    await user.click(screen.getByText('IndyCar iRacing Series'));
+    await screen.findByText('Close');
+    expect(baseElement).toMatchSnapshot();
 
-    expect(component).toMatchSnapshot();
+    await user.click(screen.getByText('Close'));
+    expect(baseElement).toMatchSnapshot();
 
-    component.find(SeriesModal).first().props().onClose();
-
-    expect(component).toMatchSnapshot();
+    unmount();
   });
 
   test('renders favourite series', () => {
-    const component = shallow(
-      <Series
-        race={{
-          seriesId: 345,
-          seasonId: 3450,
-          series: 'Rallycross',
-        }}
-        favouriteSeries={[345, 567]}
-        ownedTracks={[123]}
-        ownedCars={[]}
-      />,
+    render(
+      <TableWrapper>
+        <Series
+          race={{
+            seriesId: 345,
+            seasonId: 3450,
+            series: 'Rallycross',
+          }}
+          favouriteSeries={[345, 567]}
+          ownedTracks={[123]}
+          ownedCars={[]}
+        />
+      </TableWrapper>,
     );
 
-    expect(component).toMatchSnapshot();
+    expect(screen.getByTestId('table-row').firstChild).toMatchSnapshot();
   });
 });

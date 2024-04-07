@@ -45,7 +45,6 @@ module.exports = {
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
       '<rootDir>/__mocks__/fileMock.js',
     '\\.(css|scss)$': 'identity-obj-proxy',
-    "axios": "axios/dist/node/axios.cjs",
   },
   // modulePathIgnorePatterns: [],
   // notify: false,
@@ -65,19 +64,17 @@ module.exports = {
   // setupFiles: [],
   setupFilesAfterEnv: ['./__mocks__/client.js', 'jest-extended/all', '<rootDir>/test/setup.js'],
   // slowTestThreshold: 5,
-  snapshotSerializers: ['enzyme-to-json/serializer'],
   testEnvironment: 'jsdom',
   // testEnvironmentOptions: {},
   // testLocationInResults: false,
-  // testMatch: [
-  //   "**/__tests__/**/*.[jt]s?(x)",
-  //   "**/?(*.)+(spec|test).[tj]s?(x)"
-  // ],
+  testMatch: [
+    // "**/__tests__/**/*.[jt]s?(x)",
+    "**/?(*.)+(spec|test).[tj]s?(x)"
+  ],
   testPathIgnorePatterns: [],
   // testRegex: [],
   // testResultsProcessor: undefined,
   // testRunner: "jasmine2",
-  testURL: 'http://localhost',
   // timers: "real",
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',

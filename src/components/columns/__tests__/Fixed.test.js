@@ -1,20 +1,23 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { render, screen } from '@testing-library/react';
 import { describe, test } from '@jest/globals';
-import TickIcon from '../../icon/TickIcon';
+import { TableWrapper } from './ColumnUtils';
+import '@testing-library/jest-dom';
 
 import Fixed from '../Fixed';
 
 describe('components/columns/Fixed', () => {
-  test('renders correctly', () => {
-    const component = shallow(<Fixed race={{ fixed: true }} />);
+  test('renders true', () => {
+    render(<TableWrapper><Fixed race={{ fixed: true }} /></TableWrapper>);
 
-    expect(component).toMatchSnapshot();
-    expect(component.find(TickIcon).length).toBe(1);
+    expect(screen.getByTestId('table-row').firstChild).toMatchSnapshot();
+    expect(screen.queryByTestId('TickIcon')).toBeInTheDocument();
+  });
 
-    const component2 = shallow(<Fixed race={{ fixed: false }} />);
+  test('renders false', () => {
+    render(<TableWrapper><Fixed race={{ fixed: false }} /></TableWrapper>);
 
-    expect(component2).toMatchSnapshot();
-    expect(component2.find(TickIcon).length).toBe(0);
+    expect(screen.getByTestId('table-row').firstChild).toMatchSnapshot();
+    expect(screen.queryByTestId('TickIcon')).not.toBeInTheDocument();
   });
 });

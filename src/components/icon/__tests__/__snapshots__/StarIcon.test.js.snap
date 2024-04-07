@@ -2,6 +2,7 @@
 
 exports[`components/icon/StarIcon renders correctly 1`] = `
 <span
-  className="glyphicon glyphicon-star"
+  class="glyphicon glyphicon-star"
+  data-testid="StarIcon"
 />
 `;

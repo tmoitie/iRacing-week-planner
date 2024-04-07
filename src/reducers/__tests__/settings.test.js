@@ -29,7 +29,7 @@ describe('reducers/settings', () => {
             ownedTracks: [34, 165],
             filters: {
               type: ['Road', 'Oval'],
-            }
+            },
           },
         },
       },

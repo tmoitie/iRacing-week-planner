@@ -1,6 +1,7 @@
 import { describe, test } from '@jest/globals';
 import React from 'react';
-import renderer, { act } from 'react-test-renderer';
+import { render, screen, within } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import { Provider } from 'react-redux';
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
@@ -31,64 +32,35 @@ describe('components/GlobalModals', () => {
 
   test('renders all closed', async () => {
     const store = mockStore(defaultStore);
-    let component;
+    const { container } = render(<Provider store={store}><GlobalModals /></Provider>);
 
-    await act(async () => {
-      component = renderer.create(<Provider store={store}><GlobalModals /></Provider>);
-    });
-
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   test('renders open options, closing and saving', async () => {
+    const user = userEvent.setup();
     let store = mockStore({ ...defaultStore, app: { currentModal: 'options' } });
-    let component;
+    const { baseElement, rerender } = render(<Provider store={store}><GlobalModals /></Provider>);
 
-    await act(async () => {
-      component = renderer.create(<Provider store={store}><GlobalModals /></Provider>);
-    });
+    expect(baseElement).toMatchSnapshot();
 
-    expect(component.toJSON()).toMatchSnapshot();
-
-    await act(async () => {
-      await component.root
-        .findByProps({ id: 'optionsModal' })
-        .findByProps({ id: 'options-columns-id' })
-        .props.onChange(true);
-    });
+    await user.click(within(screen.getByTestId('optionsModal')).getByLabelText('ID'));
     expect(store.getActions()).toContainEqual({ type: UPDATE_SETTING, payload: { key: 'columns', value: ['id'] } });
 
-    await act(async () => {
-      await component.root
-        .findByProps({ id: 'optionsModal' })
-        .findByProps({ 'aria-label': 'Close' })
-        .props.onClick({ preventDefault: () => {}, stopPropagation: () => {} });
-    });
+    await user.click(within(screen.getByTestId('optionsModal')).getByLabelText('Close'));
     expect(store.getActions()).toContainEqual({ type: CHANGE_MODAL, modalName: null });
 
-    act(() => {
-      store = mockStore({ ...defaultStore, app: { currentModal: 'favourite-series' } });
-      component.update(<Provider store={store}><GlobalModals /></Provider>);
-    });
+    store = mockStore({ ...defaultStore, app: { currentModal: 'favourite-series' } });
+    rerender(<Provider store={store}><GlobalModals /></Provider>);
 
-    await act(async () => {
-      await component.root
-        .findByProps({ id: 'favouriteSeriesModal' })
-        .findByProps({ id: 'favourite-series-245' })
-        .props.onChange(true);
-    });
+    await user.click(within(screen.getByTestId('favouriteSeriesModal')).getByLabelText('13th Week iRacing Figure GR8'));
 
     expect(store.getActions()).toContainEqual({
       type: UPDATE_SETTING,
       payload: { key: 'favouriteSeries', value: [245] },
     });
 
-    await act(async () => {
-      await component.root
-        .findByProps({ id: 'favouriteSeriesModal' })
-        .findByProps({ children: 'Close' })
-        .props.onClick({ preventDefault: () => {}, stopPropagation: () => {} });
-    });
+    await user.click(within(screen.getByTestId('favouriteSeriesModal')).getByLabelText('Close'));
     expect(store.getActions()).toContainEqual({ type: CHANGE_MODAL, modalName: null });
   });
 });

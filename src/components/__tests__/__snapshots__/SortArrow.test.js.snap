@@ -1,13 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/SortArrow renders down correctly 1`] = `
-<span
-  className="glyphicon glyphicon-triangle-bottom"
-/>
+<div>
+  <span
+    class="glyphicon glyphicon-triangle-bottom"
+  />
+</div>
 `;
 
 exports[`components/SortArrow renders up correctly 1`] = `
-<span
-  className="glyphicon glyphicon-triangle-top"
-/>
+<div>
+  <span
+    class="glyphicon glyphicon-triangle-top"
+  />
+</div>
 `;

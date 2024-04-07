@@ -52,7 +52,7 @@ const sortByDate = (order: 'asc' | 'desc', a?: moment$Moment, b?: moment$Moment)
   return a.isAfter(b) ? -1 : 1;
 };
 
-const getSortByDate = (key) => (order: 'asc' | 'desc', a: SeriesRace, b: SeriesRace) => {
+const getSortByDate = (key: string) => (order: 'asc' | 'desc', a: SeriesRace, b: SeriesRace) => {
   const sort = sortByDate(order, a[key], b[key]);
   return sort !== 0 ? sort : defaultSort(order, a, b);
 };
@@ -62,6 +62,7 @@ export type ColumnType = {
   header: string,
   component: ElementType,
   default?: boolean,
+  forced?: boolean,
   sort?: (order: 'asc' | 'desc', a: SeriesRace, b: SeriesRace) => number,
 };
 
@@ -84,9 +85,7 @@ const availableColumns: Array<ColumnType> = [{
   header: 'Class',
   component: Class,
   default: true,
-  sort: (order, a, b) => {
-    return defaultSort(order, a, b);
-  },
+  sort: (order, a, b) => defaultSort(order, a, b),
 }, {
   id: 'licence',
   header: 'Licence',
@@ -237,7 +236,7 @@ const availableColumns: Array<ColumnType> = [{
       return order === 'asc' ? -1 : 1;
     }
     const sort = sortByDate(order, aNextDate, bNextDate);
-    
+
     return sort !== 0 ? sort : defaultSort(order, a, b);
   },
 }, {

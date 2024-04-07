@@ -1,6 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/columns/RaceTimes renders everytime 1`] = `[Function]`;
+exports[`components/columns/RaceTimes renders everytime 1`] = `
+<td>
+  <div>
+    Every 3 hours starting at 1:30 AM UTC
+  </div>
+</td>
+`;
 
 exports[`components/columns/RaceTimes renders everytime no offset 1`] = `
 <td>
@@ -18,17 +24,11 @@ exports[`components/columns/RaceTimes renders no time data 1`] = `
 
 exports[`components/columns/RaceTimes renders settimes 1`] = `
 <td
-  className="clickableCell"
+  class="clickableCell"
 >
   <button
-    className="cellButton"
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    style={
-      Object {
-        "minHeight": 0,
-      }
-    }
+    class="cellButton"
+    style="min-height: 0;"
     type="button"
   >
     Set times
@@ -37,127 +37,118 @@ exports[`components/columns/RaceTimes renders settimes 1`] = `
 `;
 
 exports[`components/columns/RaceTimes renders settimes 2`] = `
-Array [
-  <td
-    className="clickableCell"
-  >
-    <button
-      className="cellButton"
-      onClick={[Function]}
-      onKeyPress={[Function]}
-      style={
-        Object {
-          "minHeight": 0,
-        }
-      }
-      type="button"
-    >
-      Set times
-    </button>
-  </td>,
+<body>
+  <div>
+    <table>
+      <tbody>
+        <tr
+          data-testid="table-row"
+        >
+          <td
+            class="clickableCell"
+          >
+            <button
+              class="cellButton"
+              style="min-height: 0;"
+              type="button"
+            >
+              Set times
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
   <div
-    className="ReactModal__Overlay"
-    onClick={[Function]}
-    onMouseDown={[Function]}
-    style={
-      Object {
-        "backgroundColor": "rgba(255, 255, 255, 0.75)",
-        "bottom": 0,
-        "left": 0,
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
+    id="undefined"
   >
     <div
-      aria-modal={true}
-      className="ReactModal__Content Modal__Bootstrap modal-dialog modal-lg"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      onMouseDown={[Function]}
-      onMouseUp={[Function]}
-      role="dialog"
-      style={Object {}}
-      tabIndex="-1"
+      class="ReactModal__Overlay"
+      style="position: fixed; display: block; inset: 0; background-color: rgba(255, 255, 255, 0.75);"
     >
       <div
-        className="modal-content"
+        class="Modal__Bootstrap modal-dialog modal-lg"
       >
         <div
-          className="modal-header"
-        >
-          <button
-            aria-label="Close"
-            className="close"
-            onClick={[Function]}
-            type="button"
-          >
-            <span
-              className="glyphicon glyphicon-remove"
-            />
-          </button>
-          <h4
-            className="modal-title"
-          >
-            Set times for Mazda Cup
-          </h4>
-        </div>
-        <div
-          className="modal-body"
-          style={
-            Object {
-              "maxHeight": "55vh",
-              "overflowY": "auto",
-            }
-          }
+          class="modal-content"
         >
           <div
-            className="container-fluid"
+            class="modal-header"
           >
-            <ul>
-              <li>
-                Friday, 2:00 AM GMT (Friday, 2:00 AM UTC)
-              </li>
-              <li>
-                Saturday, 1:00 PM GMT (Saturday, 1:00 PM UTC)
-              </li>
-            </ul>
+            <button
+              aria-label="Close"
+              class="close"
+              type="button"
+            >
+              <span
+                class="glyphicon glyphicon-remove"
+              />
+            </button>
+            <h4
+              class="modal-title"
+            >
+              Set times for Mazda Cup
+            </h4>
           </div>
-        </div>
-        <div
-          className="modal-footer"
-        >
-          <button
-            className="btn btn-primary"
-            onClick={[Function]}
-            type="button"
+          <div
+            class="modal-body"
+            style="max-height: 55vh; overflow-y: auto;"
           >
-            Close
-          </button>
+            <div
+              class="container-fluid"
+            >
+              <ul>
+                <li>
+                  Friday, 2:00 AM GMT (Friday, 2:00 AM UTC)
+                </li>
+                <li>
+                  Saturday, 1:00 PM GMT (Saturday, 1:00 PM UTC)
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="modal-footer"
+          >
+            <button
+              class="btn btn-primary"
+              type="button"
+            >
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>,
-]
+  </div>
+</body>
 `;
 
 exports[`components/columns/RaceTimes renders settimes 3`] = `
-<td
-  className="clickableCell"
->
-  <button
-    className="cellButton"
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    style={
-      Object {
-        "minHeight": 0,
-      }
-    }
-    type="button"
-  >
-    Set times
-  </button>
-</td>
+<body>
+  <div>
+    <table>
+      <tbody>
+        <tr
+          data-testid="table-row"
+        >
+          <td
+            class="clickableCell"
+          >
+            <button
+              class="cellButton"
+              style="min-height: 0;"
+              type="button"
+            >
+              Set times
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    id="undefined"
+  />
+</body>
 `;

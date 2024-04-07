@@ -70,7 +70,7 @@ export const defaultSettings: SettingOptions = {
 
 function synchroniseLegacyChanges(state) {
   const newState = { ...state };
-  
+
   newState.ownedCars = uniq([
     ...newState.ownedCars,
     ...defaultSettings.ownedCars,
@@ -80,7 +80,7 @@ function synchroniseLegacyChanges(state) {
     ...newState.ownedTracks,
     ...defaultSettings.ownedTracks,
   ]);
-  
+
   const hasRoadFilter = newState.filters.type.includes('Road');
 
   if (hasRoadFilter) {
@@ -88,7 +88,7 @@ function synchroniseLegacyChanges(state) {
     newState.filters.type = newState.filters.type.filter((t) => t !== 'Road');
   }
 
-  return newState
+  return newState;
 }
 
 export default function settings(initState: SettingOptions, { type, payload }): SettingOptions {

@@ -1,145 +1,108 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/modal/FavouriteSeriesModal renders closed 1`] = `null`;
-
 exports[`components/modal/FavouriteSeriesModal renders with checkbox saving 1`] = `
 <div
-  className="ReactModal__Overlay"
-  onClick={[Function]}
-  onMouseDown={[Function]}
-  style={
-    Object {
-      "backgroundColor": "rgba(255, 255, 255, 0.75)",
-      "bottom": 0,
-      "left": 0,
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-    }
-  }
+  class="Modal__Bootstrap modal-dialog modal-lg"
+  data-testid="favouriteSeriesModal"
 >
   <div
-    aria-modal={true}
-    className="ReactModal__Content Modal__Bootstrap modal-dialog modal-lg"
-    id="favouriteSeriesModal"
-    onClick={[Function]}
-    onKeyDown={[Function]}
-    onMouseDown={[Function]}
-    onMouseUp={[Function]}
-    role="dialog"
-    style={Object {}}
-    tabIndex="-1"
+    class="modal-content"
   >
     <div
-      className="modal-content"
+      class="modal-header"
     >
-      <div
-        className="modal-header"
+      <button
+        aria-label="Close"
+        class="close"
+        type="button"
       >
-        <button
-          aria-label="Close"
-          className="close"
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="glyphicon glyphicon-remove"
-          />
-        </button>
-        <h4
-          className="modal-title"
-        >
-          Choose favorite series
-        </h4>
+        <span
+          class="glyphicon glyphicon-remove"
+        />
+      </button>
+      <h4
+        class="modal-title"
+      >
+        Choose favorite series
+      </h4>
+    </div>
+    <div
+      class="modal-body"
+      style="max-height: 55vh; overflow-y: auto;"
+    >
+      <div>
+        <input
+          aria-label="search series"
+          placeholder="Search series"
+          type="text"
+          value=""
+        />
       </div>
       <div
-        className="modal-body"
-        style={
-          Object {
-            "maxHeight": "55vh",
-            "overflowY": "auto",
-          }
-        }
+        class="container-fluid"
       >
-        <div>
-          <input
-            aria-label="search series"
-            onChange={[Function]}
-            placeholder="Search series"
-            type="text"
-            value=""
-          />
-        </div>
+        <h3>
+          Oval
+        </h3>
         <div
-          className="container-fluid"
+          class="row"
         >
-          <h3>
-            Oval
-          </h3>
           <div
-            className="row"
+            class="col-md-6"
           >
             <div
-              className="col-md-6"
+              class="checkbox"
+              data-testid="favourite-series-245"
             >
-              <div
-                className="checkbox"
+              <label
+                for="favourite-series-245"
               >
-                <label
-                  htmlFor="favourite-series-245"
-                >
-                  <input
-                    checked={true}
-                    disabled={false}
-                    id="favourite-series-245"
-                    onChange={[Function]}
-                    type="checkbox"
-                  />
-                  13th Week iRacing Figure GR8
-                </label>
-              </div>
+                <input
+                  checked=""
+                  id="favourite-series-245"
+                  type="checkbox"
+                />
+                13th Week iRacing Figure GR8
+              </label>
             </div>
           </div>
-          <h3>
-            Sports Car
-          </h3>
+        </div>
+        <h3>
+          Sports Car
+        </h3>
+        <div
+          class="row"
+        >
           <div
-            className="row"
+            class="col-md-6"
           >
             <div
-              className="col-md-6"
+              class="checkbox"
+              data-testid="favourite-series-374"
             >
-              <div
-                className="checkbox"
+              <label
+                for="favourite-series-374"
               >
-                <label
-                  htmlFor="favourite-series-374"
-                >
-                  <input
-                    checked={false}
-                    disabled={false}
-                    id="favourite-series-374"
-                    onChange={[Function]}
-                    type="checkbox"
-                  />
-                  IndyCar iRacing Series
-                </label>
-              </div>
+                <input
+                  id="favourite-series-374"
+                  type="checkbox"
+                />
+                IndyCar iRacing Series
+              </label>
             </div>
           </div>
         </div>
       </div>
-      <div
-        className="modal-footer"
+    </div>
+    <div
+      class="modal-footer"
+    >
+      <button
+        class="btn btn-primary"
+        type="button"
       >
-        <button
-          className="btn btn-primary"
-          onClick={[Function]}
-          type="button"
-        >
-          Close
-        </button>
-      </div>
+        Close
+      </button>
     </div>
   </div>
 </div>
