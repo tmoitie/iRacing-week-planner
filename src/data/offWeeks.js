@@ -256,7 +256,7 @@ export default {
   // 501 │ 4806   │ Dirt        │ C     │ Dirt 410 Sprint Car Tour - Fixed | 2024-06-04 | recheck - missing weeks
   4806: {
     offWeeks: [
-      0.1, 0.1
+      0.1, 0.1,
     ],
   },
   // 275 │ 4862   │ Sports Car  │ D     │ Nurburgring Endurance Championship | 2024-10-29
@@ -274,10 +274,10 @@ export default {
     ],
   },
 
-  // 492 │ 4755   │ Sports Car  │ C     │ IMSA Michelin Pilot Challenge Series | 2024-06-04 | recheck - missing weeks
+  // 492 │ 4755   │ Sports Car  │ C     │ IMSA Michelin Pilot Challenge Series | 2024-06-04
   4755: {
     offWeeks: [
-      0.1, 0.1, 1.1, 2.1, 3.1, 4.1, 5.1
+      0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
     ],
   },
 };
