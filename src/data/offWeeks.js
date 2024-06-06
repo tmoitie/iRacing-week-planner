@@ -32,13 +32,6 @@ export default {
   // 3972: {
   //   weekEndOffset: { days: 7 },
   // },
-  // 478 │ 3965 │ eNASCAR RTP Contender Series
-  // 3965: {
-  //   weekStartOffset: { days: 6 },
-  //   offWeeks: [
-  //     3.1,
-  //   ],
-  // },
   // 229 │ 4113 │ NASCAR iRacing Series - Open | 2023-11-07
   // 4113: {
   //   offWeeks: [
@@ -151,21 +144,21 @@ export default {
     ],
   },
   // 438 │ 4704   │ Oval │ A     │ eNASCAR Road to Pro Qual Series - Round 1 | 2024-05-28
-  4704: {
-    offWeeks: [
-      1.1, 2.1, 3.1, 4.1, 5.1, 6.1, 7.1,
-    ],
-  },
+  // 4704: {
+  //   offWeeks: [
+  //     1.1, 2.1, 3.1, 4.1, 5.1, 6.1, 7.1,
+  //   ],
+  // },
   // 495 │ 4828   │ Road │ C     │ Formula A - Grand Prix Tour | 2024-12-10
   4828: {
     offWeeks: [
-      2.1, 3.1, 4.1, 5.1, 6.1, 8.1, 9.1, 12.1, 14.1, 14.1, 14.1, 16.1, 18.1, 18.1, 18.1, 21.1, 21.1, 
+      2.1, 3.1, 4.1, 5.1, 6.1, 8.1, 9.1, 12.1, 14.1, 14.1, 14.1, 16.1, 18.1, 18.1, 18.1, 21.1, 21.1,
     ],
   },
   // 496 │ 4829   │ Road │ C     │ Formula A - Grand Prix Tour - Fixed │ 2024-12-10
   4829: {
     offWeeks: [
-      2.1, 3.1, 4.1, 5.1, 6.1, 8.1, 9.1, 12.1, 14.1, 14.1, 14.1, 16.1, 18.1, 18.1, 18.1, 21.1, 21.1, 
+      2.1, 3.1, 4.1, 5.1, 6.1, 8.1, 9.1, 12.1, 14.1, 14.1, 14.1, 16.1, 18.1, 18.1, 18.1, 21.1, 21.1,
     ],
   },
   // 374 │ 4831   │ Road │ C     │ INDYCAR iRacing Series | 2024-09-17
@@ -175,90 +168,90 @@ export default {
     ],
   },
   // 538 │ 4822   │ Oval        │ D     │ Draft Master - Fixed | 2024-06-04
-  4822: {
-    carByWeek: [
-      [10068], // 1 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
-      [10481, 10530, 10459], // 2 NASCAR Trucks
-      [10527, 10482, 10483, 10566], // 3 NASCAR Classic 1987
-      [10503, 10504, 10505], // 4 NASCAR Next Gen
-      [10068], // 5 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
-      [10481, 10530, 10459], // 6 NASCAR Trucks
-      [10527, 10482, 10483, 10566], // 7 NASCAR Classic 1987
-      [10503, 10504, 10505], // 8 NASCAR Next Gen
-      [10068], // 9 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
-      [10481, 10530, 10459], // 10 NASCAR Trucks
-      [10527, 10482, 10483, 10566], // 11 NASCAR Classic 1987
-      [10503, 10504, 10505], // 12 NASCAR Next Gen
-    ],
-    carClassShortNameByWeek: [
-      ['[Legacy] NASCAR Cup Chevrolet Impala COT - 2009'], // 1 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
-      ['NASCAR Trucks'], // 2 NASCAR Trucks
-      ['NASCAR 1987'], // 3 NASCAR Classic 1987
-      ['NASCAR 2022 NG'], // 4 NASCAR Next Gen
-      ['[Legacy] NASCAR Cup Chevrolet Impala COT - 2009'], // 5 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
-      ['NASCAR Trucks'], // 6 NASCAR Trucks
-      ['NASCAR 1987'], // 7 NASCAR Classic 1987
-      ['NASCAR 2022 NG'], // 8 NASCAR Next Gen
-      ['[Legacy] NASCAR Cup Chevrolet Impala COT - 2009'], // 9 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
-      ['NASCAR Trucks'], // 10 NASCAR Trucks
-      ['NASCAR 1987'], // 11 NASCAR Classic 1987
-      ['NASCAR 2022 NG'], // 12 NASCAR Next Gen
-    ],
-  },
+  // 4822: {
+  //   carByWeek: [
+  //     [10068], // 1 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+  //     [10481, 10530, 10459], // 2 NASCAR Trucks
+  //     [10527, 10482, 10483, 10566], // 3 NASCAR Classic 1987
+  //     [10503, 10504, 10505], // 4 NASCAR Next Gen
+  //     [10068], // 5 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+  //     [10481, 10530, 10459], // 6 NASCAR Trucks
+  //     [10527, 10482, 10483, 10566], // 7 NASCAR Classic 1987
+  //     [10503, 10504, 10505], // 8 NASCAR Next Gen
+  //     [10068], // 9 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+  //     [10481, 10530, 10459], // 10 NASCAR Trucks
+  //     [10527, 10482, 10483, 10566], // 11 NASCAR Classic 1987
+  //     [10503, 10504, 10505], // 12 NASCAR Next Gen
+  //   ],
+  //   carClassShortNameByWeek: [
+  //     ['[Legacy] NASCAR Cup Chevrolet Impala COT - 2009'], // 1 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+  //     ['NASCAR Trucks'], // 2 NASCAR Trucks
+  //     ['NASCAR 1987'], // 3 NASCAR Classic 1987
+  //     ['NASCAR 2022 NG'], // 4 NASCAR Next Gen
+  //     ['[Legacy] NASCAR Cup Chevrolet Impala COT - 2009'], // 5 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+  //     ['NASCAR Trucks'], // 6 NASCAR Trucks
+  //     ['NASCAR 1987'], // 7 NASCAR Classic 1987
+  //     ['NASCAR 2022 NG'], // 8 NASCAR Next Gen
+  //     ['[Legacy] NASCAR Cup Chevrolet Impala COT - 2009'], // 9 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+  //     ['NASCAR Trucks'], // 10 NASCAR Trucks
+  //     ['NASCAR 1987'], // 11 NASCAR Classic 1987
+  //     ['NASCAR 2022 NG'], // 12 NASCAR Next Gen
+  //   ],
+  // },
   // 526 │ 4820   │ Sports Car  │ C     │ Ring Meister Ricmotech Series - Fixed | 2024-06-04
-  4820: {
-    carByWeek: [
-      [10306], // 1 Cadillac CTS-V Racecar
-      [10548], // 2 Renault Clio
-      [10552], // 3 Ligier JS P320
-      [10110], // 4 Lotus 79
-      [10517], // 5 Honda Civic Type R TCR
-      [10457], // 6 BMW M8 GTE
-      [10524], // 7 Stock Car Brasil Chevrolet Cruze
-      [10394], // 8 Global Mazda MX-5 Cup
-      [10113], // 9 Chevrolet Corvette C6.R GT
-      [10563], // 10 Ferrari 296 GT3
-      [10040], // 11 Radical SR8
-      [10507], // 12 Formula Vee
-    ],
-    carClassShortNameByWeek: [
-      ['Cadillac CTS-VR'], // 1 Cadillac CTS-V Racecar
-      ['Renault Clio'], // 2 Renault Clio
-      ['Ligier JS P320'], // 3 Ligier JS P320
-      ['Lotus 79'], // 4 Lotus 79
-      ['Civic Type R'], // 5 Honda Civic Type R TCR
-      ['BMW M8 GTE'], // 6 BMW M8 GTE
-      ['Stock Car Brasil'], // 7 Stock Car Brasil Chevrolet Cruze
-      ['MX5 Cup 2016'], // 8 Global Mazda MX-5 Cup
-      ['C6R GT1'], // 9 Chevrolet Corvette C6.R GT
-      ['Ferrari 296 GT3'], // 10 Ferrari 296 GT3
-      ['SR8'], // 11 Radical SR8
-      ['Formula Vee'], // 12 Formula Vee
-    ],
-  },
+  // 4820: {
+  //   carByWeek: [
+  //     [10306], // 1 Cadillac CTS-V Racecar
+  //     [10548], // 2 Renault Clio
+  //     [10552], // 3 Ligier JS P320
+  //     [10110], // 4 Lotus 79
+  //     [10517], // 5 Honda Civic Type R TCR
+  //     [10457], // 6 BMW M8 GTE
+  //     [10524], // 7 Stock Car Brasil Chevrolet Cruze
+  //     [10394], // 8 Global Mazda MX-5 Cup
+  //     [10113], // 9 Chevrolet Corvette C6.R GT
+  //     [10563], // 10 Ferrari 296 GT3
+  //     [10040], // 11 Radical SR8
+  //     [10507], // 12 Formula Vee
+  //   ],
+  //   carClassShortNameByWeek: [
+  //     ['Cadillac CTS-VR'], // 1 Cadillac CTS-V Racecar
+  //     ['Renault Clio'], // 2 Renault Clio
+  //     ['Ligier JS P320'], // 3 Ligier JS P320
+  //     ['Lotus 79'], // 4 Lotus 79
+  //     ['Civic Type R'], // 5 Honda Civic Type R TCR
+  //     ['BMW M8 GTE'], // 6 BMW M8 GTE
+  //     ['Stock Car Brasil'], // 7 Stock Car Brasil Chevrolet Cruze
+  //     ['MX5 Cup 2016'], // 8 Global Mazda MX-5 Cup
+  //     ['C6R GT1'], // 9 Chevrolet Corvette C6.R GT
+  //     ['Ferrari 296 GT3'], // 10 Ferrari 296 GT3
+  //     ['SR8'], // 11 Radical SR8
+  //     ['Formula Vee'], // 12 Formula Vee
+  //   ],
+  // },
   // 557 │ 4825   │ Sports Car  │ D     │ BMW M Power Tour - Fixed | 2024-06-04
-  4825: {
-    weekEndOffset: { days: 7 },
-  },
+  // 4825: {
+  //   weekEndOffset: { days: 7 },
+  // },
   // 331 │ 4778   │ Sports Car  │ B     │ Global Endurance CONSPIT Tour  | 2024-06-04
-  4778: {
-    weekStartOffset: { days: 7 },
-    offWeeks: [
-      1.1, 2.1, 3.1, 4.1, 5.1,
-    ],
-  },
+  // 4778: {
+  //   weekStartOffset: { days: 7 },
+  //   offWeeks: [
+  //     1.1, 2.1, 3.1, 4.1, 5.1,
+  //   ],
+  // },
   // 419 │ 4782   │ Sports Car  │ B     │ IMSA Endurance Series  | 2024-05-28
-  4782: {
-    offWeeks: [
-      1.1, 2.1, 3.1, 4.1, 5.1,
-    ],
-  },
+  // 4782: {
+  //   offWeeks: [
+  //     1.1, 2.1, 3.1, 4.1, 5.1,
+  //   ],
+  // },
   // 501 │ 4806   │ Dirt        │ C     │ Dirt 410 Sprint Car Tour - Fixed | 2024-06-04 | recheck - missing weeks
-  4806: {
-    offWeeks: [
-      0.1, 0.1,
-    ],
-  },
+  // 4806: {
+  //   offWeeks: [
+  //     0.1, 0.1,
+  //   ],
+  // },
   // 275 │ 4862   │ Sports Car  │ D     │ Nurburgring Endurance Championship | 2024-10-29
   4862: {
     offWeeks: [
@@ -275,9 +268,15 @@ export default {
   },
 
   // 492 │ 4755   │ Sports Car  │ C     │ IMSA Michelin Pilot Challenge Series | 2024-06-04
-  4755: {
+  // 4755: {
+  //   offWeeks: [
+  //     0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
+  //   ],
+  // },
+  // 439 │ 4998 │ eNASCAR Road to Pro Qual Series - Round 2 | 2024-10-01
+  4993: {
     offWeeks: [
-      0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
+      1.1, 2.1, 3.1, 4.1, 5.1, 5.1, 6.1,
     ],
   },
 };
