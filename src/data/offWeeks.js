@@ -279,4 +279,97 @@ export default {
       1.1, 2.1, 3.1, 4.1, 5.1, 5.1, 6.1,
     ],
   },
+  // 538 │ 4938   │ Oval        │ D     │ Draft Master - Fixed | 2024-09-03
+  4938: {
+    carByWeek: [
+      [10068], // 1 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+      [10481, 10530, 10459], // 2 NASCAR Trucks
+      [10527, 10482, 10483, 10566], // 3 NASCAR Classic 1987
+      [10503, 10504, 10505], // 4 NASCAR Next Gen
+      [10068], // 5 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+      [10481, 10530, 10459], // 6 NASCAR Trucks
+      [10527, 10482, 10483, 10566], // 7 NASCAR Classic 1987
+      [10503, 10504, 10505], // 8 NASCAR Next Gen
+      [10068], // 9 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+      [10481, 10530, 10459], // 10 NASCAR Trucks
+      [10527, 10482, 10483, 10566], // 11 NASCAR Classic 1987
+      [10503, 10504, 10505], // 12 NASCAR Next Gen
+    ],
+    carClassShortNameByWeek: [
+      ['[Legacy] NASCAR Cup Chevrolet Impala COT - 2009'], // 1 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+      ['NASCAR Trucks'], // 2 NASCAR Trucks
+      ['NASCAR 1987'], // 3 NASCAR Classic 1987
+      ['NASCAR 2022 NG'], // 4 NASCAR Next Gen
+      ['[Legacy] NASCAR Cup Chevrolet Impala COT - 2009'], // 5 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+      ['NASCAR Trucks'], // 6 NASCAR Trucks
+      ['NASCAR 1987'], // 7 NASCAR Classic 1987
+      ['NASCAR 2022 NG'], // 8 NASCAR Next Gen
+      ['[Legacy] NASCAR Cup Chevrolet Impala COT - 2009'], // 9 [Legacy] NASCAR Cup Chevrolet Impala COT - 2009
+      ['NASCAR Trucks'], // 10 NASCAR Trucks
+      ['NASCAR 1987'], // 11 NASCAR Classic 1987
+      ['NASCAR 2022 NG'], // 12 NASCAR Next Gen
+    ],
+  },
+  // 526 │ 4872   │ Sports Car  │ C     │ Ring Meister Ricmotech Series - Fixed | 2024-09-03
+  4872: {
+    carByWeek: [
+      [10232, 10581], // 1 Street Stock - Casino M2, Street Stock - Eagle T3, Street Stock - Panther C1
+      [10567, 10494, 10576, 10563, 10510, 10580, 10495, 10335, 10532, 10555, 10405, 10404, 10502],
+      // 2 Audi R8 LMS EVO II GT3, BMW M4 GT3, Chevrolet Corvette Z06 GT3.R, Ferrari 296 GT3,
+      // Ferrari 488 GT3 Evo 2020, Ford Mustang GT3, Lamborghini Huracán GT3 EVO,
+      // McLaren MP4-12C GT3, Mercedes-AMG GT3 2020, Porsche 911 GT3 R (992),
+      // [Legacy] Audi R8 LMS GT3, [Legacy] Mercedes-AMG GT3, [Legacy] Porsche 911 GT3 R
+      [10394], // 3 Global Mazda MX-5 Cup
+      [10009], // 4 Skip Barber Formula 2000
+      [10419, 10444, 10428], // 5 Ford Fiesta RS WRC, Subaru WRX STI, VW Beetle
+      [10548], // 6 Renault Clio
+      [10549], // 7 Ray FF1600
+      [10509], // 8 Porsche 911 GT3 Cup (992)
+      [10518], // 9 FIA F4
+      [10461, 10517, 10516, 10526],
+      // 10 Audi RS 3 LMS TCR, Honda Civic Type R TCR, Hyundai Elantra N TCR, Hyundai Veloster N TCR
+      [10523, 10479, 10497, 10533, 10473],
+      // 11 Aston Martin Vantage GT4, BMW M4 GT4, McLaren 570S GT4, Mercedes-AMG GT4,
+      // Porsche 718 Cayman GT4 Clubsport MR
+      [10571], // 12 Super Formula Lights
+    ],
+    carClassShortNameByWeek: [
+      ['Street Stocks'], // 1 Street Stock - Casino M2, Street Stock - Eagle T3, Street Stock - Panther C1
+      ['GT3'], // 2 Audi R8 LMS EVO II GT3, BMW M4 GT3, Chevrolet Corvette Z06 GT3.R, Ferrari 296 GT3,
+      // Ferrari 488 GT3 Evo 2020, Ford Mustang GT3, Lamborghini Huracán GT3 EVO,
+      // McLaren MP4-12C GT3, Mercedes-AMG GT3 2020, Porsche 911 GT3 R (992),
+      // [Legacy] Audi R8 LMS GT3, [Legacy] Mercedes-AMG GT3, [Legacy] Porsche 911 GT3 R
+      ['MX5 Cup 2016'], // 3 Global Mazda MX-5 Cup
+      ['SBRS'], // 4 Skip Barber Formula 2000
+      ['Rallycross'], // 5 Ford Fiesta RS WRC, Subaru WRX STI, VW Beetle
+      ['Renault Clio'], // 6 Renault Clio
+      ['Ray FF1600'], // 7 Ray FF1600
+      ['Porsche 992'], // 8 Porsche 911 GT3 Cup (992)
+      ['FIA F4'], // 9 FIA F4
+      ['Touring Car'], // 10 Audi RS 3 LMS TCR, Honda Civic Type R TCR, Hyundai Elantra N TCR, Hyundai Veloster N TCR
+      ['GT4 Class'], // 11 Aston Martin Vantage GT4, BMW M4 GT4, McLaren 570S GT4, Mercedes-AMG GT4,
+      // Porsche 718 Cayman GT4 Clubsport MR
+      ['SF Lights'], // 12 Super Formula Lights
+    ],
+  },
+  // 331 │ 4897   │ Sports Car  │ B     │ Global Endurance CONSPIT Tour  | 2024-09-03
+  4897: {
+    weekStartOffset: { days: 7 },
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+  // 419 │ 4899   │ Sports Car  │ B     │ IMSA Endurance Series  | 2024-09-03
+  4899: {
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+
+  // 492 │ 4883   │ Sports Car  │ C     │ IMSA Michelin Pilot Challenge Series | 2024-09-03
+  4883: {
+    offWeeks: [
+      0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
 };
