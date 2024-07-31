@@ -372,4 +372,11 @@ export default {
       0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
     ],
   },
+
+  // 472 │ 5026   │ Sports Car  │ A     │ Porsche TAG Heuer Esports Supercup Qualifying Series | 2024-09-03
+  5026: {
+    offWeeks: [
+      5.1, 5.1,
+    ],
+  },
 };
