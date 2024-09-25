@@ -4,7 +4,7 @@ import type { ElementType } from 'react';
 import moment from 'moment';
 import {
   Id, Car, Class, EndDate, Fixed, Licence, LinkColumn, NextRace, Official,
-  RaceTimes, Series, SeasonEnd, StartDate, Track, Type,
+  RaceTimes, Series, SeasonEnd, StartDate, Track, Type, Rain
 } from '../components/columns';
 import RaceLength from '../components/columns/RaceLength';
 import { getNextRace } from '../lib/races';
@@ -237,7 +237,7 @@ const availableColumns: Array<ColumnType> = [{
       return order === 'asc' ? -1 : 1;
     }
     const sort = sortByDate(order, aNextDate, bNextDate);
-    
+
     return sort !== 0 ? sort : defaultSort(order, a, b);
   },
 }, {
@@ -246,6 +246,11 @@ const availableColumns: Array<ColumnType> = [{
   component: SeasonEnd,
   default: false,
   sort: getSortByDate('seriesEnd'),
+}, {
+  id: 'rain',
+  header: 'Rain',
+  component: Rain,
+  default: false,
 }, {
   id: 'seriesLink',
   header: 'Link',

@@ -2,6 +2,8 @@
 
 import moment from 'moment';
 import { clientGet } from './iracingClient';
+import uniq from 'lodash.uniq';
+
 
 const trackTypeToCatId = {
   oval: 1,
@@ -98,17 +100,31 @@ export default async function getSeason(cars: Array<carType>, tracks: Array<trac
       seriesname: series.schedules.length ? series.schedules[0].series_name.trim() : series.season_name.trim(),
       start: series.start_date,
       end: end.toISOString(),
-      tracks: series.schedules.map((week) => ({
-        raceweek: week.race_week_num,
-        config: week.track.config_name,
-        name: week.track.config_name ? `${week.track.track_name} - ${week.track.config_name}` : week.track.track_name,
-        pkgid: trackMap[week.track.track_id].pkgid,
-        start: week.start_date,
-        weekLength: week.race_time_descriptors[0]?.day_offset?.length,
-        race_time_descriptors: week.race_time_descriptors,
-        race_lap_limit: week.race_lap_limit,
-        race_time_limit: week.race_time_limit,
-      })),
+      tracks: series.schedules.map((week) => {
+        const carsForWeek = week.race_week_cars?.map((raceWeekCar) => raceWeekCar.car_id) || null;
+        let carsForWeekName = null;
+        if (carsForWeek?.length > 0) {
+          carsForWeekName = carClassResponse.data.find((carClass) => {
+            const carIds = carClass.cars_in_class.map((car) => car.car_id).sort();
+            return uniq(carIds).toString() === uniq(carsForWeek.sort()).toString();
+          })?.short_name || null;
+        }
+        return ({
+          raceweek: week.race_week_num,
+          config: week.track.config_name,
+          name: week.track.config_name ? `${week.track.track_name} - ${week.track.config_name}` : week.track.track_name,
+          pkgid: trackMap[week.track.track_id].pkgid,
+          start: week.start_date,
+          weekLength: week.race_time_descriptors[0]?.day_offset?.length,
+          race_time_descriptors: week.race_time_descriptors,
+          race_lap_limit: week.race_lap_limit,
+          race_time_limit: week.race_time_limit,
+          carsForWeek: uniq(carsForWeek.map((carId) => carMap[carId].sku)),
+          carsForWeekName,
+          carsForWeekNames: week.race_week_cars?.map((raceWeekCar) => raceWeekCar.car_name_abbreviated) || null,
+          precipChance: week.weather.weather_summary?.precip_chance || 0,
+        });
+      }),
       catid: trackTypeToCatId[series.track_types[0].track_type],
       isOfficial: series.official,
       licenceGroup: series.license_group,

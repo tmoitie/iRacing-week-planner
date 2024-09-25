@@ -26,7 +26,11 @@
           }
         ],
         "race_lap_limit": 41,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       },
       {
         "raceweek": 1,
@@ -49,7 +53,11 @@
           }
         ],
         "race_lap_limit": 150,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       },
       {
         "raceweek": 2,
@@ -71,7 +79,11 @@
           }
         ],
         "race_lap_limit": 65,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       },
       {
         "raceweek": 3,
@@ -94,7 +106,11 @@
           }
         ],
         "race_lap_limit": 68,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       },
       {
         "raceweek": 4,
@@ -117,7 +133,11 @@
           }
         ],
         "race_lap_limit": 65,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       },
       {
         "raceweek": 5,
@@ -140,7 +160,11 @@
           }
         ],
         "race_lap_limit": 150,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       },
       {
         "raceweek": 6,
@@ -163,7 +187,11 @@
           }
         ],
         "race_lap_limit": 53,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       },
       {
         "raceweek": 7,
@@ -186,7 +214,11 @@
           }
         ],
         "race_lap_limit": 42,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       },
       {
         "raceweek": 8,
@@ -209,7 +241,11 @@
           }
         ],
         "race_lap_limit": 68,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       },
       {
         "raceweek": 9,
@@ -231,7 +267,11 @@
           }
         ],
         "race_lap_limit": 60,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       },
       {
         "raceweek": 10,
@@ -254,7 +294,11 @@
           }
         ],
         "race_lap_limit": 188,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       },
       {
         "raceweek": 11,
@@ -277,7 +321,11 @@
           }
         ],
         "race_lap_limit": 65,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       },
       {
         "raceweek": 12,
@@ -299,7 +347,11 @@
           }
         ],
         "race_lap_limit": 60,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       },
       {
         "raceweek": 13,
@@ -322,7 +374,11 @@
           }
         ],
         "race_lap_limit": 195,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       },
       {
         "raceweek": 14,
@@ -345,7 +401,11 @@
           }
         ],
         "race_lap_limit": 45,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       },
       {
         "raceweek": 15,
@@ -368,7 +428,11 @@
           }
         ],
         "race_lap_limit": 72,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       }
     ],
     "catid": 5,
@@ -416,7 +480,11 @@
           }
         ],
         "race_lap_limit": 25,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       },
       {
         "raceweek": 1,
@@ -439,7 +507,11 @@
           }
         ],
         "race_lap_limit": 25,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       },
       {
         "raceweek": 2,
@@ -462,7 +534,11 @@
           }
         ],
         "race_lap_limit": 25,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       },
       {
         "raceweek": 3,
@@ -485,7 +561,11 @@
           }
         ],
         "race_lap_limit": 25,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       },
       {
         "raceweek": 4,
@@ -508,7 +588,11 @@
           }
         ],
         "race_lap_limit": 25,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       },
       {
         "raceweek": 5,
@@ -531,7 +615,11 @@
           }
         ],
         "race_lap_limit": 25,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       },
       {
         "raceweek": 6,
@@ -554,7 +642,11 @@
           }
         ],
         "race_lap_limit": 25,
-        "race_time_limit": null
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
       }
     ],
     "catid": 1,

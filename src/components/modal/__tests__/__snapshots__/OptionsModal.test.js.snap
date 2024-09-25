@@ -377,6 +377,26 @@ exports[`components/modal/OptionsModal renders with checkbox saving 1`] = `
                 className="checkbox"
               >
                 <label
+                  htmlFor="options-columns-rain"
+                >
+                  <input
+                    checked={false}
+                    disabled={false}
+                    id="options-columns-rain"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  Rain
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-xs-3 col-md-2"
+            >
+              <div
+                className="checkbox"
+              >
+                <label
                   htmlFor="options-columns-seriesLink"
                 >
                   <input

@@ -112,7 +112,7 @@ export default {
     'The email address is already in use by another account.': 'メールアドレスは別のアカウントで使用されています。',
     'Password should be at least 6 characters': 'パスワードは６文字以上にする必要があります。',
 
-    
+
     // No Results - DeepL ML translated @todo human translations
     'No races this week match your favourite series. Try turning the filter off or adding some.': '今週は、あなたの好きなシリーズに合うレースがありません。フィルターをオフにするか、何かを追加してみてください。',
     'No races this week match your favourite cars. Try turning the filter off or adding some.': '今週は好きなクルマに合うレースがない。フィルターをオフにするか、何かを追加してみてください。',
@@ -123,5 +123,11 @@ export default {
     'Looking for iRacing Setups?': 'iRacingのセットアップをお探しですか？',
     'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.': 'プロのシムレーサーやエンジニアが開発したCoach Dave Academyのセットアップを手に入れよう。',
     'Browse Setups': 'セットアップを見る',
+
+    // Rain
+    'Rain': '雨',
+    'Yes': 'はい',
+    'Chance': '可能性',
+    'No': 'いいえ',
   },
 };

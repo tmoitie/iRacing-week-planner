@@ -79,7 +79,7 @@ export default {
 
     // Dates
     'Every {{every}} starting at {{time, datetime}}': 'Cada {{every}} empezando a las {{time, datetime}}',
-    
+
     'Set times': 'Establecer tiempos',
     'Purchase Guide': 'Guía de compras',
     'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <2>buy me a coffee</2>.':
@@ -121,5 +121,11 @@ export default {
     'Looking for iRacing Setups?': '¿Buscas setups para iRacing?',
     'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.': 'Consigue un setup de Coach Dave Academy, desarrollada por ingenieros y pilotos de simulación profesionales.',
     'Browse Setups': 'Buscar Setups',
+
+    // Rain
+    'Rain': 'Lluvia',
+    'Yes': 'Sí',
+    'Chance': 'Posibilidad',
+    'No': 'No',
   },
 };

@@ -361,9 +361,6 @@ exports[`components/modal/SeriesModal renders with cars 1`] = `
                     Track
                   </th>
                   <th>
-                    Car
-                  </th>
-                  <th>
                     Start
                   </th>
                   <th>
@@ -385,11 +382,6 @@ exports[`components/modal/SeriesModal renders with cars 1`] = `
                     className="success"
                   >
                     Irwindale Speedway - Figure Eight
-                  </td>
-                  <td
-                    className=""
-                  >
-                    Rallycross, Pro 2 Truck
                   </td>
                   <td>
                     September 6, 2022
@@ -418,11 +410,6 @@ exports[`components/modal/SeriesModal renders with cars 1`] = `
                   >
                     Irwindale Speedway - Figure Eight Jump
                   </td>
-                  <td
-                    className=""
-                  >
-                    Rallycross, Pro 2 Truck
-                  </td>
                   <td>
                     September 7, 2022
                   </td>
@@ -445,11 +432,6 @@ exports[`components/modal/SeriesModal renders with cars 1`] = `
                     className="success"
                   >
                     Irwindale Speedway - Figure Eight
-                  </td>
-                  <td
-                    className=""
-                  >
-                    Rallycross, Pro 2 Truck
                   </td>
                   <td>
                     September 8, 2022
@@ -474,11 +456,6 @@ exports[`components/modal/SeriesModal renders with cars 1`] = `
                   >
                     Irwindale Speedway - Figure Eight Jump
                   </td>
-                  <td
-                    className=""
-                  >
-                    Rallycross, Pro 2 Truck
-                  </td>
                   <td>
                     September 9, 2022
                   </td>
@@ -501,11 +478,6 @@ exports[`components/modal/SeriesModal renders with cars 1`] = `
                     className="success"
                   >
                     Irwindale Speedway - Figure Eight
-                  </td>
-                  <td
-                    className=""
-                  >
-                    Rallycross, Pro 2 Truck
                   </td>
                   <td>
                     September 10, 2022
@@ -530,11 +502,6 @@ exports[`components/modal/SeriesModal renders with cars 1`] = `
                   >
                     Irwindale Speedway - Figure Eight Jump
                   </td>
-                  <td
-                    className=""
-                  >
-                    Rallycross, Pro 2 Truck
-                  </td>
                   <td>
                     September 11, 2022
                   </td>
@@ -557,11 +524,6 @@ exports[`components/modal/SeriesModal renders with cars 1`] = `
                     className="success"
                   >
                     Irwindale Speedway - Figure Eight
-                  </td>
-                  <td
-                    className=""
-                  >
-                    Rallycross, Pro 2 Truck
                   </td>
                   <td>
                     September 12, 2022

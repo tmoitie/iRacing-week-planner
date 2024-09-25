@@ -35,7 +35,7 @@ export default function SeriesModal({ onClose, ownedTracks, ownedCars, isOpen, s
     },
   };
 
-  const showCar = !!(offWeekData[seasonId]?.carByWeek);
+  const showCar = races[0].carsForWeek?.length > 0;
 
   return (
     <Modal
