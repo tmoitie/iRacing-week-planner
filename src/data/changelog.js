@@ -2,6 +2,13 @@ import moment from 'moment';
 
 export default [
   {
+    date: moment('2024-09-26 00:00:00').utc(),
+    items: [
+      'Add rain column (see Options tab)',
+      'Update car by week code',
+    ],
+  },
+  {
     date: moment('2024-09-09 00:00:00').utc(),
     items: [
       'Update to 2024S4',

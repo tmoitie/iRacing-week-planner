@@ -144,12 +144,14 @@ export default season.reduce((carry, series) => {
 
     let carClasses = series.carclasses.map(({ shortname }) => shortname);
     let carIds = series.cars.map(({ sku }) => sku);
-    if (raceOffWeekData.carByWeek) {
-      carIds = raceOffWeekData.carByWeek[track.raceweek] || carIds;
+    if (track.carsForWeek?.length > 0) {
+      carIds = track.carsForWeek;
     }
 
-    if (raceOffWeekData.carClassShortNameByWeek) {
-      carClasses = raceOffWeekData.carClassShortNameByWeek[track.raceweek] || carClasses;
+    if (track.carsForWeek?.length > 0 && track.carsForWeekName) {
+      carClasses = [track.carsForWeekName];
+    } else if (track.carsForWeek?.length > 0 && track.carsForWeekNames) {
+      carClasses = track.carsForWeekNames;
     }
 
     return {
@@ -181,6 +183,7 @@ export default season.reduce((carry, series) => {
         laps: track.race_lap_limit,
         minutes: track.race_time_limit,
       },
+      precipChance: track.precipChance,
     };
   }));
 }, []);

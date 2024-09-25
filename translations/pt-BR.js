@@ -123,5 +123,10 @@ export default {
     'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.': 'Obtenha um setup da Coach Dave Academy, desenvolvida por engenheiros e pilotos profissionais de simuladores.',
     'Browse Setups': 'Procurar setups',
 
+    // Rain
+    'Rain': 'Chuva',
+    'Yes': 'Sim',
+    'Chance': 'Possibilidade',
+    'No': 'Não',
   },
 };

@@ -8,6 +8,7 @@ export { default as LinkColumn } from './LinkColumn';
 export { default as NextRace } from './NextRace';
 export { default as Official } from './Official';
 export { default as RaceTimes } from './RaceTimes';
+export { default as Rain } from './Rain';
 export { default as Series } from './Series';
 export { default as SeasonEnd } from './SeasonEnd';
 export { default as StartDate } from './StartDate';

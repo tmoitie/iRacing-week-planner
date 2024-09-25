@@ -114,7 +114,7 @@ export default {
     'The email address is already in use by another account.': 'Ten adres email jest już przypisany do innego istniejącego konta.',
     'Password should be at least 6 characters': 'Hasło musi mieć co najmniej 6 znaków',
 
-  
+
     // No Results - DeepL ML translated @todo human translations
     'No races this week match your favourite series. Try turning the filter off or adding some.': 'Brak wyścigów spełniających twoje kryteria w tym tygodniu. Spróbuj wyłączyć filtry lub dodać nowe ulubione serie.',
     'No races this week match your favourite cars. Try turning the filter off or adding some.': 'Brak wyścigów spełniających twoje kryteria w tym tygodniu. Spróbuj wyłączyć filtry lub dodać nowe ulubione pojazdy.',
@@ -125,5 +125,11 @@ export default {
     'Looking for iRacing Setups?': 'Szukasz setupów iRacing?',
     'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.': 'Chwyć setup od Coach Dave Academy, opracowany przez profesjonalnych zawodników i inżynierów symulatorów.',
     'Browse Setups': 'Przeglądanie setupów',
+
+    // Rain
+    'Rain': 'Deszcz',
+    'Yes': 'Tak',
+    'Chance': 'Szansa',
+    'No': 'Nie',
   },
 };
