@@ -58,7 +58,14 @@ module.exports = {
         test: /\.jsx?$/,
         include: [path.resolve(__dirname, 'src')],
         use: [
-          'babel-loader',
+          {
+            loader: require.resolve('babel-loader'),
+            options: {
+              plugins: [
+                isDevelopment && require.resolve('react-refresh/babel'),
+              ].filter(Boolean),
+            },
+          },
         ],
       },
       {
@@ -153,7 +160,7 @@ module.exports = {
       'process.env.CODE_VERSION': JSON.stringify(version),
     }),
     new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /en|de|es|fr|nl|pt|pl|da|it|sv|cs|fi|hu|ca/),
-  ] : [
+  ] : env === 'development' ? [
     ...plugins,
     new webpack.DefinePlugin({
       __DEV__: true,
