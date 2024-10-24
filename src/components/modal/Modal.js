@@ -18,26 +18,17 @@ type Props = {
   doneButtonText?: string,
   showFooter?: boolean,
   doneAction?: () => void,
-  id?: ?string,
-};
-
-const defaultProps = {
-  isOpen: false,
-  onClose: () => {},
-  doneAction: () => {},
-  doneButtonText: 'Close',
-  showFooter: true,
-  id: undefined,
+  id: string,
 };
 
 export default function Modal({
   children,
   title,
-  isOpen,
-  onClose,
-  doneButtonText,
-  showFooter,
-  doneAction,
+  isOpen = false,
+  onClose = () => {},
+  doneButtonText = 'Close',
+  showFooter = true,
+  doneAction = () => {},
   id,
 }: Props): React.Node {
   const { t } = useTranslation();
@@ -99,5 +90,3 @@ export default function Modal({
     </BaseModal>
   );
 }
-
-Modal.defaultProps = defaultProps;

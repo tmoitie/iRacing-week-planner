@@ -1,13 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { render, screen } from '@testing-library/react';
 import { describe, test } from '@jest/globals';
+import { TableWrapper } from './ColumnUtils';
 
 import Class from '../Class';
 
 describe('components/columns/Class', () => {
   test('renders correctly', () => {
-    const component = shallow(<Class race={{ licenceLevel: 5 }} />);
+    render(<TableWrapper><Class race={{ licenceLevel: 5 }} /></TableWrapper>);
 
-    expect(component).toMatchSnapshot();
+    expect(screen.getByTestId('table-row').firstChild).toMatchSnapshot();
   });
 });

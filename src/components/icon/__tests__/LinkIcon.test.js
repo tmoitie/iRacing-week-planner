@@ -1,12 +1,12 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { render } from '@testing-library/react';
 import { describe, test } from '@jest/globals';
 import LinkIcon from '../LinkIcon';
 
 describe('components/icon/LinkIcon', () => {
   test('renders correctly', () => {
-    const component = shallow(<LinkIcon />);
+    const { container } = render(<LinkIcon />);
 
-    expect(component).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

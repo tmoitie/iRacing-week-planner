@@ -4,8 +4,9 @@ const cp = require('child_process');
 const autoprefixer = require('autoprefixer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 const port = process.env.PORT || 3000;
 const env = process.env.NODE_ENV || 'development';
@@ -35,7 +36,7 @@ const postcssLoader = {
 const plugins = [
   new HtmlWebpackPlugin({
     hash: true,
-    template: 'src/index.html'
+    template: 'src/index.html',
   }),
   new MiniCssExtractPlugin({
     filename: '[name].css',
@@ -73,7 +74,7 @@ module.exports = {
           postcssLoader,
           'sass-loader',
         ],
-        exclude: /\.module\.css$/
+        exclude: /\.module\.css$/,
       },
       {
         test: /\.scss$/,
@@ -90,7 +91,7 @@ module.exports = {
           postcssLoader,
           'sass-loader',
         ],
-        include: /\.module\.css$/
+        include: /\.module\.css$/,
       },
       {
         test: /\.css$/,
@@ -106,7 +107,7 @@ module.exports = {
           },
           postcssLoader,
         ],
-        include: /\.module\.css$/
+        include: /\.module\.css$/,
       },
       {
         test: /\.css$/,
@@ -120,7 +121,7 @@ module.exports = {
           },
           postcssLoader,
         ],
-        exclude: /\.module\.css$/
+        exclude: /\.module\.css$/,
       },
       {
         test: /\.(png|gif)$/,
@@ -159,6 +160,7 @@ module.exports = {
       'process.env.NODE_ENV': JSON.stringify('development'),
       'process.env.CODE_VERSION': JSON.stringify(version),
     }),
+    new ReactRefreshWebpackPlugin(),
   ],
   devServer: {
     static: {
@@ -169,6 +171,7 @@ module.exports = {
       watch: true,
     },
     compress: true,
+    hot: true,
     port,
   },
   optimization: {

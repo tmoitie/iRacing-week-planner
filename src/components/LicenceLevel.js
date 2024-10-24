@@ -11,11 +11,7 @@ type Props = {
   effective?: boolean,
 };
 
-const defaultProps = {
-  effective: false,
-};
-
-export default function LicenceLevel({ licence, effective }: Props): React.Node {
+export default function LicenceLevel({ licence, effective = false }: Props): React.Node {
   return (
     <div
       className={classnames(
@@ -30,5 +26,3 @@ export default function LicenceLevel({ licence, effective }: Props): React.Node 
     </div>
   );
 }
-
-LicenceLevel.defaultProps = defaultProps;

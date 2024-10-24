@@ -18,7 +18,7 @@ export default function AboutModal({ onClose, isOpen }: Props) {
   const { t } = useTranslation();
 
   return (
-    <Modal onClose={onClose} isOpen={isOpen} title={t('About')} doneAction={onClose}>
+    <Modal onClose={onClose} isOpen={isOpen} title={t('About')} doneAction={onClose} id="about-modal">
       <div className={styles['container-fluid']}>
         <p>
           <Trans>

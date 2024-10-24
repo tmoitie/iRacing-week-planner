@@ -7,7 +7,7 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
   <table
     className="table"
     style={
-      Object {
+      {
         "fontSize": "0.8em",
       }
     }
@@ -75,7 +75,7 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
             onClick={[Function]}
             onKeyPress={[Function]}
             style={
-              Object {
+              {
                 "minHeight": 50,
               }
             }
@@ -95,7 +95,7 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
             onClick={[Function]}
             onKeyPress={[Function]}
             style={
-              Object {
+              {
                 "minHeight": 50,
               }
             }
@@ -119,7 +119,7 @@ exports[`components/RaceListing changes descending sort on click 1`] = `
             onClick={[Function]}
             onKeyPress={[Function]}
             style={
-              Object {
+              {
                 "minHeight": 50,
               }
             }
@@ -149,7 +149,7 @@ exports[`components/RaceListing changes sort on click 1`] = `
   <table
     className="table"
     style={
-      Object {
+      {
         "fontSize": "0.8em",
       }
     }
@@ -208,7 +208,7 @@ exports[`components/RaceListing changes sort on click 1`] = `
             onClick={[Function]}
             onKeyPress={[Function]}
             style={
-              Object {
+              {
                 "minHeight": 50,
               }
             }
@@ -235,7 +235,7 @@ exports[`components/RaceListing changes sort on click 1`] = `
             onClick={[Function]}
             onKeyPress={[Function]}
             style={
-              Object {
+              {
                 "minHeight": 50,
               }
             }
@@ -260,7 +260,7 @@ exports[`components/RaceListing renders correctly 1`] = `
   <table
     className="table"
     style={
-      Object {
+      {
         "fontSize": "0.8em",
       }
     }

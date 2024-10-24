@@ -3,7 +3,7 @@
 exports[`components/Filters correctly click a filter item checkbox 1`] = `
 <div
   style={
-    Object {
+    {
       "fontSize": "0.8em",
     }
   }
@@ -13,6 +13,7 @@ exports[`components/Filters correctly click a filter item checkbox 1`] = `
   </h4>
   <div
     className="checkbox"
+    data-testid="checkbox-type-oval"
   >
     <label
       htmlFor="checkbox-type-oval"
@@ -29,6 +30,7 @@ exports[`components/Filters correctly click a filter item checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-type-road-sports"
   >
     <label
       htmlFor="checkbox-type-road-sports"
@@ -45,6 +47,7 @@ exports[`components/Filters correctly click a filter item checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-type-road-formula"
   >
     <label
       htmlFor="checkbox-type-road-formula"
@@ -61,6 +64,7 @@ exports[`components/Filters correctly click a filter item checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-type-dirt"
   >
     <label
       htmlFor="checkbox-type-dirt"
@@ -77,6 +81,7 @@ exports[`components/Filters correctly click a filter item checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-type-rx"
   >
     <label
       htmlFor="checkbox-type-rx"
@@ -96,6 +101,7 @@ exports[`components/Filters correctly click a filter item checkbox 1`] = `
   </h4>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-r"
   >
     <label
       htmlFor="checkbox-licence-r"
@@ -112,6 +118,7 @@ exports[`components/Filters correctly click a filter item checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-d"
   >
     <label
       htmlFor="checkbox-licence-d"
@@ -128,6 +135,7 @@ exports[`components/Filters correctly click a filter item checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-c"
   >
     <label
       htmlFor="checkbox-licence-c"
@@ -144,6 +152,7 @@ exports[`components/Filters correctly click a filter item checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-b"
   >
     <label
       htmlFor="checkbox-licence-b"
@@ -160,6 +169,7 @@ exports[`components/Filters correctly click a filter item checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-a"
   >
     <label
       htmlFor="checkbox-licence-a"
@@ -176,6 +186,7 @@ exports[`components/Filters correctly click a filter item checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-p"
   >
     <label
       htmlFor="checkbox-licence-p"
@@ -195,6 +206,7 @@ exports[`components/Filters correctly click a filter item checkbox 1`] = `
   </h4>
   <div
     className="checkbox"
+    data-testid="checkbox-official-false"
   >
     <label
       htmlFor="checkbox-official-false"
@@ -211,6 +223,7 @@ exports[`components/Filters correctly click a filter item checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-official-true"
   >
     <label
       htmlFor="checkbox-official-true"
@@ -227,6 +240,7 @@ exports[`components/Filters correctly click a filter item checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-fixed-false"
   >
     <label
       htmlFor="checkbox-fixed-false"
@@ -243,6 +257,7 @@ exports[`components/Filters correctly click a filter item checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-fixed-true"
   >
     <label
       htmlFor="checkbox-fixed-true"
@@ -262,6 +277,7 @@ exports[`components/Filters correctly click a filter item checkbox 1`] = `
   </h4>
   <div
     className="checkbox"
+    data-testid="checkbox-ownedCars"
   >
     <label
       htmlFor="checkbox-ownedCars"
@@ -278,6 +294,7 @@ exports[`components/Filters correctly click a filter item checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-ownedTracks"
   >
     <label
       htmlFor="checkbox-ownedTracks"
@@ -294,6 +311,7 @@ exports[`components/Filters correctly click a filter item checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-favouriteSeries"
   >
     <label
       htmlFor="checkbox-favouriteSeries"
@@ -310,6 +328,7 @@ exports[`components/Filters correctly click a filter item checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-favouriteCarsOnly"
   >
     <label
       htmlFor="checkbox-favouriteCarsOnly"
@@ -326,6 +345,7 @@ exports[`components/Filters correctly click a filter item checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-favouriteTracksOnly"
   >
     <label
       htmlFor="checkbox-favouriteTracksOnly"
@@ -366,7 +386,7 @@ exports[`components/Filters correctly click a filter item checkbox 1`] = `
 exports[`components/Filters correctly click a true/false checkbox 1`] = `
 <div
   style={
-    Object {
+    {
       "fontSize": "0.8em",
     }
   }
@@ -376,6 +396,7 @@ exports[`components/Filters correctly click a true/false checkbox 1`] = `
   </h4>
   <div
     className="checkbox"
+    data-testid="checkbox-type-oval"
   >
     <label
       htmlFor="checkbox-type-oval"
@@ -392,6 +413,7 @@ exports[`components/Filters correctly click a true/false checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-type-road-sports"
   >
     <label
       htmlFor="checkbox-type-road-sports"
@@ -408,6 +430,7 @@ exports[`components/Filters correctly click a true/false checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-type-road-formula"
   >
     <label
       htmlFor="checkbox-type-road-formula"
@@ -424,6 +447,7 @@ exports[`components/Filters correctly click a true/false checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-type-dirt"
   >
     <label
       htmlFor="checkbox-type-dirt"
@@ -440,6 +464,7 @@ exports[`components/Filters correctly click a true/false checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-type-rx"
   >
     <label
       htmlFor="checkbox-type-rx"
@@ -459,6 +484,7 @@ exports[`components/Filters correctly click a true/false checkbox 1`] = `
   </h4>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-r"
   >
     <label
       htmlFor="checkbox-licence-r"
@@ -475,6 +501,7 @@ exports[`components/Filters correctly click a true/false checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-d"
   >
     <label
       htmlFor="checkbox-licence-d"
@@ -491,6 +518,7 @@ exports[`components/Filters correctly click a true/false checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-c"
   >
     <label
       htmlFor="checkbox-licence-c"
@@ -507,6 +535,7 @@ exports[`components/Filters correctly click a true/false checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-b"
   >
     <label
       htmlFor="checkbox-licence-b"
@@ -523,6 +552,7 @@ exports[`components/Filters correctly click a true/false checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-a"
   >
     <label
       htmlFor="checkbox-licence-a"
@@ -539,6 +569,7 @@ exports[`components/Filters correctly click a true/false checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-p"
   >
     <label
       htmlFor="checkbox-licence-p"
@@ -558,6 +589,7 @@ exports[`components/Filters correctly click a true/false checkbox 1`] = `
   </h4>
   <div
     className="checkbox"
+    data-testid="checkbox-official-false"
   >
     <label
       htmlFor="checkbox-official-false"
@@ -574,6 +606,7 @@ exports[`components/Filters correctly click a true/false checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-official-true"
   >
     <label
       htmlFor="checkbox-official-true"
@@ -590,6 +623,7 @@ exports[`components/Filters correctly click a true/false checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-fixed-false"
   >
     <label
       htmlFor="checkbox-fixed-false"
@@ -606,6 +640,7 @@ exports[`components/Filters correctly click a true/false checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-fixed-true"
   >
     <label
       htmlFor="checkbox-fixed-true"
@@ -625,6 +660,7 @@ exports[`components/Filters correctly click a true/false checkbox 1`] = `
   </h4>
   <div
     className="checkbox"
+    data-testid="checkbox-ownedCars"
   >
     <label
       htmlFor="checkbox-ownedCars"
@@ -641,6 +677,7 @@ exports[`components/Filters correctly click a true/false checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-ownedTracks"
   >
     <label
       htmlFor="checkbox-ownedTracks"
@@ -657,6 +694,7 @@ exports[`components/Filters correctly click a true/false checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-favouriteSeries"
   >
     <label
       htmlFor="checkbox-favouriteSeries"
@@ -673,6 +711,7 @@ exports[`components/Filters correctly click a true/false checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-favouriteCarsOnly"
   >
     <label
       htmlFor="checkbox-favouriteCarsOnly"
@@ -689,6 +728,7 @@ exports[`components/Filters correctly click a true/false checkbox 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-favouriteTracksOnly"
   >
     <label
       htmlFor="checkbox-favouriteTracksOnly"
@@ -729,7 +769,7 @@ exports[`components/Filters correctly click a true/false checkbox 1`] = `
 exports[`components/Filters not synced user 1`] = `
 <div
   style={
-    Object {
+    {
       "fontSize": "0.8em",
     }
   }
@@ -739,6 +779,7 @@ exports[`components/Filters not synced user 1`] = `
   </h4>
   <div
     className="checkbox"
+    data-testid="checkbox-type-oval"
   >
     <label
       htmlFor="checkbox-type-oval"
@@ -755,6 +796,7 @@ exports[`components/Filters not synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-type-road-sports"
   >
     <label
       htmlFor="checkbox-type-road-sports"
@@ -771,6 +813,7 @@ exports[`components/Filters not synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-type-road-formula"
   >
     <label
       htmlFor="checkbox-type-road-formula"
@@ -787,6 +830,7 @@ exports[`components/Filters not synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-type-dirt"
   >
     <label
       htmlFor="checkbox-type-dirt"
@@ -803,6 +847,7 @@ exports[`components/Filters not synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-type-rx"
   >
     <label
       htmlFor="checkbox-type-rx"
@@ -822,6 +867,7 @@ exports[`components/Filters not synced user 1`] = `
   </h4>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-r"
   >
     <label
       htmlFor="checkbox-licence-r"
@@ -838,6 +884,7 @@ exports[`components/Filters not synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-d"
   >
     <label
       htmlFor="checkbox-licence-d"
@@ -854,6 +901,7 @@ exports[`components/Filters not synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-c"
   >
     <label
       htmlFor="checkbox-licence-c"
@@ -870,6 +918,7 @@ exports[`components/Filters not synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-b"
   >
     <label
       htmlFor="checkbox-licence-b"
@@ -886,6 +935,7 @@ exports[`components/Filters not synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-a"
   >
     <label
       htmlFor="checkbox-licence-a"
@@ -902,6 +952,7 @@ exports[`components/Filters not synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-p"
   >
     <label
       htmlFor="checkbox-licence-p"
@@ -921,6 +972,7 @@ exports[`components/Filters not synced user 1`] = `
   </h4>
   <div
     className="checkbox"
+    data-testid="checkbox-official-false"
   >
     <label
       htmlFor="checkbox-official-false"
@@ -937,6 +989,7 @@ exports[`components/Filters not synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-official-true"
   >
     <label
       htmlFor="checkbox-official-true"
@@ -953,6 +1006,7 @@ exports[`components/Filters not synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-fixed-false"
   >
     <label
       htmlFor="checkbox-fixed-false"
@@ -969,6 +1023,7 @@ exports[`components/Filters not synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-fixed-true"
   >
     <label
       htmlFor="checkbox-fixed-true"
@@ -988,6 +1043,7 @@ exports[`components/Filters not synced user 1`] = `
   </h4>
   <div
     className="checkbox"
+    data-testid="checkbox-ownedCars"
   >
     <label
       htmlFor="checkbox-ownedCars"
@@ -1004,6 +1060,7 @@ exports[`components/Filters not synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-ownedTracks"
   >
     <label
       htmlFor="checkbox-ownedTracks"
@@ -1020,6 +1077,7 @@ exports[`components/Filters not synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-favouriteSeries"
   >
     <label
       htmlFor="checkbox-favouriteSeries"
@@ -1036,6 +1094,7 @@ exports[`components/Filters not synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-favouriteCarsOnly"
   >
     <label
       htmlFor="checkbox-favouriteCarsOnly"
@@ -1052,6 +1111,7 @@ exports[`components/Filters not synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-favouriteTracksOnly"
   >
     <label
       htmlFor="checkbox-favouriteTracksOnly"
@@ -1101,7 +1161,7 @@ exports[`components/Filters not synced user 1`] = `
 exports[`components/Filters renders correctly 1`] = `
 <div
   style={
-    Object {
+    {
       "fontSize": "0.8em",
     }
   }
@@ -1111,6 +1171,7 @@ exports[`components/Filters renders correctly 1`] = `
   </h4>
   <div
     className="checkbox"
+    data-testid="checkbox-type-oval"
   >
     <label
       htmlFor="checkbox-type-oval"
@@ -1127,6 +1188,7 @@ exports[`components/Filters renders correctly 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-type-road-sports"
   >
     <label
       htmlFor="checkbox-type-road-sports"
@@ -1143,6 +1205,7 @@ exports[`components/Filters renders correctly 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-type-road-formula"
   >
     <label
       htmlFor="checkbox-type-road-formula"
@@ -1159,6 +1222,7 @@ exports[`components/Filters renders correctly 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-type-dirt"
   >
     <label
       htmlFor="checkbox-type-dirt"
@@ -1175,6 +1239,7 @@ exports[`components/Filters renders correctly 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-type-rx"
   >
     <label
       htmlFor="checkbox-type-rx"
@@ -1194,6 +1259,7 @@ exports[`components/Filters renders correctly 1`] = `
   </h4>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-r"
   >
     <label
       htmlFor="checkbox-licence-r"
@@ -1210,6 +1276,7 @@ exports[`components/Filters renders correctly 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-d"
   >
     <label
       htmlFor="checkbox-licence-d"
@@ -1226,6 +1293,7 @@ exports[`components/Filters renders correctly 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-c"
   >
     <label
       htmlFor="checkbox-licence-c"
@@ -1242,6 +1310,7 @@ exports[`components/Filters renders correctly 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-b"
   >
     <label
       htmlFor="checkbox-licence-b"
@@ -1258,6 +1327,7 @@ exports[`components/Filters renders correctly 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-a"
   >
     <label
       htmlFor="checkbox-licence-a"
@@ -1274,6 +1344,7 @@ exports[`components/Filters renders correctly 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-p"
   >
     <label
       htmlFor="checkbox-licence-p"
@@ -1293,6 +1364,7 @@ exports[`components/Filters renders correctly 1`] = `
   </h4>
   <div
     className="checkbox"
+    data-testid="checkbox-official-false"
   >
     <label
       htmlFor="checkbox-official-false"
@@ -1309,6 +1381,7 @@ exports[`components/Filters renders correctly 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-official-true"
   >
     <label
       htmlFor="checkbox-official-true"
@@ -1325,6 +1398,7 @@ exports[`components/Filters renders correctly 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-fixed-false"
   >
     <label
       htmlFor="checkbox-fixed-false"
@@ -1341,6 +1415,7 @@ exports[`components/Filters renders correctly 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-fixed-true"
   >
     <label
       htmlFor="checkbox-fixed-true"
@@ -1360,6 +1435,7 @@ exports[`components/Filters renders correctly 1`] = `
   </h4>
   <div
     className="checkbox"
+    data-testid="checkbox-ownedCars"
   >
     <label
       htmlFor="checkbox-ownedCars"
@@ -1376,6 +1452,7 @@ exports[`components/Filters renders correctly 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-ownedTracks"
   >
     <label
       htmlFor="checkbox-ownedTracks"
@@ -1392,6 +1469,7 @@ exports[`components/Filters renders correctly 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-favouriteSeries"
   >
     <label
       htmlFor="checkbox-favouriteSeries"
@@ -1408,6 +1486,7 @@ exports[`components/Filters renders correctly 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-favouriteCarsOnly"
   >
     <label
       htmlFor="checkbox-favouriteCarsOnly"
@@ -1424,6 +1503,7 @@ exports[`components/Filters renders correctly 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-favouriteTracksOnly"
   >
     <label
       htmlFor="checkbox-favouriteTracksOnly"
@@ -1464,7 +1544,7 @@ exports[`components/Filters renders correctly 1`] = `
 exports[`components/Filters synced user 1`] = `
 <div
   style={
-    Object {
+    {
       "fontSize": "0.8em",
     }
   }
@@ -1474,6 +1554,7 @@ exports[`components/Filters synced user 1`] = `
   </h4>
   <div
     className="checkbox"
+    data-testid="checkbox-type-oval"
   >
     <label
       htmlFor="checkbox-type-oval"
@@ -1490,6 +1571,7 @@ exports[`components/Filters synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-type-road-sports"
   >
     <label
       htmlFor="checkbox-type-road-sports"
@@ -1506,6 +1588,7 @@ exports[`components/Filters synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-type-road-formula"
   >
     <label
       htmlFor="checkbox-type-road-formula"
@@ -1522,6 +1605,7 @@ exports[`components/Filters synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-type-dirt"
   >
     <label
       htmlFor="checkbox-type-dirt"
@@ -1538,6 +1622,7 @@ exports[`components/Filters synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-type-rx"
   >
     <label
       htmlFor="checkbox-type-rx"
@@ -1557,6 +1642,7 @@ exports[`components/Filters synced user 1`] = `
   </h4>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-r"
   >
     <label
       htmlFor="checkbox-licence-r"
@@ -1573,6 +1659,7 @@ exports[`components/Filters synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-d"
   >
     <label
       htmlFor="checkbox-licence-d"
@@ -1589,6 +1676,7 @@ exports[`components/Filters synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-c"
   >
     <label
       htmlFor="checkbox-licence-c"
@@ -1605,6 +1693,7 @@ exports[`components/Filters synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-b"
   >
     <label
       htmlFor="checkbox-licence-b"
@@ -1621,6 +1710,7 @@ exports[`components/Filters synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-a"
   >
     <label
       htmlFor="checkbox-licence-a"
@@ -1637,6 +1727,7 @@ exports[`components/Filters synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-licence-p"
   >
     <label
       htmlFor="checkbox-licence-p"
@@ -1656,6 +1747,7 @@ exports[`components/Filters synced user 1`] = `
   </h4>
   <div
     className="checkbox"
+    data-testid="checkbox-official-false"
   >
     <label
       htmlFor="checkbox-official-false"
@@ -1672,6 +1764,7 @@ exports[`components/Filters synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-official-true"
   >
     <label
       htmlFor="checkbox-official-true"
@@ -1688,6 +1781,7 @@ exports[`components/Filters synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-fixed-false"
   >
     <label
       htmlFor="checkbox-fixed-false"
@@ -1704,6 +1798,7 @@ exports[`components/Filters synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-fixed-true"
   >
     <label
       htmlFor="checkbox-fixed-true"
@@ -1723,6 +1818,7 @@ exports[`components/Filters synced user 1`] = `
   </h4>
   <div
     className="checkbox"
+    data-testid="checkbox-ownedCars"
   >
     <label
       htmlFor="checkbox-ownedCars"
@@ -1739,6 +1835,7 @@ exports[`components/Filters synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-ownedTracks"
   >
     <label
       htmlFor="checkbox-ownedTracks"
@@ -1755,6 +1852,7 @@ exports[`components/Filters synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-favouriteSeries"
   >
     <label
       htmlFor="checkbox-favouriteSeries"
@@ -1771,6 +1869,7 @@ exports[`components/Filters synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-favouriteCarsOnly"
   >
     <label
       htmlFor="checkbox-favouriteCarsOnly"
@@ -1787,6 +1886,7 @@ exports[`components/Filters synced user 1`] = `
   </div>
   <div
     className="checkbox"
+    data-testid="checkbox-favouriteTracksOnly"
   >
     <label
       htmlFor="checkbox-favouriteTracksOnly"

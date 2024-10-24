@@ -20,7 +20,7 @@ export default function PurchaseGuideModal({ isOpen, onClose, ownedTracks, favou
   const { t } = useTranslation();
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose} title={t('Purchase Guide')} doneAction={onClose}>
+    <Modal id="purchaseGuideModal" isOpen={isOpen} onClose={onClose} title={t('Purchase Guide')} doneAction={onClose}>
       <div className={bootstrapStyles['container-fluid']}>
         <p>
           {t(

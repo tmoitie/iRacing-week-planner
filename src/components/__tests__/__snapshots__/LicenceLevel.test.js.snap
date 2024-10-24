@@ -1,84 +1,94 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/LicenceLevel renders effective licence 1`] = `
-<div
-  className="licenceLevelComponent licenceC"
->
-  <span
-    className="licenceLetter"
+<div>
+  <div
+    class="licenceLevelComponent licenceC"
   >
-    C
-  </span>
-  <span
-    className="licenceText"
-  />
+    <span
+      class="licenceLetter"
+    >
+      C
+    </span>
+    <span
+      class="licenceText"
+    />
+  </div>
 </div>
 `;
 
 exports[`components/LicenceLevel renders for Pro 1`] = `
-<div
-  className="licenceLevelComponent licenceP"
->
-  <span
-    className="licenceLetter"
+<div>
+  <div
+    class="licenceLevelComponent licenceP"
   >
-    P
-  </span>
-  <span
-    className="licenceText"
-  >
-    1.00
-  </span>
+    <span
+      class="licenceLetter"
+    >
+      P
+    </span>
+    <span
+      class="licenceText"
+    >
+      1.00
+    </span>
+  </div>
 </div>
 `;
 
 exports[`components/LicenceLevel renders for float levels 1`] = `
-<div
-  className="licenceLevelComponent licenceD"
->
-  <span
-    className="licenceLetter"
+<div>
+  <div
+    class="licenceLevelComponent licenceD"
   >
-    D
-  </span>
-  <span
-    className="licenceText"
-  >
-    3.50
-  </span>
+    <span
+      class="licenceLetter"
+    >
+      D
+    </span>
+    <span
+      class="licenceText"
+    >
+      3.50
+    </span>
+  </div>
 </div>
 `;
 
 exports[`components/LicenceLevel renders for high D Class 1`] = `
-<div
-  className="licenceLevelComponent licenceD"
->
-  <span
-    className="licenceLetter"
+<div>
+  <div
+    class="licenceLevelComponent licenceD"
   >
-    D
-  </span>
-  <span
-    className="licenceText"
-  >
-    4.00
-  </span>
+    <span
+      class="licenceLetter"
+    >
+      D
+    </span>
+    <span
+      class="licenceText"
+    >
+      4.00
+    </span>
+  </div>
 </div>
 `;
 
 exports[`components/LicenceLevel renders for other float levels 1`] = `
-<div
-  className="licenceLevelComponent licenceD"
->
-  <span
-    className="licenceLetter"
+<div>
+  <div
+    class="licenceLevelComponent licenceD"
   >
-    D
-  </span>
-  <span
-    className="licenceText"
-  >
-    4.50
-  </span>
+    <span
+      class="licenceLetter"
+    >
+      D
+    </span>
+    <span
+      class="licenceText"
+    >
+      4.50
+    </span>
+  </div>
 </div>
 `;

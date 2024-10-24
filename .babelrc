@@ -3,7 +3,7 @@
   "plugins": [
     "@babel/plugin-proposal-class-properties",
     "@babel/plugin-proposal-export-default-from",
-    "react-hot-loader/babel",
+    "react-refresh/babel",
     "babel-plugin-jest-hoist"
   ]
 }

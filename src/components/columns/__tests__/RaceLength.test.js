@@ -1,73 +1,83 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render, screen } from '@testing-library/react';
 import { describe, test } from '@jest/globals';
-
+import { TableWrapper } from './ColumnUtils';
 import RaceLength from '../RaceLength';
 
 describe('components/columns/RaceLength', () => {
   test('renders null', () => {
-    const component = renderer.create(
-      <RaceLength
-        race={{
-          raceLength: null
-        }}
-      />
+    render(
+      <TableWrapper>
+        <RaceLength
+          race={{
+            raceLength: null,
+          }}
+        />
+      </TableWrapper>,
     );
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(screen.getByTestId('table-row').firstChild).toMatchSnapshot();
   });
 
   test('renders laps', () => {
-    const component = renderer.create(
-      <RaceLength
-        race={{
-          raceLength: {
-            laps: 45,
-          }
-        }}
-      />
+    render(
+      <TableWrapper>
+        <RaceLength
+          race={{
+            raceLength: {
+              laps: 45,
+            },
+          }}
+        />
+      </TableWrapper>,
     );
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(screen.getByTestId('table-row').firstChild).toMatchSnapshot();
   });
 
   test('renders hours', () => {
-    const component = renderer.create(
-      <RaceLength
-        race={{
-          raceLength: {
-            minutes: 120,
-          }
-        }}
-      />
+    render(
+      <TableWrapper>
+        <RaceLength
+          race={{
+            raceLength: {
+              minutes: 120,
+            },
+          }}
+        />
+      </TableWrapper>,
     );
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(screen.getByTestId('table-row').firstChild).toMatchSnapshot();
   });
 
   test('renders minutes', () => {
-    const component = renderer.create(
-      <RaceLength
-        race={{
-          raceLength: {
-            minutes: 45,
-          }
-        }}
-      />
+    render(
+      <TableWrapper>
+        <RaceLength
+          race={{
+            raceLength: {
+              minutes: 45,
+            },
+          }}
+        />
+      </TableWrapper>,
     );
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(screen.getByTestId('table-row').firstChild).toMatchSnapshot();
   });
 
   test('renders empty object mistake', () => {
-    const component = renderer.create(
-      <RaceLength
-        race={{
-          raceLength: {}
-        }}
-      />
+    render(
+      <TableWrapper>
+        <RaceLength
+          race={{
+            raceLength: {},
+          }}
+        />
+      </TableWrapper>,
     );
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(screen.getByTestId('table-row').firstChild).toMatchSnapshot();
   });
 });

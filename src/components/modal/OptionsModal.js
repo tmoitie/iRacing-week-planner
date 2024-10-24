@@ -1,7 +1,6 @@
 // @flow
 
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import toggleIdInCollection from '../../lib/toggleIdInCollection';
 import Modal from './Modal';
@@ -17,7 +16,7 @@ type Props = {
   saveOptions: (string, Array<string>) => void,
 };
 
-export default function OptionsModal({ onClose, isOpen, columnIds, saveOptions }: Props) {
+export default function OptionsModal({ onClose, isOpen = false, columnIds = [], saveOptions }: Props) {
   const getColumnToggler = (id) => (newValue) => {
     const newColumns = toggleIdInCollection(columnIds, id, newValue);
     saveOptions('columns', newColumns);
@@ -47,8 +46,3 @@ export default function OptionsModal({ onClose, isOpen, columnIds, saveOptions }
     </Modal>
   );
 }
-
-OptionsModal.defaultProps = {
-  isOpen: false,
-  columnIds: [],
-};

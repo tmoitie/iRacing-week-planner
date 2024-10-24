@@ -1,75 +1,80 @@
 import moment from 'moment';
 import React from 'react';
-import { shallow } from 'enzyme';
-import { create, act } from 'react-test-renderer';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import { describe, test, expect } from '@jest/globals';
-import Modal from '../../modal/Modal';
+import { TableWrapper } from './ColumnUtils';
 
 import RaceTimes from '../RaceTimes';
 
 describe('components/columns/RaceTimes', () => {
   test('renders no time data', () => {
-    const component = create(<RaceTimes
-      race={{
-        raceTimes: null,
-      }}
-    />);
+    render(
+      <TableWrapper>
+        <RaceTimes
+          race={{
+            raceTimes: null,
+          }}
+        />
+      </TableWrapper>,
+    );
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(screen.getByTestId('table-row').firstChild).toMatchSnapshot();
   });
 
-  test('renders settimes', () => {
-    let component;
-    act(() => {
-      component = create(<RaceTimes
-        race={{
-          series: 'Mazda Cup',
-          setTimes: [
-            moment.duration({ days: 3, hours: 2 }),
-            moment.duration({ days: 4, hours: 13 }),
-          ],
-        }}
-      />);
-    });
+  test('renders settimes', async () => {
+    const user = userEvent.setup();
+    const { baseElement } = render(
+      <TableWrapper>
+        <RaceTimes
+          race={{
+            series: 'Mazda Cup',
+            setTimes: [
+              moment.duration({ days: 3, hours: 2 }),
+              moment.duration({ days: 4, hours: 13 }),
+            ],
+          }}
+        />
+      </TableWrapper>,
+    );
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(screen.getByTestId('table-row').firstChild).toMatchSnapshot();
 
-    act(() => {
-      component.root.findByType('button').props.onClick();
-    });
+    await user.click(screen.getByText('Set times'));
+    expect(baseElement).toMatchSnapshot();
 
-    expect(component.toJSON()).toMatchSnapshot();
-
-    act(() => {
-      component.root.findByProps({ className: 'glyphicon glyphicon-remove' }).parent.parent.props.onClick({
-        preventDefault: () => {},
-        stopPropagation: () => {},
-      });
-    });
-
-    expect(component.toJSON()).toMatchSnapshot();
+    await user.click(screen.getByText('Close'));
+    expect(baseElement).toMatchSnapshot();
   });
 
   test('renders everytime', () => {
-    const component = create(<RaceTimes
-      race={{
-        series: 'Mazda Cup',
-        everyTime: moment.duration({ hours: 3 }),
-        offset: moment.duration({ minutes: 90 }),
-      }}
-    />);
+    render(
+      <TableWrapper>
+        <RaceTimes
+          race={{
+            series: 'Mazda Cup',
+            everyTime: moment.duration({ hours: 3 }),
+            offset: moment.duration({ minutes: 90 }),
+          }}
+        />
+      </TableWrapper>,
+    );
 
-    expect(component.toJSON).toMatchSnapshot();
+    expect(screen.getByTestId('table-row').firstChild).toMatchSnapshot();
   });
 
   test('renders everytime no offset', () => {
-    const component = create(<RaceTimes
-      race={{
-        series: 'Mazda Cup',
-        everyTime: moment.duration({ hours: 3 }),
-      }}
-    />);
+    render(
+      <TableWrapper>
+        <RaceTimes
+          race={{
+            series: 'Mazda Cup',
+            everyTime: moment.duration({ hours: 3 }),
+          }}
+        />
+      </TableWrapper>,
+    );
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(screen.getByTestId('table-row').firstChild).toMatchSnapshot();
   });
 });

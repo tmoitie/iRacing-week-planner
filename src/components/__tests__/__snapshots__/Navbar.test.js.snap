@@ -11,13 +11,13 @@ exports[`components/Navbar changes language 1`] = `
             </a>
           </li>
           <li
--           class=\\"dropdown\\"
-+           class=\\"dropdown open\\"
-            id=\\"navbar-language-dropdown\\"
+-           class="dropdown"
++           class="dropdown open"
+            id="navbar-language-dropdown"
           >
             <a
-              href=\\"\\"
-              id=\\"navbar-link-open-language-dropdown\\""
+              href=""
+              id="navbar-link-open-language-dropdown""
 `;
 
 exports[`components/Navbar changes language 2`] = `
@@ -31,13 +31,13 @@ exports[`components/Navbar changes language 2`] = `
             </a>
           </li>
           <li
--           class=\\"dropdown open\\"
-+           class=\\"dropdown\\"
-            id=\\"navbar-language-dropdown\\"
+-           class="dropdown open"
++           class="dropdown"
+            id="navbar-language-dropdown"
           >
             <a
-              href=\\"\\"
-              id=\\"navbar-link-open-language-dropdown\\""
+              href=""
+              id="navbar-link-open-language-dropdown""
 `;
 
 exports[`components/Navbar closes dropdown 1`] = `
@@ -51,13 +51,13 @@ exports[`components/Navbar closes dropdown 1`] = `
             </a>
           </li>
           <li
--           class=\\"dropdown open\\"
-+           class=\\"dropdown\\"
-            id=\\"navbar-language-dropdown\\"
+-           class="dropdown open"
++           class="dropdown"
+            id="navbar-language-dropdown"
           >
             <a
-              href=\\"\\"
-              id=\\"navbar-link-open-language-dropdown\\""
+              href=""
+              id="navbar-link-open-language-dropdown""
 `;
 
 exports[`components/Navbar renders correctly and links work 1`] = `

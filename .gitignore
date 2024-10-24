@@ -11,6 +11,7 @@
 /src/data/contributors.json
 
 .idea
+.vscode
 *.css.flow
 *.scss.flow
 .nyc_output
@@ -30,3 +31,4 @@ cookie.txt
 
 # Webpack stats
 stats.json
+

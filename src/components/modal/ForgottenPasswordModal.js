@@ -16,15 +16,10 @@ type Props = {
   onClose?: () => void,
 };
 
-const defaultProps = {
-  onClose: () => {},
-  isOpen: false,
-};
-
 const errorSelector = (state) => state.auth.errorReset;
 const loadingSelector = (state) => state.auth.loadingReset;
 
-export default function ForgottenPasswordModal({ isOpen, onClose }: Props) {
+export default function ForgottenPasswordModal({ isOpen = false, onClose = () => {} }: Props) {
   const error = useSelector(errorSelector, shallowEqual);
   const loading = useSelector(loadingSelector);
   const dispatch = useDispatch();
@@ -110,5 +105,3 @@ export default function ForgottenPasswordModal({ isOpen, onClose }: Props) {
     </Modal>
   );
 }
-
-ForgottenPasswordModal.defaultProps = defaultProps;
