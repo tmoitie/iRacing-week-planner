@@ -18,9 +18,10 @@ type Props = {
   favouriteCars: Array<number>,
   carIds: Array<number>,
   seriesName: string,
+  seriesId: number,
 };
 
-export default function CarModal({ onClose, ownedCars, favouriteCars, isOpen, carIds, seriesName }: Props) {
+export default function CarModal({ onClose, ownedCars, favouriteCars, isOpen, carIds, seriesName, seriesId }: Props) {
   const cars = [...allCars].sort((a, b) => a.name.localeCompare(b.name)).filter((car) => carIds.includes(car.sku));
   const { t } = useTranslation();
 
@@ -32,6 +33,7 @@ export default function CarModal({ onClose, ownedCars, favouriteCars, isOpen, ca
         series: t(seriesName),
       })}
       doneAction={onClose}
+      id={`modal-cars-${seriesId}`}
     >
       <div className={styles['container-fluid']}>
         <div className={styles['table-responsive']}>
@@ -46,7 +48,7 @@ export default function CarModal({ onClose, ownedCars, favouriteCars, isOpen, ca
                 <tr
                   key={car.name}
                   className={classnames({
-                    [styles['success']]: ownedCars.includes(car.sku),
+                    [styles.success]: ownedCars.includes(car.sku),
                     [raceListingStyles.clickableCell]: true,
                   })}
                 >

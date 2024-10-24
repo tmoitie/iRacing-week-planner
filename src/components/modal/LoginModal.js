@@ -17,11 +17,7 @@ type Props = {
   onClose: () => void,
 };
 
-const defaultProps = {
-  isOpen: false,
-};
-
-export default function LoginModal({ isOpen, onClose }: Props) {
+export default function LoginModal({ isOpen = false, onClose }: Props) {
   const { t } = useTranslation();
   const error = useSelector(errorSelector, shallowEqual);
   const loading = useSelector(loadingSelector);
@@ -58,6 +54,7 @@ export default function LoginModal({ isOpen, onClose }: Props) {
 
   return (
     <Modal
+      id="login-modal"
       isOpen={isOpen}
       onClose={onClose}
       title={t('Sign in/Create account')}
@@ -166,5 +163,3 @@ export default function LoginModal({ isOpen, onClose }: Props) {
     </Modal>
   );
 }
-
-LoginModal.defaultProps = defaultProps;

@@ -61,12 +61,7 @@ type Props = {
   save: (Array<number>) => void,
 };
 
-const defaultProps = {
-  isOpen: false,
-  favouriteSeries: [],
-};
-
-export default function FavouriteSeriesModal({ onClose, isOpen, favouriteSeries, save }: Props) {
+export default function FavouriteSeriesModal({ onClose, isOpen = false, favouriteSeries = [], save }: Props) {
   const [searchInput, setSearchInput] = React.useState('');
   const { t } = useTranslation();
 
@@ -117,9 +112,10 @@ export default function FavouriteSeriesModal({ onClose, isOpen, favouriteSeries,
       title={t('Choose favorite series')}
       doneAction={onClose}
     >
-      <div>
+      <div className={styles['form-group']}>
         <input
           type="text"
+          className={styles['form-control']}
           placeholder={t('Search series')}
           aria-label="search series"
           onChange={handleChange}
@@ -171,5 +167,3 @@ export default function FavouriteSeriesModal({ onClose, isOpen, favouriteSeries,
     </Modal>
   );
 }
-
-FavouriteSeriesModal.defaultProps = defaultProps;

@@ -1,8 +1,8 @@
-
 import { describe, test } from '@jest/globals';
 import React from 'react';
-import ReactDOM from 'react-dom';
-import renderer from 'react-test-renderer';
+
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 
 import CarModal from '../CarModal';
 
@@ -11,35 +11,24 @@ import '../../../data/cars.json';
 jest.mock('../../../data/cars.json');
 
 describe('components/modal/CarModal', () => {
-  beforeAll(() => {
-    ReactDOM.createPortal = jest.fn((element, node) => {
-      return element;
-    });
-  })
-
-  afterEach(() => {
-    ReactDOM.createPortal.mockClear();
-  })
-
-  test('renders correctly', () => {
+  test('renders correctly', async () => {
+    const user = userEvent.setup();
     const onClose = jest.fn();
-    const component = renderer.create(
+    render(
       <CarModal
         onClose={onClose}
         ownedCars={[10494, 10410]}
         favouriteCars={[10461, 10410]}
-        isOpen={true}
+        isOpen
         carIds={[10410, 10494, 10461, 10405]}
         seriesName="Audi Spectacular"
+        seriesId={123}
       />,
     );
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(await screen.findByTestId('modal-cars-123')).toMatchSnapshot();
 
-    const closeButton = component.root.findByProps({ className: 'close' });
-    closeButton.props.onClick({ preventDefault: () => {}, stopPropagation: () => {}});
-    expect(onClose).toBeCalled();
-
-
+    await user.click(screen.getByText('Close'));
+    expect(onClose).toHaveBeenCalled();
   });
 });

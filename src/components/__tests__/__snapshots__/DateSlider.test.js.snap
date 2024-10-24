@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/DateSlider renders correctly 1`] = `
-Array [
+[
   <div
     className="row"
   >
@@ -13,7 +13,7 @@ Array [
     <h3
       className="col-xs-4"
       style={
-        Object {
+        {
           "textAlign": "right",
         }
       }
@@ -23,7 +23,7 @@ Array [
   </div>,
   <div
     style={
-      Object {
+      {
         "marginBottom": 10,
       }
     }
@@ -39,7 +39,7 @@ Array [
         <div
           className="bp3-slider-progress"
           style={
-            Object {
+            {
               "left": "0.00%",
               "right": "100.00%",
               "top": 0,
@@ -49,7 +49,7 @@ Array [
         <div
           className="bp3-slider-progress bp3-intent-primary"
           style={
-            Object {
+            {
               "left": "0.00%",
               "right": "100.00%",
               "top": 0,
@@ -59,7 +59,7 @@ Array [
         <div
           className="bp3-slider-progress"
           style={
-            Object {
+            {
               "left": "0.00%",
               "right": "100.00%",
               "top": 0,
@@ -76,7 +76,7 @@ Array [
         onKeyUp={[Function]}
         onMouseDown={[Function]}
         onTouchStart={[Function]}
-        style={Object {}}
+        style={{}}
         tabIndex={0}
       />
     </div>

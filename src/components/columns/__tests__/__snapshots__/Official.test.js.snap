@@ -1,15 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/columns/Official renders correctly 1`] = `
+exports[`components/columns/Official renders false 1`] = `
 <td>
-  <div>
-    <TickIcon />
-  </div>
+  <div />
 </td>
 `;
 
-exports[`components/columns/Official renders false correctly 1`] = `
+exports[`components/columns/Official renders true 1`] = `
 <td>
-  <div />
+  <div>
+    <span
+      class="glyphicon glyphicon-ok"
+      data-testid="TickIcon"
+    />
+  </div>
 </td>
 `;

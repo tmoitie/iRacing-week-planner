@@ -16,6 +16,7 @@ export default function LinkColumn({ race }: Props) {
         href={`http://members.iracing.com/membersite/member/SeriesSessions.do?season=${race.seasonId}`}
         target="_blank"
         rel="noreferrer"
+        data-testid="LinkColumn-link"
       >
         <LinkIcon />
       </a>

@@ -15,6 +15,7 @@ type Props = {
     carIds: Array<number>,
     carClasses: Array<string>,
     series: string,
+    seriesId: string,
   },
   favouriteCars: Array<number>,
   ownedCars: Array<number>,
@@ -52,6 +53,7 @@ export default function Car({ race, favouriteCars, ownedCars }: Props) {
           favouriteCars={favouriteCars}
           carIds={race.carIds}
           seriesName={race.series}
+          seriesId={race.seriesId}
         />
       ) : null}
     </>

@@ -24,7 +24,8 @@
       "ExportDeclaration": { "minProperties": 12, "multiline": true, "consistent": true }
     }],
     "react/jsx-props-no-spreading": [0],
-    "quote-props": [0]
+    "quote-props": [0],
+    "react/require-default-props": [0]
   },
   "plugins": [
     "react",

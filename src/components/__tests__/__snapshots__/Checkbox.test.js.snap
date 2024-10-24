@@ -3,6 +3,7 @@
 exports[`components/Checkbox renders 1`] = `
 <div
   className="checkbox"
+  data-testid="test-renders"
 >
   <label
     htmlFor="test-renders"
@@ -22,6 +23,7 @@ exports[`components/Checkbox renders 1`] = `
 exports[`components/Checkbox renders checked 1`] = `
 <div
   className="checkbox"
+  data-testid="test-checked"
 >
   <label
     htmlFor="test-checked"
@@ -40,6 +42,7 @@ exports[`components/Checkbox renders checked 1`] = `
 exports[`components/Checkbox renders disabled 1`] = `
 <div
   className="checkbox disabled"
+  data-testid="test-disabled"
 >
   <label
     htmlFor="test-disabled"

@@ -3,428 +3,376 @@
 exports[`components/GlobalModals renders all closed 1`] = `null`;
 
 exports[`components/GlobalModals renders open options, closing and saving 1`] = `
-<div
-  className="ReactModal__Overlay"
-  onClick={[Function]}
-  onMouseDown={[Function]}
-  style={
-    Object {
-      "backgroundColor": "rgba(255, 255, 255, 0.75)",
-      "bottom": 0,
-      "left": 0,
-      "position": "fixed",
-      "right": 0,
-      "top": 0,
-    }
-  }
->
+<body>
+  <div />
   <div
-    aria-modal={true}
-    className="ReactModal__Content Modal__Bootstrap modal-dialog modal-lg"
     id="optionsModal"
-    onClick={[Function]}
-    onKeyDown={[Function]}
-    onMouseDown={[Function]}
-    onMouseUp={[Function]}
-    role="dialog"
-    style={Object {}}
-    tabIndex="-1"
   >
     <div
-      className="modal-content"
+      class="ReactModal__Overlay"
+      style="position: fixed; display: block; inset: 0; background-color: rgba(255, 255, 255, 0.75);"
     >
       <div
-        className="modal-header"
-      >
-        <button
-          aria-label="Close"
-          className="close"
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="glyphicon glyphicon-remove"
-          />
-        </button>
-        <h4
-          className="modal-title"
-        >
-          Options
-        </h4>
-      </div>
-      <div
-        className="modal-body"
-        style={
-          Object {
-            "maxHeight": "55vh",
-            "overflowY": "auto",
-          }
-        }
+        class="Modal__Bootstrap modal-dialog modal-lg"
+        data-testid="optionsModal"
       >
         <div
-          className="container-fluid"
+          class="modal-content"
         >
-          <h5>
-            Columns
-          </h5>
           <div
-            className="row"
+            class="modal-header"
+          >
+            <button
+              aria-label="Close"
+              class="close"
+              type="button"
+            >
+              <span
+                class="glyphicon glyphicon-remove"
+              />
+            </button>
+            <h4
+              class="modal-title"
+            >
+              Options
+            </h4>
+          </div>
+          <div
+            class="modal-body"
+            style="max-height: 55vh; overflow-y: auto;"
           >
             <div
-              className="col-xs-3 col-md-2"
+              class="container-fluid"
             >
+              <h5>
+                Columns
+              </h5>
               <div
-                className="checkbox"
+                class="row"
               >
-                <label
-                  htmlFor="options-columns-id"
+                <div
+                  class="col-xs-3 col-md-2"
                 >
-                  <input
-                    checked={false}
-                    disabled={false}
-                    id="options-columns-id"
-                    onChange={[Function]}
-                    type="checkbox"
-                  />
-                  ID
-                </label>
-              </div>
-            </div>
-            <div
-              className="col-xs-3 col-md-2"
-            >
-              <div
-                className="checkbox"
-              >
-                <label
-                  htmlFor="options-columns-class"
+                  <div
+                    class="checkbox"
+                    data-testid="options-columns-id"
+                  >
+                    <label
+                      for="options-columns-id"
+                    >
+                      <input
+                        id="options-columns-id"
+                        type="checkbox"
+                      />
+                      ID
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="col-xs-3 col-md-2"
                 >
-                  <input
-                    checked={false}
-                    disabled={false}
-                    id="options-columns-class"
-                    onChange={[Function]}
-                    type="checkbox"
-                  />
-                  Class
-                </label>
-              </div>
-            </div>
-            <div
-              className="col-xs-3 col-md-2"
-            >
-              <div
-                className="checkbox"
-              >
-                <label
-                  htmlFor="options-columns-licence"
+                  <div
+                    class="checkbox"
+                    data-testid="options-columns-class"
+                  >
+                    <label
+                      for="options-columns-class"
+                    >
+                      <input
+                        id="options-columns-class"
+                        type="checkbox"
+                      />
+                      Class
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="col-xs-3 col-md-2"
                 >
-                  <input
-                    checked={false}
-                    disabled={false}
-                    id="options-columns-licence"
-                    onChange={[Function]}
-                    type="checkbox"
-                  />
-                  Licence
-                </label>
-              </div>
-            </div>
-            <div
-              className="col-xs-3 col-md-2"
-            >
-              <div
-                className="checkbox"
-              >
-                <label
-                  htmlFor="options-columns-type"
+                  <div
+                    class="checkbox"
+                    data-testid="options-columns-licence"
+                  >
+                    <label
+                      for="options-columns-licence"
+                    >
+                      <input
+                        id="options-columns-licence"
+                        type="checkbox"
+                      />
+                      Licence
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="col-xs-3 col-md-2"
                 >
-                  <input
-                    checked={false}
-                    disabled={false}
-                    id="options-columns-type"
-                    onChange={[Function]}
-                    type="checkbox"
-                  />
-                  Type
-                </label>
-              </div>
-            </div>
-            <div
-              className="col-xs-3 col-md-2"
-            >
-              <div
-                className="checkbox disabled"
-              >
-                <label
-                  htmlFor="options-columns-series"
+                  <div
+                    class="checkbox"
+                    data-testid="options-columns-type"
+                  >
+                    <label
+                      for="options-columns-type"
+                    >
+                      <input
+                        id="options-columns-type"
+                        type="checkbox"
+                      />
+                      Type
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="col-xs-3 col-md-2"
                 >
-                  <input
-                    checked={false}
-                    disabled={true}
-                    id="options-columns-series"
-                    onChange={[Function]}
-                    type="checkbox"
-                  />
-                  Series
-                </label>
-              </div>
-            </div>
-            <div
-              className="col-xs-3 col-md-2"
-            >
-              <div
-                className="checkbox"
-              >
-                <label
-                  htmlFor="options-columns-track"
+                  <div
+                    class="checkbox disabled"
+                    data-testid="options-columns-series"
+                  >
+                    <label
+                      for="options-columns-series"
+                    >
+                      <input
+                        disabled=""
+                        id="options-columns-series"
+                        type="checkbox"
+                      />
+                      Series
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="col-xs-3 col-md-2"
                 >
-                  <input
-                    checked={false}
-                    disabled={false}
-                    id="options-columns-track"
-                    onChange={[Function]}
-                    type="checkbox"
-                  />
-                  Track
-                </label>
-              </div>
-            </div>
-            <div
-              className="col-xs-3 col-md-2"
-            >
-              <div
-                className="checkbox"
-              >
-                <label
-                  htmlFor="options-columns-car"
+                  <div
+                    class="checkbox"
+                    data-testid="options-columns-track"
+                  >
+                    <label
+                      for="options-columns-track"
+                    >
+                      <input
+                        id="options-columns-track"
+                        type="checkbox"
+                      />
+                      Track
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="col-xs-3 col-md-2"
                 >
-                  <input
-                    checked={false}
-                    disabled={false}
-                    id="options-columns-car"
-                    onChange={[Function]}
-                    type="checkbox"
-                  />
-                  Car
-                </label>
-              </div>
-            </div>
-            <div
-              className="col-xs-3 col-md-2"
-            >
-              <div
-                className="checkbox"
-              >
-                <label
-                  htmlFor="options-columns-start"
+                  <div
+                    class="checkbox"
+                    data-testid="options-columns-car"
+                  >
+                    <label
+                      for="options-columns-car"
+                    >
+                      <input
+                        id="options-columns-car"
+                        type="checkbox"
+                      />
+                      Car
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="col-xs-3 col-md-2"
                 >
-                  <input
-                    checked={false}
-                    disabled={false}
-                    id="options-columns-start"
-                    onChange={[Function]}
-                    type="checkbox"
-                  />
-                  Start
-                </label>
-              </div>
-            </div>
-            <div
-              className="col-xs-3 col-md-2"
-            >
-              <div
-                className="checkbox"
-              >
-                <label
-                  htmlFor="options-columns-end"
+                  <div
+                    class="checkbox"
+                    data-testid="options-columns-start"
+                  >
+                    <label
+                      for="options-columns-start"
+                    >
+                      <input
+                        id="options-columns-start"
+                        type="checkbox"
+                      />
+                      Start
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="col-xs-3 col-md-2"
                 >
-                  <input
-                    checked={false}
-                    disabled={false}
-                    id="options-columns-end"
-                    onChange={[Function]}
-                    type="checkbox"
-                  />
-                  End
-                </label>
-              </div>
-            </div>
-            <div
-              className="col-xs-3 col-md-2"
-            >
-              <div
-                className="checkbox"
-              >
-                <label
-                  htmlFor="options-columns-racelength"
+                  <div
+                    class="checkbox"
+                    data-testid="options-columns-end"
+                  >
+                    <label
+                      for="options-columns-end"
+                    >
+                      <input
+                        id="options-columns-end"
+                        type="checkbox"
+                      />
+                      End
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="col-xs-3 col-md-2"
                 >
-                  <input
-                    checked={false}
-                    disabled={false}
-                    id="options-columns-racelength"
-                    onChange={[Function]}
-                    type="checkbox"
-                  />
-                  Length
-                </label>
-              </div>
-            </div>
-            <div
-              className="col-xs-3 col-md-2"
-            >
-              <div
-                className="checkbox"
-              >
-                <label
-                  htmlFor="options-columns-official"
+                  <div
+                    class="checkbox"
+                    data-testid="options-columns-racelength"
+                  >
+                    <label
+                      for="options-columns-racelength"
+                    >
+                      <input
+                        id="options-columns-racelength"
+                        type="checkbox"
+                      />
+                      Length
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="col-xs-3 col-md-2"
                 >
-                  <input
-                    checked={false}
-                    disabled={false}
-                    id="options-columns-official"
-                    onChange={[Function]}
-                    type="checkbox"
-                  />
-                  Official
-                </label>
-              </div>
-            </div>
-            <div
-              className="col-xs-3 col-md-2"
-            >
-              <div
-                className="checkbox"
-              >
-                <label
-                  htmlFor="options-columns-fixed"
+                  <div
+                    class="checkbox"
+                    data-testid="options-columns-official"
+                  >
+                    <label
+                      for="options-columns-official"
+                    >
+                      <input
+                        id="options-columns-official"
+                        type="checkbox"
+                      />
+                      Official
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="col-xs-3 col-md-2"
                 >
-                  <input
-                    checked={false}
-                    disabled={false}
-                    id="options-columns-fixed"
-                    onChange={[Function]}
-                    type="checkbox"
-                  />
-                  Fixed
-                </label>
-              </div>
-            </div>
-            <div
-              className="col-xs-3 col-md-2"
-            >
-              <div
-                className="checkbox"
-              >
-                <label
-                  htmlFor="options-columns-raceTimes"
+                  <div
+                    class="checkbox"
+                    data-testid="options-columns-fixed"
+                  >
+                    <label
+                      for="options-columns-fixed"
+                    >
+                      <input
+                        id="options-columns-fixed"
+                        type="checkbox"
+                      />
+                      Fixed
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="col-xs-3 col-md-2"
                 >
-                  <input
-                    checked={false}
-                    disabled={false}
-                    id="options-columns-raceTimes"
-                    onChange={[Function]}
-                    type="checkbox"
-                  />
-                  Race times
-                </label>
-              </div>
-            </div>
-            <div
-              className="col-xs-3 col-md-2"
-            >
-              <div
-                className="checkbox"
-              >
-                <label
-                  htmlFor="options-columns-nextRace"
+                  <div
+                    class="checkbox"
+                    data-testid="options-columns-raceTimes"
+                  >
+                    <label
+                      for="options-columns-raceTimes"
+                    >
+                      <input
+                        id="options-columns-raceTimes"
+                        type="checkbox"
+                      />
+                      Race times
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="col-xs-3 col-md-2"
                 >
-                  <input
-                    checked={false}
-                    disabled={false}
-                    id="options-columns-nextRace"
-                    onChange={[Function]}
-                    type="checkbox"
-                  />
-                  Next race
-                </label>
-              </div>
-            </div>
-            <div
-              className="col-xs-3 col-md-2"
-            >
-              <div
-                className="checkbox"
-              >
-                <label
-                  htmlFor="options-columns-seriesEnd"
+                  <div
+                    class="checkbox"
+                    data-testid="options-columns-nextRace"
+                  >
+                    <label
+                      for="options-columns-nextRace"
+                    >
+                      <input
+                        id="options-columns-nextRace"
+                        type="checkbox"
+                      />
+                      Next race
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="col-xs-3 col-md-2"
                 >
-                  <input
-                    checked={false}
-                    disabled={false}
-                    id="options-columns-seriesEnd"
-                    onChange={[Function]}
-                    type="checkbox"
-                  />
-                  Season end
-                </label>
-              </div>
-            </div>
-            <div
-              className="col-xs-3 col-md-2"
-            >
-              <div
-                className="checkbox"
-              >
-                <label
-                  htmlFor="options-columns-rain"
+                  <div
+                    class="checkbox"
+                    data-testid="options-columns-seriesEnd"
+                  >
+                    <label
+                      for="options-columns-seriesEnd"
+                    >
+                      <input
+                        id="options-columns-seriesEnd"
+                        type="checkbox"
+                      />
+                      Season end
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="col-xs-3 col-md-2"
                 >
-                  <input
-                    checked={false}
-                    disabled={false}
-                    id="options-columns-rain"
-                    onChange={[Function]}
-                    type="checkbox"
-                  />
-                  Rain
-                </label>
-              </div>
-            </div>
-            <div
-              className="col-xs-3 col-md-2"
-            >
-              <div
-                className="checkbox"
-              >
-                <label
-                  htmlFor="options-columns-seriesLink"
+                  <div
+                    class="checkbox"
+                    data-testid="options-columns-rain"
+                  >
+                    <label
+                      for="options-columns-rain"
+                    >
+                      <input
+                        id="options-columns-rain"
+                        type="checkbox"
+                      />
+                      Rain
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="col-xs-3 col-md-2"
                 >
-                  <input
-                    checked={false}
-                    disabled={false}
-                    id="options-columns-seriesLink"
-                    onChange={[Function]}
-                    type="checkbox"
-                  />
-                  Link
-                </label>
+                  <div
+                    class="checkbox"
+                    data-testid="options-columns-seriesLink"
+                  >
+                    <label
+                      for="options-columns-seriesLink"
+                    >
+                      <input
+                        id="options-columns-seriesLink"
+                        type="checkbox"
+                      />
+                      Link
+                    </label>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <div
+            class="modal-footer"
+          >
+            <button
+              class="btn btn-primary"
+              type="button"
+            >
+              Close
+            </button>
+          </div>
         </div>
-      </div>
-      <div
-        className="modal-footer"
-      >
-        <button
-          className="btn btn-primary"
-          onClick={[Function]}
-          type="button"
-        >
-          Close
-        </button>
       </div>
     </div>
   </div>
-</div>
+</body>
 `;
