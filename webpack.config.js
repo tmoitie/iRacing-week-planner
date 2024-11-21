@@ -160,7 +160,7 @@ module.exports = {
       'process.env.CODE_VERSION': JSON.stringify(version),
     }),
     new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /en|de|es|fr|nl|pt|pl|da|it|sv|cs|fi|hu|ca/),
-  ] : env === 'development' ? [
+  ] : [
     ...plugins,
     new webpack.DefinePlugin({
       __DEV__: true,
