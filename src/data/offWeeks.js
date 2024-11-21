@@ -1,37 +1,5 @@
 export default {
   // Commented out series kept in here for when iRacing schedule next season, often with the same settings
-  // 512 │ 3974 | SCCA Runoffs - FR500
-  // 3974: {
-  //   weekEndOffset: { days: 7 },
-  // },
-  // 506 │ 3968 | SCCA Runoffs - Formula Vee
-  // 3968: {
-  //   weekEndOffset: { days: 7 },
-  // },
-  // 509 │ 3971 | SCCA Runoffs - GT1
-  // 3971: {
-  //   weekEndOffset: { days: 7 },
-  // },
-  // 511 │ 3973 | SCCA Runoffs - GT4
-  // 3973: {
-  //   weekEndOffset: { days: 7 },
-  // },
-  // 508 │ 3970 | SCCA Runoffs - Global MX-5 Spec Miata
-  // 3970: {
-  //   weekEndOffset: { days: 7 },
-  // },
-  // 507 │ 3969 | SCCA Runoffs - Spec Racer Ford
-  // 3969: {
-  //   weekEndOffset: { days: 7 },
-  // },
-  // 513 │ 3975 | SCCA Runoffs - Touring Cars
-  // 3975: {
-  //   weekEndOffset: { days: 7 },
-  // },
-  // 510 │ 3972 | SCCA Runoffs - USF2000
-  // 3972: {
-  //   weekEndOffset: { days: 7 },
-  // },
   // 229 │ 4113 │ NASCAR iRacing Series - Open | 2023-11-07
   // 4113: {
   //   offWeeks: [
@@ -202,5 +170,40 @@ export default {
     offWeeks: [
       1.1, 2.1, 3.1, 4.1, 5.1, 6.1,
     ],
+  },
+
+  // 570 │ 5196   │ Dirt        │ A     │ World of Outlaws Pro Qualifying Series | 2025-01-28
+  5196: {
+    offWeeks: [
+      6.1, 6.1,
+    ],
+  },
+  // 506 │ 5335   │ Formula Car │ D     │ SCCA Runoffs - Formula Vee | 2024-11-26
+  5335: {
+    weekEndOffset: { days: 7 },
+  },
+  // 510 │ 5338   │ Formula Car │ D     │ SCCA Runoffs - USF2000 | 2024-11-26
+  5338: {
+    weekEndOffset: { days: 7 },
+  },
+  // 511 │ 5339   │ Sports Car  │ D     │ SCCA Runoffs - GT4 | 2024-11-26
+  5339: {
+    weekEndOffset: { days: 7 },
+  },
+  // 508 │ 5337   │ Sports Car  │ D     │ SCCA Runoffs - Global MX-5 Spec Miata | 2024-11-26
+  5337: {
+    weekEndOffset: { days: 7 },
+  },
+  // 545 │ 5340   │ Sports Car  │ D     │ SCCA Runoffs - Renault Clio | 2024-11-26
+  5340: {
+    weekEndOffset: { days: 7 },
+  },
+  // 507 │ 5336   │ Sports Car  │ D     │ SCCA Runoffs - Spec Racer Ford | 2024-11-26
+  5336: {
+    weekEndOffset: { days: 7 },
+  },
+  // 478 │ 5190   │ Oval        │ P     │ eNASCAR RTP Contender Series
+  5190: {
+    weekStartOffset: { days: 6 },
   },
 };
