@@ -2,6 +2,12 @@ import moment from 'moment';
 
 export default [
   {
+    date: moment('2024-12-10 00:00:00').utc(),
+    items: [
+      'Update to start of 2024S4W14',
+    ],
+  },
+  {
     date: moment('2024-09-26 00:00:00').utc(),
     items: [
       'Add rain column (see Options tab)',

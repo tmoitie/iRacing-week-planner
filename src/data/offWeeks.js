@@ -38,17 +38,17 @@ export default {
   //   ],
   // },
   // 207 │ 4703 │ NASCAR iRacing Series - Fixed | 2024-11-12
-  4703: {
-    offWeeks: [
-      13.1, 22.1, 22.1,
-    ],
-  },
+  // 4703: {
+  //   offWeeks: [
+  //     13.1, 22.1, 22.1,
+  //   ],
+  // },
   // 229 │ 4699 │ NASCAR iRacing Series - Open | 2024-11-12
-  4699: {
-    offWeeks: [
-      13.1, 22.1, 22.1,
-    ],
-  },
+  // 4699: {
+  //   offWeeks: [
+  //     13.1, 22.1, 22.1,
+  //   ],
+  // },
   // 438 │ 4704   │ Oval │ A     │ eNASCAR Road to Pro Qual Series - Round 1 | 2024-05-28
   // 4704: {
   //   offWeeks: [
@@ -68,11 +68,11 @@ export default {
     ],
   },
   // 374 │ 4831   │ Road │ C     │ INDYCAR iRacing Series | 2024-09-17
-  4831: {
-    offWeeks: [
-      1.1, 2.1, 2.1, 2.1, 4.1, 5.1, 8.1, 9.1, 12.1, 12.1, 12.1, 15.1,
-    ],
-  },
+  // 4831: {
+  //   offWeeks: [
+  //     1.1, 2.1, 2.1, 2.1, 4.1, 5.1, 8.1, 9.1, 12.1, 12.1, 12.1, 15.1,
+  //   ],
+  // },
   // 557 │ 4825   │ Sports Car  │ D     │ BMW M Power Tour - Fixed | 2024-06-04
   // 4825: {
   //   weekEndOffset: { days: 7 },
@@ -97,11 +97,11 @@ export default {
   //   ],
   // },
   // 275 │ 4862   │ Sports Car  │ D     │ Nurburgring Endurance Championship | 2024-10-29
-  4862: {
-    offWeeks: [
-      1.1, 1.1, 2.1, 2.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 4.1, 5.1, 5.1, 6.1, 7.1, 7.1, 7.1, 8.1, 8.1, 8.1,
-    ],
-  },
+  // 4862: {
+  //   offWeeks: [
+  //     1.1, 1.1, 2.1, 2.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 4.1, 5.1, 5.1, 6.1, 7.1, 7.1, 7.1, 8.1, 8.1, 8.1,
+  //   ],
+  // },
 
   // 451 │ 4861   │ Sports Car  │ C     │ Creventic Endurance Series | 2024-12-17
   4861: {
@@ -118,11 +118,11 @@ export default {
   //   ],
   // },
   // 439 │ 4998 │ eNASCAR Road to Pro Qual Series - Round 2 | 2024-10-01
-  4993: {
-    offWeeks: [
-      1.1, 2.1, 3.1, 4.1, 5.1, 5.1, 6.1,
-    ],
-  },
+  // 4993: {
+  //   offWeeks: [
+  //     1.1, 2.1, 3.1, 4.1, 5.1, 5.1, 6.1,
+  //   ],
+  // },
   // 331 │ 4897   │ Sports Car  │ B     │ Global Endurance CONSPIT Tour  | 2024-09-03
   // 4897: {
   //   weekStartOffset: { days: 7 },
@@ -150,14 +150,14 @@ export default {
   //     5.1, 5.1,
   //   ],
   // },
-  // 492 │ 5047   │ Sports Car  │ C     │ IMSA Michelin Pilot Challenge Series
+  // 492 │ 5047   │ Sports Car  │ C     │ IMSA Michelin Pilot Challenge Series | 2024-12-03
   5047: {
     offWeeks: [
       0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
     ],
   },
 
-  // 331 │ 5061   │ Sports Car  │ B     │ Global Endurance CONSPIT Tour
+  // 331 │ 5061   │ Sports Car  │ B     │ Global Endurance CONSPIT Tour | 2024-12-03
   5061: {
     weekStartOffset: { days: 7 },
     offWeeks: [
@@ -165,7 +165,7 @@ export default {
     ],
   },
 
-  // 419 │ 5063   │ Sports Car  │ B     │ IMSA Endurance Series
+  // 419 │ 5063   │ Sports Car  │ B     │ IMSA Endurance Series | 2024-12-10
   5063: {
     offWeeks: [
       1.1, 2.1, 3.1, 4.1, 5.1, 6.1,
@@ -179,31 +179,36 @@ export default {
     ],
   },
   // 506 │ 5335   │ Formula Car │ D     │ SCCA Runoffs - Formula Vee | 2024-11-26
-  5335: {
-    weekEndOffset: { days: 7 },
-  },
+  // 5335: {
+  //   weekEndOffset: { days: 7 },
+  // },
   // 510 │ 5338   │ Formula Car │ D     │ SCCA Runoffs - USF2000 | 2024-11-26
-  5338: {
-    weekEndOffset: { days: 7 },
-  },
+  // 5338: {
+  //   weekEndOffset: { days: 7 },
+  // },
   // 511 │ 5339   │ Sports Car  │ D     │ SCCA Runoffs - GT4 | 2024-11-26
-  5339: {
-    weekEndOffset: { days: 7 },
-  },
+  // 5339: {
+  //   weekEndOffset: { days: 7 },
+  // },
   // 508 │ 5337   │ Sports Car  │ D     │ SCCA Runoffs - Global MX-5 Spec Miata | 2024-11-26
-  5337: {
-    weekEndOffset: { days: 7 },
-  },
+  // 5337: {
+  //   weekEndOffset: { days: 7 },
+  // },
   // 545 │ 5340   │ Sports Car  │ D     │ SCCA Runoffs - Renault Clio | 2024-11-26
-  5340: {
-    weekEndOffset: { days: 7 },
-  },
+  // 5340: {
+  //   weekEndOffset: { days: 7 },
+  // },
   // 507 │ 5336   │ Sports Car  │ D     │ SCCA Runoffs - Spec Racer Ford | 2024-11-26
-  5336: {
-    weekEndOffset: { days: 7 },
+  // 5336: {
+  //   weekEndOffset: { days: 7 },
+  // },
+  // 478 │ 5190   │ Oval        │ P     │ eNASCAR RTP Contender Series | 2024-11-26
+  // 5190: {
+  //   weekStartOffset: { days: 6 },
+  // },
+  // 245 │ 5356   │ Sports Car  │ R     │ 13th Week iRacing Figure GR8 | 2024-12-17
+  5356: {
+    weekEndOffset: { days: -1 },
   },
-  // 478 │ 5190   │ Oval        │ P     │ eNASCAR RTP Contender Series
-  5190: {
-    weekStartOffset: { days: 6 },
-  },
+  // 250 │ 5358   │ Sports Car  │ R     │ 13th Week iRacing Prototype Challenge - Fixed | 2024-12-17
 };
