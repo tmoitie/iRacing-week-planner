@@ -56,17 +56,17 @@ export default {
   //   ],
   // },
   // 495 │ 4828   │ Road │ C     │ Formula A - Grand Prix Tour | 2024-12-10
-  4828: {
-    offWeeks: [
-      2.1, 3.1, 4.1, 5.1, 6.1, 8.1, 9.1, 12.1, 14.1, 14.1, 14.1, 16.1, 18.1, 18.1, 18.1, 21.1, 21.1,
-    ],
-  },
+  // 4828: {
+  //   offWeeks: [
+  //     2.1, 3.1, 4.1, 5.1, 6.1, 8.1, 9.1, 12.1, 14.1, 14.1, 14.1, 16.1, 18.1, 18.1, 18.1, 21.1, 21.1,
+  //   ],
+  // },
   // 496 │ 4829   │ Road │ C     │ Formula A - Grand Prix Tour - Fixed │ 2024-12-10
-  4829: {
-    offWeeks: [
-      2.1, 3.1, 4.1, 5.1, 6.1, 8.1, 9.1, 12.1, 14.1, 14.1, 14.1, 16.1, 18.1, 18.1, 18.1, 21.1, 21.1,
-    ],
-  },
+  // 4829: {
+  //   offWeeks: [
+  //     2.1, 3.1, 4.1, 5.1, 6.1, 8.1, 9.1, 12.1, 14.1, 14.1, 14.1, 16.1, 18.1, 18.1, 18.1, 21.1, 21.1,
+  //   ],
+  // },
   // 374 │ 4831   │ Road │ C     │ INDYCAR iRacing Series | 2024-09-17
   // 4831: {
   //   offWeeks: [
@@ -110,33 +110,12 @@ export default {
       2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 2.1, 3.1, 3.1, 3.1, 3.1,
     ],
   },
-
-  // 492 │ 4755   │ Sports Car  │ C     │ IMSA Michelin Pilot Challenge Series | 2024-06-04
-  // 4755: {
-  //   offWeeks: [
-  //     0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
-  //   ],
-  // },
   // 439 │ 4998 │ eNASCAR Road to Pro Qual Series - Round 2 | 2024-10-01
   // 4993: {
   //   offWeeks: [
   //     1.1, 2.1, 3.1, 4.1, 5.1, 5.1, 6.1,
   //   ],
   // },
-  // 331 │ 4897   │ Sports Car  │ B     │ Global Endurance CONSPIT Tour  | 2024-09-03
-  // 4897: {
-  //   weekStartOffset: { days: 7 },
-  //   offWeeks: [
-  //     1.1, 2.1, 3.1, 4.1, 5.1,
-  //   ],
-  // },
-  // 419 │ 4899   │ Sports Car  │ B     │ IMSA Endurance Series  | 2024-09-03
-  // 4899: {
-  //   offWeeks: [
-  //     1.1, 2.1, 3.1, 4.1, 5.1,
-  //   ],
-  // },
-
   // 492 │ 4883   │ Sports Car  │ C     │ IMSA Michelin Pilot Challenge Series | 2024-09-03
   // 4883: {
   //   offWeeks: [
@@ -151,11 +130,11 @@ export default {
   //   ],
   // },
   // 492 │ 5047   │ Sports Car  │ C     │ IMSA Michelin Pilot Challenge Series | 2024-12-03
-  5047: {
-    offWeeks: [
-      0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
-    ],
-  },
+  // 5047: {
+  //   offWeeks: [
+  //     0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
+  //   ],
+  // },
 
   // 331 │ 5061   │ Sports Car  │ B     │ Global Endurance CONSPIT Tour | 2024-12-03
   5061: {
@@ -210,5 +189,28 @@ export default {
   5356: {
     weekEndOffset: { days: -1 },
   },
-  // 250 │ 5358   │ Sports Car  │ R     │ 13th Week iRacing Prototype Challenge - Fixed | 2024-12-17
+  // 492 │ 5220   │ Sports Car  │ C     │ IMSA Michelin Pilot Challenge Series | 2025-03-11
+  5220: {
+    offWeeks: [
+      0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+  // 572 │ 5334   │ Sports Car  │ C     │ IMSA Sportscar Endurance Challenge | 2025-03-04
+  5334: {
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+  // 331 │ 5234   │ Sports Car  │ B     │ Global Endurance CONSPIT Tour | 2025-03-11
+  5234: {
+    offWeeks: [
+      0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+  // 419 │ 5236   │ Sports Car  │ B     │ IMSA Endurance Series | 2025-03-04
+  5236: {
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
 };
