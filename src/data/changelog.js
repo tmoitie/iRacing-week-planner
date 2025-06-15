@@ -2,6 +2,12 @@ import moment from 'moment';
 
 export default [
   {
+    date: moment('2025-06-15 00:00:00').utc(),
+    items: [
+      'Update link column to new membersite',
+    ],
+  },
+  {
     date: moment('2025-06-12 00:00:00').utc(),
     items: [
       'Update to 2025S2W13',
