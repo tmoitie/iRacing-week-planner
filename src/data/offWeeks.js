@@ -186,4 +186,28 @@ export default {
   //     1.1, 2.1, 3.1, 4.1, 5.1,
   //   ],
   // },
+  // 572 │ 5580   │ Sports Car  │ C     │ IMSA Sportscar Endurance Challenge
+  5580: {
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+  // 492 │ 5579   │ Sports Car  │ C     │ IMSA Michelin Pilot Challenge Series
+  5579: {
+    offWeeks: [
+      0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+  // 331 │ 5594   │ Sports Car  │ B     │ Global Endurance Tour
+  5594: {
+    offWeeks: [
+      0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+  // 419 │ 5596   │ Sports Car  │ B     │ IMSA Endurance Series
+  5596: {
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
 };

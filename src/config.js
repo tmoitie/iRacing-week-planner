@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-export const seasonStart = moment('2025-06-17T00:00:00+00:00').utc();
+export const seasonStart = moment('2025-06-16T00:00:00+00:00').utc();
 export const seasonEnd = moment('2025-09-15T00:00:00+00:00').utc();
 export const weekSeasonStart = moment('2025-06-17T00:00:00+00:00').utc();
 
