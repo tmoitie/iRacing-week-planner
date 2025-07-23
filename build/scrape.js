@@ -34,7 +34,7 @@ import getCarClasses from './api/getCarClasses';
     );
 
     console.log('Fetching GitHub contributors...');
-    const contributors = await getContributors(process.env.GH_TOKEN);
+    const contributors = await getContributors(process.env.GITHUB_TOKEN);
     await writeFile(
       path.join(__dirname, '../src/data/contributors.json'),
       JSON.stringify(contributors, null, 2),
