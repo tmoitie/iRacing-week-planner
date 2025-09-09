@@ -46,6 +46,7 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-jest-hoist": "^29.0.2",
     "bootstrap-sass": "^3.3.6",
+    "caniuse-lite": "^1.0.30001741",
     "classnames": "^2.2.6",
     "cli-table": "^0.3.1",
     "core-js": "^3.26.1",
