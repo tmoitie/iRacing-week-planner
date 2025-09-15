@@ -1,97 +1,5 @@
 export default {
   // Commented out series kept in here for when iRacing schedule next season, often with the same settings
-  // 437 │ 4119 │ BMW M Sim Cup | 2023-11-21
-  // 4119: {
-  //   offWeeks: [
-  //     1.1, 1.1, 1.1, 1.1, 1.1, 2.1, 2.1, 2.1, 2.1, 3.1, 4.1, 4.1, 4.1, 5.1, 5.1, 5.1, 6.1, 6.1, 6.1, 6.1, 6.1, 6.1, 7.1,
-  //     7.1, 7.1, 7.1, 7.1, 7.1, 7.1, 8.1, 8.1, 9.1,
-  //   ],
-  // },
-  // 469 │ 4315 | Global Endurance Pure Driving School Series | 2023-09-05
-  // 4315: {
-  //   weekStartOffset: { days: 7 },
-  //   offWeeks: [
-  //     1.1, 2.1, 3.1, 4.1, 5.1,
-  //   ],
-  // },
-  // 439 │ 4384 │ eNASCAR Road to Pro Qual Series - Round 2 | 2023-10-03
-  // 4384: {
-  //   offWeeks: [
-  //     1.1, 2.1, 3.1, 4.1, 5.1, 6.1,
-  //   ],
-  // },
-  // 307 │ 4485 │ Dirt │ World of Outlaws Sprint Car Series | 2023-12-05
-  // 4485: {
-  //  weekStartOffset: { days: -1 },
-  // },
-  // 478 │ 4538   │ Oval │ eNASCAR RTP Contender Series
-  // 4538: {
-  //   weekStartOffset: { days: 6 },
-  //   offWeeks: [
-  //     6.1,
-  //   ],
-  // },
-  // 438 │ 4704   │ Oval │ A     │ eNASCAR Road to Pro Qual Series - Round 1 | 2024-05-28
-  // 4704: {
-  //   offWeeks: [
-  //     1.1, 2.1, 3.1, 4.1, 5.1, 6.1, 7.1,
-  //   ],
-  // },
-  // 557 │ 4825   │ Sports Car  │ D     │ BMW M Power Tour - Fixed | 2024-06-04
-  // 4825: {
-  //   weekEndOffset: { days: 7 },
-  // },
-  // 439 │ 4998 │ eNASCAR Road to Pro Qual Series - Round 2 | 2024-10-01
-  // 4993: {
-  //   offWeeks: [
-  //     1.1, 2.1, 3.1, 4.1, 5.1, 5.1, 6.1,
-  //   ],
-  // },
-
-  // 472 │ 5026   │ Sports Car  │ A     │ Porsche TAG Heuer Esports Supercup Qualifying Series | 2024-09-03
-  // 5026: {
-  //   offWeeks: [
-  //     5.1, 5.1,
-  //   ],
-  // },
-  // 570 │ 5196   │ Dirt        │ A     │ World of Outlaws Pro Qualifying Series | 2025-01-28
-  // 5196: {
-  //   offWeeks: [
-  //     6.1, 6.1,
-  //   ],
-  // },
-  // 506 │ 5335   │ Formula Car │ D     │ SCCA Runoffs - Formula Vee | 2024-11-26
-  // 5335: {
-  //   weekEndOffset: { days: 7 },
-  // },
-  // 510 │ 5338   │ Formula Car │ D     │ SCCA Runoffs - USF2000 | 2024-11-26
-  // 5338: {
-  //   weekEndOffset: { days: 7 },
-  // },
-  // 511 │ 5339   │ Sports Car  │ D     │ SCCA Runoffs - GT4 | 2024-11-26
-  // 5339: {
-  //   weekEndOffset: { days: 7 },
-  // },
-  // 508 │ 5337   │ Sports Car  │ D     │ SCCA Runoffs - Global MX-5 Spec Miata | 2024-11-26
-  // 5337: {
-  //   weekEndOffset: { days: 7 },
-  // },
-  // 545 │ 5340   │ Sports Car  │ D     │ SCCA Runoffs - Renault Clio | 2024-11-26
-  // 5340: {
-  //   weekEndOffset: { days: 7 },
-  // },
-  // 507 │ 5336   │ Sports Car  │ D     │ SCCA Runoffs - Spec Racer Ford | 2024-11-26
-  // 5336: {
-  //   weekEndOffset: { days: 7 },
-  // },
-  // 478 │ 5190   │ Oval        │ P     │ eNASCAR RTP Contender Series | 2024-11-26
-  // 5190: {
-  //   weekStartOffset: { days: 6 },
-  // },
-  // 245 │ 5356   │ Sports Car  │ R     │ 13th Week iRacing Figure GR8 | 2024-12-17
-  // 5356: {
-  //   weekEndOffset: { days: -1 },
-  // },
   // 451 │ 5517 │ Creventic Endurance Series | 2025-10-21
   5517: {
     offWeeks: [
@@ -162,50 +70,30 @@ export default {
       1.1, 3.1, 4.1, 5.1, 6.1, 7.1, 8.1, 9.1, 10.1, 10.1, 11.1, 12.1, 13.1, 14.1, 15.1, 15.1,
     ],
   },
-  // 492 │ 5408 │ Sports Car │ IMSA Michelin Pilot Challenge Series | 2025-06-10
-  // 5408: {
-  //   offWeeks: [
-  //     0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
-  //   ],
-  // },
-  // 572 │ 5409 │ Sports Car │ IMSA Sportscar Endurance Challenge | 2025-06-03
-  // 5409: {
-  //   offWeeks: [
-  //     1.1, 2.1, 3.1, 4.1, 5.1,
-  //   ],
-  // },
-  // 331 │ 5423 │ Sports Car │ IMSA Michelin Pilot Challenge Series | 2025-06-10
-  // 5423: {
-  //   offWeeks: [
-  //     0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
-  //   ],
-  // },
-  // 419 │ 5425 │ Sports Car │ IMSA Sportscar Endurance Challenge | 2025-06-03
-  // 5425: {
-  //   offWeeks: [
-  //     1.1, 2.1, 3.1, 4.1, 5.1,
-  //   ],
-  // },
-  // 572 │ 5580   │ Sports Car  │ C     │ IMSA Sportscar Endurance Challenge
-  5580: {
+
+  // 492 │ 5747   │ Sports Car  │ C     │ IMSA Michelin Pilot Challenge Series | 2025-12-09
+  5747: {
+    offWeeks: [
+      0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+
+  // 572 │ 5748   │ Sports Car  │ C     │ IMSA Sportscar Endurance Challenge | 2025-12-02
+  5748: {
     offWeeks: [
       1.1, 2.1, 3.1, 4.1, 5.1,
     ],
   },
-  // 492 │ 5579   │ Sports Car  │ C     │ IMSA Michelin Pilot Challenge Series
-  5579: {
+
+  // 331 │ 5765   │ Sports Car  │ B     │ Global Endurance Tour | 2025-12-09
+  5765: {
     offWeeks: [
       0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
     ],
   },
-  // 331 │ 5594   │ Sports Car  │ B     │ Global Endurance Tour
-  5594: {
-    offWeeks: [
-      0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
-    ],
-  },
-  // 419 │ 5596   │ Sports Car  │ B     │ IMSA Endurance Series
-  5596: {
+
+  // 419 │ 5768   │ Sports Car  │ B     │ IMSA Endurance Series | 2025-12-09
+  5768: {
     offWeeks: [
       1.1, 2.1, 3.1, 4.1, 5.1,
     ],
