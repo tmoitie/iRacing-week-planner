@@ -2,6 +2,7 @@ export default {
   translation: {
     'iRacing Week Planner': 'iRacing Week Planner',
     'Purchase guide': 'Aanschafgids',
+    'Credit program': 'Kredietprogramma',
     'Set my tracks': 'Mijn banen',
     'Set my cars': 'Mijn auto`s',
     'Set favorite series': 'Favoriete series',
@@ -62,6 +63,8 @@ export default {
     // Modals
     'Use the checkbox to set the content you own, and use the star to set your favourite content.':
       'Gebruik de checkbox voor aangeschafte content en de sterren voor favorieten.',
+    'Based on the cars and tracks you own, these are the series where you\u2019re eligible to run at least 8 weeks and count towards the iRacing Participation Credit Program.':
+      'Op basis van de auto’s en circuits die je bezit, zijn dit de series waarin je minstens 8 weken kunt deelnemen en die meetellen voor het iRacing Deelnamekredietprogramma.',
     'Select all': 'Alles selecteren',
     'Select all oval': 'Alle oval',
     'Select all road': 'Alle weg',
@@ -82,7 +85,7 @@ export default {
     'Every {{every}} starting at {{time, datetime}}': 'Iedere {{every}} om {{time, datetime}}',
     'Set times': 'Tijden instellen',
 
-    //New Auth strings
+    // New Auth strings
     'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <2>buy me a coffee</2>.':
       'Dit kost me nu een paar pond om in de lucht te houden. Als je van deze tool houdt, voel je dan vrij om me op <2>een kop koffie te trakteren</2>',
     'Buy me a coffee': 'Trakteer me op een kop koffie',
