@@ -20,17 +20,17 @@ export default {
     ],
   },
   // 229 │ 5378 │ NASCAR iRacing Series - Open | 2025-11-04
-  5378: {
-    offWeeks: [
-      9.1, 12.1,
-    ],
-  },
+  // 5378: {
+  //   offWeeks: [
+  //     9.1, 12.1,
+  //   ],
+  // },
   // 207 │ 5379 │ NASCAR iRacing Series - Fixed | 2025-11-04
-  5379: {
-    offWeeks: [
-      9.1, 12.1,
-    ],
-  },
+  // 5379: {
+  //   offWeeks: [
+  //     9.1, 12.1,
+  //   ],
+  // },
   // 575 │ 5381 │ NASCAR Modified Tour | 2025-12-02
   5381: {
     offWeeks: [
@@ -96,6 +96,20 @@ export default {
   5768: {
     offWeeks: [
       1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+
+  // 570 │ 5892   │ Dirt        │ A     │ World of Outlaws Pro Qualifying Series
+  5892: {
+    offWeeks: [
+      4.1, 4.1, 4.1,
+    ],
+  },
+
+  // 560 │ 5722   │ Formula Car │ A     │ INDYCAR Thrustmaster Pro Qualifying Series
+  5722: {
+    offWeeks: [
+      6.1,
     ],
   },
 };
