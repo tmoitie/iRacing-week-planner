@@ -1,0 +1,138 @@
+export default {
+  translation: {
+    'iRacing Week Planner': 'iRacing 周计划',
+    'Purchase guide': '购买指南',
+    'Set my tracks': '设置我的赛道',
+    'Set my cars': '设置我的车辆',
+    'Set favorite series': '设置收藏的系列赛',
+    'Options': '选项',
+    'About': '关于',
+    'Week {{week}}': '第 {{week}} 周',
+    'Races for date: {{date, datetime}}': '日期: {{date, datetime}} 的比赛',
+    'No time data': '无时间数据',
+
+    // Filters
+    'Filters': '筛选',
+    'Type': '类型',
+    'Oval': '椭圆',
+    'Dirt': '泥地',
+    'Road': '公路',
+    'Sports Car': '跑车',
+    'Formula Car': '方程式',
+    'RX': '拉力', // Rally Cross/Road Dirt
+    'Licence': '执照',
+    'Official/Fixed': '官方/固定',
+    'Unofficial': '非官方',
+    'Official': '官方',
+    'Open setup': '开放设置',
+    'Fixed setup': '固定设置',
+    'Content': '内容',
+    'Owned cars only': '仅已拥有的车辆',
+    'Owned tracks only': '仅已拥有的赛道',
+    'Favorite series only': '仅收藏的系列赛',
+    'Favorite cars only': '仅收藏的车辆',
+    'Favorite tracks only': '仅收藏的赛道',
+    'Reset filters': '重置筛选',
+    'Reset all settings': '重置所有设置',
+
+    // Column Headers
+    'Columns': '列',
+    'ID': 'ID',
+    'Class': '级别',
+    'Series': '系列赛',
+    'Track': '赛道',
+    'Car': '车辆',
+    'Start': '开始',
+    'End': '结束',
+    'Fixed': '固定',
+    'Race times': '比赛时间',
+    'Next race': '下一场比赛',
+    'Season end': '赛季结束',
+    'Link': '链接',
+    'Week': '周',
+    'Count': '计数',
+    'Length': '长度',
+
+    // Race length
+    'No data': '无数据',
+    '{{laps}}L': '{{laps}}圈',
+    '{{minutes}}m': '{{minutes}}分',
+    '{{hours}}h': '{{hours}}时',
+
+    // Modals
+    'Use the checkbox to set the content you own, and use the star to set your favourite content.':
+      '使用复选框设置您拥有的内容，使用星号设置您收藏的内容。',
+    'Select all': '全选',
+    'Select all oval': '全选椭圆',
+    'Select all road': '全选公路',
+    'Select all dirt oval': '全选泥地椭圆',
+    'Select all dirt road': '全选泥地公路',
+    'Select all sports car': '全选跑车',
+    'Select all formula car': '全选方程式',
+    'Choose favorite series': '选择收藏的系列赛',
+    'Close': '关闭',
+    'Contributors': '贡献者',
+    'Changelog': '更新日志',
+    'Purchase Guide': '购买指南',
+    'This tool was created by <2>tmoitie</2> (<5>Tom Moitié</5> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on <9>Github</9>. Thanks!':
+      '此工具由 <2>tmoitie</2> (<5>Tom Moitié</5> iRacing) 创建。如有任何反馈或问题，请随时通过 Twitter 或 iRacing 联系我。代码公开托管在 <9>Github</9> 上。谢谢！',
+    'Loading': '加载中',
+    'Cars for {{series}}': '{{series}} 的车辆',
+    'Tracks for {{series}}': '{{series}} 的赛道',
+    'These unowned tracks from your favorite series appear multiple times for this season. You can purchase these tracks with the direct link.': '您收藏的系列赛中这些未拥有的赛道在本赛季多次出现。您可以通过直接链接购买这些赛道。',
+    'Search series': '搜索系列赛',
+
+    // Dates
+    '{{date, datetime}}': '{{date, datetime}}',
+    'Every {{every}} starting at {{time, datetime}}': '每 {{every}} 开始于 {{time, datetime}}',
+    '{{timeLocal, datetime}} ({{timeUtc, datetime}})': '{{timeLocal, datetime}} ({{timeUtc, datetime}})',
+    'Set times': '设置时间',
+
+    //New Auth strings
+    'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <2>buy me a coffee</2>.':
+      '现在运行这个工具每月需要花费我一些钱，所以如果您喜欢使用这个工具，请随时 <2>请我喝杯咖啡</2>。',
+    'Buy me a coffee': '请我喝杯咖啡',
+    'Synced': '已同步',
+    'Awaiting sync': '等待同步',
+    'Refresh browser to download latest': '刷新浏览器以下载最新内容',
+    'Reset Password': '重置密码',
+    'Enter your email address to reset your password.': '输入您的电子邮件地址以重置密码。',
+    'Email address': '电子邮件地址',
+    'Submit': '提交',
+    'Thanks, please check your email for further details.': '谢谢，请检查您的电子邮件以获取更多详细信息。',
+    'Sign in/Create account': '登录/创建账户',
+    'Signing in will sync your settings across multiple browsers or devices.': '登录将在多个浏览器或设备之间同步您的设置。',
+    'When you first sign in it will use your current settings to set up the account, but once an account is set-up logging in will overwrite any settings you stored as a guest.':
+      '当您首次登录时，它将使用您当前的设置来设置账户，但是一旦账户设置完成，登录将覆盖您作为访客存储的任何设置。',
+    'Password': '密码',
+    'Forgotten password?': '忘记密码？',
+    'Sign in': '登录',
+    'Sign in with Google': '使用 Google 登录',
+    'Sign in with email': '使用电子邮件登录',
+    'Sign out': '退出',
+    'Create account': '创建账户',
+    'There is no user record corresponding to this identifier. The user may have been deleted.': '没有与此标识符对应的用户记录。用户可能已被删除。',
+    'The password is invalid or the user does not have a password.': '密码无效或用户没有密码。',
+    'The email address is badly formatted.': '电子邮件地址格式错误。',
+    'The password must be 6 characters long or more.': '密码必须为 6 个字符或更长。',
+    'The email address is already in use by another account.': '该电子邮件地址已被另一个账户使用。',
+    'Password should be at least 6 characters': '密码至少应为 6 个字符',
+
+    // No Results
+    'No races this week match your favourite series. Try turning the filter off or adding some.': '本周没有比赛符合您收藏的系列赛。尝试关闭筛选或添加一些。',
+    'No races this week match your favourite cars. Try turning the filter off or adding some.': '本周没有比赛符合您收藏的车辆。尝试关闭筛选或添加一些。',
+    'No races this week match your favourite tracks. Try turning the filter off or adding some.': '本周没有比赛符合您收藏的赛道。尝试关闭筛选或添加一些。',
+
+    // Coach Dave Sponsorship
+    'Sponsored': '赞助',
+    'Looking for iRacing Setups?': '寻找 iRacing 设置？',
+    'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.': '从 Coach Dave Academy 获取设置，由专业模拟赛车手和工程师开发。',
+    'Browse Setups': '浏览设置',
+
+    // Rain
+    'Rain': '下雨',
+    'Yes': '是',
+    'Chance': '可能',
+    'No': '否',
+  },
+};
