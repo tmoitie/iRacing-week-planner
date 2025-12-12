@@ -10,10 +10,12 @@ import getCarClasses from './api/getCarClasses';
 (async () => {
   const username = process.env.IWP_USERNAME || 'test';
   const password = process.env.IWP_PASSWORD || 'test';
+  const clientId = process.env.IWP_CLIENT_ID || 'test';
+  const clientSecret = process.env.IWP_CLIENT_SECRET || 'test';
 
   try {
     console.log('Authenticating with iRacing...');
-    await auth(username, password);
+    await auth(username, password, clientId, clientSecret);
 
     console.log('Fetching track data...');
     const tracks = await getTracks();
