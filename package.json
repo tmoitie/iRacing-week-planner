@@ -55,7 +55,7 @@
     "css-modules-flow-types-loader": "^2.0.0",
     "es5-shim": "^4.5.14",
     "file-loader": "^6.0.0",
-    "firebase": "^9.6.0",
+    "firebase": "^10.9.0",
     "flow-typed": "^3.2.1",
     "html-webpack-plugin": "^5.5.0",
     "html5shiv": "^3.7.3",
