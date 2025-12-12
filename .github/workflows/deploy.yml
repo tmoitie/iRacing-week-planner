@@ -32,6 +32,8 @@ jobs:
       env:
         IWP_USERNAME: ${{ secrets.IWP_USERNAME }}
         IWP_PASSWORD: ${{ secrets.IWP_PASSWORD }}
+        IWP_CLIENT_ID: ${{ secrets.IWP_CLIENT_ID }}
+        IWP_CLIENT_SECRET: ${{ secrets.IWP_CLIENT_SECRET }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - run: yarn test
     - run: yarn debugRaces
