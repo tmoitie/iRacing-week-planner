@@ -25,10 +25,10 @@ yarn install
 
 ### Scrape data
 
-It needs live iRacing data to work - this can be downloaded with your iRacing credentials
+It needs live iRacing data to work - this can be downloaded with your iRacing credentials, and an [oauth password limited flow](https://oauth.iracing.com/oauth2/book/password_limited_flow.html) client.
 
 ```bash
-IWP_USERNAME='your@emailaddress.co.uk' IWP_PASSWORD='yourpassword' yarn scrapeData
+IWP_USERNAME="your@emailaddress.co.uk" IWP_PASSWORD="yourpassword" IWP_CLIENT_ID="iwploader" IWP_CLIENT_SECRET="secret" yarn scrapeData
 yarn debugRaces
 ```
 
