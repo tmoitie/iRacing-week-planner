@@ -41,7 +41,7 @@
     "@blueprintjs/core": "^3.31.0",
     "@formatjs/intl-datetimeformat": "^6.0.2",
     "autoprefixer": "^10.4.0",
-    "axios": "^1.7.4",
+    "axios": "^1.13.5",
     "babel-loader": "^8.1.0",
     "babel-plugin-jest-hoist": "^29.0.2",
     "bootstrap-sass": "^3.3.6",
