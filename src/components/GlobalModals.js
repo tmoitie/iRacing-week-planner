@@ -13,6 +13,7 @@ import FavouriteSeriesModal from './modal/FavouriteSeriesModal';
 import LoginModal from './modal/LoginModal';
 import OptionsModal from './modal/OptionsModal';
 import PurchaseGuideModal from './modal/PurchaseGuideModal';
+import CreditProgramModal from './modal/CreditProgramModal';
 
 const currentModalSelector = (state) => state.app.currentModal;
 const settingsSelector = (state) => state.settings;
@@ -21,10 +22,10 @@ const sortedLegacyCars = [...cars.filter((c) => c.name.startsWith('['))].sort((a
 const sortedCars = [...sortedActiveCars, ...sortedLegacyCars];
 
 const sortedActiveTracks = [
-  ...tracks.filter((t) => !t.name.startsWith('['))
+  ...tracks.filter((t) => !t.name.startsWith('[')),
 ].sort((a, b) => a.name.localeCompare(b.name));
 const sortedLegacyTracks = [
-  ...tracks.filter((t) => t.name.startsWith('['))
+  ...tracks.filter((t) => t.name.startsWith('[')),
 ].sort((a, b) => a.name.localeCompare(b.name));
 const sortedTracks = [...sortedActiveTracks, ...sortedLegacyTracks];
 
@@ -111,6 +112,12 @@ export default function GlobalModals() {
         onClose={closeModal}
         ownedTracks={ownedTracks}
         favouriteSeries={favouriteSeries}
+      />
+      <CreditProgramModal
+        isOpen={currentModal === 'credit-program'}
+        onClose={closeModal}
+        ownedTracks={ownedTracks}
+        ownedCars={ownedCars}
       />
       <LoginModal
         isOpen={currentModal === 'login'}

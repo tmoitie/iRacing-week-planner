@@ -2,6 +2,7 @@ export default {
   translation: {
     'iRacing Week Planner': 'iRacing Hafta Planlayıcısı',
     'Purchase guide': 'Satın Alma Rehberi',
+    'Credit program': 'Kredi programı',
     'Set my tracks': 'Pistlerimi belirle',
     'Set my cars': 'Arabalarımı belirle',
     'Set favorite series': 'Favori serilerimi belirle',
@@ -62,6 +63,8 @@ export default {
     // Modals
     'Use the checkbox to set the content you own, and use the star to set your favourite content.':
       'Sahip olduğunuz içeriği ayarlamak için onay kutusunu kullanın ve favori içeriğinizi ayarlamak için yıldızı kullanın.',
+    'Based on the cars and tracks you own, these are the series where you\u2019re eligible to run at least 8 weeks and count towards the iRacing Participation Credit Program.':
+      'Sahip olduğunuz arabalar ve pistlere dayanarak, en az 8 hafta boyunca katılmaya uygun olduğunuz ve iRacing Katılım Kredi Programına sayılan seriler bunlardır.',
     'Select all': 'Hepsini seç',
     'Select all oval': 'Oval-Hepsini seç',
     'Select all road': 'Road-Hepsini seç',
