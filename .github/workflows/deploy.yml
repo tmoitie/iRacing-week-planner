@@ -4,8 +4,7 @@
 name: Deploy
 
 on:
-  push:
-    branches: [ release ]
+  workflow_dispatch:
   schedule:
     # 00:06 UTC every Tuesday
     - cron: '6 0 * * 2'
