@@ -28,6 +28,7 @@ import tr from '../translations/tr';
 import ja from '../translations/jp';
 import nl from '../translations/nl';
 import pl from '../translations/pl';
+import zhCN from '../translations/zh-CN';
 
 const languages = {
   de: {
@@ -74,6 +75,10 @@ const languages = {
     flag: '🇹🇷',
     name: 'Türkçe (TR)',
   },
+  'zh-CN': {
+    flag: '🇨🇳',
+    name: '简体中文 (CN)',
+  }
 };
 
 export default languages;
@@ -90,6 +95,7 @@ const resources = {
   nl,
   tr,
   pl,
+  'zh-CN': zhCN,
 };
 
 i18n
