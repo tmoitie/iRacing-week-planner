@@ -6,6 +6,9 @@ name: Deploy
 on:
   push:
     branches: [ release ]
+  schedule:
+    # 00:06 UTC every Tuesday
+    - cron: '6 0 * * 2'
 
 jobs:
   deploy:
@@ -15,6 +18,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      with:
+        # Scheduled runs default to the repo's default branch; pin to release
+        # so both push and cron deploy the release branch.
+        ref: release
     - uses: actions/setup-node@v3
       with:
         node-version: 18
