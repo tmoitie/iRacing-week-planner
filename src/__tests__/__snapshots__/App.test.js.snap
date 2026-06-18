@@ -29,6 +29,14 @@ exports[`components/App renders correctly 1`] = `
             Purchase guide
           </a>
         </li>
+        <li>
+          <a
+            href=""
+            id="navbar-link-credit-program"
+          >
+            Credit program
+          </a>
+        </li>
       </ul>
       <ul
         class="nav navbar-nav navbar-right"

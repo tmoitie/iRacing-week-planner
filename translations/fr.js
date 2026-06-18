@@ -2,6 +2,7 @@ export default {
   translation: {
     'iRacing Week Planner': 'Planificateur hebdomadaire d\'iRacing',
     'Purchase guide': 'Guide d\'achats',
+    'Credit program': 'Programme de crédits',
     'Set my tracks': 'Circuits possédés',
     'Set my cars': 'Voitures possédées',
     'Set favorite series': 'Séries favorites',
@@ -62,6 +63,8 @@ export default {
     // Modals
     'Use the checkbox to set the content you own, and use the star to set your favourite content.':
       'Utilisez les cases à cocher pour enregistrer le contenu que vous possédez et utilisez l\'étoile pour enregistrer vos contenus favoris.',
+    'Based on the cars and tracks you own, these are the series where you’re eligible to run at least 8 weeks and count towards the iRacing Participation Credit Program.':
+        'En fonction des voitures et circuits que vous possédez, voici les séries dans lesquelles vous pouvez participer au moins 8 semaines et qui comptent pour le Programme de crédits de participation iRacing.',
     'Select all': 'Sélectionner tout',
     'Select all oval': 'Sélectionner tous les circuits oval',
     'Select all road': 'Sélectionner tous les circuits sur route',
