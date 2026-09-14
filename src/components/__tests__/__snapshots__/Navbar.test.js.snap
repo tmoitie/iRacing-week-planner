@@ -160,6 +160,16 @@ exports[`components/Navbar renders correctly and links work 1`] = `
           <li>
             <a
               href=""
+              id="navbar-link-language-cs-CZ"
+            >
+              CS-CZ
+               
+              Čeština (CZ)
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
               id="navbar-link-language-de"
             >
               DE
