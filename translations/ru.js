@@ -124,6 +124,7 @@ export default {
     'Looking for iRacing Setups?': 'Ищете сетапы для iRacing?',
     'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.': 'Возьмите сетап от Coach Dave Academy от профессиональных симрейсеров и инженеров.',
     'Browse Setups': 'Посмотреть сетапы',
+    'Ignore past weeks': 'Игнорировать прошедшие недели',
 
     // Rain
     'Rain': 'Дождь',

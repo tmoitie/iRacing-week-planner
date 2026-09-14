@@ -8,5 +8,6 @@ export default {
     'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <2>buy me a coffee</2>.':
       'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <2>buy me a coffee</2>.',
     'Buy me a tea': 'Buy me a tea',
+    'Ignore past weeks': 'Ignore past weeks',
   },
 };

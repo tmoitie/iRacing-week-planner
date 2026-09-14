@@ -121,6 +121,7 @@ export default {
     'Looking for iRacing Setups?': 'iRacing setuplar mı arıyorsunuz?',
     'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.': 'Profesyonel simülasyon setup ve mühendisleri tarafından geliştirilen Coach Dave Academy\'den bir kurulum alın.',
     'Browse Setups': 'Setuplar Gözat',
+    'Ignore past weeks': 'Geçmiş haftaları yok say',
 
     // Rain
     'Rain': 'Yağmur',
