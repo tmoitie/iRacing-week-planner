@@ -89,6 +89,11 @@ exports[`components/App renders correctly 1`] = `
             href=""
             id="navbar-link-open-language-dropdown"
           >
+            <span
+              aria-hidden="true"
+              class="glyphicon glyphicon-globe"
+              style="margin-right: 8px;"
+            />
             EN-US
              
             <span

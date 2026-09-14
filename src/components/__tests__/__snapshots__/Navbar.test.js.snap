@@ -148,6 +148,11 @@ exports[`components/Navbar renders correctly and links work 1`] = `
           href=""
           id="navbar-link-open-language-dropdown"
         >
+          <span
+            aria-hidden="true"
+            class="glyphicon glyphicon-globe"
+            style="margin-right: 8px;"
+          />
           EN-US
            
           <span

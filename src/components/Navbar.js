@@ -138,6 +138,11 @@ export default function Navbar() {
                 setLanguageDropdown(!languageDropdown);
               }}
             >
+              <span
+                aria-hidden="true"
+                className={`${styles.glyphicon} ${styles['glyphicon-globe']}`}
+                style={{ marginRight: '8px' }}
+              />
               {i18n.language.toUpperCase()}
               {' '}
               <span className={styles.caret} />
