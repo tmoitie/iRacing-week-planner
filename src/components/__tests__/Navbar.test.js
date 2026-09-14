@@ -17,7 +17,7 @@ jest.mock('react-i18next', () => ({
     t: (v) => v,
     i18n: {
       changeLanguage: () => {},
-      language: 'en',
+      language: 'en-US',
     },
   })),
   initReactI18next: {
@@ -87,7 +87,7 @@ describe('components/Navbar', () => {
       t: (v) => v,
       i18n: {
         changeLanguage,
-        language: 'en',
+        language: 'en-US',
       },
     }));
     const store = mockStore({ auth: { user: { id: 1 } } });
@@ -101,7 +101,7 @@ describe('components/Navbar', () => {
     expect(await component.findByText(/简体中文 \(ZH-CN\)/)).toBeInTheDocument();
 
     await act(async () => {
-      fireEvent.click(await component.findByText(/^EN$/));
+      fireEvent.click(await component.findByText(/^EN-US$/));
     });
 
     const secondRender = component.asFragment();
@@ -109,7 +109,7 @@ describe('components/Navbar', () => {
     expect(firstRender).toMatchDiffSnapshot(secondRender);
 
     await act(async () => {
-      fireEvent.click(await component.findByText(/Čeština \(CZ\)/));
+      fireEvent.click(await component.findByText(/Čeština \(CS-CZ\)/));
     });
 
     expect(secondRender).toMatchDiffSnapshot(component.asFragment());
@@ -125,7 +125,7 @@ describe('components/Navbar', () => {
     });
 
     await act(async () => {
-      fireEvent.click(await component.findByText(/^EN$/));
+      fireEvent.click(await component.findByText(/^EN-US$/));
     });
     const firstRender = component.asFragment();
 

@@ -154,9 +154,9 @@ export default function Navbar() {
                       i18n.changeLanguage(code);
                     }}
                   >
-                    {code.toUpperCase()}
-                    {' '}
                     {language.name}
+                    {' '}
+                    ({code.toUpperCase()})
                   </a>
                 </li>
               ))}

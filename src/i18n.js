@@ -37,53 +37,53 @@ import zhCN from '../translations/zh-CN';
 
 const languages = {
   'cs-CZ': {
-    name: 'Čeština (CZ)',
+    name: 'Čeština',
   },
   de: {
-    name: 'Deutsch (DE)',
+    name: 'Deutsch',
   },
-  en: {
-    name: 'English (US)',
+  'en-US': {
+    name: 'English',
   },
   'en-GB': {
-    name: 'English (UK)',
+    name: 'English',
   },
   es: {
-    name: 'Español (ES)',
+    name: 'Español',
   },
   fr: {
-    name: 'Français (FR)',
+    name: 'Français',
   },
   it: {
-    name: 'Italiano (IT)',
+    name: 'Italiano',
   },
   ja: {
-    name: '日本語 (JA)',
+    name: '日本語',
   },
   nl: {
-    name: 'Nederlands (NL)',
+    name: 'Nederlands',
   },
   pl: {
-    name: 'Polski (PL)',
+    name: 'Polski',
   },
   'pt-BR': {
-    name: 'Português (BR)',
+    name: 'Português',
   },
   ru: {
-    name: 'Русский (RU)',
+    name: 'Русский',
   },
   tr: {
-    name: 'Türkçe (TR)',
+    name: 'Türkçe',
   },
   'zh-CN': {
-    name: '简体中文 (ZH-CN)',
+    name: '简体中文',
   },
 };
 
 export default languages;
 
 const resources = {
-  en,
+  'en-US': en,
   'en-GB': enGB,
   es,
   'pt-BR': ptBR,
@@ -104,11 +104,20 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'en',
+    fallbackLng: 'en-US',
     debug: false,
     keySeparator: false,
     nsSeparator: false,
     supportedLngs: Object.keys(languages),
+    detection: {
+      convertDetectedLanguage: (language) => {
+        if (['en-au', 'en-gb'].includes(language.toLowerCase())) {
+          return 'en-GB';
+        }
+
+        return language.toLowerCase().startsWith('en') ? 'en-US' : language;
+      },
+    },
     interpolation: {
       escapeValue: false,
     },
