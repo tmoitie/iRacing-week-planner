@@ -7,10 +7,17 @@ import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import { LOADING_AUTH, SIGNED_OUT } from '../../actions/auth';
 import { CHANGE_MODAL } from '../../actions/app';
+import { loadLocaleData } from '../../i18n';
 
 import Navbar from '../Navbar';
 
 jest.mock('../../actions/auth');
+jest.mock('../../i18n', () => ({
+  __esModule: true,
+  ...jest.requireActual('../../i18n'),
+  default: jest.requireActual('../../i18n').default,
+  loadLocaleData: jest.fn(() => Promise.resolve()),
+}));
 jest.mock('react-i18next', () => ({
   __esModule: true,
   useTranslation: jest.fn(() => ({
@@ -114,6 +121,38 @@ describe('components/Navbar', () => {
     });
 
     expect(secondRender).toMatchDiffSnapshot(component.asFragment());
+    expect(changeLanguage).toHaveBeenCalledWith('cs-CZ');
+    expect(loadLocaleData).toHaveBeenCalledWith('cs-CZ');
+  });
+
+  test('waits for locale data before changing language', async () => {
+    const changeLanguage = jest.fn();
+    let resolveLocaleData;
+    loadLocaleData.mockImplementation(() => new Promise((resolve) => {
+      resolveLocaleData = resolve;
+    }));
+    useTranslation.mockImplementation(() => ({
+      __esModule: true,
+      t: (v) => v,
+      i18n: {
+        changeLanguage,
+        language: 'en-US',
+      },
+    }));
+    const store = mockStore({ auth: { user: { id: 1 } } });
+    const component = render(<Provider store={store}><Navbar /></Provider>);
+
+    await act(async () => {
+      fireEvent.click(await component.findByText(/^EN-US$/));
+      fireEvent.click(await component.findByText(/Čeština \(CS-CZ\)/));
+    });
+
+    expect(changeLanguage).not.toHaveBeenCalled();
+
+    await act(async () => {
+      resolveLocaleData();
+    });
+
     expect(changeLanguage).toHaveBeenCalledWith('cs-CZ');
   });
 
