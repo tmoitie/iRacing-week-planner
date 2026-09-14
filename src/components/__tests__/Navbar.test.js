@@ -97,6 +97,8 @@ describe('components/Navbar', () => {
     });
     const firstRender = component.asFragment();
 
+    expect(await component.findByText(/Русский \(RU\)/)).toBeInTheDocument();
+
     await act(async () => {
       fireEvent.click(await component.findByText(/^EN$/));
     });
