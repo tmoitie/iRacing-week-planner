@@ -148,7 +148,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
           href=""
           id="navbar-link-open-language-dropdown"
         >
-          🇺🇸
+          EN
            
           <span
             class="caret"
@@ -162,7 +162,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
               href=""
               id="navbar-link-language-de"
             >
-              🇩🇪
+              DE
                
               Deutsch (DE)
             </a>
@@ -172,7 +172,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
               href=""
               id="navbar-link-language-en"
             >
-              🇺🇸
+              EN
                
               English (US)
             </a>
@@ -182,7 +182,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
               href=""
               id="navbar-link-language-en-GB"
             >
-              🇬🇧
+              EN-GB
                
               English (UK)
             </a>
@@ -192,7 +192,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
               href=""
               id="navbar-link-language-es"
             >
-              🇪🇸
+              ES
                
               Español (ES)
             </a>
@@ -202,7 +202,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
               href=""
               id="navbar-link-language-fr"
             >
-              🇫🇷
+              FR
                
               Français (FR)
             </a>
@@ -212,7 +212,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
               href=""
               id="navbar-link-language-it"
             >
-              🇮🇹
+              IT
                
               Italiano (IT)
             </a>
@@ -222,7 +222,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
               href=""
               id="navbar-link-language-ja"
             >
-              🇯🇵
+              JA
                
               日本語 (JA)
             </a>
@@ -232,7 +232,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
               href=""
               id="navbar-link-language-nl"
             >
-              🇳🇱
+              NL
                
               Nederlands (NL)
             </a>
@@ -242,7 +242,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
               href=""
               id="navbar-link-language-pl"
             >
-              🇵🇱
+              PL
                
               Polski (PL)
             </a>
@@ -252,7 +252,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
               href=""
               id="navbar-link-language-pt-BR"
             >
-              🇧🇷
+              PT-BR
                
               Português (BR)
             </a>
@@ -262,7 +262,7 @@ exports[`components/Navbar renders correctly and links work 1`] = `
               href=""
               id="navbar-link-language-tr"
             >
-              🇹🇷
+              TR
                
               Türkçe (TR)
             </a>

@@ -120,4 +120,14 @@ export default {
       1.1, 1.1, 1.1, 2.1, 2.1, 2.1, 3.1, 4.1, 4.1, 5.1, 5.1, 6.1, 6.1, 6.1, 7.1, 7.1, 7.1,
     ],
   },
+  // 451 │ 6434   │ Sports Car  │ C     │ Creventic Endurance Series
+  6434: {
+    offWeeks: [
+      1.1,1.1,1.1,1.1,2.1,2.1,2.1,3.1,3.1,3.1,4.1,
+    ],
+  },
+  // 320 │ 6585   │ Sports Car  │ D     │ 13th Week iRacing Porsche Cup
+  6585: {
+    weekEndOffset: { days: 1 },
+  },
 };
