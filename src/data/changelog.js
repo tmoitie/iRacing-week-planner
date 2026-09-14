@@ -2,6 +2,14 @@ import moment from 'moment';
 
 export default [
   {
+    date: moment('2026-09-15 00:00:00').utc(),
+    items: [
+      'Update to 2026S4',
+      'Improve settings sync reliability',
+      'Update Firebase and browser support',
+    ],
+  },
+  {
     date: moment('2026-03-17 00:00:00').utc(),
     items: [
       'Update to 2026S2',
