@@ -58,7 +58,7 @@ export default function PurchaseGuideModal({
                   <td>
                     <ul>
                       {item.series.map((series) => (
-                        <li key={series.seriesname}>
+                        <li key={`${series.seriesname}-${series.racedOnWeek}`}>
                           {t(series.seriesname)}
                           {' '}
                           (
