@@ -17,7 +17,7 @@ jest.mock('react-i18next', () => ({
     t: (v) => v,
     i18n: {
       changeLanguage: () => {},
-      language: 'en',
+      language: 'en-US',
     },
   })),
   initReactI18next: {
@@ -87,7 +87,7 @@ describe('components/Navbar', () => {
       t: (v) => v,
       i18n: {
         changeLanguage,
-        language: 'en',
+        language: 'en-US',
       },
     }));
     const store = mockStore({ auth: { user: { id: 1 } } });
@@ -97,8 +97,12 @@ describe('components/Navbar', () => {
     });
     const firstRender = component.asFragment();
 
+    expect(await component.findByText(/Русский \(RU\)/)).toBeInTheDocument();
+    expect(await component.findByText(/简体中文 \(ZH-CN\)/)).toBeInTheDocument();
+    expect(await component.findByText(/Português \(PT-PT\)/)).toBeInTheDocument();
+
     await act(async () => {
-      fireEvent.click(await component.findByText(/^🇺🇸$/));
+      fireEvent.click(await component.findByText(/^EN-US$/));
     });
 
     const secondRender = component.asFragment();
@@ -106,11 +110,11 @@ describe('components/Navbar', () => {
     expect(firstRender).toMatchDiffSnapshot(secondRender);
 
     await act(async () => {
-      fireEvent.click(await component.findByText(/Deutsch \(DE\)/));
+      fireEvent.click(await component.findByText(/Čeština \(CS-CZ\)/));
     });
 
     expect(secondRender).toMatchDiffSnapshot(component.asFragment());
-    expect(changeLanguage).toHaveBeenCalledWith('de');
+    expect(changeLanguage).toHaveBeenCalledWith('cs-CZ');
   });
 
   test('closes dropdown', async () => {
@@ -122,7 +126,7 @@ describe('components/Navbar', () => {
     });
 
     await act(async () => {
-      fireEvent.click(await component.findByText(/^🇺🇸$/));
+      fireEvent.click(await component.findByText(/^EN-US$/));
     });
     const firstRender = component.asFragment();
 

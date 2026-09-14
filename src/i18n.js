@@ -15,12 +15,16 @@ import '@formatjs/intl-datetimeformat/locale-data/tr';
 import '@formatjs/intl-datetimeformat/locale-data/ja';
 import '@formatjs/intl-datetimeformat/locale-data/nl';
 import '@formatjs/intl-datetimeformat/locale-data/pl';
+import '@formatjs/intl-datetimeformat/locale-data/cs';
+import '@formatjs/intl-datetimeformat/locale-data/ru';
+import '@formatjs/intl-datetimeformat/locale-data/zh';
 import '@formatjs/intl-datetimeformat/add-all-tz';
 
 import en from '../translations/en';
 import enGB from '../translations/en-GB';
 import es from '../translations/es';
 import ptBR from '../translations/pt-BR';
+import ptPT from '../translations/pt-PT';
 import de from '../translations/de';
 import fr from '../translations/fr';
 import it from '../translations/it';
@@ -28,61 +32,66 @@ import tr from '../translations/tr';
 import ja from '../translations/jp';
 import nl from '../translations/nl';
 import pl from '../translations/pl';
+import csCZ from '../translations/cs-CZ';
+import ru from '../translations/ru';
+import zhCN from '../translations/zh-CN';
 
 const languages = {
-  de: {
-    flag: '🇩🇪',
-    name: 'Deutsch (DE)',
+  'cs-CZ': {
+    name: 'Čeština',
   },
-  en: {
-    flag: '🇺🇸',
-    name: 'English (US)',
+  de: {
+    name: 'Deutsch',
+  },
+  'en-US': {
+    name: 'English',
   },
   'en-GB': {
-    flag: '🇬🇧',
-    name: 'English (UK)',
+    name: 'English',
   },
   es: {
-    flag: '🇪🇸',
-    name: 'Español (ES)',
+    name: 'Español',
   },
   fr: {
-    flag: '🇫🇷',
-    name: 'Français (FR)',
+    name: 'Français',
   },
   it: {
-    flag: '🇮🇹',
-    name: 'Italiano (IT)',
+    name: 'Italiano',
   },
   ja: {
-    flag: '🇯🇵',
-    name: '日本語 (JA)',
+    name: '日本語',
   },
   nl: {
-    flag: '🇳🇱',
-    name: 'Nederlands (NL)',
+    name: 'Nederlands',
   },
   pl: {
-    flag: '🇵🇱',
-    name: 'Polski (PL)',
+    name: 'Polski',
   },
   'pt-BR': {
-    flag: '🇧🇷',
-    name: 'Português (BR)',
+    name: 'Português',
+  },
+  'pt-PT': {
+    name: 'Português',
+  },
+  ru: {
+    name: 'Русский',
   },
   tr: {
-    flag: '🇹🇷',
-    name: 'Türkçe (TR)',
+    name: 'Türkçe',
+  },
+  'zh-CN': {
+    name: '简体中文',
   },
 };
 
 export default languages;
 
 const resources = {
-  en,
+  'en-US': en,
   'en-GB': enGB,
   es,
   'pt-BR': ptBR,
+  'pt-PT': ptPT,
   de,
   fr,
   it,
@@ -90,6 +99,9 @@ const resources = {
   nl,
   tr,
   pl,
+  'cs-CZ': csCZ,
+  ru,
+  'zh-CN': zhCN,
 };
 
 i18n
@@ -97,11 +109,20 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'en',
+    fallbackLng: 'en-US',
     debug: false,
     keySeparator: false,
     nsSeparator: false,
     supportedLngs: Object.keys(languages),
+    detection: {
+      convertDetectedLanguage: (language) => {
+        if (['en-au', 'en-gb'].includes(language.toLowerCase())) {
+          return 'en-GB';
+        }
+
+        return language.toLowerCase().startsWith('en') ? 'en-US' : language;
+      },
+    },
     interpolation: {
       escapeValue: false,
     },
