@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Weekly planner for iRacing.com races",
   "engines": {
-    "node": ">=20.19.0 <21",
+    "node": ">=22.15.0 <23",
     "yarn": ">=1.22.5"
   },
   "scripts": {
@@ -124,6 +124,6 @@
     "regenerator-runtime": "^0.13.7",
     "snapshot-diff": "^0.9.0",
     "webpack-bundle-analyzer": "^4.9.1",
-    "webpack-dev-server": "^5.2.1"
+    "webpack-dev-server": "^6.0.0"
   }
 }

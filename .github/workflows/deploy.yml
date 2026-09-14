@@ -23,7 +23,7 @@ jobs:
         ref: release
     - uses: actions/setup-node@v3
       with:
-        node-version: 20
+        node-version: 22.21
         cache: 'yarn'
     - uses: ruby/setup-ruby@v1
       with:

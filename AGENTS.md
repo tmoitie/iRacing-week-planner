@@ -2,7 +2,7 @@
 
 ## Setup and Commands
 
-- Use Node 20.20 (`nvm use`); `package.json` requires Node `>=20.19.0 <21`.
+- Use Node 22.21 (`nvm use`); `package.json` requires Node `>=22.15.0 <23`.
 - Install dependencies with `yarn install`.
 - Run the app with `yarn start`; the default URL is `http://localhost:3000`.
 - Run tests with `yarn test --runInBand` or pass focused test paths.
