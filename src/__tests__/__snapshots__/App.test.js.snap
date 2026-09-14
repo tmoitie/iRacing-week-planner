@@ -89,7 +89,7 @@ exports[`components/App renders correctly 1`] = `
             href=""
             id="navbar-link-open-language-dropdown"
           >
-            🇺🇸
+            EN-US
              
             <span
               class="caret"
@@ -101,21 +101,37 @@ exports[`components/App renders correctly 1`] = `
             <li>
               <a
                 href=""
-                id="navbar-link-language-de"
+                id="navbar-link-language-cs-CZ"
               >
-                🇩🇪
+                Čeština
                  
-                Deutsch (DE)
+                (
+                CS-CZ
+                )
               </a>
             </li>
             <li>
               <a
                 href=""
-                id="navbar-link-language-en"
+                id="navbar-link-language-de"
               >
-                🇺🇸
+                Deutsch
                  
-                English (US)
+                (
+                DE
+                )
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                id="navbar-link-language-en-US"
+              >
+                English
+                 
+                (
+                EN-US
+                )
               </a>
             </li>
             <li>
@@ -123,9 +139,11 @@ exports[`components/App renders correctly 1`] = `
                 href=""
                 id="navbar-link-language-en-GB"
               >
-                🇬🇧
+                English
                  
-                English (UK)
+                (
+                EN-GB
+                )
               </a>
             </li>
             <li>
@@ -133,9 +151,11 @@ exports[`components/App renders correctly 1`] = `
                 href=""
                 id="navbar-link-language-es"
               >
-                🇪🇸
+                Español
                  
-                Español (ES)
+                (
+                ES
+                )
               </a>
             </li>
             <li>
@@ -143,9 +163,11 @@ exports[`components/App renders correctly 1`] = `
                 href=""
                 id="navbar-link-language-fr"
               >
-                🇫🇷
+                Français
                  
-                Français (FR)
+                (
+                FR
+                )
               </a>
             </li>
             <li>
@@ -153,9 +175,11 @@ exports[`components/App renders correctly 1`] = `
                 href=""
                 id="navbar-link-language-it"
               >
-                🇮🇹
+                Italiano
                  
-                Italiano (IT)
+                (
+                IT
+                )
               </a>
             </li>
             <li>
@@ -163,9 +187,11 @@ exports[`components/App renders correctly 1`] = `
                 href=""
                 id="navbar-link-language-ja"
               >
-                🇯🇵
+                日本語
                  
-                日本語 (JA)
+                (
+                JA
+                )
               </a>
             </li>
             <li>
@@ -173,9 +199,11 @@ exports[`components/App renders correctly 1`] = `
                 href=""
                 id="navbar-link-language-nl"
               >
-                🇳🇱
+                Nederlands
                  
-                Nederlands (NL)
+                (
+                NL
+                )
               </a>
             </li>
             <li>
@@ -183,9 +211,11 @@ exports[`components/App renders correctly 1`] = `
                 href=""
                 id="navbar-link-language-pl"
               >
-                🇵🇱
+                Polski
                  
-                Polski (PL)
+                (
+                PL
+                )
               </a>
             </li>
             <li>
@@ -193,9 +223,23 @@ exports[`components/App renders correctly 1`] = `
                 href=""
                 id="navbar-link-language-pt-BR"
               >
-                🇧🇷
+                Português
                  
-                Português (BR)
+                (
+                PT-BR
+                )
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                id="navbar-link-language-ru"
+              >
+                Русский
+                 
+                (
+                RU
+                )
               </a>
             </li>
             <li>
@@ -203,9 +247,23 @@ exports[`components/App renders correctly 1`] = `
                 href=""
                 id="navbar-link-language-tr"
               >
-                🇹🇷
+                Türkçe
                  
-                Türkçe (TR)
+                (
+                TR
+                )
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                id="navbar-link-language-zh-CN"
+              >
+                简体中文
+                 
+                (
+                ZH-CN
+                )
               </a>
             </li>
             <li>

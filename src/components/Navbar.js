@@ -138,7 +138,7 @@ export default function Navbar() {
                 setLanguageDropdown(!languageDropdown);
               }}
             >
-              {languages[i18n.language].flag}
+              {i18n.language.toUpperCase()}
               {' '}
               <span className={styles.caret} />
             </a>
@@ -154,9 +154,9 @@ export default function Navbar() {
                       i18n.changeLanguage(code);
                     }}
                   >
-                    {language.flag}
-                    {' '}
                     {language.name}
+                    {' '}
+                    ({code.toUpperCase()})
                   </a>
                 </li>
               ))}

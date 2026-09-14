@@ -37,7 +37,10 @@ describe('settingsActions', () => {
 
   const settings = { exampleSettings: true };
 
-  const getState = () => ({ auth: { firebaseApp: {}, user: { email: 'example@example.com' } }, settings });
+  const getState = () => ({
+    auth: { firebaseApp: {}, user: { uid: 'user-id', email: 'example@example.com' } },
+    settings,
+  });
   const getStateNoUser = () => ({ auth: { firebaseApp: {}, user: null }, settings });
 
   describe('saveSettingsToFirebase', () => {
@@ -50,6 +53,7 @@ describe('settingsActions', () => {
 
       await saveSettingsToFirebaseThunk(dispatch, getState);
 
+      expect(doc).toHaveBeenCalledWith(expect.anything(), 'user-id');
       expect(dispatch).toHaveBeenCalledWith({ type: FIREBASE_SYNCED });
       expect(setDoc).toHaveBeenCalledWith(docRef, settings);
     });
@@ -84,7 +88,7 @@ describe('settingsActions', () => {
       const docRef = '345';
       doc.mockReturnValueOnce(docRef);
       const newSettings = { filters: [] };
-      getDoc.mockResolvedValueOnce({ exists: true, data: () => newSettings });
+      getDoc.mockResolvedValueOnce({ exists: () => true, data: () => newSettings });
       const dispatch = jest.fn(async () => {});
 
       await getSettingsFromFirebaseThunk(dispatch, getState);
@@ -100,7 +104,7 @@ describe('settingsActions', () => {
     test('document doesn\'t exist', async () => {
       const docRef = '345';
       doc.mockReturnValueOnce(docRef);
-      getDoc.mockResolvedValueOnce({ exists: false });
+      getDoc.mockResolvedValueOnce({ exists: () => false });
       const dispatch = createMockDispatcher(getState);
 
       await getSettingsFromFirebaseThunk(dispatch, getState);

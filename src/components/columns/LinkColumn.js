@@ -13,7 +13,7 @@ export default function LinkColumn({ race }: Props) {
   return (
     <td>
       <a
-        href={`http://members.iracing.com/membersite/member/SeriesSessions.do?season=${race.seasonId}`}
+        href={`https://members-ng.iracing.com/web/racing/official/series-list/${race.seasonId}/go-racing`}
         target="_blank"
         rel="noreferrer"
         data-testid="LinkColumn-link"

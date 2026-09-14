@@ -67,17 +67,23 @@ export default async function getSeason(cars: Array<carType>, tracks: Array<trac
     return newMap;
   }, {});
 
+  console.log('Fetching car classes...');
+
   const carClassResponse = await clientGet('/data/carclass/get');
   const carClassMap = carClassResponse.data.reduce((carry, carClass) => ({
     ...carry,
     [carClass.car_class_id]: carClass,
   }), {});
 
+  console.log('Fetching license data...');
+
   const licenseResponse = await clientGet('/data/lookup/licenses');
   const licenseMap = licenseResponse.data.reduce((carry, license) => ({
     ...carry,
     [license.license_group]: license,
   }), {});
+
+  console.log('Fetching season data...');
 
   const seasonResponse = await clientGet('/data/series/seasons', { include_series: 1 });
 

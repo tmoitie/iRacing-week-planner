@@ -8,6 +8,7 @@ import thunk from 'redux-thunk';
 import MockDate from 'mockdate';
 import * as firebaseAuth from 'firebase/auth';
 import { SIGNED_IN } from '../actions/auth';
+import { debouncedDispatcherSaveSettings } from '../actions/settings';
 
 import App from '../App';
 
@@ -63,5 +64,18 @@ describe('components/App', () => {
     firebaseAuth.testDispatchOnAuthStateChanged(newUser);
     expect(store.getActions()[1].type).toEqual(SIGNED_IN);
     expect(store.getActions()[1].user).toBe(newUser);
+  });
+
+  test('flushes pending settings when the page is hidden', () => {
+    const flush = jest.spyOn(debouncedDispatcherSaveSettings, 'flush');
+    const store = mockStore(defaultStore);
+    const { unmount } = render(<Provider store={store}><App /></Provider>);
+
+    window.dispatchEvent(new Event('pagehide'));
+
+    expect(flush).toHaveBeenCalledTimes(1);
+
+    unmount();
+    expect(flush).toHaveBeenCalledTimes(2);
   });
 });
