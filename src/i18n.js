@@ -15,6 +15,7 @@ import '@formatjs/intl-datetimeformat/locale-data/tr';
 import '@formatjs/intl-datetimeformat/locale-data/ja';
 import '@formatjs/intl-datetimeformat/locale-data/nl';
 import '@formatjs/intl-datetimeformat/locale-data/pl';
+import '@formatjs/intl-datetimeformat/locale-data/ru';
 import '@formatjs/intl-datetimeformat/locale-data/zh';
 import '@formatjs/intl-datetimeformat/add-all-tz';
 
@@ -29,55 +30,47 @@ import tr from '../translations/tr';
 import ja from '../translations/jp';
 import nl from '../translations/nl';
 import pl from '../translations/pl';
-import zhCN from '../translations/zh-cn';
+import ru from '../translations/ru';
+import zhCN from '../translations/zh-CN';
 
 const languages = {
   de: {
-    flag: '🇩🇪',
     name: 'Deutsch (DE)',
   },
   en: {
-    flag: '🇺🇸',
     name: 'English (US)',
   },
   'en-GB': {
-    flag: '🇬🇧',
     name: 'English (UK)',
   },
   es: {
-    flag: '🇪🇸',
     name: 'Español (ES)',
   },
   fr: {
-    flag: '🇫🇷',
     name: 'Français (FR)',
   },
   it: {
-    flag: '🇮🇹',
     name: 'Italiano (IT)',
   },
   ja: {
-    flag: '🇯🇵',
     name: '日本語 (JA)',
   },
   nl: {
-    flag: '🇳🇱',
     name: 'Nederlands (NL)',
   },
   pl: {
-    flag: '🇵🇱',
     name: 'Polski (PL)',
   },
   'pt-BR': {
-    flag: '🇧🇷',
     name: 'Português (BR)',
   },
+  ru: {
+    name: 'Русский (RU)',
+  },
   tr: {
-    flag: '🇹🇷',
     name: 'Türkçe (TR)',
   },
   'zh-CN': {
-    flag: '🇨🇳',
     name: '简体中文 (ZH-CN)',
   },
 };
@@ -96,6 +89,7 @@ const resources = {
   nl,
   tr,
   pl,
+  ru,
   'zh-CN': zhCN,
 };
 

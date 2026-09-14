@@ -9,6 +9,7 @@ import GlobalModals from './components/GlobalModals';
 import Navbar from './components/Navbar';
 
 import { startListener } from './actions/auth';
+import { debouncedDispatcherSaveSettings } from './actions/settings';
 
 import RaceListing from './components/RaceListing';
 import Filters from './components/Filters';
@@ -27,7 +28,21 @@ export default function App(): React.Node {
   React.useEffect(() => {
     dispatch(startListener());
 
-    return () => {};
+    const flushPendingSettings = () => debouncedDispatcherSaveSettings.flush();
+    const flushPendingSettingsWhenHidden = () => {
+      if (document.visibilityState === 'hidden') {
+        flushPendingSettings();
+      }
+    };
+
+    window.addEventListener('pagehide', flushPendingSettings);
+    document.addEventListener('visibilitychange', flushPendingSettingsWhenHidden);
+
+    return () => {
+      window.removeEventListener('pagehide', flushPendingSettings);
+      document.removeEventListener('visibilitychange', flushPendingSettingsWhenHidden);
+      flushPendingSettings();
+    };
   }, []);
 
   React.useEffect(() => {

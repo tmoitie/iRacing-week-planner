@@ -2,6 +2,26 @@ import moment from 'moment';
 
 export default [
   {
+    date: moment('2026-09-15 00:00:00').utc(),
+    items: [
+      'Update to 2026S4',
+      'Improve settings sync reliability',
+      'Update Firebase and browser support',
+    ],
+  },
+  {
+    date: moment('2026-03-17 00:00:00').utc(),
+    items: [
+      'Update to 2026S2',
+    ],
+  },
+  {
+    date: moment('2025-12-12 00:00:00').utc(),
+    items: [
+      'Update to 2025S4W13 - Apologies for the late run, iRacing altered the auth pattern',
+    ],
+  },
+  {
     date: moment('2025-09-16 00:00:00').utc(),
     items: [
       'Update to 2025S4',
