@@ -6,7 +6,7 @@ import { initReactI18next } from 'react-i18next';
 import moment from 'moment';
 
 import '@formatjs/intl-datetimeformat/polyfill';
-import '@formatjs/intl-datetimeformat/add-all-tz';
+import '@formatjs/intl-datetimeformat/add-golden-tz';
 
 import en from '../translations/en';
 import enGB from '../translations/en-GB';
