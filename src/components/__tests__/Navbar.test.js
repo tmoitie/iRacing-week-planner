@@ -106,11 +106,11 @@ describe('components/Navbar', () => {
     expect(firstRender).toMatchDiffSnapshot(secondRender);
 
     await act(async () => {
-      fireEvent.click(await component.findByText(/Deutsch \(DE\)/));
+      fireEvent.click(await component.findByText(/Čeština \(CZ\)/));
     });
 
     expect(secondRender).toMatchDiffSnapshot(component.asFragment());
-    expect(changeLanguage).toHaveBeenCalledWith('de');
+    expect(changeLanguage).toHaveBeenCalledWith('cs-CZ');
   });
 
   test('closes dropdown', async () => {
