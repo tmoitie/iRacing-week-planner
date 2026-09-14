@@ -25,7 +25,7 @@ describe('components/modal/LoginModal', () => {
     const user = userEvent.setup();
     const firebaseAuth = {};
     getAuth.mockReturnValue(firebaseAuth);
-    const store = mockStore({ auth: { errorAuth: null, loadingAuth: false, firebaseApp: {} } });
+    const store = mockStore({ auth: { errorAuth: null, loadingAuth: false } });
     render(<Provider store={store}><LoginModal isOpen onClose={() => {}} /></Provider>);
 
     expect(await screen.findByTestId('login-modal')).toMatchSnapshot();
@@ -45,7 +45,7 @@ describe('components/modal/LoginModal', () => {
     getAuth.mockReturnValue(firebaseAuth);
     signInWithEmailAndPassword.mockRejectedValueOnce({ message: 'error' });
 
-    const store = mockStore({ auth: { errorAuth: null, loadingAuth: false, firebaseApp: {} } });
+    const store = mockStore({ auth: { errorAuth: null, loadingAuth: false } });
     render(<Provider store={store}><LoginModal isOpen onClose={() => {}} /></Provider>);
 
     await user.click(screen.getByText('Sign in'));
@@ -56,7 +56,7 @@ describe('components/modal/LoginModal', () => {
     const user = userEvent.setup();
     const firebaseAuth = {};
     getAuth.mockReturnValue(firebaseAuth);
-    const store = mockStore({ auth: { errorAuth: null, loadingAuth: false, firebaseApp: {} } });
+    const store = mockStore({ auth: { errorAuth: null, loadingAuth: false } });
 
     render(<Provider store={store}><LoginModal isOpen onClose={() => {}} /></Provider>);
 
@@ -77,7 +77,7 @@ describe('components/modal/LoginModal', () => {
     getAuth.mockReturnValue(firebaseAuth);
     createUserWithEmailAndPassword.mockRejectedValueOnce({ message: 'error' });
 
-    const store = mockStore({ auth: { errorAuth: null, loadingAuth: false, firebaseApp: {} } });
+    const store = mockStore({ auth: { errorAuth: null, loadingAuth: false } });
     render(<Provider store={store}><LoginModal isOpen onClose={() => {}} /></Provider>);
 
     await user.click(screen.getByText('Create account'));

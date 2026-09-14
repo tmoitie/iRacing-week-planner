@@ -1,6 +1,4 @@
 import { describe, test } from '@jest/globals';
-import 'firebase/app';
-
 import authReducer from '../auth';
 import {
   ERROR_ACKNOWLEDGE,
@@ -11,8 +9,6 @@ import {
   SIGNED_IN,
   SIGNED_OUT,
 } from '../../actions/auth';
-
-jest.mock('firebase/app');
 
 describe('reducers/auth', () => {
   test('set up default state', () => {

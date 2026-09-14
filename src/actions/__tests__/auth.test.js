@@ -35,7 +35,7 @@ describe('authActions', () => {
   describe('signOut', () => {
     const signOutThunk = signOut();
     test('with sync', async () => {
-      const getState = () => ({ auth: { firebaseApp: {} }, settings: { firebaseSynced: false } });
+      const getState = () => ({ auth: {}, settings: { firebaseSynced: false } });
       const dispatch = jest.fn(async () => {});
 
       await signOutThunk(dispatch, getState);
@@ -47,7 +47,7 @@ describe('authActions', () => {
     });
 
     test('without sync', async () => {
-      const getState = () => ({ auth: { firebaseApp: {} }, settings: { firebaseSynced: true } });
+      const getState = () => ({ auth: {}, settings: { firebaseSynced: true } });
       const dispatch = jest.fn(async () => {});
 
       await signOutThunk(dispatch, getState);
@@ -57,7 +57,7 @@ describe('authActions', () => {
     });
   });
 
-  const getState = () => ({ auth: { firebaseApp: {} } });
+  const getState = () => ({ auth: {} });
 
   describe('signIn', () => {
     const signInThunk = signIn('test@example.com', '12345678');

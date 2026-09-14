@@ -1,5 +1,5 @@
 import debounce from 'lodash.debounce';
-import { getFirestore, collection, doc, getDoc, setDoc } from 'firebase/firestore';
+import { getFirebaseFirestore } from '../firebase';
 
 export const UPDATE_FILTERS = 'SETTINGS/UPDATE_FILTERS';
 export const RESET_FILTERS = 'SETTINGS/RESET_FILTERS';
@@ -10,17 +10,18 @@ export const FIREBASE_SYNCED = 'SETTINGS/FIREBASE_SYNCED';
 
 export function saveSettingsToFirebase() {
   return async (dispatch, getState) => {
-    const { user, firebaseApp } = getState().auth;
+    const { user } = getState().auth;
     const { settings } = getState();
 
     if (!user) {
       return;
     }
 
-    const db = getFirestore(firebaseApp);
-    const collectionRef = collection(db, 'settings');
-    const docRef = doc(collectionRef, user.uid);
-    await setDoc(docRef, settings);
+    const [firebaseApp, firebaseFirestore] = await getFirebaseFirestore();
+    const db = firebaseFirestore.getFirestore(firebaseApp);
+    const collectionRef = firebaseFirestore.collection(db, 'settings');
+    const docRef = firebaseFirestore.doc(collectionRef, user.uid);
+    await firebaseFirestore.setDoc(docRef, settings);
     dispatch({ type: FIREBASE_SYNCED });
   };
 }
@@ -59,15 +60,16 @@ export function updateSetting(key, value) {
 
 export function getSettingsFromFirebase() {
   return async (dispatch, getState) => {
-    const { user, firebaseApp } = getState().auth;
+    const { user } = getState().auth;
     if (!user) {
       return;
     }
 
-    const db = getFirestore(firebaseApp);
-    const collectionRef = collection(db, 'settings');
-    const docRef = doc(collectionRef, user.uid);
-    const document = await getDoc(docRef);
+    const [firebaseApp, firebaseFirestore] = await getFirebaseFirestore();
+    const db = firebaseFirestore.getFirestore(firebaseApp);
+    const collectionRef = firebaseFirestore.collection(db, 'settings');
+    const docRef = firebaseFirestore.doc(collectionRef, user.uid);
+    const document = await firebaseFirestore.getDoc(docRef);
 
     if (!document.exists()) {
       await dispatch(saveSettingsToFirebase());
