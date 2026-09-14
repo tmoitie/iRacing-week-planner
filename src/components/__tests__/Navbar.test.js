@@ -98,7 +98,7 @@ describe('components/Navbar', () => {
     const firstRender = component.asFragment();
 
     await act(async () => {
-      fireEvent.click(await component.findByText(/^🇺🇸$/));
+      fireEvent.click(await component.findByText(/^EN$/));
     });
 
     const secondRender = component.asFragment();
@@ -122,7 +122,7 @@ describe('components/Navbar', () => {
     });
 
     await act(async () => {
-      fireEvent.click(await component.findByText(/^🇺🇸$/));
+      fireEvent.click(await component.findByText(/^EN$/));
     });
     const firstRender = component.asFragment();
 

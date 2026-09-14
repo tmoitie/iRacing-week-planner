@@ -14,33 +14,6 @@ export default {
   //   ],
   // },
 
-  // 492 │ 5913   │ Sports Car  │ C     │ IMSA Michelin Pilot Challenge Series | 2026-03-10
-  // 5913: {
-  //   offWeeks: [
-  //     0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
-  //   ],
-  // },
-
-  // 572 │ 5914   │ Sports Car  │ C     │ IMSA Sportscar Endurance Challenge | 2026-03-10
-  // 5914: {
-  //   offWeeks: [
-  //     1.1, 2.1, 3.1, 4.1, 5.1,
-  //   ],
-  // },
-
-  // 331 │ 5931   │ Sports Car  │ B     │ Global Endurance Tour | 2026-03-10
-  // 5931: {
-  //   offWeeks: [
-  //     0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
-  //   ],
-  // },
-
-  // 419 │ 5934   │ Sports Car  │ B     │ IMSA Endurance Series | 2026-03-10
-  // 5934: {
-  //   offWeeks: [
-  //     1.1, 2.1, 3.1, 4.1, 5.1,
-  //   ],
-  // },
   // 501 │ 6075   │ Dirt        │ C     │ Dirt 410 Sprint Car Tour | 2026-11-10
   6075: {
     offWeeks: [5.1, 17.1, 29.1],
@@ -74,11 +47,11 @@ export default {
     ],
   },
   // 601 │ 6073   │ Oval        │ A     │ eNASCAR Coca Cola iRacing Qualifying Series | 2026-05-05
-  6073: {
-    offWeeks: [
-      4.1,
-    ],
-  },
+  // 6073: {
+  //   offWeeks: [
+  //     4.1,
+  //   ],
+  // },
 
   // 495 │ 6235   │ Formula Car │ C     │ Formula A - Grand Prix Tour | 2026-12-08
   6235: {
@@ -112,27 +85,49 @@ export default {
     ],
   },
   // 492 │ 6102   │ Sports Car  │ C     │ IMSA Michelin Pilot Challenge Series | 2026-06-09
-  6102: {
-    offWeeks: [
-      0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
-    ],
-  },
+  // 6102: {
+  //   offWeeks: [
+  //     0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
+  //   ],
+  // },
   // 572 │ 6103   │ Sports Car  │ C     │ IMSA Sportscar Endurance Challenge | 2026-06-02
-  6103: {
-    offWeeks: [
-      1.1, 2.1, 3.1, 4.1, 5.1,
-    ],
-  },
+  // 6103: {
+  //   offWeeks: [
+  //     1.1, 2.1, 3.1, 4.1, 5.1,
+  //   ],
+  // },
   // 331 │ 6120   │ Sports Car  │ B     │ Global Endurance Tour | 2026-06-09
-  6120: {
+  // 6120: {
+  //   offWeeks: [
+  //     0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
+  //   ],
+  // },
+  // 419 │ 6123   │ Sports Car  │ B     │ IMSA Endurance Series | 2026-06-02
+  // 6123: {
+  //   offWeeks: [
+  //     1.1, 2.1, 3.1, 4.1, 5.1,
+  //   ],
+  // },
+  // 579 │ 6261   │ Formula Car │ C     │ Vintage Grand Prix Tour | 2026-11-25
+  6261: {
     offWeeks: [
-      0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
+      1.1, 2.1, 3.1, 4.1, 5.1, 5.1, 6.1, 7.1, 8.1, 9.1, 10.1, 11.1, 11.1, 12.1, 13.1, 14.1, 15.1,
     ],
   },
-  // 419 │ 6123   │ Sports Car  │ B     │ IMSA Endurance Series | 2026-06-02
-  6123: {
+  // 619 │ 6263   │ Sports Car  │ B     │ iRacing DTM Series | 2026-10-14
+  6263: {
     offWeeks: [
-      1.1, 2.1, 3.1, 4.1, 5.1,
+      1.1, 1.1, 1.1, 2.1, 2.1, 2.1, 3.1, 4.1, 4.1, 5.1, 5.1, 6.1, 6.1, 6.1, 7.1, 7.1, 7.1,
     ],
+  },
+  // 451 │ 6434   │ Sports Car  │ C     │ Creventic Endurance Series
+  6434: {
+    offWeeks: [
+      1.1,1.1,1.1,1.1,2.1,2.1,2.1,3.1,3.1,3.1,4.1,
+    ],
+  },
+  // 320 │ 6585   │ Sports Car  │ D     │ 13th Week iRacing Porsche Cup
+  6585: {
+    weekEndOffset: { days: 1 },
   },
 };

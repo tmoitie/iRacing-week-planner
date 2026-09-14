@@ -31,47 +31,36 @@ import pl from '../translations/pl';
 
 const languages = {
   de: {
-    flag: '🇩🇪',
     name: 'Deutsch (DE)',
   },
   en: {
-    flag: '🇺🇸',
     name: 'English (US)',
   },
   'en-GB': {
-    flag: '🇬🇧',
     name: 'English (UK)',
   },
   es: {
-    flag: '🇪🇸',
     name: 'Español (ES)',
   },
   fr: {
-    flag: '🇫🇷',
     name: 'Français (FR)',
   },
   it: {
-    flag: '🇮🇹',
     name: 'Italiano (IT)',
   },
   ja: {
-    flag: '🇯🇵',
     name: '日本語 (JA)',
   },
   nl: {
-    flag: '🇳🇱',
     name: 'Nederlands (NL)',
   },
   pl: {
-    flag: '🇵🇱',
     name: 'Polski (PL)',
   },
   'pt-BR': {
-    flag: '🇧🇷',
     name: 'Português (BR)',
   },
   tr: {
-    flag: '🇹🇷',
     name: 'Türkçe (TR)',
   },
 };

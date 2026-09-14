@@ -69,8 +69,8 @@ export function getSettingsFromFirebase() {
     const docRef = doc(collectionRef, user.uid);
     const document = await getDoc(docRef);
 
-    if (!document.exists) {
-      dispatch(saveSettingsToFirebase());
+    if (!document.exists()) {
+      await dispatch(saveSettingsToFirebase());
       return;
     }
 

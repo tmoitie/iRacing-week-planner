@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Weekly planner for iRacing.com races",
   "engines": {
-    "node": "18.*",
+    "node": ">=20.19.0 <21",
     "yarn": ">=1.22.5"
   },
   "scripts": {
@@ -24,8 +24,7 @@
     "url": "https://github.com/tmoitie/iRacing-week-planner/issues"
   },
   "browserslist": [
-    "defaults",
-    "IE 11"
+    "defaults"
   ],
   "homepage": "https://iracing-week-planner.tmo.lol",
   "dependencies": {
@@ -53,12 +52,10 @@
     "css-loader": "^6.5.1",
     "css-minimizer-webpack-plugin": "^4.0.0",
     "css-modules-flow-types-loader": "^2.0.0",
-    "es5-shim": "^4.5.14",
     "file-loader": "^6.0.0",
-    "firebase": "^9.6.0",
+    "firebase": "^10",
     "flow-typed": "^3.2.1",
     "html-webpack-plugin": "^5.5.0",
-    "html5shiv": "^3.7.3",
     "i18next": "^21.10.0",
     "i18next-browser-languagedetector": "^6.0.1",
     "ignore-styles": "^5.0.1",
@@ -86,15 +83,14 @@
     "redux-localstorage": "^1.0.0-rc5",
     "redux-localstorage-filter": "^0.1.1",
     "redux-thunk": "^2.3.0",
-    "respond.js": "^1.4.2",
     "sass": "^1.44.0",
     "sass-loader": "^13.0.2",
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.2.5",
     "url-loader": "^4.1.0",
     "util.promisify": "^1.1.1",
-    "webpack": "^5.94.0",
-    "webpack-cli": "^4.9.1"
+    "webpack": "^5.104.1",
+    "webpack-cli": "^5"
   },
   "devDependencies": {
     "@jest/globals": "^27.4.2",
@@ -129,6 +125,6 @@
     "regenerator-runtime": "^0.13.7",
     "snapshot-diff": "^0.9.0",
     "webpack-bundle-analyzer": "^4.9.1",
-    "webpack-dev-server": "^4.6.0"
+    "webpack-dev-server": "^5.2.1"
   }
 }
