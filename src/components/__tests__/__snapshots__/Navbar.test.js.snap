@@ -292,6 +292,18 @@ exports[`components/Navbar renders correctly and links work 1`] = `
           <li>
             <a
               href=""
+              id="navbar-link-language-pt-PT"
+            >
+              Português
+               
+              (
+              PT-PT
+              )
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
               id="navbar-link-language-ru"
             >
               Русский

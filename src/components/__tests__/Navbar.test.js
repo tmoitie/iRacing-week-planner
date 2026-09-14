@@ -99,6 +99,7 @@ describe('components/Navbar', () => {
 
     expect(await component.findByText(/Русский \(RU\)/)).toBeInTheDocument();
     expect(await component.findByText(/简体中文 \(ZH-CN\)/)).toBeInTheDocument();
+    expect(await component.findByText(/Português \(PT-PT\)/)).toBeInTheDocument();
 
     await act(async () => {
       fireEvent.click(await component.findByText(/^EN-US$/));
