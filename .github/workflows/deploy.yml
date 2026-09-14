@@ -41,6 +41,27 @@ jobs:
         IWP_CLIENT_ID: ${{ secrets.IWP_CLIENT_ID }}
         IWP_CLIENT_SECRET: ${{ secrets.IWP_CLIENT_SECRET }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Check calculated week lengths
+      id: week_lengths
+      continue-on-error: true
+      run: yarn checkWeekLengths
+    - name: Notify admin about invalid week lengths
+      if: steps.week_lengths.outcome == 'failure'
+      continue-on-error: true
+      uses: dawidd6/action-send-mail@v6
+      with:
+        server_address: ${{ vars.SES_SMTP_SERVER }}
+        server_port: ${{ vars.SES_SMTP_PORT }}
+        secure: false
+        require_tls: true
+        username: ${{ vars.SES_SMTP_USERNAME }}
+        password: ${{ secrets.SES_SMTP_PASSWORD }}
+        subject: Invalid iRacing week lengths detected
+        to: ${{ secrets.ADMIN_EMAIL }}
+        from: ${{ vars.SES_FROM_EMAIL }}
+        body: |
+          The weekly deploy detected calculated race week lengths other than 1 or 7 days.
+          Deployment will continue. Review the workflow log at ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}.
     - run: yarn test
     - run: yarn debugRaces
     - run: yarn build

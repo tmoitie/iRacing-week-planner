@@ -45,6 +45,20 @@ Because this scrapes the data from the iRacing website, the tool can only be upd
 published on the iRacing website. As such the planner won't be updated until the turn of the season, typically
 within a few hours of the data going live - Tuesday 1am UTC on the first week of the season.
 
+### Scheduled deploy notifications
+
+The weekly deployment validates calculated race week lengths after scraping data. Invalid lengths do not stop the deployment, but send an AWS SES SMTP email to the administrator. Configure these `Deployment` environment variables:
+
+- `SES_SMTP_SERVER`
+- `SES_SMTP_PORT` set to `587`
+- `SES_SMTP_USERNAME`
+- `SES_FROM_EMAIL`
+
+Configure these `Deployment` environment secrets:
+
+- `SES_SMTP_PASSWORD`
+- `ADMIN_EMAIL`
+
 ## Other information
 
 ### Inspect webpack bundle size

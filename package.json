@@ -11,6 +11,7 @@
     "start": "webpack-dev-server",
     "debugRaces": "babel-node ./build/debugRaces.js",
     "debugSeries": "babel-node ./build/debugSeries.js",
+    "checkWeekLengths": "babel-node ./build/checkWeekLengths.js",
     "scrapeData": "babel-node ./build/scrape.js",
     "test": "jest"
   },

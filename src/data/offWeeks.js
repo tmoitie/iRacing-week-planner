@@ -126,8 +126,4 @@ export default {
       1.1,1.1,1.1,1.1,2.1,2.1,2.1,3.1,3.1,3.1,4.1,
     ],
   },
-  // 320 │ 6585   │ Sports Car  │ D     │ 13th Week iRacing Porsche Cup
-  6585: {
-    weekEndOffset: { days: 1 },
-  },
 };
