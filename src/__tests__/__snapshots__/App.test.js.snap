@@ -211,6 +211,16 @@ exports[`components/App renders correctly 1`] = `
             <li>
               <a
                 href=""
+                id="navbar-link-language-ru"
+              >
+                RU
+                 
+                Русский (RU)
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
                 id="navbar-link-language-tr"
               >
                 TR
