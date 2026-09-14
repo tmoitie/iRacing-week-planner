@@ -24,6 +24,7 @@ import en from '../translations/en';
 import enGB from '../translations/en-GB';
 import es from '../translations/es';
 import ptBR from '../translations/pt-BR';
+import ptPT from '../translations/pt-PT';
 import de from '../translations/de';
 import fr from '../translations/fr';
 import it from '../translations/it';
@@ -69,6 +70,9 @@ const languages = {
   'pt-BR': {
     name: 'Português',
   },
+  'pt-PT': {
+    name: 'Português',
+  },
   ru: {
     name: 'Русский',
   },
@@ -87,6 +91,7 @@ const resources = {
   'en-GB': enGB,
   es,
   'pt-BR': ptBR,
+  'pt-PT': ptPT,
   de,
   fr,
   it,
