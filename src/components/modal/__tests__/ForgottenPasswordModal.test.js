@@ -24,7 +24,7 @@ describe('components/modal/ForgottenPasswordModal', () => {
 
     const firebaseAuth = {};
     getAuth.mockReturnValue(firebaseAuth);
-    const store = mockStore({ auth: { errorReset: null, loadingReset: false, firebaseApp: {} } });
+    const store = mockStore({ auth: { errorReset: null, loadingReset: false } });
     const { baseElement, unmount } = render(<Provider store={store}><ForgottenPasswordModal isOpen /></Provider>);
 
     expect(await screen.findByTestId('forgottenPasswordModal')).toMatchSnapshot();
@@ -49,7 +49,7 @@ describe('components/modal/ForgottenPasswordModal', () => {
     getAuth.mockReturnValue(firebaseAuth);
     sendPasswordResetEmail.mockRejectedValueOnce({ message: 'error' });
 
-    const store = mockStore({ auth: { errorReset: null, loadingReset: false, firebaseApp: {} } });
+    const store = mockStore({ auth: { errorReset: null, loadingReset: false } });
     const { baseElement } = render(<Provider store={store}><ForgottenPasswordModal isOpen /></Provider>);
 
     await user.click(screen.getByText('Submit'));

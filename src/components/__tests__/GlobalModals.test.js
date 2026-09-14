@@ -26,7 +26,6 @@ describe('components/GlobalModals', () => {
     },
     auth: {
       user: null,
-      firebaseApp: {},
     },
   };
 

@@ -38,10 +38,10 @@ describe('settingsActions', () => {
   const settings = { exampleSettings: true };
 
   const getState = () => ({
-    auth: { firebaseApp: {}, user: { uid: 'user-id', email: 'example@example.com' } },
+    auth: { user: { uid: 'user-id', email: 'example@example.com' } },
     settings,
   });
-  const getStateNoUser = () => ({ auth: { firebaseApp: {}, user: null }, settings });
+  const getStateNoUser = () => ({ auth: { user: null }, settings });
 
   describe('saveSettingsToFirebase', () => {
     const saveSettingsToFirebaseThunk = saveSettingsToFirebase();
