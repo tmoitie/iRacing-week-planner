@@ -85,6 +85,7 @@ module.exports = {
               api: 'modern',
               sassOptions: {
                 loadPaths: [path.resolve(__dirname, 'node_modules')],
+                silenceDeprecations: ['import', 'global-builtin', 'color-functions', 'if-function'],
               },
             },
           },
@@ -110,6 +111,7 @@ module.exports = {
               api: 'modern',
               sassOptions: {
                 loadPaths: [path.resolve(__dirname, 'node_modules')],
+                silenceDeprecations: ['import', 'global-builtin', 'color-functions', 'if-function'],
               },
             },
           },
