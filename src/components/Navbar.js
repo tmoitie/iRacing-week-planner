@@ -58,6 +58,15 @@ export default function Navbar() {
               {t('Purchase guide')}
             </a>
           </li>
+          <li>
+            <a
+              id="navbar-link-credit-program"
+              href=""
+              onClick={getModalChangeClick('credit-program')}
+            >
+              {t('Credit program')}
+            </a>
+          </li>
         </ul>
 
         <ul className={`${styles.nav} ${styles['navbar-nav']} ${styles['navbar-right']}`}>
