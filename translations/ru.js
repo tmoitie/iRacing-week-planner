@@ -25,7 +25,7 @@ export default {
     'Unofficial': 'Неофициальные',
     'Official': 'Официальные',
     'Open setup': 'Открытый сетап',
-    'Fixed setup': 'Фикс. сетал',
+    'Fixed setup': 'Фикс. сетап',
     'Content': 'Контент',
     'Owned cars only': 'Только купленные авто',
     'Owned tracks only': 'Только купленные треки',
