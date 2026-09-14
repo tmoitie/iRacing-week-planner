@@ -94,18 +94,20 @@ const localeDataLoaders: { [string]: () => Promise<mixed> } = {
 
 const localeDataLoads: { [string]: Promise<mixed> } = {};
 
-export function loadLocaleData(language: string): Promise<mixed> {
-  if (!localeDataLoads[language]) {
-    const loader = localeDataLoaders[language];
+export function loadLocaleData(language?: string): Promise<mixed> {
+  const locale = language || 'en-US';
+
+  if (!localeDataLoads[locale]) {
+    const loader = localeDataLoaders[locale];
 
     if (!loader) {
-      throw new Error(`No DateTimeFormat locale data loader configured for ${language}`);
+      throw new Error(`No DateTimeFormat locale data loader configured for ${locale}`);
     }
 
-    localeDataLoads[language] = loader();
+    localeDataLoads[locale] = loader();
   }
 
-  return localeDataLoads[language];
+  return localeDataLoads[locale];
 }
 
 const resources = {

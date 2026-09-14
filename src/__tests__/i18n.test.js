@@ -12,4 +12,10 @@ describe('i18n locale data', () => {
 
     expect(Intl.DateTimeFormat.supportedLocalesOf('cs-CZ')).toContain('cs-CZ');
   });
+
+  test('uses English locale data when no language is available', async () => {
+    await loadLocaleData();
+
+    expect(Intl.DateTimeFormat.supportedLocalesOf('en-US')).toContain('en-US');
+  });
 });
