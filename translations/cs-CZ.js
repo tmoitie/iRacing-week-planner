@@ -137,6 +137,7 @@ export default {
     'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.':
       'Pořiďte si setup od Coach Dave Academy, vyvinutý profesionálními sim závodníky a inženýry.',
     'Browse Setups': 'Procházet setupy',
+    'Ignore past weeks': 'Ignorovat předchozí týdny',
 
     // Rain
     'Rain': 'Déšť',

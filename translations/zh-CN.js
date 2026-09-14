@@ -128,6 +128,7 @@ export default {
     'Looking for iRacing Setups?': '在寻找 iRacing 调校方案吗？',
     'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.': '从 Coach Dave 学院获取调校方案，由专业模拟赛车手和工程师开发。',
     'Browse Setups': '浏览调校方案',
+    'Ignore past weeks': '忽略过去的周',
 
     // Rain
     'Rain': '降雨',
