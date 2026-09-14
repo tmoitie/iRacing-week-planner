@@ -134,6 +134,7 @@ export default {
     'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.':
       'Obtenha uma configuração da Coach Dave Academy, desenvolvida por pilotos de simulação profissionais e engenheiros.',
     'Browse Setups': 'Ver configurações',
+    'Ignore past weeks': 'Ignorar semanas anteriores',
 
     // Rain
     'Rain': 'Chuva',

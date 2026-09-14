@@ -1,7 +1,7 @@
 import { afterEach, beforeEach, describe, test } from '@jest/globals';
 import moment from 'moment';
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
@@ -40,7 +40,6 @@ describe('components/App', () => {
     },
     auth: {
       user: null,
-      firebaseApp: {},
     },
   };
 
@@ -52,16 +51,18 @@ describe('components/App', () => {
     MockDate.reset();
   });
 
-  test('renders correctly', () => {
+  test('renders correctly', async () => {
     const store = mockStore(defaultStore);
     const { container } = render(<Provider store={store}><App /></Provider>);
 
     expect(container.firstChild).toMatchSnapshot();
+    await waitFor(() => expect(store.getActions()).toHaveLength(1));
     expect(store.getActions()[0].type).toEqual(SIGNED_IN);
     expect(store.getActions()[0].user).not.toBeDefined();
 
     const newUser = { id: 123 };
-    firebaseAuth.testDispatchOnAuthStateChanged(newUser);
+    await firebaseAuth.testDispatchOnAuthStateChanged(newUser);
+    await waitFor(() => expect(store.getActions()).toHaveLength(2));
     expect(store.getActions()[1].type).toEqual(SIGNED_IN);
     expect(store.getActions()[1].user).toBe(newUser);
   });

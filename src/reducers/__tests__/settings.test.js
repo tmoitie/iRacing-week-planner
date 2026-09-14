@@ -16,6 +16,7 @@ describe('reducers/settings', () => {
   test('set up default state', () => {
     const state = settingsReducer(undefined, {});
     expect(state.ownedTracks.length).toBe(22);
+    expect(state.ignorePastWeeks).toBe(true);
   });
 
   test('localStorageActionTypes.INIT', async () => {

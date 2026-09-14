@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 import { changeModal } from '../actions/app';
 import { signOut } from '../actions/auth';
-import languages from '../i18n';
+import languages, { loadLocaleData } from '../i18n';
 import styles from '../styles/main.module.scss';
 
 const userSelector = (state) => state.auth.user;
@@ -153,8 +153,9 @@ export default function Navbar() {
                   <a
                     id={`navbar-link-language-${code}`}
                     href=""
-                    onClick={(e) => {
+                    onClick={async (e) => {
                       e.preventDefault();
+                      await loadLocaleData(code);
                       setLanguageDropdown(false);
                       i18n.changeLanguage(code);
                     }}

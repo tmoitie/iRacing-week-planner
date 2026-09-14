@@ -53,6 +53,7 @@ export type SettingOptions = {
   favouriteTracks: Array<number>,
   sort: SortOptions,
   columns: Array<number>,
+  ignorePastWeeks: boolean,
   firebaseSynced: boolean,
 };
 
@@ -65,6 +66,7 @@ export const defaultSettings: SettingOptions = {
   favouriteTracks: [],
   sort: { key: 'licence', order: 'asc' },
   columns: availableColumns.filter((column) => column.default === true).map((column) => column.id),
+  ignorePastWeeks: true,
   firebaseSynced: false,
 };
 

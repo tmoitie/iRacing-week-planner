@@ -1,24 +1,12 @@
+// @flow
+
 import i18n from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 import moment from 'moment';
 
 import '@formatjs/intl-datetimeformat/polyfill';
-import '@formatjs/intl-datetimeformat/locale-data/en';
-import '@formatjs/intl-datetimeformat/locale-data/en-GB';
-import '@formatjs/intl-datetimeformat/locale-data/es';
-import '@formatjs/intl-datetimeformat/locale-data/pt';
-import '@formatjs/intl-datetimeformat/locale-data/de';
-import '@formatjs/intl-datetimeformat/locale-data/fr';
-import '@formatjs/intl-datetimeformat/locale-data/it';
-import '@formatjs/intl-datetimeformat/locale-data/tr';
-import '@formatjs/intl-datetimeformat/locale-data/ja';
-import '@formatjs/intl-datetimeformat/locale-data/nl';
-import '@formatjs/intl-datetimeformat/locale-data/pl';
-import '@formatjs/intl-datetimeformat/locale-data/cs';
-import '@formatjs/intl-datetimeformat/locale-data/ru';
-import '@formatjs/intl-datetimeformat/locale-data/zh';
-import '@formatjs/intl-datetimeformat/add-all-tz';
+import '@formatjs/intl-datetimeformat/add-golden-tz';
 
 import en from '../translations/en';
 import enGB from '../translations/en-GB';
@@ -86,6 +74,42 @@ const languages = {
 
 export default languages;
 
+const localeDataLoaders: { [string]: () => Promise<mixed> } = {
+  'cs-CZ': () => import('@formatjs/intl-datetimeformat/locale-data/cs'),
+  de: () => import('@formatjs/intl-datetimeformat/locale-data/de'),
+  'en-US': () => import('@formatjs/intl-datetimeformat/locale-data/en'),
+  'en-GB': () => import('@formatjs/intl-datetimeformat/locale-data/en-GB'),
+  es: () => import('@formatjs/intl-datetimeformat/locale-data/es'),
+  fr: () => import('@formatjs/intl-datetimeformat/locale-data/fr'),
+  it: () => import('@formatjs/intl-datetimeformat/locale-data/it'),
+  ja: () => import('@formatjs/intl-datetimeformat/locale-data/ja'),
+  nl: () => import('@formatjs/intl-datetimeformat/locale-data/nl'),
+  pl: () => import('@formatjs/intl-datetimeformat/locale-data/pl'),
+  'pt-BR': () => import('@formatjs/intl-datetimeformat/locale-data/pt'),
+  'pt-PT': () => import('@formatjs/intl-datetimeformat/locale-data/pt'),
+  ru: () => import('@formatjs/intl-datetimeformat/locale-data/ru'),
+  tr: () => import('@formatjs/intl-datetimeformat/locale-data/tr'),
+  'zh-CN': () => import('@formatjs/intl-datetimeformat/locale-data/zh'),
+};
+
+const localeDataLoads: { [string]: Promise<mixed> } = {};
+
+export function loadLocaleData(language?: string): Promise<mixed> {
+  const locale = language || 'en-US';
+
+  if (!localeDataLoads[locale]) {
+    const loader = localeDataLoaders[locale];
+
+    if (!loader) {
+      throw new Error(`No DateTimeFormat locale data loader configured for ${locale}`);
+    }
+
+    localeDataLoads[locale] = loader();
+  }
+
+  return localeDataLoads[locale];
+}
+
 const resources = {
   'en-US': en,
   'en-GB': enGB,
@@ -104,7 +128,7 @@ const resources = {
   'zh-CN': zhCN,
 };
 
-i18n
+export const i18nInitialized: Promise<mixed> = i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
@@ -135,4 +159,6 @@ i18n.on('languageChanged', (lng) => {
   moment.locale(lng);
 });
 
-moment.locale(i18n.language);
+i18nInitialized.then(() => {
+  moment.locale(i18n.language);
+});

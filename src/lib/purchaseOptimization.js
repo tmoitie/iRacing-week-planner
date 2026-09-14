@@ -1,38 +1,43 @@
 import series from '../data/season.json';
 import tracks from '../data/tracks.json';
+import moment from 'moment';
+import { seasonStart } from '../config';
 
 export default function calulatePurchaseOptimization({
-  ownedTracks, favouriteSeries,
+  ownedTracks, favouriteSeries, ignorePastWeeks = false,
 }) {
   const currentSeries = favouriteSeries.length === 0
     ? series
     : series.filter((seriesToFilter) => favouriteSeries.includes(seriesToFilter.seriesid));
 
-  const allTrackPkgIds = currentSeries
-    .flatMap((seriesToFilter) => seriesToFilter.tracks.map((track) => track.pkgid))
-    .filter((pkgId) => !ownedTracks.includes(pkgId));
+  const plannedSeries = ignorePastWeeks
+    ? currentSeries.map((seriesToFilter) => ({
+      ...seriesToFilter,
+      tracks: seriesToFilter.tracks.filter((track) => (
+        moment().utc().isBefore(seasonStart.clone().add(track.raceweek + 1, 'weeks'))
+      )),
+    })).filter((seriesToFilter) => seriesToFilter.tracks.length > 0)
+    : currentSeries;
 
-  const countById = Object.values(allTrackPkgIds.reduce((resultMap, trackPkgId) => {
-    const originalTrack = tracks.find((track) => track.pkgid === trackPkgId);
-    const filteredSeries = currentSeries
-      .filter(
-        (seriesToFilter) => seriesToFilter.tracks.filter((seriesTrack) => seriesTrack.pkgid === trackPkgId).length > 0,
-      );
+  const trackAppearances = plannedSeries
+    .flatMap((seriesToFilter) => seriesToFilter.tracks.map((track) => ({
+      ...track,
+      seriesname: seriesToFilter.seriesname,
+    })))
+    .filter((track) => !ownedTracks.includes(track.pkgid));
 
-    // Annotate each series noting the week we're racing the target track
-    const fromSeries = filteredSeries.map(
-      (seriesToFilter) => ({
-        seriesname: seriesToFilter.seriesname,
-        racedOnWeek: seriesToFilter.tracks.find((seriesTrack) => seriesTrack.pkgid === trackPkgId).raceweek,
-      }),
-    );
+  const countById = Object.values(trackAppearances.reduce((resultMap, track) => {
+    const existingItem = resultMap[track.pkgid];
 
     return {
       ...resultMap,
-      [trackPkgId]: {
-        track: resultMap[trackPkgId] ? resultMap[trackPkgId].track : originalTrack,
-        series: resultMap[trackPkgId] ? resultMap[trackPkgId].series : fromSeries,
-        count: resultMap[trackPkgId] ? resultMap[trackPkgId].count + 1 : 1,
+      [track.pkgid]: {
+        track: existingItem ? existingItem.track : tracks.find((item) => item.pkgid === track.pkgid),
+        series: [
+          ...(existingItem ? existingItem.series : []),
+          { seriesname: track.seriesname, racedOnWeek: track.raceweek },
+        ],
+        count: existingItem ? existingItem.count + 1 : 1,
       },
     };
   }, {}));

@@ -79,7 +79,16 @@ module.exports = {
             },
           },
           postcssLoader,
-          'sass-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              api: 'modern',
+              sassOptions: {
+                loadPaths: [path.resolve(__dirname, 'node_modules')],
+                silenceDeprecations: ['import', 'global-builtin', 'color-functions', 'if-function'],
+              },
+            },
+          },
         ],
         exclude: /\.module\.css$/,
       },
@@ -96,7 +105,16 @@ module.exports = {
             },
           },
           postcssLoader,
-          'sass-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              api: 'modern',
+              sassOptions: {
+                loadPaths: [path.resolve(__dirname, 'node_modules')],
+                silenceDeprecations: ['import', 'global-builtin', 'color-functions', 'if-function'],
+              },
+            },
+          },
         ],
         include: /\.module\.css$/,
       },

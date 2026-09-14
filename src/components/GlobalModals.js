@@ -32,7 +32,7 @@ export default function GlobalModals() {
   const { t } = useTranslation();
   const currentModal = useSelector(currentModalSelector);
   const {
-    favouriteSeries, ownedTracks, favouriteTracks, ownedCars, favouriteCars, columns,
+    favouriteSeries, ownedTracks, favouriteTracks, ownedCars, favouriteCars, columns, ignorePastWeeks,
   } = useSelector(settingsSelector, shallowEqual);
   const dispatch = useDispatch();
 
@@ -111,6 +111,8 @@ export default function GlobalModals() {
         onClose={closeModal}
         ownedTracks={ownedTracks}
         favouriteSeries={favouriteSeries}
+        ignorePastWeeks={ignorePastWeeks}
+        saveIgnorePastWeeks={getSettingUpdater('ignorePastWeeks')}
       />
       <LoginModal
         isOpen={currentModal === 'login'}

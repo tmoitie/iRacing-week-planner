@@ -3,6 +3,7 @@
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import ShoppingCartIcon from '../icon/ShoppingCartIcon';
+import Checkbox from '../Checkbox';
 import Modal from './Modal';
 import purchaseOptimization from '../../lib/purchaseOptimization';
 import styles from './styles/purchaseGuide.module.scss';
@@ -13,10 +14,14 @@ type Props = {
   onClose: () => void,
   ownedTracks: Array<number>,
   favouriteSeries: Array<number>,
+  ignorePastWeeks: boolean,
+  saveIgnorePastWeeks: (boolean) => void,
 }
 
-export default function PurchaseGuideModal({ isOpen, onClose, ownedTracks, favouriteSeries }: Props) {
-  const purchaseItems = purchaseOptimization({ ownedTracks, favouriteSeries });
+export default function PurchaseGuideModal({
+  isOpen, onClose, ownedTracks, favouriteSeries, ignorePastWeeks, saveIgnorePastWeeks,
+}: Props) {
+  const purchaseItems = purchaseOptimization({ ownedTracks, favouriteSeries, ignorePastWeeks });
   const { t } = useTranslation();
 
   return (
@@ -28,6 +33,13 @@ export default function PurchaseGuideModal({ isOpen, onClose, ownedTracks, favou
               + 'You can purchase these tracks with the direct link.',
           )}
         </p>
+        <Checkbox
+          id="purchase-guide-ignore-past-weeks"
+          checked={ignorePastWeeks}
+          onChange={saveIgnorePastWeeks}
+        >
+          {t('Ignore past weeks')}
+        </Checkbox>
         <div className={bootstrapStyles['table-responsive']}>
           <table className={`${bootstrapStyles.table} ${styles.purchaseTable}`}>
             <thead>
@@ -46,7 +58,7 @@ export default function PurchaseGuideModal({ isOpen, onClose, ownedTracks, favou
                   <td>
                     <ul>
                       {item.series.map((series) => (
-                        <li key={series.seriesname}>
+                        <li key={`${series.seriesname}-${series.racedOnWeek}`}>
                           {t(series.seriesname)}
                           {' '}
                           (
