@@ -17,7 +17,7 @@ export default {
     'Oval': 'Oval',
     'Dirt': 'Terra',
     'Road': 'Asfalto',
-    'Sports Car': 'Carros Desportivos',
+    'Sports Car': 'Carro Desportivo',
     'Formula Car': 'Carro de Fórmula',
     'RX': 'RX', // Rally Cross/Road Dirt
     'Licence': 'Licença',
@@ -50,7 +50,7 @@ export default {
     'Season end': 'Fim da temporada',
     'Link': 'Link',
     'Week': 'Semana',
-    'Count': 'Qunatidade',
+    'Count': 'Quantidade',
     'Length': 'Duração',
 
     // Race length
@@ -130,10 +130,10 @@ export default {
 
     // Coach Dave Sponsorship
     'Sponsored': 'Patrocinado',
-    'Looking for iRacing Setups?': 'Looking for iRacing Setups?',
+    'Looking for iRacing Setups?': 'Procura configurações para iRacing?',
     'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.':
-      'Grab a setup from Coach Dave Academy, developed by professional sim racers and engineers.',
-    'Browse Setups': 'Browse Setups',
+      'Obtenha uma configuração da Coach Dave Academy, desenvolvida por pilotos de simulação profissionais e engenheiros.',
+    'Browse Setups': 'Ver configurações',
 
     // Rain
     'Rain': 'Chuva',
