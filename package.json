@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Weekly planner for iRacing.com races",
   "engines": {
-    "node": ">=20.19.0 <21",
+    "node": ">=22.15.0 <23",
     "yarn": ">=1.22.5"
   },
   "scripts": {
@@ -50,11 +50,10 @@
     "core-js": "^3.26.1",
     "crypto-js": "^4.2.0",
     "css-loader": "^6.5.1",
-    "css-minimizer-webpack-plugin": "^4.0.0",
+    "css-minimizer-webpack-plugin": "^8.0.0",
     "css-modules-flow-types-loader": "^2.0.0",
     "file-loader": "^6.0.0",
-    "firebase": "^10",
-    "flow-typed": "^3.2.1",
+    "firebase": "^11.10.0",
     "html-webpack-plugin": "^5.5.0",
     "i18next": "^21.10.0",
     "i18next-browser-languagedetector": "^6.0.1",
@@ -125,6 +124,6 @@
     "regenerator-runtime": "^0.13.7",
     "snapshot-diff": "^0.9.0",
     "webpack-bundle-analyzer": "^4.9.1",
-    "webpack-dev-server": "^5.2.1"
+    "webpack-dev-server": "^6.0.0"
   }
 }
