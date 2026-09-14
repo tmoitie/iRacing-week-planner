@@ -289,6 +289,16 @@ exports[`components/Navbar renders correctly and links work 1`] = `
           </li>
           <li>
             <a
+              href=""
+              id="navbar-link-language-zh-CN"
+            >
+              ZH-CN
+               
+              简体中文 (ZH-CN)
+            </a>
+          </li>
+          <li>
+            <a
               href="https://github.com/tmoitie/iRacing-week-planner/blob/master/Translate.md"
               rel="noreferrer"
               target="_blank"

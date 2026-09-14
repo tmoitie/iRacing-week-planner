@@ -17,6 +17,7 @@ import '@formatjs/intl-datetimeformat/locale-data/nl';
 import '@formatjs/intl-datetimeformat/locale-data/pl';
 import '@formatjs/intl-datetimeformat/locale-data/cs';
 import '@formatjs/intl-datetimeformat/locale-data/ru';
+import '@formatjs/intl-datetimeformat/locale-data/zh';
 import '@formatjs/intl-datetimeformat/add-all-tz';
 
 import en from '../translations/en';
@@ -32,6 +33,7 @@ import nl from '../translations/nl';
 import pl from '../translations/pl';
 import csCZ from '../translations/cs-CZ';
 import ru from '../translations/ru';
+import zhCN from '../translations/zh-CN';
 
 const languages = {
   'cs-CZ': {
@@ -73,6 +75,9 @@ const languages = {
   tr: {
     name: 'Türkçe (TR)',
   },
+  'zh-CN': {
+    name: '简体中文 (ZH-CN)',
+  },
 };
 
 export default languages;
@@ -91,6 +96,7 @@ const resources = {
   pl,
   'cs-CZ': csCZ,
   ru,
+  'zh-CN': zhCN,
 };
 
 i18n
