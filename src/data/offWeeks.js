@@ -84,6 +84,30 @@ export default {
       9.1, 9.1, 9.1,
     ],
   },
+  // 492 │ 6465   │ Sports Car  │ C     │ IMSA Michelin Pilot Challenge Series | 2026-09-26
+  6465: {
+    offWeeks: [
+      0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+  // 572 │ 6466   │ Sports Car  │ C     │ IMSA Sportscar Endurance Challenge | 2026-09-19
+  6466: {
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+  // 331 │ 6483   │ Sports Car  │ B     │ Global Endurance Tour | 2026-09-26
+  6483: {
+    offWeeks: [
+      0.1, 1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
+  // 419 │ 6486   │ Sports Car  │ B     │ IMSA Endurance Series | 2026-09-19
+  6486: {
+    offWeeks: [
+      1.1, 2.1, 3.1, 4.1, 5.1,
+    ],
+  },
   // 492 │ 6102   │ Sports Car  │ C     │ IMSA Michelin Pilot Challenge Series | 2026-06-09
   // 6102: {
   //   offWeeks: [
