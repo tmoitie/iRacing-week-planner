@@ -678,5 +678,38 @@
       }
     ],
     "seasonid": 3955
+  },
+  {
+    "seriesid": 634,
+    "seriesname": "Track Day",
+    "start": "2022-09-06T00:00:00Z",
+    "end": "2022-09-13T23:00:00.000Z",
+    "tracks": [
+      {
+        "raceweek": 0,
+        "name": "Track Day",
+        "pkgid": 40,
+        "start": "2022-09-06",
+        "race_time_descriptors": [],
+        "race_lap_limit": null,
+        "race_time_limit": null,
+        "carsForWeek": [],
+        "carsForWeekName": null,
+        "carsForWeekNames": [],
+        "precipChance": 0
+      }
+    ],
+    "catid": 5,
+    "isOfficial": false,
+    "licenceGroupName": "Rookie",
+    "minlicenselevel": 1,
+    "isFixedSetup": false,
+    "carclasses": [
+      {
+        "shortname": "Track Day"
+      }
+    ],
+    "cars": [],
+    "seasonid": 6616
   }
 ]

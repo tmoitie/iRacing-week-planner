@@ -778,6 +778,13 @@ exports[`components/App renders correctly 1`] = `
                   </div>
                 </td>
               </tr>
+              <tr>
+                <td>
+                  <div>
+                    634
+                  </div>
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
