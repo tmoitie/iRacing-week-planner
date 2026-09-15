@@ -48,7 +48,7 @@ jobs:
     - name: Notify admin about invalid week lengths
       if: steps.week_lengths.outcome == 'failure'
       continue-on-error: true
-      uses: dawidd6/action-send-mail@v6
+      uses: dawidd6/action-send-mail@v21
       with:
         server_address: ${{ vars.SES_SMTP_SERVER }}
         server_port: ${{ vars.SES_SMTP_PORT }}
@@ -59,6 +59,7 @@ jobs:
         subject: Invalid iRacing week lengths detected
         to: ${{ secrets.ADMIN_EMAIL }}
         from: ${{ vars.SES_FROM_EMAIL }}
+        envelope_from: ${{ vars.SES_FROM_EMAIL }}
         body: |
           The weekly deploy detected calculated race week lengths other than 1 or 7 days.
           Deployment will continue. Review the workflow log at ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}.

@@ -52,7 +52,7 @@ The weekly deployment validates calculated race week lengths after scraping data
 - `SES_SMTP_SERVER`
 - `SES_SMTP_PORT` set to `587`
 - `SES_SMTP_USERNAME`
-- `SES_FROM_EMAIL`
+- `SES_FROM_EMAIL`, an SES-verified sender address
 
 Configure these `Deployment` environment secrets:
 
