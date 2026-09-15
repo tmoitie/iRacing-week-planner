@@ -174,9 +174,9 @@ export default season.reduce((carry, series) => {
       seriesStart,
       seriesEnd,
       seasonId: series.seasonid,
-      everyTime: raceTimes.repeating ? moment.duration({ minutes: raceTimes.repeat_minutes }) : null,
-      offset: raceTimes.repeating ? moment.duration(raceTimes.first_session_time) : null,
-      setTimes: raceTimes.repeating === false ? raceTimes.session_times.map(
+      everyTime: raceTimes?.repeating ? moment.duration({ minutes: raceTimes.repeat_minutes }) : null,
+      offset: raceTimes?.repeating ? moment.duration(raceTimes.first_session_time) : null,
+      setTimes: raceTimes?.repeating === false ? raceTimes.session_times.map(
         (sessionTime) => moment(sessionTime).diff(startTime),
       ).sort().map((setTimeDuration) => moment.duration(setTimeDuration)) : null,
       raceLength: {

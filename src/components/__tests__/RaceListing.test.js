@@ -76,6 +76,18 @@ describe('components/RaceListing', () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
+  test('renders Track Day with no scheduled times', () => {
+    const store = getMockStore({ columns: ['series', 'raceTimes'] });
+    const component = renderer.create(<Provider store={store}><RaceListing /></Provider>);
+
+    expect(component.root.findAllByType('button').some((button) => (
+      button.children.includes('Track Day')
+    ))).toBe(true);
+    expect(component.root.findAllByType('td').some((cell) => (
+      cell.children.includes('No time data')
+    ))).toBe(true);
+  });
+
   test('changes sort on click', () => {
     const store = getMockStore({
       sort: { key: 'id', order: 'asc' },

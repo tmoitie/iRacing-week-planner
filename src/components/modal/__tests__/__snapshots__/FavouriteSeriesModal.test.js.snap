@@ -94,6 +94,24 @@ exports[`components/modal/FavouriteSeriesModal renders with checkbox saving 1`] 
               </label>
             </div>
           </div>
+          <div
+            class="col-md-6"
+          >
+            <div
+              class="checkbox"
+              data-testid="favourite-series-634"
+            >
+              <label
+                for="favourite-series-634"
+              >
+                <input
+                  id="favourite-series-634"
+                  type="checkbox"
+                />
+                Track Day
+              </label>
+            </div>
+          </div>
         </div>
       </div>
     </div>
