@@ -1,11 +1,9 @@
 export default {
   // Commented out series kept in here for when iRacing schedule next season, often with the same settings
-  // 570 │ 5892   │ Dirt        │ A     │ World of Outlaws Pro Qualifying Series | 2026-01-27
-  // 5892: {
-  //   offWeeks: [
-  //     4.1, 4.1, 4.1,
-  //   ],
-  // },
+  // 570 │ 6621   │ Dirt        │ A     │ World of Outlaws Pro Qualifying Series | 2026-09-21
+  6621: {
+    weekStartOffset: { days: 1 },
+  },
 
   // 560 │ 5722   │ Formula Car │ A     │ INDYCAR Thrustmaster Pro Qualifying Series
   // 5722: {
