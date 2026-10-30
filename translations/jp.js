@@ -2,6 +2,7 @@ export default {
   translation: {
     'iRacing Week Planner': 'iRacing ウィークプランナー',
     'Purchase guide': '購入ガイド',
+    'Credit program': 'クレジットプログラム',
     'Set my tracks': 'トラック設定',
     'Set my cars': '車種設定',
     'Set favorite series': '気に入りのシリーズ設定',
@@ -70,6 +71,8 @@ export default {
     'Contributors': '寄贈者',
     'Changelog': 'Changelog',
     'Purchase Guide': '購入ガイド',
+    'Based on the cars and tracks you own, these are the series where you\u2019re eligible to run at least 8 weeks and count towards the iRacing Participation Credit Program.':
+        '所有している車とコースに基づいて、少なくとも8週間参加でき、iRacing参加クレジットプログラムの対象となるシリーズはこちらです。',
     'This tool was created by <2>tmoitie</2> (<5>Tom Moitié</5> on iRacing). Feel free to contact me via twitter or iRacing if you have any feedback or questions. The code is hosted publicly on <9>Github</9>. Thanks!':
       'このツールは<2>tmoitie</2>（iRacingの<5>Tom Moitié</5>）によって作成されました。 フィードバックや質問がある場合、TwitterまたはiRacingでお気軽に聞いてください。コードは<9>Github</9>で公開されています。ありがとうございます。',
     'Loading': 'ロード中',
@@ -82,7 +85,7 @@ export default {
     'Set times': '特定の時間',
     'Search series': '検索シリーズ',
 
-    //New Auth strings
+    // New Auth strings
     'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <2>buy me a coffee</2>.':
       'このツールを実行するのはちょっとの費用がかかっているので、使用のが好きなら<2>僕にコーヒーをおごることができます</2>。',
     'Buy me a coffee': '僕にコーヒーをおごる',
@@ -111,7 +114,6 @@ export default {
     'The password must be 6 characters long or more.': 'パスワードは６文字以上にする必要があります。',
     'The email address is already in use by another account.': 'メールアドレスは別のアカウントで使用されています。',
     'Password should be at least 6 characters': 'パスワードは６文字以上にする必要があります。',
-
 
     // No Results - DeepL ML translated @todo human translations
     'No races this week match your favourite series. Try turning the filter off or adding some.': '今週は、あなたの好きなシリーズに合うレースがありません。フィルターをオフにするか、何かを追加してみてください。',

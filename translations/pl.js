@@ -2,6 +2,7 @@ export default {
   translation: {
     'iRacing Week Planner': 'iRacing Kalendarz Tygodniowy',
     'Purchase guide': 'Co kupić',
+    'Credit program': 'Program kredytowy',
     'Set my tracks': 'Moje tory',
     'Set my cars': 'Moje pojazdy',
     'Set favorite series': 'Moje ulubione serie',
@@ -65,6 +66,8 @@ export default {
     'Select all': 'Wybierz wszystko',
     'Select all oval': 'Tylko owale',
     'Select all road': 'Tylko wyścigi typu Road',
+    'Based on the cars and tracks you own, these are the series where you’re eligible to run at least 8 weeks and count towards the iRacing Participation Credit Program.':
+        'Na podstawie posiadanych przez Ciebie samochodów i torów, oto serie, w których kwalifikujesz się do udziału co najmniej przez 8 tygodni i które liczą się do Programu Kredytowego Udziału iRacing.',
     'Choose favorite series': 'Wybierz ulubione serie',
     Close: 'Zamknij',
     Contributors: 'Współtwórcy',
@@ -113,7 +116,6 @@ export default {
     'The password must be 6 characters long or more.': 'Hasło musi mieć 6 znaków lub więcej.',
     'The email address is already in use by another account.': 'Ten adres email jest już przypisany do innego istniejącego konta.',
     'Password should be at least 6 characters': 'Hasło musi mieć co najmniej 6 znaków',
-
 
     // No Results - DeepL ML translated @todo human translations
     'No races this week match your favourite series. Try turning the filter off or adding some.': 'Brak wyścigów spełniających twoje kryteria w tym tygodniu. Spróbuj wyłączyć filtry lub dodać nowe ulubione serie.',

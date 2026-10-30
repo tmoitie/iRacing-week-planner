@@ -5,7 +5,7 @@ exports[`components/Navbar changes language 1`] = `
 - First value
 + Second value
 
-@@ -77,11 +77,11 @@
+@@ -85,11 +85,11 @@
             >
               Sign out
             </a>
@@ -25,7 +25,7 @@ exports[`components/Navbar changes language 2`] = `
 - First value
 + Second value
 
-@@ -77,11 +77,11 @@
+@@ -85,11 +85,11 @@
             >
               Sign out
             </a>
@@ -45,7 +45,7 @@ exports[`components/Navbar closes dropdown 1`] = `
 - First value
 + Second value
 
-@@ -77,11 +77,11 @@
+@@ -85,11 +85,11 @@
             >
               Sign out
             </a>
@@ -86,6 +86,14 @@ exports[`components/Navbar renders correctly and links work 1`] = `
           id="navbar-link-purchase-guide"
         >
           Purchase guide
+        </a>
+      </li>
+      <li>
+        <a
+          href=""
+          id="navbar-link-credit-program"
+        >
+          Credit program
         </a>
       </li>
     </ul>
