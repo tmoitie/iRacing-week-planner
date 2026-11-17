@@ -16,14 +16,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
       with:
         # Scheduled runs default to the repo's default branch; pin to release
         # so both push and cron deploy the release branch.
         ref: release
-    - uses: actions/setup-node@v3
+    - uses: actions/setup-node@v6
       with:
-        node-version: 22.21
+        node-version: 26
         cache: 'yarn'
     - uses: ruby/setup-ruby@v1
       with:
