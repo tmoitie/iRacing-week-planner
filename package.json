@@ -56,7 +56,7 @@
     "file-loader": "^6.0.0",
     "firebase": "^11.10.0",
     "html-webpack-plugin": "^5.5.0",
-    "i18next": "^21.10.0",
+    "i18next": "^26.3.4",
     "i18next-browser-languagedetector": "^6.0.1",
     "ignore-styles": "^5.0.1",
     "lodash.debounce": "^4.0.8",
