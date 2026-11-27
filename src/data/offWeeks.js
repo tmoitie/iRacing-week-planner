@@ -1,5 +1,14 @@
 export default {
   // Commented out series kept in here for when iRacing schedule next season, often with the same settings
+  // SCCA Runoffs week starts 2026-11-17, with races on November 21 and 22.
+  // The generated end date rounds down to the opening Tuesday.
+  6771: { weekEndOffset: { days: 7 } }, // 506 | Formula Vee
+  6772: { weekEndOffset: { days: 7 } }, // 507 | Spec Racer Ford
+  6773: { weekEndOffset: { days: 7 } }, // 508 | Global MX-5 Spec Miata
+  6774: { weekEndOffset: { days: 7 } }, // 510 | USF2000
+  6775: { weekEndOffset: { days: 7 } }, // 511 | GT4
+  6776: { weekEndOffset: { days: 7 } }, // 545 | Renault Clio
+
   // 570 │ 6621   │ Dirt        │ A     │ World of Outlaws Pro Qualifying Series | 2026-09-21
   6621: {
     weekStartOffset: { days: 1 },
