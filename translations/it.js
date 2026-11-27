@@ -2,6 +2,7 @@ export default {
   translation: {
     'iRacing Week Planner': 'Programma Settimanale di iRacing',
     'Purchase guide': 'Guida all acquisto',
+    'Credit program': 'Programma di credito',
     'Set my tracks': 'I miei tracciati',
     'Set my cars': 'Le mia auto',
     'Set favorite series': 'Le mie serie preferite',
@@ -62,6 +63,8 @@ export default {
     // Modals
     'Use the checkbox to set the content you own, and use the star to set your favourite content.':
       'Utilizza il checkbox (riquadro) per impostare le tue proprietà, ed utilizza le stelle per impostare le tue preferenze.',
+    'Based on the cars and tracks you own, these are the series where you’re eligible to run at least 8 weeks and count towards the iRacing Participation Credit Program.':
+       'In base alle auto e ai circuiti che possiedi, queste sono le serie in cui puoi partecipare per almeno 8 settimane e che contano per il Programma Crediti di Partecipazione iRacing.',
     'Select all': 'Seleziona tutto',
     'Select all oval': 'Seleziona tutti gli ovali',
     'Select all road': 'Seleziona tutti i circuiti',
@@ -82,7 +85,7 @@ export default {
     'Every {{every}} starting at {{time, datetime}}': 'Ogni {{every}} partenza è alle {{time, datetime}}',
     'Set times': 'Imposta orario',
 
-    //New Auth strings
+    // New Auth strings
     'This is now costing me a few quid a month to run, so if you like using this tool, please feel free to <2>buy me a coffee</2>.':
       'Questo tool mi costa alcuni dollari ogni mese, se ti piace, sentiti libero di <2>offrifmi un caffè</2>, per favore.',
     'Buy me a coffee': 'Offrimi un caffè',
